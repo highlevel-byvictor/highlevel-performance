@@ -1,0 +1,110 @@
+<!doctype html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Website für Artists – Entwurf in 24 Stunden | High Level Performance</title><meta name="description" content="Deine Artist-Website auf Label-Niveau. Ersten Entwurf in 24 Stunden sehen, erst dann zahlen."><meta name="robots" content="index,follow">
+<link rel="canonical" href="https://www.highlevel-performance.de/website-artists/">
+<meta property="og:title" content="Website für Artists – Entwurf in 24 Stunden | High Level Performance"><meta property="og:description" content="Deine Artist-Website auf Label-Niveau. Ersten Entwurf in 24 Stunden sehen, erst dann zahlen."><meta property="og:image" content="https://www.highlevel-performance.de/assets/ref_artists_d.jpg">
+<style>
+@import url("../assets/fonts.css");
+:root{--bg:#0A0A0A;--bg2:#141014;--ink:#F4F1EC;--mut:#BDB6AE;--line:#2A2426;--acc:#E90E0E;--acc2:#FF3B3B;--card:#161214}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font:400 17px/1.6 Manrope,Arial,sans-serif;-webkit-font-smoothing:antialiased}
+img{max-width:100%;display:block}a{color:inherit}
+.wrap{width:min(1180px,100% - 40px);margin-inline:auto}
+header{position:sticky;top:0;z-index:10;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+header .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{text-decoration:none;display:flex;flex-direction:column;line-height:1}
+.logo b{font:900 19px Poppins}.logo span{font:500 9px Poppins;letter-spacing:.42em;margin-top:3px}.logo i{font:26px "Mr Dafoe";color:var(--acc);margin:-10px 0 0 52px;font-style:normal}
+.btn{display:inline-flex;align-items:center;justify-content:center;padding:15px 26px;border-radius:12px;font:700 16px Poppins;text-decoration:none;border:0;cursor:pointer;transition:transform .2s}
+.btn:hover{transform:translateY(-2px)}
+.btn-acc{background:var(--acc);color:#fff;box-shadow:0 14px 34px -12px var(--acc)}
+.btn-line{border:1px solid var(--line);background:transparent;color:var(--ink)}
+.hero{padding:90px 0 80px;overflow:hidden}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:56px;align-items:center}
+.kick{font:500 13px "JetBrains Mono",monospace;letter-spacing:.24em;color:var(--acc)}
+h1{margin-top:20px;font:800 clamp(40px,5.2vw,72px)/1.03 Poppins;letter-spacing:-.03em}
+h1 em{font-style:normal;color:var(--acc)}
+h1 .lux{display:block;font:italic 400 clamp(40px,5.2vw,74px)/1 "Bodoni Moda",Georgia,serif;letter-spacing:-.01em}
+h1 b{display:block;font-weight:900;color:var(--acc)}
+.lead{margin-top:22px;font-size:19px;color:var(--mut);max-width:50ch}
+.ctas{margin-top:32px;display:flex;gap:12px;flex-wrap:wrap}
+.note{margin-top:20px;display:flex;flex-wrap:wrap;gap:8px 20px;font-size:15px;color:var(--mut)}
+.note span::before{content:"✓ ";color:var(--acc);font-weight:700}
+.mock{position:relative;padding-bottom:40px}
+.mock .lap{border-radius:14px;overflow:hidden;border:1px solid var(--line);box-shadow:0 40px 80px -30px rgba(0,0,0,.45)}
+.mock .ph{position:absolute;right:-6px;bottom:0;width:30%;border-radius:22px;overflow:hidden;border:6px solid #0b0b0b;box-shadow:0 30px 60px -20px rgba(0,0,0,.6)}
+.mock .tag{position:absolute;left:-14px;bottom:30px;padding:12px 16px;border-radius:14px;background:var(--card);border:1px solid var(--line);font:700 14px Poppins;box-shadow:0 20px 40px -18px rgba(0,0,0,.4)}
+.mock .tag small{display:block;font:500 12px Manrope;color:var(--mut)}
+section{padding:96px 0}
+.alt{background:var(--bg2);border-block:1px solid var(--line)}
+h2{font:800 clamp(32px,3.6vw,50px)/1.08 Poppins;letter-spacing:-.025em;max-width:22ch}
+h2 em,h2 b{font-style:normal;color:var(--acc)}
+.sub{margin-top:14px;color:var(--mut);font-size:18px;max-width:56ch}
+.steps,.whys{margin-top:44px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.step,.why{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px}
+.step .n{font:500 14px "JetBrains Mono";color:var(--acc)}
+.step h3,.why h3{margin-top:10px;font:700 21px Poppins}
+.step p,.why p{margin-top:8px;color:var(--mut)}
+.plans{margin-top:44px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px;align-items:start}
+.plan{position:relative;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:30px;display:flex;flex-direction:column;gap:6px}
+.plan.top{border:2px solid var(--acc);box-shadow:0 30px 60px -30px var(--acc)}
+.badge{position:absolute;top:-13px;left:24px;background:var(--acc);color:#fff;font:700 12px Poppins;padding:5px 12px;border-radius:99px}
+.plan h3{font:800 24px Poppins}
+.price{margin-top:8px;font:800 40px/1 Poppins}.price small{font:500 14px Manrope;color:var(--mut);margin-left:8px}
+.mon{font-weight:700;color:var(--acc)}
+.plan ul{list-style:none;padding:0;margin:16px 0 22px;display:flex;flex-direction:column;gap:8px}
+.plan li{padding-left:26px;position:relative;color:var(--mut)}.plan li::before{content:"✓";position:absolute;left:0;color:var(--acc);font-weight:800}
+.plan .btn{margin-top:auto}
+.tax{margin-top:18px;font-size:14px;color:var(--mut)}
+.faq{margin-top:36px;display:flex;flex-direction:column;gap:10px;max-width:820px}
+details{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 22px}
+summary{cursor:pointer;font:700 18px Poppins;list-style:none}summary::after{content:"+";float:right;color:var(--acc)}details[open] summary::after{content:"–"}
+details p{margin-top:10px;color:var(--mut)}
+.formbox{margin-top:40px;background:var(--card);border:1px solid var(--line);border-radius:22px;padding:36px}
+form{display:grid;grid-template-columns:1fr 1fr;gap:16px 20px}
+label{display:flex;flex-direction:column;gap:6px;font:600 14px Poppins}label.full{grid-column:1/-1}
+input,select,textarea{font:400 16px Manrope;padding:13px 14px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--ink)}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--acc);outline-offset:1px}
+.chk{grid-column:1/-1;flex-direction:row;align-items:flex-start;gap:10px;font:400 14px Manrope;color:var(--mut)}.chk input{margin-top:4px}
+.hp{position:absolute;left:-9999px}
+form .btn{grid-column:1/-1;justify-self:start}
+.msg{grid-column:1/-1;padding:14px 16px;border-radius:12px;background:color-mix(in srgb,var(--acc) 12%,transparent);font-weight:600}
+footer{padding:36px 0;border-top:1px solid var(--line);font-size:14px;color:var(--mut)}
+footer .wrap{display:flex;gap:20px;flex-wrap:wrap;justify-content:space-between}footer a{text-decoration:none;margin-left:18px}
+.legal{padding:80px 0}.legal h2{font-size:36px}.legal h3{margin-top:26px;font:700 19px Poppins}.legal p{margin-top:8px;color:var(--mut)}
+@media (max-width:860px){
+ .hero{padding:56px 0}.hero .wrap{grid-template-columns:1fr;gap:40px}
+ .steps,.whys,.plans{grid-template-columns:1fr}
+ section{padding:64px 0}form{grid-template-columns:1fr}.formbox{padding:22px}
+ header .btn{padding:11px 16px;font-size:14px}.lead{font-size:17px}
+}</style></head><body>
+<header><div class="wrap"><a class="logo" href="../#artists"><b>HIGH LEVEL</b><span>PERFORMANCE</span><i>by Victor</i></a><a class="btn btn-acc" href="#fragebogen">Entwurf anfordern</a></div></header>
+<main>
+<div class="hero"><div class="wrap"><div>
+<span class="kick">WEBSITES FÜR ARTISTS</span><h1><span class="lux">Deine Website.</span><b>In 24 Stunden siehst du sie.</b></h1><p class="lead">Wir bauen dir eine Website auf Label-Niveau: mit deiner Musik, Videos, Pressemappe und Booking-Formular. Den ersten Entwurf siehst du nach 24 Stunden. Erst wenn er dir gefällt, zahlst du.</p>
+<div class="ctas"><a class="btn btn-acc" href="#fragebogen">Kostenlosen Entwurf anfordern</a><a class="btn btn-line" href="#pakete">Pakete ansehen</a></div>
+<div class="note"><span>Kostenlos und unverbindlich</span><span>Erst sehen, dann zahlen</span><span>Live in 7 Tagen</span></div></div>
+<div class="mock"><div class="lap"><img src="../assets/ref_artists_d.jpg" alt="Beispiel-Website von High Level Performance auf dem Laptop"></div><div class="ph"><img src="../assets/ref_artists_m.jpg" alt="Dieselbe Website auf dem Handy"></div><div class="tag">Entwurf fertig<small>nach 24 Stunden</small></div></div>
+</div></div>
+<section class="alt"><div class="wrap"><h2>So einfach geht's.</h2><p class="sub">Drei Schritte. Du zahlst erst, wenn dir der Entwurf gefällt.</p><div class="steps"><div class="step"><span class="n">01</span><h3>Fragebogen ausfüllen</h3><p>5 Minuten: Künstlername, Links, Fotos und dein Stil.</p></div><div class="step"><span class="n">02</span><h3>Entwurf in 24 Stunden</h3><p>Du bekommst einen Vorschau-Link zu deiner neuen Startseite.</p></div><div class="step"><span class="n">03</span><h3>Live in 7 Tagen</h3><p>Gefällt sie dir, machen wir sie fertig und schalten sie online.</p></div></div></div></section>
+<section><div class="wrap"><h2>Nicht nur eine Website. <b>Ein Team hinter dir.</b></h2><div class="whys"><div class="why"><h3>Eigenes Studio</h3><p>Saved Music Productions, 4,6 Sterne auf Trustpilot. Wir wissen, wie Musik verkauft wird.</p></div><div class="why"><h3>Videos und Fotos</h3><p>Shootings, Reels und Musikvideos aus einer Hand, passend zu deiner Seite.</p></div><div class="why"><h3>Reichweite</h3><p>Auf Wunsch Werbung auf Instagram, TikTok und YouTube, damit dich neue Hörer finden.</p></div></div></div></section>
+<section class="alt" id="pakete"><div class="wrap"><h2>Wähl dein Paket.</h2><div class="plans"><div class="plan"><h3>Artist Start</h3><p class="price">790 €<small>einmalig</small></p><p class="mon">+ 39 € / Monat</p><ul><li>One-Page-Website im High-Level-Stil</li><li>Links zu Spotify, YouTube und Socials</li><li>Kontaktformular</li><li>Impressum und Datenschutz</li><li>Domain-Einrichtung</li></ul><a class="btn btn-line" href="#fragebogen">Anfragen</a></div><div class="plan top"><span class="badge">Empfohlen</span><h3>Artist Pro</h3><p class="price">1.490 €<small>einmalig</small></p><p class="mon">+ 79 € / Monat</p><ul><li>Alles aus Start</li><li>Digitale Künstlermappe (EPK) für Booker</li><li>Musikvideo- und Release-Bereich</li><li>Booking-Formular</li><li>2 Änderungen pro Monat</li></ul><a class="btn btn-acc" href="#fragebogen">Diesen Entwurf anfordern</a></div><div class="plan"><h3>Artist Komplett</h3><p class="price">1.490 €<small>einmalig</small></p><p class="mon">+ ab 349 € / Monat</p><ul><li>Alles aus Pro</li><li>Reels und Content</li><li>Werbung auf Meta und TikTok</li><li>Release-Strategie</li></ul><a class="btn btn-line" href="#fragebogen">Anfragen</a></div></div><p class="tax">Preise inkl. MwSt. Werbebudget zahlst du direkt an die Plattform.</p></div></section>
+<section><div class="wrap"><h2>Deine Fragen.</h2><div class="faq"><details><summary>Was kostet der Entwurf?</summary><p>Nichts. Du siehst deine Startseite, bevor du irgendetwas zahlst.</p></details><details><summary>Was brauche ich dafür?</summary><p>Deinen Künstlernamen, ein paar gute Fotos, Logo falls vorhanden und deine Links zu Spotify, Instagram und YouTube.</p></details><details><summary>Wem gehört die Website?</summary><p>Dir. Nach vollständiger Zahlung darfst du sie unbegrenzt nutzen.</p></details><details><summary>Kann ich später etwas ändern?</summary><p>Ja. In der Betreuung sind Änderungen jeden Monat enthalten, zum Beispiel neue Releases oder Konzerttermine.</p></details><details><summary>Brauche ich eine eigene Domain?</summary><p>Wir kümmern uns darum. Eine Domain kostet meist nur ein paar Euro im Jahr.</p></details></div></div></section>
+<section class="alt" id="fragebogen"><div class="wrap"><h2>Dein Entwurf. In 24 Stunden.</h2><p class="sub">Füll den Fragebogen aus, wir melden uns mit deinem Entwurf. Kostenlos und unverbindlich.</p>
+<div class="formbox"><form id="lpForm" action="https://formular.highlevel-performance.de/website.php" method="post" enctype="multipart/form-data" data-thanks="Danke! Dein Entwurf ist in Arbeit. Du hörst innerhalb von 24 Stunden von uns." novalidate>
+<input type="hidden" name="typ" value="artists"><input class="hp" type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+<label>Künstlername *<input name="artist" type="text" required></label><label>Dein Name *<input name="name" type="text" required></label><label>E-Mail *<input name="email" type="email" required></label><label>Telefon / WhatsApp<input name="tel" type="tel"></label><label>Genre<input name="genre" type="text"></label><label class="full">Links (Spotify, Instagram, YouTube)<textarea name="links" rows="3"></textarea></label><label>Wunsch-Domain (falls vorhanden)<input name="domain" type="text"></label><label>Dein Stil / Wunschfarben<input name="stil" type="text"></label>
+<label>Paket<select name="paket"><option>Artist Start</option><option>Artist Pro</option><option>Artist Komplett</option><option>Weiß ich noch nicht</option></select></label>
+<label class="full">Logo und Fotos (max. 5 Dateien, je bis 10 MB)<input type="file" name="dateien[]" multiple accept="image/*,.pdf,.svg"></label>
+<label class="full">Was ist dir wichtig?<textarea name="msg" rows="3"></textarea></label>
+<label class="chk"><input type="checkbox" name="ok" required> <span>Ich bin einverstanden, dass meine Angaben und Dateien zur Erstellung des Entwurfs verarbeitet werden. Mehr in der <a href="../datenschutz/">Datenschutzerklärung</a>.</span></label>
+<button class="btn btn-acc" type="submit">Kostenlosen Entwurf anfordern</button><p class="msg" id="lpMsg" hidden></p>
+</form></div></div></section>
+</main>
+<footer><div class="wrap"><span>© 2026 SMP · High Level Performance</span><span><a href="../#artists">Startseite</a><a href="../impressum/">Impressum</a><a href="../datenschutz/">Datenschutz</a></span></div></footer>
+<script>
+document.getElementById('lpForm').addEventListener('submit',function(e){e.preventDefault();var f=e.target,m=document.getElementById('lpMsg'),b=f.querySelector('button');
+if(!f.checkValidity()){f.reportValidity();return}
+var fs=f.querySelector('input[type=file]').files;if(fs.length>5){m.textContent='Bitte maximal 5 Dateien.';m.hidden=false;return}
+for(var i=0;i<fs.length;i++){if(fs[i].size>10*1024*1024){m.textContent='Eine Datei ist größer als 10 MB.';m.hidden=false;return}}
+b.disabled=true;m.hidden=true;
+fetch(f.action,{method:'POST',body:new FormData(f)}).then(function(r){return r.json()}).then(function(j){if(!j.ok)throw 0;f.reset();m.textContent=f.dataset.thanks;m.hidden=false}).catch(function(){m.innerHTML='Das hat leider nicht geklappt. Schreib uns an <a href="mailto:info@highlevel-performance.de">info@highlevel-performance.de</a> oder ruf an: <a href="tel:+4915561068899">+49 15561 068899</a>.';m.hidden=false}).finally(function(){b.disabled=false})});
+</script></body></html>
