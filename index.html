@@ -956,6 +956,27 @@ form .btn{justify-content:center;margin-top:6px}
  #artists .hx-num{font-size:26px;margin-top:8px}#artists .hx-num small{display:block;font-size:10px;margin:3px 0 0}
  #artists .hx-bars{height:28px;gap:3px;margin-top:8px}#artists .hx-bsp{font-size:6.5px;margin-top:5px}
 }
+
+/* v51 spots (9:16) */
+#business .spot-copy h2{font-family:var(--f-brand);font-weight:800;font-size:clamp(34px,4.2vw,58px);line-height:1.05;letter-spacing:-.025em;color:var(--b-navy,#0B1630)}
+.spot-play{white-space:nowrap}
+.spot-grid{display:grid;grid-template-columns:1fr minmax(260px,380px);gap:64px;align-items:center}
+.spot-copy h2{margin-top:14px}
+.spot-copy p{margin-top:18px;font-size:19px;line-height:1.6;max-width:44ch}
+.spot-copy .btn{margin-top:28px}
+.spot-grid .spot-box{aspect-ratio:9/16;width:100%;border-radius:28px;box-shadow:0 50px 90px -40px rgba(10,42,102,.65),0 0 0 1px rgba(24,119,242,.2),0 0 0 8px rgba(255,255,255,.6)}
+.spot-grid .spot-box.red{box-shadow:0 50px 90px -40px rgba(233,14,14,.55),0 0 0 1px rgba(255,255,255,.12),0 0 60px -10px rgba(233,14,14,.35);background:#120707}
+.spot-box.red .spot-play span{background:#E90E0E}
+.a-spot{background:#0A0A0A;color:#F4F1EC;padding:110px 0}
+.a-spot h2{font-family:var(--f-lux);font-style:italic;font-weight:400;font-size:clamp(40px,5vw,72px);line-height:1;margin-top:18px}
+.a-spot h2 b{display:block;font-family:var(--f-brand);font-style:normal;font-weight:900;color:#E90E0E;letter-spacing:-.03em}
+.a-spot p{color:#C9C3BA}
+@media (max-width:760px){
+ .spot-grid{grid-template-columns:1fr;gap:32px}
+ .spot-grid .spot-box{max-width:340px;margin:0 auto;border-radius:22px}
+ .spot-copy p{font-size:16.5px}
+ .a-spot{padding:72px 0}
+}
 </style>
 
 <div class="flash" id="flash"></div>
@@ -1000,7 +1021,7 @@ form .btn{justify-content:center;margin-top:6px}
   <header class="b-nav">
     <div class="wrap">
       <a class="logo" href="#start"><span class="l1">HIGH LEVEL</span><span class="l2">PERFORMANCE</span><span class="sig">by Victor</span></a>
-      <nav aria-label="Business"><a href="#b-leistungen" data-scroll>Leistungen</a><a href="#b-system" data-scroll>So geht’s</a><a href="#b-spot" data-scroll id="navSpot" hidden>Spot</a><a href="#b-pakete" data-scroll>Pakete</a><a href="#b-faq" data-scroll>FAQ</a></nav>
+      <nav aria-label="Business"><a href="#b-leistungen" data-scroll>Leistungen</a><a href="#b-system" data-scroll>So geht’s</a><a href="#b-spot" data-scroll>Spot</a><a href="#b-pakete" data-scroll>Pakete</a><a href="#b-faq" data-scroll>FAQ</a></nav>
       <a class="btn btn-blue" href="#b-kontakt" data-scroll>Potenzialanalyse</a>
     </div>
   </header>
@@ -1088,12 +1109,17 @@ form .btn{justify-content:center;margin-top:6px}
     </div>
   </section>
 
-  <section class="sec spot" id="b-spot" hidden>
-    <div class="wrap">
-      <div class="sec-head"><span class="eyebrow">Unser Werbespot</span><h2>So holen wir Ihre Kunden ab.</h2></div>
-      <div class="spot-box" id="spotBox">
-        <video id="spotVid" src="video/werbespot.mp4" muted loop playsinline autoplay preload="metadata"></video>
-        <button class="spot-play" id="spotPlay" type="button" aria-label="Video mit Ton abspielen"><span><svg viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z" fill="currentColor"/></svg></span>Mit Ton ansehen</button>
+  <section class="sec spot" id="b-spot">
+    <div class="wrap spot-grid">
+      <div class="spot-copy">
+        <span class="eyebrow">Unser Werbespot</span>
+        <h2>So holen wir Ihre Kunden ab.</h2>
+        <p>Ein echter Spot aus unserer Produktion: gedreht, geschnitten und als Anzeige ausgespielt. Genau so etwas bauen wir auch für Ihren Betrieb.</p>
+        <a class="btn btn-blue" href="#b-kontakt" data-scroll>Kostenlose Potenzialanalyse</a>
+      </div>
+      <div class="spot-box" data-spot>
+        <video src="video/spot-business.mp4" poster="assets/spot-poster-business.jpg" muted loop playsinline autoplay preload="metadata"></video>
+        <button class="spot-play" type="button" aria-label="Video mit Ton abspielen"><span><svg viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z" fill="currentColor"/></svg></span>Mit Ton ansehen</button>
       </div>
     </div>
   </section>
@@ -1252,6 +1278,21 @@ form .btn{justify-content:center;margin-top:6px}
   <div class="marquee" aria-hidden="true"><div><span>Artist Development</span><b>✦</b><span>Recording · Mix · Master</span><b>✦</b><span>Musikvideo</span><b>✦</b><span>Artist-Website</span><b>✦</b><span>Release-Strategie</span><b>✦</b><span>Fanaufbau</span><b>✦</b><span>Artist Development</span><b>✦</b><span>Recording · Mix · Master</span><b>✦</b><span>Musikvideo</span><b>✦</b><span>Artist-Website</span><b>✦</b><span>Release-Strategie</span><b>✦</b><span>Fanaufbau</span><b>✦</b></div></div>
   <div class="a-news" aria-label="Neuigkeiten"><div class="nw-track"><a class="nw" href="#a-kontakt" data-scroll><span class="nt">Studio-Termine jetzt anfragen</span><span class="nc"><i>→</i>Studio</span></a><a class="nw" href="#a-kontakt" data-scroll><span class="nt">All-Inclusive Studio Session: 10 Stunden, 3 Tracks, Reel inklusive</span><span class="nc"><i>→</i>Angebot</span></a><a class="nw" href="#a-kontakt" data-scroll><span class="nt">Artist-Websites auf Label-Niveau</span><span class="nc"><i>→</i>Service</span></a><a class="nw" href="#a-kontakt" data-scroll><span class="nt">Release-Strategie von Pre-Save bis Kampagne</span><span class="nc"><i>→</i>Service</span></a><a class="nw" href="#a-kontakt" data-scroll><span class="nt">Musikvideos aus dem eigenen Studio</span><span class="nc"><i>→</i>Visuals</span></a><a class="nw" href="#a-kontakt" data-scroll><span class="nt">Musik einreichen: Victor hört persönlich</span><span class="nc"><i>→</i>Artists</span></a><a class="nw" href="#a-kontakt" data-scroll><span class="nt">Studio-Termine jetzt anfragen</span><span class="nc"><i>→</i>Studio</span></a><a class="nw" href="#a-kontakt" data-scroll><span class="nt">All-Inclusive Studio Session: 10 Stunden, 3 Tracks, Reel inklusive</span><span class="nc"><i>→</i>Angebot</span></a><a class="nw" href="#a-kontakt" data-scroll><span class="nt">Artist-Websites auf Label-Niveau</span><span class="nc"><i>→</i>Service</span></a><a class="nw" href="#a-kontakt" data-scroll><span class="nt">Release-Strategie von Pre-Save bis Kampagne</span><span class="nc"><i>→</i>Service</span></a><a class="nw" href="#a-kontakt" data-scroll><span class="nt">Musikvideos aus dem eigenen Studio</span><span class="nc"><i>→</i>Visuals</span></a><a class="nw" href="#a-kontakt" data-scroll><span class="nt">Musik einreichen: Victor hört persönlich</span><span class="nc"><i>→</i>Artists</span></a></div></div>
 
+
+  <section class="a-spot" id="a-spot" aria-label="Unser Spot">
+    <div class="wrap spot-grid">
+      <div class="spot-copy">
+        <span class="kick">Unser Spot</span>
+        <h2>Sieh selbst, <b>wie wir arbeiten.</b></h2>
+        <p>Direkt aus unserem Studio: Aufnahme, Video und Reichweite aus einem Team. So klingt und so sieht High Level aus.</p>
+        <a class="btn btn-red" href="#a-kontakt" data-scroll>Musik einreichen</a>
+      </div>
+      <div class="spot-box red" data-spot>
+        <video src="video/spot-artists.mp4" poster="assets/spot-poster-artists.jpg" muted loop playsinline autoplay preload="metadata"></video>
+        <button class="spot-play" type="button" aria-label="Video mit Ton abspielen"><span><svg viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z" fill="currentColor"/></svg></span>Mit Ton ansehen</button>
+      </div>
+    </div>
+  </section>
 
   <section class="a-stage" aria-label="Von deiner Musik leben">
     <img src="assets/b2cf4112b18c.jpg" alt="Künstler auf der Bühne reckt das Mikrofon vor der Menge in die Höhe">
@@ -1575,7 +1616,7 @@ form .btn{justify-content:center;margin-top:6px}
 </div></div>
 <div class="lg-ov" id="lg-impressum" hidden role="dialog" aria-modal="true" aria-label="Impressum"><div class="lg-box"><button class="lg-x" type="button" aria-label="Schließen">×</button><h2>Impressum</h2>
 <p class="lg-s">Angaben gemäß § 5 DDG</p>
-<p><b>Viktor Fehl</b><br>High Level Performance by Victor<br>Koppelstraße 28<br>49593 Bersenbrück<br>Deutschland</p>
+<p><b>SMP</b><br>High Level Performance<br><br>Viktor Fehl<br>Koppelstraße 28<br>49593 Bersenbrück<br>Deutschland</p>
 <h3>Kontakt</h3>
 <p>Telefon: <a href="tel:+4915561068899">+49 15561 068899</a><br>E-Mail: <a href="mailto:info@highlevel-performance.de">info@highlevel-performance.de</a><br>Support: <a href="mailto:support@highlevel-performance.de">support@highlevel-performance.de</a></p>
 <h3>Steuerangaben</h3>
@@ -1699,12 +1740,13 @@ form .btn{justify-content:center;margin-top:6px}
 })();
 </script>
 <script>
-(function(){var box=document.getElementById('spotBox'),v=document.getElementById('spotVid'),b=document.getElementById('spotPlay');if(!box||!v)return;var sec=document.getElementById('b-spot'),nav=document.getElementById('navSpot');fetch(v.getAttribute('src'),{method:'HEAD'}).then(function(r){if(r.ok&&/video/.test(r.headers.get('content-type')||'video')){sec.hidden=false;if(nav)nav.hidden=false;var p=v.play();if(p&&p.catch)p.catch(function(){})}}).catch(function(){});
-function start(){v.loop=false;v.muted=false;v.currentTime=0;v.controls=true;box.classList.add('on');var p=v.play();if(p&&p.catch)p.catch(function(){});}
+(function(){document.querySelectorAll('[data-spot]').forEach(function(box){var v=box.querySelector('video'),b=box.querySelector('.spot-play');if(!v)return;
+function start(){document.querySelectorAll('[data-spot].on video').forEach(function(o){if(o!==v){o.pause()}});v.loop=false;v.muted=false;v.currentTime=0;v.controls=true;box.classList.add('on');var p=v.play();if(p&&p.catch)p.catch(function(){})}
 b.addEventListener('click',function(e){e.stopPropagation();start()});
 box.addEventListener('click',function(){if(!box.classList.contains('on'))start()});
 v.addEventListener('ended',function(){box.classList.remove('on');v.controls=false;v.muted=true;v.loop=true;v.currentTime=0;v.play()});
-})();
+if('IntersectionObserver' in window){new IntersectionObserver(function(es){es.forEach(function(x){if(!x.isIntersecting&&!box.classList.contains('on'))v.pause();else if(x.isIntersecting&&v.paused&&!box.classList.contains('on')){var p=v.play();if(p&&p.catch)p.catch(function(){})}})},{threshold:.2}).observe(box)}
+})})();
 </script>
 <script>
 (function(){var el=document.getElementById('hxCnt'),sc=document.querySelector('#artists .hx-scene'),hero=document.querySelector('#artists .a-hero');if(!el||!sc)return;
