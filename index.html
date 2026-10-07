@@ -1019,6 +1019,10 @@ form .btn{justify-content:center;margin-top:6px}
 @keyframes turing{0%{box-shadow:0 0 0 0 rgba(74,222,128,.7)}100%{box-shadow:0 0 0 12px rgba(74,222,128,0)}}
 @media (max-width:640px){.tu-call,.tu-ok{right:4%;padding:6px 10px 6px 6px;gap:7px}.tu-call b,.tu-ok b{font-size:9px}.tu-call small,.tu-ok small{font-size:8px}.tu-ic,.tu-ok i{width:22px;height:22px}.tu-ok{top:56%}}
 @media (prefers-reduced-motion:reduce){.tu-call,.tu-ok,.tu-ic{animation:none}}
+
+/* v55 Kontakt-Bild: Desktop eigene Version */
+.ct-bg-d{display:none!important}
+@media (min-width:641px){.ct-bg-d{display:block!important}.ct-bg-m{display:none!important}}
 </style>
 
 <div class="flash" id="flash"></div>
@@ -1255,7 +1259,7 @@ form .btn{justify-content:center;margin-top:6px}
 
   <div class="wrap" id="b-kontakt">
     <div class="contact">
-      <img class="ct-bg" src="assets/biz-cta-v3.jpg" alt="" aria-hidden="true">
+      <img class="ct-bg ct-bg-m" src="assets/biz-cta-v3.jpg" alt="" aria-hidden="true" loading="lazy"><img class="ct-bg ct-bg-d" src="assets/biz-cta-v4-desktop.jpg" alt="" aria-hidden="true" loading="lazy">
       <svg class="sys-bolts" viewBox="0 0 800 400" preserveAspectRatio="none" aria-hidden="true"><path d="M780 0 L700 90 L725 96 L640 200" fill="none" stroke="#38C8FF" stroke-width="1"/></svg>
       <div>
         <h2>Holen Sie sich Ihre kostenlose Potenzialanalyse.</h2>
