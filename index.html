@@ -1023,6 +1023,14 @@ form .btn{justify-content:center;margin-top:6px}
 /* v55 Kontakt-Bild: Desktop eigene Version */
 .ct-bg-d{display:none!important}
 @media (min-width:641px){.ct-bg-d{display:block!important}.ct-bg-m{display:none!important}}
+
+/* v56 Hero: ein Gruppenbild statt Collage */
+.b-vis::after{content:none!important;display:none!important}
+.b-vis img{object-position:50% 20%!important}
+.b-vis .ios{top:-26px!important;bottom:auto!important;left:-26px!important;right:auto!important;transform:none!important;animation:none!important}
+.b-vis .ios-l{white-space:nowrap}
+.b-hero .hero-bg{display:none}
+@media (max-width:640px){.b-vis .ios{top:-18px!important;left:6px!important;transform:scale(.78)!important;transform-origin:left top!important}}
 </style>
 
 <div class="flash" id="flash"></div>
@@ -1091,7 +1099,7 @@ form .btn{justify-content:center;margin-top:6px}
         <div class="note"><span>100 % unverbindlich</span><span>Antwort in 24 Stunden</span><span>Ehrliche Einschätzung</span></div>
       </div>
       <figure class="b-vis">
-        <img src="assets/biz-hero-v2.jpg" alt="Handwerker, Friseurin und Bauunternehmer in ihren Betrieben">
+        <img src="assets/biz-hero-v3.jpg" alt="Friseurin, Handwerker, Kosmetikerin und Koch aus dem Mittelstand">
         <div class="holo" aria-hidden="true">
           
           <div class="ios"><span class="ios-ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><div class="ios-tx"><div class="ios-top"><span>KALENDER</span><span>jetzt</span></div><div class="ios-main"><span class="ios-big">Do · 10:00</span><span class="ios-l">Neuer Termin<small>Erstgespräch · vorqualifiziert</small></span></div></div></div>
@@ -1108,6 +1116,21 @@ form .btn{justify-content:center;margin-top:6px}
       <div><b>1 Ansprechpartner</b><span>von der Anzeige bis zum Termin</span></div>
     </div>
   </div>
+
+  <section class="sec spot" id="b-spot">
+    <div class="wrap spot-grid">
+      <div class="spot-copy">
+        <span class="eyebrow">Unser Werbespot</span>
+        <h2>So holen wir Ihre Kunden ab.</h2>
+        <p>Ein echter Spot aus unserer Produktion: gedreht, geschnitten und als Anzeige ausgespielt. Genau so etwas bauen wir auch für Ihren Betrieb.</p>
+        <a class="btn btn-blue" href="#b-kontakt" data-scroll>Kostenlose Potenzialanalyse</a>
+      </div>
+      <div class="spot-box" data-spot>
+        <video src="video/spot-business.mp4" poster="assets/spot-poster-business.jpg" muted loop playsinline autoplay preload="metadata"></video>
+        <button class="spot-play" type="button" aria-label="Video mit Ton abspielen"><span><svg viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z" fill="currentColor"/></svg></span>Mit Ton ansehen</button>
+      </div>
+    </div>
+  </section>
 
   <section class="sec">
     <div class="wrap">
@@ -1155,20 +1178,7 @@ form .btn{justify-content:center;margin-top:6px}
     </div>
   </section>
 
-  <section class="sec spot" id="b-spot">
-    <div class="wrap spot-grid">
-      <div class="spot-copy">
-        <span class="eyebrow">Unser Werbespot</span>
-        <h2>So holen wir Ihre Kunden ab.</h2>
-        <p>Ein echter Spot aus unserer Produktion: gedreht, geschnitten und als Anzeige ausgespielt. Genau so etwas bauen wir auch für Ihren Betrieb.</p>
-        <a class="btn btn-blue" href="#b-kontakt" data-scroll>Kostenlose Potenzialanalyse</a>
-      </div>
-      <div class="spot-box" data-spot>
-        <video src="video/spot-business.mp4" poster="assets/spot-poster-business.jpg" muted loop playsinline autoplay preload="metadata"></video>
-        <button class="spot-play" type="button" aria-label="Video mit Ton abspielen"><span><svg viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z" fill="currentColor"/></svg></span>Mit Ton ansehen</button>
-      </div>
-    </div>
-  </section>
+  
 
   <section class="sec" id="b-leistungen">
     <div class="wrap">
