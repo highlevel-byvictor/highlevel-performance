@@ -998,6 +998,14 @@ form .btn{justify-content:center;margin-top:6px}
 @keyframes wuping{0%,15%{opacity:0;transform:translateY(6px) scale(.96)}25%,85%{opacity:1;transform:none}100%{opacity:0;transform:translateY(-4px)}}
 @media (max-width:640px){.wu-win{width:44%;top:6%;right:4%}.wu-body{padding:7px 8px 8px;gap:4px}.wu-h.s{display:none}.wu-btn{margin-top:2px;padding:4px 8px}.wu-ping{top:auto;bottom:7%;right:4%;font-size:9px;padding:5px 9px 5px 7px}}
 @media (prefers-reduced-motion:reduce){.wu-win,.wu-btn,.wu-ping{animation:none}}
+
+/* v53 Video-Karte */
+.vid-ui{position:absolute;inset:0;z-index:2;pointer-events:none;font-family:var(--f-mono)}
+.vu-rec,.vu-tag{position:absolute;top:12px;display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:999px;font-size:10px;font-weight:700;letter-spacing:.08em;color:#fff;text-shadow:0 1px 2px rgba(0,30,80,.5);background:linear-gradient(160deg,rgba(255,255,255,.5),rgba(255,255,255,.12) 50%,rgba(127,227,255,.22));border:1px solid rgba(255,255,255,.7);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:inset 0 1px 0 #fff,0 0 16px -6px rgba(56,200,255,.9)}
+.vu-rec{left:12px}.vu-tag{right:12px}
+.vu-rec i{width:8px;height:8px;border-radius:50%;background:#ff3b3b;box-shadow:0 0 8px #ff3b3b;animation:vurec 1.2s steps(2,start) infinite}
+@keyframes vurec{to{visibility:hidden}}
+@media (prefers-reduced-motion:reduce){.vu-rec i{animation:none}}
 </style>
 
 <div class="flash" id="flash"></div>
@@ -1158,7 +1166,7 @@ form .btn{justify-content:center;margin-top:6px}
 <div class="cu-chart"><span class="cu-l">Anfragen</span><svg viewBox="0 0 120 50"><path class="cu-area" d="M2 46 L20 42 L38 43 L56 32 L74 34 L92 18 L118 4 L118 50 L2 50Z"/><path class="cu-line" d="M2 46 L20 42 L38 43 L56 32 L74 34 L92 18 L118 4"/></svg></div>
 <div class="cu-cal"><span class="cu-l">Termine</span><div class="cu-grid"><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i><i style="--i:6"></i><i style="--i:7"></i><i style="--i:8"></i><i style="--i:9"></i><i style="--i:10"></i><i style="--i:11"></i><i style="--i:12"></i><i style="--i:13"></i><i style="--i:14"></i><i style="--i:15"></i></div></div>
 </div><svg class="svc-bolt" viewBox="0 0 200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M150 0 L118 46 L132 50 L96 120"/></svg></div><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span><h3>Werbung</h3><p>Meta, TikTok und Google Ads. Laufend optimiert.</p></div>
-        <div class="svc"><div class="svc-img"><img src="assets/biz-video-v2.jpg" alt="Werbespots und Imagefilme"><svg class="svc-bolt" viewBox="0 0 200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M150 0 L118 46 L132 50 L96 120"/></svg></div><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3"/></svg></span><h3>Video &amp; Creatives</h3><p>Spots, Fotos und Texte. Gedreht mit eigenem Kamerateam.</p></div>
+        <div class="svc"><div class="svc-img"><img src="assets/biz-video-v3.jpg" style="object-position:50% 0" alt="Viktor filmt mit Kamera und Gimbal"><div class="vid-ui" aria-hidden="true"><span class="vu-rec"><i></i>REC</span><span class="vu-tag">4K · Spot</span></div><svg class="svc-bolt" viewBox="0 0 200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M150 0 L118 46 L132 50 L96 120"/></svg></div><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3"/></svg></span><h3>Video &amp; Creatives</h3><p>Spots, Fotos und Texte. Gedreht mit eigenem Kamerateam.</p></div>
         <div class="svc wide"><div class="svc-img"><img src="assets/biz-phone-v2.jpg" alt="Telefonvertrieb"><svg class="svc-bolt" viewBox="0 0 200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M150 0 L118 46 L132 50 L96 120"/></svg></div><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><h3>Telefon &amp; Termine</h3><p>Wir rufen Ihre Anfragen an, qualifizieren sie und tragen den Termin direkt in Ihren Kalender ein.</p></div>
       </div>
       <div class="team-head"><span class="eyebrow">Ihr Team</span><h3>Die Köpfe hinter Ihrem Wachstum.</h3></div>
