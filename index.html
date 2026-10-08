@@ -1599,6 +1599,7 @@ form .btn{justify-content:center;margin-top:6px}
   function show(v){
     if(!['start','business','artists'].includes(v)) return false;
     views.forEach(s=>s.hidden=s.dataset.view!==v);
+    if(v==='start') document.querySelectorAll('#start .split, #start .chooser').forEach(x=>x.classList.remove('f-art','f-biz'));
     document.body.classList.toggle('biz',v==='business');
     document.body.classList.toggle('art',v==='artists');
     document.body.style.background=v==='business'?'#F6F8FC':'#0A0A0A';
