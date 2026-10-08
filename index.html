@@ -12,7 +12,30 @@
 <meta property="og:image" content="https://www.highlevel-performance.de/assets/team-2f12b1-v2.jpg">
 <meta name="twitter:card" content="summary_large_image">
 <meta property="og:description" content="High Level Performance by Victor: Funnel-Systeme, die Kunden bringen. Website, Creatives, Video und Ads auf Meta, TikTok und Google, für Handwerk, Mittelstand und Artists.">
-<style>:root{color-scheme:light;box-sizing:border-box}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style>
+<style>:root{color-scheme:light;box-sizing:border-box}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}/* v58 Pfeile öffnen eine Seite groß (Desktop) */
+.chooser{pointer-events:auto!important}
+.chooser button{background:none;border:0;padding:4px 6px;cursor:pointer;font:inherit}
+.chooser .ch-txt{font-family:var(--f-mono);font-size:10.5px;cursor:default}
+.split .door{min-width:0}
+.split .door > *{transition:opacity .35s}
+.split.f-art .door-art,.split.f-art:hover .door-art,.split.f-biz .door-biz,.split.f-biz:hover .door-biz{flex:1 1 100%!important}
+.split.f-art .door-biz,.split.f-art:hover .door-biz,.split.f-biz .door-art,.split.f-biz:hover .door-art{flex:0 0 0%!important;padding-inline:0!important}
+.split.f-art .door-biz > *,.split.f-biz .door-art > *{opacity:0}
+.split.f-art .door-art .ph,.split.f-biz .door-biz .ph{transform:none}
+@media (min-width:641px){
+#start .split.f-art,#start .split.f-biz{height:calc(100vh - 86px)!important;min-height:560px!important;max-height:none!important;flex:none!important}
+#start .split.f-art .door-biz,#start .split.f-biz .door-art{min-height:0!important}
+#start .split.f-art .door-biz > *,#start .split.f-biz .door-art > *{position:absolute!important;visibility:hidden}
+.split.f-art .door-art .ph,.split.f-biz .door-biz .ph{left:auto;right:0;top:0;width:62%;height:100%;-webkit-mask-image:linear-gradient(90deg,transparent 0%,#000 30%);mask-image:linear-gradient(90deg,transparent 0%,#000 30%)}
+.split.f-art .door-art .ph{object-position:55% 40%}
+.split.f-biz .door-biz .ph{object-position:50% 40%}
+.split.f-art .door-art > :not(canvas):not(.ph):not(.holo),.split.f-biz .door-biz > :not(canvas):not(.ph):not(.holo){max-width:min(46%,640px)}
+.split.f-biz .door-biz{background:linear-gradient(90deg,#FFFFFF 0%,#EAF2FF 40%,#0b1d3f 75%)}
+}
+.chooser.f-art .ch-ar.l,.chooser.f-biz .ch-ar.r{animation:none;opacity:1;transform:scale(1.25)}
+.chooser.f-art .ch-txt,.chooser.f-biz .ch-txt{cursor:pointer}
+@media (max-width:640px){.chooser{display:none!important}}
+</style>
 </head><body>
 
 
@@ -1048,10 +1071,10 @@ form .btn{justify-content:center;margin-top:6px}
 <section id="start" data-view="start">
   <div class="start-top">
     <a class="logo" href="#start"><span class="l1">HIGH LEVEL</span><span class="l2">PERFORMANCE</span><span class="sig">by Victor</span></a>
-    <div class="chooser" aria-hidden="true">
-      <span class="ch-ar l">←</span>
-      <span class="ch-txt">Wähle deine Welt</span>
-      <span class="ch-ar r">→</span>
+    <div class="chooser">
+      <button type="button" class="ch-ar l" data-focus="art" aria-label="Musik-Bereich groß anzeigen">←</button>
+      <button type="button" class="ch-txt" data-focus="none">Wähle deine Welt</button>
+      <button type="button" class="ch-ar r" data-focus="biz" aria-label="Business-Bereich groß anzeigen">→</button>
     </div>
     <span class="st-sp" aria-hidden="true"></span>
   </div>
@@ -1819,6 +1842,13 @@ function fmt(v){return v>=1e6?(v/1e6).toFixed(1).replace('.',',')+' Mio':Math.ro
 function go(){if(run)return;run=true;var t0=null;function st(t){if(!t0)t0=t;var p=Math.min(1,(t-t0)/D),e=1-Math.pow(1-p,3);el.textContent=fmt(T*e);if(p<1)requestAnimationFrame(st);else el.textContent='1,3 Mio'}requestAnimationFrame(st)}
 if('IntersectionObserver' in window){new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting&&x.boundingClientRect.width)go();else if(!x.isIntersecting)run=false})},{threshold:.3}).observe(sc)}else go();
 if(!matchMedia('(max-width:760px)').matches&&hero){hero.addEventListener('mousemove',function(e){var r=hero.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;sc.style.transform='translate('+(x*14)+'px,'+(y*10)+'px)'})}
+})();
+</script>
+<script>
+(function(){var ch=document.querySelector('#start .chooser'),sp=document.querySelector('#start .split');if(!ch||!sp)return;
+function set(f){sp.classList.remove('f-art','f-biz');ch.classList.remove('f-art','f-biz');if(f&&f!=='none'){sp.classList.add('f-'+f);ch.classList.add('f-'+f)}}
+ch.addEventListener('click',function(e){var b=e.target.closest('[data-focus]');if(!b)return;var f=b.getAttribute('data-focus');set(sp.classList.contains('f-'+f)?'none':f)});
+document.addEventListener('keydown',function(e){if(document.getElementById('start').hidden)return;if(e.key==='ArrowRight')set('biz');else if(e.key==='ArrowLeft')set('art');else if(e.key==='Escape')set('none')});
 })();
 </script>
 </body></html>
