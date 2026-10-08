@@ -34,7 +34,24 @@
 }
 .chooser.f-art .ch-ar.l,.chooser.f-biz .ch-ar.r{animation:none;opacity:1;transform:scale(1.25)}
 .chooser.f-art .ch-txt,.chooser.f-biz .ch-txt{cursor:pointer}
-@media (max-width:640px){.chooser{display:none!important}}
+@media (max-width:640px){.start-top .chooser{display:none!important}}
+/* v59 Auswahl-Leiste Handy */
+.chooser-m{display:none!important}
+@media (max-width:640px){
+#start .chooser-m{display:flex!important;position:absolute;left:50%;top:50%;right:auto;transform:translate(-50%,-50%);z-index:6;padding:6px 12px;gap:6px;transition:top .6s cubic-bezier(.2,.8,.2,1),opacity .3s;background:linear-gradient(135deg,rgba(20,20,30,.55),rgba(20,20,30,.3))}
+#start .chooser-m .ch-txt{font-size:9.5px}
+#start .chooser-m .ch-ar{font-size:15px;padding:4px 8px}
+.ch-ar.u{color:#ff4a4a;animation:nudgeU 1.4s ease-in-out infinite}
+.ch-ar.d{color:#38C8FF;animation:nudgeD 1.4s ease-in-out infinite}
+#start .split.f-art .chooser-m,#start .split.f-biz .chooser-m{top:28px}
+#start .split.f-art .chooser-m .ch-ar.u,#start .split.f-biz .chooser-m .ch-ar.d{animation:none;transform:scale(1.25)}
+#start .split.f-art .chooser-m .ch-txt,#start .split.f-biz .chooser-m .ch-txt{cursor:pointer}
+#start .split.f-art .door-biz,#start .split.f-biz .door-art{min-height:0!important;padding-block:0!important}
+#start .split.f-art .door-biz > *,#start .split.f-biz .door-art > *{position:absolute!important;visibility:hidden}
+#start .split.f-art .door-art .ph,#start .split.f-biz .door-biz .ph{height:62%}
+}
+@keyframes nudgeU{0%,100%{transform:translateY(0);opacity:.6}50%{transform:translateY(-4px);opacity:1}}
+@keyframes nudgeD{0%,100%{transform:translateY(0);opacity:.6}50%{transform:translateY(4px);opacity:1}}
 </style>
 </head><body>
 
@@ -1079,6 +1096,11 @@ form .btn{justify-content:center;margin-top:6px}
     <span class="st-sp" aria-hidden="true"></span>
   </div>
   <div class="split">
+    <div class="chooser chooser-m">
+      <button type="button" class="ch-ar u" data-focus="art" aria-label="Musik-Bereich groß anzeigen">↑</button>
+      <button type="button" class="ch-txt" data-focus="none">Wähle deine Welt</button>
+      <button type="button" class="ch-ar d" data-focus="biz" aria-label="Business-Bereich groß anzeigen">↓</button>
+    </div>
     <a class="door door-art" href="#artists" data-go="artists">
       <canvas id="artCanvas"></canvas>
       <img class="ph" src="assets/3e823fb88152.jpg" alt="Victor mit einer Sängerin am Studiopult">
@@ -1845,9 +1867,9 @@ if(!matchMedia('(max-width:760px)').matches&&hero){hero.addEventListener('mousem
 })();
 </script>
 <script>
-(function(){var ch=document.querySelector('#start .chooser'),sp=document.querySelector('#start .split');if(!ch||!sp)return;
-function set(f){sp.classList.remove('f-art','f-biz');ch.classList.remove('f-art','f-biz');if(f&&f!=='none'){sp.classList.add('f-'+f);ch.classList.add('f-'+f)}}
-ch.addEventListener('click',function(e){var b=e.target.closest('[data-focus]');if(!b)return;var f=b.getAttribute('data-focus');set(sp.classList.contains('f-'+f)?'none':f)});
+(function(){var chs=document.querySelectorAll('#start .chooser'),sp=document.querySelector('#start .split');if(!chs.length||!sp)return;
+function set(f){sp.classList.remove('f-art','f-biz');chs.forEach(function(c){c.classList.remove('f-art','f-biz')});if(f&&f!=='none'){sp.classList.add('f-'+f);chs.forEach(function(c){c.classList.add('f-'+f)})}}
+chs.forEach(function(ch){ch.addEventListener('click',function(e){var b=e.target.closest('[data-focus]');if(!b)return;var f=b.getAttribute('data-focus');e.preventDefault();e.stopPropagation();set(sp.classList.contains('f-'+f)?'none':f)})});
 document.addEventListener('keydown',function(e){if(document.getElementById('start').hidden)return;if(e.key==='ArrowRight')set('biz');else if(e.key==='ArrowLeft')set('art');else if(e.key==='Escape')set('none')});
 })();
 </script>
