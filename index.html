@@ -56,22 +56,11 @@
 }
 @keyframes nudgeU{0%,100%{transform:translateY(0);opacity:.6}50%{transform:translateY(-4px);opacity:1}}
 @keyframes nudgeD{0%,100%{transform:translateY(0);opacity:.6}50%{transform:translateY(4px);opacity:1}}
-/* v60 Mittelstand-Bilder oben (nur Handy) */
+/* v60 Mittelstand-Bild oben (nur Handy) */
 .b-crew{display:none}
 @media (max-width:640px){
-.b-crew{display:grid;gap:8px;margin:4px 0 26px}
-.b-crew figure{position:relative;margin:0;overflow:hidden;border-radius:18px;box-shadow:0 14px 30px -18px rgba(10,42,102,.55)}
-.b-crew img{width:100%;height:100%;object-fit:cover;display:block}
-.b-crew figcaption{position:absolute;left:8px;bottom:8px;padding:4px 9px;border-radius:999px;font:600 10.5px/1 var(--f-brand);letter-spacing:.02em;color:#0A2A66;background:rgba(255,255,255,.86);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
-.b-crew.v1{grid-template-columns:repeat(4,1fr)}
-.b-crew.v1 figure{aspect-ratio:3/5}
-.b-crew.v1 figcaption{left:50%;transform:translateX(-50%);font-size:9px;padding:4px 7px;white-space:nowrap}
-.b-crew.v2{grid-template-columns:1fr 1fr}
-.b-crew.v2 figure{aspect-ratio:4/4.4}
-.b-crew.v3{grid-template-columns:1.25fr 1fr;grid-template-rows:repeat(3,1fr);height:420px}
-.b-crew.v3 .c1{grid-row:1/4}
-.b-crew.v3 .c3 img,.b-crew.v3 .c4 img{object-position:50% 22%}
-.b-crew.v3 .c2 img{object-position:50% 62%}
+.b-crew{display:block;margin:0 0 26px;border-radius:22px;overflow:hidden;box-shadow:0 18px 36px -20px rgba(10,42,102,.6)}
+.b-crew img{display:block;width:100%;aspect-ratio:16/10;object-fit:cover;object-position:50% 20%}
 }
 </style>
 </head><body>
@@ -1163,12 +1152,7 @@ form .btn{justify-content:center;margin-top:6px}
     </svg>
     <div class="wrap">
       <div>
-        <div class="b-crew v1">
-          <figure class="c1"><img src="assets/crew-zimmerei.jpg" alt="Zimmermann vor Holzlager"><figcaption>Zimmerei</figcaption></figure>
-          <figure class="c2"><img src="assets/crew-kosmetik.jpg" alt="Kosmetikerin in ihrem Studio"><figcaption>Kosmetik</figcaption></figure>
-          <figure class="c3"><img src="assets/crew-gastro.jpg" alt="Koch in der Küche"><figcaption>Gastronomie</figcaption></figure>
-          <figure class="c4"><img src="assets/crew-versicherung.jpg" alt="Versicherungsmakler im Büro"><figcaption>Versicherung</figcaption></figure>
-        </div>
+        <div class="b-crew"><img src="assets/mittelstand-a.jpg" alt="Selbstständige aus Handwerk, Beratung und Dienstleistung"></div>
         <span class="eyebrow">Für Selbstständige, Handwerk &amp; Mittelstand</span>
         <h1>Neue Kunden.<br>Direkt in Ihren <em>Kalender.<svg viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9 L80 6 L74 11 L170 5 L162 10 L298 4" fill="none" stroke="#38C8FF" stroke-width="2"/></svg></em></h1>
         <p class="lead">Wir machen Sie sichtbar, rufen jede Anfrage für Sie an und führen auf Wunsch das Verkaufsgespräch. Sie bekommen fertige Termine.</p>
