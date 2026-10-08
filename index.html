@@ -1031,6 +1031,14 @@ form .btn{justify-content:center;margin-top:6px}
 .b-vis .ios-l{white-space:nowrap}
 .b-hero .hero-bg{display:none}
 @media (max-width:640px){.b-vis .ios{top:-18px!important;left:6px!important;transform:scale(.78)!important;transform-origin:left top!important}}
+
+/* v57 Button unter dem Spot */
+.spot-col{display:flex;flex-direction:column;align-items:center;gap:22px;min-width:0}
+.spot-col .spot-box{width:100%}
+.spot-more{min-width:220px;justify-content:center;font-size:17px;padding-block:16px;animation:spotpulse 2.4s ease-in-out infinite}
+@keyframes spotpulse{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+@media (max-width:640px){.spot-col .spot-box{max-width:340px}.spot-more{width:100%;max-width:340px}}
+@media (prefers-reduced-motion:reduce){.spot-more{animation:none}}
 </style>
 
 <div class="flash" id="flash"></div>
@@ -1125,10 +1133,10 @@ form .btn{justify-content:center;margin-top:6px}
         <p>Ein echter Spot aus unserer Produktion: gedreht, geschnitten und als Anzeige ausgespielt. Genau so etwas bauen wir auch für Ihren Betrieb.</p>
         <a class="btn btn-blue" href="#b-kontakt" data-scroll>Kostenlose Potenzialanalyse</a>
       </div>
-      <div class="spot-box" data-spot>
+      <div class="spot-col"><div class="spot-box" data-spot>
         <video src="video/spot-business.mp4" poster="assets/spot-poster-business.jpg" muted loop playsinline autoplay preload="metadata"></video>
         <button class="spot-play" type="button" aria-label="Video mit Ton abspielen"><span><svg viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z" fill="currentColor"/></svg></span>Mit Ton ansehen</button>
-      </div>
+      </div><a class="btn btn-blue spot-more" href="#b-kontakt" data-scroll>Mehr dazu <span aria-hidden="true">↓</span></a></div>
     </div>
   </section>
 
@@ -1343,10 +1351,10 @@ form .btn{justify-content:center;margin-top:6px}
         <p>Direkt aus unserem Studio: Aufnahme, Video und Reichweite aus einem Team. So klingt und so sieht High Level aus.</p>
         <a class="btn btn-red" href="#a-kontakt" data-scroll>Musik einreichen</a>
       </div>
-      <div class="spot-box red" data-spot>
+      <div class="spot-col"><div class="spot-box red" data-spot>
         <video src="video/spot-artists.mp4" poster="assets/spot-poster-artists.jpg" muted loop playsinline autoplay preload="metadata"></video>
         <button class="spot-play" type="button" aria-label="Video mit Ton abspielen"><span><svg viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z" fill="currentColor"/></svg></span>Mit Ton ansehen</button>
-      </div>
+      </div><a class="btn btn-red spot-more" href="#a-kontakt" data-upload>Mehr dazu <span aria-hidden="true">↓</span></a></div>
     </div>
   </section>
 
