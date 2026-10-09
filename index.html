@@ -6,6 +6,14 @@
 <meta name="description" content="High Level Performance by Victor: Funnel-Systeme, die Kunden bringen. Website, Creatives, Video und Ads auf Meta, TikTok und Google, für Handwerk, Mittelstand und Artists.">
 <meta name="robots" content="index,follow">
 <link rel="canonical" href="https://www.highlevel-performance.de/">
+<link rel="manifest" href="/manifest.webmanifest">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="icon" type="image/png" sizes="32x32" href="/assets/app/favicon-32.png">
+<link rel="apple-touch-icon" href="/assets/app/apple-touch-icon.png">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="apple-mobile-web-app-title" content="High Level">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://www.highlevel-performance.de/">
 <meta property="og:title" content="High Level Performance · by Victor">
@@ -1896,4 +1904,5 @@ chs.forEach(function(ch){ch.addEventListener('click',function(e){var b=e.target.
 document.addEventListener('keydown',function(e){if(document.getElementById('start').hidden)return;if(e.key==='ArrowRight')set('biz');else if(e.key==='ArrowLeft')set('art');else if(e.key==='Escape')set('none')});
 })();
 </script>
+<script>if('serviceWorker' in navigator)addEventListener('load',()=>navigator.serviceWorker.register('/sw.js').catch(()=>{}))</script>
 </body></html>
