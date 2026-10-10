@@ -151,6 +151,27 @@
 @media (max-width:900px){.ak-visual{height:280px}.ak-wow{height:290px}.ak-chart{width:190px}.ak-bars{height:50px}.ak-chart svg{height:46px}}
 @media (max-width:480px){.ak-visual{height:250px;margin-top:20px}.ak-wow{height:265px;right:-20px}.ak-chart{width:168px;padding:12px 12px 10px}.ak-ping{left:0;bottom:14px}.ak-post{display:none}}
 @media (prefers-reduced-motion:reduce){.ak-bolts path,.aktion::after,.ak-spark,.ak-wow,.ak-float,.ak-bars i,.ak-chart svg,.ak-card::after{animation:none!important}.ak-chart svg{stroke-dashoffset:0}.ak-ping{opacity:1;transform:none}}
+
+/* Aktion Artists: Schwarz/Rot */
+.aktion.art{background:radial-gradient(120% 140% at 85% 0%,#B10C0C 0%,#3A0B0B 45%,#0B0A0A 100%);font-family:var(--f-body)}
+.aktion.art .ak-bolts path{stroke:#ff8a8a;filter:drop-shadow(0 0 6px #E90E0E)}
+.aktion.art::after{animation-name:akFlashBgR}
+@keyframes akFlashBgR{0%,86%,100%{background:radial-gradient(60% 50% at 80% 15%,rgba(255,80,80,0),rgba(255,80,80,0))}88%,91%{background:radial-gradient(60% 50% at 80% 15%,rgba(255,80,80,.16),rgba(255,80,80,0))}}
+.aktion.art .ak-spark{background:#ffd6d6;box-shadow:0 0 12px 3px rgba(233,14,14,.8)}
+.aktion.art .ak-live{color:#ffd6d6;border-color:rgba(255,90,90,.5);background:rgba(233,14,14,.12)}
+.aktion.art h2{font-family:var(--f-brand)}
+.aktion.art h2 em{color:#ff4a4a;font-family:var(--f-lux);font-style:italic;font-weight:400}
+.aktion.art .ak-copy>p,.aktion.art .ak-was,.aktion.art .ak-feat li,.aktion.art .ak-spots{color:#e6d5d0}
+.aktion.art .ak-k,.aktion.art .ak-chart span{color:#ffb3b3}
+.aktion.art .ak-bars i{background:linear-gradient(180deg,#ff6b6b,#E90E0E)}
+.aktion.art .ak-bar i{background:linear-gradient(90deg,#ff6b6b,#E90E0E)}
+.aktion.art .ak-cd div{background:rgba(0,0,0,.35)}
+.aktion.art .ak-cd span,.aktion.art .ak-fine{color:#c9aaa3}
+.aktion.art .ak-card{animation-name:akGlowR}
+@keyframes akGlowR{0%,100%{box-shadow:0 30px 70px -30px rgba(0,0,0,.7),0 0 0 0 rgba(233,14,14,0)}50%{box-shadow:0 30px 70px -30px rgba(0,0,0,.7),0 0 40px 0 rgba(233,14,14,.4)}}
+.aktion.art .ak-price{text-shadow:0 0 30px rgba(233,14,14,.55)}
+.aktion.art .ak-btn{background:#E90E0E;color:#fff;box-shadow:0 10px 30px -10px rgba(233,14,14,.8)}
+.aktion.art .ak-wow{filter:saturate(1.1) contrast(1.05);-webkit-mask-image:radial-gradient(ellipse 52% 56% at 50% 46%,#000 30%,rgba(0,0,0,.6) 52%,transparent 72%);mask-image:radial-gradient(ellipse 52% 56% at 50% 46%,#000 30%,rgba(0,0,0,.6) 52%,transparent 72%)}
 </style>
 <link rel="stylesheet" href="assets/levi/levi.css">
 </head><body>
@@ -1533,6 +1554,38 @@ form .btn{justify-content:center;margin-top:6px}
   <div class="a-news" aria-label="Neuigkeiten"><div class="nw-track"><a class="nw" href="#a-kontakt" data-scroll><span class="nt">Studio-Termine jetzt anfragen</span><span class="nc"><i>→</i>Studio</span></a><a class="nw" href="#a-kontakt" data-scroll><span class="nt">All-Inclusive Studio Session: 10 Stunden, 3 Tracks, Reel inklusive</span><span class="nc"><i>→</i>Angebot</span></a><a class="nw" href="#a-kontakt" data-scroll><span class="nt">Artist-Websites auf Label-Niveau</span><span class="nc"><i>→</i>Service</span></a><a class="nw" href="#a-kontakt" data-scroll><span class="nt">Release-Strategie von Pre-Save bis Kampagne</span><span class="nc"><i>→</i>Service</span></a><a class="nw" href="#a-kontakt" data-scroll><span class="nt">Musikvideos aus dem eigenen Studio</span><span class="nc"><i>→</i>Visuals</span></a><a class="nw" href="#a-kontakt" data-scroll><span class="nt">Musik einreichen: Victor hört persönlich</span><span class="nc"><i>→</i>Artists</span></a><a class="nw" href="#a-kontakt" data-scroll><span class="nt">Studio-Termine jetzt anfragen</span><span class="nc"><i>→</i>Studio</span></a><a class="nw" href="#a-kontakt" data-scroll><span class="nt">All-Inclusive Studio Session: 10 Stunden, 3 Tracks, Reel inklusive</span><span class="nc"><i>→</i>Angebot</span></a><a class="nw" href="#a-kontakt" data-scroll><span class="nt">Artist-Websites auf Label-Niveau</span><span class="nc"><i>→</i>Service</span></a><a class="nw" href="#a-kontakt" data-scroll><span class="nt">Release-Strategie von Pre-Save bis Kampagne</span><span class="nc"><i>→</i>Service</span></a><a class="nw" href="#a-kontakt" data-scroll><span class="nt">Musikvideos aus dem eigenen Studio</span><span class="nc"><i>→</i>Visuals</span></a><a class="nw" href="#a-kontakt" data-scroll><span class="nt">Musik einreichen: Victor hört persönlich</span><span class="nc"><i>→</i>Artists</span></a></div></div>
 
 
+<section class="aktion art" id="a-aktion" data-intro-hide aria-label="Oktober-Aktion für Artists">
+    <svg class="ak-bolts" viewBox="0 0 1200 600" preserveAspectRatio="none" aria-hidden="true"><path class="b1" d="M1150 -10 L1060 120 L1092 128 L980 270 L1012 278 L900 420"/><path class="b2" d="M60 610 L150 500 L124 492 L240 380 L214 372 L320 270"/><path class="b3" d="M640 -10 L590 80 L612 86 L548 190"/></svg>
+    <span class="ak-spark s1"></span><span class="ak-spark s2"></span><span class="ak-spark s3"></span><span class="ak-spark s4"></span>
+    <div class="wrap ak-grid">
+      <div class="ak-copy">
+        <span class="ak-live"><i></i>Live · Oktober-Aktion</span>
+        <h2>Deine Artist-Website mit <em>Fan-Assistent</em> und Social-Autopilot.</h2>
+        <p>Das neue Paket <b>Artist Smart</b> zum Einführungspreis – nur für die ersten 30 Artists bis 31. Oktober.</p>
+        <div class="ak-visual" aria-hidden="true">
+          <img class="ak-wow" src="assets/aktion-artist-v1.webp" alt="" loading="lazy" width="608" height="760">
+          <div class="ak-float ak-chart"><span>Deine Reichweite</span><div class="ak-bars"><i></i><i></i><i></i><i></i><i></i><i></i></div><svg viewBox="0 0 120 50"><path d="M4 44 L40 34 L64 38 L116 6" fill="none" stroke="#ff6b6b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M104 6 L116 6 L114 18" fill="none" stroke="#ff6b6b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="ak-float ak-ping"><b>+1</b>Neue Booking-Anfrage</div>
+          <div class="ak-float ak-post"><i></i>Release läuft auf 5 Kanälen</div>
+        </div>
+        <ul class="ak-feat">
+          <li><b>Fan-Assistent</b>beantwortet Booking- und Fan-Fragen</li>
+          <li><b>Social-Autopilot</b>einmal posten, überall gehört</li>
+          <li><b>Release-Banner</b>dein neuer Song ganz oben</li>
+        </ul>
+      </div>
+      <div class="ak-card">
+        <span class="ak-k">Einführungspreis</span>
+        <div class="ak-price">595 €<small>einmalig</small></div>
+        <div class="ak-was">danach 1.190 € · + 89 € / Monat</div>
+        <div class="ak-cd" aria-label="Verbleibende Zeit"><div><b data-cd="d">--</b><span>Tage</span></div><div><b data-cd="h">--</b><span>Std</span></div><div><b data-cd="m">--</b><span>Min</span></div><div><b data-cd="s">--</b><span>Sek</span></div></div>
+        <div class="ak-spots" data-frei="30" data-gesamt="30"><div class="ak-bar"><i></i></div><span>Noch <b>30</b> von 30 Plätzen frei</span></div>
+        <a class="btn btn-red ak-btn" href="website-artists/#fragebogen">Jetzt Platz sichern</a>
+        <small class="ak-fine">Gilt nur für das Paket Artist Smart. Endpreis, keine Umsatzsteuer nach § 19 UStG.</small>
+      </div>
+    </div>
+  </section>
+
   <section class="a-spot" id="a-spot" aria-label="Unser Spot">
     <div class="wrap spot-grid">
       <div class="spot-copy">
@@ -2029,15 +2082,17 @@ document.addEventListener('keydown',function(e){if(document.getElementById('star
     document.querySelectorAll('[data-intro-hide]').forEach(function(el){el.remove();});
   }
   if(new Date()>end){over();return;}
-  var sp=document.querySelector('.ak-spots');
-  if(sp){var f=+sp.dataset.frei,g=+sp.dataset.gesamt;sp.querySelector('b').textContent=f;sp.querySelector('.ak-bar i').style.width=Math.max(4,f/g*100)+'%';
-    if(f<=0){over();return;}}
-  var el={};['d','h','m','s'].forEach(function(k){el[k]=document.querySelector('[data-cd="'+k+'"]');});
+  document.querySelectorAll('.ak-spots').forEach(function(sp){
+    var f=+sp.dataset.frei,g=+sp.dataset.gesamt;sp.querySelector('b').textContent=f;sp.querySelector('.ak-bar i').style.width=Math.max(4,f/g*100)+'%';
+    if(f<=0){var sec=sp.closest('.aktion');if(sec)sec.remove();}
+  });
+  var cds=[].slice.call(document.querySelectorAll('.ak-cd'));
   function pad(n){return n<10?'0'+n:''+n;}
   function tick(){var t=end-new Date();if(t<=0){over();return;}
-    el.d.textContent=Math.floor(t/864e5);el.h.textContent=pad(Math.floor(t/36e5)%24);el.m.textContent=pad(Math.floor(t/6e4)%60);el.s.textContent=pad(Math.floor(t/1e3)%60);
+    var v={d:Math.floor(t/864e5),h:pad(Math.floor(t/36e5)%24),m:pad(Math.floor(t/6e4)%60),s:pad(Math.floor(t/1e3)%60)};
+    cds.forEach(function(c){['d','h','m','s'].forEach(function(k){var e=c.querySelector('[data-cd="'+k+'"]');if(e)e.textContent=v[k];});});
     setTimeout(tick,1000);}
-  if(el.d)tick();
+  if(cds.length)tick();
 })();
 </script>
 <script src="assets/levi/levi.js" defer></script>
