@@ -110,6 +110,47 @@
 @media (max-width:900px){.ak-grid{grid-template-columns:1fr}.ak-feat{grid-template-columns:1fr}}
 @media (max-width:799px){.plans.p4{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){.ak-live i,.ak-card,.b-nav nav .nav-aktion::after{animation:none}}
+
+/* Aktion: Bewegung, Blitze, Bild */
+.aktion::before{display:none}
+.ak-bolts{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+.ak-bolts path{fill:none;stroke:#7fe3ff;stroke-width:2.2;stroke-linejoin:round;opacity:.12;filter:drop-shadow(0 0 6px #38C8FF)}
+.ak-bolts .b1{animation:akBolt 5.2s infinite}
+.ak-bolts .b2{animation:akBolt 6.4s 1.7s infinite}
+.ak-bolts .b3{animation:akBolt 7.1s 3.3s infinite}
+@keyframes akBolt{0%,86%,100%{opacity:.12}88%{opacity:1}89%{opacity:.25}91%{opacity:.95}94%{opacity:.12}}
+.aktion{isolation:isolate}
+.aktion::after{content:"";position:absolute;inset:0;background:radial-gradient(60% 50% at 75% 20%,rgba(127,227,255,.0),rgba(127,227,255,0));pointer-events:none;animation:akFlashBg 5.2s infinite}
+@keyframes akFlashBg{0%,86%,100%{background:radial-gradient(60% 50% at 80% 15%,rgba(127,227,255,0),rgba(127,227,255,0))}88%,91%{background:radial-gradient(60% 50% at 80% 15%,rgba(127,227,255,.18),rgba(127,227,255,0))}}
+.ak-spark{position:absolute;width:6px;height:6px;border-radius:50%;background:#bff3ff;box-shadow:0 0 12px 3px rgba(56,200,255,.8);opacity:0;pointer-events:none;animation:akSpark 4s infinite}
+.ak-spark.s1{left:8%;top:22%}.ak-spark.s2{left:46%;top:12%;animation-delay:1.2s}.ak-spark.s3{left:58%;top:78%;animation-delay:2.1s}.ak-spark.s4{left:92%;top:64%;animation-delay:3s}
+@keyframes akSpark{0%,100%{opacity:0;transform:translateY(0) scale(.6)}20%{opacity:1}60%{opacity:.6;transform:translateY(-26px) scale(1)}80%{opacity:0}}
+.ak-visual{position:relative;height:330px;margin-top:26px}
+.ak-wow{position:absolute;right:0;bottom:-10px;height:340px;width:auto;-webkit-mask-image:radial-gradient(ellipse 62% 60% at 55% 45%,#000 55%,transparent 78%);mask-image:radial-gradient(ellipse 62% 60% at 55% 45%,#000 55%,transparent 78%);animation:akFloatImg 6s ease-in-out infinite}
+@keyframes akFloatImg{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+.ak-float{position:absolute;border-radius:16px;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);color:#fff;box-shadow:0 18px 40px -18px rgba(0,0,0,.6)}
+.ak-chart{left:0;top:10px;width:230px;padding:14px 16px 12px;animation:akBob 5s ease-in-out infinite}
+.ak-chart span{display:block;font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#bff3ff;margin-bottom:8px}
+.ak-bars{display:flex;align-items:flex-end;gap:6px;height:64px}
+.ak-bars i{flex:1;border-radius:4px 4px 2px 2px;background:linear-gradient(180deg,#38C8FF,#1877F2);transform-origin:bottom;animation:akGrow 3.6s ease-in-out infinite}
+.ak-bars i:nth-child(1){height:22%}.ak-bars i:nth-child(2){height:34%;animation-delay:.1s}.ak-bars i:nth-child(3){height:30%;animation-delay:.2s}.ak-bars i:nth-child(4){height:52%;animation-delay:.3s}.ak-bars i:nth-child(5){height:72%;animation-delay:.4s}.ak-bars i:nth-child(6){height:100%;animation-delay:.5s}
+@keyframes akGrow{0%{transform:scaleY(.15)}35%,80%{transform:scaleY(1)}100%{transform:scaleY(.15)}}
+.ak-chart svg{position:absolute;left:14px;right:14px;top:30px;width:calc(100% - 28px);height:58px;stroke-dasharray:160;stroke-dashoffset:160;animation:akLine 3.6s ease-in-out infinite}
+@keyframes akLine{0%{stroke-dashoffset:160}40%,80%{stroke-dashoffset:0}100%{stroke-dashoffset:160}}
+.ak-ping{left:30px;bottom:24px;padding:12px 16px;font-family:var(--f-brand);font-weight:600;font-size:14px;display:flex;align-items:center;gap:10px;animation:akPop 3.6s ease-in-out infinite}
+.ak-ping b{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#22c55e;font-size:13px}
+@keyframes akPop{0%,100%{transform:translateY(8px) scale(.94);opacity:0}15%,75%{transform:none;opacity:1}}
+.ak-post{right:12px;top:22px;padding:9px 13px;font-size:13px;display:flex;align-items:center;gap:8px;animation:akBob 6s 1s ease-in-out infinite}
+.ak-post i{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 0 rgba(34,197,94,.7);animation:akPulseG 1.6s infinite}
+@keyframes akPulseG{0%{box-shadow:0 0 0 0 rgba(34,197,94,.7)}70%{box-shadow:0 0 0 8px rgba(34,197,94,0)}100%{box-shadow:0 0 0 0 rgba(34,197,94,0)}}
+@keyframes akBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-8px)}}
+.ak-card{overflow:hidden}
+.ak-card::after{content:"";position:absolute;top:0;bottom:0;left:-60%;width:40%;background:linear-gradient(105deg,transparent,rgba(255,255,255,.18),transparent);transform:skewX(-18deg);animation:akShine 4.5s ease-in-out infinite;pointer-events:none}
+@keyframes akShine{0%,55%{left:-60%}85%,100%{left:130%}}
+.ak-price{text-shadow:0 0 30px rgba(56,200,255,.45)}
+@media (max-width:900px){.ak-visual{height:280px}.ak-wow{height:290px}.ak-chart{width:190px}.ak-bars{height:50px}.ak-chart svg{height:46px}}
+@media (max-width:480px){.ak-visual{height:250px;margin-top:20px}.ak-wow{height:265px;right:-20px}.ak-chart{width:168px;padding:12px 12px 10px}.ak-ping{left:0;bottom:14px}.ak-post{display:none}}
+@media (prefers-reduced-motion:reduce){.ak-bolts path,.aktion::after,.ak-spark,.ak-wow,.ak-float,.ak-bars i,.ak-chart svg,.ak-card::after{animation:none!important}.ak-chart svg{stroke-dashoffset:0}.ak-ping{opacity:1;transform:none}}
 </style>
 <link rel="stylesheet" href="assets/levi/levi.css">
 </head><body>
@@ -1235,11 +1276,19 @@ form .btn{justify-content:center;margin-top:6px}
   </div>
 
 <section class="aktion" id="b-aktion" data-intro-hide aria-label="Oktober-Aktion">
+    <svg class="ak-bolts" viewBox="0 0 1200 600" preserveAspectRatio="none" aria-hidden="true"><path class="b1" d="M1150 -10 L1060 120 L1092 128 L980 270 L1012 278 L900 420"/><path class="b2" d="M60 610 L150 500 L124 492 L240 380 L214 372 L320 270"/><path class="b3" d="M640 -10 L590 80 L612 86 L548 190"/></svg>
+    <span class="ak-spark s1"></span><span class="ak-spark s2"></span><span class="ak-spark s3"></span><span class="ak-spark s4"></span>
     <div class="wrap ak-grid">
       <div class="ak-copy">
         <span class="ak-live"><i></i>Live · Oktober-Aktion</span>
         <h2>Ihre Website mit eigenem <em>KI-Assistenten</em> und Social-Autopilot.</h2>
         <p>Das neue Paket <b>Smart</b> zum Einführungspreis – nur für die ersten 30 Buchungen bis 31. Oktober.</p>
+        <div class="ak-visual" aria-hidden="true">
+          <img class="ak-wow" src="assets/aktion-wow-v1.webp" alt="" loading="lazy" width="736" height="750">
+          <div class="ak-float ak-chart"><span>Ihre Reichweite</span><div class="ak-bars"><i></i><i></i><i></i><i></i><i></i><i></i></div><svg viewBox="0 0 120 50"><path d="M4 44 L40 34 L64 38 L116 6" fill="none" stroke="#38C8FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M104 6 L116 6 L114 18" fill="none" stroke="#38C8FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <div class="ak-float ak-ping"><b>+1</b>Neue Anfrage</div>
+          <div class="ak-float ak-post"><i></i>Post läuft auf 5 Kanälen</div>
+        </div>
         <ul class="ak-feat">
           <li><b>KI-Assistent</b>beantwortet Fragen rund um die Uhr</li>
           <li><b>Social-Autopilot</b>einmal posten, überall online</li>
