@@ -69,7 +69,49 @@
 .b-crew .crew-holo{position:absolute!important;inset:auto auto 46px 10px!important;width:auto!important;height:auto!important;z-index:2;pointer-events:none}
 .b-crew .crew-holo .ios{position:static!important;transform:scale(.82)!important;transform-origin:left bottom!important;animation:none!important}
 }
+
+/* ---------- Oktober-Aktion & 4 Pakete ---------- */
+.aktion{position:relative;padding-block:clamp(48px,7vw,84px);background:radial-gradient(120% 140% at 85% 0%,#1877F2 0%,#0A2A66 55%,#071a44 100%);color:#fff;overflow:hidden}
+.aktion::before{content:"";position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 400' preserveAspectRatio='none'%3E%3Cpath d='M1180 20 L1080 110 L1110 118 L990 220' stroke='%2338C8FF' stroke-opacity='.35' stroke-width='2' fill='none'/%3E%3Cpath d='M20 380 L120 320 L100 312 L220 250' stroke='%2338C8FF' stroke-opacity='.25' stroke-width='2' fill='none'/%3E%3C/svg%3E") center/100% 100% no-repeat;pointer-events:none}
+.ak-grid{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,64px);align-items:center}
+.ak-live{display:inline-flex;align-items:center;gap:10px;font-family:var(--f-mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:#bff3ff;padding:7px 14px;border:1px solid rgba(56,200,255,.45);border-radius:999px;background:rgba(56,200,255,.08)}
+.ak-live i{width:9px;height:9px;border-radius:50%;background:#ff3b3b;box-shadow:0 0 0 0 rgba(255,59,59,.7);animation:akPulse 1.4s infinite}
+@keyframes akPulse{0%{box-shadow:0 0 0 0 rgba(255,59,59,.7)}70%{box-shadow:0 0 0 10px rgba(255,59,59,0)}100%{box-shadow:0 0 0 0 rgba(255,59,59,0)}}
+.aktion h2{margin:18px 0 0;font-family:var(--f-brand);font-weight:800;font-size:clamp(30px,3.6vw,48px);line-height:1.08;letter-spacing:-.02em}
+.aktion h2 em{font-style:normal;color:#38C8FF}
+.aktion .ak-copy>p{margin:16px 0 0;font-size:18px;color:#cfdcf5;max-width:46ch}
+.ak-feat{list-style:none;margin:26px 0 0;padding:0;display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.ak-feat li{padding:14px 16px;border-radius:14px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);font-size:14px;color:#cfdcf5;line-height:1.4}
+.ak-feat b{display:block;color:#fff;font-family:var(--f-brand);font-size:15px;margin-bottom:3px}
+.ak-card{position:relative;padding:30px;border-radius:22px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);box-shadow:0 30px 70px -30px rgba(0,0,0,.6);animation:akGlow 2.6s ease-in-out infinite}
+@keyframes akGlow{0%,100%{box-shadow:0 30px 70px -30px rgba(0,0,0,.6),0 0 0 0 rgba(56,200,255,0)}50%{box-shadow:0 30px 70px -30px rgba(0,0,0,.6),0 0 40px 0 rgba(56,200,255,.35)}}
+.ak-k{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#bff3ff}
+.ak-price{margin-top:6px;font-family:var(--f-brand);font-weight:900;font-size:clamp(52px,6vw,72px);line-height:1;letter-spacing:-.03em}
+.ak-price small{font-size:15px;font-weight:500;letter-spacing:0;margin-left:8px;color:#cfdcf5}
+.ak-was{margin-top:6px;color:#cfdcf5;font-size:15px}
+.ak-cd{margin-top:20px;display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.ak-cd div{padding:10px 4px;border-radius:12px;background:rgba(3,10,30,.35);text-align:center}
+.ak-cd b{display:block;font-family:var(--f-brand);font-size:24px;font-variant-numeric:tabular-nums}
+.ak-cd span{font-size:11px;color:#9fb3d9;text-transform:uppercase;letter-spacing:.08em}
+.ak-spots{margin-top:16px;font-size:14px;color:#cfdcf5}
+.ak-bar{height:8px;border-radius:99px;background:rgba(255,255,255,.15);overflow:hidden;margin-bottom:8px}
+.ak-bar i{display:block;height:100%;width:100%;border-radius:inherit;background:linear-gradient(90deg,#38C8FF,#1877F2)}
+.ak-spots b{color:#fff}
+.ak-btn{margin-top:18px;width:100%;justify-content:center;background:#fff;color:var(--b-navy);box-shadow:0 10px 30px -10px rgba(56,200,255,.8)}
+.ak-fine{display:block;margin-top:10px;font-size:12px;color:#9fb3d9}
+.b-nav nav .nav-aktion{position:relative;color:var(--b-blue);font-weight:700}
+.b-nav nav .nav-aktion::after{content:"";position:absolute;top:-2px;right:-9px;width:7px;height:7px;border-radius:50%;background:#ff3b3b;animation:akPulse 1.4s infinite}
+.plans.p4{grid-template-columns:repeat(4,1fr)}
+.plans.p4 .plan{padding:26px}
+.plans.p4 .price{font-size:26px}
+.plans-addon{margin-top:22px;padding:16px 20px;border-radius:14px;border:1px dashed var(--b-blue);background:#fff;font-size:15px;color:var(--b-muted);text-align:center}
+.plans-addon b{color:var(--b-ink)}
+@media (max-width:1180px){.plans.p4{grid-template-columns:1fr 1fr}}
+@media (max-width:900px){.ak-grid{grid-template-columns:1fr}.ak-feat{grid-template-columns:1fr}}
+@media (max-width:799px){.plans.p4{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){.ak-live i,.ak-card,.b-nav nav .nav-aktion::after{animation:none}}
 </style>
+<link rel="stylesheet" href="assets/levi/levi.css">
 </head><body>
 
 
@@ -1145,7 +1187,7 @@ form .btn{justify-content:center;margin-top:6px}
   <header class="b-nav">
     <div class="wrap">
       <a class="logo" href="#start"><span class="l1">HIGH LEVEL</span><span class="l2">PERFORMANCE</span><span class="sig">by Victor</span></a>
-      <nav aria-label="Business"><a href="#b-leistungen" data-scroll>Leistungen</a><a href="#b-system" data-scroll>So geht’s</a><a href="#b-spot" data-scroll>Spot</a><a href="#b-pakete" data-scroll>Pakete</a><a href="#b-faq" data-scroll>FAQ</a></nav>
+      <nav aria-label="Business"><a href="#b-aktion" data-scroll class="nav-aktion" data-intro-hide>Aktion</a><a href="#b-leistungen" data-scroll>Leistungen</a><a href="#b-system" data-scroll>So geht’s</a><a href="#b-spot" data-scroll>Spot</a><a href="#b-pakete" data-scroll>Pakete</a><a href="#b-faq" data-scroll>FAQ</a></nav>
       <a class="btn btn-blue" href="#b-kontakt" data-scroll>Potenzialanalyse</a>
     </div>
   </header>
@@ -1191,6 +1233,30 @@ form .btn{justify-content:center;margin-top:6px}
       <div><b>1 Ansprechpartner</b><span>von der Anzeige bis zum Termin</span></div>
     </div>
   </div>
+
+<section class="aktion" id="b-aktion" data-intro-hide aria-label="Oktober-Aktion">
+    <div class="wrap ak-grid">
+      <div class="ak-copy">
+        <span class="ak-live"><i></i>Live · Oktober-Aktion</span>
+        <h2>Ihre Website mit eigenem <em>KI-Assistenten</em> und Social-Autopilot.</h2>
+        <p>Das neue Paket <b>Smart</b> zum Einführungspreis – nur für die ersten 30 Buchungen bis 31. Oktober.</p>
+        <ul class="ak-feat">
+          <li><b>KI-Assistent</b>beantwortet Fragen rund um die Uhr</li>
+          <li><b>Social-Autopilot</b>einmal posten, überall online</li>
+          <li><b>Aktions-Bereich</b>Ihre Angebote ganz oben</li>
+        </ul>
+      </div>
+      <div class="ak-card">
+        <span class="ak-k">Einführungspreis</span>
+        <div class="ak-price">995 €<small>einmalig</small></div>
+        <div class="ak-was">danach 1.990 € · + 149 € / Monat</div>
+        <div class="ak-cd" aria-label="Verbleibende Zeit"><div><b data-cd="d">--</b><span>Tage</span></div><div><b data-cd="h">--</b><span>Std</span></div><div><b data-cd="m">--</b><span>Min</span></div><div><b data-cd="s">--</b><span>Sek</span></div></div>
+        <div class="ak-spots" data-frei="30" data-gesamt="30"><div class="ak-bar"><i></i></div><span>Noch <b>30</b> von 30 Plätzen frei</span></div>
+        <a class="btn btn-blue ak-btn" href="website-business/#fragebogen">Jetzt Platz sichern</a>
+        <small class="ak-fine">Gilt nur für das Paket Smart. Endpreis, keine Umsatzsteuer nach § 19 UStG.</small>
+      </div>
+    </div>
+  </section>
 
   <section class="sec spot" id="b-spot">
     <div class="wrap spot-grid">
@@ -1286,31 +1352,39 @@ form .btn{justify-content:center;margin-top:6px}
         <span class="eyebrow">Pakete</span>
         <h2>Wählen Sie den Umfang, der zu Ihrem Betrieb passt.</h2>
       </div>
-      <div class="plans">
+      <div class="plans p4">
         <div class="plan">
-          <span class="tag">BASIC</span><h3>Start</h3>
-          <p class="for">Für Betriebe, die schon eigenes Videomaterial haben.</p>
-          <div class="price">Preis im Erstgespräch<small>Werbebudget separat</small></div>
-          <ul><li>Werbetexte &amp; Skripte</li><li>Meta-Kampagnen (Facebook &amp; Instagram)</li><li>Schnitt Ihres Videomaterials</li><li>Landingpage für Ihre Anfragen</li></ul>
-          <a class="btn btn-ghost" href="#b-kontakt" data-scroll>Anfragen</a>
+          <span class="tag">WEBSITE</span><h3>Start</h3>
+          <p class="for">Ihre professionelle Website, die Anfragen bringt.</p>
+          <div class="price">1.290 €<small>einmalig · + 59 € / Monat</small></div>
+          <ul><li>Website mit Anfrageformular</li><li>Texte für Ihre Leistungen</li><li>Google-Unternehmensprofil</li><li>Hosting und Pflege</li></ul>
+          <a class="btn btn-ghost" href="website-business/#fragebogen">Entwurf anfordern</a>
         </div>
         <div class="plan top">
-          <span class="badge">Empfohlen</span>
+          <span class="badge" data-intro data-after="Beliebt">Oktober-Aktion</span>
+          <span class="tag">NEU</span><h3>Smart</h3>
+          <p class="for">Website plus KI-Assistent und Social-Autopilot.</p>
+          <div class="price"><span data-intro data-after="1.990 €">995 €</span><small><span data-intro data-after="einmalig · + 149 € / Monat">Einführungspreis bis 31.10. · danach 1.990 € · + 149 € / Monat</span></small></div>
+          <ul><li>Alles aus Start</li><li>Eigener KI-Assistent, rund um die Uhr</li><li>Social-Autopilot für alle Kanäle</li><li>Aktions-Bereich: Angebote leuchten oben</li></ul>
+          <a class="btn btn-blue" href="website-business/#fragebogen">Jetzt Platz sichern</a>
+        </div>
+        <div class="plan">
           <span class="tag">PREMIUM</span><h3>Wachstum</h3>
-          <p class="for">Für Betriebe, die professionellen Content und ein komplettes System wollen.</p>
-          <div class="price">Preis im Erstgespräch<small>Werbebudget separat</small></div>
-          <ul><li>Alles aus Start</li><li>Website &amp; Funnel</li><li>Videodreh vor Ort mit Kamerateam</li><li>Storytelling mit individuellen Skripten</li></ul>
-          <a class="btn btn-blue" href="#b-kontakt" data-scroll>Potenzialanalyse sichern</a>
+          <p class="for">Das komplette System für planbare neue Kunden.</p>
+          <div class="price">2.490 €<small>einmalig · + ab 790 € / Monat</small></div>
+          <ul><li>Alles aus Smart</li><li>Meta-Kampagnen mit Betreuung</li><li>Videodreh vor Ort mit Kamerateam</li><li>Telefonservice mit Terminvereinbarung</li></ul>
+          <a class="btn btn-ghost" href="#b-kontakt" data-scroll>Potenzialanalyse</a>
         </div>
         <div class="plan">
           <span class="tag">ULTRA</span><h3>Komplett</h3>
-          <p class="for">Full Service: Sie konzentrieren sich auf Ihr Geschäft, wir auf alles andere.</p>
-          <div class="price">Preis im Erstgespräch<small>Werbebudget separat</small></div>
-          <ul><li>Alles aus Wachstum</li><li>Bis zu 2 Werbespots pro Monat</li><li>Zusätzlich TikTok-Ads</li><li>Telefonservice &amp; Vertrieb</li></ul>
-          <a class="btn btn-ghost" href="#b-kontakt" data-scroll>Anfragen</a>
+          <p class="for">Full Service: Sie arbeiten, wir kümmern uns um den Rest.</p>
+          <div class="price">2.490 €<small>einmalig · + ab 1.590 € / Monat</small></div>
+          <ul><li>Alles aus Wachstum</li><li>KI-Telefonagent 24/7</li><li>Bis zu 2 Werbespots pro Monat</li><li>TikTok- und Google-Ads</li></ul>
+          <a class="btn btn-ghost" href="#b-kontakt" data-scroll>Potenzialanalyse</a>
         </div>
       </div>
-      <p class="plans-note">Alle Pakete monatlich. Das Werbebudget zahlen Sie direkt an die Plattform, damit Sie volle Kontrolle behalten.</p>
+      <p class="plans-addon"><b>Dazubuchen: KI-Telefonagent</b> – nimmt Anrufe rund um die Uhr an und trägt Termine ein. 249 € einmalig + 149 € / Monat inkl. 300 Minuten.</p>
+      <p class="plans-note">Alle Preise sind Endpreise, nach § 19 UStG wird keine Umsatzsteuer berechnet. Das Werbebudget zahlen Sie direkt an die Plattform.</p>
     </div>
   </section>
 
@@ -1627,7 +1701,7 @@ form .btn{justify-content:center;margin-top:6px}
 
   /* ---------- FAQ als Chat ---------- */
   const faq=[
-    ['Was kostet das?','Das hängt vom Umfang ab. In der kostenlosen Potenzialanalyse bekommen Sie ein klares Angebot ohne versteckte Kosten. Das Werbebudget zahlen Sie direkt an die Plattform.'],
+    ['Was kostet das?','Websites starten bei 1.290 € einmalig. Das Paket Smart mit KI-Assistent und Social-Autopilot kostet 1.990 €, im Oktober zum Einführungspreis von 995 €. Komplette Systeme mit Werbung und Telefonservice ab 790 € im Monat. Das Werbebudget zahlen Sie direkt an die Plattform.'],
     ['Wie schnell bekomme ich Anfragen?','Nach Strategie und Produktion gehen die Kampagnen meist in Woche 4 live. Erste Anfragen kommen oft in den ersten Tagen danach.'],
     ['Lohnt sich das für einen kleinen Betrieb?','Gerade dort. Schon wenige zusätzliche Aufträge im Monat machen bei Handwerk und Dienstleistung einen großen Unterschied.'],
     ['Muss ich mich selbst um etwas kümmern?','Kaum. Sie geben Inhalte frei und führen die Kundengespräche. Alles andere übernehmen wir.'],
@@ -1783,6 +1857,7 @@ form .btn{justify-content:center;margin-top:6px}
 <p>Mit Ihrer Einwilligung setzen wir den Meta-Pixel der Meta Platforms Ireland Ltd., Merrion Road, Dublin 4, Irland, ein. So können wir die Wirkung unserer Werbeanzeigen auf Facebook und Instagram messen und Anzeigen gezielt ausspielen. Daten können in die USA übertragen werden. Meta ist unter dem EU-US Data Privacy Framework zertifiziert. Für die Erhebung und Übermittlung sind wir gemeinsam mit Meta verantwortlich (Art. 26 DSGVO). Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO.</p>
 <h3>10. Social-Media-Links</h3>
 <p>Auf unserer Website verlinken wir auf unsere Profile bei Instagram und Facebook. Es handelt sich um einfache Links. Daten werden erst übertragen, wenn Sie einen Link anklicken und die jeweilige Plattform besuchen. Dort gelten die Datenschutzbestimmungen des Anbieters.</p>
+<h3>10a. KI-Assistent „Levi“</h3><p>Auf unserer Website können Sie mit unserem KI-Assistenten Levi chatten. Levi wird erst geladen und verbindet sich erst, wenn Sie selbst eine Nachricht senden. Dann werden Ihre Texteingaben sowie technische Verbindungsdaten (z. B. IP-Adresse) an unseren Dienstleister ElevenLabs Inc. übertragen, der daraus mit Hilfe künstlicher Intelligenz eine Antwort erzeugt. Dabei kann eine Übermittlung in die USA stattfinden; sie erfolgt auf Grundlage geeigneter Garantien (z. B. EU-Standardvertragsklauseln). Rechtsgrundlage ist Ihre Einwilligung durch das aktive Starten des Chats (Art. 6 Abs. 1 lit. a DSGVO) bzw. die Beantwortung Ihrer Anfrage (Art. 6 Abs. 1 lit. b DSGVO). Gesprächsverläufe werden nach 30 Tagen gelöscht. Bitte geben Sie im Chat keine sensiblen Daten ein. Levi ist eine KI und kann Fehler machen; verbindlich sind nur unsere Angebote in Textform.</p>
 <h3>11. Ihre Rechte</h3>
 <p>Sie haben das Recht auf Auskunft (Art. 15), Berichtigung (Art. 16), Löschung (Art. 17), Einschränkung der Verarbeitung (Art. 18), Datenübertragbarkeit (Art. 20) und Widerspruch (Art. 21 DSGVO). Eine erteilte Einwilligung können Sie jederzeit für die Zukunft widerrufen. Sie haben außerdem das Recht, sich bei einer Datenschutz-Aufsichtsbehörde zu beschweren, z. B. bei der Landesbeauftragten für den Datenschutz Niedersachsen.</p>
 <h3>12. Speicherdauer</h3>
@@ -1896,4 +1971,25 @@ chs.forEach(function(ch){ch.addEventListener('click',function(e){var b=e.target.
 document.addEventListener('keydown',function(e){if(document.getElementById('start').hidden)return;if(e.key==='ArrowRight')set('biz');else if(e.key==='ArrowLeft')set('art');else if(e.key==='Escape')set('none')});
 })();
 </script>
+<script>
+/* Oktober-Aktion: Countdown, Plätze, automatisches Ende am 31.10.2026 */
+(function(){
+  var end=new Date('2026-10-31T23:59:59+01:00');
+  function over(){
+    document.querySelectorAll('[data-intro]').forEach(function(el){el.textContent=el.dataset.after;});
+    document.querySelectorAll('[data-intro-hide]').forEach(function(el){el.remove();});
+  }
+  if(new Date()>end){over();return;}
+  var sp=document.querySelector('.ak-spots');
+  if(sp){var f=+sp.dataset.frei,g=+sp.dataset.gesamt;sp.querySelector('b').textContent=f;sp.querySelector('.ak-bar i').style.width=Math.max(4,f/g*100)+'%';
+    if(f<=0){over();return;}}
+  var el={};['d','h','m','s'].forEach(function(k){el[k]=document.querySelector('[data-cd="'+k+'"]');});
+  function pad(n){return n<10?'0'+n:''+n;}
+  function tick(){var t=end-new Date();if(t<=0){over();return;}
+    el.d.textContent=Math.floor(t/864e5);el.h.textContent=pad(Math.floor(t/36e5)%24);el.m.textContent=pad(Math.floor(t/6e4)%60);el.s.textContent=pad(Math.floor(t/1e3)%60);
+    setTimeout(tick,1000);}
+  if(el.d)tick();
+})();
+</script>
+<script src="assets/levi/levi.js" defer></script>
 </body></html>

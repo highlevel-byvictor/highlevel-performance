@@ -4,6 +4,8 @@
   'use strict';
   var AGENT = 'agent_0901m4kksbrfetjvmrea2q2wgvne';
   var VOICES = { m: 'buUrS4YSeOZtlCKnzwkC', w: 'M39iqBUcu1jyiwM5PfSy' };
+  // Stimme an/aus: auf highlevel-performance.de aus (nur Chat). Für Kunden mit Sprach-Budget auf true setzen.
+  var VOICE = !!(window.LEVI_VOICE);
   var SDK = (document.currentScript && document.currentScript.src || '').replace(/levi\.js.*$/, 'elevenlabs-client.js');
   var TEL = '+49 15561 068899', MAIL = 'info@highlevel-performance.de';
 
@@ -97,14 +99,14 @@
         '<button class="lv-ic lv-reset" type="button" aria-label="Neues Gespräch" title="Neues Gespräch">' + IC.reset + '</button>' +
         '<button class="lv-ic lv-close" type="button" aria-label="Schließen">' + IC.x + '</button></header>' +
       '<div class="lv-peekbar"><p></p><button type="button">Chat öffnen</button></div>' +
-      '<div class="lv-bar"><span>Stimme</span><div class="lv-sex" role="group" aria-label="Stimme wählen"><button type="button" data-sex="m">Mann</button><button type="button" data-sex="w">Frau</button></div></div>' +
+      (VOICE ? '<div class="lv-bar"><span>Stimme</span><div class="lv-sex" role="group" aria-label="Stimme wählen"><button type="button" data-sex="m">Mann</button><button type="button" data-sex="w">Frau</button></div></div>' : '') +
       '<div class="lv-log" aria-live="polite"></div>' +
       '<div class="lv-chips"></div>' +
       '<div class="lv-voice"><div class="lv-wave"><i></i><i></i><i></i><i></i><i></i></div><span class="vs">Verbinde…</span><button type="button" class="lv-end">Beenden</button></div>' +
       '<form class="lv-form" autocomplete="off"><input class="lv-in" type="text" maxlength="500" placeholder="Frag Levi etwas…" aria-label="Nachricht an Levi">' +
-        '<button class="lv-mic" type="button" aria-label="Mit Levi sprechen" title="Mit Levi sprechen">' + IC.mic + '</button>' +
+        (VOICE ? '<button class="lv-mic" type="button" aria-label="Mit Levi sprechen" title="Mit Levi sprechen">' + IC.mic + '</button>' : '') +
         '<button class="lv-send" type="submit" aria-label="Senden">' + IC.send + '</button></form>' +
-      '<p class="lv-legal">Levi ist eine KI und kann sich irren. Erst wenn du schreibst oder auf das Mikrofon tippst, wird dein Gespräch zur Beantwortung an unseren Dienstleister ElevenLabs übertragen. Bitte keine sensiblen Daten eingeben. <a href="#" data-legal="datenschutz">Datenschutz</a></p>' +
+      '<p class="lv-legal">Levi ist eine KI und kann sich irren. Erst wenn du schreibst, wird dein Gespräch zur Beantwortung an unseren Dienstleister ElevenLabs übertragen. Bitte keine sensiblen Daten eingeben. <a href="#" data-legal="datenschutz">Datenschutz</a></p>' +
     '</section>';
   var guide = document.createElement('div');
   guide.className = 'lv-guide';
@@ -196,7 +198,7 @@
     guideT = setTimeout(function () { guide.classList.remove('on'); guide.querySelector('.lv-bot').classList.remove('point'); }, 4200);
   }
   function highlight(el) { el.classList.remove('lv-hl'); void el.offsetWidth; el.classList.add('lv-hl'); setTimeout(function () { el.classList.remove('lv-hl'); }, 2700); }
-  var NAMES = { 'b-spot': 'Werbespot', 'b-system': 'So geht’s', 'b-leistungen': 'Leistungen', 'b-pakete': 'Pakete', 'b-faq': 'FAQ', 'b-kontakt': 'Potenzialanalyse',
+  var NAMES = { 'b-aktion': 'Oktober-Aktion', 'b-spot': 'Werbespot', 'b-system': 'So geht’s', 'b-leistungen': 'Leistungen', 'b-pakete': 'Pakete', 'b-faq': 'FAQ', 'b-kontakt': 'Potenzialanalyse',
     'a-spot': 'Spot', 'a-studio': 'Studio', 'a-leistungen': 'Leistungen', 'a-victor': 'Victor', 'a-team': 'Team', 'a-kontakt': 'Musik einreichen' };
   var PAGES = { 'website-business': ['Website für Ihren Betrieb', 'website-business/'], 'website-artists': ['Website für Artists', 'website-artists/'] };
 
@@ -338,7 +340,7 @@
   $('.lv-close').addEventListener('click', close);
   $('.lv-peekbar button').addEventListener('click', function () { root.classList.remove('peek'); });
   $('.lv-reset').addEventListener('click', function () { stop(); chatted = false; typing(false); clearTimeout(waitTimer); welcome(); setStatus('Dein Level-Up-Experte'); });
-  $('.lv-mic').addEventListener('click', function () { if (mode === 'voice') stop(); else voiceOn(); });
+  if (VOICE) $('.lv-mic').addEventListener('click', function () { if (mode === 'voice') stop(); else voiceOn(); });
   $('.lv-end').addEventListener('click', stop);
   form.addEventListener('submit', function (e) { e.preventDefault(); send(input.value); });
   root.querySelectorAll('[data-sex]').forEach(function (b) {
