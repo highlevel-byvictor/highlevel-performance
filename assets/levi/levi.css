@@ -127,3 +127,16 @@ body.art .lv-hl{--lv-hlc:#E90E0E}
 
 /* Nicht mit dem Cookie-Banner überlappen */
 body:has(#ck:not([hidden])) .lv:not(.open) .lv-launch,body:has(#ck:not([hidden])) .lv-tease{opacity:0;pointer-events:none}
+
+/* Sprechblase: Ausweich-Positionen, damit sie keinen Text verdeckt */
+.lv-tease.measure{transition:none;visibility:hidden}
+.lv-tease.above{right:14px;bottom:calc(166px + env(safe-area-inset-bottom,0px));border-radius:18px 18px 4px 18px}
+.lv-tease.left-low{bottom:calc(70px + env(safe-area-inset-bottom,0px))}
+@media (max-width:760px){
+  .lv-tease.above{right:8px;bottom:calc(140px + env(safe-area-inset-bottom,0px))}
+  .lv-tease.left-low{bottom:calc(60px + env(safe-area-inset-bottom,0px))}
+}
+/* Kein Platz für die Blase: kleiner roter Punkt am Roboter statt Text darüber */
+.lv-launch::after{content:"";position:absolute;top:10px;right:6px;width:12px;height:12px;border-radius:50%;background:#ff3b3b;border:2px solid #fff;opacity:0;transform:scale(.4);transition:.3s}
+.lv.ping .lv-launch::after{opacity:1;transform:none;animation:lvPing 1.6s infinite}
+@keyframes lvPing{0%{box-shadow:0 0 0 0 rgba(255,59,59,.6)}70%{box-shadow:0 0 0 10px rgba(255,59,59,0)}100%{box-shadow:0 0 0 0 rgba(255,59,59,0)}}
