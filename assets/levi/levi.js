@@ -212,8 +212,10 @@
       return goArea(id.charAt(0) === 'b' ? 'business' : 'artists').then(function () {
         var el = document.getElementById(id); if (!el) return 'Abschnitt nicht gefunden.';
         var y = el.getBoundingClientRect().top + scrollY - 70;
+        var y0 = scrollY;
         window.scrollTo({ top: y, behavior: 'smooth' });
-        return wait(750).then(function () { highlight(el); flyTo(el, NAMES[id] + '!'); return 'Der Besucher sieht jetzt den Abschnitt ' + NAMES[id] + '.'; });
+        return wait(750).then(function () {
+          if (Math.abs(scrollY - y0) < 2 && Math.abs(y - y0) > 40) window.scrollTo(0, y); highlight(el); flyTo(el, NAMES[id] + '!'); return 'Der Besucher sieht jetzt den Abschnitt ' + NAMES[id] + '.'; });
       });
     },
     seite_oeffnen: function (p) {
