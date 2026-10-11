@@ -171,6 +171,23 @@
 @keyframes akGlowR{0%,100%{box-shadow:0 30px 70px -30px rgba(0,0,0,.7),0 0 0 0 rgba(233,14,14,0)}50%{box-shadow:0 30px 70px -30px rgba(0,0,0,.7),0 0 40px 0 rgba(233,14,14,.4)}}
 .aktion.art .ak-price{text-shadow:0 0 30px rgba(233,14,14,.55)}
 .aktion.art .ak-btn{background:#E90E0E;color:#fff;box-shadow:0 10px 30px -10px rgba(233,14,14,.8)}
+.ak-pk{position:relative;margin-top:clamp(36px,5vw,56px);display:grid;grid-template-columns:repeat(3,1fr);gap:16px;align-items:stretch}
+.ak-pk .pk{position:relative;display:flex;flex-direction:column;padding:26px;border-radius:20px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px)}
+.ak-pk .pk.hot{background:linear-gradient(160deg,rgba(233,14,14,.28),rgba(255,255,255,.06) 70%);border-color:rgba(255,90,90,.6);box-shadow:0 0 40px -10px rgba(233,14,14,.55)}
+.ak-pk .pk-tag{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:#ffb3b3}
+.ak-pk .pk-badge{position:absolute;top:-12px;right:18px;padding:5px 12px;border-radius:99px;background:#E90E0E;color:#fff;font-family:var(--f-mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase}
+.ak-pk h3{margin:8px 0 0;font-family:var(--f-brand);font-weight:800;font-size:24px;color:#fff}
+.ak-pk .pk-for{margin:6px 0 0;font-size:14.5px;color:#e6d5d0;line-height:1.45}
+.ak-pk .pk-price{margin-top:16px;padding-block:12px;border-block:1px solid rgba(255,255,255,.14);font-family:var(--f-brand);font-weight:800;font-size:30px;color:#fff;line-height:1.1}
+.ak-pk .pk-price s{font-size:17px;font-weight:500;color:#c9aaa3;margin-left:8px}
+.ak-pk .pk-price small{display:block;margin-top:4px;font-family:var(--f-body);font-size:13.5px;font-weight:500;color:#e6d5d0}
+.ak-pk ul{list-style:none;margin:14px 0 18px;padding:0;flex:1}
+.ak-pk li{position:relative;padding-left:20px;margin-bottom:8px;font-size:14.5px;color:#e6d5d0;line-height:1.4}
+.ak-pk li::before{content:"";position:absolute;left:0;top:7px;width:8px;height:8px;border-radius:50%;background:#E90E0E}
+.ak-pk .btn{justify-content:center;width:100%}
+.ak-pk .pk-ghost{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.4)}
+.ak-pk-note{position:relative;margin-top:16px;text-align:center;font-size:12.5px;color:#c9aaa3}
+@media (max-width:900px){.ak-pk{grid-template-columns:1fr}}
 .aktion.art .ak-wow{filter:saturate(1.1) contrast(1.05);-webkit-mask-image:radial-gradient(ellipse 52% 56% at 50% 46%,#000 30%,rgba(0,0,0,.6) 52%,transparent 72%);mask-image:radial-gradient(ellipse 52% 56% at 50% 46%,#000 30%,rgba(0,0,0,.6) 52%,transparent 72%)}
 </style>
 <link rel="stylesheet" href="assets/levi/levi.css">
@@ -1576,13 +1593,40 @@ form .btn{justify-content:center;margin-top:6px}
       </div>
       <div class="ak-card">
         <span class="ak-k">Einführungspreis</span>
-        <div class="ak-price">595 €<small>einmalig</small></div>
-        <div class="ak-was">danach 1.190 € · + 89 € / Monat</div>
+        <div class="ak-price">995 €<small>einmalig</small></div>
+        <div class="ak-was">danach 1.990 € · + 149 € / Monat</div>
         <div class="ak-cd" aria-label="Verbleibende Zeit"><div><b data-cd="d">--</b><span>Tage</span></div><div><b data-cd="h">--</b><span>Std</span></div><div><b data-cd="m">--</b><span>Min</span></div><div><b data-cd="s">--</b><span>Sek</span></div></div>
         <div class="ak-spots" data-frei="30" data-gesamt="30"><div class="ak-bar"><i></i></div><span>Noch <b>30</b> von 30 Plätzen frei</span></div>
         <a class="btn btn-red ak-btn" href="website-artists/#fragebogen">Jetzt Platz sichern</a>
         <small class="ak-fine">Gilt nur für das Paket Artist Smart. Endpreis, keine Umsatzsteuer nach § 19 UStG.</small>
       </div>
+    </div>
+    <div class="wrap">
+      <div class="ak-pk">
+        <div class="pk">
+          <span class="pk-tag">Website</span><h3>Artist Start</h3>
+          <p class="pk-for">Deine professionelle Artist-Website, die dich buchbar macht.</p>
+          <div class="pk-price">1.290 €<small>einmalig · + 59 € / Monat</small></div>
+          <ul><li>Artist-Website mit Booking-Formular</li><li>Musik, Videos und Pressekit (EPK)</li><li>Links zu Spotify, YouTube und Socials</li><li>Hosting und Pflege</li></ul>
+          <a class="btn pk-ghost" href="website-artists/#fragebogen">Entwurf anfordern</a>
+        </div>
+        <div class="pk hot">
+          <span class="pk-badge">Oktober-Aktion</span>
+          <span class="pk-tag">Neu</span><h3>Artist Smart</h3>
+          <p class="pk-for">Website plus Fan-Assistent und Social-Autopilot.</p>
+          <div class="pk-price">995 €<s>1.990 €</s><small>Einführungspreis bis 31.10. · + 149 € / Monat</small></div>
+          <ul><li>Alles aus Start</li><li>Fan-Assistent beantwortet Booking- und Fan-Fragen</li><li>Social-Autopilot für alle Kanäle</li><li>Release-Banner: dein neuer Song ganz oben</li></ul>
+          <a class="btn btn-red ak-btn" style="margin-top:0" href="website-artists/#fragebogen">Jetzt Platz sichern</a>
+        </div>
+        <div class="pk">
+          <span class="pk-tag">Premium</span><h3>Artist Wachstum</h3>
+          <p class="pk-for">Das komplette System für mehr Hörer und Bookings.</p>
+          <div class="pk-price">2.490 €<small>einmalig · + ab 790 € / Monat</small></div>
+          <ul><li>Alles aus Smart</li><li>Release-Kampagnen auf Meta mit Betreuung</li><li>Foto- und Reel-Dreh im Studio</li><li>Booking-Anfragen werden für dich vorqualifiziert</li></ul>
+          <a class="btn pk-ghost" href="#a-kontakt" data-scroll>Erstgespräch</a>
+        </div>
+      </div>
+      <p class="ak-pk-note">Alle Preise sind Endpreise, nach § 19 UStG wird keine Umsatzsteuer berechnet. Das Werbebudget zahlst du direkt an die Plattform.</p>
     </div>
   </section>
 
