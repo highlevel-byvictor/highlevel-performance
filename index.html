@@ -189,6 +189,34 @@
 .ak-pk-note{position:relative;margin-top:16px;text-align:center;font-size:12.5px;color:#c9aaa3}
 @media (max-width:900px){.ak-pk{grid-template-columns:1fr}}
 .aktion.art .ak-wow{filter:saturate(1.1) contrast(1.05);-webkit-mask-image:radial-gradient(ellipse 52% 56% at 50% 46%,#000 30%,rgba(0,0,0,.6) 52%,transparent 72%);mask-image:radial-gradient(ellipse 52% 56% at 50% 46%,#000 30%,rgba(0,0,0,.6) 52%,transparent 72%)}
+/* Referenzen (Business) */
+.refs{overflow:hidden}
+.refs-head{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+.refs-head .sec-head{margin-bottom:36px}
+.refs-nav{display:flex;gap:10px;margin-bottom:40px}
+.refs-btn{width:46px;height:46px;border-radius:50%;border:1px solid var(--b-line);background:#fff;color:var(--b-navy);font-size:18px;cursor:pointer;transition:border-color .25s,box-shadow .25s,color .25s}
+.refs-btn:hover{border-color:var(--b-volt);color:var(--b-blue);box-shadow:0 0 0 3px rgba(56,200,255,.18)}
+.refs-rail{overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-inline:max(20px,calc((100vw - 1200px)/2 + 20px));scrollbar-width:none;-webkit-overflow-scrolling:touch;outline:none}
+.refs-rail::-webkit-scrollbar{display:none}
+.refs-track{display:flex;gap:20px;padding:6px max(20px,calc((100vw - 1200px)/2 + 20px)) 18px;width:max-content}
+.ref{scroll-snap-align:start;flex:none;width:min(340px,82vw);display:flex;flex-direction:column;gap:10px;padding:22px 22px 24px;border-radius:18px;background:linear-gradient(160deg,#fff,#F3F8FF);border:1px solid rgba(24,119,242,.14);box-shadow:inset 0 1px 0 #fff,0 22px 44px -32px rgba(10,42,102,.5)}
+.ref-logo{height:104px;border-radius:12px;background:#fff;border:1px solid var(--b-line);display:grid;place-items:center;padding:16px 20px;margin-bottom:8px}
+.ref-logo.dark{background:#0B1630;border-color:#0B1630}
+.ref-logo img{max-width:100%;max-height:70px;object-fit:contain}
+.ref-meta{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--b-blue)}
+.ref h3{font-size:20px;line-height:1.2;color:var(--b-ink)}
+.ref-did{font-size:15px;line-height:1.5;color:var(--b-muted);flex:1}
+.ref-tags{display:flex;flex-wrap:wrap;gap:6px;list-style:none;padding:0;margin:4px 0 6px}
+.ref-tags li{font-size:12.5px;padding:5px 10px;border-radius:99px;background:rgba(24,119,242,.08);color:var(--b-navy);border:1px solid rgba(24,119,242,.16)}
+.ref-tags li::before{content:"✓ ";color:var(--b-blue);font-weight:700}
+.ref-link{font-size:14px;font-weight:600;color:var(--b-blue);text-decoration:none}
+.ref-link:hover{text-decoration:underline}
+.ref-more{background:linear-gradient(160deg,#0A2A66,#123E92);border-color:#123E92;justify-content:flex-end}
+.ref-more h3{color:#fff;font-size:22px}
+.ref-more .ref-meta{color:var(--b-volt)}
+.ref-more .ref-did{color:#B8C6E4;flex:0}
+.ref-more .btn{align-self:flex-start;margin-top:8px}
+@media (max-width:640px){.refs-nav{display:none}.refs-head .sec-head{margin-bottom:24px}}
 </style>
 <link rel="stylesheet" href="assets/levi/levi.css">
 </head><body>
@@ -1190,6 +1218,8 @@ form .btn{justify-content:center;margin-top:6px}
 .tu-call,.tu-ok{position:absolute;right:6%;display:flex;align-items:center;gap:10px;padding:9px 14px 9px 9px;border-radius:14px;color:#fff;text-shadow:0 1px 2px rgba(0,30,80,.45);background:linear-gradient(160deg,rgba(255,255,255,.55),rgba(255,255,255,.14) 45%,rgba(127,227,255,.22));border:1px solid rgba(255,255,255,.75);backdrop-filter:blur(10px) saturate(1.5);-webkit-backdrop-filter:blur(10px) saturate(1.5);box-shadow:inset 0 1px 0 #fff,0 10px 24px -10px rgba(10,42,102,.6),0 0 22px -6px rgba(56,200,255,.9)}
 .tu-call{top:16%;animation:wufloat 5s ease-in-out infinite}
 .tu-ok{top:52%;animation:wuping 5s ease-in-out infinite 1.2s}
+.f-opt{display:flex!important;flex-direction:row!important;align-items:flex-start;gap:10px;font-size:13px!important;line-height:1.45;font-weight:400!important;opacity:.9}.f-opt input{width:auto!important;margin-top:3px;flex:none}
+.tel-ui.low .tu-call{display:none}.tel-ui.low .tu-ok{top:auto;bottom:13%;right:4%;animation:wufloat 5s ease-in-out infinite}
 .tu-call b,.tu-ok b{display:block;font-size:11px;letter-spacing:.03em}
 .tu-call small,.tu-ok small{display:block;font-size:9px;opacity:.85;letter-spacing:.04em;margin-top:2px}
 .tu-ic{width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(180deg,#4ade80,#16a34a);animation:turing 1.6s ease-out infinite}
@@ -1266,8 +1296,8 @@ form .btn{justify-content:center;margin-top:6px}
   <header class="b-nav">
     <div class="wrap">
       <a class="logo" href="#start"><span class="l1">HIGH LEVEL</span><span class="l2">PERFORMANCE</span><span class="sig">by Victor</span></a>
-      <nav aria-label="Business"><a href="#b-aktion" data-scroll class="nav-aktion" data-intro-hide>Aktion</a><a href="#b-leistungen" data-scroll>Leistungen</a><a href="#b-system" data-scroll>So geht’s</a><a href="#b-spot" data-scroll>Spot</a><a href="#b-pakete" data-scroll>Pakete</a><a href="#b-faq" data-scroll>FAQ</a></nav>
-      <a class="btn btn-blue" href="#b-kontakt" data-scroll>Potenzialanalyse</a>
+      <nav aria-label="Business"><a href="#b-aktion" data-scroll class="nav-aktion" data-intro-hide>Aktion</a><a href="#b-referenzen" data-scroll>Referenzen</a><a href="#b-leistungen" data-scroll>Leistungen</a><a href="#b-system" data-scroll>Ablauf</a><a href="#b-pakete" data-scroll>Pakete</a><a href="#b-faq" data-scroll>FAQ</a></nav>
+      <a class="btn btn-blue" href="#b-kontakt" data-scroll>Erstgespräch</a>
     </div>
   </header>
 
@@ -1282,15 +1312,15 @@ form .btn{justify-content:center;margin-top:6px}
       <div>
         <div class="b-crew"><img src="assets/biz-hero-v3.jpg" alt="Friseurin, Handwerker, Kosmetikerin und Koch aus dem Mittelstand"><div class="holo crew-holo" aria-hidden="true">
           
-          <div class="ios"><span class="ios-ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><div class="ios-tx"><div class="ios-top"><span>KALENDER</span><span>jetzt</span></div><div class="ios-main"><span class="ios-big">Do · 10:00</span><span class="ios-l">Neuer Termin<small>Erstgespräch · vorqualifiziert</small></span></div></div></div>
+          <div class="ios"><span class="ios-ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><div class="ios-tx"><div class="ios-top"><span>KALENDER</span><span>jetzt</span></div><div class="ios-main"><span class="ios-big">Do · 10:00</span><span class="ios-l">Neuer Termin<small>Neuer Kunde · Erstgespräch</small></span></div></div></div>
           
         </div></div>
         <span class="eyebrow">Für Selbstständige, Handwerk &amp; Mittelstand</span>
         <h1>Neue Kunden.<br>Direkt in Ihren <em>Kalender.<svg viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9 L80 6 L74 11 L170 5 L162 10 L298 4" fill="none" stroke="#38C8FF" stroke-width="2"/></svg></em></h1>
-        <p class="lead">Wir machen Sie sichtbar, rufen jede Anfrage für Sie an und führen auf Wunsch das Verkaufsgespräch. Sie bekommen fertige Termine.</p>
+        <p class="lead">Wir bauen Ihre Website, machen Sie bei Google, Facebook und Instagram sichtbar und kümmern uns um jede Anfrage, bis der Termin in Ihrem Kalender steht. Vieles davon läuft automatisch.</p>
         <div class="ctas">
-          <a class="btn btn-blue" href="#b-kontakt" data-scroll>Kostenlose Potenzialanalyse</a>
-          <a class="btn btn-ghost" href="#b-system" data-scroll>So funktioniert’s</a>
+          <a class="btn btn-blue" href="#b-kontakt" data-scroll>Kostenloses Erstgespräch</a>
+          <a class="btn btn-ghost" href="#b-referenzen" data-scroll>Referenzen ansehen</a>
         </div>
         <div class="note"><span>100 % unverbindlich</span><span>Antwort in 24 Stunden</span><span>Ehrliche Einschätzung</span></div>
       </div>
@@ -1298,7 +1328,7 @@ form .btn{justify-content:center;margin-top:6px}
         <img src="assets/biz-hero-v3.jpg" alt="Friseurin, Handwerker, Kosmetikerin und Koch aus dem Mittelstand">
         <div class="holo" aria-hidden="true">
           
-          <div class="ios"><span class="ios-ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><div class="ios-tx"><div class="ios-top"><span>KALENDER</span><span>jetzt</span></div><div class="ios-main"><span class="ios-big">Do · 10:00</span><span class="ios-l">Neuer Termin<small>Erstgespräch · vorqualifiziert</small></span></div></div></div>
+          <div class="ios"><span class="ios-ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><div class="ios-tx"><div class="ios-top"><span>KALENDER</span><span>jetzt</span></div><div class="ios-main"><span class="ios-big">Do · 10:00</span><span class="ios-l">Neuer Termin<small>Neuer Kunde · Erstgespräch</small></span></div></div></div>
           
         </div>
       </figure>
@@ -1313,13 +1343,29 @@ form .btn{justify-content:center;margin-top:6px}
     </div>
   </div>
 
+  <section class="sec refs" id="b-referenzen" aria-label="Referenzen">
+    <div class="wrap">
+      <div class="refs-head">
+        <div class="sec-head">
+          <span class="eyebrow">Referenzen</span>
+          <h2>Diese Betriebe gewinnen mit uns Kunden.</h2>
+          <p>Für jedes dieser Unternehmen haben wir den Vertrieb optimiert und ein Anfrage-System gebaut. Dazu kommen viele weitere Betriebe aus dem Mittelstand.</p>
+        </div>
+        <div class="refs-nav"><button type="button" class="refs-btn" data-dir="-1" aria-label="Zurück">←</button><button type="button" class="refs-btn" data-dir="1" aria-label="Weiter">→</button></div>
+      </div>
+    </div>
+    <div class="refs-rail" tabindex="0" aria-label="Referenzen, zum Blättern wischen">
+      <div class="refs-track"><article class="ref"><div class="ref-logo"><img src="assets/ref-vmeier.webp" alt="Logo V. Meier Zimmerei &amp; Holzbau" loading="lazy"></div><span class="ref-meta">Zimmerei · Werlte</span><h3>V. Meier Zimmerei &amp; Holzbau</h3><p class="ref-did">Vertriebsabläufe optimiert und ein System gebaut, das aus Interessenten Anfragen und aus Anfragen Kunden macht.</p><ul class="ref-tags"><li>Vertrieb optimiert</li><li>Anfrage-System gebaut</li></ul><a class="ref-link" href="https://vmeier.de/" target="_blank" rel="noopener">Website ansehen <span aria-hidden="true">↗</span></a></article><article class="ref"><div class="ref-logo"><img src="assets/ref-zilm.webp" alt="Logo Autohaus Zilm" loading="lazy"></div><span class="ref-meta">Autohaus · Neuruppin</span><h3>Autohaus Zilm</h3><p class="ref-did">Vertriebsabläufe optimiert und ein System gebaut, das aus Interessenten Anfragen und aus Anfragen Kunden macht.</p><ul class="ref-tags"><li>Vertrieb optimiert</li><li>Anfrage-System gebaut</li></ul><a class="ref-link" href="https://www.autohauszilm.de/" target="_blank" rel="noopener">Website ansehen <span aria-hidden="true">↗</span></a></article><article class="ref"><div class="ref-logo"><img src="assets/ref-winderholler.webp" alt="Logo Winderholler Energieberatung" loading="lazy"></div><span class="ref-meta">Energieberatung · Quakenbrück</span><h3>Winderholler Energieberatung</h3><p class="ref-did">Vertriebsabläufe optimiert und ein System gebaut, das aus Interessenten Anfragen und aus Anfragen Kunden macht.</p><ul class="ref-tags"><li>Vertrieb optimiert</li><li>Anfrage-System gebaut</li></ul><a class="ref-link" href="https://www.winderholler-energieberatung.de/" target="_blank" rel="noopener">Website ansehen <span aria-hidden="true">↗</span></a></article><article class="ref"><div class="ref-logo"><img src="assets/ref-fwk.webp" alt="Logo Fehl &amp; Kollegen" loading="lazy"></div><span class="ref-meta">Finanz- &amp; Wirtschaftskanzlei · Bersenbrück</span><h3>Fehl &amp; Kollegen</h3><p class="ref-did">Vertriebsabläufe optimiert und ein System gebaut, das aus Interessenten Anfragen und aus Anfragen Kunden macht.</p><ul class="ref-tags"><li>Vertrieb optimiert</li><li>Anfrage-System gebaut</li><li>Werbeanzeigen</li></ul><a class="ref-link" href="https://www.fwk-fehl.de/" target="_blank" rel="noopener">Website ansehen <span aria-hidden="true">↗</span></a></article><article class="ref"><div class="ref-logo dark"><img src="assets/ref-smp.webp" alt="Logo Saved Music Productions" loading="lazy"></div><span class="ref-meta">Tonstudio · Bersenbrück</span><h3>Saved Music Productions</h3><p class="ref-did">Vertriebsabläufe optimiert und ein System gebaut, das aus Interessenten Anfragen und aus Anfragen Kunden macht.</p><ul class="ref-tags"><li>Vertrieb optimiert</li><li>Anfrage-System gebaut</li><li>Werbeanzeigen</li></ul><a class="ref-link" href="https://saved-music-productions.de/" target="_blank" rel="noopener">Website ansehen <span aria-hidden="true">↗</span></a></article><article class="ref ref-more"><span class="ref-meta">Und viele mehr</span><h3>Viele weitere Betriebe aus Handwerk, Handel und Dienstleistung.</h3><p class="ref-did">Wir zeigen Ihnen im Gespräch gern Beispiele aus Ihrer Branche.</p><a class="btn btn-blue" href="#b-kontakt" data-scroll>Kostenloses Erstgespräch</a></article></div>
+    </div>
+  </section>
+
 <section class="aktion" id="b-aktion" data-intro-hide aria-label="Oktober-Aktion">
     <svg class="ak-bolts" viewBox="0 0 1200 600" preserveAspectRatio="none" aria-hidden="true"><path class="b1" d="M1150 -10 L1060 120 L1092 128 L980 270 L1012 278 L900 420"/><path class="b2" d="M60 610 L150 500 L124 492 L240 380 L214 372 L320 270"/><path class="b3" d="M640 -10 L590 80 L612 86 L548 190"/></svg>
     <span class="ak-spark s1"></span><span class="ak-spark s2"></span><span class="ak-spark s3"></span><span class="ak-spark s4"></span>
     <div class="wrap ak-grid">
       <div class="ak-copy">
         <span class="ak-live"><i></i>Live · Oktober-Aktion</span>
-        <h2>Ihre Website mit eigenem <em>KI-Assistenten</em> und Social-Autopilot.</h2>
+        <h2>Ihre Website mit <em>Chat-Assistent</em> und automatischen Social-Media-Beiträgen.</h2>
         <p>Das neue Paket <b>Smart</b> zum Einführungspreis – nur für die ersten 30 Buchungen bis 31. Oktober.</p>
         <div class="ak-visual" aria-hidden="true">
           <img class="ak-wow" src="assets/aktion-wow-v1.webp" alt="" loading="lazy" width="736" height="750">
@@ -1328,9 +1374,9 @@ form .btn{justify-content:center;margin-top:6px}
           <div class="ak-float ak-post"><i></i>Post läuft auf 5 Kanälen</div>
         </div>
         <ul class="ak-feat">
-          <li><b>KI-Assistent</b>beantwortet Fragen rund um die Uhr</li>
-          <li><b>Social-Autopilot</b>einmal posten, überall online</li>
-          <li><b>Aktions-Bereich</b>Ihre Angebote ganz oben</li>
+          <li><b>Chat-Assistent</b>beantwortet Kundenfragen rund um die Uhr</li>
+          <li><b>Social Media automatisch</b>einmal posten, überall online</li>
+          <li><b>Angebote ganz oben</b>Ihre Aktionen sofort sichtbar</li>
         </ul>
       </div>
       <div class="ak-card">
@@ -1350,8 +1396,8 @@ form .btn{justify-content:center;margin-top:6px}
       <div class="spot-copy">
         <span class="eyebrow">Unser Werbespot</span>
         <h2>So holen wir Ihre Kunden ab.</h2>
-        <p>Ein echter Spot aus unserer Produktion: gedreht, geschnitten und als Anzeige ausgespielt. Genau so etwas bauen wir auch für Ihren Betrieb.</p>
-        <a class="btn btn-blue" href="#b-kontakt" data-scroll>Kostenlose Potenzialanalyse</a>
+        <p>Ein echter Spot aus unserer Produktion: gedreht, geschnitten und als Werbung ausgespielt. So etwas drehen wir auch für Ihren Betrieb.</p>
+        <a class="btn btn-blue" href="#b-kontakt" data-scroll>Kostenloses Erstgespräch</a>
       </div>
       <div class="spot-col"><div class="spot-box" data-spot>
         <video src="video/spot-business.mp4" poster="assets/spot-poster-business.jpg" muted loop playsinline autoplay preload="metadata"></video>
@@ -1394,14 +1440,14 @@ form .btn{justify-content:center;margin-top:6px}
     <div class="wrap">
       <div class="sec-head">
         <span class="eyebrow">Die Lösung</span>
-        <h2>Von der Anzeige bis in Ihren Kalender.</h2>
-        <p>Sie machen Ihre Arbeit. Wir kümmern uns um neue Kunden.</p>
+        <h2>So wird aus einem Klick ein Kunde.</h2>
+        <p>Aus Besuchern werden Kontakte, aus Kontakten zahlende Kunden. Sie machen Ihre Arbeit, das System läuft im Hintergrund.</p>
       </div>
       <div class="sys-row">
-        <div class="sys-step"><div class="n">01</div><h3>Sichtbar</h3><p>Werbung und Video bringen Ihr Angebot zu den richtigen Menschen in Ihrer Region.</p></div>
-        <div class="sys-step"><div class="n">02</div><h3>Anfrage</h3><p>Eine Seite, die überzeugt. Interessenten fragen in 60 Sekunden an.</p></div>
-        <div class="sys-step"><div class="n">03</div><h3>Anruf</h3><p>Unser Team ruft jede Anfrage sofort an und prüft, ob sie passt.</p></div>
-        <div class="sys-step"><div class="n">04</div><h3>Termin</h3><p>Der Termin steht in Ihrem Kalender. Auf Wunsch führen wir auch das Verkaufsgespräch.</p></div>
+        <div class="sys-step"><div class="n">01</div><h3>Website</h3><p>Wir bauen Ihre neue Website oder machen die alte fit. So, dass Besucher anfragen.</p></div>
+        <div class="sys-step"><div class="n">02</div><h3>Sichtbar</h3><p>Werbung bei Google, Facebook und Instagram bringt die richtigen Leute aus Ihrer Region.</p></div>
+        <div class="sys-step"><div class="n">03</div><h3>Anfrage</h3><p>Jede Anfrage landet sofort bei Ihnen. Der Kunde bekommt automatisch eine Bestätigung per SMS und E-Mail.</p></div>
+        <div class="sys-step"><div class="n">04</div><h3>Kunde</h3><p>Wir rufen zurück, vereinbaren den Termin und bleiben per E-Mail dran, bis aus der Anfrage ein Auftrag wird.</p></div>
       </div>
     </div>
   </section>
@@ -1413,21 +1459,22 @@ form .btn{justify-content:center;margin-top:6px}
       <div class="sec-head">
         <span class="eyebrow">Leistungen</span>
         <h2>Alles aus einer Hand.</h2>
+        <p>Vier Bausteine, ein Ansprechpartner. Sie müssen keines der Programme dahinter kennen.</p>
       </div>
       <div class="svc-grid">
-        <div class="svc wide"><div class="svc-img"><img src="assets/biz-web-v3.jpg" style="object-position:50% 9%" alt="Selbstständiger freut sich über neue Anfragen über seine Website"><div class="web-ui" aria-hidden="true"><div class="wu-win"><div class="wu-bar"><i></i><i></i><i></i><span class="wu-url"><svg viewBox="0 0 24 24" width="9" height="9" fill="none" stroke="currentColor" stroke-width="2.4"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>ihr-betrieb.de</span></div><div class="wu-body"><b class="wu-h"></b><b class="wu-h s"></b><span class="wu-btn">Anfrage senden</span></div></div><div class="wu-ping"><i></i>Neue Anfrage <em>+1</em></div></div><svg class="svc-bolt" viewBox="0 0 200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M150 0 L118 46 L132 50 L96 120"/></svg></div><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8"/></svg></span><h3>Websites &amp; Funnels</h3><p>Seiten, die nicht nur gut aussehen, sondern Anfragen bringen.</p></div>
+        <div class="svc wide"><div class="svc-img"><img src="assets/biz-web-v3.jpg" style="object-position:50% 9%" alt="Selbstständiger freut sich über neue Anfragen über seine Website"><div class="web-ui" aria-hidden="true"><div class="wu-win"><div class="wu-bar"><i></i><i></i><i></i><span class="wu-url"><svg viewBox="0 0 24 24" width="9" height="9" fill="none" stroke="currentColor" stroke-width="2.4"><rect x="5" y="11" width="14" height="10" rx="2"/><path d="M8 11V7a4 4 0 0 1 8 0v4"/></svg>ihr-betrieb.de</span></div><div class="wu-body"><b class="wu-h"></b><b class="wu-h s"></b><span class="wu-btn">Anfrage senden</span></div></div><div class="wu-ping"><i></i>Neue Anfrage <em>+1</em></div></div><svg class="svc-bolt" viewBox="0 0 200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M150 0 L118 46 L132 50 L96 120"/></svg></div><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M3 9h18M8 21h8"/></svg></span><h3>Website, die Kunden bringt</h3><p>Neu gebaut oder umgebaut, in drei Größen: von der schlanken Visitenkarte bis zur großen Seite mit allen Verknüpfungen. Wir pflegen und verbessern sie laufend.</p></div>
         <div class="svc"><div class="svc-img"><img src="assets/0b63b80ada98.jpg" alt="Kampagnen und Leads"><div class="camp-ui" aria-hidden="true">
-<div class="cu-chips"><span class="cu-chip"><i class="d d1"></i>Meta</span><span class="cu-chip"><i class="d d2"></i>TikTok</span><span class="cu-chip"><i class="d d3"></i>Google Ads</span></div>
+<div class="cu-chips"><span class="cu-chip"><i class="d d1"></i>Facebook</span><span class="cu-chip"><i class="d d2"></i>TikTok</span><span class="cu-chip"><i class="d d3"></i>Google Ads</span></div>
 <div class="cu-chart"><span class="cu-l">Anfragen</span><svg viewBox="0 0 120 50"><path class="cu-area" d="M2 46 L20 42 L38 43 L56 32 L74 34 L92 18 L118 4 L118 50 L2 50Z"/><path class="cu-line" d="M2 46 L20 42 L38 43 L56 32 L74 34 L92 18 L118 4"/></svg></div>
 <div class="cu-cal"><span class="cu-l">Termine</span><div class="cu-grid"><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i><i style="--i:6"></i><i style="--i:7"></i><i style="--i:8"></i><i style="--i:9"></i><i style="--i:10"></i><i style="--i:11"></i><i style="--i:12"></i><i style="--i:13"></i><i style="--i:14"></i><i style="--i:15"></i></div></div>
-</div><svg class="svc-bolt" viewBox="0 0 200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M150 0 L118 46 L132 50 L96 120"/></svg></div><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span><h3>Werbung</h3><p>Meta, TikTok und Google Ads. Laufend optimiert.</p></div>
-        <div class="svc"><div class="svc-img"><img src="assets/biz-video-v3.jpg" style="object-position:50% 0" alt="Viktor filmt mit Kamera und Gimbal"><div class="vid-ui" aria-hidden="true"><span class="vu-rec"><i></i>REC</span><span class="vu-tag">4K · Spot</span></div><svg class="svc-bolt" viewBox="0 0 200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M150 0 L118 46 L132 50 L96 120"/></svg></div><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="3" y="6" width="13" height="12" rx="2"/><path d="m16 10 5-3v10l-5-3"/></svg></span><h3>Video &amp; Creatives</h3><p>Spots, Fotos und Texte. Gedreht mit eigenem Kamerateam.</p></div>
-        <div class="svc wide"><div class="svc-img"><img src="assets/biz-phone-v3.jpg" style="object-position:50% 4%" alt="Kevin vom Vertriebsteam am Telefon"><div class="tel-ui" aria-hidden="true"><div class="tu-call"><span class="tu-ic"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><span><b>Anruf läuft</b><small>00:42 · Neue Anfrage</small></span></div><div class="tu-ok"><i>✓</i><span><b>Termin bestätigt</b><small>Do · 10:00 · Erstgespräch</small></span></div></div><svg class="svc-bolt" viewBox="0 0 200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M150 0 L118 46 L132 50 L96 120"/></svg></div><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><h3>Telefon &amp; Termine</h3><p>Wir rufen Ihre Anfragen an, qualifizieren sie und tragen den Termin direkt in Ihren Kalender ein.</p></div>
+</div><svg class="svc-bolt" viewBox="0 0 200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M150 0 L118 46 L132 50 L96 120"/></svg></div><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span><h3>Gefunden werden</h3><p>Werbung bei Google, Facebook, Instagram und TikTok. Mit Videos und Fotos von unserem eigenen Kamerateam.</p></div>
+        <div class="svc"><div class="svc-img"><img src="assets/biz-phone-v3.jpg" style="object-position:50% 4%" alt="Kevin vom Vertriebsteam am Telefon"><div class="tel-ui" aria-hidden="true"><div class="tu-call"><span class="tu-ic"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><span><b>Anruf läuft</b><small>00:42 · Neue Anfrage</small></span></div><div class="tu-ok"><i>✓</i><span><b>Termin bestätigt</b><small>Do · 10:00 · Erstgespräch</small></span></div></div><svg class="svc-bolt" viewBox="0 0 200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M150 0 L118 46 L132 50 L96 120"/></svg></div><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><h3>Jede Anfrage wird zum Termin</h3><p>Sofort eine SMS und E-Mail an den Kunden, dann ruft unser Team zurück und trägt den Termin in Ihren Kalender ein.</p></div>
+        <div class="svc wide"><div class="svc-img"><img src="assets/88afdf16ba20.jpg" style="object-position:50% 50%" alt="Kunden-Übersicht mit allen Anfragen auf dem Laptop" loading="lazy"><div class="tel-ui" aria-hidden="true"><div class="tu-call"><span class="tu-ic"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 3v3M5 9h14v10H5zM9 14h.01M15 14h.01"/></svg></span><span><b>Kunden-Übersicht</b><small>12 neue Anfragen · 4 Termine</small></span></div><div class="tu-ok"><i>⚡</i><span><b>Angebot verschickt</b><small>automatisch · per E-Mail</small></span></div></div><svg class="svc-bolt" viewBox="0 0 200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M150 0 L118 46 L132 50 L96 120"/></svg></div><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 4v4M9 14h.01M15 14h.01"/></svg></span><h3>Läuft automatisch</h3><p>Social Media verbunden, E-Mails an Ihre Kunden, ein Chat-Assistent auf der Website und eine Kunden-Übersicht (CRM): Sie sehen jederzeit, wer angefragt hat, woher er kommt und wie weit er ist.</p></div>
       </div>
       <div class="team-head"><span class="eyebrow">Ihr Team</span><h3>Die Köpfe hinter Ihrem Wachstum.</h3></div>
       <div class="team">
         <figure class="tm lead"><div class="tm-img"><img src="assets/team-2f12b1-v2.jpg" alt="Victor, Gründer und Strategie"><svg class="svc-bolt" viewBox="0 0 200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M150 0 L118 46 L132 50 L96 120"/></svg></div><figcaption><b>Victor</b><span class="tm-role">Gründer · Strategieplanung</span><p>Plant Ihre Strategie und hält alle Fäden zusammen.</p></figcaption></figure>
-        <figure class="tm"><div class="tm-img"><img src="assets/team-933826-v2.jpg" alt="Eugenia, Meta Ads und Technik"><svg class="svc-bolt" viewBox="0 0 200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M150 0 L118 46 L132 50 L96 120"/></svg></div><figcaption><b>Eugenia</b><span class="tm-role">Meta Ads &amp; Technik</span><p>Schaltet Ihre Kampagnen und kümmert sich um die Technik.</p></figcaption></figure>
+        <figure class="tm"><div class="tm-img"><img src="assets/team-933826-v2.jpg" alt="Eugenia, Werbung und Technik"><svg class="svc-bolt" viewBox="0 0 200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M150 0 L118 46 L132 50 L96 120"/></svg></div><figcaption><b>Eugenia</b><span class="tm-role">Werbung &amp; Technik</span><p>Schaltet Ihre Kampagnen und kümmert sich um die Technik.</p></figcaption></figure>
         <figure class="tm"><div class="tm-img"><img src="assets/team-d563f9-v2.jpg" alt="Kevin, Vertriebsleitung"><svg class="svc-bolt" viewBox="0 0 200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M150 0 L118 46 L132 50 L96 120"/></svg></div><figcaption><b>Kevin</b><span class="tm-role">Vertriebsleitung</span><p>Ruft Ihre Anfragen an und macht daraus Termine.</p></figcaption></figure>
       </div>
     </div>
@@ -1437,9 +1484,9 @@ form .btn{justify-content:center;margin-top:6px}
     <div class="wrap">
       <div class="sec-head">
         <span class="eyebrow">Pakete</span>
-        <h2>Wählen Sie den Umfang, der zu Ihrem Betrieb passt.</h2>
+        <h2>Drei Pakete. Ein Ziel: mehr Kunden.</h2>
       </div>
-      <div class="plans p4">
+      <div class="plans">
         <div class="plan">
           <span class="tag">WEBSITE</span><h3>Start</h3>
           <p class="for">Ihre professionelle Website, die Anfragen bringt.</p>
@@ -1450,27 +1497,20 @@ form .btn{justify-content:center;margin-top:6px}
         <div class="plan top">
           <span class="badge" data-intro data-after="Beliebt">Oktober-Aktion</span>
           <span class="tag">NEU</span><h3>Smart</h3>
-          <p class="for">Website plus KI-Assistent und Social-Autopilot.</p>
+          <p class="for">Website plus Chat-Assistent und automatische Social-Media-Beiträge.</p>
           <div class="price"><span data-intro data-after="1.990 €">995 €</span><small><span data-intro data-after="einmalig · + 149 € / Monat">Einführungspreis bis 31.10. · danach 1.990 € · + 149 € / Monat</span></small></div>
-          <ul><li>Alles aus Start</li><li>Eigener KI-Assistent, rund um die Uhr</li><li>Social-Autopilot für alle Kanäle</li><li>Aktions-Bereich: Angebote leuchten oben</li></ul>
+          <ul><li>Alles aus Start</li><li>Chat-Assistent beantwortet Kundenfragen rund um die Uhr</li><li>Beiträge laufen automatisch auf allen Kanälen</li><li>Ihre Angebote ganz oben auf der Seite</li></ul>
           <a class="btn btn-blue" href="website-business/#fragebogen">Jetzt Platz sichern</a>
         </div>
         <div class="plan">
-          <span class="tag">PREMIUM</span><h3>Wachstum</h3>
-          <p class="for">Das komplette System für planbare neue Kunden.</p>
+          <span class="tag">KOMPLETTSYSTEM</span><h3>Wachstum</h3>
+          <p class="for">Website, Werbung und Kundengewinnung: das komplette System für planbare neue Kunden.</p>
           <div class="price">2.490 €<small>einmalig · + ab 790 € / Monat</small></div>
-          <ul><li>Alles aus Smart</li><li>Meta-Kampagnen mit Betreuung</li><li>Videodreh vor Ort mit Kamerateam</li><li>Telefonservice mit Terminvereinbarung</li></ul>
-          <a class="btn btn-ghost" href="#b-kontakt" data-scroll>Potenzialanalyse</a>
-        </div>
-        <div class="plan">
-          <span class="tag">ULTRA</span><h3>Komplett</h3>
-          <p class="for">Full Service: Sie arbeiten, wir kümmern uns um den Rest.</p>
-          <div class="price">2.490 €<small>einmalig · + ab 1.590 € / Monat</small></div>
-          <ul><li>Alles aus Wachstum</li><li>KI-Telefonagent 24/7</li><li>Bis zu 2 Werbespots pro Monat</li><li>TikTok- und Google-Ads</li></ul>
-          <a class="btn btn-ghost" href="#b-kontakt" data-scroll>Potenzialanalyse</a>
+          <ul><li>Alles aus Smart</li><li>Werbung auf Facebook &amp; Instagram, betreut</li><li>Automatische E-Mails an Ihre Kunden</li><li>Kunden-Übersicht (CRM) mit allen Anfragen</li><li>Videodreh vor Ort mit Kamerateam</li><li>Telefonservice mit Terminvereinbarung</li></ul>
+          <a class="btn btn-ghost" href="#b-kontakt" data-scroll>Erstgespräch</a>
         </div>
       </div>
-      <p class="plans-addon"><b>Dazubuchen: KI-Telefonagent</b> – nimmt Anrufe rund um die Uhr an und trägt Termine ein. 249 € einmalig + 149 € / Monat inkl. 300 Minuten.</p>
+      <p class="plans-addon"><b>Noch mehr Service? Komplett</b> – alles aus Wachstum plus Telefon-Assistent rund um die Uhr, bis zu 2 Werbespots im Monat und Werbung bei Google und TikTok. 2.490 € einmalig + ab 1.590 € / Monat.<br><b>Einzeln dazubuchen: Telefon-Assistent (KI)</b> – nimmt Anrufe rund um die Uhr an und trägt Termine ein. 249 € einmalig + 149 € / Monat inkl. 300 Minuten.</p>
       <p class="plans-note">Alle Preise sind Endpreise, nach § 19 UStG wird keine Umsatzsteuer berechnet. Das Werbebudget zahlen Sie direkt an die Plattform.</p>
     </div>
   </section>
@@ -1508,18 +1548,19 @@ form .btn{justify-content:center;margin-top:6px}
       <img class="ct-bg ct-bg-m" src="assets/biz-cta-v3.jpg" alt="" aria-hidden="true" loading="lazy"><img class="ct-bg ct-bg-d" src="assets/biz-cta-v4-desktop.jpg" alt="" aria-hidden="true" loading="lazy">
       <svg class="sys-bolts" viewBox="0 0 800 400" preserveAspectRatio="none" aria-hidden="true"><path d="M780 0 L700 90 L725 96 L640 200" fill="none" stroke="#38C8FF" stroke-width="1"/></svg>
       <div>
-        <h2>Holen Sie sich Ihre kostenlose Potenzialanalyse.</h2>
-        <p>In 30 Minuten zeigen wir Ihnen, wie viele neue Termine in Ihrer Region möglich sind.</p>
+        <h2>Holen Sie sich Ihr kostenloses Erstgespräch.</h2>
+        <p>In 30 Minuten zeigen wir Ihnen, wie viele neue Kunden in Ihrer Region möglich sind.</p>
         <ul><li>Unverbindlich und kostenlos</li><li>Antwort innerhalb von 24 Stunden</li><li>Ehrliche Einschätzung, auch wenn es nicht passt</li></ul>
       </div>
       <form id="leadForm" novalidate>
         <label for="f-name">Vor- und Nachname<input id="f-name" name="name" required autocomplete="name"></label>
         <label for="f-firma">Unternehmen<input id="f-firma" name="firma" autocomplete="organization"></label>
         <label for="f-tel">Telefon<input id="f-tel" name="tel" type="tel" required autocomplete="tel"></label>
-        <label for="f-mail">E-Mail (optional)<input id="f-mail" name="email" type="email" autocomplete="email"></label>
+        <label for="f-mail">E-Mail<input id="f-mail" name="email" type="email" required autocomplete="email"></label>
         <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
-        <label for="f-ziel">Was ist Ihr Ziel?<select id="f-ziel" name="ziel"><option>Mehr Kundenanfragen</option><option>Neue Website</option><option>Mitarbeiter finden</option><option>Werbespot / Imagefilm</option><option>Etwas anderes</option></select></label>
-        <button class="btn btn-blue" type="submit">Potenzialanalyse anfragen ⚡</button>
+        <input type="hidden" name="quelle" id="f-quelle"><label for="f-ziel">Was ist Ihr Ziel?<select id="f-ziel" name="ziel"><option>Mehr Kundenanfragen</option><option>Neue Website</option><option>Website umbauen</option><option>Social Media &amp; E-Mail automatisieren</option><option>Mitarbeiter finden</option><option>Werbespot / Imagefilm</option><option>Etwas anderes</option></select></label>
+        <label class="f-opt" for="f-news"><input id="f-news" type="checkbox" name="newsletter" value="ja"> <span>Ja, schicken Sie mir alle paar Tage Tipps zur Kundengewinnung per E-Mail. Abmeldung jederzeit möglich.</span></label>
+        <button class="btn btn-blue" type="submit">Erstgespräch anfragen ⚡</button>
         <div class="sent" id="sent" hidden>Danke! Ihre Anfrage ist da. Wir melden uns innerhalb von 24 Stunden.</div>
       </form>
     </div>
@@ -1827,7 +1868,13 @@ form .btn{justify-content:center;margin-top:6px}
     window.scrollTo(0,0); requestAnimationFrame(()=>{ window.scrollTo(0,0); setTimeout(()=>{ window.scrollTo(0,0); de.style.scrollBehavior=''; },120); });
     return true;
   }
-  function route(){ const h=location.hash.slice(1); if(!show(h)){ const el=h&&document.getElementById(h); if(!el) show('start'); } }
+  function route(){
+    const h=location.hash.slice(1).split(/[?&]/)[0], q=new URLSearchParams(location.search).get('v');
+    if(show(h)) return;
+    const el=h&&document.getElementById(h), v=el&&el.closest('[data-view]');
+    if(v && v.hidden){ show(v.dataset.view); setTimeout(()=>el.scrollIntoView({block:'start'}),320); return; }
+    if(!el && !show(q||'')) show('start');
+  }
   window.addEventListener('hashchange',route); route();
 
   const flash=document.getElementById('flash');
@@ -1845,12 +1892,22 @@ form .btn{justify-content:center;margin-top:6px}
     a.addEventListener('click',e=>{ const t=document.getElementById(id); if(t){ e.preventDefault(); t.scrollIntoView({behavior:'smooth',block:'start'}); } });
   });
 
+  /* ---------- Referenzen blättern ---------- */
+  document.querySelectorAll('.refs').forEach(sec=>{
+    const rail=sec.querySelector('.refs-rail');
+    sec.querySelectorAll('.refs-btn').forEach(b=>b.addEventListener('click',()=>{
+      const card=rail.querySelector('.ref'); const w=card?card.getBoundingClientRect().width+20:320;
+      rail.scrollBy({left:w*Number(b.dataset.dir),behavior:'smooth'});
+    }));
+  });
+
   /* ---------- FAQ als Chat ---------- */
   const faq=[
-    ['Was kostet das?','Websites starten bei 1.290 € einmalig. Das Paket Smart mit KI-Assistent und Social-Autopilot kostet 1.990 €, im Oktober zum Einführungspreis von 995 €. Komplette Systeme mit Werbung und Telefonservice ab 790 € im Monat. Das Werbebudget zahlen Sie direkt an die Plattform.'],
+    ['Was kostet das?','Websites starten bei 1.290 € einmalig. Das Paket Smart mit Chat-Assistent und automatischen Social-Media-Beiträgen kostet 1.990 €, im Oktober zum Einführungspreis von 995 €. Komplette Systeme mit Werbung und Telefonservice ab 790 € im Monat. Das Werbebudget zahlen Sie direkt an die Plattform.'],
     ['Wie schnell bekomme ich Anfragen?','Nach Strategie und Produktion gehen die Kampagnen meist in Woche 4 live. Erste Anfragen kommen oft in den ersten Tagen danach.'],
     ['Lohnt sich das für einen kleinen Betrieb?','Gerade dort. Schon wenige zusätzliche Aufträge im Monat machen bei Handwerk und Dienstleistung einen großen Unterschied.'],
     ['Muss ich mich selbst um etwas kümmern?','Kaum. Sie geben Inhalte frei und führen die Kundengespräche. Alles andere übernehmen wir.'],
+    ['Sehe ich, was mit meinen Anfragen passiert?','Ja. Sie bekommen eine Kunden-Übersicht (CRM): jede Anfrage mit Name, Herkunft und Stand, also neu, angerufen, Termin oder Kunde. Dazu eine Besucher-Statistik Ihrer Website: wie viele kommen, woher und was sie sich ansehen. Alles DSGVO-konform.'],
     ['Gibt es eine lange Vertragsbindung?','Wir setzen auf Ergebnisse statt Knebelverträge. Die Laufzeit besprechen wir offen im Erstgespräch.']
   ];
   const chat=document.getElementById('chat');
@@ -1901,7 +1958,9 @@ form .btn{justify-content:center;margin-top:6px}
     e.preventDefault(); const f=e.target, s=document.getElementById('sent'), b=f.querySelector('button[type=submit]');
     if(!f.checkValidity()){ f.reportValidity(); return; }
     b.disabled=true;
+    const q=document.getElementById('f-quelle'); if(q && window.HLP_ADS) q.value=HLP_ADS.quelle();
     try{ const r=await fetch('https://formular.highlevel-performance.de/kontakt.php',{method:'POST',body:new FormData(f)}); const j=await r.json(); if(!j.ok) throw 0;
+      if(window.HLP_ADS){ HLP_ADS.conv('lead'); HLP_ADS.hook(new FormData(f),'potenzialanalyse'); }
       s.textContent='Danke! Ihre Anfrage ist da. Wir melden uns innerhalb von 24 Stunden.'; f.reset(); sfx.warp();
     }catch(_){ s.innerHTML='Das hat leider nicht geklappt. Rufen Sie uns an: <a href="tel:+4915561068899">+49 15561 068899</a> oder schreiben Sie an <a href="mailto:info@highlevel-performance.de">info@highlevel-performance.de</a>.'; }
     s.hidden=false; b.disabled=false;
@@ -1994,13 +2053,14 @@ form .btn{justify-content:center;margin-top:6px}
 <h3>5. Cookies und Einwilligung</h3>
 <p>Technisch notwendige Speicherungen (z. B. Ihre Cookie-Auswahl) setzen wir ohne Einwilligung ein (§ 25 Abs. 2 TDDDG). Alle anderen Dienste wie Statistik und Marketing laden wir erst, nachdem Sie im Cookie-Banner zugestimmt haben (§ 25 Abs. 1 TDDDG, Art. 6 Abs. 1 lit. a DSGVO). Ihre Einwilligung können Sie jederzeit über „Cookie-Einstellungen“ im Fußbereich widerrufen oder ändern.</p>
 <h3>6. Kontakt- und Anfrageformular</h3>
-<p>Wenn Sie uns über das Formular, per E-Mail, Telefon oder WhatsApp kontaktieren, verarbeiten wir Ihre Angaben (z. B. Name, Unternehmen, E-Mail, Telefonnummer, Nachricht) zur Bearbeitung Ihrer Anfrage. Formularanfragen werden per E-Mail über den Mailserver unseres Hosters an info@highlevel-performance.de übermittelt. Wenn Sie über „Musik einreichen“ Audiodateien hochladen, speichern wir diese auf unserem Server beim Hoster, um sie anzuhören und Ihre Anfrage zu beantworten. Wir löschen die Dateien, sobald sie dafür nicht mehr benötigt werden, spätestens nach 6 Monaten (Art. 6 Abs. 1 lit. b DSGVO). Die Daten löschen wir, sobald sie nicht mehr benötigt werden, spätestens nach Ablauf gesetzlicher Aufbewahrungsfristen.</p>
+<p>Wenn Sie uns über das Formular, per E-Mail, Telefon oder WhatsApp kontaktieren, verarbeiten wir Ihre Angaben (z. B. Name, Unternehmen, E-Mail, Telefonnummer, Nachricht) zur Bearbeitung Ihrer Anfrage. Formularanfragen werden per E-Mail über den Mailserver unseres Hosters an info@highlevel-performance.de übermittelt. Wenn Sie über „Musik einreichen“ Audiodateien hochladen, speichern wir diese auf unserem Server beim Hoster, um sie anzuhören und Ihre Anfrage zu beantworten. Wir löschen die Dateien, sobald sie dafür nicht mehr benötigt werden, spätestens nach 6 Monaten (Art. 6 Abs. 1 lit. b DSGVO). Die Daten löschen wir, sobald sie nicht mehr benötigt werden, spätestens nach Ablauf gesetzlicher Aufbewahrungsfristen. Zur Bearbeitung Ihrer Anfrage nutzen wir Auftragsverarbeiter: Pabbly Connect (Magnet Brains Software Technology Pvt. Ltd., Indien) zur automatischen Weiterleitung, Brevo (Sendinblue SAS, Paris, Frankreich) für E-Mails und ClickSend (ClickSend Pty Ltd, Australien) für SMS-Benachrichtigungen. Für Übermittlungen in Drittländer nutzen wir EU-Standardvertragsklauseln. Tipps per E-Mail erhalten Sie nur, wenn Sie dies im Formular ausdrücklich angekreuzt haben (Art. 6 Abs. 1 lit. a DSGVO); Sie können sich jederzeit über den Link in jeder E-Mail abmelden.</p>
 <h3>7. Schriftarten</h3>
 <p>Die auf dieser Website verwendeten Schriftarten sind lokal eingebunden. Beim Aufruf wird keine Verbindung zu Servern von Google hergestellt.</p>
 <h3>8. Statistik: Google Analytics (nur mit Einwilligung)</h3>
 <p>Mit Ihrer Einwilligung nutzen wir Google Analytics 4 der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland, um die Nutzung der Website auszuwerten. Dabei können Daten auch in die USA übertragen werden. Google ist unter dem EU-US Data Privacy Framework zertifiziert. IP-Adressen werden gekürzt. Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO.</p>
 <h3>9. Marketing: Meta-Pixel (nur mit Einwilligung)</h3>
 <p>Mit Ihrer Einwilligung setzen wir den Meta-Pixel der Meta Platforms Ireland Ltd., Merrion Road, Dublin 4, Irland, ein. So können wir die Wirkung unserer Werbeanzeigen auf Facebook und Instagram messen und Anzeigen gezielt ausspielen. Daten können in die USA übertragen werden. Meta ist unter dem EU-US Data Privacy Framework zertifiziert. Für die Erhebung und Übermittlung sind wir gemeinsam mit Meta verantwortlich (Art. 26 DSGVO). Rechtsgrundlage: Art. 6 Abs. 1 lit. a DSGVO.</p>
+<h3>9a. Marketing: Google Ads Conversion-Tracking (nur mit Einwilligung)</h3><p>Mit Ihrer Einwilligung nutzen wir Google Ads der Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland. Kommen Sie über eine unserer Google-Anzeigen auf unsere Website, wird ein Cookie gesetzt, mit dem Google und wir erkennen, ob Sie anschließend eine Anfrage gesendet oder unsere Telefonnummer angeklickt haben. So messen wir den Erfolg unserer Werbung und können Anzeigen an Personen ausspielen, die unsere Seite bereits besucht haben (Remarketing). Rechtsgrundlage ist Ihre Einwilligung nach Art. 6 Abs. 1 lit. a DSGVO und § 25 Abs. 1 TDDDG. Eine Übermittlung in die USA ist möglich; Google ist unter dem EU-US Data Privacy Framework zertifiziert. Sie können Ihre Einwilligung jederzeit über „Cookie-Einstellungen“ widerrufen. Mehr unter <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a>.</p>
 <h3>10. Social-Media-Links</h3>
 <p>Auf unserer Website verlinken wir auf unsere Profile bei Instagram und Facebook. Es handelt sich um einfache Links. Daten werden erst übertragen, wenn Sie einen Link anklicken und die jeweilige Plattform besuchen. Dort gelten die Datenschutzbestimmungen des Anbieters.</p>
 <h3>10a. KI-Assistent „Levi“</h3><p>Auf unserer Website können Sie mit unserem KI-Assistenten Levi chatten. Levi wird erst geladen und verbindet sich erst, wenn Sie selbst eine Nachricht senden. Dann werden Ihre Texteingaben sowie technische Verbindungsdaten (z. B. IP-Adresse) an unseren Dienstleister ElevenLabs Inc. übertragen, der daraus mit Hilfe künstlicher Intelligenz eine Antwort erzeugt. Dabei kann eine Übermittlung in die USA stattfinden; sie erfolgt auf Grundlage geeigneter Garantien (z. B. EU-Standardvertragsklauseln). Rechtsgrundlage ist Ihre Einwilligung durch das aktive Starten des Chats (Art. 6 Abs. 1 lit. a DSGVO) bzw. die Beantwortung Ihrer Anfrage (Art. 6 Abs. 1 lit. b DSGVO). Gesprächsverläufe werden nach 30 Tagen gelöscht. Bitte geben Sie im Chat keine sensiblen Daten ein. Levi ist eine KI und kann Fehler machen; verbindlich sind nur unsere Angebote in Textform.</p>
@@ -2011,7 +2071,7 @@ form .btn{justify-content:center;margin-top:6px}
 <div class="ck" id="ck" hidden role="dialog" aria-label="Cookie-Einstellungen">
   <div class="ck-in">
     <b>Cookies &amp; Datenschutz</b>
-    <p>Wir nutzen technisch notwendige Speicherung. Mit Ihrer Zustimmung setzen wir zusätzlich Statistik (Google Analytics) und Marketing (Meta-Pixel) ein, um unsere Seite und Werbung zu verbessern. Mehr in der <a href="#" data-legal="datenschutz">Datenschutzerklärung</a>.</p>
+    <p>Wir nutzen technisch notwendige Speicherung. Mit Ihrer Zustimmung setzen wir zusätzlich Statistik (Google Analytics) und Marketing (Meta-Pixel, Google Ads) ein, um unsere Seite und Werbung zu verbessern. Mehr in der <a href="#" data-legal="datenschutz">Datenschutzerklärung</a>.</p>
     <div class="ck-opts" id="ckOpts" hidden>
       <label><input type="checkbox" checked disabled> Notwendig</label>
       <label><input type="checkbox" id="ckStat"> Statistik</label>
@@ -2042,7 +2102,7 @@ form .btn{justify-content:center;margin-top:6px}
       !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
       fbq('init',CFG.META_PIXEL_ID); fbq('track','PageView'); }
   }
-  function save(c){ set(c); ck.hidden=true; load(c); }
+  function save(c){ set(c); ck.hidden=true; load(c); if(window.HLP_ADS) HLP_ADS.load(c); }
   function open(){ const c=get()||{stat:false,mkt:false}; document.getElementById('ckStat').checked=!!c.stat; document.getElementById('ckMkt').checked=!!c.mkt; ck.hidden=false; }
   document.getElementById('ckAll').onclick=()=>save({stat:true,mkt:true,t:Date.now()});
   document.getElementById('ckNo').onclick=()=>save({stat:false,mkt:false,t:Date.now()});
@@ -2139,5 +2199,6 @@ document.addEventListener('keydown',function(e){if(document.getElementById('star
   if(cds.length)tick();
 })();
 </script>
+<script src="assets/hlp-ads.js"></script>
 <script src="assets/levi/levi.js" defer></script>
 </body></html>
