@@ -9,7 +9,7 @@
       entwurf: '',         // Label "Website-Entwurf angefordert" (Fragebogen /website-business/)
       anruf: ''            // Label "Klick auf Telefonnummer"
     },
-    WEBHOOK: ''            // Pabbly-Connect-Webhook "HLP Business – Google Leads"
+    WEBHOOK: 'https://connect.pabbly.com/webhook-listener/webhook/IjU3NjAwNTZmMDYzZTA0MzE1MjY4NTUzNyI_3D_pc/IjU3NjcwNTY4MDYzZjA0MzY1MjY4NTUzMjUxMzEi_pc' // Pabbly "HLP Business – Google Leads"
   };
   var K = 'hlp_consent_v1', loaded = false;
 
@@ -79,9 +79,13 @@
   function hook(fd, formular){
     if(!CFG.WEBHOOK) return;
     try{
-      var o = {}; fd.forEach(function(v, k){ if(typeof v === 'string' && k !== 'website') o[k] = v; });
-      o.formular = formular; o.quelle = o.quelle || quelle(); o.seite = location.href.split('#')[0]; o.zeit = new Date().toISOString();
-      fetch(CFG.WEBHOOK, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain' }, body: JSON.stringify(o), keepalive: true });
+      var o = new URLSearchParams();
+      fd.forEach(function(v, k){ if(typeof v === 'string' && k !== 'website' && k !== 'ok') o.append(k, v); });
+      if(!o.get('newsletter')) o.set('newsletter', 'nein');
+      if(!o.get('quelle')) o.set('quelle', quelle() || 'direkt');
+      o.set('formular', formular); o.set('seite', location.href.split('#')[0]); o.set('zeit', new Date().toLocaleString('de-DE', { timeZone: 'Europe/Berlin' }));
+      o.set('datum', new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Berlin' })); // YYYY-MM-DD für Brevo EINTRAGUNG
+      fetch(CFG.WEBHOOK, { method: 'POST', mode: 'no-cors', body: o, keepalive: true });
     }catch(e){}
   }
 
