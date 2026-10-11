@@ -100,6 +100,7 @@ footer .wrap{display:flex;gap:20px;flex-wrap:wrap;justify-content:space-between}
 <label>Paket<select name="paket"><option>Smart (Oktober-Aktion)</option><option>Start</option><option>Wachstum</option><option>Komplett</option><option>Nur KI-Telefonagent</option><option>Weiß ich noch nicht</option></select></label>
 <label class="full">Logo und Fotos (max. 5 Dateien, je bis 10 MB)<input type="file" name="dateien[]" multiple accept="image/*,.pdf,.svg"></label>
 <label class="full">Was ist Ihnen wichtig?<textarea name="msg" rows="3"></textarea></label>
+<label class="chk"><input type="checkbox" name="newsletter" value="ja"> <span>Ja, schicken Sie mir alle paar Tage Tipps zur Kundengewinnung per E-Mail. Abmeldung jederzeit möglich.</span></label>
 <label class="chk"><input type="checkbox" name="ok" required> <span>Ich bin einverstanden, dass meine Angaben und Dateien zur Erstellung des Entwurfs verarbeitet werden. Mehr in der <a href="../datenschutz/">Datenschutzerklärung</a>.</span></label>
 <button class="btn btn-acc" type="submit">Kostenlosen Entwurf anfordern</button><p class="msg" id="lpMsg" hidden></p>
 </form></div></div></section>
@@ -112,5 +113,5 @@ var fs=f.querySelector('input[type=file]').files;if(fs.length>5){m.textContent='
 for(var i=0;i<fs.length;i++){if(fs[i].size>10*1024*1024){m.textContent='Eine Datei ist größer als 10 MB.';m.hidden=false;return}}
 b.disabled=true;m.hidden=true;
 var fd=new FormData(f);if(window.HLP_ADS){var q=HLP_ADS.quelle();if(q)fd.set('msg',(fd.get('msg')||'')+'\n\n[Quelle: '+q+']');}
-fetch(f.action,{method:'POST',body:fd}).then(function(r){return r.json()}).then(function(j){if(!j.ok)throw 0;if(window.HLP_ADS)HLP_ADS.conv('entwurf');f.reset();m.textContent=f.dataset.thanks;m.hidden=false}).catch(function(){m.innerHTML='Das hat leider nicht geklappt. Schreib uns an <a href="mailto:info@highlevel-performance.de">info@highlevel-performance.de</a> oder ruf an: <a href="tel:+4915561068899">+49 15561 068899</a>.';m.hidden=false}).finally(function(){b.disabled=false})});
+fetch(f.action,{method:'POST',body:fd}).then(function(r){return r.json()}).then(function(j){if(!j.ok)throw 0;if(window.HLP_ADS){HLP_ADS.conv('entwurf');HLP_ADS.hook(fd,'website-entwurf');}f.reset();m.textContent=f.dataset.thanks;m.hidden=false}).catch(function(){m.innerHTML='Das hat leider nicht geklappt. Schreib uns an <a href="mailto:info@highlevel-performance.de">info@highlevel-performance.de</a> oder ruf an: <a href="tel:+4915561068899">+49 15561 068899</a>.';m.hidden=false}).finally(function(){b.disabled=false})});
 </script><script>(function(){var end=new Date('2026-10-31T23:59:59+01:00');if(new Date()>end){document.querySelectorAll('[data-intro]').forEach(function(el){el.textContent=el.dataset.after;});document.querySelectorAll('[data-intro-hide]').forEach(function(el){el.remove();});}})();</script><script src="../assets/hlp-ads.js"></script><script>HLP_ADS.banner()</script></body></html>

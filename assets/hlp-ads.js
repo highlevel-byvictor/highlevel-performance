@@ -8,7 +8,8 @@
       lead: '',            // Label "Potenzialanalyse angefragt"  (Formular Business-Seite)
       entwurf: '',         // Label "Website-Entwurf angefordert" (Fragebogen /website-business/)
       anruf: ''            // Label "Klick auf Telefonnummer"
-    }
+    },
+    WEBHOOK: ''            // Pabbly-Connect-Webhook "HLP Business – Google Leads"
   };
   var K = 'hlp_consent_v1', loaded = false;
 
@@ -40,7 +41,8 @@
 
   /* Herkunft der Anfrage (Google-Klick-ID, Kampagne, Keyword) – nur aus der aktuellen URL, ohne Speicherung */
   function quelle(){
-    var p = new URLSearchParams(location.search), out = [];
+    var h = location.hash.indexOf('?') > -1 ? location.hash.slice(location.hash.indexOf('?') + 1) : '';
+    var p = new URLSearchParams(location.search.slice(1) + (h ? '&' + h : '')), out = [];
     ['utm_source','utm_campaign','utm_term','gclid','gbraid','wbraid'].forEach(function(k){ var v = p.get(k); if(v) out.push(k + '=' + v.slice(0,120)); });
     return out.join(' | ');
   }
@@ -73,6 +75,16 @@
     document.body.appendChild(d);
   }
 
-  window.HLP_ADS = { load: load, conv: conv, quelle: quelle, banner: banner, config: CFG };
+  /* Anfrage zusätzlich an den Pabbly-Workflow schicken (Brevo, ClickSend, Benachrichtigung) */
+  function hook(fd, formular){
+    if(!CFG.WEBHOOK) return;
+    try{
+      var o = {}; fd.forEach(function(v, k){ if(typeof v === 'string' && k !== 'website') o[k] = v; });
+      o.formular = formular; o.quelle = o.quelle || quelle(); o.seite = location.href.split('#')[0]; o.zeit = new Date().toISOString();
+      fetch(CFG.WEBHOOK, { method: 'POST', mode: 'no-cors', headers: { 'Content-Type': 'text/plain' }, body: JSON.stringify(o), keepalive: true });
+    }catch(e){}
+  }
+
+  window.HLP_ADS = { load: load, conv: conv, quelle: quelle, banner: banner, hook: hook, config: CFG };
   load(getConsent());
 })();
