@@ -217,6 +217,14 @@
 .ref-more .ref-did{color:#B8C6E4;flex:0}
 .ref-more .btn{align-self:flex-start;margin-top:8px}
 @media (max-width:640px){.refs-nav{display:none}.refs-head .sec-head{margin-bottom:24px}}
+
+/* Aktion Wachstum + klare Preise */
+.ak-normal{font-size:15px;color:#B8C6E4;margin:6px 0 -4px}
+.ak-normal s{font-weight:700;color:#fff;opacity:.75}
+.plan .price s{font-size:.6em;font-weight:500;color:var(--b-muted);margin-left:6px}
+.plan.top .price s{color:#9fb4d8}
+.plan .price small.mo{margin-top:8px;font-weight:600;color:var(--b-navy)}
+.plan.top .price small.mo{color:#fff}
 </style>
 <link rel="stylesheet" href="assets/levi/levi.css">
 </head><body>
@@ -1364,9 +1372,9 @@ form .btn{justify-content:center;margin-top:6px}
     <span class="ak-spark s1"></span><span class="ak-spark s2"></span><span class="ak-spark s3"></span><span class="ak-spark s4"></span>
     <div class="wrap ak-grid">
       <div class="ak-copy">
-        <span class="ak-live"><i></i>Live · Oktober-Aktion</span>
-        <h2>Ihre Website mit <em>Chat-Assistent</em> und automatischen Social-Media-Beiträgen.</h2>
-        <p>Das neue Paket <b>Smart</b> zum Einführungspreis – nur für die ersten 30 Buchungen bis 31. Oktober.</p>
+        <span class="ak-live"><i></i>Live · Nur bis 31. Oktober</span>
+        <h2>Das Komplettsystem <em>zum halben Preis.</em></h2>
+        <p>Website, Chat-Roboter, Vertrieb, CRM, E-Mail-Marketing und Werbung aus einer Hand: unser größtes Paket <b>Wachstum</b> jetzt 50 % günstiger. Nur für die ersten 30 Betriebe.</p>
         <div class="ak-visual" aria-hidden="true">
           <img class="ak-wow" src="assets/aktion-wow-v1.webp" alt="" loading="lazy" width="736" height="750">
           <div class="ak-float ak-chart"><span>Ihre Reichweite</span><div class="ak-bars"><i></i><i></i><i></i><i></i><i></i><i></i></div><svg viewBox="0 0 120 50"><path d="M4 44 L40 34 L64 38 L116 6" fill="none" stroke="#38C8FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M104 6 L116 6 L114 18" fill="none" stroke="#38C8FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
@@ -1374,19 +1382,20 @@ form .btn{justify-content:center;margin-top:6px}
           <div class="ak-float ak-post"><i></i>Post läuft auf 5 Kanälen</div>
         </div>
         <ul class="ak-feat">
-          <li><b>Chat-Assistent</b>beantwortet Kundenfragen rund um die Uhr</li>
-          <li><b>Social Media automatisch</b>einmal posten, überall online</li>
-          <li><b>Angebote ganz oben</b>Ihre Aktionen sofort sichtbar</li>
+          <li><b>Website + Roboter</b>Chat-Roboter, Social Media live, Angebot ganz oben</li>
+          <li><b>Vertrieb + CRM</b>jede Anfrage im Blick, bis zum Auftrag</li>
+          <li><b>Werbung + E-Mails</b>Google, Facebook, Instagram, automatische E-Mails</li>
         </ul>
       </div>
       <div class="ak-card">
-        <span class="ak-k">Einführungspreis</span>
-        <div class="ak-price">995 €<small>einmalig</small></div>
-        <div class="ak-was">danach 1.990 € · + 149 € / Monat</div>
+        <span class="ak-k">Paket Wachstum · −50 %</span>
+        <div class="ak-normal">Normalpreis <s>2.490 €</s></div>
+        <div class="ak-price">1.245 €<small>einmalig</small></div>
+        <div class="ak-was"><b>Sie sparen 1.245 €.</b> Laufend kommen nur die Monatskosten für Werbung, Betreuung und Vertrieb dazu (ab 790 € im Monat).</div>
         <div class="ak-cd" aria-label="Verbleibende Zeit"><div><b data-cd="d">--</b><span>Tage</span></div><div><b data-cd="h">--</b><span>Std</span></div><div><b data-cd="m">--</b><span>Min</span></div><div><b data-cd="s">--</b><span>Sek</span></div></div>
         <div class="ak-spots" data-frei="30" data-gesamt="30"><div class="ak-bar"><i></i></div><span>Noch <b>30</b> von 30 Plätzen frei</span></div>
-        <a class="btn btn-blue ak-btn" href="website-business/#fragebogen">Jetzt Platz sichern</a>
-        <small class="ak-fine">Gilt nur für das Paket Smart. Endpreis, keine Umsatzsteuer nach § 19 UStG.</small>
+        <a class="btn btn-blue ak-btn" href="#b-pakete" data-scroll>Jetzt zuschnappen – alle Preise ansehen ↓</a>
+        <small class="ak-fine">Gilt für den Einmalpreis des Pakets Wachstum. Endpreis, keine Umsatzsteuer nach § 19 UStG.</small>
       </div>
     </div>
   </section>
@@ -1469,7 +1478,7 @@ form .btn{justify-content:center;margin-top:6px}
 <div class="cu-cal"><span class="cu-l">Termine</span><div class="cu-grid"><i style="--i:1"></i><i style="--i:2"></i><i style="--i:3"></i><i style="--i:4"></i><i style="--i:5"></i><i style="--i:6"></i><i style="--i:7"></i><i style="--i:8"></i><i style="--i:9"></i><i style="--i:10"></i><i style="--i:11"></i><i style="--i:12"></i><i style="--i:13"></i><i style="--i:14"></i><i style="--i:15"></i></div></div>
 </div><svg class="svc-bolt" viewBox="0 0 200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M150 0 L118 46 L132 50 L96 120"/></svg></div><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 17l6-6 4 4 8-8"/><path d="M15 7h6v6"/></svg></span><h3>Gefunden werden</h3><p>Werbung bei Google, Facebook, Instagram und TikTok. Mit Videos und Fotos von unserem eigenen Kamerateam.</p></div>
         <div class="svc"><div class="svc-img"><img src="assets/biz-phone-v3.jpg" style="object-position:50% 4%" alt="Kevin vom Vertriebsteam am Telefon"><div class="tel-ui" aria-hidden="true"><div class="tu-call"><span class="tu-ic"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg></span><span><b>Anruf läuft</b><small>00:42 · Neue Anfrage</small></span></div><div class="tu-ok"><i>✓</i><span><b>Termin bestätigt</b><small>Do · 10:00 · Erstgespräch</small></span></div></div><svg class="svc-bolt" viewBox="0 0 200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M150 0 L118 46 L132 50 L96 120"/></svg></div><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span><h3>Jede Anfrage wird zum Termin</h3><p>Sofort eine SMS und E-Mail an den Kunden, dann ruft unser Team zurück und trägt den Termin in Ihren Kalender ein.</p></div>
-        <div class="svc wide"><div class="svc-img"><img src="assets/88afdf16ba20.jpg" style="object-position:50% 50%" alt="Kunden-Übersicht mit allen Anfragen auf dem Laptop" loading="lazy"><div class="tel-ui" aria-hidden="true"><div class="tu-call"><span class="tu-ic"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 3v3M5 9h14v10H5zM9 14h.01M15 14h.01"/></svg></span><span><b>Kunden-Übersicht</b><small>12 neue Anfragen · 4 Termine</small></span></div><div class="tu-ok"><i>⚡</i><span><b>Angebot verschickt</b><small>automatisch · per E-Mail</small></span></div></div><svg class="svc-bolt" viewBox="0 0 200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M150 0 L118 46 L132 50 L96 120"/></svg></div><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 4v4M9 14h.01M15 14h.01"/></svg></span><h3>Läuft automatisch</h3><p>Social Media verbunden, E-Mails an Ihre Kunden, ein Chat-Assistent auf der Website und eine Kunden-Übersicht (CRM): Sie sehen jederzeit, wer angefragt hat, woher er kommt und wie weit er ist.</p></div>
+        <div class="svc wide"><div class="svc-img"><img src="assets/88afdf16ba20.jpg" style="object-position:50% 50%" alt="Kunden-Übersicht mit allen Anfragen auf dem Laptop" loading="lazy"><div class="tel-ui" aria-hidden="true"><div class="tu-call"><span class="tu-ic"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M12 3v3M5 9h14v10H5zM9 14h.01M15 14h.01"/></svg></span><span><b>Kunden-Übersicht</b><small>12 neue Anfragen · 4 Termine</small></span></div><div class="tu-ok"><i>⚡</i><span><b>Angebot verschickt</b><small>automatisch · per E-Mail</small></span></div></div><svg class="svc-bolt" viewBox="0 0 200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M150 0 L118 46 L132 50 L96 120"/></svg></div><span class="ic"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="4" y="8" width="16" height="12" rx="3"/><path d="M12 4v4M9 14h.01M15 14h.01"/></svg></span><h3>Läuft automatisch</h3><p>Social Media verbunden, E-Mails an Ihre Kunden, ein Chat-Roboter auf der Website und eine Kunden-Übersicht (CRM): Sie sehen jederzeit, wer angefragt hat, woher er kommt und wie weit er ist.</p></div>
       </div>
       <div class="team-head"><span class="eyebrow">Ihr Team</span><h3>Die Köpfe hinter Ihrem Wachstum.</h3></div>
       <div class="team">
@@ -1489,29 +1498,29 @@ form .btn{justify-content:center;margin-top:6px}
       <div class="plans">
         <div class="plan">
           <span class="tag">WEBSITE</span><h3>Start</h3>
-          <p class="for">Ihre professionelle Website, die Anfragen bringt.</p>
-          <div class="price">1.290 €<small>einmalig · + 59 € / Monat</small></div>
-          <ul><li>Website mit Anfrageformular</li><li>Texte für Ihre Leistungen</li><li>Google-Unternehmensprofil</li><li>Hosting und Pflege</li></ul>
+          <p class="for">Die professionelle Website, die Anfragen bringt.</p>
+          <div class="price">1.290 €<small>einmalig für die Website</small><small class="mo">+ 59 € im Monat für Hosting und Pflege</small></div>
+          <ul><li>Website (neu oder Umbau) mit Anfrageformular</li><li>Alle Social-Media-Kanäle verknüpft</li><li>Google-Unternehmensprofil</li><li>Hosting und Pflege</li></ul>
+          <a class="btn btn-ghost" href="website-business/#fragebogen">Entwurf anfordern</a>
+        </div>
+        <div class="plan">
+          <span class="tag">WEBSITE + ROBOTER</span><h3>Smart</h3>
+          <p class="for">Website mit Chat-Roboter, Social Media und Angebots-Banner.</p>
+          <div class="price">1.990 €<small>einmalig für die Website</small><small class="mo">+ 149 € im Monat für Hosting, Pflege und Roboter</small></div>
+          <ul><li>Alles aus Start</li><li>Chat-Roboter beantwortet Kundenfragen rund um die Uhr</li><li>Ihre Social-Media-Beiträge live auf der Website</li><li>Ihr aktuelles Angebot ganz oben eingeblendet</li><li>Jede Anfrage sofort per SMS und E-Mail</li></ul>
           <a class="btn btn-ghost" href="website-business/#fragebogen">Entwurf anfordern</a>
         </div>
         <div class="plan top">
-          <span class="badge" data-intro data-after="Beliebt">Oktober-Aktion</span>
-          <span class="tag">NEU</span><h3>Smart</h3>
-          <p class="for">Website plus Chat-Assistent und automatische Social-Media-Beiträge.</p>
-          <div class="price"><span data-intro data-after="1.990 €">995 €</span><small><span data-intro data-after="einmalig · + 149 € / Monat">Einführungspreis bis 31.10. · danach 1.990 € · + 149 € / Monat</span></small></div>
-          <ul><li>Alles aus Start</li><li>Chat-Assistent beantwortet Kundenfragen rund um die Uhr</li><li>Beiträge laufen automatisch auf allen Kanälen</li><li>Ihre Angebote ganz oben auf der Seite</li></ul>
-          <a class="btn btn-blue" href="website-business/#fragebogen">Jetzt Platz sichern</a>
-        </div>
-        <div class="plan">
+          <span class="badge" data-intro data-after="Beliebt">−50 % bis 31.10.</span>
           <span class="tag">KOMPLETTSYSTEM</span><h3>Wachstum</h3>
-          <p class="for">Website, Werbung und Kundengewinnung: das komplette System für planbare neue Kunden.</p>
-          <div class="price">2.490 €<small>einmalig · + ab 790 € / Monat</small></div>
-          <ul><li>Alles aus Smart</li><li>Werbung auf Facebook &amp; Instagram, betreut</li><li>Automatische E-Mails an Ihre Kunden</li><li>Kunden-Übersicht (CRM) mit allen Anfragen</li><li>Videodreh vor Ort mit Kamerateam</li><li>Telefonservice mit Terminvereinbarung</li></ul>
-          <a class="btn btn-ghost" href="#b-kontakt" data-scroll>Erstgespräch</a>
+          <p class="for">Website plus Vertrieb: aus Anfragen werden zahlende Kunden.</p>
+          <div class="price"><span data-intro data-after="2.490 €">1.245 € <s>2.490 €</s></span><small><span data-intro data-after="einmalig für Website und Einrichtung">einmalig · Aktionspreis bis 31.10., danach 2.490 €</span></small><small class="mo">+ ab 790 € im Monat für Werbung, Betreuung und Vertrieb</small></div>
+          <ul><li>Alles aus Smart</li><li>Vertriebsabläufe optimiert</li><li>CRM: alle Kunden und Anfragen im Blick</li><li>Automatisches E-Mail-Marketing</li><li>Werbung bei Google, Facebook und Instagram</li><li>Videodreh und Telefonservice mit Terminen</li></ul>
+          <a class="btn btn-blue" href="#b-kontakt" data-scroll>Aktionspreis sichern</a>
         </div>
       </div>
-      <p class="plans-addon"><b>Noch mehr Service? Komplett</b> – alles aus Wachstum plus Telefon-Assistent rund um die Uhr, bis zu 2 Werbespots im Monat und Werbung bei Google und TikTok. 2.490 € einmalig + ab 1.590 € / Monat.<br><b>Einzeln dazubuchen: Telefon-Assistent (KI)</b> – nimmt Anrufe rund um die Uhr an und trägt Termine ein. 249 € einmalig + 149 € / Monat inkl. 300 Minuten.</p>
-      <p class="plans-note">Alle Preise sind Endpreise, nach § 19 UStG wird keine Umsatzsteuer berechnet. Das Werbebudget zahlen Sie direkt an die Plattform.</p>
+      <p class="plans-addon"><b>Für jedes Paket dazubuchbar: Telefon-Roboter</b> – nimmt Anrufe rund um die Uhr an und trägt Termine ein. 249 € einmalig + 149 € im Monat inkl. 300 Minuten.<br><b>Noch mehr Service? Komplett</b> – alles aus Wachstum plus Telefon-Roboter, bis zu 2 Werbespots im Monat und Werbung auf TikTok. 2.490 € einmalig + ab 1.590 € im Monat.</p>
+      <p class="plans-note">Einmalpreis = Bau und Einrichtung. Monatspreis = laufende Betreuung. Alle Preise sind Endpreise, nach § 19 UStG keine Umsatzsteuer. Das Werbebudget zahlen Sie direkt an Google oder Facebook.</p>
     </div>
   </section>
 
@@ -1903,7 +1912,7 @@ form .btn{justify-content:center;margin-top:6px}
 
   /* ---------- FAQ als Chat ---------- */
   const faq=[
-    ['Was kostet das?','Websites starten bei 1.290 € einmalig. Das Paket Smart mit Chat-Assistent und automatischen Social-Media-Beiträgen kostet 1.990 €, im Oktober zum Einführungspreis von 995 €. Komplette Systeme mit Werbung und Telefonservice ab 790 € im Monat. Das Werbebudget zahlen Sie direkt an die Plattform.'],
+    ['Was kostet das?','Es gibt einen Einmalpreis für Bau und Einrichtung und einen Monatspreis für die Betreuung. Start: 1.290 € + 59 € im Monat. Smart mit Chat-Roboter: 1.990 € + 149 € im Monat. Wachstum, das Komplettsystem mit Vertrieb und Werbung: 2.490 € + ab 790 € im Monat, bis 31. Oktober zum halben Einmalpreis von 1.245 €. Das Werbebudget zahlen Sie direkt an Google oder Facebook.'],
     ['Wie schnell bekomme ich Anfragen?','Nach Strategie und Produktion gehen die Kampagnen meist in Woche 4 live. Erste Anfragen kommen oft in den ersten Tagen danach.'],
     ['Lohnt sich das für einen kleinen Betrieb?','Gerade dort. Schon wenige zusätzliche Aufträge im Monat machen bei Handwerk und Dienstleistung einen großen Unterschied.'],
     ['Muss ich mich selbst um etwas kümmern?','Kaum. Sie geben Inhalte frei und führen die Kundengespräche. Alles andere übernehmen wir.'],
