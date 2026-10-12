@@ -1774,7 +1774,7 @@ form .btn{justify-content:center;margin-top:6px}
       if(!d.text||String(d.text).trim().length<10){f.text.focus();return}
       if(!f.ok.checked){f.ok.focus();m.hidden=false;m.textContent='Bitte bestätigen Sie kurz die Veröffentlichung.';return}
       var done=function(){f.reset();m.hidden=false;m.textContent='Danke für Ihre Bewertung! Sie erscheint nach kurzer Prüfung oben bei den Kundenstimmen.';};
-      if(!API){m.hidden=false;m.textContent='Vorschau: Das Formular wird beim Livegang mit dem Bewertungs-Speicher verbunden.';return}
+      if(!API){var body='Name: '+d.name+'\nFirma/Branche: '+(d.firma||'')+'\nSterne: '+d.sterne+'\n\n'+d.text;location.href='mailto:info@highlevel-performance.de?subject='+encodeURIComponent('Neue Bewertung von '+d.name)+'&body='+encodeURIComponent(body);done();return}
       fetch(API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(d)}).then(done).catch(function(){m.hidden=false;m.textContent='Das hat leider nicht geklappt. Bitte versuchen Sie es noch einmal.'});
     });
   })();
