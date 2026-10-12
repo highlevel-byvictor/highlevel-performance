@@ -288,10 +288,18 @@
 .nx-pic.big.cut{background:radial-gradient(70% 55% at 45% 35%,rgba(56,200,255,.4),transparent 70%),linear-gradient(165deg,#1877F2 0%,#0E3580 50%,#0A1A40 100%)}
 .nx-pic.big.cut img{object-fit:contain;object-position:28% 100%;padding-top:8%;filter:drop-shadow(0 20px 30px rgba(0,0,0,.35))}
 .nx-about-pics .sigbig{top:auto;bottom:calc(18% + 14px);left:18px}
-.nx-g-box{grid-template-columns:auto 1fr minmax(220px,300px)}
-.nx-g-pic{margin:0;align-self:stretch;border-radius:18px;overflow:hidden;box-shadow:0 24px 50px -28px rgba(10,42,102,.55);border:1px solid rgba(24,119,242,.15)}
-.nx-g-pic img{display:block;width:100%;height:100%;min-height:280px;object-fit:cover;object-position:50% 15%}
-@media (max-width:900px){.nx-g-box{grid-template-columns:1fr}.nx-g-pic{width:100%;order:-1}.nx-g-pic img{aspect-ratio:4/3;min-height:0;height:auto}}
+.nx-g-box{position:relative;overflow:hidden;grid-template-columns:auto 1fr 36%;min-height:340px}
+.nx-g-box>*:not(.nx-g-pic){position:relative;z-index:1}
+.nx-g-pic{position:absolute;top:0;right:0;bottom:0;width:46%;margin:0;z-index:0;-webkit-mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.55) 22%,#000 48%);mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.55) 22%,#000 48%)}
+.nx-g-pic::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(238,245,255,.5),transparent 55%),linear-gradient(0deg,rgba(24,119,242,.18),transparent 45%)}
+.nx-g-pic img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 20%;filter:saturate(.95)}
+@media (max-width:900px){
+ .nx-g-box{grid-template-columns:1fr;min-height:0}
+ .nx-g-pic{position:relative;order:-1;width:auto;margin:-28px -28px 0;-webkit-mask-image:linear-gradient(180deg,#000 55%,transparent 100%);mask-image:linear-gradient(180deg,#000 55%,transparent 100%)}
+ .nx-g-pic::after{background:linear-gradient(0deg,rgba(24,119,242,.15),transparent 50%)}
+ .nx-g-pic img{aspect-ratio:1/1;height:auto;object-position:50% 25%}
+ .nx-g-seal{margin-top:-96px}
+}
 
 /* Vorschau: Hero-Hintergrund Mittelstand-Team leicht verschwommen */
 .nx-hero .hero-bg.nx-crew-bg{display:block!important;opacity:.8;filter:saturate(.85) blur(3px);object-position:50% 25%}
