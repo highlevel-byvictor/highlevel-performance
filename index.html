@@ -336,6 +336,34 @@
 .bv-links i{width:34px;height:34px;border-radius:50%;border:1px solid rgba(24,119,242,.4);display:grid;place-items:center;font-style:normal;transition:background .3s,color .3s}
 .bv-links a:hover i{background:var(--b-blue);color:#fff}
 @media (max-width:640px){.bv{width:280px}.bv blockquote{font-size:16px}.bv-score b{font-size:48px}}
+
+/* Vorschau: Bewertung abgeben */
+.bv-note{margin-top:14px;font-size:13px;color:var(--b-muted)}
+.bv-note a{color:var(--b-blue);font-weight:600;text-decoration:none}
+.bv-st-off{color:#D5DEEC}
+.rvf-sec{padding-top:clamp(40px,6vw,80px)}
+.rvf-box{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(24px,4vw,56px);align-items:start;padding:clamp(24px,4vw,48px);border-radius:22px;background:linear-gradient(140deg,#fff,#EEF5FF);border:1px solid rgba(24,119,242,.2);box-shadow:0 30px 60px -40px rgba(10,42,102,.5)}
+.rvf-intro h2{font-family:var(--f-brand);font-weight:800;font-size:clamp(26px,3vw,38px);line-height:1.1;margin:12px 0}
+.rvf-intro h2 em{font-style:normal;color:var(--b-blue)}
+.rvf-intro p{color:var(--b-muted);font-size:16px}
+.rvf{display:flex;flex-direction:column;gap:14px;position:relative}
+.rvf label{display:flex;flex-direction:column;gap:6px;font-size:13px;font-weight:600;color:var(--b-navy)}
+.rvf input:not([type=radio]):not([type=checkbox]),.rvf textarea{font:inherit;font-weight:400;font-size:16px;padding:12px 14px;border-radius:12px;border:1px solid rgba(24,119,242,.25);background:#fff;color:var(--b-ink);resize:vertical}
+.rvf input:focus,.rvf textarea:focus{outline:2px solid rgba(24,119,242,.35);border-color:var(--b-blue)}
+.rvf-row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.rvf-stars{border:0;margin:0;padding:0;display:flex;flex-direction:row-reverse;justify-content:flex-end;gap:4px}
+.rvf-stars legend{font-size:13px;font-weight:600;color:var(--b-navy);margin-bottom:6px;width:100%}
+.rvf-stars input{position:absolute;opacity:0;width:1px;height:1px}
+.rvf-stars label{font-size:34px;line-height:1;color:#D5DEEC;cursor:pointer;transition:color .15s,transform .15s}
+.rvf-stars input:checked~label,.rvf-stars label:hover,.rvf-stars label:hover~label{color:#F5B301}
+.rvf-stars label:hover{transform:scale(1.12)}
+.rvf-stars input:focus-visible+label{outline:2px solid var(--b-blue);border-radius:4px}
+.rvf .rvf-ok{flex-direction:row;align-items:flex-start;gap:10px;font-weight:400;color:var(--b-muted);font-size:13px;line-height:1.45}
+.rvf .rvf-ok input{margin-top:3px;width:18px;height:18px;flex:none}
+.rvf .rvf-ok a{color:var(--b-blue)}
+.rvf .btn{align-self:flex-start}
+.rvf-msg{padding:12px 14px;border-radius:12px;background:rgba(24,119,242,.08);color:var(--b-navy);font-size:14px}
+@media (max-width:900px){.rvf-box{grid-template-columns:1fr}.rvf-row{grid-template-columns:1fr}.rvf .btn{align-self:stretch}}
 </style>
 <link rel="stylesheet" href="assets/levi/levi.css">
 </head><body>
@@ -1569,6 +1597,7 @@ form .btn{justify-content:center;margin-top:6px}
     </div>
     <div class="bv-rail"><div class="bv-track"><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Durch eure Strategien und eure Kampagnen gewinnen wir jede Woche 14 Anfragen und daraus im Schnitt 7 neue Kunden!“</blockquote><figcaption><b>Beaty_By_Laura</b><span>Kosmetikstudio</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Dies ist das beste Studio, in dem ich jemals war. Die Atmosphäre ist so, als würden wir uns schon seit vielen Jahren kennen.“</blockquote><figcaption><b>Artist</b><span>Instagram</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Danke für die top Website, die du mit deinem Team gebaut hast.“</blockquote><figcaption><b>Alexej Fehl</b><span>Finanz- &amp; Wirtschaftskanzlei</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Wir sind aus Düsseldorf für ein Wochenende ins Studio gekommen und haben alle unsere Tracks geschafft.“</blockquote><figcaption><b>Oh Jerry</b><span>Trustpilot</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Sehr professionell und kompetent! Sehr lockere Atmosphäre, es wird viel gelacht. Ich werde definitiv wiederkommen!“</blockquote><figcaption><b>Irina W.</b><span>Google</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Ich hatte innerhalb von 36 Stunden eine nagelneue Website und bin euch sehr dankbar. Durch die Verknüpfungen und modernste Technik bin ich viel sichtbarer geworden als vorher.“</blockquote><figcaption><b>Johannes Fehl</b><span>Finanzvertrieb</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Dank Viktor habe ich es geschafft, mich bei Gesangsstellen zu überwinden und viel mehr aus den Songs rauszuholen.“</blockquote><figcaption><b>Nukri O.</b><span>Trustpilot</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Wir freuen uns auf die lange Zusammenarbeit.“</blockquote><figcaption><b>Alexander</b><span>Tonstudio Fulda</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Bester Producer, bei dem ich je sein durfte.“</blockquote><figcaption><b>Artist</b><span>Instagram</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Herz, Freude und leidenschaftlich-fleißiger Einsatz! Der Jung hat einfach Bock.“</blockquote><figcaption><b>Lorenzo D.</b><span>Google</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Mit eurer Hilfe habe ich im Durchschnitt vier neue Großaufträge im Monat.“</blockquote><figcaption><b>David</b><span>Maurer · ALF Haus GmbH</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Er schafft es, meine musikalische Vision glasklar umzusetzen. Gemeinsam haben wir ein Top-Ergebnis erzielt.“</blockquote><figcaption><b>Julian S.</b><span>Trustpilot</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Top, fachlich kompetent! Absolute Radioqualität.“</blockquote><figcaption><b>Eugen</b><span>Trustpilot</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Vielen Dank für dein Funnel-System.“</blockquote><figcaption><b>Silvia</b><span>Kosmetikstudio</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Es spielt keine Rolle, dass ich 200 Kilometer gefahren bin. Es hat sich gelohnt.“</blockquote><figcaption><b>Artist</b><span>Instagram</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Hammer Song, den ich da gemacht habe. Viktor bester Producer!“</blockquote><figcaption><b>Mister Handsome</b><span>Google</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Durch eure Strategien und eure Kampagnen gewinnen wir jede Woche 14 Anfragen und daraus im Schnitt 7 neue Kunden!“</blockquote><figcaption><b>Beaty_By_Laura</b><span>Kosmetikstudio</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Dies ist das beste Studio, in dem ich jemals war. Die Atmosphäre ist so, als würden wir uns schon seit vielen Jahren kennen.“</blockquote><figcaption><b>Artist</b><span>Instagram</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Danke für die top Website, die du mit deinem Team gebaut hast.“</blockquote><figcaption><b>Alexej Fehl</b><span>Finanz- &amp; Wirtschaftskanzlei</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Wir sind aus Düsseldorf für ein Wochenende ins Studio gekommen und haben alle unsere Tracks geschafft.“</blockquote><figcaption><b>Oh Jerry</b><span>Trustpilot</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Sehr professionell und kompetent! Sehr lockere Atmosphäre, es wird viel gelacht. Ich werde definitiv wiederkommen!“</blockquote><figcaption><b>Irina W.</b><span>Google</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Ich hatte innerhalb von 36 Stunden eine nagelneue Website und bin euch sehr dankbar. Durch die Verknüpfungen und modernste Technik bin ich viel sichtbarer geworden als vorher.“</blockquote><figcaption><b>Johannes Fehl</b><span>Finanzvertrieb</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Dank Viktor habe ich es geschafft, mich bei Gesangsstellen zu überwinden und viel mehr aus den Songs rauszuholen.“</blockquote><figcaption><b>Nukri O.</b><span>Trustpilot</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Wir freuen uns auf die lange Zusammenarbeit.“</blockquote><figcaption><b>Alexander</b><span>Tonstudio Fulda</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Bester Producer, bei dem ich je sein durfte.“</blockquote><figcaption><b>Artist</b><span>Instagram</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Herz, Freude und leidenschaftlich-fleißiger Einsatz! Der Jung hat einfach Bock.“</blockquote><figcaption><b>Lorenzo D.</b><span>Google</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Mit eurer Hilfe habe ich im Durchschnitt vier neue Großaufträge im Monat.“</blockquote><figcaption><b>David</b><span>Maurer · ALF Haus GmbH</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Er schafft es, meine musikalische Vision glasklar umzusetzen. Gemeinsam haben wir ein Top-Ergebnis erzielt.“</blockquote><figcaption><b>Julian S.</b><span>Trustpilot</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Top, fachlich kompetent! Absolute Radioqualität.“</blockquote><figcaption><b>Eugen</b><span>Trustpilot</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Vielen Dank für dein Funnel-System.“</blockquote><figcaption><b>Silvia</b><span>Kosmetikstudio</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Es spielt keine Rolle, dass ich 200 Kilometer gefahren bin. Es hat sich gelohnt.“</blockquote><figcaption><b>Artist</b><span>Instagram</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Hammer Song, den ich da gemacht habe. Viktor bester Producer!“</blockquote><figcaption><b>Mister Handsome</b><span>Google</span></figcaption></figure></div></div>
     <div class="wrap bv-links"><a href="https://de.trustpilot.com/review/saved-music-productions.de" target="_blank" rel="noopener">Alle Bewertungen auf Trustpilot <i>→</i></a><a href="https://www.instagram.com/saved_music_/" target="_blank" rel="noopener">Stimmen auf Instagram <i>→</i></a></div>
+    <p class="wrap bv-note">Bewertungen über unser Formular werden vor der Veröffentlichung auf Echtheit und Spam geprüft. <a href="#b-bewerten" data-scroll>Selbst bewerten →</a></p>
   </section>
 
   <section class="sec sys" id="b-system">
@@ -1700,6 +1729,56 @@ form .btn{justify-content:center;margin-top:6px}
       </form>
     </div>
   </div>
+
+  <section class="sec rvf-sec" id="b-bewerten" aria-label="Bewertung abgeben">
+    <div class="wrap"><div class="rvf-box">
+      <div class="rvf-intro">
+        <span class="eyebrow">Ihre Meinung zählt</span>
+        <h2>Wir haben zusammengearbeitet? <em>Bewerten Sie mich.</em></h2>
+        <p>Zwei Minuten, die mir sehr helfen. Ihre Bewertung erscheint nach kurzer Prüfung oben bei den anderen Kundenstimmen.</p>
+      </div>
+      <form id="rvForm" class="rvf" novalidate>
+        <fieldset class="rvf-stars" aria-label="Sterne">
+          <legend>Ihre Bewertung</legend>
+          <input type="radio" id="rs5" name="sterne" value="5" checked><label for="rs5" title="5 Sterne">★</label>
+          <input type="radio" id="rs4" name="sterne" value="4"><label for="rs4" title="4 Sterne">★</label>
+          <input type="radio" id="rs3" name="sterne" value="3"><label for="rs3" title="3 Sterne">★</label>
+          <input type="radio" id="rs2" name="sterne" value="2"><label for="rs2" title="2 Sterne">★</label>
+          <input type="radio" id="rs1" name="sterne" value="1"><label for="rs1" title="1 Stern">★</label>
+        </fieldset>
+        <div class="rvf-row">
+          <label>Ihr Name<input name="name" required maxlength="60" autocomplete="name" placeholder="z. B. Laura M."></label>
+          <label>Firma oder Branche<input name="firma" maxlength="80" autocomplete="organization" placeholder="z. B. Kosmetikstudio"></label>
+        </div>
+        <label>Wie war die Zusammenarbeit?<textarea name="text" required minlength="10" maxlength="600" rows="4" placeholder="Was hat sich für Sie verändert?"></textarea></label>
+        <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+        <label class="rvf-ok"><input type="checkbox" name="ok" required> <span>Ich bin einverstanden, dass meine Bewertung mit Name und Firma auf dieser Website erscheint. Mehr in der <a href="#" data-legal="datenschutz">Datenschutzerklärung</a>.</span></label>
+        <button class="btn btn-blue" type="submit">Bewertung abschicken ★</button>
+        <div class="rvf-msg" id="rvMsg" hidden></div>
+      </form>
+    </div></div>
+  </section>
+  <script>
+  (function(){
+    var API=''; /* Google-Apps-Script-URL, wird nach Einrichtung eingetragen */
+    var esc=function(t){var d=document.createElement('div');d.textContent=String(t||'');return d.innerHTML};
+    var card=function(r){var n=Math.max(1,Math.min(5,parseInt(r.sterne,10)||5));return '<figure class="bv"><div class="bv-st">'+'★★★★★'.slice(0,n)+'<span class="bv-st-off">'+'★★★★★'.slice(0,5-n)+'</span></div><blockquote>„'+esc(r.text)+'“</blockquote><figcaption><b>'+esc(r.name)+'</b><span>'+esc(r.firma||'Kunde')+'</span></figcaption></figure>'};
+    if(API){fetch(API+'?action=list').then(function(x){return x.json()}).then(function(d){
+      if(!d||!d.reviews||!d.reviews.length)return;var t=document.querySelector('#b-stimmen .bv-track');if(!t)return;
+      var html=d.reviews.map(card).join('');var half=t.children.length/2;var first=Array.prototype.slice.call(t.children,0,half).map(function(e){return e.outerHTML}).join('');
+      t.innerHTML=html+first+html+first;}).catch(function(){});}
+    var f=document.getElementById('rvForm'),m=document.getElementById('rvMsg');if(!f)return;
+    f.addEventListener('submit',function(e){e.preventDefault();
+      var fd=new FormData(f);var d={name:fd.get('name'),firma:fd.get('firma'),text:fd.get('text'),sterne:fd.get('sterne'),website:fd.get('website')};
+      if(!d.name||String(d.name).trim().length<2){f.name.focus();return}
+      if(!d.text||String(d.text).trim().length<10){f.text.focus();return}
+      if(!f.ok.checked){f.ok.focus();m.hidden=false;m.textContent='Bitte bestätigen Sie kurz die Veröffentlichung.';return}
+      var done=function(){f.reset();m.hidden=false;m.textContent='Danke für Ihre Bewertung! Sie erscheint nach kurzer Prüfung oben bei den Kundenstimmen.';};
+      if(!API){m.hidden=false;m.textContent='Vorschau: Das Formular wird beim Livegang mit dem Bewertungs-Speicher verbunden.';return}
+      fetch(API,{method:'POST',headers:{'Content-Type':'text/plain;charset=utf-8'},body:JSON.stringify(d)}).then(done).catch(function(){m.hidden=false;m.textContent='Das hat leider nicht geklappt. Bitte versuchen Sie es noch einmal.'});
+    });
+  })();
+  </script>
 
   <footer class="b-foot">
     <div class="wrap">
