@@ -258,7 +258,7 @@
   }
   function highlight(el) { el.classList.remove('lv-hl'); void el.offsetWidth; el.classList.add('lv-hl'); setTimeout(function () { el.classList.remove('lv-hl'); }, 2700); }
   var NAMES = { 'b-aktion': 'Oktober-Aktion', 'b-spot': 'Werbespot', 'b-system': 'So geht’s', 'b-leistungen': 'Leistungen', 'b-pakete': 'Pakete', 'b-faq': 'FAQ', 'b-kontakt': 'Potenzialanalyse',
-    'a-spot': 'Spot', 'a-studio': 'Studio', 'a-leistungen': 'Leistungen', 'a-victor': 'Victor', 'a-team': 'Team', 'a-kontakt': 'Musik einreichen' };
+    'a-spot': 'Spot', 'a-studio': 'Studio', 'a-leistungen': 'Leistungen', 'a-victor': 'Viktor', 'a-team': 'Team', 'a-kontakt': 'Musik einreichen' };
   var PAGES = { 'website-business': ['Website für Ihren Betrieb', 'website-business/'], 'website-artists': ['Website für Artists', 'website-artists/'] };
 
   var tools = {
