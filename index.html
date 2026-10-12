@@ -288,6 +288,10 @@
 .nx-pic.big.cut{background:radial-gradient(70% 55% at 45% 35%,rgba(56,200,255,.4),transparent 70%),linear-gradient(165deg,#1877F2 0%,#0E3580 50%,#0A1A40 100%)}
 .nx-pic.big.cut img{object-fit:contain;object-position:28% 100%;padding-top:8%;filter:drop-shadow(0 20px 30px rgba(0,0,0,.35))}
 .nx-about-pics .sigbig{top:auto;bottom:calc(18% + 14px);left:18px}
+.nx-g-box{grid-template-columns:auto 1fr minmax(220px,300px)}
+.nx-g-pic{margin:0;align-self:stretch;border-radius:18px;overflow:hidden;box-shadow:0 24px 50px -28px rgba(10,42,102,.55);border:1px solid rgba(24,119,242,.15)}
+.nx-g-pic img{display:block;width:100%;height:100%;min-height:280px;object-fit:cover;object-position:50% 15%}
+@media (max-width:900px){.nx-g-box{grid-template-columns:1fr}.nx-g-pic{width:100%;order:-1}.nx-g-pic img{aspect-ratio:4/3;min-height:0;height:auto}}
 </style>
 <link rel="stylesheet" href="assets/levi/levi.css">
 </head><body>
@@ -1610,6 +1614,7 @@ form .btn{justify-content:center;margin-top:6px}
         <p>Sie bekommen den ersten Entwurf Ihrer neuen Website innerhalb von 24 Stunden. Kostenlos und unverbindlich. Gefällt er Ihnen nicht, zahlen Sie nichts. So einfach ist das.</p>
         <a class="btn btn-blue" href="website-business/#fragebogen">Kostenlosen Entwurf anfordern →</a>
       </div>
+      <figure class="nx-g-pic"><img src="assets/dcc28b7e7bec.jpg" alt="Zufriedener Unternehmer lehnt sich entspannt zurück" loading="lazy"></figure>
     </div></div>
   </section>
 
