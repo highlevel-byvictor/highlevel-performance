@@ -3,10 +3,10 @@
    IDs nach dem Anlegen des Google-Ads-Kontos eintragen. Leer = es wird nichts geladen. */
 (function(){
   var CFG = {
-    ADS_ID: '',            // z. B. 'AW-123456789'
+    ADS_ID: 'AW-18508933767',            // z. B. 'AW-123456789'
     CONV: {
-      lead: '',            // Label "Potenzialanalyse angefragt"  (Formular Business-Seite)
-      entwurf: '',         // Label "Website-Entwurf angefordert" (Fragebogen /website-business/)
+      lead: 'p3DtCMK2spodEIfV3_lE',            // Label "Potenzialanalyse angefragt"  (Formular Business-Seite)
+      entwurf: 'p3DtCMK2spodEIfV3_lE',         // Label "Website-Entwurf angefordert" (Fragebogen /website-business/)
       anruf: ''            // Label "Klick auf Telefonnummer"
     },
     WEBHOOK: 'https://connect.pabbly.com/webhook-listener/webhook/IjU3NjAwNTZmMDYzZTA0MzE1MjY4NTUzNyI_3D_pc/IjU3NjcwNTY4MDYzZjA0MzY1MjY4NTUzMjUxMzEi_pc' // Pabbly "HLP Business – Google Leads"
