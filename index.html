@@ -225,6 +225,66 @@
 .plan.top .price s{color:#9fb4d8}
 .plan .price small.mo{margin-top:8px;font-weight:600;color:var(--b-navy)}
 .plan.top .price small.mo{color:#fff}
+
+/* ===== Neuer Aufbau Business (Vorschau) ===== */
+.nx-hero .hero-bg{opacity:.28;filter:saturate(.4) blur(6px)}
+.nx-hero .wrap{grid-template-columns:1.2fr .8fr}
+.nx-hero-vid{display:flex;flex-direction:column;align-items:center;gap:12px}
+.nx-hero-vid .spot-box{aspect-ratio:9/16;width:100%;max-width:360px;border-radius:26px;box-shadow:0 50px 90px -40px rgba(10,42,102,.65),0 0 0 1px rgba(24,119,242,.2),0 0 0 8px rgba(255,255,255,.7)}
+.nx-vid-cap{font-family:var(--f-mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;color:var(--b-muted)}
+.nx-stats{background:var(--b-navy);color:#fff}
+.nx-stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;padding-block:28px}
+.nx-stats b{display:block;font-family:var(--f-brand);font-weight:800;font-size:clamp(30px,3.4vw,44px);line-height:1;color:var(--b-volt)}
+.nx-stats span{display:block;margin-top:8px;font-size:14.5px;color:#C9D6EE;line-height:1.4}
+.nx-vn-grid{display:grid;grid-template-columns:1fr auto 1fr;gap:20px;align-items:stretch}
+.nx-vn-col{padding:28px;border-radius:18px;border:1px solid var(--b-line);background:#fff}
+.nx-vn-col h3{font-family:var(--f-brand);font-size:22px;margin-bottom:16px}
+.nx-vn-col ul{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.nx-vn-col li{position:relative;padding-left:30px;font-size:16.5px;line-height:1.45;color:var(--b-ink)}
+.nx-vn-col li::before{position:absolute;left:0;top:0;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:13px;font-weight:700}
+.nx-vn-col.no{background:#FBFCFE}
+.nx-vn-col.no h3{color:#7A869C}
+.nx-vn-col.no li{color:#56627A}
+.nx-vn-col.no li::before{content:"✕";background:#FDECEC;color:#D64545}
+.nx-vn-col.yes{background:linear-gradient(160deg,#0A2A66,#123E92);border-color:#123E92}
+.nx-vn-col.yes h3{color:#fff}
+.nx-vn-col.yes li{color:#E4ECFA}
+.nx-vn-col.yes li::before{content:"✓";background:var(--b-volt);color:#061A44}
+.nx-vn-mid{display:grid;place-items:center}
+.nx-vn-mid span{width:48px;height:48px;border-radius:50%;display:grid;place-items:center;background:var(--b-blue);color:#fff;font-size:22px;box-shadow:0 0 0 6px rgba(24,119,242,.15)}
+.nx-ctabar{padding-block:8px 40px}
+.nx-ctabar .wrap{display:flex;flex-direction:column;align-items:center;gap:10px;text-align:center}
+.nx-ctabar span{font-size:13.5px;color:var(--b-muted)}
+.nx-about .about{grid-template-columns:.9fr 1.1fr}
+.nx-about-pics{position:relative;aspect-ratio:4/5}
+.nx-pic{margin:0;position:absolute;overflow:hidden;border-radius:18px;box-shadow:0 30px 60px -30px rgba(10,42,102,.55)}
+.nx-pic img{display:block;width:100%;height:100%;object-fit:cover}
+.nx-pic.big{inset:0 14% 18% 0}
+.nx-pic.big img{object-position:50% 40%}
+.nx-pic.small{width:46%;aspect-ratio:1/1;right:0;bottom:0;border:6px solid #fff}
+.nx-about-pics .sigbig{position:absolute;left:18px;top:14px;font-family:var(--f-sig);font-size:42px;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.5);z-index:2}
+.nx-firms{display:grid;gap:10px;margin:20px 0}
+.nx-firms div{padding:14px 18px;border-radius:12px;background:#fff;border:1px solid var(--b-line);border-left:4px solid var(--b-blue)}
+.nx-firms b{display:block;font-family:var(--f-brand);font-size:16px;color:var(--b-ink)}
+.nx-firms span{font-size:14.5px;color:var(--b-muted)}
+.nx-sign{font-weight:600;color:var(--b-ink)!important}
+.nx-about .btn{margin-top:8px}
+.nx-g-box{display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center;padding:clamp(28px,4vw,48px);border-radius:22px;background:linear-gradient(140deg,#fff,#EEF5FF);border:1px solid rgba(24,119,242,.2);box-shadow:0 30px 60px -40px rgba(10,42,102,.5)}
+.nx-g-seal{width:150px;height:150px;border-radius:50%;display:grid;place-content:center;text-align:center;background:radial-gradient(circle at 30% 30%,#38C8FF,#1877F2 60%,#0A2A66);color:#fff;box-shadow:0 0 0 8px rgba(24,119,242,.12),0 20px 40px -20px rgba(10,42,102,.7)}
+.nx-g-seal b{font-family:var(--f-brand);font-weight:800;font-size:40px;line-height:1}
+.nx-g-seal span{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.nx-g-box h2{font-family:var(--f-brand);font-weight:800;font-size:clamp(28px,3.4vw,42px);line-height:1.1;margin-bottom:12px}
+.nx-g-box p{color:var(--b-muted);font-size:17px;max-width:60ch;margin-bottom:18px}
+@media (max-width:900px){
+  .nx-hero .wrap{grid-template-columns:1fr}
+  .nx-hero-vid .spot-box{max-width:300px}
+  .nx-stats .wrap{grid-template-columns:1fr 1fr}
+  .nx-vn-grid{grid-template-columns:1fr}
+  .nx-vn-mid span{transform:rotate(90deg)}
+  .nx-about .about{grid-template-columns:1fr}
+  .nx-g-box{grid-template-columns:1fr;justify-items:start}
+  .nx-g-seal{width:110px;height:110px}.nx-g-seal b{font-size:30px}
+}
 </style>
 <link rel="stylesheet" href="assets/levi/levi.css">
 </head><body>
@@ -1304,50 +1364,44 @@ form .btn{justify-content:center;margin-top:6px}
   <header class="b-nav">
     <div class="wrap">
       <a class="logo" href="#start"><span class="l1">HIGH LEVEL</span><span class="l2">PERFORMANCE</span><span class="sig">by Victor</span></a>
-      <nav aria-label="Business"><a href="#b-aktion" data-scroll class="nav-aktion" data-intro-hide>Aktion</a><a href="#b-referenzen" data-scroll>Referenzen</a><a href="#b-leistungen" data-scroll>Leistungen</a><a href="#b-system" data-scroll>Ablauf</a><a href="#b-pakete" data-scroll>Pakete</a><a href="#b-faq" data-scroll>FAQ</a></nav>
+      <nav aria-label="Business"><a href="#b-aktion" data-scroll class="nav-aktion" data-intro-hide>Aktion</a><a href="#b-referenzen" data-scroll>Referenzen</a><a href="#b-victor" data-scroll>Über mich</a><a href="#b-leistungen" data-scroll>Leistungen</a><a href="#b-pakete" data-scroll>Pakete</a><a href="#b-faq" data-scroll>FAQ</a></nav>
       <a class="btn btn-blue" href="#b-kontakt" data-scroll>Erstgespräch</a>
     </div>
   </header>
 
-  <div class="b-hero">
-    <img class="hero-bg" src="assets/2ae68bcf512a.jpg" alt="" aria-hidden="true">
+  <div class="b-hero nx-hero">
+    <img class="hero-bg" src="assets/79705e532c80.jpg" alt="" aria-hidden="true">
     <svg class="bolts" viewBox="0 0 1200 600" preserveAspectRatio="none" aria-hidden="true">
       <path d="M1180 40 L1080 120 L1110 130 L990 230 L1020 238 L900 330"/>
       <path d="M40 520 L140 470 L120 462 L240 400 L222 392 L330 340"/>
-      <path d="M760 -10 L700 70 L722 76 L650 170"/>
     </svg>
     <div class="wrap">
       <div>
-        <div class="b-crew"><img src="assets/biz-hero-v3.jpg" alt="Friseurin, Handwerker, Kosmetikerin und Koch aus dem Mittelstand"><div class="holo crew-holo" aria-hidden="true">
-          
-          <div class="ios"><span class="ios-ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><div class="ios-tx"><div class="ios-top"><span>KALENDER</span><span>jetzt</span></div><div class="ios-main"><span class="ios-big">Do · 10:00</span><span class="ios-l">Neuer Termin<small>Neuer Kunde · Erstgespräch</small></span></div></div></div>
-          
-        </div></div>
-        <span class="eyebrow">Für Selbstständige, Handwerk &amp; Mittelstand</span>
-        <h1>Neue Kunden.<br>Direkt in Ihren <em>Kalender.<svg viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9 L80 6 L74 11 L170 5 L162 10 L298 4" fill="none" stroke="#38C8FF" stroke-width="2"/></svg></em></h1>
-        <p class="lead">Wir bauen Ihre Website, machen Sie bei Google, Facebook und Instagram sichtbar und kümmern uns um jede Anfrage, bis der Termin in Ihrem Kalender steht. Vieles davon läuft automatisch.</p>
+        <span class="eyebrow">Für Handwerk, Selbstständige &amp; Mittelstand</span>
+        <h1>Mehr Kunden <em>auf Knopfdruck.<svg viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9 L80 6 L74 11 L170 5 L162 10 L298 4" fill="none" stroke="#38C8FF" stroke-width="2"/></svg></em></h1>
+        <p class="lead">Ich bin Victor. Seit über 15 Jahren bringe ich Betrieben neue Kunden: mit einer Website, die verkauft, gezielter Werbung und einem System, das jede Anfrage bis zum Auftrag begleitet. Was ich Ihnen anbiete, nutze ich jeden Tag in meinen eigenen drei Firmen.</p>
         <div class="ctas">
           <a class="btn btn-blue" href="#b-kontakt" data-scroll>Kostenloses Erstgespräch</a>
           <a class="btn btn-ghost" href="#b-referenzen" data-scroll>Referenzen ansehen</a>
         </div>
-        <div class="note"><span>100 % unverbindlich</span><span>Antwort in 24 Stunden</span><span>Ehrliche Einschätzung</span></div>
+        <div class="note"><span>15+ Jahre Erfahrung</span><span>3 eigene Firmen</span><span>Erst sehen, dann zahlen</span></div>
       </div>
-      <figure class="b-vis">
-        <img src="assets/biz-hero-v3.jpg" alt="Friseurin, Handwerker, Kosmetikerin und Koch aus dem Mittelstand">
-        <div class="holo" aria-hidden="true">
-          
-          <div class="ios"><span class="ios-ic"><svg viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg></span><div class="ios-tx"><div class="ios-top"><span>KALENDER</span><span>jetzt</span></div><div class="ios-main"><span class="ios-big">Do · 10:00</span><span class="ios-l">Neuer Termin<small>Neuer Kunde · Erstgespräch</small></span></div></div></div>
-          
+      <div class="nx-hero-vid" id="b-spot">
+        <div class="spot-box" data-spot>
+          <video src="video/spot-business.mp4" poster="assets/spot-poster-business.jpg" muted loop playsinline autoplay preload="metadata"></video>
+          <button class="spot-play" type="button" aria-label="Video mit Ton abspielen"><span><svg viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z" fill="currentColor"/></svg></span>Mit Ton ansehen</button>
         </div>
-      </figure>
+        <span class="nx-vid-cap">Victor im Werbespot · gedreht von unserem Team</span>
+      </div>
     </div>
   </div>
 
-  <div class="trust t3">
+  <div class="nx-stats">
     <div class="wrap">
-      <div><b>15+ Jahre</b><span>Marketing &amp; Produktion</span></div>
-      <div><b>Eigener Telefonvertrieb</b><span>Wir rufen jede Anfrage für Sie an</span></div>
-      <div><b>1 Ansprechpartner</b><span>von der Anzeige bis zum Termin</span></div>
+      <div><b>15+</b><span>Jahre Online-Marketing</span></div>
+      <div><b>3</b><span>eigene Firmen: E-Commerce, Musikproduktion, High Level Performance</span></div>
+      <div><b>1</b><span>Ansprechpartner von der Website bis zum Auftrag</span></div>
+      <div><b>24 h</b><span>bis zum ersten Website-Entwurf, kostenlos</span></div>
     </div>
   </div>
 
@@ -1400,44 +1454,59 @@ form .btn{justify-content:center;margin-top:6px}
     </div>
   </section>
 
-  <section class="sec spot" id="b-spot">
-    <div class="wrap spot-grid">
-      <div class="spot-copy">
-        <span class="eyebrow">Unser Werbespot</span>
-        <h2>So holen wir Ihre Kunden ab.</h2>
-        <p>Ein echter Spot aus unserer Produktion: gedreht, geschnitten und als Werbung ausgespielt. So etwas drehen wir auch für Ihren Betrieb.</p>
-        <a class="btn btn-blue" href="#b-kontakt" data-scroll>Kostenloses Erstgespräch</a>
+
+  <section class="sec nx-vn" id="b-vorher">
+    <div class="wrap">
+      <div class="sec-head"><span class="eyebrow">Vorher · Nachher</span><h2>Kommt Ihnen das bekannt vor?</h2><p>Ihre Arbeit ist gut. Es fehlt nur ein System, das Ihnen regelmäßig neue Kunden bringt.</p></div>
+      <div class="nx-vn-grid">
+        <div class="nx-vn-col no">
+          <h3>Ohne System</h3>
+          <ul>
+            <li>Mal voller Kalender, mal Leerlauf</li>
+            <li>Kunden kommen nur über Empfehlung oder Zufall</li>
+            <li>Werbung probiert, Geld verbrannt</li>
+            <li>Anfragen bleiben liegen, weil keine Zeit ist</li>
+            <li>Preisdrücker statt Wunschkunden</li>
+            <li>Eine alte Website, die niemand findet</li>
+          </ul>
+        </div>
+        <div class="nx-vn-mid" aria-hidden="true"><span>→</span></div>
+        <div class="nx-vn-col yes">
+          <h3>Mit High Level Performance</h3>
+          <ul>
+            <li>Planbar neue Anfragen, Woche für Woche</li>
+            <li>Gefunden bei Google, Facebook und Instagram</li>
+            <li>Werbung, die messbar Kunden bringt</li>
+            <li>Jede Anfrage wird sofort beantwortet und nachgefasst</li>
+            <li>Kaufkräftige Kunden, die gerne zahlen</li>
+            <li>Eine Website, die rund um die Uhr verkauft</li>
+          </ul>
+        </div>
       </div>
-      <div class="spot-col"><div class="spot-box" data-spot>
-        <video src="video/spot-business.mp4" poster="assets/spot-poster-business.jpg" muted loop playsinline autoplay preload="metadata"></video>
-        <button class="spot-play" type="button" aria-label="Video mit Ton abspielen"><span><svg viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z" fill="currentColor"/></svg></span>Mit Ton ansehen</button>
-      </div><a class="btn btn-blue spot-more" href="#b-kontakt" data-scroll>Mehr dazu <span aria-hidden="true">↓</span></a></div>
     </div>
   </section>
 
-  <section class="sec">
-    <div class="wrap">
-      <div class="prob-head">
-        <div class="sec-head">
-        <span class="eyebrow">Das Problem</span>
-        <h2>Kommt Ihnen das bekannt vor?</h2>
-        <p>Ihre Arbeit ist gut. Es fehlt nur ein System, das Ihnen regelmäßig neue Kunden bringt.</p>
+  <div class="nx-ctabar"><div class="wrap"><a class="btn btn-blue" href="#b-kontakt" data-scroll>Mehr Kunden auf Knopfdruck – Erstgespräch sichern →</a><span>Kostenlos · unverbindlich · Antwort in 24 Stunden</span></div></div>
+
+  <section class="sec nx-about" id="b-victor">
+    <div class="wrap about">
+      <div class="nx-about-pics">
+        <figure class="nx-pic big"><img src="assets/79705e532c80.jpg" alt="Victor in seinem Studio in Bersenbrück" loading="lazy"></figure>
+        <figure class="nx-pic small"><img src="assets/biz-video-v3.jpg" alt="Victor mit Kamera beim Dreh" loading="lazy"></figure>
+        <span class="sigbig">Victor</span>
+      </div>
+      <div>
+        <span class="eyebrow">Wer dahintersteht</span>
+        <h2>Ich verkaufe Ihnen nichts, was ich nicht selbst jeden Tag nutze.</h2>
+        <p>Ich bin Victor Fehl, Online-Marketer seit über 15 Jahren. Angefangen habe ich mit Musik: 2009 habe ich mein eigenes Studio gegründet und gelernt, wie man Menschen online erreicht, wenn man kein großes Budget hat.</p>
+        <p>Heute führe ich drei eigene Firmen. Für jede davon gewinne ich Kunden mit genau dem System, das ich für Ihren Betrieb baue: Website, Werbung, automatische Anfragen und ein Team, das nachfasst.</p>
+        <div class="nx-firms">
+          <div><b>Saved Music Productions</b><span>Tonstudio und Musikproduktion in Bersenbrück</span></div>
+          <div><b>E-Commerce</b><span>eigener Online-Shop mit Werbung auf Facebook und Instagram</span></div>
+          <div><b>High Level Performance</b><span>Websites, Werbung und Vertrieb für Handwerk und Mittelstand</span></div>
         </div>
-        <figure class="sad">
-          <img src="assets/e65ce19823f3.jpg" alt="Selbstständige sitzt besorgt am Laptop und telefoniert">
-          <div class="sad-chip"><span class="sad-ic">0</span><div><b>neue Anfragen</b><small>diese Woche</small></div></div>
-        </figure>
-      </div>
-      <div class="pain-grid p3">
-        <div class="pain"><span class="pi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></svg><i class="pz"></i></span><span class="x">01 · AUSLASTUNG</span><h3>Mal voller Kalender, mal Leerlauf</h3><p>Der Umsatz schwankt, Planung ist kaum möglich.</p></div>
-        <div class="pain"><span class="pi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11v2a1 1 0 0 0 1 1h3l6 4V6L7 10H4a1 1 0 0 0-1 1z"/><path d="M17 9a4 4 0 0 1 0 6"/></svg><i class="pz"></i></span><span class="x">02 · WERBUNG</span><h3>Werbung probiert, Geld verbrannt</h3><p>Budget weg, kein Auftrag. Seitdem: „Das klappt bei uns nicht.“</p></div>
-        <div class="pain"><span class="pi" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg><i class="pz"></i></span><span class="x">03 · ZEIT</span><h3>Keine Zeit für Rückrufe</h3><p>Anfragen bleiben liegen, weil das Tagesgeschäft vorgeht.</p></div>
-      </div>
-      <div class="pain-turn">
-        <img class="turn-bg" src="assets/dcc28b7e7bec.jpg" alt="" aria-hidden="true">
-        <svg viewBox="0 0 120 200" aria-hidden="true"><path d="M80 0 L30 100 L60 104 L20 200" fill="none" stroke="#38C8FF" stroke-width="1.5"/></svg>
-        <p>Mit uns kommen die Kunden <span>zu Ihnen</span>, nicht umgekehrt.</p>
-        <a class="btn btn-blue" href="#b-system" data-scroll>Zur Lösung →</a>
+        <p class="nx-sign">Ein Ansprechpartner, ein Team, eigenes Kamerateam und eigener Telefonvertrieb. Wenn Sie anrufen, sprechen Sie mit uns, nicht mit einem Callcenter.</p>
+        <a class="btn btn-blue" href="#b-kontakt" data-scroll>Lernen wir uns kennen →</a>
       </div>
     </div>
   </section>
@@ -1489,6 +1558,9 @@ form .btn{justify-content:center;margin-top:6px}
     </div>
   </section>
 
+
+  <div class="nx-ctabar"><div class="wrap"><a class="btn btn-blue" href="#b-kontakt" data-scroll>Jetzt kostenloses Erstgespräch sichern →</a><span>Kostenlos · unverbindlich · Antwort in 24 Stunden</span></div></div>
+
   <section class="sec" id="b-pakete" style="padding-top:0">
     <div class="wrap">
       <div class="sec-head">
@@ -1524,25 +1596,18 @@ form .btn{justify-content:center;margin-top:6px}
     </div>
   </section>
 
-  <section class="sec" style="padding-top:0">
-    <div class="wrap about">
-      <div class="portrait">
-        <svg viewBox="0 0 400 500" preserveAspectRatio="none" aria-hidden="true"><path d="M330 0 L250 160 L285 168 L190 340" fill="none" stroke="#38C8FF" stroke-width="1.2"/></svg>
-        <img class="vic" src="assets/victor-daumen-v1.webp" alt="Victor, Gründer von High Level Performance, zeigt Daumen hoch">
-        <span class="sigbig">Victor</span>
-      </div>
+
+
+  <section class="sec nx-garantie" style="padding-top:0">
+    <div class="wrap"><div class="nx-g-box">
+      <div class="nx-g-seal" aria-hidden="true"><b>0 €</b><span>Risiko</span></div>
       <div>
-        <span class="eyebrow">Wer dahintersteht</span>
-        <h2>Gesehen werden ist kein Zufall. Es ist ein Plan.</h2>
-        <p>Ich bin Victor, Online-Marketer mit über 15 Jahren Erfahrung. Mit eigenem Studio, Kamerateam und Telefonvertrieb sorge ich dafür, dass aus Aufmerksamkeit echte Termine werden. Ein Team, ein Ansprechpartner.</p>
-        
-        <div class="facts">
-          <div><b>Studio</b><span>Bersenbrück</span></div>
-          <div><b>Produktion</b><span>Video, Sound, Web</span></div>
-          <div><b>Vertrieb</b><span>Eigenes Vertriebsteam</span></div>
-        </div>
+        <span class="eyebrow">Unser Versprechen</span>
+        <h2>Erst sehen, dann zahlen.</h2>
+        <p>Sie bekommen den ersten Entwurf Ihrer neuen Website innerhalb von 24 Stunden. Kostenlos und unverbindlich. Gefällt er Ihnen nicht, zahlen Sie nichts. So einfach ist das.</p>
+        <a class="btn btn-blue" href="website-business/#fragebogen">Kostenlosen Entwurf anfordern →</a>
       </div>
-    </div>
+    </div></div>
   </section>
 
   <section class="sec" id="b-faq" style="padding-top:0">
@@ -1917,6 +1982,9 @@ form .btn{justify-content:center;margin-top:6px}
     ['Lohnt sich das für einen kleinen Betrieb?','Gerade dort. Schon wenige zusätzliche Aufträge im Monat machen bei Handwerk und Dienstleistung einen großen Unterschied.'],
     ['Muss ich mich selbst um etwas kümmern?','Kaum. Sie geben Inhalte frei und führen die Kundengespräche. Alles andere übernehmen wir.'],
     ['Sehe ich, was mit meinen Anfragen passiert?','Ja. Sie bekommen eine Kunden-Übersicht (CRM): jede Anfrage mit Name, Herkunft und Stand, also neu, angerufen, Termin oder Kunde. Dazu eine Besucher-Statistik Ihrer Website: wie viele kommen, woher und was sie sich ansehen. Alles DSGVO-konform.'],
+    ['Ist das seriös?','Ja. Sie sehen auf dieser Seite echte Betriebe, für die wir arbeiten, mit Namen und Website. Ich führe selbst drei Firmen und nutze das System jeden Tag. Und Sie zahlen erst, wenn Ihnen der Entwurf gefällt.'],
+    ['Ist das nicht zu kompliziert für meinen Betrieb?','Nein. Sie müssen keine Technik verstehen. Wir richten alles ein, Sie bekommen fertige Anfragen und Termine. Die Programme im Hintergrund müssen Sie nie anfassen.'],
+    ['Ich hatte schon mal eine Agentur, das hat nichts gebracht.','Das hören wir oft. Meist lag es an einem Teil, der gefehlt hat: falsche Zielgruppe, schwache Seite oder niemand hat nachgefasst. Wir liefern alles aus einer Hand und rufen Ihre Anfragen selbst an.'],
     ['Gibt es eine lange Vertragsbindung?','Wir setzen auf Ergebnisse statt Knebelverträge. Die Laufzeit besprechen wir offen im Erstgespräch.']
   ];
   const chat=document.getElementById('chat');
