@@ -1,22 +1,28 @@
 /**
  * High Level Performance – Bewertungen
- * Google Apps Script für die Tabelle „HLP Bewertungen“.
- * Einrichtung: Tabelle öffnen → Erweiterungen → Apps Script → diesen Code einfügen →
- * einmal die Funktion setup() ausführen (erlaubt den Zugriff) →
- * Bereitstellen → Neue Bereitstellung → Web-App, Ausführen als: Ich, Zugriff: Jeder.
+ * Eigenständiges Google-Apps-Script-Projekt. setup() einmal ausführen: legt die Tabelle
+ * „HLP Bewertungen“ in Google Drive an und erzeugt den Freigabe-Schlüssel.
+ * Danach: Bereitstellen → Neue Bereitstellung → Web-App, Ausführen als: Ich, Zugriff: Jeder.
  */
 var SHEET = 'Bewertungen';
 var HEAD = ['ID', 'Datum', 'Name', 'Firma / Branche', 'Sterne', 'Text', 'Freigegeben'];
 
 function setup() {
-  var ss = SpreadsheetApp.getActiveSpreadsheet();
-  var sh = ss.getSheetByName(SHEET) || ss.insertSheet(SHEET);
-  if (sh.getLastRow() === 0) { sh.appendRow(HEAD); sh.setFrozenRows(1); }
   var p = PropertiesService.getScriptProperties();
+  var id = p.getProperty('SHEET_ID'), ss;
+  if (id) { ss = SpreadsheetApp.openById(id); }
+  else { ss = SpreadsheetApp.create('HLP Bewertungen'); p.setProperty('SHEET_ID', ss.getId()); }
+  var sh = ss.getSheetByName(SHEET) || ss.getSheets()[0].setName(SHEET);
+  if (sh.getLastRow() === 0) { sh.appendRow(HEAD); sh.setFrozenRows(1); }
   if (!p.getProperty('KEY')) p.setProperty('KEY', Utilities.getUuid());
+  MailApp.getRemainingDailyQuota();
+  return ss.getUrl();
 }
 
-function sheet_() { return SpreadsheetApp.getActiveSpreadsheet().getSheetByName(SHEET); }
+function sheet_() {
+  var id = PropertiesService.getScriptProperties().getProperty('SHEET_ID');
+  return SpreadsheetApp.openById(id).getSheetByName(SHEET);
+}
 function clean_(s, n) { return String(s || '').replace(/<[^>]*>/g, '').trim().slice(0, n); }
 function json_(o) { return ContentService.createTextOutput(JSON.stringify(o)).setMimeType(ContentService.MimeType.JSON); }
 
