@@ -141,7 +141,7 @@
     if (chatted) return;
     TXT[area()].chips.forEach(function (c) {
       var b = document.createElement('button'); b.type = 'button'; b.className = 'lv-chip'; b.textContent = c;
-      b.addEventListener('click', function () { send(c); });
+      b.addEventListener('click', function () { send(b.textContent || c); });
       chips.appendChild(b);
     });
   }
