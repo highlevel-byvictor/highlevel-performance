@@ -675,10 +675,10 @@ body.biz .sound{background:rgba(255,255,255,.9);color:var(--b-navy);border-color
 /* Team */
 .team-head{margin:64px 0 26px}
 .team-head h3{font-family:var(--f-brand);font-weight:800;font-size:clamp(24px,2.6vw,32px);letter-spacing:-.02em;color:var(--b-ink)}
-.team{display:grid;grid-template-columns:1.45fr 1fr 1fr;gap:20px;align-items:stretch}
+.team{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;align-items:stretch}
 .tm{margin:0;border-radius:18px;overflow:hidden;position:relative;display:flex;flex-direction:column;background:linear-gradient(160deg,#fff,#F3F8FF);border:1px solid rgba(24,119,242,.14);box-shadow:inset 0 1px 0 #fff,0 22px 44px -32px rgba(10,42,102,.5);transition:transform .45s cubic-bezier(.2,.8,.2,1),box-shadow .45s}
 .tm:hover{transform:translateY(-6px);box-shadow:inset 0 1px 0 #fff,0 0 0 1px rgba(56,200,255,.55),0 30px 60px -28px rgba(24,119,242,.55),0 0 40px -18px rgba(56,200,255,.8)}
-.tm-img{position:relative;height:clamp(300px,30vw,420px);overflow:hidden}
+.tm-img{position:relative;height:clamp(260px,24vw,360px);overflow:hidden}
 .tm-img img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 100%;max-width:none;transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
 .tm:hover .tm-img img{transform:scale(1.04)}
 .tm-img::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:linear-gradient(90deg,transparent,#7fe3ff,transparent);box-shadow:0 0 12px #38C8FF}
@@ -1160,14 +1160,15 @@ form .btn{justify-content:center;margin-top:6px}
 
 /* artists team */
 .a-team{padding-top:clamp(64px,8vw,110px)}
-.at-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(18px,3vw,40px)}
+.at-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(18px,3vw,40px)}
 .at-grid figure{margin:0;min-width:0}
 .at-grid img{display:block;width:100%;aspect-ratio:528/500;object-fit:cover;max-width:none;transition:transform 1s cubic-bezier(.2,.8,.2,1)}
 .at-grid figure:hover img{transform:translateY(-6px)}
 .at-grid figcaption{display:grid;gap:6px;margin-top:14px}
 .at-grid figcaption b{font-family:var(--f-brand);font-weight:700;font-size:22px;color:var(--a-ink)}
 .at-grid figcaption span{font-size:15px;color:var(--a-muted)}
-@media (max-width:760px){.at-grid{grid-template-columns:1fr;max-width:420px;margin-inline:auto}}
+@media (max-width:960px){.at-grid{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.at-grid{grid-template-columns:1fr;max-width:420px;margin-inline:auto}}
 
 [hidden]{display:none!important}
 
@@ -1678,9 +1679,10 @@ form .btn{justify-content:center;margin-top:6px}
       </div>
       <div class="team-head"><span class="eyebrow">Ihr Team</span><h3>Die Köpfe hinter Ihrem Wachstum.</h3></div>
       <div class="team">
-        <figure class="tm lead"><div class="tm-img"><img src="assets/team-2f12b1-v2.jpg" alt="Viktor, Gründer und Strategie"><svg class="svc-bolt" viewBox="0 0 200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M150 0 L118 46 L132 50 L96 120"/></svg></div><figcaption><b>Viktor</b><span class="tm-role">Gründer · Strategieplanung</span><p>Plant Ihre Strategie und hält alle Fäden zusammen.</p></figcaption></figure>
-        <figure class="tm"><div class="tm-img"><img src="assets/team-933826-v2.jpg" alt="Eugenia, Werbung und Technik"><svg class="svc-bolt" viewBox="0 0 200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M150 0 L118 46 L132 50 L96 120"/></svg></div><figcaption><b>Eugenia</b><span class="tm-role">Werbung &amp; Technik</span><p>Schaltet Ihre Kampagnen und kümmert sich um die Technik.</p></figcaption></figure>
-        <figure class="tm"><div class="tm-img"><img src="assets/team-d563f9-v2.jpg" alt="Kevin, Vertriebsleitung"><svg class="svc-bolt" viewBox="0 0 200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M150 0 L118 46 L132 50 L96 120"/></svg></div><figcaption><b>Kevin</b><span class="tm-role">Vertriebsleitung</span><p>Ruft Ihre Anfragen an und macht daraus Termine.</p></figcaption></figure>
+        <figure class="tm"><div class="tm-img"><img src="assets/team-2f12b1-v2.jpg" alt="Viktor Fehl, Gründer und Strategie" loading="lazy"><svg class="svc-bolt" viewBox="0 0 200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M150 0 L118 46 L132 50 L96 120"/></svg></div><figcaption><b>Viktor Fehl</b><span class="tm-role">Gründer · Strategie</span><p>Plant Ihre Strategie und hält alle Fäden zusammen.</p></figcaption></figure>
+        <figure class="tm"><div class="tm-img"><img src="assets/team-julian-b.jpg" alt="Julian Siewe, Hotline-Service" loading="lazy"><svg class="svc-bolt" viewBox="0 0 200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M150 0 L118 46 L132 50 L96 120"/></svg></div><figcaption><b>Julian Siewe</b><span class="tm-role">Hotline-Service</span><p>Nimmt Ihren Anruf entgegen und vereinbart Ihren Termin.</p></figcaption></figure>
+        <figure class="tm"><div class="tm-img"><img src="assets/team-933826-v2.jpg" alt="Eugenia Liefke, Meta, TikTok und Google Ads" loading="lazy"><svg class="svc-bolt" viewBox="0 0 200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M150 0 L118 46 L132 50 L96 120"/></svg></div><figcaption><b>Eugenia Liefke</b><span class="tm-role">Meta, TikTok &amp; Google Ads</span><p>Schaltet Ihre Kampagnen und sorgt dafür, dass die richtigen Leute Sie finden.</p></figcaption></figure>
+        <figure class="tm"><div class="tm-img"><img src="assets/team-d563f9-v2.jpg" alt="Kevin Plettenberg, Vertrieb und Verkauf" loading="lazy"><svg class="svc-bolt" viewBox="0 0 200 120" preserveAspectRatio="none" aria-hidden="true"><path d="M150 0 L118 46 L132 50 L96 120"/></svg></div><figcaption><b>Kevin Plettenberg</b><span class="tm-role">Vertrieb &amp; Verkauf</span><p>Berät Sie persönlich und begleitet Sie bis zum Auftrag.</p></figcaption></figure>
       </div>
     </div>
   </section>
@@ -2035,7 +2037,7 @@ form .btn{justify-content:center;margin-top:6px}
   <section class="a-sec a-team" id="a-team">
     <div class="wrap">
       <div class="a-head"><div><span class="kick">Dein Team</span><h2>Echte Menschen. <b>Ein Team.</b></h2></div></div>
-      <div class="at-grid"><figure><img src="assets/team-41d034-v2.jpg" alt="Portrait Viktor" loading="lazy"><figcaption><b>Viktor</b><span>Gründer · Strategieplanung</span></figcaption></figure><figure><img src="assets/team-52ae26-v2.jpg" alt="Portrait Eugenia" loading="lazy"><figcaption><b>Eugenia</b><span>Meta Ads &amp; Technik</span></figcaption></figure><figure><img src="assets/team-d2c870-v2.jpg" alt="Portrait Kevin" loading="lazy"><figcaption><b>Kevin</b><span>Vertriebsleitung</span></figcaption></figure></div>
+      <div class="at-grid"><figure><img src="assets/team-41d034-v2.jpg" alt="Portrait Viktor Fehl" loading="lazy"><figcaption><b>Viktor Fehl</b><span>Gründer · Strategie</span></figcaption></figure><figure><img src="assets/team-julian-a.jpg" alt="Portrait Julian Siewe" loading="lazy"><figcaption><b>Julian Siewe</b><span>Hotline-Service</span></figcaption></figure><figure><img src="assets/team-52ae26-v2.jpg" alt="Portrait Eugenia Liefke" loading="lazy"><figcaption><b>Eugenia Liefke</b><span>Meta, TikTok &amp; Google Ads</span></figcaption></figure><figure><img src="assets/team-d2c870-v2.jpg" alt="Portrait Kevin Plettenberg" loading="lazy"><figcaption><b>Kevin Plettenberg</b><span>Vertrieb &amp; Verkauf</span></figcaption></figure></div>
     </div>
   </section>
   <section class="a-reviews" aria-label="Bewertungen">
