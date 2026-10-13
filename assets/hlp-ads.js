@@ -84,7 +84,6 @@
       if(!o.get('newsletter')) o.set('newsletter', 'nein');
       if(!o.get('quelle')) o.set('quelle', quelle() || 'direkt');
       o.set('formular', formular); o.set('seite', location.href.split('#')[0]); o.set('zeit', new Date().toLocaleString('de-DE', { timeZone: 'Europe/Berlin' })); o.set('datum', new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Berlin' }));
-      o.set('datum', new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Berlin' })); // YYYY-MM-DD für Brevo EINTRAGUNG
       fetch(CFG.WEBHOOK, { method: 'POST', mode: 'no-cors', body: o, keepalive: true });
     }catch(e){}
   }

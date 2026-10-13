@@ -364,6 +364,33 @@
 .rvf .btn{align-self:flex-start}
 .rvf-msg{padding:12px 14px;border-radius:12px;background:rgba(24,119,242,.08);color:var(--b-navy);font-size:14px}
 @media (max-width:900px){.rvf-box{grid-template-columns:1fr}.rvf-row{grid-template-columns:1fr}.rvf .btn{align-self:stretch}}
+
+/* Newsletter (Business + Artists) */
+.nl{margin-top:clamp(56px,7vw,96px)}
+.nl-box{display:grid;grid-template-columns:1fr 1.15fr;gap:clamp(20px,4vw,48px);align-items:center;padding:clamp(24px,4vw,44px);border-radius:22px}
+.nl-box h2{margin:8px 0 10px;font-family:var(--f-brand);font-weight:800;font-size:clamp(24px,2.8vw,36px);line-height:1.12;letter-spacing:-.02em}
+.nl-box p{margin:0;font-size:15.5px;line-height:1.6}
+.nl-k{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase}
+.nl-f{display:grid;grid-template-columns:1fr 1.4fr auto;gap:10px}
+.nl-f input[type=text],.nl-f input[type=email]{width:100%;min-width:0;font:500 15px/1.2 inherit;font-family:inherit;padding:14px 16px;border-radius:12px;outline:none}
+.nl-f .btn{white-space:nowrap}
+.nl-f label.nl-ok{grid-column:1/-1;display:flex;gap:10px;align-items:flex-start;font-size:12.5px;line-height:1.5}
+.nl-f input[type=checkbox]{width:16px;height:16px;padding:0;accent-color:currentColor}
+.nl-box>div{min-width:0}
+.nl-ok input{margin-top:3px;flex:none}
+.nl-msg{grid-column:1/-1;font-size:14px;font-weight:600}
+.b-nl .nl-box{background:linear-gradient(135deg,#0A2A66,#1877F2);color:#fff;box-shadow:0 30px 70px -40px rgba(10,42,102,.8)}
+.b-nl .nl-k{color:#bff3ff}.b-nl p{color:rgba(255,255,255,.85)}
+.b-nl input[type=text],.b-nl input[type=email]{border:1px solid rgba(255,255,255,.35);background:rgba(255,255,255,.12);color:#fff}
+.b-nl input::placeholder{color:rgba(255,255,255,.7)}
+.b-nl .nl-ok{color:rgba(255,255,255,.8)}.b-nl .nl-ok a{color:#fff}
+.b-nl .btn{background:#fff;color:#0A2A66}
+.a-nl .nl-box{background:#141414;border:1px solid var(--a-line);color:var(--a-ink);background-image:radial-gradient(120% 140% at 100% 0%,rgba(233,14,14,.22),transparent 55%)}
+.a-nl .nl-k{color:var(--a-red)}.a-nl p{color:var(--a-muted)}
+.a-nl input[type=text],.a-nl input[type=email]{border:1px solid var(--a-line);background:#0A0A0A;color:var(--a-ink)}
+.a-nl input::placeholder{color:#77716a}
+.a-nl .nl-ok{color:var(--a-muted)}.a-nl .nl-ok a{color:var(--a-ink)}
+@media (max-width:860px){.nl-box{grid-template-columns:1fr}.nl-f{grid-template-columns:1fr}.nl-f .btn{width:100%}}
 </style>
 <link rel="stylesheet" href="assets/levi/levi.css">
 </head><body>
@@ -1779,6 +1806,20 @@ form .btn{justify-content:center;margin-top:6px}
   })();
   </script>
 
+  <section class="b-nl nl" aria-label="Newsletter">
+    <div class="wrap"><div class="nl-box">
+      <div><span class="nl-k">Newsletter</span><h2>Neue Kunden gewinnen. Tipps direkt ins Postfach.</h2><p>Alle paar Tage eine E-Mail mit Strategien, die Ihrem Betrieb neue Kunden bringen. Kostenlos und jederzeit abbestellbar.</p></div>
+      <form class="nl-f" data-nl="business" novalidate>
+        <input type="text" name="vorname" placeholder="Vorname" autocomplete="given-name" aria-label="Vorname">
+        <input type="email" name="email" placeholder="Ihre E-Mail-Adresse" required autocomplete="email" aria-label="E-Mail-Adresse">
+        <button class="btn" type="submit">Newsletter abonnieren</button>
+        <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+        <label class="nl-ok"><input type="checkbox" name="ok" required> <span>Ja, ich möchte den Newsletter per E-Mail erhalten. Abmeldung jederzeit über den Link in jeder E-Mail. Mehr in der <a href="#" data-legal="datenschutz">Datenschutzerklärung</a>.</span></label>
+        <div class="nl-msg" hidden></div>
+      </form>
+    </div></div>
+  </section>
+
   <footer class="b-foot">
     <div class="wrap">
       <span>© 2026 High Level Performance</span>
@@ -2026,6 +2067,20 @@ form .btn{justify-content:center;margin-top:6px}
         <a href="#a-kontakt" data-upload>Musik einreichen <i>→</i></a>
       </nav>
     </div>
+  </section>
+
+  <section class="a-nl nl" aria-label="Newsletter">
+    <div class="wrap"><div class="nl-box">
+      <div><span class="nl-k">Wake-up Call</span><h2>Wie lange willst du noch warten?</h2><p>Der Newsletter für Artists, die mehr wollen als Likes: Marke, Website, Reichweite und Booking-Anfragen. Direkt, ehrlich, ohne Bullshit. Kostenlos.</p></div>
+      <form class="nl-f" data-nl="artists" novalidate>
+        <input type="text" name="vorname" placeholder="Vorname / Artist-Name" autocomplete="given-name" aria-label="Vorname oder Artist-Name">
+        <input type="email" name="email" placeholder="Deine E-Mail-Adresse" required autocomplete="email" aria-label="E-Mail-Adresse">
+        <button class="btn btn-red" type="submit">Newsletter abonnieren</button>
+        <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+        <label class="nl-ok"><input type="checkbox" name="ok" required> <span>Ja, ich will den Newsletter per E-Mail. Abmelden geht jederzeit über den Link in jeder Mail. Mehr in der <a href="#" data-legal="datenschutz">Datenschutzerklärung</a>.</span></label>
+        <div class="nl-msg" hidden></div>
+      </form>
+    </div></div>
   </section>
 
   <footer class="a-foot"><div class="wrap"><span>© 2026 High Level Performance</span><nav class="soc" aria-label="Social Media"><a href="https://www.instagram.com/highlevel.byvictor/" target="_blank" rel="noopener">Instagram</a><a href="https://www.instagram.com/saved_music_/" target="_blank" rel="noopener">Studio-Instagram</a><a href="https://www.facebook.com/highlevel.byvictor" target="_blank" rel="noopener">Facebook</a><a href="https://www.linkedin.com/company/highlevel-performance/" target="_blank" rel="noopener">LinkedIn</a></nav><nav class="lgl"><a href="#" data-legal="impressum">Impressum</a><a href="#" data-legal="datenschutz">Datenschutz</a><a href="#" data-cookie>Cookie-Einstellungen</a></nav><a class="back" href="#start">← Zur Startseite</a></div></footer>
@@ -2416,4 +2471,39 @@ document.addEventListener('keydown',function(e){if(document.getElementById('star
 </script>
 <script src="assets/hlp-ads.js?v=20261012"></script>
 <script src="assets/levi/levi.js" defer></script>
+<script>
+(function(){
+  document.querySelectorAll('form[data-nl]').forEach(function(f){
+    var m=f.querySelector('.nl-msg'), biz=f.getAttribute('data-nl')==='business';
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      var em=f.email.value.trim(), ok=f.ok.checked;
+      m.hidden=false; m.style.color='';
+      if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){m.textContent=biz?'Bitte geben Sie eine gültige E-Mail-Adresse ein.':'Bitte gib eine gültige E-Mail-Adresse ein.';return}
+      if(!ok){m.textContent=biz?'Bitte bestätigen Sie kurz die Einwilligung.':'Bitte setz kurz das Häkchen.';return}
+      if(f.website.value){return}
+      var url=biz?'https://de07bd28.sibforms.com/serve/MUIFAC1RTc-90naRQInXvLYQkTDZ7aCglf8jiNvW-3f1YnCmaymvymNWnrIylGJDbSDSWEYkJBeV5ac51lBZsSxWMkFWRHVdu28SpBYviuGBVYfwwosFPVoWn_EKduenmLAspcDq3nmFKGLMlTbUY61UFSaChk5KCq7j0FMPRcwMtTcb9zzXbH3ytZ7b3-6dWAL_eoO9_oZcleLqgA'
+                 :'https://de07bd28.sibforms.com/serve/MUIFAAgRVtNEIyn63OFnKAicIE2lSpRtW-cej-IbL5PBRivOYvkCanJE5j5Ax40VTBaeuaEG3gqgWBMIpEjN8lJxRLSIkaIIHeQs3-ZGVz4uVP0krVGxmrTvtCyZDFitb1DCMYSqazEAqxuZHWcUSEayHK7y-pkTGkhmboU0icfWp9rYwogZiC9l8Q2s0GvtcgaxdZENdaX2x6HQQA';
+      var o=new FormData(); o.append('EMAIL',em); o.append('VORNAME',f.vorname.value.trim());
+      if(biz){ var d=new Date().toLocaleDateString('de-DE',{timeZone:'Europe/Berlin',day:'2-digit',month:'2-digit',year:'numeric'}).split('.'); o.append('EINTRAGUNG',d[0]+'-'+d[1]+'-'+d[2]); }
+      o.append('email_address_check',''); o.append('locale','de'); o.append('html_type','simple');
+      var btn=f.querySelector('button'); btn.disabled=true;
+      var done=function(){btn.disabled=false; f.reset(); m.textContent=biz?'Fast geschafft! Bitte bestätigen Sie Ihre Anmeldung über den Link in der E-Mail, die wir Ihnen gerade geschickt haben.':'Fast geschafft! Check dein Postfach und bestätige den Link in der Mail. Dann geht\'s los.';};
+      fetch(url,{method:'POST',mode:'no-cors',body:o}).then(done).catch(function(){btn.disabled=false; m.textContent=biz?'Das hat leider nicht geklappt. Bitte versuchen Sie es noch einmal.':'Hat nicht geklappt. Versuch es bitte nochmal.';});
+      try{ if(window.HLP_ADS) HLP_ADS.conv('newsletter'); }catch(_){}
+    });
+  });
+})();
+</script>
+<script>
+(function(){
+  if(!/[?&]newsletter=bestaetigt/.test(location.search)) return;
+  var art=location.hash.indexOf('artists')>-1;
+  var t=document.createElement('div'); t.setAttribute('role','status');
+  t.style.cssText='position:fixed;left:50%;top:20px;transform:translateX(-50%);z-index:9998;max-width:92vw;padding:14px 20px;border-radius:14px;font:600 15px/1.4 Manrope,Arial,sans-serif;box-shadow:0 20px 50px -20px rgba(0,0,0,.5);'+(art?'background:#141414;color:#F4F1EC;border:1px solid #E90E0E':'background:#fff;color:#0B1630;border:1px solid #1877F2');
+  t.textContent=art?'Bestätigt! Willkommen bei High Level. Deine erste Mail ist unterwegs.':'Anmeldung bestätigt. Willkommen! Ihre erste E-Mail ist unterwegs.';
+  document.body.appendChild(t); setTimeout(function(){t.remove()},7000);
+  try{history.replaceState(null,'',location.pathname+location.hash)}catch(_){}
+})();
+</script>
 </body></html>
