@@ -263,10 +263,14 @@
 .nx-pic.big img{object-position:50% 40%}
 .nx-pic.small{width:46%;aspect-ratio:1/1;right:0;bottom:0;border:6px solid #fff}
 .nx-about-pics .sigbig{position:absolute;left:18px;top:14px;font-family:var(--f-sig);font-size:42px;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.5);z-index:2}
-.nx-firms{display:grid;gap:10px;margin:20px 0}
-.nx-firms div{padding:14px 18px;border-radius:12px;background:#fff;border:1px solid var(--b-line);border-left:4px solid var(--b-blue)}
-.nx-firms b{display:block;font-family:var(--f-brand);font-size:16px;color:var(--b-ink)}
-.nx-firms span{font-size:14.5px;color:var(--b-muted)}
+.nx-firms{display:grid;gap:14px;margin:24px 0}
+.nx-firms div{position:relative;min-height:140px;border-radius:16px;overflow:hidden;display:flex;align-items:center;background:#0B1630;box-shadow:0 18px 40px -24px rgba(10,42,102,.55);isolation:isolate}
+.nx-firms img{position:absolute;top:0;bottom:0;right:0;left:46%;width:54%;height:100%;object-fit:cover;max-width:none;z-index:-1;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 30%);mask-image:linear-gradient(90deg,transparent 0,#000 30%);transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.nx-firms div:hover img{transform:scale(1.05)}
+.nx-firms div p{margin:0;padding:18px 22px;width:56%;max-width:56%!important;position:relative}
+.nx-firms b{display:block;font-family:var(--f-brand);font-size:18px;color:#fff;letter-spacing:-.01em}
+.nx-firms span{display:block;margin-top:6px;font-size:14px;line-height:1.45;color:rgba(255,255,255,.78)}
+@media (max-width:640px){.nx-firms div{min-height:132px}.nx-firms img{left:46%;width:54%}.nx-firms div p{width:58%;max-width:58%!important;padding:14px 16px}.nx-firms b{font-size:16px}.nx-firms span{font-size:13.5px}}
 .nx-sign{font-weight:600;color:var(--b-ink)!important}
 .nx-about .btn{margin-top:8px}
 .nx-g-box{display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:center;padding:clamp(28px,4vw,48px);border-radius:22px;background:linear-gradient(140deg,#fff,#EEF5FF);border:1px solid rgba(24,119,242,.2);box-shadow:0 30px 60px -40px rgba(10,42,102,.5)}
@@ -1578,9 +1582,9 @@ form .btn{justify-content:center;margin-top:6px}
         <p>Ich bin Viktor Fehl, Online-Marketer seit über 15 Jahren. Angefangen habe ich mit Musik: 2009 habe ich mein eigenes Studio gegründet und gelernt, wie man Menschen online erreicht, wenn man kein großes Budget hat.</p>
         <p>Heute führe ich drei eigene Firmen. Für jede davon gewinne ich Kunden mit genau dem System, das ich für Ihren Betrieb baue: Website, Werbung, automatische Anfragen und ein Team, das nachfasst.</p>
         <div class="nx-firms">
-          <div><b>Saved Music Productions</b><span>Tonstudio und Musikproduktion in Bersenbrück</span></div>
-          <div><b>E-Commerce</b><span>eigener Online-Shop mit Werbung auf Facebook und Instagram</span></div>
-          <div><b>High Level Performance</b><span>Websites, Werbung und Vertrieb für Handwerk und Mittelstand</span></div>
+          <div><img src="../assets/firm-smp.webp" style="object-position:60% 40%" alt="Viktor im Tonstudio von Saved Music Productions" loading="lazy"><p><b>Saved Music Productions</b><span>Tonstudio und Musikproduktion in Bersenbrück</span></p></div>
+          <div><img src="../assets/firm-shop.webp" style="object-position:30% 30%" alt="Shopify-Bestellungen im eigenen Online-Shop" loading="lazy"><p><b>E-Commerce</b><span>eigener Online-Shop mit Werbung auf Facebook und Instagram</span></p></div>
+          <div><img src="../assets/firm-hlp.webp" style="object-position:100% 45%" alt="Marketing-Trichter mit Google, Meta, YouTube und Instagram" loading="lazy"><p><b>High Level Performance</b><span>Websites, Werbung und Vertrieb für Handwerk und Mittelstand</span></p></div>
         </div>
         <p class="nx-sign">Ein Ansprechpartner, ein Team, eigenes Kamerateam und eigener Telefonvertrieb. Wenn Sie anrufen, sprechen Sie mit uns, nicht mit einem Callcenter.</p>
         <a class="btn btn-blue" href="#b-kontakt" data-scroll>Lernen wir uns kennen →</a>
