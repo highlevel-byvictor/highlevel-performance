@@ -2,7 +2,7 @@
    Deutsch ist der Originaltext im HTML. Englisch kommt aus assets/i18n/en.json
    (Schlüssel = deutscher Text bzw. inneres HTML eines Textblocks, Wert = englische Fassung). */
 (function(){
-  var KEY = 'hlp_lang', DICT_URL = 'assets/i18n/en.json?v=20261014';
+  var KEY = 'hlp_lang', DICT_URL = (function(){ try{ return new URL('i18n/en.json?v=20261014', document.currentScript.src).href; }catch(e){ return 'assets/i18n/en.json?v=20261014'; } })();
   var INLINE = {B:1,STRONG:1,I:1,EM:1,BR:1,SPAN:1,A:1,SMALL:1,SUP:1,SUB:1,U:1,MARK:1,S:1,ABBR:1,TIME:1,WBR:1};
   var SKIP = {SCRIPT:1,STYLE:1,SVG:1,CANVAS:1,TEXTAREA:1,CODE:1,NOSCRIPT:1,TEMPLATE:1,IFRAME:1,VIDEO:1,AUDIO:1,SELECT:1};
   var ATTRS = ['alt','placeholder','aria-label','title'];

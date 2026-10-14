@@ -1465,7 +1465,7 @@ form .btn{justify-content:center;margin-top:6px}
       <p>Artist Development aus einem Studio: Sound, Visuals, Website und Reichweite für Musiker, Rapper, Sänger und Produzenten.</p>
       <span class="go"><i>→</i> Zur Artist-Welt</span>
     </a>
-    <a class="door door-biz" href="#business" data-go="business">
+    <a class="door door-biz" href="business/">
       <canvas id="bizCanvas"></canvas>
       <img class="ph" src="assets/d6d736560131.jpg" alt="Glas-Funnel mit Meta, Instagram, Facebook, Google Ads und YouTube">
       <div class="holo door-holo" aria-hidden="true"><div class="ios"><span class="ios-ic"><svg viewBox="0 0 24 24" fill="#fff"><path d="M13 2 4 14h7l-1 8 9-12h-7z"/></svg></span><div class="ios-tx"><div class="ios-top"><span>HIGH LEVEL</span><span>jetzt</span></div><div class="ios-main"><span class="cnt" data-to="29">29</span><span class="ios-l">neue Anfragen<small>diese Woche</small></span></div></div></div></div>
@@ -2118,6 +2118,7 @@ form .btn{justify-content:center;margin-top:6px}
   }
   function route(){
     const h=location.hash.slice(1).split(/[?&]/)[0], q=new URLSearchParams(location.search).get('v');
+    { const bz=document.getElementById('business'), t=h&&document.getElementById(h); if(h==='business'||q==='business'||(t&&bz&&bz.contains(t))){ location.replace('business/'+(h&&h!=='business'?'#'+h:'')+location.search.replace(/[?&]v=business/,'')); return; } }
     if(show(h)) return;
     const el=h&&document.getElementById(h), v=el&&el.closest('[data-view]');
     if(v && v.hidden){ show(v.dataset.view); setTimeout(()=>el.scrollIntoView({block:'start'}),320); return; }
