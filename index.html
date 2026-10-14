@@ -2118,7 +2118,7 @@ form .btn{justify-content:center;margin-top:6px}
   }
   function route(){
     const h=location.hash.slice(1).split(/[?&]/)[0], q=new URLSearchParams(location.search).get('v');
-    { const bz=document.getElementById('business'), t=h&&document.getElementById(h); if(h==='business'||q==='business'||(t&&bz&&bz.contains(t))){ location.replace('business/'+(h&&h!=='business'?'#'+h:'')+location.search.replace(/[?&]v=business/,'')); return; } }
+    { const bz=document.getElementById('business'), t=h&&document.getElementById(h); if(h==='business'||q==='business'||(t&&bz&&bz.contains(t))){ location.replace('business/'+location.search.replace(/[?&]v=business/,'').replace(/^&/,'?')+(h&&h!=='business'?'#'+h:'')); return; } }
     if(show(h)) return;
     const el=h&&document.getElementById(h), v=el&&el.closest('[data-view]');
     if(v && v.hidden){ show(v.dataset.view); setTimeout(()=>el.scrollIntoView({block:'start'}),320); return; }
