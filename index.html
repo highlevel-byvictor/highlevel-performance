@@ -403,6 +403,20 @@
 .b-nav .lang{color:var(--b-ink)}
 @media (max-width:640px){.lang button{padding:4px 7px 4px 4px;font-size:12px}.lang button svg{width:18px;height:18px}.nav-r{gap:8px}.a-nav .btn{padding:9px 12px;font-size:12.5px}}
 @media (max-width:440px){.lang button span{display:none}.lang button{padding:4px}.a-nav .btn{white-space:nowrap;padding:9px 11px;font-size:12px}}
+
+/* Baulig-Umbau: Ergebnisse / Fallstudien */
+.nx-cases .cs-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:28px}
+.nx-cases .cs{display:flex;flex-direction:column;gap:12px;padding:26px;border-radius:18px;background:linear-gradient(160deg,#fff,#F3F8FF);border:1px solid rgba(24,119,242,.16);box-shadow:0 22px 44px -32px rgba(10,42,102,.5)}
+.nx-cases .cs-k{font-family:var(--f-mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--b-blue)}
+.nx-cases .cs-num{display:flex;align-items:baseline;gap:10px}
+.nx-cases .cs-num b{font-family:var(--f-brand);font-weight:800;font-size:44px;line-height:1;color:var(--b-navy)}
+.nx-cases .cs-num span{font-size:14.5px;color:var(--b-muted)}
+.nx-cases .cs blockquote{margin:6px 0 0;font-size:15px;line-height:1.55}
+.nx-cases .cs-who{margin-top:auto;font-size:13px;font-weight:700;color:var(--b-navy)}
+.nx-cases .cs-cta{background:linear-gradient(160deg,#0B1630,#13306b);color:#fff;border-color:transparent}
+.nx-cases .cs-cta .cs-k{color:#38C8FF}.nx-cases .cs-cta h3{font-family:var(--f-brand);font-size:22px;margin:0}.nx-cases .cs-cta p{color:rgba(255,255,255,.8);margin:0}
+.nx-cases .cs-cta .btn{margin-top:auto;align-self:flex-start}
+@media (max-width:900px){.nx-cases .cs-grid{grid-template-columns:1fr}}
 </style>
 <link rel="stylesheet" href="assets/levi/levi.css">
 </head><body>
@@ -1483,7 +1497,7 @@ form .btn{justify-content:center;margin-top:6px}
   <header class="b-nav">
     <div class="wrap">
       <a class="logo" href="#start"><span class="l1">HIGH LEVEL</span><span class="l2">PERFORMANCE</span><span class="sig">by Victor</span></a>
-      <nav aria-label="Business"><a href="#b-aktion" data-scroll class="nav-aktion" data-intro-hide>Aktion</a><a href="#b-referenzen" data-scroll>Referenzen</a><a href="#b-victor" data-scroll>Über mich</a><a href="#b-leistungen" data-scroll>Leistungen</a><a href="#b-pakete" data-scroll>Pakete</a><a href="#b-faq" data-scroll>FAQ</a></nav>
+      <nav aria-label="Business"><a href="#b-ergebnisse" data-scroll>Ergebnisse</a><a href="#b-referenzen" data-scroll>Referenzen</a><a href="#b-victor" data-scroll>Über mich</a><a href="#b-leistungen" data-scroll>Leistungen</a><a href="#b-pakete" data-scroll>Zusammenarbeit</a><a href="#b-faq" data-scroll>FAQ</a></nav>
       <div class="nav-r"><div class="lang" role="group" aria-label="Sprache / Language" data-i18n-skip><button type="button" data-lang="de" title="Deutsch"><svg viewBox="0 0 20 20" aria-hidden="true"><clipPath id="cfDEb"><circle cx="10" cy="10" r="10"/></clipPath><g clip-path="url(#cfDEb)"><rect width="20" height="7" fill="#000"/><rect y="6.67" width="20" height="6.67" fill="#dd0000"/><rect y="13.33" width="20" height="6.67" fill="#ffce00"/></g></svg><span>DE</span></button><button type="button" data-lang="en" title="English"><svg viewBox="0 0 60 60" aria-hidden="true"><clipPath id="cfENb"><circle cx="30" cy="30" r="30"/></clipPath><g clip-path="url(#cfENb)"><rect width="60" height="60" fill="#012169"/><path d="M0 0L60 60M60 0L0 60" stroke="#fff" stroke-width="12"/><path d="M0 0L60 60M60 0L0 60" stroke="#C8102E" stroke-width="5"/><path d="M30 0V60M0 30H60" stroke="#fff" stroke-width="18"/><path d="M30 0V60M0 30H60" stroke="#C8102E" stroke-width="10"/></g></svg><span>EN</span></button></div><a class="btn btn-blue" href="#b-kontakt" data-scroll>Erstgespräch</a></div>
     </div>
   </header>
@@ -1496,12 +1510,12 @@ form .btn{justify-content:center;margin-top:6px}
     </svg>
     <div class="wrap">
       <div>
-        <span class="eyebrow">Für Handwerk, Selbstständige &amp; Mittelstand</span>
-        <h1>Mehr Kunden <em>auf Knopfdruck.<svg viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9 L80 6 L74 11 L170 5 L162 10 L298 4" fill="none" stroke="#38C8FF" stroke-width="2"/></svg></em></h1>
-        <p class="lead">Ich bin Viktor. Seit über 15 Jahren bringe ich Betrieben neue Kunden: mit einer Website, die verkauft, gezielter Werbung und einem System, das jede Anfrage bis zum Auftrag begleitet. Was ich Ihnen anbiete, nutze ich jeden Tag in meinen eigenen drei Firmen.</p>
+        <span class="eyebrow">Für inhabergeführte Betriebe aus Handwerk &amp; Mittelstand</span>
+        <h1>Planbar neue Aufträge <em>für Ihren Betrieb.<svg viewBox="0 0 300 14" preserveAspectRatio="none" aria-hidden="true"><path d="M2 9 L80 6 L74 11 L170 5 L162 10 L298 4" fill="none" stroke="#38C8FF" stroke-width="2"/></svg></em></h1>
+        <p class="lead">Mit dem <b>HLP-Anfragesystem</b>: Website, die verkauft, Werbung in Ihrer Region und ein eigenes Telefonteam, das jede Anfrage bis zum Termin begleitet. Ich bin Viktor, seit über 15 Jahren im Online-Marketing, und ich nutze genau dieses System jeden Tag in meinen eigenen drei Firmen.</p>
         <div class="ctas">
           <a class="btn btn-blue" href="#b-kontakt" data-scroll>Kostenloses Erstgespräch</a>
-          <a class="btn btn-ghost" href="#b-referenzen" data-scroll>Referenzen ansehen</a>
+          <a class="btn btn-ghost" href="#b-ergebnisse" data-scroll>Ergebnisse ansehen</a>
         </div>
         <div class="note"><span>15+ Jahre Erfahrung</span><span>3 eigene Firmen</span><span>Erst sehen, dann zahlen</span></div>
       </div>
@@ -1524,6 +1538,17 @@ form .btn{justify-content:center;margin-top:6px}
     </div>
   </div>
 
+  <section class="sec nx-cases" id="b-ergebnisse" aria-label="Ergebnisse">
+    <div class="wrap">
+      <div class="sec-head"><span class="eyebrow">Ergebnisse</span><h2>Was das System bei unseren Kunden bewegt.</h2><p>Echte Betriebe, echte Zahlen, so wie unsere Kunden sie uns berichten.</p></div>
+      <div class="cs-grid">
+        <article class="cs"><span class="cs-k">Kosmetikstudio</span><div class="cs-num"><b>14</b><span>Anfragen pro Woche</span></div><div class="cs-num"><b>Ø 7</b><span>neue Kunden daraus</span></div><blockquote>„Durch eure Strategien und eure Kampagnen gewinnen wir jede Woche 14 Anfragen und daraus im Schnitt 7 neue Kunden!“</blockquote><span class="cs-who">Beaty_By_Laura · Kosmetikstudio</span></article>
+        <article class="cs"><span class="cs-k">Bau · Maurer</span><div class="cs-num"><b>Ø 4</b><span>neue Großaufträge im Monat</span></div><blockquote>„Mit eurer Hilfe habe ich im Durchschnitt vier neue Großaufträge im Monat.“</blockquote><span class="cs-who">David · Maurer, ALF Haus GmbH</span></article>
+        <article class="cs cs-cta"><span class="cs-k">Ihr Betrieb</span><h3>Wie viele neue Aufträge sind in Ihrer Region möglich?</h3><p>Im kostenlosen Erstgespräch rechnen wir es für Ihren Betrieb durch. Ehrlich, auch wenn es nicht passt.</p><a class="btn btn-blue" href="#b-kontakt" data-scroll>Erstgespräch sichern →</a></article>
+      </div>
+    </div>
+  </section>
+
   <section class="sec refs" id="b-referenzen" aria-label="Referenzen">
     <div class="wrap">
       <div class="refs-head">
@@ -1540,38 +1565,7 @@ form .btn{justify-content:center;margin-top:6px}
     </div>
   </section>
 
-<section class="aktion" id="b-aktion" data-intro-hide aria-label="Oktober-Aktion">
-    <svg class="ak-bolts" viewBox="0 0 1200 600" preserveAspectRatio="none" aria-hidden="true"><path class="b1" d="M1150 -10 L1060 120 L1092 128 L980 270 L1012 278 L900 420"/><path class="b2" d="M60 610 L150 500 L124 492 L240 380 L214 372 L320 270"/><path class="b3" d="M640 -10 L590 80 L612 86 L548 190"/></svg>
-    <span class="ak-spark s1"></span><span class="ak-spark s2"></span><span class="ak-spark s3"></span><span class="ak-spark s4"></span>
-    <div class="wrap ak-grid">
-      <div class="ak-copy">
-        <span class="ak-live"><i></i>Live · Nur bis 31. Oktober</span>
-        <h2>Das Komplettsystem <em>zum halben Preis.</em></h2>
-        <p>Website, Chat-Roboter, Vertrieb, CRM, E-Mail-Marketing und Werbung aus einer Hand: unser größtes Paket <b>Wachstum</b> jetzt 50 % günstiger. Nur für die ersten 30 Betriebe.</p>
-        <div class="ak-visual" aria-hidden="true">
-          <img class="ak-wow" src="assets/aktion-wow-v1.webp" alt="" loading="lazy" width="736" height="750">
-          <div class="ak-float ak-chart"><span>Ihre Reichweite</span><div class="ak-bars"><i></i><i></i><i></i><i></i><i></i><i></i></div><svg viewBox="0 0 120 50"><path d="M4 44 L40 34 L64 38 L116 6" fill="none" stroke="#38C8FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M104 6 L116 6 L114 18" fill="none" stroke="#38C8FF" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <div class="ak-float ak-ping"><b>+1</b>Neue Anfrage</div>
-          <div class="ak-float ak-post"><i></i>Post läuft auf 5 Kanälen</div>
-        </div>
-        <ul class="ak-feat">
-          <li><b>Website + Roboter</b>Chat-Roboter, Social Media live, Angebot ganz oben</li>
-          <li><b>Vertrieb + CRM</b>jede Anfrage im Blick, bis zum Auftrag</li>
-          <li><b>Werbung + E-Mails</b>Google, Facebook, Instagram, automatische E-Mails</li>
-        </ul>
-      </div>
-      <div class="ak-card">
-        <span class="ak-k">Paket Wachstum · −50 %</span>
-        <div class="ak-normal">Normalpreis <s>2.490 €</s></div>
-        <div class="ak-price">1.245 €<small>einmalig</small></div>
-        <div class="ak-was"><b>Sie sparen 1.245 €.</b> Laufend kommen nur die Monatskosten für Werbung, Betreuung und Vertrieb dazu (ab 790 € im Monat).</div>
-        <div class="ak-cd" aria-label="Verbleibende Zeit"><div><b data-cd="d">--</b><span>Tage</span></div><div><b data-cd="h">--</b><span>Std</span></div><div><b data-cd="m">--</b><span>Min</span></div><div><b data-cd="s">--</b><span>Sek</span></div></div>
-        <div class="ak-spots" data-frei="30" data-gesamt="30"><div class="ak-bar"><i></i></div><span>Noch <b>30</b> von 30 Plätzen frei</span></div>
-        <a class="btn btn-blue ak-btn" href="#b-pakete" data-scroll>Jetzt zuschnappen – alle Preise ansehen ↓</a>
-        <small class="ak-fine">Gilt für den Einmalpreis des Pakets Wachstum. Endpreis, keine Umsatzsteuer nach § 19 UStG.</small>
-      </div>
-    </div>
-  </section>
+
 
 
   <section class="sec nx-vn" id="b-vorher">
@@ -1636,7 +1630,7 @@ form .btn{justify-content:center;margin-top:6px}
       <div class="bv-score"><span><i>★★★★★</i>Stimmen unserer Kunden<br>aus Handwerk, Handel und Dienstleistung</span></div>
     </div>
     <div class="bv-rail"><div class="bv-track"><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Durch eure Strategien und eure Kampagnen gewinnen wir jede Woche 14 Anfragen und daraus im Schnitt 7 neue Kunden!“</blockquote><figcaption><b>Beaty_By_Laura</b><span>Kosmetikstudio</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Danke für die top Website, die du mit deinem Team gebaut hast.“</blockquote><figcaption><b>Alexej Fehl</b><span>Finanz- &amp; Wirtschaftskanzlei</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Ich hatte innerhalb von 36 Stunden eine nagelneue Website und bin euch sehr dankbar. Durch die Verknüpfungen und modernste Technik bin ich viel sichtbarer geworden als vorher.“</blockquote><figcaption><b>Johannes Fehl</b><span>Finanzvertrieb</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Wir freuen uns auf die lange Zusammenarbeit.“</blockquote><figcaption><b>Alexander</b><span>Tonstudio Fulda</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Mit eurer Hilfe habe ich im Durchschnitt vier neue Großaufträge im Monat.“</blockquote><figcaption><b>David</b><span>Maurer · ALF Haus GmbH</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Vielen Dank für dein Funnel-System.“</blockquote><figcaption><b>Silvia</b><span>Kosmetikstudio</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Durch eure Strategien und eure Kampagnen gewinnen wir jede Woche 14 Anfragen und daraus im Schnitt 7 neue Kunden!“</blockquote><figcaption><b>Beaty_By_Laura</b><span>Kosmetikstudio</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Danke für die top Website, die du mit deinem Team gebaut hast.“</blockquote><figcaption><b>Alexej Fehl</b><span>Finanz- &amp; Wirtschaftskanzlei</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Ich hatte innerhalb von 36 Stunden eine nagelneue Website und bin euch sehr dankbar. Durch die Verknüpfungen und modernste Technik bin ich viel sichtbarer geworden als vorher.“</blockquote><figcaption><b>Johannes Fehl</b><span>Finanzvertrieb</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Wir freuen uns auf die lange Zusammenarbeit.“</blockquote><figcaption><b>Alexander</b><span>Tonstudio Fulda</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Mit eurer Hilfe habe ich im Durchschnitt vier neue Großaufträge im Monat.“</blockquote><figcaption><b>David</b><span>Maurer · ALF Haus GmbH</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Vielen Dank für dein Funnel-System.“</blockquote><figcaption><b>Silvia</b><span>Kosmetikstudio</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Durch eure Strategien und eure Kampagnen gewinnen wir jede Woche 14 Anfragen und daraus im Schnitt 7 neue Kunden!“</blockquote><figcaption><b>Beaty_By_Laura</b><span>Kosmetikstudio</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Danke für die top Website, die du mit deinem Team gebaut hast.“</blockquote><figcaption><b>Alexej Fehl</b><span>Finanz- &amp; Wirtschaftskanzlei</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Ich hatte innerhalb von 36 Stunden eine nagelneue Website und bin euch sehr dankbar. Durch die Verknüpfungen und modernste Technik bin ich viel sichtbarer geworden als vorher.“</blockquote><figcaption><b>Johannes Fehl</b><span>Finanzvertrieb</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Wir freuen uns auf die lange Zusammenarbeit.“</blockquote><figcaption><b>Alexander</b><span>Tonstudio Fulda</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Mit eurer Hilfe habe ich im Durchschnitt vier neue Großaufträge im Monat.“</blockquote><figcaption><b>David</b><span>Maurer · ALF Haus GmbH</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Vielen Dank für dein Funnel-System.“</blockquote><figcaption><b>Silvia</b><span>Kosmetikstudio</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Durch eure Strategien und eure Kampagnen gewinnen wir jede Woche 14 Anfragen und daraus im Schnitt 7 neue Kunden!“</blockquote><figcaption><b>Beaty_By_Laura</b><span>Kosmetikstudio</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Danke für die top Website, die du mit deinem Team gebaut hast.“</blockquote><figcaption><b>Alexej Fehl</b><span>Finanz- &amp; Wirtschaftskanzlei</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Ich hatte innerhalb von 36 Stunden eine nagelneue Website und bin euch sehr dankbar. Durch die Verknüpfungen und modernste Technik bin ich viel sichtbarer geworden als vorher.“</blockquote><figcaption><b>Johannes Fehl</b><span>Finanzvertrieb</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Wir freuen uns auf die lange Zusammenarbeit.“</blockquote><figcaption><b>Alexander</b><span>Tonstudio Fulda</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Mit eurer Hilfe habe ich im Durchschnitt vier neue Großaufträge im Monat.“</blockquote><figcaption><b>David</b><span>Maurer · ALF Haus GmbH</span></figcaption></figure><figure class="bv"><div class="bv-st">★★★★★</div><blockquote>„Vielen Dank für dein Funnel-System.“</blockquote><figcaption><b>Silvia</b><span>Kosmetikstudio</span></figcaption></figure></div></div>
-    <p class="wrap bv-note">Bewertungen über unser Formular werden vor der Veröffentlichung auf Echtheit und Spam geprüft. <a href="#b-bewerten" data-scroll>Selbst bewerten →</a></p>
+    <p class="wrap bv-note">Alle Stimmen stammen von Kunden, mit denen wir zusammengearbeitet haben.</p>
   </section>
 
   <section class="sec sys" id="b-system">
@@ -1645,8 +1639,8 @@ form .btn{justify-content:center;margin-top:6px}
     <svg class="sys-bolts" viewBox="0 0 1200 500" preserveAspectRatio="none" aria-hidden="true"><path d="M1150 0 L1060 110 L1090 118 L980 260" fill="none" stroke="#38C8FF" stroke-width="1"/><path d="M60 500 L140 400 L118 394 L210 300" fill="none" stroke="#1877F2" stroke-width="1"/></svg>
     <div class="wrap">
       <div class="sec-head">
-        <span class="eyebrow">Die Lösung</span>
-        <h2>So wird aus einem Klick ein Kunde.</h2>
+        <span class="eyebrow">Das HLP-Anfragesystem</span>
+        <h2>In 4 Schritten wird aus einem Klick ein Kunde.</h2>
         <p>Aus Besuchern werden Kontakte, aus Kontakten zahlende Kunden. Sie machen Ihre Arbeit, das System läuft im Hintergrund.</p>
       </div>
       <div class="sys-row">
@@ -1693,35 +1687,32 @@ form .btn{justify-content:center;margin-top:6px}
   <section class="sec" id="b-pakete" style="padding-top:0">
     <div class="wrap">
       <div class="sec-head">
-        <span class="eyebrow">Pakete</span>
-        <h2>Drei Pakete. Ein Ziel: mehr Kunden.</h2>
+        <span class="eyebrow">Zusammenarbeit</span>
+        <h2>Drei Ausbaustufen. Ein Ziel: mehr Aufträge.</h2>
+        <p>Welche Stufe zu Ihrem Betrieb passt, hängt von Region, Auftragsgröße und Ziel ab. Das klären wir gemeinsam im Erstgespräch, inklusive Preis.</p>
       </div>
       <div class="plans">
         <div class="plan">
           <span class="tag">WEBSITE</span><h3>Start</h3>
           <p class="for">Die professionelle Website, die Anfragen bringt.</p>
-          <div class="price">1.290 €<small>einmalig für die Website</small><small class="mo">+ 59 € im Monat für Hosting und Pflege</small></div>
           <ul><li>Website (neu oder Umbau) mit Anfrageformular</li><li>Alle Social-Media-Kanäle verknüpft</li><li>Google-Unternehmensprofil</li><li>Hosting und Pflege</li></ul>
-          <a class="btn btn-ghost" href="website-business/#fragebogen">Entwurf anfordern</a>
+          <a class="btn btn-ghost" href="#b-kontakt" data-scroll>Im Erstgespräch klären</a>
         </div>
         <div class="plan">
           <span class="tag">WEBSITE + ROBOTER</span><h3>Smart</h3>
           <p class="for">Website mit Chat-Roboter, Social Media und Angebots-Banner.</p>
-          <div class="price">1.990 €<small>einmalig für die Website</small><small class="mo">+ 149 € im Monat für Hosting, Pflege und Roboter</small></div>
           <ul><li>Alles aus Start</li><li>Chat-Roboter beantwortet Kundenfragen rund um die Uhr</li><li>Ihre Social-Media-Beiträge live auf der Website</li><li>Ihr aktuelles Angebot ganz oben eingeblendet</li><li>Jede Anfrage sofort per SMS und E-Mail</li></ul>
-          <a class="btn btn-ghost" href="website-business/#fragebogen">Entwurf anfordern</a>
+          <a class="btn btn-ghost" href="#b-kontakt" data-scroll>Im Erstgespräch klären</a>
         </div>
         <div class="plan top">
-          <span class="badge" data-intro data-after="Beliebt">−50 % bis 31.10.</span>
+          <span class="badge">Empfohlen</span>
           <span class="tag">KOMPLETTSYSTEM</span><h3>Wachstum</h3>
           <p class="for">Website plus Vertrieb: aus Anfragen werden zahlende Kunden.</p>
-          <div class="price"><span data-intro data-after="2.490 €">1.245 € <s>2.490 €</s></span><small><span data-intro data-after="einmalig für Website und Einrichtung">einmalig · Aktionspreis bis 31.10., danach 2.490 €</span></small><small class="mo">+ ab 790 € im Monat für Werbung, Betreuung und Vertrieb</small></div>
           <ul><li>Alles aus Smart</li><li>Vertriebsabläufe optimiert</li><li>CRM: alle Kunden und Anfragen im Blick</li><li>Automatisches E-Mail-Marketing</li><li>Werbung bei Google, Facebook und Instagram</li><li>Videodreh und Telefonservice mit Terminen</li></ul>
-          <a class="btn btn-blue" href="#b-kontakt" data-scroll>Aktionspreis sichern</a>
+          <a class="btn btn-blue" href="#b-kontakt" data-scroll>Kostenloses Erstgespräch</a>
         </div>
       </div>
-      <p class="plans-addon"><b>Für jedes Paket dazubuchbar: Telefon-Roboter</b> – nimmt Anrufe rund um die Uhr an und trägt Termine ein. 249 € einmalig + 149 € im Monat inkl. 300 Minuten.<br><b>Noch mehr Service? Komplett</b> – alles aus Wachstum plus Telefon-Roboter, bis zu 2 Werbespots im Monat und Werbung auf TikTok. 2.490 € einmalig + ab 1.590 € im Monat.</p>
-      <p class="plans-note">Einmalpreis = Bau und Einrichtung. Monatspreis = laufende Betreuung. Alle Preise sind Endpreise, nach § 19 UStG keine Umsatzsteuer. Das Werbebudget zahlen Sie direkt an Google oder Facebook.</p>
+      <p class="plans-addon"><b>Noch mehr Service?</b> Telefon-Roboter, der Anrufe rund um die Uhr annimmt, eigene Werbespots und Werbung auf TikTok können wir zu jeder Stufe ergänzen.</p>
     </div>
   </section>
 
@@ -1762,7 +1753,7 @@ form .btn{justify-content:center;margin-top:6px}
         <label for="f-tel">Telefon<input id="f-tel" name="tel" type="tel" required autocomplete="tel"></label>
         <label for="f-mail">E-Mail<input id="f-mail" name="email" type="email" required autocomplete="email"></label>
         <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
-        <input type="hidden" name="quelle" id="f-quelle"><label for="f-ziel">Was ist Ihr Ziel?<select id="f-ziel" name="ziel"><option>Mehr Kundenanfragen</option><option>Neue Website</option><option>Website umbauen</option><option>Social Media &amp; E-Mail automatisieren</option><option>Mitarbeiter finden</option><option>Werbespot / Imagefilm</option><option>Etwas anderes</option></select></label>
+        <input type="hidden" name="quelle" id="f-quelle"><label for="f-branche">Branche<input id="f-branche" name="branche" placeholder="z. B. Dachdecker, Kosmetikstudio"></label><label for="f-team">Wie viele Mitarbeiter hat Ihr Betrieb?<select id="f-team" name="team"><option>nur ich</option><option>2–5</option><option>6–20</option><option>21–50</option><option>mehr als 50</option></select></label><label for="f-werbung">Schalten Sie schon Werbung?<select id="f-werbung" name="werbung"><option>Nein</option><option>Ja, selbst</option><option>Ja, über eine Agentur</option></select></label><label for="f-chef">Entscheiden Sie über Marketing?<select id="f-chef" name="entscheider"><option>Ja, ich bin Inhaber/Geschäftsführer</option><option>Ich entscheide mit</option><option>Nein</option></select></label><label for="f-ziel">Was ist Ihr Ziel?<select id="f-ziel" name="ziel"><option>Mehr Kundenanfragen</option><option>Neue Website</option><option>Website umbauen</option><option>Social Media &amp; E-Mail automatisieren</option><option>Mitarbeiter finden</option><option>Werbespot / Imagefilm</option><option>Etwas anderes</option></select></label>
         <label class="f-opt" for="f-news"><input id="f-news" type="checkbox" name="newsletter" value="ja"> <span>Ja, schicken Sie mir alle paar Tage Tipps zur Kundengewinnung per E-Mail. Abmeldung jederzeit möglich.</span></label>
         <button class="btn btn-blue" type="submit">Erstgespräch anfragen ⚡</button>
         <div class="sent" id="sent" hidden>Danke! Ihre Anfrage ist da. Wir melden uns innerhalb von 24 Stunden.</div>
@@ -1770,34 +1761,7 @@ form .btn{justify-content:center;margin-top:6px}
     </div>
   </div>
 
-  <section class="sec rvf-sec" id="b-bewerten" aria-label="Bewertung abgeben">
-    <div class="wrap"><div class="rvf-box">
-      <div class="rvf-intro">
-        <span class="eyebrow">Ihre Meinung zählt</span>
-        <h2>Wir haben zusammengearbeitet? <em>Bewerten Sie mich.</em></h2>
-        <p>Zwei Minuten, die mir sehr helfen. Ihre Bewertung erscheint nach kurzer Prüfung oben bei den anderen Kundenstimmen.</p>
-      </div>
-      <form id="rvForm" class="rvf" novalidate>
-        <fieldset class="rvf-stars" aria-label="Sterne">
-          <legend>Ihre Bewertung</legend>
-          <input type="radio" id="rs5" name="sterne" value="5" checked><label for="rs5" title="5 Sterne">★</label>
-          <input type="radio" id="rs4" name="sterne" value="4"><label for="rs4" title="4 Sterne">★</label>
-          <input type="radio" id="rs3" name="sterne" value="3"><label for="rs3" title="3 Sterne">★</label>
-          <input type="radio" id="rs2" name="sterne" value="2"><label for="rs2" title="2 Sterne">★</label>
-          <input type="radio" id="rs1" name="sterne" value="1"><label for="rs1" title="1 Stern">★</label>
-        </fieldset>
-        <div class="rvf-row">
-          <label>Ihr Name<input name="name" required maxlength="60" autocomplete="name" placeholder="z. B. Laura M."></label>
-          <label>Firma oder Branche<input name="firma" maxlength="80" autocomplete="organization" placeholder="z. B. Kosmetikstudio"></label>
-        </div>
-        <label>Wie war die Zusammenarbeit?<textarea name="text" required minlength="10" maxlength="600" rows="4" placeholder="Was hat sich für Sie verändert?"></textarea></label>
-        <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
-        <label class="rvf-ok"><input type="checkbox" name="ok" required> <span>Ich bin einverstanden, dass meine Bewertung mit Name und Firma auf dieser Website erscheint. Mehr in der <a href="#" data-legal="datenschutz">Datenschutzerklärung</a>.</span></label>
-        <button class="btn btn-blue" type="submit">Bewertung abschicken ★</button>
-        <div class="rvf-msg" id="rvMsg" hidden></div>
-      </form>
-    </div></div>
-  </section>
+  
   <script>
   (function(){
     var API=''; /* Google-Apps-Script-URL, wird nach Einrichtung eingetragen */
@@ -2184,7 +2148,8 @@ form .btn{justify-content:center;margin-top:6px}
 
   /* ---------- FAQ als Chat ---------- */
   const faq=[
-    ['Was kostet das?','Es gibt einen Einmalpreis für Bau und Einrichtung und einen Monatspreis für die Betreuung. Start: 1.290 € + 59 € im Monat. Smart mit Chat-Roboter: 1.990 € + 149 € im Monat. Wachstum, das Komplettsystem mit Vertrieb und Werbung: 2.490 € + ab 790 € im Monat, bis 31. Oktober zum halben Einmalpreis von 1.245 €. Das Werbebudget zahlen Sie direkt an Google oder Facebook.'],
+    ['Was kostet das?','Es gibt einen Einmalbetrag für Bau und Einrichtung und einen Monatsbetrag für die laufende Betreuung. Wie hoch, hängt davon ab, was Ihr Betrieb braucht. Darum nennen wir Ihnen den Preis im kostenlosen Erstgespräch, nachdem wir uns Ihre Situation angesehen haben. Das Werbebudget zahlen Sie direkt an Google oder Facebook.'],
+    ['Warum stehen hier keine Preise?','Weil wir keine Pakete von der Stange verkaufen. Ein Dachdecker mit zehn Mitarbeitern braucht etwas anderes als ein Kosmetikstudio. Im Erstgespräch schauen wir, was für Sie realistisch ist, und Sie bekommen ein klares Angebot.'],
     ['Wie schnell bekomme ich Anfragen?','Nach Strategie und Produktion gehen die Kampagnen meist in Woche 4 live. Erste Anfragen kommen oft in den ersten Tagen danach.'],
     ['Lohnt sich das für einen kleinen Betrieb?','Gerade dort. Schon wenige zusätzliche Aufträge im Monat machen bei Handwerk und Dienstleistung einen großen Unterschied.'],
     ['Muss ich mich selbst um etwas kümmern?','Kaum. Sie geben Inhalte frei und führen die Kundengespräche. Alles andere übernehmen wir.'],
@@ -2243,7 +2208,8 @@ form .btn{justify-content:center;margin-top:6px}
     if(!f.checkValidity()){ f.reportValidity(); return; }
     b.disabled=true;
     const q=document.getElementById('f-quelle'); if(q && window.HLP_ADS) q.value=HLP_ADS.quelle();
-    try{ const r=await fetch('https://formular.highlevel-performance.de/kontakt.php',{method:'POST',body:new FormData(f)}); const j=await r.json(); if(!j.ok) throw 0;
+    const fd=new FormData(f); fd.set('ziel',[fd.get('ziel'),'Branche: '+(fd.get('branche')||'-'),'Mitarbeiter: '+fd.get('team'),'Werbung: '+fd.get('werbung'),'Entscheider: '+fd.get('entscheider')].join(' | '));
+    try{ const r=await fetch('https://formular.highlevel-performance.de/kontakt.php',{method:'POST',body:fd}); const j=await r.json(); if(!j.ok) throw 0;
       if(window.HLP_ADS){ HLP_ADS.conv('lead'); HLP_ADS.hook(new FormData(f),'potenzialanalyse'); }
       s.textContent='Danke! Ihre Anfrage ist da. Wir melden uns innerhalb von 24 Stunden.'; f.reset(); sfx.warp();
     }catch(_){ s.innerHTML='Das hat leider nicht geklappt. Rufen Sie uns an: <a href="tel:+4915561068899">+49 15561 068899</a> oder schreiben Sie an <a href="mailto:info@highlevel-performance.de">info@highlevel-performance.de</a>.'; }
