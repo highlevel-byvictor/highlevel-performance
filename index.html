@@ -2471,14 +2471,18 @@ document.addEventListener('keydown',function(e){if(document.getElementById('star
       if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(em)){m.textContent=biz?'Bitte geben Sie eine gültige E-Mail-Adresse ein.':'Bitte gib eine gültige E-Mail-Adresse ein.';return}
       if(!ok){m.textContent=biz?'Bitte bestätigen Sie kurz die Einwilligung.':'Bitte setz kurz das Häkchen.';return}
       if(f.website.value){return}
-      var url=biz?'https://de07bd28.sibforms.com/serve/MUIFAC1RTc-90naRQInXvLYQkTDZ7aCglf8jiNvW-3f1YnCmaymvymNWnrIylGJDbSDSWEYkJBeV5ac51lBZsSxWMkFWRHVdu28SpBYviuGBVYfwwosFPVoWn_EKduenmLAspcDq3nmFKGLMlTbUY61UFSaChk5KCq7j0FMPRcwMtTcb9zzXbH3ytZ7b3-6dWAL_eoO9_oZcleLqgA'
-                 :'https://de07bd28.sibforms.com/serve/MUIFAAgRVtNEIyn63OFnKAicIE2lSpRtW-cej-IbL5PBRivOYvkCanJE5j5Ax40VTBaeuaEG3gqgWBMIpEjN8lJxRLSIkaIIHeQs3-ZGVz4uVP0krVGxmrTvtCyZDFitb1DCMYSqazEAqxuZHWcUSEayHK7y-pkTGkhmboU0icfWp9rYwogZiC9l8Q2s0GvtcgaxdZENdaX2x6HQQA';
-      var o=new FormData(); o.append('EMAIL',em); o.append('VORNAME',f.vorname.value.trim());
-      if(biz){ var d=new Date().toLocaleDateString('de-DE',{timeZone:'Europe/Berlin',day:'2-digit',month:'2-digit',year:'numeric'}).split('.'); o.append('EINTRAGUNG',d[0]+'-'+d[1]+'-'+d[2]); }
-      o.append('email_address_check',''); o.append('locale','de'); o.append('html_type','simple');
+      var vn=f.vorname.value.trim(), now=new Date(), iso=now.toLocaleDateString('sv-SE',{timeZone:'Europe/Berlin'});
+      var tk=btoa(unescape(encodeURIComponent(JSON.stringify({e:em,n:vn,l:biz?'business':'artists',d:iso})))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
+      var o=new URLSearchParams(); o.append('email',em); o.append('vorname',vn||(biz?'':'')); o.append('liste',biz?'business':'artists'); o.append('list_id',biz?'13':'14'); o.append('datum',iso); o.append('token',tk);
+      o.append('betreff',biz?'Bitte bestätigen Sie Ihre Anmeldung':'Ein Klick noch – bestätige deine Anmeldung');
+      o.append('headline',biz?('Fast geschafft'+(vn?', '+vn:'')+'!'):('Fast geschafft'+(vn?', '+vn:'')+'!'));
+      o.append('text',biz?'Bitte bestätigen Sie mit einem Klick, dass Sie den Newsletter von High Level Performance erhalten möchten. Danach bekommen Sie alle paar Tage eine kurze E-Mail mit Strategien, die Ihrem Betrieb neue Kunden bringen.':'Bestätige mit einem Klick, dass du den High-Level-Newsletter für Artists bekommen willst. Danach kommt alle paar Tage eine Mail, die dich wachrüttelt: Website, Marke, Reichweite, Konzertanfragen.');
+      o.append('button',biz?'Anmeldung bestätigen':'Ja, ich bin dabei');
+      o.append('hinweis',biz?'Sie haben sich nicht angemeldet? Dann ignorieren Sie diese E-Mail einfach. Ohne Bestätigung tragen wir Sie nicht ein.':'Du hast dich nicht angemeldet? Dann ignorier diese Mail einfach. Ohne Bestätigung tragen wir dich nicht ein.');
+      o.append('bild','https://www.highlevel-performance.de/assets/mail/img/'+(biz?'b01':'a01')+'.jpg');
       var btn=f.querySelector('button'); btn.disabled=true;
-      var done=function(){btn.disabled=false; f.reset(); m.textContent=biz?'Fast geschafft! Bitte bestätigen Sie Ihre Anmeldung über den Link in der E-Mail, die wir Ihnen gerade geschickt haben.':'Fast geschafft! Check dein Postfach und bestätige den Link in der Mail. Dann geht\'s los.';};
-      fetch(url,{method:'POST',mode:'no-cors',body:o}).then(done).catch(function(){btn.disabled=false; m.textContent=biz?'Das hat leider nicht geklappt. Bitte versuchen Sie es noch einmal.':'Hat nicht geklappt. Versuch es bitte nochmal.';});
+      var done=function(){btn.disabled=false; f.reset(); m.textContent=biz?'Fast geschafft! Bitte bestätigen Sie Ihre Anmeldung über den Link in der E-Mail, die wir Ihnen gerade geschickt haben. (Bitte auch im Spam-Ordner nachsehen.)':'Fast geschafft! Check dein Postfach und bestätige den Link in der Mail. Dann geht\'s los. (Schau auch im Spam-Ordner.)';};
+      fetch('https://connect.pabbly.com/webhook-listener/webhook/IjU3NjAwNTZmMDYzZTA0MzE1MjY4NTUzNyI_3D_pc/IjU3NjcwNTY4MDYzZjA0MzI1MjY0NTUzMTUxM2Ii_pc',{method:'POST',mode:'no-cors',body:o}).then(done).catch(function(){btn.disabled=false; m.textContent=biz?'Das hat leider nicht geklappt. Bitte versuchen Sie es noch einmal.':'Hat nicht geklappt. Versuch es bitte nochmal.';});
       try{ if(window.HLP_ADS) HLP_ADS.conv('newsletter'); }catch(_){}
     });
   });
