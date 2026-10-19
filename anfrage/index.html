@@ -37,7 +37,7 @@ p{margin:0 0 14px}.mut{color:var(--mut)}
 .vid .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(10,42,102,.12);border:0;cursor:pointer}
 .vid .play span{width:84px;height:84px;border-radius:50%;background:#fff;display:grid;place-items:center;box-shadow:0 20px 40px -10px rgba(10,42,102,.5)}.vid .play svg{margin-left:6px}
 .vid .cap{position:absolute;left:14px;bottom:14px;background:rgba(10,42,102,.9);color:#fff;font:600 12px var(--f);padding:8px 12px;border-radius:999px}
-.hero-pic{position:relative;border-radius:24px;overflow:hidden;box-shadow:0 40px 80px -30px rgba(10,42,102,.45);aspect-ratio:4/5;max-height:560px}.hero-pic img{width:100%;height:100%;object-fit:cover;object-position:center 20%}.hero-badge{position:absolute;left:16px;right:16px;bottom:16px;background:rgba(255,255,255,.96);color:var(--navy);border-radius:16px;padding:14px 18px;font:500 15px/1.4 var(--fb)}.hero-badge b{font:800 18px var(--f);display:block}.hero-badge span{display:block;color:var(--mut);font-size:13px}.story{background:var(--bg);padding-top:clamp(40px,6vw,64px)}.story-g{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(24px,4vw,56px);align-items:center}
+.hero-pic{position:relative;border-radius:24px;overflow:hidden;box-shadow:0 40px 80px -30px rgba(10,42,102,.45);aspect-ratio:4/5;max-height:560px}.hero-pic img{width:100%;height:100%;object-fit:cover;object-position:center 20%}.hero-badge{position:absolute;left:16px;right:16px;bottom:16px;background:rgba(255,255,255,.96);color:var(--navy);border-radius:16px;padding:14px 18px;font:500 15px/1.4 var(--fb)}.hero-badge b{font:800 18px var(--f);display:block}.hero-badge span{display:block;color:var(--mut);font-size:13px}.welcome{background:#fff}.story{background:var(--bg);padding-top:clamp(40px,6vw,64px)}.story-g{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(24px,4vw,56px);align-items:center}
 .trust{display:flex;flex-wrap:wrap;gap:18px 28px;align-items:center;margin-top:26px;color:var(--mut);font-size:14px}.trust b{color:var(--navy);font-family:var(--f)}
 /* Sections */
 .sec{padding:clamp(48px,7vw,88px) 0}.sec.alt{background:var(--bg)}
@@ -167,13 +167,28 @@ footer{padding:32px 0;font-size:13px;color:var(--mut);border-top:1px solid var(-
   </div>
 </section>
 
+<section class="sec welcome" id="willkommen" hidden>
+  <div class="wrap" style="max-width:860px">
+    <div style="text-align:center;margin-bottom:22px">
+      <span class="eyebrow">Bevor Sie das Formular ausfüllen</span>
+      <h2>Schön, dass Sie hier sind – so geht es jetzt weiter.</h2>
+      <p class="lead">30 Sekunden: Was nach Ihrer Eintragung passiert und wer sich bei Ihnen meldet.</p>
+    </div>
+    <div class="vid" id="vid2">
+      <video id="wv" src="../video/welcome.mp4" poster="../assets/welcome-poster.jpg" playsinline preload="metadata"></video>
+      <button class="play" id="play2" type="button" aria-label="Video abspielen"><span><svg width="30" height="30" viewBox="0 0 24 24" fill="#1877F2"><path d="M8 5v14l11-7z"/></svg></span></button>
+      <div class="cap">30 Sekunden: So geht es nach Ihrer Anfrage weiter</div>
+    </div>
+  </div>
+</section>
+
 <section class="sec sec-frm" id="anfrage">
   <div class="wrap frm-wrap">
     <div class="frm-side">
       <span class="eyebrow">Kostenlos &amp; unverbindlich</span>
       <h2>Ihre kostenlose Potenzialanalyse</h2>
       <p>In 30 Minuten zeigen wir Ihnen, wie viele neue Anfragen in Ihrer Region realistisch sind – und was Sie dafür konkret brauchen.</p>
-      <ul><li>2 Minuten ausfüllen, wir prüfen, ob es passt</li><li>Bestätigung sofort per SMS</li><li>Rückruf innerhalb von 24 Stunden</li><li>Kein Verkaufsgespräch – eine ehrliche Einschätzung</li></ul>
+      <ul><li>2 Minuten ausfüllen, wir prüfen, ob es passt</li><li>Bestätigung sofort per SMS</li><li>Julian meldet sich innerhalb von 24–36 Stunden</li><li>Kein Verkaufsgespräch – eine ehrliche Einschätzung</li></ul>
       <div class="me"><img src="../assets/team-julian-b.jpg?v=2" alt="Julian, High Level Performance"><div><b>Ihr Erstgespräch führt Julian</b><span>Strategie &amp; Kundensystem · High Level Performance</span></div></div>
     </div>
 
@@ -252,10 +267,13 @@ footer{padding:32px 0;font-size:13px;color:var(--mut);border-top:1px solid var(-
 
 /* Video */
 (function(){
-  var v=document.getElementById('mv'), p=document.getElementById('play'), started=false;
-  p.addEventListener('click',function(){ v.play(); p.style.display='none'; if(!started){ started=true; HLP_PIXEL.track('ViewContent',{content_name:'Markus-Video'}); } });
-  v.addEventListener('click',function(){ if(v.paused){ v.play(); p.style.display='none'; } else { v.pause(); p.style.display=''; } });
-  v.addEventListener('ended',function(){ p.style.display=''; });
+  function wire(vid,btn,name){
+    var v=document.getElementById(vid), p=document.getElementById(btn), started=false; if(!v||!p) return;
+    p.addEventListener('click',function(){ v.play(); p.style.display='none'; if(!started){ started=true; HLP_PIXEL.track('ViewContent',{content_name:name}); } });
+    v.addEventListener('click',function(){ if(v.paused){ v.play(); p.style.display='none'; } else { v.pause(); p.style.display=''; } });
+    v.addEventListener('ended',function(){ p.style.display=''; });
+  }
+  wire('mv','play','Markus-Video'); wire('wv','play2','Welcome-Video');
 })();
 
 /* Mehrstufiges Formular */
