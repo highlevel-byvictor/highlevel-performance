@@ -204,7 +204,8 @@ footer{padding:32px 0;font-size:13px;color:var(--mut);border-top:1px solid var(-
           <label><input type="radio" name="engpass" value="Termine, aber keine Aufträge"> Termine ja, aber zu wenige Abschlüsse</label>
           <label><input type="radio" name="engpass" value="Alles unregelmäßig"> Alles läuft – nur völlig unregelmäßig</label>
         </div>
-        <label class="fld" style="margin-top:14px">Ihre Branche<input name="branche" placeholder="z. B. Dachdecker, Elektro, SHK, Maler" required></label>
+        <label class="fld" style="margin-top:14px">Worum geht es Ihnen?<select name="anliegen" required><option value="" selected disabled>Bitte wählen …</option><option>Kundengewinnung</option><option>Mitarbeitergewinnung</option><option>Neue Website</option><option>Kunden + Mitarbeiter</option><option>Alles zusammen</option></select></label>
+        <label class="fld" style="margin-top:12px">Ihre Branche<input name="branche" placeholder="z. B. Dachdecker, Elektro, SHK, Kosmetik, Steuerberatung" required></label>
         <div class="err"></div>
         <div class="nav"><button class="btn" type="button" data-next>Weiter →</button></div>
       </div>
@@ -228,7 +229,7 @@ footer{padding:32px 0;font-size:13px;color:var(--mut);border-top:1px solid var(-
         <div class="hint">Schritt 3 von 3 · Sie bekommen sofort eine SMS-Bestätigung.</div>
         <div class="g2">
           <label class="fld">Vor- und Nachname<input name="name" required autocomplete="name"></label>
-          <label class="fld">Unternehmen<input name="firma" autocomplete="organization"></label>
+          <label class="fld">Unternehmen<input name="firma" required autocomplete="organization"></label>
           <label class="fld">Handynummer<input name="tel" type="tel" required autocomplete="tel" placeholder="0171 1234567"></label>
           <label class="fld">E-Mail<input name="email" type="email" required autocomplete="email"></label>
         </div>
@@ -291,17 +292,29 @@ footer{padding:32px 0;font-size:13px;color:var(--mut);border-top:1px solid var(-
     if(e.target.closest('[data-next]')){ if(valid(cur)) { show(cur+1); HLP_PIXEL.track('InitiateCheckout',{content_name:'Formular Schritt '+(cur+1)}); } }
     if(e.target.closest('[data-prev]')) show(cur-1);
   });
+  /* Lead an Pabbly-Workflow "HLP Meta – Anfrage-Leads" (SMS an Viktor + Kunde, Willkommensmail, Google Sheet, Newsletter) */
+  var META_HOOK='https://connect.pabbly.com/webhook-listener/webhook/IjU3NjAwNTZmMDYzZTA0MzE1MjY4NTUzNyI_3D_pc/IjU3NjcwNTZiMDYzNjA0MzY1MjZhNTUzMjUxMzUi_pc';
+  function metaHook(fd){
+    var o=new URLSearchParams(), u=new URLSearchParams(location.search);
+    fd.forEach(function(v,k){ if(typeof v==='string' && k!=='website') o.append(k,v); });
+    if(!o.get('newsletter')) o.set('newsletter','nein');
+    ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','fbclid'].forEach(function(k){ o.set(k, u.get(k)||''); });
+    if(!o.get('utm_campaign')) o.set('utm_campaign','direkt');
+    o.set('formular','anfrage-meta'); o.set('seite',location.href.split('#')[0]);
+    o.set('zeit',new Date().toLocaleString('de-DE',{timeZone:'Europe/Berlin'})); o.set('datum',new Date().toLocaleDateString('sv-SE',{timeZone:'Europe/Berlin'}));
+    fetch(META_HOOK,{method:'POST',mode:'no-cors',body:o,keepalive:true});
+  }
   f.addEventListener('submit',function(e){
     e.preventDefault(); if(!valid(2)) return; if(f.website.value) return;
     var b=document.getElementById('sub'); b.disabled=true; b.textContent='Wird gesendet …';
     var q=document.getElementById('quelle'); if(window.HLP_ADS) q.value=HLP_ADS.quelle()||'meta-ads';
     var fd=new FormData(f), eng=fd.get('engpass');
-    fd.set('ziel',['Mehr Kundenanfragen (Meta-Anfrage)','Engpass: '+eng,'Branche: '+(fd.get('branche')||'-'),'Mitarbeiter: '+fd.get('team'),'Kapazität: '+fd.get('kapazitaet'),'Werbung: '+fd.get('werbung'),'Budget: '+fd.get('werbebudget'),'Entscheider: '+fd.get('entscheider')].join(' | '));
+    fd.set('ziel',['Anliegen: '+(fd.get('anliegen')||'-'),'Engpass: '+eng,'Branche: '+(fd.get('branche')||'-'),'Mitarbeiter: '+fd.get('team'),'Kapazität: '+fd.get('kapazitaet'),'Werbung: '+fd.get('werbung'),'Budget: '+fd.get('werbebudget'),'Entscheider: '+fd.get('entscheider')].join(' | '));
     var vn=(fd.get('name')||'').trim().split(' ')[0], nl=fd.get('newsletter')==='ja';
     var go=function(){ location.href='danke/?n='+encodeURIComponent(vn)+'&nl='+(nl?'ja':'nein')+'&e='+encodeURIComponent(fd.get('email')||''); };
     fetch('https://formular.highlevel-performance.de/kontakt.php',{method:'POST',body:fd}).then(function(r){ return r.json(); }).then(function(j){
       if(!j||!j.ok) throw 0;
-      try{ if(window.HLP_ADS){ HLP_ADS.conv('lead'); HLP_ADS.hook(fd,'anfrage-meta'); } HLP_PIXEL.track('Lead',{content_name:'Potenzialanalyse',content_category:eng}); }catch(_){}
+      try{ if(window.HLP_ADS){ HLP_ADS.conv('lead'); } metaHook(fd); HLP_PIXEL.track('Lead',{content_name:'Potenzialanalyse',content_category:eng}); }catch(_){}
       setTimeout(go,400);
     }).catch(function(){
       b.disabled=false; b.textContent='Potenzialanalyse anfragen ⚡';
