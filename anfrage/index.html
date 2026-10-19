@@ -28,7 +28,7 @@ p{margin:0 0 14px}.mut{color:var(--mut)}
 .top .logo{display:flex;align-items:center;gap:10px;font:800 15px var(--f);color:var(--navy);text-decoration:none}.top .logo img{width:34px;height:34px;border-radius:9px}
 .top .tel{font:600 14px var(--f);color:var(--navy);text-decoration:none}
 /* Hero */
-.hero{background:linear-gradient(180deg,#F5F8FD 0%,#fff 100%);padding:28px 0 48px}
+.hero{position:relative;overflow:hidden;background:#F5F8FD;padding:28px 0 48px}.hero-bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;opacity:.16;filter:saturate(.8)}.hero-fade{position:absolute;inset:0;background:linear-gradient(90deg,rgba(245,248,253,.98) 0%,rgba(245,248,253,.85) 45%,rgba(245,248,253,.55) 100%),linear-gradient(180deg,rgba(245,248,253,.2),#fff 100%)}.hero .wrap{position:relative}
 .hero-g{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(24px,4vw,56px);align-items:center}
 .hero h1 em{font-style:normal;color:var(--blue)}
 .hero ul{list-style:none;padding:0;margin:18px 0 24px;display:grid;gap:10px}.hero li{display:flex;gap:10px;align-items:flex-start;font-weight:500}.hero li::before{content:"✓";flex:none;width:24px;height:24px;border-radius:50%;background:#E6F6EC;color:var(--green);font:800 14px/24px var(--f);text-align:center}
@@ -37,6 +37,7 @@ p{margin:0 0 14px}.mut{color:var(--mut)}
 .vid .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(10,42,102,.12);border:0;cursor:pointer}
 .vid .play span{width:84px;height:84px;border-radius:50%;background:#fff;display:grid;place-items:center;box-shadow:0 20px 40px -10px rgba(10,42,102,.5)}.vid .play svg{margin-left:6px}
 .vid .cap{position:absolute;left:14px;bottom:14px;background:rgba(10,42,102,.9);color:#fff;font:600 12px var(--f);padding:8px 12px;border-radius:999px}
+.hero-pic{position:relative;border-radius:24px;overflow:hidden;box-shadow:0 40px 80px -30px rgba(10,42,102,.45);aspect-ratio:4/5;max-height:560px}.hero-pic img{width:100%;height:100%;object-fit:cover;object-position:center 20%}.hero-badge{position:absolute;left:16px;right:16px;bottom:16px;background:rgba(255,255,255,.96);color:var(--navy);border-radius:16px;padding:14px 18px;font:500 15px/1.4 var(--fb)}.hero-badge b{font:800 18px var(--f);display:block}.hero-badge span{display:block;color:var(--mut);font-size:13px}.story{background:var(--bg);padding-top:clamp(40px,6vw,64px)}.story-g{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(24px,4vw,56px);align-items:center}
 .trust{display:flex;flex-wrap:wrap;gap:18px 28px;align-items:center;margin-top:26px;color:var(--mut);font-size:14px}.trust b{color:var(--navy);font-family:var(--f)}
 /* Sections */
 .sec{padding:clamp(48px,7vw,88px) 0}.sec.alt{background:var(--bg)}
@@ -69,7 +70,7 @@ p{margin:0 0 14px}.mut{color:var(--mut)}
 /* Footer */
 footer{padding:32px 0;font-size:13px;color:var(--mut);border-top:1px solid var(--line)}footer a{color:var(--mut);margin-right:14px}
 .disc{max-width:860px;margin-top:12px;font-size:12px}
-@media(max-width:860px){.hero-g,.frm-wrap,.two{grid-template-columns:1fr}.cards{grid-template-columns:1fr}.g2{grid-template-columns:1fr}.hero{padding-top:12px}.top .tel{display:none}.frm-side{order:2}.frm{order:1}}
+@media(max-width:860px){.hero-g,.frm-wrap,.two,.story-g{grid-template-columns:1fr}.hero-pic{aspect-ratio:4/3;max-height:none}.cards{grid-template-columns:1fr}.g2{grid-template-columns:1fr}.hero{padding-top:12px}.top .tel{display:none}.frm-side{order:2}.frm{order:1}}
 </style>
 </head>
 <body>
@@ -80,7 +81,7 @@ footer{padding:32px 0;font-size:13px;color:var(--mut);border-top:1px solid var(-
 </header>
 
 <section class="hero">
-  <div class="wrap hero-g">
+    <div class="wrap hero-g">
     <div>
       <span class="eyebrow">Für inhabergeführte Handwerksbetriebe</span>
       <h1>Planbar <em>3–5 zusätzliche Aufträge</em> im Monat – ohne von Empfehlungen oder einer Agentur abhängig zu sein.</h1>
@@ -93,15 +94,27 @@ footer{padding:32px 0;font-size:13px;color:var(--mut);border-top:1px solid var(-
       <a class="btn red" href="#anfrage">Jetzt kostenlose Potenzialanalyse anfragen ⚡</a>
       <div class="trust"><span><b>Osnabrücker Land &amp; Nordwest</b> · vor Ort</span><span><b>Ø 4 neue Großaufträge/Monat</b> · Maurer, ALF Haus</span><span><b>14 Anfragen/Woche</b> · Kosmetikstudio</span></div>
     </div>
-    <div>
-      <div class="vid" id="vid">
-        <video id="mv" src="../video/markus.mp4" poster="../assets/markus-poster.jpg" playsinline preload="metadata"></video>
-        <button class="play" id="play" type="button" aria-label="Video abspielen"><span><svg width="30" height="30" viewBox="0 0 24 24" fill="#1877F2"><path d="M8 5v14l11-7z"/></svg></span></button>
-        <div class="cap">85 Sekunden: Die Geschichte von Markus</div>
-      </div>
+    <div class="hero-pic">
+      <img src="../assets/dcc28b7e7bec.jpg" alt="Entspannter Betriebsinhaber – Aufträge laufen planbar" loading="eager">
+      <div class="hero-badge"><b>Ø 4 neue Großaufträge</b> im Monat<span>David · Maurer, ALF Haus GmbH</span></div>
     </div>
   </div>
 </section>
+<section class="sec story">
+  <div class="wrap story-g">
+    <div>
+      <span class="eyebrow">85 Sekunden</span>
+      <h2>Die Geschichte von Markus – und warum sie wahrscheinlich auch Ihre ist.</h2>
+      <p class="lead">Meisterbetrieb, gutes Team, starke Arbeit. Trotzdem: Mal zu viel, mal Flaute. Bis er sein Kundensystem hatte.</p>
+    </div>
+    <div class="vid" id="vid">
+      <video id="mv" src="../video/markus.mp4" poster="../assets/markus-poster.jpg" playsinline preload="metadata"></video>
+      <button class="play" id="play" type="button" aria-label="Video abspielen"><span><svg width="30" height="30" viewBox="0 0 24 24" fill="#1877F2"><path d="M8 5v14l11-7z"/></svg></span></button>
+      <div class="cap">85 Sekunden: Die Geschichte von Markus</div>
+    </div>
+  </div>
+</section>
+
 
 <section class="sec pain">
   <div class="wrap">
