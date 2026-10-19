@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="de"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Danke – Ihre Anfrage ist da | High Level Performance</title>
+<meta name="robots" content="noindex,nofollow">
+<link rel="icon" href="../../assets/firm-hlp.webp">
+<link rel="stylesheet" href="../../assets/fonts.css">
+<style>
+:root{--navy:#0A2A66;--blue:#1877F2;--volt:#38C8FF;--red:#E5322D;--green:#19A463;--ink:#0B1630;--mut:#4A5874;--line:#DCE5F3;--bg:#F5F8FD;--f:'Poppins',-apple-system,Arial,sans-serif;--fb:'Manrope',-apple-system,Arial,sans-serif}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.6 var(--fb);-webkit-font-smoothing:antialiased}
+img,video{max-width:100%;display:block}a{color:var(--blue)}
+.wrap{width:min(900px,calc(100% - 32px));margin:0 auto}
+h1,h2,h3{font-family:var(--f);letter-spacing:-.02em;line-height:1.12;margin:0 0 12px}h1{font-size:clamp(28px,4.4vw,44px);font-weight:800}h2{font-size:clamp(22px,3vw,30px);font-weight:800}h3{font-size:18px;font-weight:700;margin-bottom:4px}
+.top{display:flex;align-items:center;justify-content:space-between;padding:14px 0}.top .logo{display:flex;align-items:center;gap:10px;font:800 15px var(--f);color:var(--navy);text-decoration:none}.top .logo img{width:34px;height:34px;border-radius:9px}
+.hero{text-align:center;padding:36px 0 20px}.ok{width:72px;height:72px;border-radius:50%;background:#E6F6EC;color:var(--green);display:grid;place-items:center;margin:0 auto 18px;font:800 34px var(--f)}
+.lead{font-size:18px;color:var(--mut);max-width:640px;margin:0 auto 10px}
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:28px 0}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px}.card .n{font:800 12px var(--f);color:var(--blue);letter-spacing:.1em;margin-bottom:8px}.card p{margin:0;color:var(--mut);font-size:15px}
+.sms{display:flex;gap:12px;align-items:center;background:#fff;border:1px solid var(--line);border-radius:16px;padding:14px 18px;margin:0 auto 10px;max-width:640px;font-size:15px}.sms b{font-family:var(--f);color:var(--navy)}
+.sms .ico{flex:none;width:40px;height:40px;border-radius:12px;background:#E8F1FF;display:grid;place-items:center;color:var(--blue);font:800 18px var(--f)}
+.vid{position:relative;border-radius:20px;overflow:hidden;background:#EAF2FF;box-shadow:0 30px 60px -30px rgba(10,42,102,.45);aspect-ratio:16/9;margin-top:16px}.vid video{width:100%;height:100%;object-fit:cover}
+.vid .play{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:rgba(10,42,102,.12);border:0;cursor:pointer}.vid .play span{width:80px;height:80px;border-radius:50%;background:#fff;display:grid;place-items:center;box-shadow:0 20px 40px -10px rgba(10,42,102,.5)}.vid .play svg{margin-left:6px}
+.nl{background:linear-gradient(135deg,var(--navy),#163C8E);color:#fff;border-radius:22px;padding:clamp(22px,4vw,36px);margin:34px 0}
+.nl h2{color:#fff}.nl p{color:#D7E3F7;margin:0 0 16px}
+.nl form{display:grid;grid-template-columns:1fr 1.4fr auto;gap:10px}.nl input[type=text],.nl input[type=email]{width:100%;font:500 15px var(--fb);padding:14px 16px;border-radius:12px;border:0;outline:none}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font:700 15px var(--f);padding:14px 22px;border-radius:12px;border:0;cursor:pointer;text-decoration:none;color:#fff;background:var(--red);white-space:nowrap}.btn.blue{background:var(--blue)}.btn:disabled{opacity:.6}
+.nl .chk{grid-column:1/-1;display:flex;gap:10px;align-items:flex-start;font-size:13px;color:#B9CBEA}.nl .chk a{color:#fff}.nl .msg{grid-column:1/-1;font-weight:600;color:#fff;display:none}
+.done{text-align:center;padding:14px 0 0}.done .n{font:800 12px var(--f);color:var(--green);letter-spacing:.1em}
+.cta{text-align:center;padding:10px 0 40px}
+footer{padding:26px 0;font-size:13px;color:var(--mut);border-top:1px solid var(--line)}footer a{color:var(--mut);margin-right:14px}
+@media(max-width:760px){.steps,.nl form{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+<header class="wrap top"><a class="logo" href="https://www.highlevel-performance.de/business/"><img src="../../assets/firm-hlp.webp" alt="">High Level Performance</a></header>
+
+<main class="wrap">
+  <section class="hero">
+    <div class="ok">✓</div>
+    <h1 id="h1">Danke, Ihre Anfrage ist da!</h1>
+    <p class="lead">Julian meldet sich <b>innerhalb von 24 Stunden</b> bei Ihnen, um einen Termin für Ihre Potenzialanalyse zu finden.</p>
+    <div class="sms"><div class="ico">✉</div><div><b>Bestätigung per SMS ist unterwegs.</b> Speichern Sie die Nummer gern ab – so erkennen Sie unseren Anruf.</div></div>
+  </section>
+
+  <div class="steps">
+    <div class="card"><div class="n">SCHRITT 1 · JETZT</div><h3>Wir prüfen Ihre Angaben</h3><p>Branche, Region und Kapazität – damit das Gespräch für Sie konkret wird.</p></div>
+    <div class="card"><div class="n">SCHRITT 2 · IN 24 STUNDEN</div><h3>Kurzer Anruf</h3><p>Julian ruft Sie an, stellt 2–3 Fragen und vereinbart mit Ihnen den Termin.</p></div>
+    <div class="card"><div class="n">SCHRITT 3 · POTENZIALANALYSE</div><h3>30 Minuten, die sich lohnen</h3><p>Wir rechnen vor, wie viele Anfragen in Ihrer Region möglich sind – und was Sie dafür brauchen.</p></div>
+  </div>
+
+  <h2>Zur Vorbereitung: So funktioniert das Kundensystem (69 Sekunden)</h2>
+  <div class="vid"><video id="mv" src="../../video/kundensystem.mp4" poster="../../assets/kundensystem-poster.jpg" playsinline preload="metadata"></video><button class="play" id="play" type="button" aria-label="Video abspielen"><span><svg width="30" height="30" viewBox="0 0 24 24" fill="#1877F2"><path d="M8 5v14l11-7z"/></svg></span></button></div>
+
+  <section class="nl" id="nl">
+    <h2>Bis zum Gespräch: Tipps zur Kundengewinnung ins Postfach</h2>
+    <p>Alle paar Tage eine kurze E-Mail mit Strategien, die Betrieben wie Ihrem neue Kunden bringen. Kostenlos, jederzeit abbestellbar.</p>
+    <form id="nlf" novalidate>
+      <input type="text" name="vorname" placeholder="Vorname" autocomplete="given-name" aria-label="Vorname">
+      <input type="email" name="email" placeholder="Ihre E-Mail-Adresse" required autocomplete="email" aria-label="E-Mail-Adresse">
+      <button class="btn" type="submit">Ja, Tipps schicken</button>
+      <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+      <label class="chk"><input type="checkbox" name="ok" required> <span>Ja, ich möchte den Newsletter per E-Mail erhalten. Abmeldung jederzeit über den Link in jeder E-Mail. Mehr in der <a href="/datenschutz/">Datenschutzerklärung</a>.</span></label>
+      <div class="msg" id="nlmsg"></div>
+    </form>
+    <div class="done" id="nldone" hidden><div class="n">FAST GESCHAFFT</div><p>Bitte bestätigen Sie Ihre Anmeldung über den Link in der E-Mail, die wir Ihnen gerade geschickt haben (auch im Spam-Ordner nachsehen).</p></div>
+  </section>
+
+  <div class="cta"><a class="btn blue" href="https://www.highlevel-performance.de/business/">Weiter zur Website →</a></div>
+</main>
+
+<footer><div class="wrap"><a href="/impressum/">Impressum</a><a href="/datenschutz/">Datenschutz</a> · © High Level Performance</div></footer>
+
+<script src="../../assets/hlp-ads.js?v=20261019"></script>
+<script>
+(function(){
+  var p=new URLSearchParams(location.search), n=(p.get('n')||'').replace(/[<>]/g,'').slice(0,40), nl=p.get('nl')==='ja', em=p.get('e')||'';
+  if(n) document.getElementById('h1').textContent='Danke, '+n+' – Ihre Anfrage ist da!';
+  var f=document.getElementById('nlf'); if(n) f.vorname.value=n; if(em) f.email.value=em;
+  /* Wer im Formular schon „Tipps per E-Mail“ angehakt hat, bekommt die Bestätigungsmail bereits – Box dann als erledigt zeigen */
+  if(nl){ f.hidden=true; var d=document.getElementById('nldone'); d.hidden=false; d.querySelector('.n').textContent='VORGEMERKT'; d.querySelector('p').textContent='Sie haben die Tipps per E-Mail bereits angehakt – die erste E-Mail kommt in Kürze.'; }
+
+  var v=document.getElementById('mv'), pl=document.getElementById('play');
+  pl.addEventListener('click',function(){ v.play(); pl.style.display='none'; });
+  v.addEventListener('click',function(){ if(v.paused){ v.play(); pl.style.display='none'; } else { v.pause(); pl.style.display=''; } });
+  v.addEventListener('ended',function(){ pl.style.display=''; });
+
+  var m=document.getElementById('nlmsg');
+  f.addEventListener('submit',function(e){
+    e.preventDefault(); m.style.display='block';
+    var e1=f.email.value.trim(), vn=f.vorname.value.trim();
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(e1)){ m.textContent='Bitte geben Sie eine gültige E-Mail-Adresse ein.'; return; }
+    if(!f.ok.checked){ m.textContent='Bitte bestätigen Sie kurz die Einwilligung.'; return; }
+    if(f.website.value) return;
+    var iso=new Date().toLocaleDateString('sv-SE',{timeZone:'Europe/Berlin'});
+    var tk=btoa(unescape(encodeURIComponent(JSON.stringify({e:e1,n:vn,l:'business',d:iso})))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
+    var o=new URLSearchParams(); o.append('email',e1); o.append('vorname',vn); o.append('liste','business'); o.append('list_id','13'); o.append('datum',iso); o.append('token',tk);
+    o.append('betreff','Bitte bestätigen Sie Ihre Anmeldung'); o.append('headline','Fast geschafft'+(vn?', '+vn:'')+'!');
+    o.append('text','Bitte bestätigen Sie mit einem Klick, dass Sie den Newsletter von High Level Performance erhalten möchten. Danach bekommen Sie alle paar Tage eine kurze E-Mail mit Strategien, die Ihrem Betrieb neue Kunden bringen.');
+    o.append('button','Anmeldung bestätigen'); o.append('hinweis','Sie haben sich nicht angemeldet? Dann ignorieren Sie diese E-Mail einfach. Ohne Bestätigung tragen wir Sie nicht ein.');
+    o.append('bild','https://www.highlevel-performance.de/assets/mail/img/b01.jpg');
+    var b=f.querySelector('button'); b.disabled=true;
+    fetch('https://connect.pabbly.com/webhook-listener/webhook/IjU3NjAwNTZmMDYzZTA0MzE1MjY4NTUzNyI_3D_pc/IjU3NjcwNTY4MDYzZjA0MzI1MjY0NTUzMTUxM2Ii_pc',{method:'POST',mode:'no-cors',body:o})
+      .then(function(){ f.hidden=true; document.getElementById('nldone').hidden=false; try{ if(window.HLP_ADS) HLP_ADS.conv('newsletter'); }catch(_){} })
+      .catch(function(){ b.disabled=false; m.textContent='Das hat leider nicht geklappt. Bitte versuchen Sie es noch einmal.'; });
+  });
+})();
+</script>
+</body></html>
