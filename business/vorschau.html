@@ -409,7 +409,22 @@
 @media (max-width:440px){.lang button span{display:none}.lang button{padding:4px}.a-nav .btn{white-space:nowrap;padding:9px 11px;font-size:12px}}
 .ak-gs{margin:14px 0 4px;padding:12px 14px;border-radius:12px;background:rgba(56,200,255,.12);border:1px solid rgba(56,200,255,.35);font-size:14px;line-height:1.5;color:#dbe8ff}.ak-gs b{display:block;color:#fff;font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px}
 
-/* ---- Baulig-Struktur (Vorschau) ---- */.bz-ck-box{position:relative;overflow:hidden;isolation:isolate}
+/* ---- Baulig-Struktur (Vorschau) ---- */.bz-inbox{position:relative;padding:18px 22px 40px;background:radial-gradient(ellipse at 80% 0%,rgba(56,200,255,.35),transparent 60%),linear-gradient(160deg,#123d8f,#0B2A66);font-family:var(--f-body);color:#fff;overflow:hidden;display:flex!important;flex-direction:column;gap:6px;height:170px!important;padding-top:14px}
+@media (max-width:900px){#business .sys-step.bz-pic .bz-inbox{height:200px!important}}
+.bz-inbox .bi-head{display:flex;align-items:center;gap:8px;font-size:14px}
+.bz-inbox .bi-ic{width:26px;height:26px;border-radius:8px;display:grid;place-items:center;background:rgba(255,255,255,.14)}
+.bz-inbox .bi-badge{margin-left:auto;background:#E5322D;color:#fff;font-weight:800;font-family:var(--f-brand);font-size:15px;padding:3px 10px;border-radius:999px;box-shadow:0 0 0 4px rgba(229,50,45,.25),0 6px 18px rgba(229,50,45,.5);animation:biPulse 2.4s ease-in-out infinite}
+@keyframes biPulse{0%,100%{transform:scale(1)}50%{transform:scale(1.08)}}
+.bz-inbox .bi-sub{font-size:12.5px;color:rgba(255,255,255,.75);margin-bottom:4px}
+.bz-inbox ul{list-style:none;margin:0;padding:0;display:grid;gap:6px}
+.bz-inbox li{display:grid;grid-template-columns:8px 1fr auto;gap:10px;align-items:center;padding:8px 10px;border-radius:10px;background:rgba(255,255,255,.95);color:var(--b-ink)}
+.bz-inbox li i{width:8px;height:8px;border-radius:50%;background:var(--b-blue)}
+.bz-inbox li b{display:block;font-size:12.5px;line-height:1.25}
+.bz-inbox li em{display:block;font-style:normal;font-size:11.5px;color:var(--b-muted)}
+.bz-inbox li time{font-size:11px;color:var(--b-muted)}
+.bz-inbox .bi-ex{position:absolute;right:12px;bottom:10px;font-size:10px;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+@media (prefers-reduced-motion:reduce){.bz-inbox .bi-badge{animation:none}}
+.bz-ck-box{position:relative;overflow:hidden;isolation:isolate}
 .bz-ck-bg{position:absolute;left:0;top:0;width:52%;height:100%;object-fit:cover;object-position:60% 30%;max-width:none;z-index:-1;opacity:.7;mix-blend-mode:luminosity;-webkit-mask-image:linear-gradient(90deg,#000 30%,transparent 100%),linear-gradient(180deg,transparent 0,#000 25%);-webkit-mask-composite:source-in;mask-image:linear-gradient(90deg,#000 30%,transparent 100%),linear-gradient(180deg,transparent 0,#000 25%);mask-composite:intersect}
 .bz-ck-intro{position:relative;text-shadow:0 2px 18px rgba(10,42,102,.85)}
 @media (max-width:900px){.bz-ck-bg{width:100%;height:520px;opacity:.75;mix-blend-mode:normal;filter:grayscale(.3) brightness(.85);object-position:60% 25%;-webkit-mask-image:linear-gradient(180deg,#000 35%,transparent 100%);mask-image:linear-gradient(180deg,#000 35%,transparent 100%);-webkit-mask-composite:source-over;mask-composite:add}}
@@ -1604,8 +1619,17 @@ form .btn{justify-content:center;margin-top:6px}
       </div>
       <div class="sys-row bz-three">
         <div class="sys-step bz-pic"><img class="bz-step-img" src="../assets/biz-sys-sichtbar-v1.jpg" style="object-position:50% 40%" alt="Videodreh für einen Werbespot" loading="lazy"><div class="n">01</div><h3>Sichtbar werden</h3><p>Website, Markenauftritt und Werbespot aus unserem eigenen Studio. Dazu Werbung bei Google, Facebook, Instagram und TikTok, gezielt in Ihrer Region.</p></div>
-        <div class="sys-step bz-pic"><img class="bz-step-img" src="../assets/biz-sys-anfrage-v1.jpg" style="object-position:50% 30%" alt="Unternehmer freut sich über eine neue Anfrage auf dem Handy" loading="lazy"><div class="n">02</div><h3>Anfragen auffangen</h3><p>Jede Anfrage landet sofort bei Ihnen. Der Interessent bekommt automatisch SMS und E-Mail, alles steht übersichtlich in Ihrer Kundenliste.</p></div>
-        <div class="sys-step bz-pic"><img class="bz-step-img" src="../assets/biz-sys-auftrag-v1.jpg" style="object-position:50% 50%" alt="Handschlag nach dem Auftrag" loading="lazy"><div class="n">03</div><h3>Aufträge abschließen</h3><p>Wir rufen zurück, vereinbaren Termine und fassen nach. Mit Gesprächsleitfaden, damit Ihr Team das später selbst kann.</p></div>
+        <div class="sys-step bz-pic"><div class="bz-step-img bz-inbox" role="img" aria-label="Posteingang mit 12 neuen Kundenanfragen diese Woche (Beispiel)">
+          <div class="bi-head"><span class="bi-ic"><svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg></span><b>Posteingang</b><span class="bi-badge">12+</span></div>
+          <div class="bi-sub">neue Kundenanfragen diese Woche</div>
+          <ul>
+            <li><i></i><span><b>Neue Anfrage: Dachsanierung</b><em>Familie Krüger · Bramsche</em></span><time>09:14</time></li>
+            <li><i></i><span><b>Neue Anfrage: Badumbau</b><em>M. Schulte · Quakenbrück</em></span><time>08:52</time></li>
+            <li><i></i><span><b>Neue Anfrage: Carport</b><em>T. Meyer · Ankum</em></span><time>gestern</time></li>
+          </ul>
+          <span class="bi-ex">Beispiel</span>
+        </div><div class="n">02</div><h3>Anfragen auffangen</h3><p>Jede Anfrage landet sofort bei Ihnen. Der Interessent bekommt automatisch SMS und E-Mail, alles steht übersichtlich in Ihrer Kundenliste.</p></div>
+        <div class="sys-step bz-pic"><img class="bz-step-img" src="../assets/biz-sys-auftrag-v2.jpg" style="object-position:50% 50%" alt="Handschlag nach dem Auftrag" loading="lazy"><div class="n">03</div><h3>Aufträge abschließen</h3><p>Wir rufen zurück, vereinbaren Termine und fassen nach. Mit Gesprächsleitfaden, damit Ihr Team das später selbst kann.</p></div>
       </div>
     </div>
   </section>
