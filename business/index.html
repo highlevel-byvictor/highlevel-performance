@@ -409,7 +409,14 @@
 @media (max-width:440px){.lang button span{display:none}.lang button{padding:4px}.a-nav .btn{white-space:nowrap;padding:9px 11px;font-size:12px}}
 .ak-gs{margin:14px 0 4px;padding:12px 14px;border-radius:12px;background:rgba(56,200,255,.12);border:1px solid rgba(56,200,255,.35);font-size:14px;line-height:1.5;color:#dbe8ff}.ak-gs b{display:block;color:#fff;font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin-bottom:2px}
 
-/* ---- Baulig-Struktur (Vorschau) ---- */.bz-inbox{position:relative;padding:18px 22px 40px;background:radial-gradient(ellipse at 80% 0%,rgba(56,200,255,.35),transparent 60%),linear-gradient(160deg,#123d8f,#0B2A66);font-family:var(--f-body);color:#fff;overflow:hidden;display:flex!important;flex-direction:column;gap:6px;height:170px!important;padding-top:14px}
+/* ---- Baulig-Struktur (Vorschau) ---- */.nx-hero-vid.bz-wide .spot-play{left:22px;top:auto;bottom:20px;transform:none}
+.nx-hero-vid.bz-wide .spot-play:hover{transform:scale(1.04)}
+.nx-hero .wrap{grid-template-columns:1fr!important;gap:46px}
+.nx-hero .wrap > div:first-child{max-width:980px}
+.nx-hero-vid.bz-wide{width:100%;max-width:1180px;margin:0 auto}
+.nx-hero-vid.bz-wide .spot-box{aspect-ratio:16/9;max-width:none;width:100%;border-radius:26px}
+@media (max-width:640px){.nx-hero-vid.bz-wide .spot-box{border-radius:16px}}
+.bz-inbox{position:relative;padding:18px 22px 40px;background:radial-gradient(ellipse at 80% 0%,rgba(56,200,255,.35),transparent 60%),linear-gradient(160deg,#123d8f,#0B2A66);font-family:var(--f-body);color:#fff;overflow:hidden;display:flex!important;flex-direction:column;gap:6px;height:170px!important;padding-top:14px}
 @media (max-width:900px){#business .sys-step.bz-pic .bz-inbox{height:200px!important}}
 .bz-inbox .bi-head{display:flex;align-items:center;gap:8px;font-size:14px}
 .bz-inbox .bi-ic{width:26px;height:26px;border-radius:8px;display:grid;place-items:center;background:rgba(255,255,255,.14)}
@@ -1541,12 +1548,12 @@ form .btn{justify-content:center;margin-top:6px}
         <a class="bz-hero-ck" href="#b-check">In 60 Sekunden prüfen, wo Ihnen Aufträge verloren gehen →</a>
         <div class="note"><span>15+ Jahre Erfahrung</span><span>3 eigene Firmen</span><span>Nur 1 Betrieb pro Gewerk &amp; Region</span></div>
       </div>
-      <div class="nx-hero-vid" id="b-spot">
+      <div class="nx-hero-vid bz-wide" id="b-spot">
         <div class="spot-box" data-spot>
-          <video src="../video/spot-business.mp4" poster="../assets/spot-poster-business.jpg" muted loop playsinline autoplay preload="metadata"></video>
-          <button class="spot-play" type="button" aria-label="Video mit Ton abspielen"><span><svg viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z" fill="currentColor"/></svg></span>Mit Ton ansehen</button>
+          <video src="../video/kundensystem.mp4" poster="../assets/kundensystem-poster.jpg" muted loop playsinline autoplay preload="metadata"></video>
+          <button class="spot-play" type="button" aria-label="Video mit Ton abspielen"><span><svg viewBox="0 0 24 24"><path d="M7 4l13 8-13 8z" fill="currentColor"/></svg></span>Mit Ton ansehen · 69 Sek.</button>
         </div>
-        <span class="nx-vid-cap">Viktor im Werbespot · gedreht von unserem Team</span>
+        <span class="nx-vid-cap">In 69 Sekunden erklärt: Ihr eigenes Kundensystem</span>
       </div>
     </div>
   </div>
