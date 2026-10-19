@@ -2138,7 +2138,7 @@ form .btn{justify-content:center;margin-top:6px}
     const q=document.getElementById('f-quelle'); if(q && window.HLP_ADS) q.value=HLP_ADS.quelle();
     const fd=new FormData(f); fd.set('ziel',[fd.get('ziel'),(window.HLP_ENGPASS?'Engpass: '+window.HLP_ENGPASS:'Engpass: -'),'Branche: '+(fd.get('branche')||'-'),'Mitarbeiter: '+fd.get('team'),'Werbung: '+fd.get('werbung'),'Entscheider: '+fd.get('entscheider')].join(' | '));
     try{ const r=await fetch('https://formular.highlevel-performance.de/kontakt.php',{method:'POST',body:fd}); const j=await r.json(); if(!j.ok) throw 0;
-      if(window.HLP_ADS){ HLP_ADS.conv('lead'); var hf=new FormData(f); if(window.HLP_ENGPASS) hf.set('engpass',window.HLP_ENGPASS); HLP_ADS.hook(hf,'potenzialanalyse'); }
+      if(window.HLP_ADS){ HLP_ADS.conv('lead'); var hf=new FormData(f); if(window.HLP_ENGPASS) hf.set('engpass',window.HLP_ENGPASS); HLP_ADS.hook(hf,'potenzialanalyse'); } try{ if(window.fbq) fbq('track','Lead',{content_name:'Potenzialanalyse Business-Seite'}); }catch(_){}
       s.textContent='Danke! Ihre Anfrage ist da. Wir melden uns innerhalb von 24 Stunden.'; f.reset(); sfx.warp();
     }catch(_){ s.innerHTML='Das hat leider nicht geklappt. Rufen Sie uns an: <a href="tel:+4915561068899">+49 15561 068899</a> oder schreiben Sie an <a href="mailto:info@highlevel-performance.de">info@highlevel-performance.de</a>.'; }
     s.hidden=false; b.disabled=false;
@@ -2266,7 +2266,7 @@ form .btn{justify-content:center;margin-top:6px}
 <script>
 (()=>{
   /* IDs hier eintragen. Leer = Dienst wird nie geladen. */
-  const CFG={GA4_ID:'', META_PIXEL_ID:''};
+  const CFG={GA4_ID:'', META_PIXEL_ID:'1365750992103370'};
   const K='hlp_consent_v1';
   const get=()=>{try{return JSON.parse(localStorage.getItem(K)||'null')}catch(e){return null}};
   const set=v=>{try{localStorage.setItem(K,JSON.stringify(v))}catch(e){}};

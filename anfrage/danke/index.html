@@ -73,6 +73,11 @@ footer{padding:26px 0;font-size:13px;color:var(--mut);border-top:1px solid var(-
 
 <script src="../../assets/hlp-ads.js?v=20261019"></script>
 <script>
+(function(){ var ID='1365750992103370',K='hlp_consent_v1'; function c(){ try{ return JSON.parse(localStorage.getItem(K)||'null'); }catch(e){ return null; } }
+  function go(){ if(window.fbq) return; !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js'); fbq('init',ID); fbq('track','PageView'); fbq('trackCustom','DankeSeite'); }
+  var x=c(); if(x&&x.mkt) go(); })();
+</script>
+<script>
 (function(){
   var p=new URLSearchParams(location.search), n=(p.get('n')||'').replace(/[<>]/g,'').slice(0,40), nl=p.get('nl')==='ja', em=p.get('e')||'';
   if(n) document.getElementById('h1').textContent='Danke, '+n+' – Ihre Anfrage ist da!';
