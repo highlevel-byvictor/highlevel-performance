@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://www.highlevel-performance.de/</loc><lastmod>2026-10-07</lastmod><priority>1.0</priority></url>
-  <url><loc>https://www.highlevel-performance.de/website-artists/</loc><lastmod>2026-10-07</lastmod><priority>0.8</priority></url>
-  <url><loc>https://www.highlevel-performance.de/website-business/</loc><lastmod>2026-10-07</lastmod><priority>0.8</priority></url>
-  <url><loc>https://www.highlevel-performance.de/business/</loc></url>
+  <url><loc>https://www.highlevel-performance.de/</loc><lastmod>2026-10-21</lastmod><priority>1.0</priority></url>
+  <url><loc>https://www.highlevel-performance.de/business/</loc><lastmod>2026-10-21</lastmod><priority>1.0</priority></url>
+  <url><loc>https://www.highlevel-performance.de/website-fuer-handwerker/</loc><lastmod>2026-10-21</lastmod><priority>0.9</priority></url>
+  <url><loc>https://www.highlevel-performance.de/webdesign-osnabrueck/</loc><lastmod>2026-10-21</lastmod><priority>0.9</priority></url>
+  <url><loc>https://www.highlevel-performance.de/website-business/</loc><lastmod>2026-10-21</lastmod><priority>0.7</priority></url>
+  <url><loc>https://www.highlevel-performance.de/website-artists/</loc><lastmod>2026-10-21</lastmod><priority>0.7</priority></url>
 </urlset>
