@@ -488,6 +488,27 @@
 @media (max-width:900px){.bz-ew-grid,.bz-fw-grid,.bz-ab-row,.bz-ck-box{grid-template-columns:1fr}}
 </style>
 <link rel="stylesheet" href="../assets/levi/levi.css">
+<style>
+.hs-stories{background:radial-gradient(90% 70% at 50% 0%,#123E92 0%,#0A2A66 45%,#061A44 100%);color:#fff;position:relative;overflow:hidden}
+.hs-stories .sec-head p{color:#B8C6E4}
+.hs-stories .eyebrow{color:#38C8FF}
+.hs-row{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.hs-card{position:relative;display:block;aspect-ratio:9/16;border:0;padding:0;border-radius:22px;overflow:hidden;background:#0B1630;cursor:pointer;box-shadow:0 20px 50px rgba(0,0,0,.45),inset 0 0 0 1px rgba(56,200,255,.25);transition:transform .25s ease,box-shadow .25s ease;font:inherit;color:#fff;text-align:left}
+.hs-card:hover{transform:translateY(-4px);box-shadow:0 26px 60px rgba(0,0,0,.5),0 0 0 2px #38C8FF,0 0 40px rgba(56,200,255,.35)}
+.hs-card img,.hs-card video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.hs-card:after{content:"";position:absolute;inset:52% 0 0;background:linear-gradient(180deg,rgba(6,16,41,0),rgba(6,16,41,.97) 30%,#061029);pointer-events:none}
+.hs-play{position:absolute;left:50%;top:64%;width:68px;height:68px;margin:-34px 0 0 -34px;border-radius:50%;display:grid;place-items:center;background:linear-gradient(135deg,#38C8FF,#1877F2);box-shadow:0 0 0 8px rgba(56,200,255,.18),0 0 40px rgba(56,200,255,.6);z-index:2;transition:transform .2s}
+.hs-play svg{margin-left:4px}
+.hs-card:hover .hs-play{transform:scale(1.08)}
+.hs-time{position:absolute;right:12px;top:12px;z-index:2;font-family:var(--f-mono);font-size:12px;padding:4px 9px;border-radius:99px;background:rgba(6,16,41,.75)}
+.hs-cap{position:absolute;left:16px;right:16px;bottom:16px;z-index:2;display:flex;flex-direction:column;gap:4px}
+.hs-cap b{font-family:var(--f-brand);font-weight:800;font-size:18px;line-height:1.2}
+.hs-cap em{font-style:normal;font-size:14px;color:#B8C6E4;line-height:1.35}
+.hs-card.on{cursor:default;transform:none}
+.hs-card.on:after,.hs-card.on .hs-play,.hs-card.on .hs-time,.hs-card.on .hs-cap,.hs-card.on img{display:none}
+.hs-cta{margin-top:36px;display:flex;justify-content:center}
+@media (max-width:900px){.hs-row{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:72%;overflow-x:auto;scroll-snap-type:x mandatory;margin-inline:-20px;padding:4px 20px 14px;scrollbar-width:none}.hs-row::-webkit-scrollbar{display:none}.hs-card{scroll-snap-align:center}.hs-cta .btn{width:100%}}
+</style>
 </head><body><div id="start" hidden></div><div id="artists" hidden></div><canvas id="bizCanvas" hidden aria-hidden="true"></canvas><canvas id="artCanvas" hidden aria-hidden="true"></canvas><canvas id="waveCanvas" hidden aria-hidden="true"></canvas>
 
 
@@ -1616,6 +1637,44 @@ form .btn{justify-content:center;margin-top:6px}
     </div>
   </section>
 
+
+  <section class="sec hs-stories" id="b-geschichten" aria-label="Kurze Geschichten aus Betrieben">
+    <div class="wrap">
+      <div class="sec-head">
+        <span class="eyebrow">In 40 Sekunden erklärt</span>
+        <h2>Erkennen Sie sich wieder?</h2>
+        <p>Vier kurze Geschichten aus dem Alltag von Betrieben. Und wie ein System den Unterschied macht.</p>
+      </div>
+      <div class="hs-row">
+        <div class="hs-card" role="button" tabindex="0" data-story="../video/stories/frank.mp4" aria-label="Video abspielen: Frank, Dachdecker – Das Telefon klingelt nur nach dem Sturm">
+          <img src="../assets/story-frank.webp" alt="" loading="lazy" width="540" height="960">
+          <span class="hs-play" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+          <span class="hs-time">0:44</span>
+          <span class="hs-cap"><b>Frank, Dachdecker</b><em>Das Telefon klingelt nur nach dem Sturm</em></span>
+        </div>
+        <div class="hs-card" role="button" tabindex="0" data-story="../video/stories/jana.mp4" aria-label="Video abspielen: Jana, Friseurin – Freitags voll, dienstags leere Stühle">
+          <img src="../assets/story-jana.webp" alt="" loading="lazy" width="540" height="960">
+          <span class="hs-play" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+          <span class="hs-time">0:42</span>
+          <span class="hs-cap"><b>Jana, Friseurin</b><em>Freitags voll, dienstags leere Stühle</em></span>
+        </div>
+        <div class="hs-card" role="button" tabindex="0" data-story="../video/stories/michael.mp4" aria-label="Video abspielen: Michael, Fensterbauer – Raus aus dem Preiskampf">
+          <img src="../assets/story-michael.webp" alt="" loading="lazy" width="540" height="960">
+          <span class="hs-play" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+          <span class="hs-time">0:43</span>
+          <span class="hs-cap"><b>Michael, Fensterbauer</b><em>Raus aus dem Preiskampf</em></span>
+        </div>
+        <div class="hs-card" role="button" tabindex="0" data-story="../video/stories/avsb.mp4" aria-label="Video abspielen: Betrieb A gegen B – Gleich gut, nur einer hat volle Bücher">
+          <img src="../assets/story-avsb.webp" alt="" loading="lazy" width="540" height="960">
+          <span class="hs-play" aria-hidden="true"><svg viewBox="0 0 24 24" width="26" height="26"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+          <span class="hs-time">0:38</span>
+          <span class="hs-cap"><b>Betrieb A gegen B</b><em>Gleich gut, nur einer hat volle Bücher</em></span>
+        </div>
+      </div>
+      <div class="hs-cta"><a class="btn btn-blue" href="#b-kontakt" data-scroll>Kostenlose Potenzialanalyse sichern →</a></div>
+    </div>
+  </section>
+
   <section class="sec sys" id="b-system">
     <img class="sys-bg" src="../assets/88afdf16ba20.webp" loading="lazy" alt="" aria-hidden="true">
     <canvas id="sysNet" aria-hidden="true"></canvas>
@@ -2423,4 +2482,5 @@ document.addEventListener('keydown',function(e){if(document.getElementById('star
 })();
 </script>
 <script>(function(){function go(){document.querySelectorAll("video[data-src]").forEach(function(v){if(!v.src){v.src=v.dataset.src;var p=v.play&&v.play();if(p&&p.catch)p.catch(function(){})}})}document.addEventListener("click",function(e){if(e.target.closest&&e.target.closest("[data-spot]"))document.querySelectorAll("[data-spot] video[data-src]").forEach(function(v){if(!v.src)v.src=v.dataset.src})},true);if(document.readyState==="complete")setTimeout(go,600);else window.addEventListener("load",function(){setTimeout(go,600)})})();</script>
+<script>(function(){document.querySelectorAll('.hs-card[data-story]').forEach(function(c){function go(){if(c.classList.contains('on'))return;document.querySelectorAll('.hs-card.on video').forEach(function(v){v.pause()});document.querySelectorAll('[data-spot] video').forEach(function(v){if(!v.paused&&!v.muted)v.pause()});var v=document.createElement('video');v.src=c.dataset.story;v.controls=true;v.playsInline=true;v.setAttribute('playsinline','');v.preload='auto';c.appendChild(v);c.classList.add('on');var p=v.play();if(p&&p.catch)p.catch(function(){});v.addEventListener('play',function(){document.querySelectorAll('.hs-card.on video').forEach(function(o){if(o!==v)o.pause()})})}c.addEventListener('click',go);c.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();go()}})})})();</script>
 </body></html>
