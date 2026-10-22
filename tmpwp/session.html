@@ -1,0 +1,466 @@
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@1,500;1,700&family=JetBrains+Mono:wght@500;700&family=Manrope:wght@400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+#smp-lp{--bg:#0A0A0A;--surface:#141414;--surface2:#1B1919;--ink:#F4F1EC;--muted:#9A948C;--line:#2A2626;--red:#E90E0E;--red2:#FF3B3B;--ok:#2BD576;
+ font-family:"Manrope",Arial,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55;font-size:16px;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+#smp-lp *{box-sizing:border-box;margin:0;padding:0}
+#smp-lp img{max-width:100%;display:block}
+#smp-lp a{color:inherit}
+#smp-lp .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+#smp-lp h1,#smp-lp h2,#smp-lp h3{font-family:"Poppins",Arial,sans-serif;letter-spacing:-.02em;line-height:1.1}
+#smp-lp .lux{font-family:"Bodoni Moda",Georgia,serif;font-style:italic;font-weight:500;color:var(--red2)}
+#smp-lp .kick{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--red2);font-weight:700}
+#smp-lp .muted{color:var(--muted)}
+#smp-lp section{padding:72px 0}
+#smp-lp .btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;background:var(--red);color:#fff;font-family:"Poppins";font-weight:700;font-size:17px;padding:18px 30px;border-radius:999px;border:0;cursor:pointer;text-decoration:none;box-shadow:0 10px 40px -8px rgba(233,14,14,.6);transition:transform .15s,background .15s}
+#smp-lp .btn:hover{background:var(--red2);transform:translateY(-1px)}
+#smp-lp .btn.ghost{background:transparent;border:1.5px solid var(--line);box-shadow:none;color:var(--ink)}
+/* neon */
+#smp-lp .neon{color:#fff;text-shadow:0 0 6px #fff,0 0 14px var(--red2),0 0 32px var(--red),0 0 60px var(--red)}
+#smp-lp .lux{text-shadow:0 0 18px rgba(255,59,59,.7),0 0 40px rgba(233,14,14,.45)}
+#smp-lp .tube{height:3px;border-radius:3px;background:var(--red2);box-shadow:0 0 8px var(--red2),0 0 22px var(--red),0 0 44px var(--red);margin:0 auto;max-width:520px;opacity:.9}
+#smp-lp .onair{display:inline-flex;align-items:center;gap:10px;font-family:"JetBrains Mono";font-weight:700;font-size:13px;letter-spacing:.22em;color:#fff;border:2px solid var(--red2);border-radius:10px;padding:8px 14px;box-shadow:0 0 10px var(--red),inset 0 0 10px rgba(233,14,14,.5);text-shadow:0 0 8px var(--red2);animation:smpflick 4s infinite}
+@keyframes smpflick{0%,19%,22%,62%,64%,100%{opacity:1}20%,63%{opacity:.55}}
+#smp-lp .gal{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+#smp-lp .gal div{aspect-ratio:3/4;border-radius:18px;background:center/cover;box-shadow:0 0 0 1px rgba(255,59,59,.25),0 20px 50px -20px rgba(233,14,14,.55)}
+#smp-lp .reels{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+#smp-lp .reel{position:relative;aspect-ratio:9/16;border-radius:20px;overflow:hidden;background:#000 center/cover;cursor:pointer;box-shadow:0 0 0 1px rgba(255,59,59,.35),0 0 30px -6px rgba(233,14,14,.55)}
+#smp-lp .reel:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.1) 35%,rgba(0,0,0,.88))}
+#smp-lp .reel .cap{position:absolute;left:16px;right:16px;bottom:16px;z-index:2}
+#smp-lp .reel .cap b{font-family:"Poppins";font-size:17px;display:block}
+#smp-lp .reel .cap span{font-size:13px;color:#CFC9C1}
+#smp-lp .reel .badge{position:absolute;top:14px;left:14px;z-index:2;font-family:"JetBrains Mono";font-size:10.5px;letter-spacing:.12em;background:rgba(0,0,0,.6);border:1px solid rgba(255,59,59,.6);padding:5px 9px;border-radius:999px}
+#smp-lp .reel iframe{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:3;background:#000}
+/* top */
+#smp-lp .top{position:absolute;top:0;left:0;right:0;z-index:5;padding:18px 0}
+#smp-lp .top .wrap{display:flex;justify-content:space-between;align-items:center}
+#smp-lp .top img{height:34px;width:auto}
+#smp-lp .rec{font-family:"JetBrains Mono";font-size:11px;letter-spacing:.14em;display:flex;align-items:center;gap:8px;color:#fff;background:rgba(0,0,0,.45);padding:7px 12px;border-radius:999px;border:1px solid rgba(255,255,255,.12)}
+#smp-lp .rec i{width:8px;height:8px;border-radius:50%;background:var(--red);animation:smpblink 1.2s infinite}
+@keyframes smpblink{50%{opacity:.2}}
+/* hero */
+#smp-lp .hero{position:relative;padding:110px 0 60px;background:radial-gradient(1200px 600px at 80% -10%,rgba(233,14,14,.22),transparent 60%),radial-gradient(900px 500px at -10% 30%,rgba(140,40,255,.16),transparent 60%),var(--bg)}
+#smp-lp .hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
+#smp-lp .hero h1{font-size:clamp(36px,5.4vw,62px);font-weight:800;margin:14px 0 18px}
+#smp-lp .hero p.lead{font-size:18px;color:#CFC9C1;max-width:520px;margin-bottom:28px}
+#smp-lp .stars{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:22px;font-size:14px;color:var(--muted)}
+#smp-lp .stars b{color:#FFC93C;letter-spacing:2px}
+#smp-lp .video{border:2px solid rgba(255,59,59,.7);box-shadow:0 0 14px var(--red),0 0 50px -6px var(--red),0 30px 80px -20px #000!important;position:relative;aspect-ratio:9/16;max-height:640px;margin:0 auto;width:100%;max-width:380px;border-radius:26px;overflow:hidden;background:#000 center/cover no-repeat;box-shadow:0 30px 80px -20px rgba(0,0,0,.8),0 0 0 1px rgba(255,255,255,.08);cursor:pointer}
+#smp-lp .video:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.05) 40%,rgba(0,0,0,.85))}
+#smp-lp .play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);z-index:2;width:84px;height:84px;border-radius:50%;background:var(--red);display:flex;align-items:center;justify-content:center;box-shadow:0 0 0 12px rgba(233,14,14,.25)}
+#smp-lp .play:before{content:"";border-left:24px solid #fff;border-top:15px solid transparent;border-bottom:15px solid transparent;margin-left:6px}
+#smp-lp .vcap{position:absolute;left:20px;right:20px;bottom:20px;z-index:2}
+#smp-lp .vcap b{font-family:"Poppins";font-size:19px;display:block}
+#smp-lp .vcap span{font-size:13px;color:#CFC9C1}
+/* strip */
+#smp-lp .strip{border-top:1px solid var(--line);border-bottom:1px solid var(--line);background:var(--surface)}
+#smp-lp .strip .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;padding-top:22px;padding-bottom:22px;text-align:center}
+#smp-lp .strip b{font-family:"Poppins";font-size:26px;display:block}
+#smp-lp .strip span{font-size:13px;color:var(--muted)}
+/* headings */
+#smp-lp .sh{max-width:720px;margin-bottom:36px}
+#smp-lp .sh h2{font-size:clamp(28px,4vw,44px);margin:10px 0 12px}
+/* session */
+#smp-lp .sess{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+#smp-lp .sess-img{border-radius:22px;aspect-ratio:4/5;background:center/cover;position:relative;overflow:hidden}
+#smp-lp .sess-img .tag{position:absolute;left:18px;bottom:18px;background:rgba(10,10,10,.8);backdrop-filter:blur(6px);padding:10px 14px;border-radius:12px;font-size:14px}
+#smp-lp .feat{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+#smp-lp .feat div{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:18px}
+#smp-lp .feat b{font-family:"Poppins";display:block;margin-bottom:4px}
+#smp-lp .feat span{font-size:14px;color:var(--muted)}
+/* videos */
+#smp-lp .vids{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+#smp-lp .yt{position:relative;aspect-ratio:16/9;border-radius:16px;overflow:hidden;background:#000 center/cover;cursor:pointer;border:1px solid var(--line)}
+#smp-lp .yt:after{content:"";position:absolute;inset:0;background:rgba(0,0,0,.25)}
+#smp-lp .yt .play{width:58px;height:58px;box-shadow:0 0 0 8px rgba(233,14,14,.25)}
+#smp-lp .yt .play:before{border-left-width:17px;border-top-width:11px;border-bottom-width:11px;margin-left:4px}
+#smp-lp .yt iframe{position:absolute;inset:0;width:100%;height:100%;border:0;z-index:3}
+#smp-lp .note{font-size:12px;color:var(--muted);margin-top:12px}
+/* reviews */
+#smp-lp .revs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+#smp-lp .rev{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px}
+#smp-lp .rev .s{color:#FFC93C;letter-spacing:2px;font-size:14px}
+#smp-lp .rev p{margin:10px 0 14px;font-size:15px}
+#smp-lp .rev small{color:var(--muted);font-size:13px}
+/* form */
+#smp-lp .formsec{background:radial-gradient(800px 400px at 50% 0%,rgba(233,14,14,.18),transparent 70%),var(--bg)}
+#smp-lp .card{max-width:640px;margin:0 auto;background:var(--surface);border:1.5px solid rgba(255,59,59,.45);border-radius:26px;padding:34px 30px;box-shadow:0 0 18px -4px var(--red),0 40px 100px -40px rgba(233,14,14,.5)}
+#smp-lp .prog{height:6px;background:var(--line);border-radius:6px;overflow:hidden;margin:6px 0 26px}
+#smp-lp .prog i{display:block;height:100%;width:20%;background:linear-gradient(90deg,var(--red),var(--red2));transition:width .35s}
+#smp-lp .step{display:none}
+#smp-lp .step.on{display:block;animation:smpin .35s ease}
+@keyframes smpin{from{opacity:0;transform:translateY(8px)}}
+#smp-lp .step h3{font-size:24px;margin-bottom:6px}
+#smp-lp .step .sub{color:var(--muted);font-size:15px;margin-bottom:20px}
+#smp-lp label.f{display:block;font-size:13px;font-weight:600;color:#CFC9C1;margin:14px 0 6px}
+#smp-lp input[type=text],#smp-lp input[type=tel],#smp-lp input[type=email],#smp-lp input[type=url]{width:100%;background:#0E0E0E;border:1.5px solid var(--line);color:var(--ink);border-radius:14px;padding:16px;font:inherit;font-size:16px;outline:none}
+#smp-lp input:focus{border-color:var(--red)}
+#smp-lp input.bad{border-color:#FF5A5A}
+#smp-lp .err{color:#FF7A7A;font-size:13px;margin-top:6px;display:none}
+#smp-lp .err.on{display:block}
+#smp-lp .opts{display:grid;gap:10px}
+#smp-lp .opt{display:flex;align-items:center;gap:14px;background:#0E0E0E;border:1.5px solid var(--line);border-radius:14px;padding:16px 18px;cursor:pointer;font-weight:600;transition:border-color .15s,background .15s}
+#smp-lp .opt:hover{border-color:#4A4242}
+#smp-lp .opt.sel{border-color:var(--red);background:rgba(233,14,14,.08)}
+#smp-lp .opt i{width:20px;height:20px;border-radius:50%;border:2px solid #5A5252;flex:none}
+#smp-lp .opt.sel i{border-color:var(--red);box-shadow:inset 0 0 0 4px #0E0E0E;background:var(--red)}
+#smp-lp .opt em{font-style:normal;font-weight:500;color:var(--muted);font-size:13px;display:block}
+#smp-lp .nav{display:flex;justify-content:space-between;align-items:center;margin-top:24px;gap:12px}
+#smp-lp .back{background:none;border:0;color:var(--muted);font:inherit;cursor:pointer;font-size:15px}
+#smp-lp .consent{display:flex;gap:10px;font-size:12.5px;color:var(--muted);margin-top:16px;align-items:flex-start}
+#smp-lp .consent input{margin-top:3px;accent-color:var(--red);width:16px;height:16px;flex:none}
+#smp-lp .safe{display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-top:18px;font-size:12.5px;color:var(--muted)}
+/* result screens */
+#smp-lp .res{display:none;text-align:center}
+#smp-lp .res.on{display:block;animation:smpin .4s ease}
+#smp-lp .julian{width:180px;height:180px;border-radius:50%;margin:0 auto 18px;background:center/cover;box-shadow:0 0 0 6px rgba(233,14,14,.25),0 20px 60px -10px rgba(233,14,14,.6);-webkit-mask-image:radial-gradient(circle,#000 66%,transparent 71%);mask-image:radial-gradient(circle,#000 66%,transparent 71%)}
+#smp-lp .prep{text-align:left;display:grid;gap:10px;margin:22px 0}
+#smp-lp .prep div{display:flex;gap:14px;background:#0E0E0E;border:1px solid var(--line);border-radius:14px;padding:14px 16px;align-items:flex-start}
+#smp-lp .prep b.n{font-family:"Poppins";background:var(--red);border-radius:50%;width:28px;height:28px;flex:none;display:flex;align-items:center;justify-content:center;font-size:14px}
+#smp-lp .prep span{font-size:15px}
+/* steps + faq */
+#smp-lp .flow{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+#smp-lp .flow div{border-top:2px solid var(--red);padding-top:16px}
+#smp-lp .flow b{font-family:"Poppins";font-size:18px;display:block;margin:6px 0}
+#smp-lp details{border-bottom:1px solid var(--line);padding:18px 0}
+#smp-lp summary{cursor:pointer;font-family:"Poppins";font-weight:600;font-size:17px;list-style:none;display:flex;justify-content:space-between}
+#smp-lp summary:after{content:"+";color:var(--red2);font-size:22px;line-height:1}
+#smp-lp details[open] summary:after{content:"–"}
+#smp-lp details p{color:var(--muted);margin-top:10px}
+#smp-lp footer{border-top:1px solid var(--line);padding:28px 0;font-size:13px;color:var(--muted)}
+#smp-lp footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+#smp-lp .sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:50;display:none}
+#smp-lp .sticky .btn{width:100%}
+@media(max-width:860px){
+ #smp-lp .gal{grid-template-columns:1fr 1fr}
+ #smp-lp .reels{grid-template-columns:1fr 1fr;gap:10px}
+ #smp-lp section{padding:56px 0}
+ #smp-lp .hero{padding:90px 0 40px}
+ #smp-lp .hero-grid,#smp-lp .sess{grid-template-columns:1fr;gap:30px}
+ #smp-lp .video{max-width:340px}
+ #smp-lp .strip .wrap{grid-template-columns:1fr 1fr}
+ #smp-lp .vids,#smp-lp .revs,#smp-lp .flow{grid-template-columns:1fr}
+ #smp-lp .feat{grid-template-columns:1fr}
+ #smp-lp .card{padding:26px 18px}
+ #smp-lp .sticky.show{display:block}
+ #smp-lp .btn{width:100%}
+ #smp-lp .nav .btn{width:auto;flex:1}
+}
+</style>
+<style>html,body{margin:0;background:#0A0A0A}</style>
+
+<div id="smp-lp">
+
+<header class="top"><div class="wrap">
+  <img src="https://saved-music-productions.de/wp-content/uploads/2022/06/Header-Logo.png" alt="Saved Music Productions">
+  <span class="rec"><i></i>REC · BERSENBRÜCK</span>
+</div></header>
+
+<!-- HERO -->
+<section class="hero"><div class="wrap hero-grid">
+  <div class="txt">
+    <span class="onair">● ON AIR</span>
+    <div class="kick" style="margin-top:18px">Herzlichen Glückwunsch</div>
+    <h1>Du hast dich gerade für <span class="neon">deine Musik</span> entschieden.</h1>
+    <p class="lead">Die meisten reden nur davon. Du bist hier. Schau dir kurz an, was Viktor dir sagen will, und sichere dir dann dein kostenloses Session-Gespräch.</p>
+    <a href="#formular" class="btn">Kostenloses Session-Gespräch sichern →</a>
+    <div class="stars">
+      <span><b>★★★★★</b> 4,6 auf Trustpilot</span>
+      <span><b>★★★★★</b> „Ausgezeichnet“ · 20 Google-Bewertungen</span>
+    </div>
+  </div>
+  <div class="video" id="welcome" style="background-image:url(https://saved-music-productions.de/wp-content/uploads/2026/10/smp-begruessung-poster.jpg);background-position:center" data-src="https://saved-music-productions.de/wp-content/uploads/2026/10/smp-begruessung.mp4">
+    <div class="play"></div>
+    <div class="vcap"><b>Viktor begrüßt dich im Studio</b><span>1:50 · mit Ton ansehen</span></div>
+  </div>
+</div></section>
+
+<div class="tube"></div>
+<div class="strip"><div class="wrap">
+  <div><b>seit 2009</b><span>Studio in Bersenbrück</span></div>
+  <div><b>100+</b><span>Artists aus ganz Deutschland</span></div>
+  <div><b>10 h</b><span>Session, nur du im Studio</span></div>
+  <div><b>4,6 ★</b><span>Trustpilot</span></div>
+</div></div>
+
+<!-- SESSION -->
+<section><div class="wrap sess">
+  <div class="sess-img" style="background-image:url(https://www.highlevel-performance.de/assets/artist-sing-v1.jpg)"><div class="tag">🎙️ Pro Tag nur <b>ein</b> Artist im Studio</div></div>
+  <div>
+    <div class="kick">Die All-Inclusive Studio Session</div>
+    <h2 style="font-size:clamp(28px,4vw,42px);margin:10px 0 14px">Ein Tag. Deine Songs. <span class="lux">Auf Release-Niveau.</span></h2>
+    <p class="muted" style="margin-bottom:22px">Schluss mit Songs, die zuhause gut klingen und neben Spotify nach Demo. Bei uns fährst du mit fertigen Tracks nach Hause.</p>
+    <div class="feat">
+      <div><b>🎙️ 10 Stunden Studio</b><span>Recording, Mixing &amp; Mastering mit Neumann, Neve, Avalon</span></div>
+      <div><b>💿 Mind. 3 fertige Tracks</b><span>Kein Beat? Wir produzieren ihn mit dir</span></div>
+      <div><b>🎬 Professionelles Reel</b><span>Content für Instagram &amp; TikTok</span></div>
+      <div><b>🍕 Essen &amp; Schlafplatz</b><span>Anreise aus ganz Deutschland? Bleib einfach bei uns</span></div>
+    </div>
+  </div>
+</div></section>
+
+<!-- FB REELS -->
+<section><div class="wrap">
+  <div class="sh"><div class="kick">Echte Sessions · echte Artists</div><h2>Sieh selbst, wie Artists ihren <span class="lux">Studio-Tag</span> erleben.</h2></div>
+  <div class="reels"><div class="reel" data-fb="1602008084685780" style="background-image:url(https://saved-music-productions.de/wp-content/uploads/2026/10/smp-reel-1.jpg)"><span class="badge">▶ FACEBOOK-REEL</span><div class="play"></div><div class="cap"><b>KingD0mG</b><span>All-Inclusive Session · 2 Tracks</span></div></div><div class="reel" data-fb="1043470344944860" style="background-image:url(https://saved-music-productions.de/wp-content/uploads/2026/10/smp-reel-2.jpg)"><span class="badge">▶ FACEBOOK-REEL</span><div class="play"></div><div class="cap"><b>Davee</b><span>10 Songs an einem Tag</span></div></div><div class="reel" data-fb="2270674660428498" style="background-image:url(https://www.highlevel-performance.de/assets/artist-peace-v1.jpg)"><span class="badge">▶ FACEBOOK-REEL</span><div class="play"></div><div class="cap"><b>Sylas Werner</b><span>extra aus Mallorca angereist</span></div></div><div class="reel" data-fb="849403778201993" style="background-image:url(https://www.highlevel-performance.de/assets/artist-meeting-v1.jpg)"><span class="badge">▶ FACEBOOK-REEL</span><div class="play"></div><div class="cap"><b>Sängerin-Session</b><span>All-Inclusive Session</span></div></div><div class="reel" data-fb="1977174012920789" style="background-image:url(https://www.highlevel-performance.de/assets/artist-producer-v1.jpg)"><span class="badge">▶ FACEBOOK-REEL</span><div class="play"></div><div class="cap"><b>Zufriedener Artist</b><span>„Probleme gut gelöst“</span></div></div><div class="reel" data-fb="1399370148432424" style="background-image:url(https://www.highlevel-performance.de/assets/hx-mic-v1.jpg)"><span class="badge">▶ FACEBOOK-REEL</span><div class="play"></div><div class="cap"><b>Kenzo Boss</b><span>All-Inclusive Session</span></div></div></div>
+  <p class="note">Die Videos werden erst beim Klick von Facebook geladen. Es gelten die Datenschutzbestimmungen von Meta.</p>
+</div></section>
+
+<!-- VIDEOS -->
+<section style="background:var(--surface)"><div class="wrap">
+  <div class="sh"><div class="kick">Musikvideos aus unserem Studio</div><h2>Hör selbst, was hier <span class="lux">entsteht.</span></h2></div>
+  <div class="vids" id="vids"></div>
+  <p class="note">Die Videos werden erst beim Klick von YouTube geladen. Es gelten die Datenschutzbestimmungen von Google.</p>
+</div></section>
+
+<!-- REVIEWS -->
+<section><div class="wrap">
+  <div class="sh"><div class="kick">Echte Stimmen</div><h2>Was Artists nach ihrer <span class="lux">Session</span> sagen.</h2></div>
+  <div class="revs">
+    <div class="rev"><div class="s">★★★★★</div><p>„Ich hab die 10-Stunden-Session gebucht, es kamen 3 exklusive Songs für meine EP zustande. Viktor ist professionell in dem, was er tut.“</p><small>Deyaa-Eddine S.</small></div>
+    <div class="rev"><div class="s">★★★★★</div><p>„Kontaktiert Saved Music Productions, ohne Angst zu haben, abgezogen zu werden. Super Beratung, schnelle Abwicklung.“</p><small>Dietrich W. · Google</small></div>
+    <div class="rev"><div class="s">★★★★★</div><p>„Krasses Studio, mit Liebe und Leidenschaft errichtet. Der Produzent hat ein sehr gutes Auge und Ohr, um das Beste aus dir rauszuholen.“</p><small>oOosiStaoOo · Google</small></div>
+    <div class="rev"><div class="s">★★★★★</div><p>„Sehr professionell und kompetent! Sehr lockere Atmosphäre, es wird viel gelacht. Ich werde definitiv wiederkommen!“</p><small>Irina W. · Google</small></div>
+    <div class="rev"><div class="s">★★★★★</div><p>„Herz, Freude und leidenschaftlich-fleißiger Einsatz! Der Jung hat einfach Bock, und das spürt man im fertigen Song.“</p><small>Lorenzo D. · Google</small></div>
+    <div class="rev"><div class="s">★★★★★</div><p>„Viktor ist ein Mega-Producer. Schon als wir angekommen sind, wussten wir, dass dort gezaubert wird.“</p><small>Noah · nk youngstars</small></div>
+  </div>
+</div></section>
+
+<!-- FORM -->
+<section class="formsec" id="formular"><div class="wrap">
+  <div class="sh" style="text-align:center;margin:0 auto 30px"><div class="kick">Dein nächster Schritt</div><h2>Sichere dir dein <span class="lux">kostenloses</span> Session-Gespräch.</h2><p class="muted">Dauert 60 Sekunden. Danach meldet sich unser Team persönlich bei dir.</p></div>
+  <div class="card">
+    <form id="smpForm" novalidate>
+      <div class="prog"><i id="smpProg"></i></div>
+
+      <div class="step on" data-step="1">
+        <h3>Wie erreichen wir dich?</h3><p class="sub">Damit wir dich nach deiner Anfrage auch wirklich erreichen.</p>
+        <label class="f" for="f-name">Vor- und Nachname</label><input type="text" id="f-name" name="name" autocomplete="name" placeholder="z. B. Max Mustermann">
+        <div class="err" data-for="name">Bitte gib deinen Vor- und Nachnamen ein.</div>
+        <label class="f" for="f-tel">Handynummer</label><input type="tel" id="f-tel" name="telefon" autocomplete="tel" inputmode="tel" placeholder="z. B. 0151 23456789">
+        <div class="err" data-for="telefon">Bitte gib eine gültige Handynummer ein (Deutschland, Österreich oder Schweiz). Wir rufen dich an.</div>
+        <label class="f" for="f-mail">E-Mail</label><input type="email" id="f-mail" name="email" autocomplete="email" placeholder="z. B. max@mail.de">
+        <div class="err" data-for="email">Bitte gib eine gültige E-Mail-Adresse ein.</div>
+        <label class="consent"><input type="checkbox" id="f-ok" name="datenschutz" value="ja"><span>Ich bin einverstanden, dass Saved Music Productions mich zu meiner Anfrage per Telefon, SMS und E-Mail kontaktiert und mir passende Infos per E-Mail schickt (jederzeit abbestellbar). <a href="https://saved-music-productions.de/datenschutzerklaerung/" target="_blank" rel="noopener">Datenschutz</a></span></label>
+        <div class="err" data-for="datenschutz">Bitte bestätige kurz die Einwilligung.</div>
+        <div class="nav"><span></span><button type="button" class="btn" data-next>Weiter →</button></div>
+      </div>
+
+      <div class="step" data-step="2">
+        <h3>Wie viel möchtest du in dein nächstes Musikprojekt investieren?</h3><p class="sub">Ehrlich antworten. So planen wir genau das, was zu dir passt.</p>
+        <div class="opts" data-name="budget">
+          <div class="opt" data-v="0-150"><i></i>bis 150 €</div>
+          <div class="opt" data-v="150-300"><i></i>150 – 300 €</div>
+          <div class="opt" data-v="300-600"><i></i>300 – 600 €</div>
+          <div class="opt" data-v="600+"><i></i>über 600 €</div>
+        </div>
+        <div class="err" data-for="budget">Bitte wähle eine Antwort.</div>
+        <div class="nav"><button type="button" class="back" data-back>← Zurück</button><button type="button" class="btn" data-next>Weiter →</button></div>
+      </div>
+
+      <div class="step" data-step="3">
+        <h3>Was hast du vor?</h3><p class="sub">Wähl, was am besten passt.</p>
+        <div class="opts" data-name="projekt">
+          <div class="opt" data-v="Single"><i></i><div>Eine Single<em>1 Song, richtig fertig</em></div></div>
+          <div class="opt" data-v="EP"><i></i><div>Eine EP<em>3–6 Songs</em></div></div>
+          <div class="opt" data-v="Album"><i></i><div>Ein Album<em>7+ Songs</em></div></div>
+          <div class="opt" data-v="Mix & Master"><i></i><div>Mix &amp; Master<em>Meine Songs sind schon aufgenommen</em></div></div>
+          <div class="opt" data-v="Artist-Aufbau"><i></i><div>Mich als Artist aufbauen<em>Songs, Reel, Release, alles</em></div></div>
+        </div>
+        <div class="err" data-for="projekt">Bitte wähle eine Antwort.</div>
+        <div class="nav"><button type="button" class="back" data-back>← Zurück</button><button type="button" class="btn" data-next>Weiter →</button></div>
+      </div>
+
+      <div class="step" data-step="4">
+        <h3>Hast du schon Beats?</h3><p class="sub">Kein Problem, wenn nicht. Wir produzieren auch mit dir.</p>
+        <div class="opts" data-name="beats">
+          <div class="opt" data-v="Ja, eigene Beats"><i></i>Ja, ich habe eigene Beats</div>
+          <div class="opt" data-v="Teilweise"><i></i>Teilweise</div>
+          <div class="opt" data-v="Nein, brauche Beats"><i></i>Nein, ich brauche Beats</div>
+        </div>
+        <div class="err" data-for="beats">Bitte wähle eine Antwort.</div>
+        <div class="nav"><button type="button" class="back" data-back>← Zurück</button><button type="button" class="btn" data-next>Weiter →</button></div>
+      </div>
+
+      <div class="step" data-step="5">
+        <h3>Wann möchtest du starten?</h3><p class="sub">Letzte Frage.</p>
+        <div class="opts" data-name="start">
+          <div class="opt" data-v="Sofort"><i></i>So schnell wie möglich</div>
+          <div class="opt" data-v="1-3 Monate"><i></i>In den nächsten 1–3 Monaten</div>
+          <div class="opt" data-v="Später"><i></i>Später, ich informiere mich erst</div>
+        </div>
+        <div class="err" data-for="start">Bitte wähle eine Antwort.</div>
+        <label class="f" for="f-link">Link zu deiner Musik (optional)</label><input type="url" id="f-link" name="musik_link" placeholder="Instagram, Spotify, YouTube, SoundCloud …">
+        <div class="nav"><button type="button" class="back" data-back>← Zurück</button><button type="submit" class="btn" id="smpSend">Gespräch sichern →</button></div>
+      </div>
+
+      <input type="hidden" name="quelle" value="landingpage-session">
+      <input type="hidden" name="utm_source"><input type="hidden" name="utm_campaign"><input type="hidden" name="utm_content"><input type="hidden" name="fbclid">
+    </form>
+
+    <!-- AUSSORTIERT -->
+    <div class="res" id="resNo">
+      <div style="font-size:46px;margin-bottom:10px">🎧</div>
+      <h3 style="font-size:24px;margin-bottom:10px">Danke für deine Ehrlichkeit, <span class="vn"></span>.</h3>
+      <p class="muted" style="margin-bottom:22px">In diesem Rahmen können wir dir im Studio aktuell leider keine Leistung anbieten, die unserem Anspruch gerecht wird. Wir wollen dir nichts verkaufen, was dich nicht weiterbringt.</p>
+      <p style="margin-bottom:22px">Folg uns gern auf Instagram. Da teilen wir regelmäßig Tipps zu Recording, Mix und Release, kostenlos.</p>
+      <a class="btn" href="https://www.instagram.com/saved_music_/" target="_blank" rel="noopener">Zu Instagram →</a>
+      <p style="margin-top:18px"><button type="button" class="back" id="smpChange">Doch ein anderes Budget? Antwort ändern</button></p>
+    </div>
+
+    <!-- DANKE -->
+    <div class="res" id="resYes">
+      <div class="video" id="dankeVid" style="max-width:300px;margin-bottom:22px;background-image:url(https://saved-music-productions.de/wp-content/uploads/2026/10/smp-bestaetigung-poster.jpg)" data-src="https://saved-music-productions.de/wp-content/uploads/2026/10/smp-bestaetigung.mp4"><div class="play"></div><div class="vcap"><b>Eine Nachricht von Viktor</b><span>50 Sekunden · mit Ton ansehen</span></div></div>
+      <div class="julian" style="width:110px;height:110px;background-image:url(https://www.highlevel-performance.de/assets/team-julian-a.jpg)"></div>
+      <div class="kick">Anfrage ist da ✓</div>
+      <h3 style="font-size:26px;margin:8px 0 10px">Stark, <span class="vn"></span>! Julian meldet sich innerhalb der nächsten 24 Stunden bei dir.</h3>
+      <p class="muted">Julian aus unserem Team ruft dich an, hört sich dein Projekt an und plant mit dir deine Session.</p>
+      <div class="prep">
+        <div><b class="n">1</b><span><b>Plan 5–15 Minuten ein.</b> Mehr braucht das Gespräch nicht.</span></div>
+        <div><b class="n">2</b><span><b>Sorg für gutes Netz</b> und einen ruhigen Ort, damit ihr euch gut versteht.</span></div>
+        <div><b class="n">3</b><span><b>Halt 1–2 Songs oder Ideen bereit</b>, als Link oder Sprachmemo.</span></div>
+        <div><b class="n">4</b><span><b>Überleg dir dein Ziel:</b> Was soll am Ende rauskommen?</span></div>
+      </div>
+      <p style="font-size:14px" class="muted">Speicher dir unsere Nummer <b style="color:var(--ink)">+49 1556 1068899</b>, damit du den Anruf erkennst.</p>
+      <div class="kick" style="margin:26px 0 12px">Schau dich gern schon mal um</div>
+      <div style="display:grid;gap:10px">
+        <a class="btn ghost" href="https://saved-music-productions.de/" target="_blank" rel="noopener">🎙️ Saved Music Productions</a>
+        <a class="btn ghost" href="https://www.highlevel-performance.de/#artists" target="_blank" rel="noopener">⚡ High Level Performance for Artists</a>
+      </div>
+    </div>
+
+    <div class="safe"><span>🔒 Deine Daten bleiben bei uns</span><span>✓ Kostenlos &amp; unverbindlich</span><span>✓ Kein Spam</span></div>
+  </div>
+</div></section>
+
+<!-- ABLAUF -->
+<section style="background:var(--surface)"><div class="wrap">
+  <div class="sh"><div class="kick">So geht's weiter</div><h2>In 3 Schritten <span class="lux">ins Studio.</span></h2></div>
+  <div class="flow">
+    <div><span class="kick">01</span><b>Formular ausfüllen</b><span class="muted">60 Sekunden, kostenlos und unverbindlich.</span></div>
+    <div><span class="kick">02</span><b>Kurzes Gespräch</b><span class="muted">Julian ruft dich an, hört rein und plant mit dir deinen Termin.</span></div>
+    <div><span class="kick">03</span><b>Dein Tag im Studio</b><span class="muted">Recording, Mix, Reel, und du fährst mit fertigen Tracks nach Hause.</span></div>
+  </div>
+</div></section>
+
+<!-- FAQ -->
+<section><div class="wrap" style="max-width:780px">
+  <div class="sh"><div class="kick">Fragen &amp; Antworten</div><h2>Bevor du anfragst.</h2></div>
+  <details><summary>Bin ich überhaupt gut genug?</summary><p>Wenn du Bock auf Musik hast: ja. Wir arbeiten mit Anfängern genauso wie mit Artists, die seit Jahren releasen.</p></details>
+  <details><summary>Ich habe noch keine Beats.</summary><p>Kein Problem. Wir produzieren den Beat auf Wunsch direkt im Studio, passend zu deinem Style.</p></details>
+  <details><summary>Für welche Genres?</summary><p>Rap, Trap, Pop, R&amp;B, Singer-Songwriter, Bands. Wenn es Musik ist, sind wir dabei.</p></details>
+  <details><summary>Kann ich jemanden mitbringen?</summary><p>Unbedingt. Ob Feature-Artist, Bandmitglied oder Begleitung: Für +150 € pro Person ist sie den ganzen Tag dabei, inklusive Essen, Getränken und Schlafplatz.</p></details>
+  <details><summary>Was kostet die Session?</summary><p>Ein festes Paket ohne Stundenzähler und ohne Überraschungen. Den Preis besprechen wir im Gespräch, je nach deinem Projekt.</p></details>
+  <div style="text-align:center;margin-top:36px"><a href="#formular" class="btn">Kostenloses Session-Gespräch sichern →</a></div>
+</div></section>
+
+<footer><div class="wrap"><span>© Saved Music Productions · Viktor Fehl · Bersenbrück</span><span><a href="https://saved-music-productions.de/impressum/">Impressum</a> · <a href="https://saved-music-productions.de/datenschutzerklaerung/">Datenschutz</a></span></div></footer>
+
+<div class="sticky" id="smpSticky"><a href="#formular" class="btn">Session-Gespräch sichern →</a></div>
+</div>
+
+<script>
+(function(){
+  var WEBHOOK = ''; // Pabbly-Webhook kommt nach Viktors OK
+  var root=document.getElementById('smp-lp'), f=document.getElementById('smpForm');
+  var step=1, total=5, data={};
+
+  // UTM übernehmen
+  var q=new URLSearchParams(location.search);
+  ['utm_source','utm_campaign','utm_content','fbclid'].forEach(function(k){ if(q.get(k)) f.elements[k].value=q.get(k); });
+
+  // YouTube erst beim Klick laden
+  var ids=['Rt_n5gw4eDY','vF6eOy7OUUg','0MFiz7wcaoA','6rRh36GWSLE','_aGokvDWjbs','Rt_n5gw4eDY'].slice(0,5);
+  var vids=document.getElementById('vids');
+  ids.slice(0,3).forEach(function(id){
+    var d=document.createElement('div'); d.className='yt'; d.style.backgroundImage='url(https://i.ytimg.com/vi/'+id+'/hqdefault.jpg)';
+    d.innerHTML='<div class="play"></div>';
+    d.onclick=function(){ d.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>'; d.onclick=null; };
+    vids.appendChild(d);
+  });
+
+  // Facebook-Reels erst beim Klick laden
+  root.querySelectorAll('.reel').forEach(function(r){ r.onclick=function(){
+    var u='https://www.facebook.com/plugins/video.php?href='+encodeURIComponent('https://www.facebook.com/reel/'+r.dataset.fb+'/')+'&show_text=false&autoplay=true&width=360';
+    r.innerHTML='<iframe src="'+u+'" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>'; r.onclick=null; }; });
+
+  // Begrüßungsvideo
+  function player(el){ el.onclick=function(){ var s=el.getAttribute('data-src');
+    el.innerHTML='<video src="'+s+'" controls autoplay playsinline style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:3"></video>'; el.onclick=null; }; }
+  player(document.getElementById('welcome')); player(document.getElementById('dankeVid'));
+  // Bestätigungsvideo ploppt nach dem Absenden direkt auf (stumm startend, Untertitel sind drin) – Ton per Tipp
+  function autoDanke(){ var el=document.getElementById('dankeVid'), s=el.getAttribute('data-src'); el.onclick=null;
+    el.innerHTML='<video src="'+s+'" autoplay muted playsinline controls style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:3"></video><button type="button" id="smpSound" style="position:absolute;z-index:4;left:50%;bottom:64px;transform:translateX(-50%);background:#E90E0E;color:#fff;border:0;border-radius:999px;padding:12px 20px;font:700 15px Poppins,Arial;box-shadow:0 0 20px #E90E0E;cursor:pointer">🔊 Ton an</button>';
+    var v=el.querySelector('video'), b=document.getElementById('smpSound'); b.onclick=function(){ v.muted=false; v.currentTime=0; v.play(); b.remove(); }; }
+
+  // Auswahl-Karten
+  root.querySelectorAll('.opts').forEach(function(g){
+    g.querySelectorAll('.opt').forEach(function(o){
+      o.onclick=function(){ g.querySelectorAll('.opt').forEach(function(x){x.classList.remove('sel')}); o.classList.add('sel'); data[g.dataset.name]=o.dataset.v; err(g.dataset.name,false); };
+    });
+  });
+
+  function err(n,on){ var e=root.querySelector('.err[data-for="'+n+'"]'); if(e) e.classList.toggle('on',on); var i=f.elements[n]; if(i&&i.classList) i.classList.toggle('bad',on); }
+
+  // Handynummer prüfen + auf +49… bringen
+  function phone(v){
+    var s=(v||'').replace(/[\s\-\/().]/g,'');
+    if(s.indexOf('00')===0) s='+'+s.slice(2);
+    if(s.charAt(0)==='0') s='+49'+s.slice(1);
+    if(/^\+490/.test(s)) s='+49'+s.slice(4);
+    var ok=/^\+491[5-7]\d{7,9}$/.test(s)||/^\+436\d{8,11}$/.test(s)||/^\+417[5-9]\d{7}$/.test(s);
+    if(ok && /(\d)\1{6,}/.test(s)) ok=false;           // 0000000 usw.
+    if(ok && /1234567|2345678|9876543/.test(s)) ok=false;
+    return ok?s:null;
+  }
+
+  function check(n){
+    if(n===1){
+      var ok=true, nm=f.elements.name.value.trim(), m=f.elements.email.value.trim();
+      var nameOk=nm.split(/\s+/).length>=2 && nm.length>=4; err('name',!nameOk); ok=ok&&nameOk;
+      var p=phone(f.elements.telefon.value); err('telefon',!p); ok=ok&&!!p;
+      var mailOk=/^[^\s@]+@[^\s@]+\.[a-z]{2,}$/i.test(m); err('email',!mailOk); ok=ok&&mailOk;
+      var c=document.getElementById('f-ok').checked; err('datenschutz',!c); ok=ok&&c;
+      if(ok){ data.name=nm; data.vorname=nm.split(/\s+/)[0]; data.telefon=p; data.email=m; }
+      return ok;
+    }
+    var key=['','', 'budget','projekt','beats','start'][n];
+    if(!data[key]){ err(key,true); return false; } return true;
+  }
+
+  function show(n){
+    step=n; root.querySelectorAll('.step').forEach(function(s){ s.classList.toggle('on', +s.dataset.step===n); });
+    document.getElementById('smpProg').style.width=(n/total*100)+'%';
+    var card=f.closest('.card'); var y=card.getBoundingClientRect().top+window.scrollY-20; if(window.scrollY>y) window.scrollTo({top:y,behavior:'smooth'});
+  }
+  root.querySelectorAll('[data-next]').forEach(function(b){ b.onclick=function(){
+    if(!check(step)) return;
+    if(step===1) track('InitiateCheckout');
+    if(step===2 && data.budget==='0-150'){ send('aussortiert'); result('resNo'); return; }
+    show(step+1);
+  };});
+  root.querySelectorAll('[data-back]').forEach(function(b){ b.onclick=function(){ show(step-1); }; });
+  document.getElementById('smpChange').onclick=function(){ document.getElementById('resNo').classList.remove('on'); f.style.display=''; show(2); };
+
+  f.onsubmit=function(e){ e.preventDefault(); if(!check(5)) return;
+    data.musik_link=f.elements.musik_link.value.trim();
+    send('qualifiziert'); track('Lead'); result('resYes'); };
+
+  function result(id){ f.style.display='none'; root.querySelectorAll('.vn').forEach(function(x){x.textContent=data.vorname||''}); document.getElementById(id).classList.add('on'); if(id==='resYes') autoDanke();
+    var card=f.closest('.card'); window.scrollTo({top:card.getBoundingClientRect().top+window.scrollY-20,behavior:'smooth'}); }
+
+  function send(status){
+    var p={}; for(var k in data) p[k]=data[k];
+    ['quelle','utm_source','utm_campaign','utm_content','fbclid'].forEach(function(k){ p[k]=f.elements[k].value; });
+    p.status=status; p.datenschutz='ja'; p.datum=new Date().toISOString().slice(0,10); p.zeit=new Date().toLocaleString('de-DE',{timeZone:'Europe/Berlin'});
+    if(!WEBHOOK){ console.log('[Vorschau] würde senden:',p); return; }
+    try{ fetch(WEBHOOK,{method:'POST',mode:'no-cors',headers:{'Content-Type':'application/x-www-form-urlencoded'},body:new URLSearchParams(p).toString()}); }catch(e){}
+  }
+  function track(ev){ try{ if(window.fbq){ if(ev==='Lead') fbq('track','Lead',{content_name:'Session-Gespräch',value:0,currency:'EUR'}); else fbq('track',ev); } }catch(e){} }
+
+  // Sticky-Button auf dem Handy, verschwindet beim Formular
+  var st=document.getElementById('smpSticky'), fs=document.getElementById('formular');
+  function stk(){ var r=fs.getBoundingClientRect(); st.classList.toggle('show', window.scrollY>500 && (r.top>window.innerHeight || r.bottom<0)); }
+  window.addEventListener('scroll',stk,{passive:true});
+})();
+</script>
