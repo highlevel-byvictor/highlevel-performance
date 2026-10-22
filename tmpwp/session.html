@@ -7,7 +7,7 @@
 #smp-lp img{max-width:100%;display:block}
 #smp-lp a{color:inherit}
 #smp-lp .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
-#smp-lp h1,#smp-lp h2,#smp-lp h3{color:inherit;margin:0;font-family:"Poppins",Arial,sans-serif;letter-spacing:-.02em;line-height:1.1}
+#smp-lp [data-h]{color:inherit;margin:0;font-weight:700;font-family:"Poppins",Arial,sans-serif;letter-spacing:-.02em;line-height:1.1}
 #smp-lp .lux{font-family:"Bodoni Moda",Georgia,serif;font-style:italic;font-weight:500;color:var(--red2)}
 #smp-lp .kick{font-family:"JetBrains Mono",monospace;font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--red2);font-weight:700}
 #smp-lp .muted{color:var(--muted)}
@@ -40,7 +40,7 @@
 #smp-lp .light .feat span,#smp-lp .light .rev small{color:#5E5650}
 #smp-lp .light details{border-color:#E3DBD0}
 #smp-lp .light summary:after{color:#E90E0E}
-#smp-lp .light details p{color:#5E5650}
+#smp-lp .light details [data-p]{color:#5E5650}
 #smp-lp .strip.light{border-color:#E8E1D8;background:#fff!important;color:#141414}
 #smp-lp .strip.light b{color:#E90E0E}
 #smp-lp .strip.light span{color:#5E5650}
@@ -55,8 +55,8 @@
 /* hero */
 #smp-lp .hero{position:relative;padding:110px 0 60px;background:radial-gradient(1200px 600px at 80% -10%,rgba(233,14,14,.22),transparent 60%),radial-gradient(900px 500px at -10% 30%,rgba(140,40,255,.16),transparent 60%),var(--bg)}
 #smp-lp .hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
-#smp-lp .hero h1{font-size:clamp(36px,5.4vw,62px);font-weight:800;margin:14px 0 18px}
-#smp-lp .hero p.lead{font-size:18px;color:#CFC9C1;max-width:520px;margin-bottom:28px}
+#smp-lp .hero [data-h="h1"]{font-size:clamp(36px,5.4vw,62px);font-weight:800;margin:14px 0 18px}
+#smp-lp .hero [data-p].lead{font-size:18px;color:#CFC9C1;max-width:520px;margin-bottom:28px}
 #smp-lp .stars{display:flex;flex-wrap:wrap;gap:10px 18px;margin-top:22px;font-size:14px;color:var(--muted)}
 #smp-lp .stars b{color:#FFC93C;letter-spacing:2px}
 #smp-lp .video{border:2px solid rgba(255,59,59,.7);box-shadow:0 0 14px var(--red),0 0 50px -6px var(--red),0 30px 80px -20px #000!important;position:relative;aspect-ratio:9/16;max-height:640px;margin:0 auto;width:100%;max-width:380px;border-radius:26px;overflow:hidden;background:#000 center/cover no-repeat;box-shadow:0 30px 80px -20px rgba(0,0,0,.8),0 0 0 1px rgba(255,255,255,.08);cursor:pointer}
@@ -73,7 +73,7 @@
 #smp-lp .strip span{font-size:13px;color:var(--muted)}
 /* headings */
 #smp-lp .sh{max-width:720px;margin-bottom:36px}
-#smp-lp .sh h2{font-size:clamp(28px,4vw,44px);margin:10px 0 12px}
+#smp-lp .sh [data-h="h2"]{font-size:clamp(28px,4vw,44px);margin:10px 0 12px}
 /* session */
 #smp-lp .sess{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
 #smp-lp .sess-img{border-radius:22px;aspect-ratio:4/5;background:center/cover;position:relative;overflow:hidden}
@@ -94,7 +94,7 @@
 #smp-lp .revs{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 #smp-lp .rev{background:var(--surface);border:1px solid var(--line);border-radius:18px;padding:22px}
 #smp-lp .rev .s{color:#FFC93C;letter-spacing:2px;font-size:14px}
-#smp-lp .rev p{margin:10px 0 14px;font-size:15px}
+#smp-lp .rev [data-p]{margin:10px 0 14px;font-size:15px}
 #smp-lp .rev small{color:var(--muted);font-size:13px}
 /* form */
 #smp-lp .formsec{background:radial-gradient(800px 400px at 50% 0%,rgba(233,14,14,.18),transparent 70%),var(--bg)}
@@ -104,7 +104,7 @@
 #smp-lp .step{display:none}
 #smp-lp .step.on{display:block;animation:smpin .35s ease}
 @keyframes smpin{from{opacity:0;transform:translateY(8px)}}
-#smp-lp .step h3{font-size:24px;margin-bottom:6px}
+#smp-lp .step [data-h="h3"]{font-size:24px;margin-bottom:6px}
 #smp-lp .step .sub{color:var(--muted);font-size:15px;margin-bottom:20px}
 #smp-lp label.f{display:block;font-size:13px;font-weight:600;color:#CFC9C1;margin:14px 0 6px}
 #smp-lp input[type=text],#smp-lp input[type=tel],#smp-lp input[type=email],#smp-lp input[type=url]{width:100%;background:#0E0E0E;border:1.5px solid var(--line);color:var(--ink);border-radius:14px;padding:16px;font:inherit;font-size:16px;outline:none}
@@ -141,7 +141,7 @@
 #smp-lp summary{cursor:pointer;font-family:"Poppins";font-weight:600;font-size:17px;list-style:none;display:flex;justify-content:space-between}
 #smp-lp summary:after{content:"+";color:var(--red2);font-size:22px;line-height:1}
 #smp-lp details[open] summary:after{content:"–"}
-#smp-lp details p{color:var(--muted);margin-top:10px}
+#smp-lp details [data-p]{color:var(--muted);margin-top:10px}
 #smp-lp footer{border-top:1px solid var(--line);padding:28px 0;font-size:13px;color:var(--muted)}
 #smp-lp footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
 #smp-lp .sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:50;display:none}
@@ -173,8 +173,8 @@
   <div class="txt">
     <span class="onair">● ON AIR</span>
     <div class="kick" style="margin-top:18px">Herzlichen Glückwunsch</div>
-    <h1>Du hast dich gerade für <span class="neon">deine Musik</span> entschieden.</h1>
-    <p class="lead">Die meisten reden nur davon. Du bist hier. Schau dir kurz an, was Viktor dir sagen will, und sichere dir dann dein kostenloses Session-Gespräch.</p>
+    <div role="heading" data-h="h1">Du hast dich gerade für <span class="neon">deine Musik</span> entschieden.</div>
+    <div data-p class="lead">Die meisten reden nur davon. Du bist hier. Schau dir kurz an, was Viktor dir sagen will, und sichere dir dann dein kostenloses Session-Gespräch.</div>
     <a href="#formular" class="btn">Kostenloses Session-Gespräch sichern →</a>
     <div class="stars">
       <span><b>★★★★★</b> 4,6 auf Trustpilot</span>
@@ -188,12 +188,12 @@
 </div></section>
 <!-- FORM -->
 <section class="formsec" id="formular" style="padding-top:20px"><div class="wrap">
-  <div class="sh" style="text-align:center;margin:0 auto 30px"><div class="kick">Dein nächster Schritt</div><h2>Sichere dir dein <span class="lux">kostenloses</span> Session-Gespräch.</h2><p class="muted">Dauert 60 Sekunden. Danach meldet sich unser Team persönlich bei dir.</p></div>
+  <div class="sh" style="text-align:center;margin:0 auto 30px"><div class="kick">Dein nächster Schritt</div><div role="heading" data-h="h2">Sichere dir dein <span class="lux">kostenloses</span> Session-Gespräch.</div><div data-p class="muted">Dauert 60 Sekunden. Danach meldet sich unser Team persönlich bei dir.</div></div>
   <div class="card">
     <form class="js-form" novalidate>
       <div class="prog"><i class="js-prog"></i></div>
       <div class="step on" data-step="1">
-        <h3>Wie erreichen wir dich?</h3><p class="sub">Damit wir dich nach deiner Anfrage auch wirklich erreichen.</p>
+        <div role="heading" data-h="h3">Wie erreichen wir dich?</div><div data-p class="sub">Damit wir dich nach deiner Anfrage auch wirklich erreichen.</div>
         <label class="f" for="f-name">Vor- und Nachname</label><input type="text" id="f-name" name="name" autocomplete="name" placeholder="z. B. Max Mustermann">
         <div class="err" data-for="name">Bitte gib deinen Vor- und Nachnamen ein.</div>
         <label class="f" for="f-tel">Handynummer</label><input type="tel" id="f-tel" name="telefon" autocomplete="tel" inputmode="tel" placeholder="z. B. 0151 23456789">
@@ -206,7 +206,7 @@
         <div class="nav"><span></span><button type="button" class="btn" data-next>Weiter →</button></div>
       </div>
       <div class="step" data-step="2">
-        <h3>Welches Budget hast du für dein Projekt eingeplant?</h3><p class="sub">Ehrlich antworten. So planen wir genau das, was zu dir passt.</p>
+        <div role="heading" data-h="h3">Welches Budget hast du für dein Projekt eingeplant?</div><div data-p class="sub">Ehrlich antworten. So planen wir genau das, was zu dir passt.</div>
         <div class="opts" data-name="budget">
           <div class="opt" data-v="0-150"><i></i>unter 150 €</div>
           <div class="opt" data-v="150-300"><i></i>150–300 €</div>
@@ -218,7 +218,7 @@
         <div class="nav"><button type="button" class="back" data-back>← Zurück</button><button type="button" class="btn" data-next>Weiter →</button></div>
       </div>
       <div class="step" data-step="3">
-        <h3>Was willst du in der Session umsetzen?</h3><p class="sub">Wähl, was am besten passt.</p>
+        <div role="heading" data-h="h3">Was willst du in der Session umsetzen?</div><div data-p class="sub">Wähl, was am besten passt.</div>
         <div class="opts" data-name="projekt">
           <div class="opt" data-v="Eigene Songs aufnehmen (Rap/Gesang)"><i></i>Eigene Songs aufnehmen (Rap/Gesang)</div>
           <div class="opt" data-v="Komplette Produktion inkl. Beat"><i></i>Komplette Produktion inkl. Beat</div>
@@ -229,7 +229,7 @@
         <div class="nav"><button type="button" class="back" data-back>← Zurück</button><button type="button" class="btn" data-next>Weiter →</button></div>
       </div>
       <div class="step" data-step="4">
-        <h3>Wie weit sind deine Songs?</h3><p class="sub">Kein Problem, wenn noch nicht alles fertig ist. Wir produzieren auch mit dir.</p>
+        <div role="heading" data-h="h3">Wie weit sind deine Songs?</div><div data-p class="sub">Kein Problem, wenn noch nicht alles fertig ist. Wir produzieren auch mit dir.</div>
         <div class="opts" data-name="songs">
           <div class="opt" data-v="Texte & Beats sind fertig"><i></i>Texte &amp; Beats sind fertig</div>
           <div class="opt" data-v="Texte fertig, Beats fehlen noch"><i></i>Texte fertig, Beats fehlen noch</div>
@@ -239,7 +239,7 @@
         <div class="nav"><button type="button" class="back" data-back>← Zurück</button><button type="button" class="btn" data-next>Weiter →</button></div>
       </div>
       <div class="step" data-step="5">
-        <h3>Wann möchtest du starten?</h3><p class="sub">Letzte Frage.</p>
+        <div role="heading" data-h="h3">Wann möchtest du starten?</div><div data-p class="sub">Letzte Frage.</div>
         <div class="opts" data-name="start">
           <div class="opt" data-v="So schnell wie möglich"><i></i>So schnell wie möglich</div>
           <div class="opt" data-v="In den nächsten 4 Wochen"><i></i>In den nächsten 4 Wochen</div>
@@ -256,25 +256,25 @@
     <!-- AUSSORTIERT -->
     <div class="res js-no">
       <div style="font-size:46px;margin-bottom:10px">🎧</div>
-      <h3 style="font-size:24px;margin-bottom:12px">Danke für deine Ehrlichkeit, <span class="vn"></span>.</h3>
-      <p class="muted" style="margin-bottom:14px">In diesem finanziellen Rahmen können wir dir leider keine unserer Leistungen anbieten. <b style="color:#F4F1EC">Unsere Leistungen beginnen ab 150 €.</b></p>
-      <p class="muted" style="margin-bottom:14px">Bei uns bekommst du professionelle Studioqualität: High-End-Equipment, einen akustisch geplanten Raum und volle Aufmerksamkeit für deinen Sound. Diesen Standard halten wir bei jedem Projekt, und der bringt natürlich auch einen gewissen Aufwand mit sich.</p>
-      <p style="margin-bottom:22px">Wenn sich dein Budget ändert, melde dich jederzeit gern wieder bei uns. Wir freuen uns auf dich und deine Musik!</p>
+      <div role="heading" data-h="h3" style="font-size:24px;margin-bottom:12px">Danke für deine Ehrlichkeit, <span class="vn"></span>.</div>
+      <div data-p class="muted" style="margin-bottom:14px">In diesem finanziellen Rahmen können wir dir leider keine unserer Leistungen anbieten. <b style="color:#F4F1EC">Unsere Leistungen beginnen ab 150 €.</b></div>
+      <div data-p class="muted" style="margin-bottom:14px">Bei uns bekommst du professionelle Studioqualität: High-End-Equipment, einen akustisch geplanten Raum und volle Aufmerksamkeit für deinen Sound. Diesen Standard halten wir bei jedem Projekt, und der bringt natürlich auch einen gewissen Aufwand mit sich.</div>
+      <div data-p style="margin-bottom:22px">Wenn sich dein Budget ändert, melde dich jederzeit gern wieder bei uns. Wir freuen uns auf dich und deine Musik!</div>
       <a class="btn" href="https://www.instagram.com/saved_music_/" target="_blank" rel="noopener">Zu Instagram →</a>
     </div>
     <div class="res js-yes">
       <div class="video js-dvid" style="max-width:300px;margin-bottom:22px;background-image:url(https://saved-music-productions.de/wp-content/uploads/2026/10/smp-bestaetigung-poster.jpg)" data-src="https://saved-music-productions.de/wp-content/uploads/2026/10/smp-bestaetigung.mp4"><div class="play"></div><div class="vcap"><b>Eine Nachricht von Viktor</b><span>50 Sekunden · mit Ton ansehen</span></div></div>
       <div class="julian" style="width:110px;height:110px;background-image:url(https://www.highlevel-performance.de/assets/team-julian-a.jpg)"></div>
       <div class="kick">Anfrage ist da ✓</div>
-      <h3 style="font-size:26px;margin:8px 0 10px">Stark, <span class="vn"></span>! Julian meldet sich innerhalb der nächsten 24 Stunden bei dir.</h3>
-      <p class="muted">Julian aus unserem Team ruft dich an, hört sich dein Projekt an und plant mit dir deine Session.</p>
+      <div role="heading" data-h="h3" style="font-size:26px;margin:8px 0 10px">Stark, <span class="vn"></span>! Julian meldet sich innerhalb der nächsten 24 Stunden bei dir.</div>
+      <div data-p class="muted">Julian aus unserem Team ruft dich an, hört sich dein Projekt an und plant mit dir deine Session.</div>
       <div class="prep">
         <div><b class="n">1</b><span><b>Plan 5–15 Minuten ein.</b> Mehr braucht das Gespräch nicht.</span></div>
         <div><b class="n">2</b><span><b>Sorg für gutes Netz</b> und einen ruhigen Ort, damit ihr euch gut versteht.</span></div>
         <div><b class="n">3</b><span><b>Halt 1–2 Songs oder Ideen bereit</b>, als Link oder Sprachmemo.</span></div>
         <div><b class="n">4</b><span><b>Überleg dir dein Ziel:</b> Was soll am Ende rauskommen?</span></div>
       </div>
-      <p style="font-size:14px" class="muted">Speicher dir unsere Nummer <b style="color:var(--ink)">+49 1556 1068899</b>, damit du den Anruf erkennst.</p>
+      <div data-p style="font-size:14px" class="muted">Speicher dir unsere Nummer <b style="color:var(--ink)">+49 1556 1068899</b>, damit du den Anruf erkennst.</div>
       <div class="kick" style="margin:26px 0 12px">Schau dich gern schon mal um</div>
       <div style="display:grid;gap:10px">
         <a class="btn ghost" href="https://saved-music-productions.de/" target="_blank" rel="noopener">🎙️ Saved Music Productions</a>
@@ -296,8 +296,8 @@
   <div class="sess-img" style="background-image:url(https://www.highlevel-performance.de/assets/artist-sing-v1.jpg)"><div class="tag">🎙️ Pro Tag nur <b>ein</b> Artist im Studio</div></div>
   <div>
     <div class="kick">Die All-Inclusive Studio Session</div>
-    <h2 style="font-size:clamp(28px,4vw,42px);margin:10px 0 14px">Ein Tag. Deine Songs. <span class="lux">Auf Release-Niveau.</span></h2>
-    <p class="muted" style="margin-bottom:22px">Schluss mit Songs, die zuhause gut klingen und neben Spotify nach Demo. Bei uns fährst du mit fertigen Tracks nach Hause.</p>
+    <div role="heading" data-h="h2" style="font-size:clamp(28px,4vw,42px);margin:10px 0 14px">Ein Tag. Deine Songs. <span class="lux">Auf Release-Niveau.</span></div>
+    <div data-p class="muted" style="margin-bottom:22px">Schluss mit Songs, die zuhause gut klingen und neben Spotify nach Demo. Bei uns fährst du mit fertigen Tracks nach Hause.</div>
     <div class="feat">
       <div><b>🎙️ 10 Stunden Studio</b><span>Recording, Mixing &amp; Mastering mit Neumann, Neve, Avalon</span></div>
       <div><b>💿 Mind. 3 fertige Tracks</b><span>Kein Beat? Wir produzieren ihn mit dir</span></div>
@@ -308,25 +308,25 @@
 </div></section>
 <!-- FB REELS -->
 <section><div class="wrap">
-  <div class="sh"><div class="kick">Echte Sessions · echte Artists</div><h2>Sieh selbst, wie Artists ihren <span class="lux">Studio-Tag</span> erleben.</h2></div>
+  <div class="sh"><div class="kick">Echte Sessions · echte Artists</div><div role="heading" data-h="h2">Sieh selbst, wie Artists ihren <span class="lux">Studio-Tag</span> erleben.</div></div>
   <div class="reels"><div class="reel" data-fb="1602008084685780" style="background-image:url(https://saved-music-productions.de/wp-content/uploads/2026/10/smp-reel-1.jpg)"><span class="badge">▶ FACEBOOK-REEL</span><div class="play"></div><div class="cap"><b>KingD0mG</b><span>All-Inclusive Session · 2 Tracks</span></div></div><div class="reel" data-fb="1043470344944860" style="background-image:url(https://saved-music-productions.de/wp-content/uploads/2026/10/smp-reel-2.jpg)"><span class="badge">▶ FACEBOOK-REEL</span><div class="play"></div><div class="cap"><b>Davee</b><span>10 Songs an einem Tag</span></div></div><div class="reel" data-fb="2270674660428498" style="background-image:url(https://www.highlevel-performance.de/assets/artist-peace-v1.jpg)"><span class="badge">▶ FACEBOOK-REEL</span><div class="play"></div><div class="cap"><b>Sylas Werner</b><span>extra aus Mallorca angereist</span></div></div><div class="reel" data-fb="849403778201993" style="background-image:url(https://www.highlevel-performance.de/assets/artist-meeting-v1.jpg)"><span class="badge">▶ FACEBOOK-REEL</span><div class="play"></div><div class="cap"><b>Sängerin-Session</b><span>All-Inclusive Session</span></div></div><div class="reel" data-fb="1977174012920789" style="background-image:url(https://www.highlevel-performance.de/assets/artist-producer-v1.jpg)"><span class="badge">▶ FACEBOOK-REEL</span><div class="play"></div><div class="cap"><b>Zufriedener Artist</b><span>„Probleme gut gelöst“</span></div></div><div class="reel" data-fb="1399370148432424" style="background-image:url(https://www.highlevel-performance.de/assets/hx-mic-v1.jpg)"><span class="badge">▶ FACEBOOK-REEL</span><div class="play"></div><div class="cap"><b>Kenzo Boss</b><span>All-Inclusive Session</span></div></div></div>
-  <p class="note">Die Videos werden erst beim Klick von Facebook geladen. Es gelten die Datenschutzbestimmungen von Meta.</p>
+  <div data-p class="note">Die Videos werden erst beim Klick von Facebook geladen. Es gelten die Datenschutzbestimmungen von Meta.</div>
 </div></section>
 <!-- REVIEWS -->
 <section class="light"><div class="wrap">
-  <div class="sh"><div class="kick">Echte Stimmen</div><h2>Was Artists nach ihrer <span class="lux">Session</span> sagen.</h2></div>
+  <div class="sh"><div class="kick">Echte Stimmen</div><div role="heading" data-h="h2">Was Artists nach ihrer <span class="lux">Session</span> sagen.</div></div>
   <div class="revs">
-    <div class="rev"><div class="s">★★★★★</div><p>„Ich hab die 10-Stunden-Session gebucht, es kamen 3 exklusive Songs für meine EP zustande. Viktor ist professionell in dem, was er tut.“</p><small>Deyaa-Eddine S.</small></div>
-    <div class="rev"><div class="s">★★★★★</div><p>„Kontaktiert Saved Music Productions, ohne Angst zu haben, abgezogen zu werden. Super Beratung, schnelle Abwicklung.“</p><small>Dietrich W. · Google</small></div>
-    <div class="rev"><div class="s">★★★★★</div><p>„Krasses Studio, mit Liebe und Leidenschaft errichtet. Der Produzent hat ein sehr gutes Auge und Ohr, um das Beste aus dir rauszuholen.“</p><small>oOosiStaoOo · Google</small></div>
-    <div class="rev"><div class="s">★★★★★</div><p>„Sehr professionell und kompetent! Sehr lockere Atmosphäre, es wird viel gelacht. Ich werde definitiv wiederkommen!“</p><small>Irina W. · Google</small></div>
-    <div class="rev"><div class="s">★★★★★</div><p>„Herz, Freude und leidenschaftlich-fleißiger Einsatz! Der Jung hat einfach Bock, und das spürt man im fertigen Song.“</p><small>Lorenzo D. · Google</small></div>
-    <div class="rev"><div class="s">★★★★★</div><p>„Viktor ist ein Mega-Producer. Schon als wir angekommen sind, wussten wir, dass dort gezaubert wird.“</p><small>Noah · nk youngstars</small></div>
+    <div class="rev"><div class="s">★★★★★</div><div data-p>„Ich hab die 10-Stunden-Session gebucht, es kamen 3 exklusive Songs für meine EP zustande. Viktor ist professionell in dem, was er tut.“</div><small>Deyaa-Eddine S.</small></div>
+    <div class="rev"><div class="s">★★★★★</div><div data-p>„Kontaktiert Saved Music Productions, ohne Angst zu haben, abgezogen zu werden. Super Beratung, schnelle Abwicklung.“</div><small>Dietrich W. · Google</small></div>
+    <div class="rev"><div class="s">★★★★★</div><div data-p>„Krasses Studio, mit Liebe und Leidenschaft errichtet. Der Produzent hat ein sehr gutes Auge und Ohr, um das Beste aus dir rauszuholen.“</div><small>oOosiStaoOo · Google</small></div>
+    <div class="rev"><div class="s">★★★★★</div><div data-p>„Sehr professionell und kompetent! Sehr lockere Atmosphäre, es wird viel gelacht. Ich werde definitiv wiederkommen!“</div><small>Irina W. · Google</small></div>
+    <div class="rev"><div class="s">★★★★★</div><div data-p>„Herz, Freude und leidenschaftlich-fleißiger Einsatz! Der Jung hat einfach Bock, und das spürt man im fertigen Song.“</div><small>Lorenzo D. · Google</small></div>
+    <div class="rev"><div class="s">★★★★★</div><div data-p>„Viktor ist ein Mega-Producer. Schon als wir angekommen sind, wussten wir, dass dort gezaubert wird.“</div><small>Noah · nk youngstars</small></div>
   </div>
 </div></section>
 <!-- ABLAUF -->
 <section style="background:var(--surface)"><div class="wrap">
-  <div class="sh"><div class="kick">So geht's weiter</div><h2>In 3 Schritten <span class="lux">ins Studio.</span></h2></div>
+  <div class="sh"><div class="kick">So geht's weiter</div><div role="heading" data-h="h2">In 3 Schritten <span class="lux">ins Studio.</span></div></div>
   <div class="flow">
     <div><span class="kick">01</span><b>Formular ausfüllen</b><span class="muted">60 Sekunden, kostenlos und unverbindlich.</span></div>
     <div><span class="kick">02</span><b>Kurzes Gespräch</b><span class="muted">Julian ruft dich an, hört rein und plant mit dir deinen Termin.</span></div>
@@ -335,16 +335,16 @@
 </div></section>
 <!-- FAQ -->
 <section class="light"><div class="wrap" style="max-width:780px">
-  <div class="sh"><div class="kick">Fragen &amp; Antworten</div><h2>Bevor du anfragst.</h2></div>
-  <details><summary>Bin ich überhaupt gut genug?</summary><p>Wenn du Bock auf Musik hast: ja. Wir arbeiten mit Anfängern genauso wie mit Artists, die seit Jahren releasen.</p></details>
-  <details><summary>Ich habe noch keine Beats.</summary><p>Kein Problem. Wir produzieren den Beat auf Wunsch direkt im Studio, passend zu deinem Style.</p></details>
-  <details><summary>Für welche Genres?</summary><p>Rap, Trap, Pop, R&amp;B, Singer-Songwriter, Bands. Wenn es Musik ist, sind wir dabei.</p></details>
-  <details><summary>Kann ich jemanden mitbringen?</summary><p>Unbedingt. Ob Feature-Artist, Bandmitglied oder Begleitung: Für +150 € pro Person ist sie den ganzen Tag dabei, inklusive Essen, Getränken und Schlafplatz.</p></details>
-  <details><summary>Was kostet die Session?</summary><p>Ein festes Paket ohne Stundenzähler und ohne Überraschungen. Den Preis besprechen wir im Gespräch, je nach deinem Projekt.</p></details>
+  <div class="sh"><div class="kick">Fragen &amp; Antworten</div><div role="heading" data-h="h2">Bevor du anfragst.</div></div>
+  <details><summary>Bin ich überhaupt gut genug?</summary><div data-p>Wenn du Bock auf Musik hast: ja. Wir arbeiten mit Anfängern genauso wie mit Artists, die seit Jahren releasen.</div></details>
+  <details><summary>Ich habe noch keine Beats.</summary><div data-p>Kein Problem. Wir produzieren den Beat auf Wunsch direkt im Studio, passend zu deinem Style.</div></details>
+  <details><summary>Für welche Genres?</summary><div data-p>Rap, Trap, Pop, R&amp;B, Singer-Songwriter, Bands. Wenn es Musik ist, sind wir dabei.</div></details>
+  <details><summary>Kann ich jemanden mitbringen?</summary><div data-p>Unbedingt. Ob Feature-Artist, Bandmitglied oder Begleitung: Für +150 € pro Person ist sie den ganzen Tag dabei, inklusive Essen, Getränken und Schlafplatz.</div></details>
+  <details><summary>Was kostet die Session?</summary><div data-p>Ein festes Paket ohne Stundenzähler und ohne Überraschungen. Den Preis besprechen wir im Gespräch, je nach deinem Projekt.</div></details>
 </div></section>
 <!-- FORM 2 -->
 <section class="formsec" id="formular2"><div class="wrap">
-  <div class="sh" style="text-align:center;margin:0 auto 30px"><div class="kick">Bereit?</div><h2>Dein Studio-Tag beginnt <span class="lux">hier.</span></h2><p class="muted">60 Sekunden ausfüllen, Julian meldet sich innerhalb von 24 Stunden.</p></div>
+  <div class="sh" style="text-align:center;margin:0 auto 30px"><div class="kick">Bereit?</div><div role="heading" data-h="h2">Dein Studio-Tag beginnt <span class="lux">hier.</span></div><div data-p class="muted">60 Sekunden ausfüllen, Julian meldet sich innerhalb von 24 Stunden.</div></div>
   <div id="formClone"></div>
 </div></section>
 <footer><div class="wrap"><span>© Saved Music Productions · Viktor Fehl · Bersenbrück</span><span><a href="https://saved-music-productions.de/impressum/">Impressum</a> · <a href="https://saved-music-productions.de/datenschutzerklaerung/">Datenschutz</a></span></div></footer>
