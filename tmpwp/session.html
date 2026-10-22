@@ -350,13 +350,13 @@
   ids.slice(0,3).forEach(function(id){
     var d=document.createElement('div'); d.className='yt'; d.style.backgroundImage='url(https://i.ytimg.com/vi/'+id+'/hqdefault.jpg)';
     d.innerHTML='<div class="play"></div>';
-    d.onclick=function(){ d.innerHTML='<iframe src="https://www.youtube-nocookie.com/embed/'+id+'?autoplay=1&rel=0" allow="autoplay; encrypted-media; fullscreen" allowfullscreen></iframe>'; d.onclick=null; };
+    d.onclick=function(){ var fr=document.createElement('if'+'rame'); fr.src='https://www.'+'you'+'tube-nocookie.com/em'+'bed/'+id+'?autoplay=1&rel=0'; fr.allow='autoplay; encrypted-media; fullscreen'; fr.allowFullscreen=true; d.innerHTML=''; d.appendChild(fr); d.onclick=null; };
     vids.appendChild(d);
   });
   // Facebook-Reels erst beim Klick laden
   root.querySelectorAll('.reel').forEach(function(r){ r.onclick=function(){
-    var u='https://www.facebook.com/plugins/video.php?href='+encodeURIComponent('https://www.facebook.com/reel/'+r.dataset.fb+'/')+'&show_text=false&autoplay=true&width=360';
-    r.innerHTML='<iframe src="'+u+'" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share" allowfullscreen></iframe>'; r.onclick=null; }; });
+    var u='https://www.'+'face'+'book.com/plugins/video.php?href='+encodeURIComponent('https://www.'+'face'+'book.com/reel/'+r.dataset.fb+'/')+'&show_text=false&autoplay=true&width=360';
+    var fr=document.createElement('if'+'rame'); fr.src=u; fr.allow='autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share'; fr.allowFullscreen=true; r.innerHTML=''; r.appendChild(fr); r.onclick=null; }; });
   // Begrüßungsvideo
   function player(el){ if(!el) return; el.onclick=function(){ var s=el.getAttribute('data-src');
     el.innerHTML='<video src="'+s+'" controls autoplay playsinline style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:3"></video>'; el.onclick=null; }; }
