@@ -1,0 +1,21 @@
+#smpx .gst{position:relative;padding:150px 0;background:radial-gradient(1100px 600px at 85% 0%,rgba(189,36,36,.16),rgba(10,10,10,0) 60%),radial-gradient(900px 500px at 0% 100%,rgba(214,150,80,.10),rgba(10,10,10,0) 60%),#0d0b0a;overflow:hidden}
+#smpx .gst-head{display:grid;grid-template-columns:1fr 1.3fr;gap:60px;align-items:end;margin-bottom:64px}
+#smpx .gst-head h2{font-size:clamp(46px,7vw,112px);margin-top:18px}
+#smpx .gst-intro{color:#d8d2c8;font-size:19px;max-width:620px}
+#smpx .gst-grid{display:grid;grid-template-columns:1.6fr 1fr 1fr;grid-template-rows:280px 280px;gap:14px}
+#smpx .gst-grid figure{position:relative;overflow:hidden;border-radius:4px;background:#1a1512}
+#smpx .gst-grid figure:after{content:"";position:absolute;inset:0;box-shadow:inset 0 0 0 1px rgba(244,242,238,.08);pointer-events:none}
+#smpx .gst-grid img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s ease}
+#smpx .gst-grid figure:hover img{transform:scale(1.04)}
+#smpx .gst-grid .g1{grid-row:1 / span 2}
+#smpx .gst-grid .g2{grid-column:2 / span 2}
+#smpx .gst-grid .g4 img{object-position:center 60%}
+#smpx .gst-feat{display:grid;grid-template-columns:repeat(4,1fr);gap:28px;margin-top:56px;padding-top:44px;border-top:1px solid var(--line)}
+#smpx .gst-feat .f{display:flex;gap:16px;align-items:flex-start}
+#smpx .gst-feat svg{flex:0 0 44px;width:44px;height:44px;padding:10px;border-radius:50%;border:1px solid rgba(214,150,80,.45);fill:none;stroke:#e8b77d;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;background:rgba(214,150,80,.06)}
+#smpx .gst-feat .ft{font-weight:700;font-size:16px;letter-spacing:.02em;margin-bottom:4px}
+#smpx .gst-feat .fd{color:var(--mut);font-size:15px;line-height:1.5}
+#smpx .gst-foot{display:flex;flex-wrap:wrap;gap:24px 40px;align-items:center;margin-top:56px}
+#smpx .gst-note{color:#8e8a84;font-size:13px;max-width:560px;line-height:1.5}
+@media(max-width:980px){#smpx .gst{padding:100px 0}#smpx .gst-head{grid-template-columns:1fr;gap:24px;margin-bottom:40px}#smpx .gst-grid{grid-template-columns:1fr 1fr;grid-template-rows:auto;grid-auto-rows:200px}#smpx .gst-grid .g1{grid-column:1 / span 2;grid-row:auto;height:300px}#smpx .gst-grid .g2{grid-column:1 / span 2}#smpx .gst-feat{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){#smpx .w .gst-grid{grid-auto-rows:160px}#smpx .gst-grid .g1{height:240px}#smpx .gst-feat{grid-template-columns:1fr;gap:22px}#smpx .gst-foot .btn{width:100%;justify-content:center}}
