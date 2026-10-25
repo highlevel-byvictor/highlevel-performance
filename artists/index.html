@@ -397,7 +397,7 @@ footer a{color:var(--mut)}
 
 /* Formular: Lead an Website-Postfach + eigenen Pabbly-Workflow, optional Double-Opt-in-Newsletter (Liste 14 Artists) */
 (()=>{
-  const ARTISTS_WEBHOOK=''; /* Pabbly „HLP Artists – Landingpage“ – wird nach Einrichtung eingetragen */
+  const ARTISTS_WEBHOOK='https://connect.pabbly.com/webhook-listener/webhook/IjU3NjAwNTZmMDYzZTA0MzE1MjY4NTUzNyI_3D_pc/IjU3NjcwNTZiMDYzNjA0M2Q1MjY4NTUzNTUxMzEi_pc'; /* Pabbly „HLP Artists – Landingpage Leads (Meta)“ */
   const NL_WEBHOOK='https://connect.pabbly.com/webhook-listener/webhook/IjU3NjAwNTZmMDYzZTA0MzE1MjY4NTUzNyI_3D_pc/IjU3NjcwNTY4MDYzZjA0MzI1MjY0NTUzMTUxM2Ii_pc';
   const f=document.getElementById('artistForm'), m=document.getElementById('formMsg');
   const utm=()=>{const p=new URLSearchParams(location.search);return ['utm_source','utm_medium','utm_campaign','utm_content','fbclid'].map(k=>p.get(k)?k+'='+p.get(k):'').filter(Boolean).join('&')||'direkt';};
@@ -424,7 +424,7 @@ footer a{color:var(--mut)}
       const r=await fetch('https://formular.highlevel-performance.de/kontakt.php',{method:'POST',body:p}); const j=await r.json(); ok=!!(j&&j.ok);
     }catch(_){}
     if(ARTISTS_WEBHOOK){
-      const o=new URLSearchParams({name,email:em,tel,kuenstlername:String(fd.get('kuenstlername')||''),instagram:String(fd.get('instagram')||''),newsletter:nl,quelle:utm(),seite:'artists',...a,datum:new Date().toLocaleString('sv-SE',{timeZone:'Europe/Berlin'})});
+      const o=new URLSearchParams({name,email:em,tel,firma:String(fd.get('kuenstlername')||'').trim()||'-',formular:'artists-landingpage',kuenstlername:String(fd.get('kuenstlername')||''),instagram:String(fd.get('instagram')||''),newsletter:nl,quelle:utm(),seite:'artists',...a,antworten:summary,datum:new Date().toLocaleString('sv-SE',{timeZone:'Europe/Berlin'})});
       try{ await fetch(ARTISTS_WEBHOOK,{method:'POST',mode:'no-cors',body:o}); ok=true; }catch(_){}
     }
     if(!ok){ btn.disabled=false; btn.textContent='Kostenloses Erstgespräch anfragen'; show('Das hat leider nicht geklappt. Schreib uns gern direkt an <a href="mailto:info@highlevel-performance.de">info@highlevel-performance.de</a> oder per WhatsApp an <a href="https://wa.me/4915561068899">+49 15561 068899</a>.',false); return; }
