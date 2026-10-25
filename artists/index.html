@@ -1,0 +1,447 @@
+<!doctype html>
+<html lang="de"><head><script>if(location.protocol==="http:"&&/highlevel-performance\.de$/.test(location.hostname))location.replace("https://"+location.host+location.pathname+location.search+location.hash)</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Mehr Reichweite, Streams &amp; Bookings für Artists | High Level Performance</title>
+<meta name="description" content="Deine Musik verdient eine Bühne. Artist-Website, Social Media, Musikvideos und Werbung, die deine Fans findet. Kostenloses Erstgespräch für Artists.">
+<link rel="canonical" href="https://www.highlevel-performance.de/artists/">
+<meta property="og:title" content="Deine Musik verdient eine Bühne | High Level Performance for Artists">
+<meta property="og:description" content="Mehr Reichweite, mehr Streams, mehr Booking-Anfragen. Kostenloses Erstgespräch.">
+<meta property="og:image" content="https://www.highlevel-performance.de/video/artists-erklaerfilm-poster.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#0A0A0A">
+<link rel="stylesheet" href="../assets/fonts.css">
+<style>
+:root{--bg:#0A0A0A;--bg2:#141414;--card:#181818;--line:rgba(255,255,255,.1);--tx:#F4F1EC;--mut:#B9B3AA;--red:#E90E0E;--red2:#FF3B3B;--f-brand:'Poppins',Arial,sans-serif;--f-serif:'Bodoni Moda',Georgia,serif;--f-mono:'JetBrains Mono',monospace;--f-body:'Manrope','Poppins',Arial,sans-serif}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.6 var(--f-body);-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{max-width:100%;display:block}
+a{color:inherit}
+.wrap{width:min(1160px,100% - 32px);margin:0 auto}
+.k{font:500 11px/1 var(--f-mono);letter-spacing:.22em;text-transform:uppercase;color:var(--red2)}
+h1,h2,h3{font-family:var(--f-brand);margin:0;line-height:1.08;letter-spacing:-.02em}
+.serif{font-family:var(--f-serif);font-style:italic;font-weight:500;letter-spacing:-.01em}
+.red{color:var(--red)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--red);color:#fff;border:0;border-radius:10px;padding:15px 24px;font:700 15px/1 var(--f-brand);text-decoration:none;cursor:pointer;transition:transform .15s,background .15s}
+.btn:hover{background:var(--red2);transform:translateY(-1px)}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,.25)}
+/* Kopf */
+.top{position:sticky;top:0;z-index:50;background:rgba(10,10,10,.86);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{text-decoration:none;line-height:1}
+.logo b{display:block;font:900 15px/1 var(--f-brand);letter-spacing:.02em}
+.logo span{display:block;font:500 9px/1.3 var(--f-mono);letter-spacing:.3em;color:var(--mut)}
+.logo i{font:400 20px/1 'Mr Dafoe',cursive;color:var(--red);margin-left:46px;display:block;margin-top:-6px}
+.top .btn{padding:11px 16px;font-size:13px}
+/* Hero */
+.hero{position:relative;padding:72px 0 56px;background:radial-gradient(900px 500px at 80% 10%,rgba(233,14,14,.28),transparent 60%),radial-gradient(600px 400px at 0% 100%,rgba(233,14,14,.12),transparent 60%)}
+.hero .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(40px,6vw,74px);font-weight:800}
+.hero h1 .serif{display:block;font-weight:400;font-size:.92em}
+.hero p.lead{font-size:18px;color:#DDD7CE;max-width:560px;margin:22px 0 28px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin:0 0 30px;padding:0;list-style:none}
+.chips li{font:600 13px/1 var(--f-brand);padding:10px 14px;border-radius:999px;border:1px solid rgba(233,14,14,.45);background:rgba(233,14,14,.08)}
+.hero .cta{display:flex;gap:12px;flex-wrap:wrap}
+.film{position:relative;border-radius:22px;overflow:hidden;border:1px solid rgba(233,14,14,.4);box-shadow:0 40px 90px -30px rgba(233,14,14,.55);background:#000;aspect-ratio:1/1}
+.film video{width:100%;height:100%;object-fit:cover}
+.film .play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:var(--red);color:#fff;border:0;border-radius:999px;padding:16px 22px;font:700 15px/1 var(--f-brand);cursor:pointer;box-shadow:0 10px 30px rgba(0,0,0,.5)}
+.film .play[hidden]{display:none}
+.note{font-size:12px;color:var(--mut);margin-top:10px}
+/* Abschnitte */
+.sec{padding:84px 0;border-top:1px solid var(--line)}
+.sec h2{font-size:clamp(30px,4.4vw,52px);font-weight:800;max-width:860px}
+.sec h2 .serif{font-weight:400}
+.sec p.sub{color:var(--mut);font-size:17px;max-width:680px;margin:18px 0 0}
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.grid4{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:40px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:26px}
+.card h3{font-size:20px;margin:14px 0 8px}
+.card p{margin:0;color:var(--mut);font-size:15px}
+.num{font:700 13px/1 var(--f-mono);color:var(--red2)}
+.prob{background:linear-gradient(180deg,#120606,#0A0A0A)}
+.big{font:800 clamp(56px,9vw,120px)/1 var(--f-brand);color:var(--red);letter-spacing:-.04em}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.photo{border-radius:20px;overflow:hidden;border:1px solid var(--line);aspect-ratio:4/5}
+.photo img{width:100%;height:100%;object-fit:cover}
+.list{list-style:none;padding:0;margin:26px 0 0;display:grid;gap:12px}
+.list li{display:flex;gap:12px;align-items:flex-start;font-size:16px}
+.list li::before{content:"";flex:none;width:10px;height:10px;margin-top:8px;border-radius:50%;background:var(--red);box-shadow:0 0 12px var(--red)}
+.steps{counter-reset:s;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.steps .card::before{counter-increment:s;content:"0" counter(s);font:700 13px/1 var(--f-mono);color:var(--red2)}
+/* Formular */
+.form-sec{background:radial-gradient(800px 400px at 50% 0%,rgba(233,14,14,.22),transparent 65%),var(--bg)}
+.fbox{display:grid;grid-template-columns:.8fr 1.2fr;gap:40px;margin-top:40px;align-items:start}
+.fside .card{margin-bottom:14px}
+form#artistForm{background:var(--bg2);border:1px solid rgba(233,14,14,.35);border-radius:22px;padding:28px}
+fieldset{border:0;margin:0 0 22px;padding:0}
+legend{font:700 16px/1.35 var(--f-brand);margin-bottom:12px;padding:0}
+legend small{display:block;font:500 13px var(--f-body);color:var(--mut);margin-top:4px}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.opt{position:relative}
+.opt input{position:absolute;opacity:0;inset:0;margin:0;cursor:pointer}
+.opt span{display:block;height:100%;padding:12px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.14);background:#1d1d1d;font-size:14.5px;line-height:1.35;cursor:pointer;transition:.15s}
+.opt input:checked+span{border-color:var(--red);background:rgba(233,14,14,.16);box-shadow:inset 0 0 0 1px var(--red)}
+.opt input:focus-visible+span{outline:2px solid var(--red2);outline-offset:2px}
+.fields{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.fields label{display:block;font:600 13px var(--f-brand);color:#DDD7CE}
+.fields input{display:block;width:100%;margin-top:6px;padding:13px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.18);background:#0f0f0f;color:var(--tx);font:500 15px var(--f-body);outline:none}
+.fields input:focus{border-color:var(--red)}
+.chk{display:flex;gap:10px;align-items:flex-start;font-size:13.5px;line-height:1.5;color:#DDD7CE;margin:16px 0 0}
+.chk input{width:18px;height:18px;flex:none;margin-top:2px;accent-color:var(--red)}
+.chk a{color:#fff}
+.submit{margin-top:22px;width:100%;padding:18px;font-size:16px}
+.msg{margin-top:14px;padding:14px 16px;border-radius:12px;font-size:15px}
+.msg.ok{background:rgba(40,180,90,.14);border:1px solid rgba(40,180,90,.5)}
+.msg.err{background:rgba(233,14,14,.14);border:1px solid rgba(233,14,14,.5)}
+.step-ind{font:500 12px var(--f-mono);color:var(--mut);letter-spacing:.12em;margin-bottom:18px}
+/* FAQ */
+details{border-bottom:1px solid var(--line);padding:18px 0}
+summary{cursor:pointer;font:700 17px/1.4 var(--f-brand);list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::after{content:"+";color:var(--red);font-size:22px;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--mut);margin:10px 0 0}
+footer{border-top:1px solid var(--line);padding:36px 0 110px;color:var(--mut);font-size:13px}
+footer .wrap{display:flex;gap:20px;flex-wrap:wrap;justify-content:space-between}
+footer nav{display:flex;gap:16px;flex-wrap:wrap}
+footer a{color:var(--mut)}
+.disc{flex-basis:100%;font-size:12px}
+.sticky{position:fixed;left:12px;right:12px;bottom:12px;z-index:40;display:none}
+.sticky .btn{width:100%;box-shadow:0 14px 40px rgba(0,0,0,.6)}
+/* Cookie */
+.ck{position:fixed;left:16px;right:16px;bottom:16px;z-index:9997;display:flex;justify-content:center}
+.ck[hidden]{display:none}
+.ck-in{width:min(720px,100%);background:rgba(20,20,20,.97);color:var(--tx);border:1px solid rgba(233,14,14,.4);border-radius:18px;padding:18px 20px;box-shadow:0 20px 60px rgba(0,0,0,.6);font-size:14px}
+.ck-in b{font-family:var(--f-brand);font-size:15px}
+.ck-in p{margin:6px 0 12px;color:#CFC9C0}
+.ck-in a{color:#fff}
+.ck-opts{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:12px}
+.ck-opts[hidden]{display:none}
+.ck-btn{display:flex;gap:8px;flex-wrap:wrap;justify-content:flex-end}
+.ck-btn button{font:600 13px var(--f-brand);padding:10px 14px;border-radius:10px;border:1px solid rgba(255,255,255,.2);background:transparent;color:var(--tx);cursor:pointer}
+.ck-btn button.pri{background:var(--red);border-color:var(--red)}
+.ck-btn button[hidden]{display:none}
+@media (max-width:900px){
+  .hero{padding:40px 0 40px}
+  .hero .wrap,.split,.fbox{grid-template-columns:1fr;gap:32px}
+  .grid3,.grid4,.steps{grid-template-columns:1fr}
+  .sec{padding:60px 0}
+  .opts,.fields{grid-template-columns:1fr}
+  .sticky{display:block}
+  .top .btn{display:none}
+  form#artistForm{padding:20px}
+  .fside{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+
+<header class="top"><div class="wrap">
+  <a class="logo" href="../" aria-label="High Level Performance Startseite"><b>HIGH LEVEL</b><span>PERFORMANCE</span><i>by Victor</i></a>
+  <a class="btn" href="#erstgespraech">Kostenloses Erstgespräch</a>
+</div></header>
+
+<main>
+<section class="hero">
+  <div class="wrap">
+    <div>
+      <div class="k">High Level Performance · For Artists</div>
+      <h1 style="margin-top:18px">Deine Musik verdient eine Bühne. <span class="serif">Wir sorgen dafür, dass sie <span class="red">gehört</span> wird.</span></h1>
+      <p class="lead">Mehr Reichweite, mehr Streams, mehr Fans und Booking-Anfragen für Auftritte. Dafür baue ich dir das System dahinter: Artist-Website, Social Media, Musikvideos und Werbung, die deine Fans findet.</p>
+      <ul class="chips"><li>Reichweite</li><li>Streams</li><li>Booking-Anfragen</li><li>Echte Fans</li><li>Geld mit Musik</li></ul>
+      <div class="cta"><a class="btn" href="#erstgespraech">Kostenloses Erstgespräch sichern</a><a class="btn ghost" href="#film">Film ansehen</a></div>
+    </div>
+    <div id="film">
+      <div class="film">
+        <video id="vid" playsinline preload="metadata" poster="../video/artists-erklaerfilm-poster.jpg">
+          <source src="../video/artists-erklaerfilm-1x1.mp4" type="video/mp4">
+        </video>
+        <button class="play" id="playBtn" type="button">▶ Mit Ton ansehen</button>
+      </div>
+      <p class="note">Animierter Erklärfilm (KI-unterstützt erstellt). Lea ist eine Beispielfigur.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec prob">
+  <div class="wrap split">
+    <div>
+      <div class="k">Das Problem</div>
+      <h2 style="margin-top:16px">Gute Songs reichen nicht. <span class="serif red">Wer nicht sichtbar ist, geht unter.</span></h2>
+      <p class="sub">Jeden Tag erscheinen unzählige neue Songs. Die meisten hört kaum jemand, egal wie gut sie sind. Nicht weil die Musik schlecht ist, sondern weil keiner sie findet.</p>
+      <ul class="list">
+        <li>Du postest, aber die Reichweite bleibt klein.</li>
+        <li>Deine Streams kommen nicht vom Fleck.</li>
+        <li>Booking-Anfragen? Fehlanzeige.</li>
+        <li>Veranstalter finden nichts Professionelles über dich.</li>
+      </ul>
+    </div>
+    <div class="photo"><img src="../assets/artist-mic-v1.jpg" alt="Artist am Mikrofon" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="k">Die Lösung</div>
+    <h2 style="margin-top:16px">Sichtbarkeit. <span class="serif">Aber nur, wenn alles zusammenspielt.</span></h2>
+    <p class="sub">Einzelne Posts bringen wenig. Erst wenn alles verbunden ist, wirst du gefunden, gebucht und gehört.</p>
+    <div class="grid4">
+      <div class="card"><span class="num">01</span><h3>Artist-Website</h3><p>Dein professioneller Auftritt mit Musik, Videos, Pressekit und Booking-Formular. Veranstalter sehen sofort: Hier ist ein Profi.</p></div>
+      <div class="card"><span class="num">02</span><h3>Social Media, verknüpft</h3><p>Instagram, TikTok, YouTube und Spotify arbeiten zusammen statt nebeneinander. Jeder Kanal führt zu dir.</p></div>
+      <div class="card"><span class="num">03</span><h3>Musikvideos &amp; Content</h3><p>Videos und Clips, die auffallen. Gedreht und produziert aus einer Hand, im eigenen Studio.</p></div>
+      <div class="card"><span class="num">04</span><h3>Werbung, die Fans findet</h3><p>Gezielte Kampagnen auf Meta, TikTok und YouTube für mehr Hörer, Follower und Booking-Anfragen.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap split">
+    <div class="photo"><img src="../assets/artist-sing-v1.jpg" alt="Artist singt auf der Bühne" loading="lazy"></div>
+    <div>
+      <div class="k">Was du davon hast</div>
+      <h2 style="margin-top:16px">Mehr Reichweite. Mehr Bühne. <span class="serif red">Mehr Fame.</span></h2>
+      <ul class="list">
+        <li>Mehr Menschen hören deine Songs, auf Spotify, Instagram und TikTok.</li>
+        <li>Veranstalter finden dich und schicken Booking-Anfragen.</li>
+        <li>Echte Fans, die zu deinen Shows kommen und Merch kaufen.</li>
+        <li>Ein Auftritt, mit dem du Geld mit deiner Musik verdienen kannst.</li>
+        <li>Und das System arbeitet für dich, auch wenn du schläfst.</li>
+      </ul>
+      <p class="note" style="margin-top:18px">Wir versprechen keine bestimmten Zahlen an Streams oder Bookings. Das hängt von deiner Musik, deinem Genre und deiner Mitarbeit ab. Was wir versprechen: ein System, mit dem du gefunden wirst.</p>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap">
+    <div class="k">So läuft es ab</div>
+    <h2 style="margin-top:16px">In drei Schritten <span class="serif">zu deinem System.</span></h2>
+    <div class="steps">
+      <div class="card"><h3>Fragebogen ausfüllen</h3><p>Zwei Minuten. Damit wir wissen, wo du stehst und wo du hinwillst.</p></div>
+      <div class="card"><h3>Kostenloses Erstgespräch</h3><p>Wir schauen uns deine Musik und deine Kanäle an und zeigen dir, was für dich möglich ist. Ehrlich, auch wenn es (noch) nicht passt.</p></div>
+      <div class="card"><h3>Dein Plan</h3><p>Du bekommst einen klaren Plan: was wir bauen, was es kostet und wann es losgeht.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="sec form-sec" id="erstgespraech">
+  <div class="wrap">
+    <div class="k">Kostenloses Erstgespräch</div>
+    <h2 style="margin-top:16px">Erzähl uns kurz, <span class="serif red">wo du hinwillst.</span></h2>
+    <p class="sub">Ein paar Klicks, dann melden wir uns innerhalb von 24 Stunden bei dir.</p>
+    <div class="fbox">
+      <div class="fside">
+        <div class="card"><h3 style="margin-top:0">Unverbindlich &amp; kostenlos</h3><p>Das Erstgespräch kostet dich nichts und verpflichtet dich zu nichts.</p></div>
+        <div class="card"><h3 style="margin-top:0">Ehrliche Einschätzung</h3><p>Wenn wir dir nicht helfen können, sagen wir dir das direkt.</p></div>
+        <div class="card"><h3 style="margin-top:0">Aus einer Hand</h3><p>Website, Social Media, Videos, Sound und Werbung, alles bei uns.</p></div>
+      </div>
+
+      <form id="artistForm" novalidate>
+        <fieldset>
+          <legend>1. Was machst du?</legend>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="genre" value="Rap/HipHop" required><span>Rap / HipHop</span></label>
+            <label class="opt"><input type="radio" name="genre" value="Pop/Singer"><span>Pop / Singer</span></label>
+            <label class="opt"><input type="radio" name="genre" value="Band"><span>Band</span></label>
+            <label class="opt"><input type="radio" name="genre" value="Producer/DJ"><span>Producer / DJ</span></label>
+            <label class="opt"><input type="radio" name="genre" value="Sonstiges"><span>Sonstiges</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>2. Wo stehst du gerade?</legend>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="stand" value="Erste Songs" required><span>Erste Songs</span></label>
+            <label class="opt"><input type="radio" name="stand" value="Veröffentliche regelmäßig"><span>Veröffentliche regelmäßig</span></label>
+            <label class="opt"><input type="radio" name="stand" value="Spiele schon live"><span>Spiele schon live</span></label>
+            <label class="opt"><input type="radio" name="stand" value="Verdiene schon etwas mit Musik"><span>Verdiene schon etwas mit Musik</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>3. Was willst du am meisten?</legend>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="ziel" value="Mehr Reichweite und Streams" required><span>Mehr Reichweite und Streams</span></label>
+            <label class="opt"><input type="radio" name="ziel" value="Booking-Anfragen und Bühnen"><span>Booking-Anfragen und Bühnen</span></label>
+            <label class="opt"><input type="radio" name="ziel" value="Echte Fans (Tickets, Merch)"><span>Echte Fans, die Tickets und Merch kaufen</span></label>
+            <label class="opt"><input type="radio" name="ziel" value="Von meiner Musik leben"><span>Von meiner Musik leben</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>4. Was bremst dich gerade?</legend>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="engpass" value="Kaum jemand kennt mich" required><span>Kaum jemand kennt mich</span></label>
+            <label class="opt"><input type="radio" name="engpass" value="Keine Booking-Anfragen"><span>Keine Booking-Anfragen</span></label>
+            <label class="opt"><input type="radio" name="engpass" value="Kein Plan für Social Media"><span>Kein Plan für Social Media</span></label>
+            <label class="opt"><input type="radio" name="engpass" value="Kein professioneller Auftritt"><span>Kein professioneller Auftritt (Website, Videos, Sound)</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>5. Was hast du schon?<small>Mehrere möglich</small></legend>
+          <div class="opts">
+            <label class="opt"><input type="checkbox" name="hat" value="Eigene Website"><span>Eigene Website</span></label>
+            <label class="opt"><input type="checkbox" name="hat" value="Aktives Instagram/TikTok"><span>Aktives Instagram / TikTok</span></label>
+            <label class="opt"><input type="checkbox" name="hat" value="Spotify-Profil"><span>Spotify-Profil</span></label>
+            <label class="opt"><input type="checkbox" name="hat" value="Musikvideos"><span>Musikvideos</span></label>
+            <label class="opt"><input type="checkbox" name="hat" value="Werbeanzeigen"><span>Werbeanzeigen</span></label>
+            <label class="opt"><input type="checkbox" name="hat" value="Noch nichts davon"><span>Noch nichts davon</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>6. Wann willst du starten?</legend>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="start" value="Sofort" required><span>Sofort</span></label>
+            <label class="opt"><input type="radio" name="start" value="In 1–3 Monaten"><span>In 1–3 Monaten</span></label>
+            <label class="opt"><input type="radio" name="start" value="Erst mal informieren"><span>Erst mal informieren</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>7. Was willst du in deine Karriere investieren?</legend>
+          <div class="opts">
+            <label class="opt"><input type="radio" name="budget" value="Unter 500 €" required><span>Unter 500 €</span></label>
+            <label class="opt"><input type="radio" name="budget" value="500–1.500 €"><span>500–1.500 €</span></label>
+            <label class="opt"><input type="radio" name="budget" value="Über 1.500 €"><span>Über 1.500 €</span></label>
+            <label class="opt"><input type="radio" name="budget" value="Weiß ich noch nicht"><span>Weiß ich noch nicht</span></label>
+          </div>
+        </fieldset>
+        <fieldset>
+          <legend>8. Wie erreichen wir dich?</legend>
+          <div class="fields">
+            <label>Vor- und Nachname<input name="name" required autocomplete="name"></label>
+            <label>Künstlername<input name="kuenstlername" autocomplete="off"></label>
+            <label>Instagram (@name)<input name="instagram" autocomplete="off" placeholder="@deinname"></label>
+            <label>Telefon / WhatsApp<input name="tel" type="tel" required autocomplete="tel"></label>
+            <label style="grid-column:1/-1">E-Mail<input name="email" type="email" required autocomplete="email"></label>
+          </div>
+          <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
+          <label class="chk"><input type="checkbox" name="newsletter" value="ja" checked> <span>Ja, ich will die E-Mails mit Tipps für mehr Reichweite und Bookings bekommen. Abmelden geht jederzeit über den Link in jeder Mail.</span></label>
+          <label class="chk"><input type="checkbox" name="dsgvo" required> <span>Ich bin einverstanden, dass High Level Performance meine Angaben zur Bearbeitung meiner Anfrage nutzt und mich dazu kontaktiert. Mehr in der <a href="../datenschutz/" target="_blank" rel="noopener">Datenschutzerklärung</a>.</span></label>
+        </fieldset>
+        <button class="btn submit" type="submit">Kostenloses Erstgespräch anfragen</button>
+        <div class="msg" id="formMsg" hidden role="status"></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="wrap" style="max-width:860px">
+    <div class="k">Fragen</div>
+    <h2 style="margin-top:16px">Gut zu wissen</h2>
+    <details><summary>Was kostet das?</summary><p>Das hängt davon ab, was du brauchst: nur eine Artist-Website oder das komplette System mit Social Media, Videos und Werbung. Den genauen Preis bekommst du im kostenlosen Erstgespräch, nachdem wir uns deine Situation angesehen haben. Werbebudget zahlst du direkt an die Plattform.</p></details>
+    <details><summary>Bekomme ich garantiert mehr Streams oder Bookings?</summary><p>Niemand kann dir seriös Zahlen garantieren. Wir bauen dir ein System, mit dem du gefunden wirst und professionell auftrittst. Wie schnell es wächst, hängt auch von deiner Musik und deiner Mitarbeit ab.</p></details>
+    <details><summary>Ich habe noch kaum Songs. Ist das trotzdem was für mich?</summary><p>Füll den Fragebogen trotzdem aus. Wenn es für dich noch zu früh ist, sagen wir dir das ehrlich und geben dir Tipps für den Start.</p></details>
+    <details><summary>Muss ich mich um die Technik kümmern?</summary><p>Nein. Du lieferst Musik und Inhalte, wir kümmern uns um Website, Kanäle, Videos und Kampagnen.</p></details>
+    <details><summary>Wer steckt dahinter?</summary><p>High Level Performance by Victor aus Bersenbrück. Musikproduzent und Online-Marketer mit über 15 Jahren Erfahrung und eigenem Tonstudio.</p></details>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap">
+  <span>© 2026 High Level Performance by Victor</span>
+  <nav><a href="../">Startseite</a><a href="../impressum/">Impressum</a><a href="../datenschutz/">Datenschutz</a><a href="#" data-cookie>Cookie-Einstellungen</a><a href="https://www.instagram.com/highlevel.byvictor/" target="_blank" rel="noopener">Instagram</a></nav>
+  <p class="disc">Hinweis: Ergebnisse hängen von Musik, Genre, Angebot und Mitarbeit ab. Wir garantieren keine bestimmte Anzahl an Streams, Followern oder Booking-Anfragen.</p>
+</div></footer>
+
+<div class="sticky"><a class="btn" href="#erstgespraech">Kostenloses Erstgespräch</a></div>
+
+<div class="ck" id="ck" hidden role="dialog" aria-label="Cookie-Einstellungen">
+  <div class="ck-in">
+    <b>Cookies &amp; Datenschutz</b>
+    <p>Wir nutzen technisch notwendige Speicherung. Mit deiner Zustimmung setzen wir zusätzlich Marketing (Meta-Pixel) ein, um unsere Seite und Werbung zu verbessern. Mehr in der <a href="../datenschutz/" target="_blank" rel="noopener">Datenschutzerklärung</a>.</p>
+    <div class="ck-opts" id="ckOpts" hidden>
+      <label><input type="checkbox" checked disabled> Notwendig</label>
+      <label><input type="checkbox" id="ckStat"> Statistik</label>
+      <label><input type="checkbox" id="ckMkt"> Marketing</label>
+    </div>
+    <div class="ck-btn">
+      <button type="button" id="ckNo">Nur notwendige</button>
+      <button type="button" id="ckSet">Einstellungen</button>
+      <button type="button" id="ckSave" hidden>Auswahl speichern</button>
+      <button type="button" id="ckAll" class="pri">Alle akzeptieren</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(()=>{
+  /* Gleiche Einwilligung wie auf der restlichen Website (Schlüssel hlp_consent_v1) */
+  const CFG={GA4_ID:'', META_PIXEL_ID:'1365750992103370'};
+  const K='hlp_consent_v1';
+  const get=()=>{try{return JSON.parse(localStorage.getItem(K)||'null')}catch(e){return null}};
+  const set=v=>{try{localStorage.setItem(K,JSON.stringify(v))}catch(e){}};
+  const ck=document.getElementById('ck'), opts=document.getElementById('ckOpts');
+  let loaded=false;
+  function load(c){
+    if(c.mkt && CFG.META_PIXEL_ID && !loaded){ loaded=true;
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init',CFG.META_PIXEL_ID); fbq('track','PageView'); fbq('track','ViewContent',{content_name:'Artists-Landingpage'}); }
+  }
+  function save(c){ set(c); ck.hidden=true; load(c); }
+  function open(){ const c=get()||{stat:false,mkt:false}; document.getElementById('ckStat').checked=!!c.stat; document.getElementById('ckMkt').checked=!!c.mkt; ck.hidden=false; }
+  document.getElementById('ckAll').onclick=()=>save({stat:true,mkt:true,t:Date.now()});
+  document.getElementById('ckNo').onclick=()=>save({stat:false,mkt:false,t:Date.now()});
+  document.getElementById('ckSet').onclick=()=>{opts.hidden=false; document.getElementById('ckSet').hidden=true; document.getElementById('ckSave').hidden=false;};
+  document.getElementById('ckSave').onclick=()=>save({stat:document.getElementById('ckStat').checked,mkt:document.getElementById('ckMkt').checked,t:Date.now()});
+  const c0=get(); if(c0) load(c0); else ck.hidden=false;
+  document.addEventListener('click',e=>{ if(e.target.closest('[data-cookie]')){ e.preventDefault(); open(); } });
+})();
+
+/* Film */
+(()=>{
+  const v=document.getElementById('vid'), b=document.getElementById('playBtn');
+  const sq=matchMedia('(max-width:900px)').matches;
+  if(sq){ v.poster='../video/artists-erklaerfilm-poster-9x16.jpg'; v.querySelector('source').src='../video/artists-erklaerfilm-9x16.mp4'; v.parentElement.style.aspectRatio='9/16'; v.load(); }
+  b.onclick=()=>{ b.hidden=true; v.controls=true; v.play(); try{ if(window.fbq) fbq('trackCustom','FilmGestartet',{seite:'artists'}); }catch(_){} };
+  v.addEventListener('ended',()=>{ document.getElementById('erstgespraech').scrollIntoView({behavior:'smooth'}); });
+})();
+
+/* Formular: Lead an Website-Postfach + eigenen Pabbly-Workflow, optional Double-Opt-in-Newsletter (Liste 14 Artists) */
+(()=>{
+  const ARTISTS_WEBHOOK=''; /* Pabbly „HLP Artists – Landingpage“ – wird nach Einrichtung eingetragen */
+  const NL_WEBHOOK='https://connect.pabbly.com/webhook-listener/webhook/IjU3NjAwNTZmMDYzZTA0MzE1MjY4NTUzNyI_3D_pc/IjU3NjcwNTY4MDYzZjA0MzI1MjY0NTUzMTUxM2Ii_pc';
+  const f=document.getElementById('artistForm'), m=document.getElementById('formMsg');
+  const utm=()=>{const p=new URLSearchParams(location.search);return ['utm_source','utm_medium','utm_campaign','utm_content','fbclid'].map(k=>p.get(k)?k+'='+p.get(k):'').filter(Boolean).join('&')||'direkt';};
+  const show=(t,ok)=>{m.hidden=false;m.className='msg '+(ok?'ok':'err');m.innerHTML=t;};
+  f.addEventListener('submit',async e=>{
+    e.preventDefault();
+    if(f.website.value) return;
+    const need=['genre','stand','ziel','engpass','start','budget'];
+    for(const n of need){ if(!f.querySelector('input[name="'+n+'"]:checked')){ show('Bitte beantworte noch Frage '+({genre:1,stand:2,ziel:3,engpass:4,start:6,budget:7}[n])+'.',false); f.querySelector('input[name="'+n+'"]').closest('fieldset').scrollIntoView({behavior:'smooth',block:'center'}); return; } }
+    const fd=new FormData(f);
+    const name=String(fd.get('name')||'').trim(), em=String(fd.get('email')||'').trim(), tel=String(fd.get('tel')||'').trim();
+    if(name.length<2){ f.name.focus(); show('Bitte gib deinen Namen an.',false); return; }
+    if(!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(em)){ f.email.focus(); show('Bitte gib eine gültige E-Mail-Adresse an.',false); return; }
+    if(tel.replace(/\D/g,'').length<6){ f.tel.focus(); show('Bitte gib deine Telefonnummer an.',false); return; }
+    if(!f.dsgvo.checked){ show('Bitte setz noch das Häkchen zur Datenschutzerklärung.',false); return; }
+    const hat=fd.getAll('hat').join(', ')||'-';
+    const a={genre:fd.get('genre'),stand:fd.get('stand'),ziel:fd.get('ziel'),engpass:fd.get('engpass'),hat:hat,start:fd.get('start'),budget:fd.get('budget')};
+    const nl=f.newsletter.checked?'ja':'nein';
+    const summary='ARTISTS-LANDINGPAGE | Genre: '+a.genre+' | Stand: '+a.stand+' | Ziel: '+a.ziel+' | Engpass: '+a.engpass+' | Hat: '+a.hat+' | Start: '+a.start+' | Budget: '+a.budget+' | Instagram: '+(fd.get('instagram')||'-')+' | Newsletter: '+nl+' | Quelle: '+utm();
+    const btn=f.querySelector('button[type=submit]'); btn.disabled=true; btn.textContent='Wird gesendet …';
+    let ok=false;
+    try{
+      const p=new FormData(); p.set('name',name); p.set('firma',String(fd.get('kuenstlername')||'').trim()||'Artist'); p.set('tel',tel); p.set('email',em); p.set('quelle','artists-landingpage'); p.set('ziel',summary); p.set('newsletter',nl);
+      const r=await fetch('https://formular.highlevel-performance.de/kontakt.php',{method:'POST',body:p}); const j=await r.json(); ok=!!(j&&j.ok);
+    }catch(_){}
+    if(ARTISTS_WEBHOOK){
+      const o=new URLSearchParams({name,email:em,tel,kuenstlername:String(fd.get('kuenstlername')||''),instagram:String(fd.get('instagram')||''),newsletter:nl,quelle:utm(),seite:'artists',...a,datum:new Date().toLocaleString('sv-SE',{timeZone:'Europe/Berlin'})});
+      try{ await fetch(ARTISTS_WEBHOOK,{method:'POST',mode:'no-cors',body:o}); ok=true; }catch(_){}
+    }
+    if(!ok){ btn.disabled=false; btn.textContent='Kostenloses Erstgespräch anfragen'; show('Das hat leider nicht geklappt. Schreib uns gern direkt an <a href="mailto:info@highlevel-performance.de">info@highlevel-performance.de</a> oder per WhatsApp an <a href="https://wa.me/4915561068899">+49 15561 068899</a>.',false); return; }
+    try{ if(window.fbq) fbq('track','Lead',{content_name:'Erstgespräch Artists-Seite',content_category:'artists'}); }catch(_){}
+    if(nl==='ja'){
+      const vn=name.split(' ')[0], iso=new Date().toLocaleDateString('sv-SE',{timeZone:'Europe/Berlin'});
+      const tk=btoa(unescape(encodeURIComponent(JSON.stringify({e:em,n:vn,l:'artists',d:iso})))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
+      const o=new URLSearchParams(); o.append('email',em); o.append('vorname',vn); o.append('liste','artists'); o.append('list_id','14'); o.append('datum',iso); o.append('token',tk);
+      o.append('betreff','Ein Klick noch – bestätige deine Anmeldung'); o.append('headline','Fast geschafft, '+vn+'!');
+      o.append('text','Bestätige mit einem Klick, dass du die High-Level-Mails für Artists bekommen willst. Danach kommt alle paar Tage eine Mail mit Tipps für mehr Reichweite, Streams und Booking-Anfragen.');
+      o.append('button','Ja, ich bin dabei'); o.append('hinweis','Du hast dich nicht angemeldet? Dann ignorier diese Mail einfach. Ohne Bestätigung tragen wir dich nicht ein.');
+      o.append('bild','https://www.highlevel-performance.de/assets/mail/img/a01.jpg');
+      try{ fetch(NL_WEBHOOK,{method:'POST',mode:'no-cors',body:o}); }catch(_){}
+    }
+    f.reset(); btn.textContent='Gesendet ✓';
+    show('<b>Danke, '+name.split(' ')[0].replace(/[<>&]/g,'')+'! Deine Anfrage ist da.</b><br>Wir melden uns innerhalb von 24 Stunden bei dir.'+(nl==='ja'?'<br>Check auch dein Postfach und bestätige den Link in unserer Mail (schau zur Not im Spam-Ordner).':''),true);
+  });
+})();
+</script>
+</body></html>
