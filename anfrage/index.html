@@ -235,7 +235,7 @@ footer{padding:32px 0;font-size:13px;color:var(--mut);border-top:1px solid var(-
         </div>
         <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0">
         <input type="hidden" name="quelle" id="quelle"><input type="hidden" name="ziel" value="Mehr Kundenanfragen">
-        <label class="chk"><input type="checkbox" name="newsletter" value="ja" checked> <span>Ja, schicken Sie mir alle paar Tage Tipps zur Kundengewinnung per E-Mail. Abmeldung jederzeit möglich.</span></label>
+        <label class="chk"><input type="checkbox" name="newsletter" value="ja"> <span>Ja, schicken Sie mir alle paar Tage Tipps zur Kundengewinnung per E-Mail. Abmeldung jederzeit möglich.</span></label>
         <div class="err"></div>
         <div class="nav"><button class="btn ghost" type="button" data-prev>← Zurück</button><button class="btn red" type="submit" id="sub">Potenzialanalyse anfragen ⚡</button></div>
         <p class="tiny">Mit dem Absenden stimmen Sie zu, dass wir Sie zur Terminvereinbarung per Telefon, SMS und E-Mail kontaktieren. Details in der <a href="/datenschutz/">Datenschutzerklärung</a>.</p>
@@ -250,7 +250,7 @@ footer{padding:32px 0;font-size:13px;color:var(--mut);border-top:1px solid var(-
   <p>© High Level Performance · Bersenbrück</p>
 </div></footer>
 
-<script src="../assets/hlp-ads.js?v=20261019"></script>
+<script src="../assets/hlp-ads.js?v=20261026"></script>
 <script>
 /* Meta-Pixel (lädt nur mit Marketing-Einwilligung aus dem Cookie-Hinweis) */
 (function(){
@@ -298,6 +298,7 @@ footer{padding:32px 0;font-size:13px;color:var(--mut);border-top:1px solid var(-
     var o=new URLSearchParams(), u=new URLSearchParams(location.search);
     fd.forEach(function(v,k){ if(typeof v==='string' && k!=='website') o.append(k,v); });
     if(!o.get('newsletter')) o.set('newsletter','nein');
+    if(o.get('newsletter')==='ja'){ if(window.HLP_ADS&&HLP_ADS.doi) HLP_ADS.doi(o.get('email'),o.get('name')); o.set('newsletter','doi'); }
     ['utm_source','utm_medium','utm_campaign','utm_term','utm_content','fbclid'].forEach(function(k){ o.set(k, u.get(k)||''); });
     if(!o.get('utm_campaign')) o.set('utm_campaign','direkt');
     o.set('formular','anfrage-meta'); o.set('seite',location.href.split('#')[0]);

@@ -75,6 +75,23 @@
     document.body.appendChild(d);
   }
 
+  /* Newsletter nur per Double-Opt-in: Bestätigungsmail, Eintrag in Brevo erst nach Klick */
+  var DOI_HOOK = 'https://connect.pabbly.com/webhook-listener/webhook/IjU3NjAwNTZmMDYzZTA0MzE1MjY4NTUzNyI_3D_pc/IjU3NjcwNTY4MDYzZjA0MzI1MjY0NTUzMTUxM2Ii_pc';
+  function doi(email, name){
+    try{
+      email = String(email || '').trim(); if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return;
+      var vn = String(name || '').trim().split(' ')[0], iso = new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Berlin' });
+      var tk = btoa(unescape(encodeURIComponent(JSON.stringify({ e: email, n: vn, l: 'business', d: iso })))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+      var o = new URLSearchParams();
+      o.append('email', email); o.append('vorname', vn); o.append('liste', 'business'); o.append('list_id', '13'); o.append('datum', iso); o.append('token', tk);
+      o.append('betreff', 'Bitte bestätigen Sie Ihre Anmeldung'); o.append('headline', 'Fast geschafft' + (vn ? ', ' + vn : '') + '!');
+      o.append('text', 'Bitte bestätigen Sie mit einem Klick, dass Sie den Newsletter von High Level Performance erhalten möchten. Danach bekommen Sie alle paar Tage eine kurze E-Mail mit Strategien, die Ihrem Betrieb neue Kunden bringen.');
+      o.append('button', 'Anmeldung bestätigen'); o.append('hinweis', 'Sie haben sich nicht angemeldet? Dann ignorieren Sie diese E-Mail einfach. Ohne Bestätigung tragen wir Sie nicht ein.');
+      o.append('bild', 'https://www.highlevel-performance.de/assets/mail/img/b01.jpg');
+      fetch(DOI_HOOK, { method: 'POST', mode: 'no-cors', body: o, keepalive: true });
+    }catch(e){}
+  }
+
   /* Anfrage zusätzlich an den Pabbly-Workflow schicken (Brevo, ClickSend, Benachrichtigung) */
   function hook(fd, formular){
     if(!CFG.WEBHOOK) return;
@@ -82,12 +99,13 @@
       var o = new URLSearchParams();
       fd.forEach(function(v, k){ if(typeof v === 'string' && k !== 'website' && k !== 'ok') o.append(k, v); });
       if(!o.get('newsletter')) o.set('newsletter', 'nein');
+      if(o.get('newsletter') === 'ja'){ doi(o.get('email'), o.get('vorname') || o.get('name')); o.set('newsletter', 'doi'); }
       if(!o.get('quelle')) o.set('quelle', quelle() || 'direkt');
       o.set('formular', formular); o.set('seite', location.href.split('#')[0]); o.set('zeit', new Date().toLocaleString('de-DE', { timeZone: 'Europe/Berlin' })); o.set('datum', new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Berlin' }));
       fetch(CFG.WEBHOOK, { method: 'POST', mode: 'no-cors', body: o, keepalive: true });
     }catch(e){}
   }
 
-  window.HLP_ADS = { load: load, conv: conv, quelle: quelle, banner: banner, hook: hook, config: CFG };
+  window.HLP_ADS = { load: load, conv: conv, quelle: quelle, banner: banner, hook: hook, doi: doi, config: CFG };
   load(getConsent());
 })();

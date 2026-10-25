@@ -71,7 +71,7 @@ footer{padding:26px 0;font-size:13px;color:var(--mut);border-top:1px solid var(-
 
 <footer><div class="wrap"><a href="/impressum/">Impressum</a><a href="/datenschutz/">Datenschutz</a> · © High Level Performance</div></footer>
 
-<script src="../../assets/hlp-ads.js?v=20261019"></script>
+<script src="../../assets/hlp-ads.js?v=20261026"></script>
 <script>
 (function(){ var ID='1365750992103370',K='hlp_consent_v1'; function c(){ try{ return JSON.parse(localStorage.getItem(K)||'null'); }catch(e){ return null; } }
   function go(){ if(window.fbq) return; !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js'); fbq('init',ID); fbq('track','PageView'); fbq('trackCustom','DankeSeite'); }
@@ -83,7 +83,7 @@ footer{padding:26px 0;font-size:13px;color:var(--mut);border-top:1px solid var(-
   if(n) document.getElementById('h1').textContent='Danke, '+n+' – Ihre Anfrage ist da!';
   var f=document.getElementById('nlf'); if(n) f.vorname.value=n; if(em) f.email.value=em;
   /* Wer im Formular schon „Tipps per E-Mail“ angehakt hat, bekommt die Bestätigungsmail bereits – Box dann als erledigt zeigen */
-  if(nl){ f.hidden=true; var d=document.getElementById('nldone'); d.hidden=false; d.querySelector('.n').textContent='VORGEMERKT'; d.querySelector('p').textContent='Sie haben die Tipps per E-Mail bereits angehakt – die erste E-Mail kommt in Kürze.'; }
+  if(nl){ f.hidden=true; var d=document.getElementById('nldone'); d.hidden=false; d.querySelector('.n').textContent='VORGEMERKT'; d.querySelector('p').textContent='Fast geschafft: Wir haben Ihnen eine E-Mail geschickt. Bitte bestätigen Sie dort kurz Ihre Anmeldung (ggf. im Spam-Ordner nachsehen).'; }
 
   var v=document.getElementById('mv'), pl=document.getElementById('play');
   pl.addEventListener('click',function(){ v.play(); pl.style.display='none'; });
