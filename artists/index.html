@@ -6,7 +6,7 @@
 <meta name="description" content="Deine Musik verdient eine Bühne. Artist-Website, Social Media, Musikvideos und Werbung, die deine Fans findet. Kostenloses Erstgespräch für Artists.">
 <link rel="canonical" href="https://www.highlevel-performance.de/artists/">
 <meta property="og:title" content="Deine Musik verdient eine Bühne | High Level Performance for Artists">
-<meta property="og:description" content="Mehr Reichweite, mehr Streams, mehr Booking-Anfragen. Kostenloses Erstgespräch.">
+<meta property="og:description" content="Mehr Reichweite, mehr Streams, mehr Booking-Anfragen. Kostenloser Sichtbarkeits-Check.">
 <meta property="og:image" content="https://www.highlevel-performance.de/video/artists-erklaerfilm-poster.jpg">
 <meta property="og:type" content="website">
 <meta name="theme-color" content="#0A0A0A">
@@ -132,6 +132,18 @@ footer a{color:var(--mut)}
   form#artistForm{padding:20px}
   .fside{display:none}
 }
+.grid3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.hb-top{display:grid;grid-template-columns:1.4fr 1fr;gap:32px;align-items:end}
+.hb-ans{background:linear-gradient(135deg,#2A0606,#120707);border:1px solid rgba(233,14,14,.45);border-radius:18px;padding:26px;box-shadow:0 30px 60px -30px rgba(233,14,14,.45)}
+.hb-ans b{display:block;font-family:var(--f-brand);font-size:20px;color:var(--red2);margin-bottom:8px}
+.hb-ans p{margin:0;color:var(--mut);font-size:15px}
+.hb-h{font-size:22px;margin:44px 0 18px}
+.hb-grid .card h3{margin-top:0;font-size:18px;line-height:1.3}
+.tip{margin-top:26px;border:1px solid var(--line);border-left:4px solid var(--red);border-radius:16px;padding:22px 24px;background:var(--bg2)}
+.tip b{display:block;font-family:var(--f-brand);font-size:18px;margin-bottom:10px}
+.tip ul{margin:0;padding-left:18px;display:grid;grid-template-columns:1fr 1fr;gap:8px 28px;color:var(--mut);font-size:15px}
+.tip strong{color:var(--tx)}
+@media (max-width:900px){.hb-top{grid-template-columns:1fr}.tip ul{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 .vk-qr{display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:inherit}.vk-qr img{width:64px;height:64px;background:#fff;padding:5px;border-radius:10px;border:1px solid rgba(10,42,102,.15);transition:transform .2s}.vk-qr:hover img{transform:scale(1.06)}.vk-qr b{display:block;font-size:13.5px}.vk-qr small{display:block;font-size:12px;opacity:.75}
 </style>
@@ -140,7 +152,7 @@ footer a{color:var(--mut)}
 
 <header class="top"><div class="wrap">
   <a class="logo" href="../" aria-label="High Level Performance Startseite"><b>HIGH LEVEL</b><span>PERFORMANCE</span><i>by Victor</i></a>
-  <a class="btn" href="#erstgespraech">Kostenloses Erstgespräch</a>
+  <a class="btn" href="#erstgespraech">Kostenloser Sichtbarkeits-Check</a>
 </div></header>
 
 <main>
@@ -148,10 +160,10 @@ footer a{color:var(--mut)}
   <div class="wrap">
     <div>
       <div class="k">High Level Performance · For Artists</div>
-      <h1 style="margin-top:18px">Deine Musik verdient eine Bühne. <span class="serif">Wir sorgen dafür, dass sie <span class="red">gehört</span> wird.</span></h1>
-      <p class="lead">Mehr Reichweite, mehr Streams, mehr Fans und Booking-Anfragen für Auftritte. Dafür baue ich dir das System dahinter: Artist-Website, Social Media, Musikvideos und Werbung, die deine Fans findet.</p>
+      <h1 style="margin-top:18px">Damit Veranstalter dich buchen. <span class="serif">Und deine Songs <span class="red">gehört</span> werden.</span></h1>
+      <p class="lead">Mehr Sichtbarkeit für deine Musik: mehr Reichweite, mehr Streams, echte Fans und Booking-Anfragen für Auftritte. Dafür baue ich dir das System dahinter: Artist-Website, Social Media, Musikvideos und Werbung, die deine Fans findet.</p>
       <ul class="chips"><li>Reichweite</li><li>Streams</li><li>Booking-Anfragen</li><li>Echte Fans</li><li>Geld mit Musik</li></ul>
-      <div class="cta"><a class="btn" href="#erstgespraech">Kostenloses Erstgespräch sichern</a><a class="btn ghost" href="#film">Film ansehen</a></div>
+      <div class="cta"><a class="btn" href="#erstgespraech">Kostenlosen Sichtbarkeits-Check sichern</a><a class="btn ghost" href="#film">Film ansehen</a></div>
     </div>
     <div id="film">
       <div class="film">
@@ -179,6 +191,29 @@ footer a{color:var(--mut)}
       </ul>
     </div>
     <div class="photo"><img src="../assets/artist-mic-v1.jpg" alt="Artist am Mikrofon" loading="lazy"></div>
+  </div>
+</section>
+
+<section class="sec hb">
+  <div class="wrap">
+    <div class="hb-top">
+      <div>
+        <div class="k">Ehrlich gesagt</div>
+        <h2 style="margin-top:16px">Jeder hat einen Tipp für dich. <span class="serif red">Keiner kennt deine Musik.</span></h2>
+        <p class="sub">Der Kumpel sagt: Poste jeden Tag auf TikTok. Der Producer sagt: Mach erst mal den nächsten Song. Irgendeine Promo-Seite verspricht dir tausend Streams für 50 Euro. Am Ende hast du viel probiert, Geld ausgegeben – und stehst trotzdem nicht auf der Bühne.</p>
+      </div>
+      <div class="hb-ans"><b>Bei uns kommt zuerst der Check.</b><p>Wie beim Soundcheck: Erst hören, wo es hakt, dann drehen wir an den richtigen Reglern. Wir finden heraus, was dich gerade bremst, und bauen genau das – ohne gekaufte Klicks und ohne Fake-Streams.</p></div>
+    </div>
+    <h3 class="hb-h">Erkennst du dich wieder?</h3>
+    <div class="grid3 hb-grid">
+      <div class="card"><h3>Du postest fleißig, aber die Follower bleiben gleich?</h3><p>Dann fehlt meist ein roter Faden. Wir planen deine Inhalte so, dass jeder Clip neue Leute zu dir zieht.</p></div>
+      <div class="card"><h3>Der Song ist draußen, die Streams bewegen sich kaum?</h3><p>Ein Release braucht einen Plan. Wir bauen dir die Kampagne drumherum: Vorab-Clips, Werbung und Fans, die mitziehen.</p></div>
+      <div class="card"><h3>Ein Veranstalter googelt dich – und findet nur ein altes Profil?</h3><p>Mit eigener Artist-Website, Pressekit und Booking-Formular sieht jeder sofort: Hier ist ein Profi.</p></div>
+      <div class="card"><h3>Du spielst nur, wenn dich zufällig jemand kennt?</h3><p>Wir sorgen dafür, dass Veranstalter und Clubs in deiner Region dich sehen, bevor sie den Abend planen.</p></div>
+      <div class="card"><h3>Deine Videos zeigen nicht, was in dir steckt?</h3><p>Sound, Video und Fotos aus einer Hand, aus unserem eigenen Studio. So passt dein Auftritt zu deinem Level.</p></div>
+      <div class="card"><h3>Du hast schon Geld für Promo verbrannt?</h3><p>Wir zeigen dir vorher, wohin dein Budget fließt, und du siehst jede Anfrage und jeden neuen Fan selbst.</p></div>
+    </div>
+    <div style="margin-top:30px"><a class="btn" href="#erstgespraech">Meinen Sichtbarkeits-Check anfragen</a></div>
   </div>
 </section>
 
@@ -220,20 +255,24 @@ footer a{color:var(--mut)}
     <h2 style="margin-top:16px">In drei Schritten <span class="serif">zu deinem System.</span></h2>
     <div class="steps">
       <div class="card"><h3>Fragebogen ausfüllen</h3><p>Zwei Minuten. Damit wir wissen, wo du stehst und wo du hinwillst.</p></div>
-      <div class="card"><h3>Kostenloses Erstgespräch</h3><p>Wir schauen uns deine Musik und deine Kanäle an und zeigen dir, was für dich möglich ist. Ehrlich, auch wenn es (noch) nicht passt.</p></div>
+      <div class="card"><h3>Kostenloser Sichtbarkeits-Check</h3><p>Wir schauen uns deine Musik und deine Kanäle an und zeigen dir, was für dich möglich ist. Ehrlich, auch wenn es (noch) nicht passt.</p></div>
       <div class="card"><h3>Dein Plan</h3><p>Du bekommst einen klaren Plan: was wir bauen, was es kostet und wann es losgeht.</p></div>
+    </div>
+    <div class="tip">
+      <b>Damit dein Check richtig was bringt</b>
+      <ul><li><strong>Sei selbst dabei:</strong> Es geht um deine Musik. Kein Manager, kein Kumpel – du.</li><li><strong>Links parat:</strong> Spotify, Instagram, TikTok, YouTube. Was es schon gibt, schauen wir uns an.</li><li><strong>Ziel im Kopf:</strong> Wie viele Auftritte im Monat wären für dich ein Traum?</li><li><strong>Eine halbe Stunde Ruhe:</strong> Nicht zwischen Probe und Schicht, sondern entspannt.</li></ul>
     </div>
   </div>
 </section>
 
 <section class="sec form-sec" id="erstgespraech">
   <div class="wrap">
-    <div class="k">Kostenloses Erstgespräch</div>
+    <div class="k">Kostenloser Sichtbarkeits-Check</div>
     <h2 style="margin-top:16px">Erzähl uns kurz, <span class="serif red">wo du hinwillst.</span></h2>
-    <p class="sub">Ein paar Klicks, dann melden wir uns innerhalb von 24 Stunden bei dir.</p>
+    <p class="sub">Ein paar Klicks, dann melden wir uns innerhalb von 24 Stunden bei dir. Im Check klären wir drei Dinge: Wo stehst du gerade? Wen erreichst du heute schon? Und welcher eine Schritt bringt dich jetzt am weitesten – mehr Streams, mehr Fans oder mehr Auftritte?</p>
     <div class="fbox">
       <div class="fside">
-        <div class="card"><h3 style="margin-top:0">Unverbindlich &amp; kostenlos</h3><p>Das Erstgespräch kostet dich nichts und verpflichtet dich zu nichts.</p></div>
+        <div class="card"><h3 style="margin-top:0">Unverbindlich &amp; kostenlos</h3><p>Der Check kostet dich nichts und verpflichtet dich zu nichts.</p></div>
         <div class="card"><h3 style="margin-top:0">Ehrliche Einschätzung</h3><p>Wenn wir dir nicht helfen können, sagen wir dir das direkt.</p></div>
         <div class="card"><h3 style="margin-top:0">Aus einer Hand</h3><p>Website, Social Media, Videos, Sound und Werbung, alles bei uns.</p></div>
       </div>
@@ -317,7 +356,7 @@ footer a{color:var(--mut)}
           <label class="chk"><input type="checkbox" name="newsletter" value="ja"> <span>Ja, ich will die E-Mails mit Tipps für mehr Reichweite und Bookings bekommen. Abmelden geht jederzeit über den Link in jeder Mail.</span></label>
           <label class="chk"><input type="checkbox" name="dsgvo" required> <span>Ich bin einverstanden, dass High Level Performance meine Angaben zur Bearbeitung meiner Anfrage nutzt und mich dazu kontaktiert. Mehr in der <a href="../datenschutz/" target="_blank" rel="noopener">Datenschutzerklärung</a>.</span></label>
         </fieldset>
-        <button class="btn submit" type="submit">Kostenloses Erstgespräch anfragen</button>
+        <button class="btn submit" type="submit">Sichtbarkeits-Check anfragen</button>
         <div class="msg" id="formMsg" hidden role="status"></div>
       </form>
     </div>
@@ -330,6 +369,8 @@ footer a{color:var(--mut)}
     <h2 style="margin-top:16px">Gut zu wissen</h2>
     <details><summary>Was kostet das?</summary><p>Das hängt davon ab, was du brauchst: nur eine Artist-Website oder das komplette System mit Social Media, Videos und Werbung. Den genauen Preis bekommst du im kostenlosen Erstgespräch, nachdem wir uns deine Situation angesehen haben. Werbebudget zahlst du direkt an die Plattform.</p></details>
     <details><summary>Bekomme ich garantiert mehr Streams oder Bookings?</summary><p>Niemand kann dir seriös Zahlen garantieren. Wir bauen dir ein System, mit dem du gefunden wirst und professionell auftrittst. Wie schnell es wächst, hängt auch von deiner Musik und deiner Mitarbeit ab.</p></details>
+    <details><summary>Brauche ich direkt eine eigene Website?</summary><p>Nicht zwingend am ersten Tag. Für Booking-Anfragen ist sie aber Gold wert: Veranstalter wollen auf einen Blick Musik, Videos, Pressefotos und einen Kontakt sehen. Im Check sagen wir dir, was bei dir zuerst dran ist.</p></details>
+    <details><summary>Kann ich auch nur ein Musikvideo oder nur Werbung buchen?</summary><p>Ja. Wir sagen dir nur ehrlich, wenn ein einzelner Baustein allein verpufft – zum Beispiel Werbung, die auf ein Profil ohne Musik und Kontakt führt.</p></details>
     <details><summary>Ich habe noch kaum Songs. Ist das trotzdem was für mich?</summary><p>Füll den Fragebogen trotzdem aus. Wenn es für dich noch zu früh ist, sagen wir dir das ehrlich und geben dir Tipps für den Start.</p></details>
     <details><summary>Muss ich mich um die Technik kümmern?</summary><p>Nein. Du lieferst Musik und Inhalte, wir kümmern uns um Website, Kanäle, Videos und Kampagnen.</p></details>
     <details><summary>Wer steckt dahinter?</summary><p>High Level Performance by Victor aus Bersenbrück. Musikproduzent und Online-Marketer mit über 15 Jahren Erfahrung und eigenem Tonstudio.</p></details>
@@ -343,7 +384,7 @@ footer a{color:var(--mut)}
   <a class="vk-qr" href="../viktor/" aria-label="Digitale Visitenkarte von Viktor Fehl mit allen Social-Media-Kanälen"><img src="../viktor/qr.svg" width="64" height="64" alt="QR-Code digitale Visitenkarte" loading="lazy"><span><b>Digitale Visitenkarte</b><small>Alle Kanäle &amp; Kontakt speichern</small></span></a><p class="disc">Hinweis: Ergebnisse hängen von Musik, Genre, Angebot und Mitarbeit ab. Wir garantieren keine bestimmte Anzahl an Streams, Followern oder Booking-Anfragen.</p>
 </div></footer>
 
-<div class="sticky"><a class="btn" href="#erstgespraech">Kostenloses Erstgespräch</a></div>
+<div class="sticky"><a class="btn" href="#erstgespraech">Kostenloser Sichtbarkeits-Check</a></div>
 
 <div class="ck" id="ck" hidden role="dialog" aria-label="Cookie-Einstellungen">
   <div class="ck-in">
@@ -428,7 +469,7 @@ footer a{color:var(--mut)}
       const o=new URLSearchParams({name,email:em,tel,firma:String(fd.get('kuenstlername')||'').trim()||'-',formular:'artists-landingpage',kuenstlername:String(fd.get('kuenstlername')||''),instagram:String(fd.get('instagram')||''),newsletter:nl,quelle:utm(),seite:'artists',...a,antworten:summary,datum:new Date().toLocaleString('sv-SE',{timeZone:'Europe/Berlin'})});
       try{ await fetch(ARTISTS_WEBHOOK,{method:'POST',mode:'no-cors',body:o}); ok=true; }catch(_){}
     }
-    if(!ok){ btn.disabled=false; btn.textContent='Kostenloses Erstgespräch anfragen'; show('Das hat leider nicht geklappt. Schreib uns gern direkt an <a href="mailto:info@highlevel-performance.de">info@highlevel-performance.de</a> oder per WhatsApp an <a href="https://wa.me/4915561068899">+49 15561 068899</a>.',false); return; }
+    if(!ok){ btn.disabled=false; btn.textContent='Sichtbarkeits-Check anfragen'; show('Das hat leider nicht geklappt. Schreib uns gern direkt an <a href="mailto:info@highlevel-performance.de">info@highlevel-performance.de</a> oder per WhatsApp an <a href="https://wa.me/4915561068899">+49 15561 068899</a>.',false); return; }
     try{ if(window.fbq) fbq('track','Lead',{content_name:'Erstgespräch Artists-Seite',content_category:'artists'}); }catch(_){}
     if(nl==='ja'){
       const vn=name.split(' ')[0], iso=new Date().toLocaleDateString('sv-SE',{timeZone:'Europe/Berlin'});
