@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Viktor Fehl · Digitale Visitenkarte · High Level Performance</title>
+<meta name="description" content="Digitale Visitenkarte von Viktor Fehl, Gründer von High Level Performance by Victor. Anrufen, WhatsApp, E-Mail, Kontakt speichern und alle Social-Media-Kanäle.">
+<meta name="robots" content="index,follow">
+<link rel="canonical" href="https://www.highlevel-performance.de/viktor/">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="Viktor Fehl · High Level Performance by Victor">
+<meta property="og:description" content="Mehr Sichtbarkeit, planbar mehr Anfragen. Für Betriebe und Artists.">
+<meta property="og:image" content="https://www.highlevel-performance.de/viktor/viktor.jpg">
+<meta property="og:url" content="https://www.highlevel-performance.de/viktor/">
+<meta name="theme-color" content="#0A2A66">
+<link rel="stylesheet" href="../assets/fonts.css">
+<style>
+:root{--navy:#0A2A66;--blue:#1877F2;--sky:#38C8FF;--red:#E90E0E;--ink:#0B1220;--muted:#5A6987;--line:#E3EAF5;--bg:#EEF3FB}
+*{box-sizing:border-box}
+html,body{margin:0}
+body{font-family:"Poppins","Helvetica Neue",Arial,sans-serif;background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased;min-height:100vh;display:flex;justify-content:center;padding:0 0 40px}
+a{color:inherit}
+.card{width:100%;max-width:440px;background:#fff;min-height:100vh;box-shadow:0 30px 80px -40px rgba(10,42,102,.45);position:relative;overflow:hidden}
+@media (min-width:520px){body{padding:36px 16px 48px}.card{min-height:0;border-radius:28px}}
+.top{position:relative;height:190px;background:radial-gradient(120% 140% at 15% 0%,#1E5FD8 0%,var(--navy) 55%,#050B1C 100%);overflow:hidden}
+.top::after{content:"";position:absolute;inset:auto -10% -40% 40%;height:160px;background:radial-gradient(closest-side,rgba(233,14,14,.55),transparent);filter:blur(10px)}
+.top svg{position:absolute;inset:0;width:100%;height:100%}
+.brand{position:absolute;left:22px;top:20px;color:#fff;line-height:1;z-index:2;text-decoration:none}
+.brand .l1{font-weight:900;font-size:15px;letter-spacing:.04em;display:block}
+.brand .l2{font-weight:900;font-size:15px;letter-spacing:.04em}
+.brand .sig{font-family:"Mr Dafoe",cursive;color:var(--sky);font-size:22px;margin-left:6px}
+.avatar{position:relative;z-index:3;width:132px;height:132px;border-radius:50%;margin:-70px auto 0;border:5px solid #fff;box-shadow:0 18px 40px -16px rgba(10,42,102,.55);overflow:hidden;background:#fff}
+.avatar img{width:100%;height:100%;object-fit:cover;display:block}
+.who{text-align:center;padding:14px 22px 0}
+.who h1{margin:0;font-size:27px;font-weight:800;color:var(--navy);letter-spacing:-.01em}
+.who .role{margin:4px 0 0;font-weight:600;color:var(--blue);font-size:14.5px}
+.who .claim{margin:12px auto 0;max-width:330px;color:var(--muted);font-size:14.5px;line-height:1.5}
+.tags{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:14px 0 0}
+.tags span{font-size:12px;font-weight:600;padding:5px 11px;border-radius:999px;background:#EAF2FF;color:var(--navy)}
+.tags span.r{background:#FFECEC;color:#B30A0A}
+.actions{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;padding:22px 22px 6px}
+.act{display:flex;flex-direction:column;align-items:center;gap:7px;text-decoration:none;font-size:12px;font-weight:600;color:var(--navy)}
+.act i{width:54px;height:54px;border-radius:18px;display:grid;place-items:center;background:var(--navy);color:#fff;box-shadow:0 12px 24px -14px rgba(10,42,102,.8);transition:transform .2s}
+.act:hover i{transform:translateY(-2px)}
+.act.wa i{background:#25D366}
+.act i svg{width:24px;height:24px}
+.save{display:flex;align-items:center;justify-content:center;gap:10px;margin:16px 22px 0;padding:15px 18px;border-radius:16px;background:linear-gradient(135deg,var(--blue),var(--navy));color:#fff;text-decoration:none;font-weight:700;font-size:15.5px;box-shadow:0 18px 36px -18px rgba(24,119,242,.9)}
+.save svg{width:20px;height:20px}
+h2{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:28px 22px 10px;font-weight:700}
+.links{display:flex;flex-direction:column;gap:10px;padding:0 22px}
+.lk{display:flex;align-items:center;gap:14px;padding:13px 14px;border:1px solid var(--line);border-radius:16px;text-decoration:none;background:#fff;transition:border-color .2s,transform .2s}
+.lk:hover{border-color:var(--blue);transform:translateX(2px)}
+.lk .ic{width:42px;height:42px;border-radius:12px;display:grid;place-items:center;flex:none;color:#fff}
+.lk .ic svg{width:22px;height:22px}
+.lk b{display:block;font-size:15px;color:var(--ink)}
+.lk small{display:block;color:var(--muted);font-size:12.5px;margin-top:1px}
+.lk .arr{margin-left:auto;color:#9AA8C2;font-size:18px}
+.ig{background:radial-gradient(circle at 30% 107%,#fdf497 0%,#fd5949 45%,#d6249f 60%,#285AEB 90%)}
+.fb{background:#1877F2}.li{background:#0A66C2}.web{background:var(--navy)}.art{background:#111}.studio{background:#E90E0E}.tp{background:#00B67A}
+.qr{margin:30px 22px 0;padding:22px;border-radius:22px;background:var(--bg);text-align:center}
+.qr img{width:200px;height:200px;background:#fff;padding:12px;border-radius:16px;box-shadow:0 12px 30px -18px rgba(10,42,102,.5)}
+.qr p{margin:12px 0 14px;color:var(--muted);font-size:13.5px}
+.qr .row{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:11px 16px;border-radius:12px;border:1px solid var(--line);background:#fff;color:var(--navy);font:600 13.5px "Poppins",Arial,sans-serif;text-decoration:none;cursor:pointer}
+.btn:hover{border-color:var(--blue)}
+.addr{text-align:center;color:var(--muted);font-size:12.5px;margin:24px 22px 0;line-height:1.6}
+.addr a{color:var(--muted)}
+.toast{position:fixed;left:50%;bottom:24px;transform:translateX(-50%);background:var(--navy);color:#fff;padding:10px 16px;border-radius:12px;font-size:13.5px;opacity:0;transition:opacity .3s;pointer-events:none}
+.toast.on{opacity:1}
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="top" aria-hidden="true">
+    <svg viewBox="0 0 440 190" preserveAspectRatio="none"><path d="M430 10 L360 70 L380 76 L300 150" fill="none" stroke="#38C8FF" stroke-width="1.4" opacity=".7"/><path d="M10 170 L80 130 L66 124 L150 84" fill="none" stroke="#E90E0E" stroke-width="1.2" opacity=".6"/></svg>
+    <a class="brand" href="../" aria-label="High Level Performance Startseite"><span class="l1">HIGH LEVEL</span><span class="l2">PERFORMANCE</span><span class="sig">by Victor</span></a>
+  </div>
+  <div class="avatar"><img src="viktor.jpg" width="132" height="132" alt="Viktor Fehl"></div>
+  <div class="who">
+    <h1>Viktor Fehl</h1>
+    <p class="role">Gründer · High Level Performance by Victor</p>
+    <p class="claim">Ich mache Betriebe und Artists sichtbar – mit Website, Werbung und einem System, das planbar Anfragen bringt.</p>
+    <div class="tags"><span>Websites</span><span>Meta &amp; Google Ads</span><span>Erklärfilme</span><span class="r">Musikproduktion</span></div>
+  </div>
+
+  <nav class="actions" aria-label="Kontakt">
+    <a class="act" href="tel:+4915561068899"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.9 2.1z"/></svg></i>Anrufen</a>
+    <a class="act wa" href="https://wa.me/4915561068899" target="_blank" rel="noopener"><i><svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.5 14.4c-.3-.1-1.8-.9-2-1s-.5-.1-.7.1-.8 1-.9 1.2-.3.2-.6.1a8.1 8.1 0 0 1-2.4-1.5 9 9 0 0 1-1.7-2.1c-.2-.3 0-.5.1-.6l.4-.5.3-.5a.5.5 0 0 0 0-.5l-.9-2.2c-.2-.6-.5-.5-.7-.5h-.6a1.1 1.1 0 0 0-.8.4 3.4 3.4 0 0 0-1.1 2.5 5.9 5.9 0 0 0 1.2 3.1 13.5 13.5 0 0 0 5.2 4.6c1.9.8 2.7.9 3.6.7a3.1 3.1 0 0 0 2-1.4 2.5 2.5 0 0 0 .2-1.4c-.1-.2-.3-.3-.6-.4zM12 21.8a9.8 9.8 0 0 1-5-1.4l-.4-.2-3.7 1 1-3.6-.2-.4A9.8 9.8 0 1 1 12 21.8zm8.4-18.2A11.8 11.8 0 0 0 1.8 17.9L.1 24l6.3-1.6A11.8 11.8 0 0 0 12 23.8 11.8 11.8 0 0 0 20.4 3.6z"/></svg></i>WhatsApp</a>
+    <a class="act" href="mailto:info@highlevel-performance.de"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 6 9 7 9-7"/></svg></i>E-Mail</a>
+    <a class="act" href="../" ><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/></svg></i>Website</a>
+  </nav>
+  <a class="save" href="viktor-fehl.vcf" download="Viktor-Fehl.vcf"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M19 8v6M22 11h-6"/></svg>Kontakt speichern</a>
+
+  <h2>Folgen &amp; mehr erfahren</h2>
+  <div class="links">
+    <a class="lk" href="https://www.instagram.com/highlevel.byvictor/" target="_blank" rel="noopener"><span class="ic ig"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></span><span><b>Instagram</b><small>@highlevel.byvictor</small></span><span class="arr">›</span></a>
+    <a class="lk" href="https://www.facebook.com/highlevel.byvictor" target="_blank" rel="noopener"><span class="ic fb"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v2H8v4h2v8h4v-8h3l1-4h-4V8z"/></svg></span><span><b>Facebook</b><small>High Level by Victor</small></span><span class="arr">›</span></a>
+    <a class="lk" href="https://www.linkedin.com/company/highlevel-performance/" target="_blank" rel="noopener"><span class="ic li"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M4.98 3.5a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5zM3 9.5h4V21H3zM9.5 9.5h3.8v1.6h.1c.5-1 1.8-2 3.8-2 4 0 4.8 2.6 4.8 6V21h-4v-5.2c0-1.2 0-2.9-1.8-2.9s-2 1.4-2 2.8V21h-4z"/></svg></span><span><b>LinkedIn</b><small>High Level Performance</small></span><span class="arr">›</span></a>
+    <a class="lk" href="../business/"><span class="ic web"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V8l7-5 7 5v13M9 21v-6h6v6"/></svg></span><span><b>For Business</b><small>Mehr Sichtbarkeit für Ihren Betrieb</small></span><span class="arr">›</span></a>
+    <a class="lk" href="../artists/"><span class="ic art"><svg viewBox="0 0 24 24" fill="none" stroke="#E90E0E" stroke-width="2"><path d="M9 18V5l12-2v13"/><circle cx="6" cy="18" r="3"/><circle cx="18" cy="16" r="3"/></svg></span><span><b>For Artists</b><small>Reichweite, Streams &amp; Bookings</small></span><span class="arr">›</span></a>
+    <a class="lk" href="https://www.instagram.com/saved_music_/" target="_blank" rel="noopener"><span class="ic studio"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0M12 17v5M8 22h8"/></svg></span><span><b>Saved Music Productions</b><small>Mein Tonstudio auf Instagram</small></span><span class="arr">›</span></a>
+    <a class="lk" href="https://de.trustpilot.com/review/saved-music-productions.de" target="_blank" rel="noopener"><span class="ic tp"><svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 2 2.9 6.9 7.1.6-5.4 4.7 1.6 7.1L12 17.6l-6.2 3.7 1.6-7.1L2 9.5l7.1-.6z"/></svg></span><span><b>Bewertungen</b><small>Trustpilot · Saved Music Productions</small></span><span class="arr">›</span></a>
+  </div>
+
+  <section class="qr" aria-label="QR-Code">
+    <img src="qr.svg" width="200" height="200" alt="QR-Code zu dieser digitalen Visitenkarte">
+    <p>Scannen lassen und Kontakt direkt teilen.</p>
+    <div class="row">
+      <button class="btn" type="button" id="share"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="m8.6 13.5 6.8 4M15.4 6.5l-6.8 4"/></svg>Teilen</button>
+      <a class="btn" href="qr-viktor-fehl.png" download="QR-Viktor-Fehl.png"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></svg>QR-Code laden</a>
+    </div>
+  </section>
+
+  <p class="addr">High Level Performance by Victor · Koppelstraße 28 · 49593 Bersenbrück<br><a href="../impressum/">Impressum</a> · <a href="../datenschutz/">Datenschutz</a></p>
+</main>
+<div class="toast" id="toast">Link kopiert</div>
+<script>
+(function(){
+  var b=document.getElementById('share'), t=document.getElementById('toast'), url='https://www.highlevel-performance.de/viktor/';
+  b.addEventListener('click',function(){
+    if(navigator.share){ navigator.share({title:'Viktor Fehl · High Level Performance',text:'Digitale Visitenkarte von Viktor Fehl',url:url}).catch(function(){}); return; }
+    try{ navigator.clipboard.writeText(url).then(function(){ t.classList.add('on'); setTimeout(function(){t.classList.remove('on')},1800); }); }catch(e){}
+  });
+})();
+</script>
+</body>
+</html>
