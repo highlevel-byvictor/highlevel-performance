@@ -28,6 +28,7 @@ a.b{display:inline-block;background:var(--acc);color:#fff;text-decoration:none;f
   var tk=(location.search.match(/[?&]t=([^&]+)/)||[])[1]; if(!tk) return fail();
   var d; try{ var s=tk.replace(/-/g,'+').replace(/_/g,'/'); while(s.length%4) s+='='; d=JSON.parse(decodeURIComponent(escape(atob(s)))); }catch(e){ return fail(); }
   if(!d||!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(d.e||'')) return fail();
+  if(d.l==='business'){var r=document.documentElement.style;r.setProperty('--bg','#F5F8FD');r.setProperty('--fg','#0B1630');r.setProperty('--mut','#4A5874');r.setProperty('--acc','#1877F2');}
   var biz=d.l==='business', guide=d.g==='sg', target=guide?'/sichtbarkeits-guide/danke/'+(d.n?'?n='+encodeURIComponent(d.n):''):(biz?'/business/?newsletter=bestaetigt':'/?newsletter=bestaetigt#artists');
   function ok(){sp.style.display='none';h.textContent=biz?'Danke, Ihre Anmeldung ist bestätigt!':'Du bist dabei!';t.textContent=guide?'Ihr Guide ist bereit. Sie werden gleich zum Download weitergeleitet.':biz?'Die erste E-Mail ist schon unterwegs. Sie werden gleich weitergeleitet.':'Die erste Mail ist schon unterwegs. Du wirst gleich weitergeleitet.';b.href=target;b.textContent=guide?'Zum Guide-Download':'Weiter zur Website';b.style.display='inline-block';setTimeout(function(){location.replace(target);},guide?1500:3500);}
   var key='hlp_nl_ok_'+tk.slice(-24); var done=false; try{done=sessionStorage.getItem(key)==='1';}catch(e){}
