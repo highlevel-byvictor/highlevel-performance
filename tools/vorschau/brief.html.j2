@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8">
+<link rel="stylesheet" href="file://{{ root }}/assets/fonts.css">
+<style>
+@page{size:A4;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Manrope",Arial,sans-serif;color:#0B1630;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;page-break-after:always;background:#fff}
+.page:last-child{page-break-after:auto}
+/* Kopf */
+.top{position:absolute;left:0;right:0;top:0;height:27mm;background:linear-gradient(115deg,#0A1A3A 0%,#0A2A66 55%,#1877F2 100%)}
+.top:after{content:"";position:absolute;left:0;right:0;bottom:0;height:1.6mm;background:linear-gradient(90deg,#E90E0E,#1877F2 60%,#38C8FF)}
+.logo{position:absolute;left:20mm;top:7mm;color:#fff;line-height:1}
+.logo .l1{display:block;font-family:"Poppins";font-weight:800;font-size:17pt;letter-spacing:.02em}
+.logo .l2{display:block;font-family:"Poppins";font-weight:600;font-size:8.6pt;letter-spacing:.42em;color:#38C8FF;margin-top:1.2mm}
+.logo .sig{position:absolute;left:44mm;top:7.4mm;font-family:"Mr Dafoe";font-size:15pt;color:#fff;white-space:nowrap}
+.tr{position:absolute;right:20mm;top:8mm;text-align:right;color:rgba(255,255,255,.85);font-size:8pt;line-height:1.55}
+.tr b{color:#fff}
+/* Anschrift DIN 5008 B */
+.sender{position:absolute;left:20mm;top:45mm;font-size:6.6pt;color:#56627A;border-bottom:.2mm solid #C9D2E2;padding-bottom:.6mm;width:85mm}
+.addr{position:absolute;left:20mm;top:51mm;width:85mm;font-size:10.5pt;line-height:1.4}
+.date{position:absolute;right:20mm;top:84mm;font-size:9pt;color:#56627A}
+.fold{position:absolute;left:4mm;width:4mm;border-top:.25mm solid #B8C2D4}
+/* Inhalt */
+.body{position:absolute;left:20mm;right:20mm;top:92mm}
+.betreff{font-family:"Poppins";font-weight:700;font-size:15pt;line-height:1.2;margin-bottom:5mm}
+.betreff span{color:#1877F2}
+.txt p{font-size:9.9pt;line-height:1.55;margin-bottom:3mm}
+.txt b{color:#0A2A66}
+/* Vorschau-Block */
+.show{margin-top:4mm;display:grid;grid-template-columns:1fr 46mm;gap:6mm;align-items:stretch}
+.shot{position:relative;border-radius:4mm;background:linear-gradient(160deg,#EEF3FB,#DCE6F7);padding:5mm 5mm 0 5mm;overflow:hidden;height:62mm}
+.browser{background:#fff;border-radius:2.5mm 2.5mm 0 0;box-shadow:0 3mm 8mm -3mm rgba(10,26,58,.35);overflow:hidden;height:100%}
+.bar{height:5mm;background:#F1F4F9;display:flex;align-items:center;gap:1.2mm;padding:0 2.5mm;border-bottom:.2mm solid #E3E8F1}
+.bar i{width:1.6mm;height:1.6mm;border-radius:50%;background:#C9D2E2}
+.bar i:first-child{background:#FF6159}.bar i:nth-child(2){background:#FFBD2E}.bar i:nth-child(3){background:#28C941}
+.bar span{margin-left:2mm;font-size:5.4pt;color:#56627A}
+.browser img{width:100%;display:block}
+.phone{position:absolute;right:3mm;bottom:-6mm;width:25mm;height:52mm;border-radius:4mm;background:#0B1630;padding:1.3mm;box-shadow:0 3mm 8mm -2mm rgba(10,26,58,.5)}
+.phone img{width:100%;height:100%;object-fit:cover;object-position:top;border-radius:3mm}
+.qr{border-radius:4mm;background:#0A1A3A;color:#fff;padding:4mm;display:flex;flex-direction:column;align-items:center;text-align:center;height:62mm}
+.qr .q{background:#fff;border-radius:2.5mm;padding:2mm;width:36mm;height:36mm}
+.qr .q img{width:100%;height:100%}
+.qr b{font-family:"Poppins";font-size:10pt;margin-top:3mm;line-height:1.2}
+.qr small{font-size:6.8pt;color:rgba(255,255,255,.7);margin-top:1mm;line-height:1.35}
+.qr .arrow{color:#38C8FF;font-weight:800}
+/* Gruß + Kontakt */
+.end{position:absolute;left:20mm;right:20mm;bottom:22mm;display:grid;grid-template-columns:1fr auto;gap:8mm;align-items:end}
+.gruss p{font-size:9.9pt;line-height:1.5}
+.sig2{font-family:"Mr Dafoe";font-size:24pt;color:#0A2A66;line-height:1;margin:1.5mm 0 .5mm}
+.vc{display:flex;gap:4mm;align-items:center;border:.3mm solid #DCE3EF;border-radius:4mm;padding:3mm 4mm 3mm 3mm}
+.vc img.ph{width:17mm;height:17mm;border-radius:50%;object-fit:cover}
+.vc .t{font-size:8pt;line-height:1.45}
+.vc .t b{font-family:"Poppins";font-size:9.5pt}
+.vc .t .tel{font-family:"Poppins";font-weight:700;font-size:10.5pt;color:#1877F2}
+.vc .vq{width:21mm;height:21mm}
+.vc .vq img{width:100%;height:100%}
+.vc .lbl{font-size:5.8pt;color:#56627A;text-align:center;margin-top:.5mm}
+.foot{position:absolute;left:20mm;right:20mm;bottom:9mm;border-top:.2mm solid #E3E8F1;padding-top:2.5mm;display:flex;justify-content:space-between;font-size:6.6pt;color:#7A869E}
+</style></head><body>
+{% for b in briefe %}
+<div class="page">
+ <div class="top">
+  <div class="logo"><span class="l1">HIGH LEVEL</span><span class="l2">PERFORMANCE</span><span class="sig">by Victor</span></div>
+  <div class="tr"><b>www.highlevel-performance.de</b><br>info@highlevel-performance.de<br>+49 15561 068899</div>
+ </div>
+ <div class="fold" style="top:105mm"></div><div class="fold" style="top:148.5mm;width:6mm"></div><div class="fold" style="top:210mm"></div>
+ <div class="sender">High Level Performance · Viktor Fehl · Koppelstraße 28 · 49593 Bersenbrück</div>
+ <div class="addr">{% for z in b.anschrift %}{{ z }}<br>{% endfor %}</div>
+ <div class="date">Bersenbrück, {{ datum }}</div>
+ <div class="body">
+  <div class="betreff">{{ b.betreff_1 }}<br><span>{{ b.betreff_2 }}</span></div>
+  <div class="txt">
+   <p>{{ b.anrede }}</p>
+   {% for p in b.absaetze %}<p>{{ p | safe }}</p>{% endfor %}
+  </div>
+  <div class="show">
+   <div class="shot">
+    <div class="browser"><div class="bar"><i></i><i></i><i></i><span>Ihre neue Website · Entwurf</span></div><img src="file://{{ b.shot_desktop }}"></div>
+    <div class="phone"><img src="file://{{ b.shot_mobile }}"></div>
+   </div>
+   <div class="qr"><div class="q"><img src="file://{{ b.qr }}"></div><b>Jetzt mit dem Handy scannen</b><small>und Ihre neue Website ansehen<br><span class="arrow">{{ b.url_kurz }}</span></small></div>
+  </div>
+ </div>
+ <div class="end">
+  <div class="gruss"><p>Mit freundlichen Grüßen</p><div class="sig2">Viktor Fehl</div><p style="font-size:8.4pt;color:#56627A">Viktor Fehl · Gründer High Level Performance</p></div>
+  <div class="vc">
+   <img class="ph" src="file://{{ root }}/viktor/viktor.jpg">
+   <div class="t"><b>Kostenloses Erstgespräch</b><br>Einfach anrufen oder schreiben:<br><span class="tel">+49 15561 068899</span><br>info@highlevel-performance.de</div>
+   <div><div class="vq"><img src="file://{{ root }}/viktor/qr.svg"></div><div class="lbl">Kontakt speichern</div></div>
+  </div>
+ </div>
+ <div class="foot"><span>High Level Performance by Victor · Inhaber Viktor Fehl · Koppelstraße 28 · 49593 Bersenbrück</span><span>Möchten Sie keine Post mehr von uns? Kurze Nachricht genügt.</span></div>
+</div>
+{% endfor %}
+</body></html>
