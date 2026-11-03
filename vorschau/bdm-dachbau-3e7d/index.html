@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow,noarchive">
+<title>BDM Dachbau GmbH – Entwurf</title>
+<link rel="stylesheet" href="../../assets/fonts.css">
+<style>
+:root{--ink:#0B1630;--muted:#56627A;--line:#E3E8F1;--bg:#F6F8FC;--card:#fff;--acc:#B91C1C;--acc2:#FCA5A5;--navy:#0A1A3A}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Manrope","Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1160px;margin:0 auto;padding:0 20px}
+h1,h2,h3{font-family:"Poppins","Helvetica Neue",Arial,sans-serif;line-height:1.12;letter-spacing:-.02em}
+/* Vorschau-Banner */
+.pv{background:#0B1630;color:#fff;font-size:13px;text-align:center;padding:9px 16px}
+.pv b{color:#38C8FF}
+/* Nav */
+.nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:70px;gap:16px}
+.brand{display:flex;align-items:center;gap:12px;font-family:"Poppins";font-weight:700;font-size:17px}
+.brand img{height:44px;width:auto;max-width:170px;object-fit:contain}
+.links{display:flex;gap:28px;font-weight:600;font-size:15px;color:var(--muted)}
+.links a:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:15px;padding:14px 24px;border-radius:999px;transition:transform .15s,box-shadow .15s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn-acc{background:var(--acc);color:#fff;box-shadow:0 10px 30px -10px var(--acc)}
+.btn-ghost{background:rgba(255,255,255,.12);color:#fff;border:1px solid rgba(255,255,255,.35);backdrop-filter:blur(6px)}
+.btn svg{width:18px;height:18px}
+/* Hero */
+.hero{position:relative;min-height:640px;display:flex;align-items:flex-end;color:#fff;overflow:hidden}
+.hero .bg{position:absolute;inset:0;background:url("img/b1.webp") center/cover}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(6,14,34,.15) 0%,rgba(6,14,34,.55) 45%,rgba(6,14,34,.92) 100%)}
+.hero .wrap{position:relative;z-index:2;padding-bottom:72px;padding-top:120px}
+.tag{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);padding:7px 14px;border-radius:999px;margin-bottom:22px}
+.tag i{width:8px;height:8px;border-radius:50%;background:var(--acc2)}
+.hero h1{font-size:clamp(38px,6vw,72px);font-weight:800;max-width:860px}
+.hero h1 span{color:var(--acc2)}
+.hero p{font-size:clamp(17px,2vw,20px);max-width:620px;margin:20px 0 32px;color:rgba(255,255,255,.88)}
+.cta{display:flex;gap:12px;flex-wrap:wrap}
+/* Trust */
+.trust{background:var(--navy);color:#fff}
+.trust .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:0}
+.trust div{padding:26px 18px;border-right:1px solid rgba(255,255,255,.1);text-align:center}
+.trust div:last-child{border:0}
+.trust b{display:block;font-family:"Poppins";font-size:20px;color:var(--acc2)}
+.trust span{font-size:14px;color:rgba(255,255,255,.75)}
+/* Sections */
+section{padding:96px 0}
+.kick{font-size:13px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);margin-bottom:12px}
+.sh{display:flex;justify-content:space-between;align-items:end;gap:24px;margin-bottom:44px;flex-wrap:wrap}
+.sh h2{font-size:clamp(30px,4vw,46px);font-weight:800;max-width:640px}
+.sh p{color:var(--muted);max-width:420px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px);box-shadow:0 24px 50px -24px rgba(11,22,48,.25)}
+.ic{width:48px;height:48px;border-radius:14px;display:grid;place-items:center;background:color-mix(in srgb,var(--acc) 12%,#fff);color:var(--acc);margin-bottom:18px;font-family:"Poppins";font-weight:800}
+.card h3{font-size:19px;font-weight:700}
+/* About */
+.about{background:#fff}
+.about .wrap{display:grid;grid-template-columns:1.05fr 1fr;gap:64px;align-items:center}
+.about .ph{border-radius:28px;overflow:hidden;aspect-ratio:4/3.4;box-shadow:0 40px 80px -40px rgba(11,22,48,.45)}
+.about .ph img{width:100%;height:100%;object-fit:cover}
+.about h2{font-size:clamp(30px,4vw,44px);font-weight:800;margin-bottom:20px}
+.about p{color:var(--muted);font-size:17px;margin-bottom:16px}
+.checks{list-style:none;margin-top:24px;display:grid;gap:12px}
+.checks li{display:flex;gap:12px;font-weight:600}
+.checks li:before{content:"✓";flex:none;width:26px;height:26px;border-radius:50%;background:var(--acc);color:#fff;display:grid;place-items:center;font-size:14px}
+/* Gallery */
+.gal{display:grid;grid-template-columns:repeat(4,1fr);grid-auto-rows:220px;gap:14px}
+.gal div{border-radius:18px;overflow:hidden;background:#dde3ee}
+.gal div:first-child{grid-column:span 2;grid-row:span 2}
+.gal img{width:100%;height:100%;object-fit:cover;transition:transform .5s}
+.gal div:hover img{transform:scale(1.05)}
+/* Contact */
+.contact{background:linear-gradient(135deg,var(--navy),#0B2C6B);color:#fff}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.contact h2{font-size:clamp(32px,4.4vw,52px);font-weight:800;margin-bottom:16px}
+.contact p.l{color:rgba(255,255,255,.8);font-size:18px;margin-bottom:28px}
+.ci{display:grid;gap:14px}
+.ci a,.ci div{display:flex;gap:14px;align-items:center;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:16px 18px;font-weight:600}
+.ci small{display:block;font-size:12px;color:rgba(255,255,255,.6);font-weight:500}
+.form{background:#fff;color:var(--ink);border-radius:24px;padding:30px;display:grid;gap:12px}
+.form h3{font-size:22px;margin-bottom:4px}
+.form input,.form textarea,.form select{width:100%;font:inherit;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--bg)}
+.form textarea{min-height:110px;resize:vertical}
+.form .note{font-size:12px;color:var(--muted)}
+footer{background:#060E22;color:rgba(255,255,255,.6);font-size:14px;padding:36px 0}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer b{color:#fff}
+/* Sticky call (mobile) */
+.callbar{display:none}
+@media(max-width:900px){
+ .links{display:none}
+ .nav .btn{padding:11px 16px;font-size:14px}
+ .grid{grid-template-columns:1fr 1fr}
+ .about .wrap,.contact .wrap{grid-template-columns:1fr;gap:36px}
+ .gal{grid-template-columns:1fr 1fr;grid-auto-rows:160px}
+ .trust .wrap{grid-template-columns:1fr 1fr}
+ .trust div:nth-child(2){border-right:0}
+}
+@media(max-width:560px){
+ section{padding:64px 0}
+ .hero{min-height:600px}
+ .grid{grid-template-columns:1fr}
+ .brand span{display:none}
+ .callbar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:30;justify-content:center;gap:10px;background:var(--acc);color:#fff;font-weight:800;padding:16px;border-radius:16px;box-shadow:0 16px 40px -12px rgba(0,0,0,.5)}
+ footer{padding-bottom:96px}
+}
+</style>
+</head>
+<body>
+<div class="pv"><b>Unverbindliche Vorschau</b> · erstellt von High Level Performance für BDM Dachbau GmbH · nur Entwurf, nicht öffentlich</div>
+
+<header class="nav"><div class="wrap">
+ <a class="brand" href="#top"><img src="img/logo.png" alt="BDM Dachbau GmbH"><span>BDM Dachbau</span></a>
+ <nav class="links"><a href="#leistungen">Leistungen</a><a href="#ueber">Über uns</a><a href="#projekte">Projekte</a><a href="#kontakt">Kontakt</a></nav>
+ <a class="btn btn-acc" href="tel:+4954319569141"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Anrufen</a>
+</div></header>
+
+<main id="top">
+<section class="hero" style="padding:0"><div class="bg"></div><div class="wrap">
+ <div class="tag"><i></i>Dachdecker · Niederlassung Bersenbrück</div>
+ <h1>Mit Sicherheit gut bedacht. <span>Jetzt auch im Landkreis Osnabrück.</span></h1>
+ <p>Von der kleinsten Reparatur über die jährliche Wartung bis zur kompletten Eindeckung – Ihr Dachdecker in Bersenbrück.</p>
+ <div class="cta">
+  <a class="btn btn-acc" href="#kontakt">Jetzt Anfrage stellen →</a>
+  <a class="btn btn-ghost" href="tel:+4954319569141"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>05431 9569141</a>
+ </div>
+</div></section>
+
+<div class="trust"><div class="wrap"><div><b>Bersenbrück</b><span>Niederlassung vor Ort</span></div><div><b>ZVDH</b><span>Materialgarantie</span></div><div><b>Wartung</b><span>jährliche Dachwartung</span></div></div></div>
+
+<section id="leistungen"><div class="wrap">
+ <div class="sh"><div><div class="kick">Leistungen</div><h2>Rund ums Dach.</h2></div><p>Alles aus einer Hand – fragen Sie einfach an, wir beraten Sie gern.</p></div>
+ <div class="grid"><div class="card"><div class="ic">01</div><h3>Dachmodernisierung</h3></div><div class="card"><div class="ic">02</div><h3>Steildach &amp; Flachdach</h3></div><div class="card"><div class="ic">03</div><h3>Dachreparatur &amp; Dachwartung</h3></div><div class="card"><div class="ic">04</div><h3>Dachflächenfenster</h3></div><div class="card"><div class="ic">05</div><h3>Klempnerarbeiten</h3></div><div class="card"><div class="ic">06</div><h3>Solar- &amp; PV-Anlagen</h3></div></div>
+</div></section>
+
+<section class="about" id="ueber"><div class="wrap">
+ <div class="ph"><img src="img/b2.webp" alt="BDM Dachbau GmbH" loading="lazy"></div>
+ <div>
+  <div class="kick">Über uns</div>
+  <h2>Traditionelles Dachdeckerhandwerk.</h2>
+  <p>Wir schützen Ihr Eigentum im Neubau und Bestand – von der kleinsten Reparatur über die jährliche Wartung bis zur kompletten Eindeckung.</p><p>Unsere Mitarbeiter werden regelmäßig geschult, und wir verbauen ausschließlich Produkte mit Materialgarantie beim Zentralverband des Deutschen Dachdeckerhandwerks.</p>
+  <ul class="checks"><li>Neue Niederlassung in Bersenbrück</li><li>Regelmäßig geschultes Team</li><li>Balkon- und Terrassensanierung</li></ul>
+ </div>
+</div></section>
+
+
+<section id="projekte"><div class="wrap">
+ <div class="sh"><div><div class="kick">Einblicke</div><h2>Aus unserer Arbeit</h2></div></div>
+ <div class="gal"><div><img src="img/b3.webp" alt="Projekt 1" loading="lazy"></div><div><img src="img/b4.webp" alt="Projekt 2" loading="lazy"></div><div><img src="img/b5.webp" alt="Projekt 3" loading="lazy"></div></div>
+</div></section>
+
+
+<section class="contact" id="kontakt"><div class="wrap">
+ <div>
+  <div class="kick" style="color:var(--acc2)">Kontakt</div>
+  <h2>Sprechen Sie uns an.</h2>
+  <p class="l">Rufen Sie an oder schreiben Sie uns – wir melden uns schnellstmöglich bei Ihnen.</p>
+  <div class="ci">
+   <a href="tel:+4954319569141"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span><small>Telefon</small>05431 9569141</span></a>
+   <a href="mailto:info@bdm-dachbau.de">✉<span><small>E-Mail</small>info@bdm-dachbau.de</span></a>
+   <div>⌂<span><small>Adresse</small>Am Mühlenbach 6A, 49593 Bersenbrück</span></div>
+  </div>
+ </div>
+ <form class="form" onsubmit="event.preventDefault();this.querySelector('.note').textContent='In der Vorschau ist das Formular noch nicht aktiv.'">
+  <h3>Unverbindlich anfragen</h3>
+  <input placeholder="Ihr Name" required>
+  <input placeholder="Telefon oder E-Mail" required>
+  <select><option>Worum geht es?</option><option>Dachmodernisierung</option><option>Steildach &amp; Flachdach</option><option>Dachreparatur &amp; Dachwartung</option><option>Dachflächenfenster</option><option>Klempnerarbeiten</option><option>Solar- &amp; PV-Anlagen</option></select>
+  <textarea placeholder="Kurz beschreiben, was Sie vorhaben"></textarea>
+  <button class="btn btn-acc" style="justify-content:center;border:0;cursor:pointer">Anfrage senden</button>
+  <div class="note">Rückmeldung in der Regel innerhalb von 24 Stunden.</div>
+ </form>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+ <div><b>BDM Dachbau GmbH</b> · Am Mühlenbach 6A, 49593 Bersenbrück</div>
+ <div>Entwurf von <b>High Level Performance</b> · Inhalte und Bilder von bdm-dachbau.de</div>
+</div></footer>
+<a class="callbar" href="tel:+4954319569141"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Jetzt anrufen</a>
+</body>
+</html>

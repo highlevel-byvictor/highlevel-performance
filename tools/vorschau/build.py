@@ -82,7 +82,18 @@ def build(runde_file):
             url = BASE + slug + "/"
             qr = OUT_PDF / f"{slug}-qr.svg"
             segno.make(url, error="m").save(str(qr), scale=10, border=0, dark="#0A1A3A")
-            briefe.append(dict(f["brief"], shot_desktop=str(sd), shot_mobile=str(sm), qr=str(qr),
+            b = f["brief"]
+            web = re.sub(r'^https?://(www\.)?|/$', '', f['website'])
+            absaetze = [
+                f"ich bin Viktor Fehl von High Level Performance aus Bersenbrück. Ich habe mir Ihre Website {web} angeschaut und dabei gesehen, {b['problem']}.",
+                f"Heute suchen die meisten Kunden zuerst am Handy nach einem {b['suche']} in der Nähe – und rufen dann den Betrieb an, dessen Seite sofort überzeugt.",
+                "Darum habe ich Ihre Website einmal neu gebaut: <b>kostenlos und unverbindlich</b>, mit Ihren eigenen Bildern und Texten. Scannen Sie einfach den QR-Code unten – der Entwurf öffnet sich direkt auf Ihrem Handy.",
+                "Gefällt Ihnen, was Sie sehen? Dann rufen Sie mich an. Im <b>kostenlosen Erstgespräch</b> zeige ich Ihnen, wie aus der Seite mehr Anfragen werden. Gefällt sie Ihnen nicht, lösche ich den Entwurf einfach wieder.",
+            ]
+            briefe.append(dict(b, betreff_1="Ihre neue Website ist fertig.",
+                               betreff_2=f"Kostenlos für {f['kurzname']} gebaut – einfach anschauen.",
+                               absaetze=[Markup(a) for a in absaetze],
+                               shot_desktop=str(sd), shot_mobile=str(sm), qr=str(qr),
                                url_kurz="highlevel-performance.de/vorschau/" + slug))
             print("OK", f["firma"], "→", url)
         datum = datetime.date.today().strftime("%d.%m.%Y")
