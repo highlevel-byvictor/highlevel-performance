@@ -2,9 +2,9 @@
 """Website-statt-Kaltmail: baut Vorschau-Seiten + Druck-Briefe.
 Aufruf: python3 tools/vorschau/build.py tools/vorschau/runden/<runde>.json
 """
-import json, sys, io, re, urllib.request, ssl, hashlib, datetime
+import json, sys, os, io, re, urllib.request, ssl, hashlib, datetime
 from pathlib import Path
-from PIL import Image
+from PIL import Image, ImageOps, ImageEnhance, ImageFilter
 import jinja2, segno
 from markupsafe import Markup
 from playwright.sync_api import sync_playwright
@@ -29,8 +29,14 @@ def fetch_img(url, dest, maxw=1600):
         dest = dest.with_suffix(".png"); im.save(dest, optimize=True)
     else:
         im = im.convert("RGB")
-        if im.width > maxw: im = im.resize((maxw, round(im.height * maxw / im.width)))
-        dest = dest.with_suffix(".webp"); im.save(dest, "WEBP", quality=80)
+        if im.width > maxw: im = im.resize((maxw, round(im.height * maxw / im.width)), Image.LANCZOS)
+        elif im.width < 1100: im = im.resize((1100, round(im.height * 1100 / im.width)), Image.LANCZOS)
+        # Bild aufwerten: Tonwerte, Farbe, Kontrast, Schärfe
+        im = ImageOps.autocontrast(im, cutoff=0.6)
+        im = ImageEnhance.Color(im).enhance(1.14)
+        im = ImageEnhance.Contrast(im).enhance(1.06)
+        im = im.filter(ImageFilter.UnsharpMask(radius=1.6, percent=70, threshold=3))
+        dest = dest.with_suffix(".webp"); im.save(dest, "WEBP", quality=84)
     return dest.name, im.size
 
 def tel_link(t):
@@ -64,7 +70,7 @@ def build(runde_file):
             rest = [x for x in imgs if x != hero]
             v = dict(f, slug=slug, logo=logo, hero=hero,
                      about_img=rest[0] if rest else hero,
-                     galerie=(rest[1:] if len(rest) > 2 else rest)[:5] if len(imgs) >= 3 else [],
+                     galerie=rest[1:6] if len(rest) >= 3 else rest[:5], imgs=imgs,
                      tel_link=tel_link(f.get("telefon")),
                      website_kurz=re.sub(r"^https?://(www\.)?|/$", "", f["website"]))
             html = env.get_template("vorschau.html.j2").render(f=v, icon_phone=Markup(PHONE_SVG))
@@ -87,8 +93,8 @@ def build(runde_file):
             absaetze = [
                 f"ich bin Viktor Fehl von High Level Performance aus Bersenbrück. Ich habe mir Ihre Website {web} angeschaut und dabei gesehen, {b['problem']}.",
                 f"Heute suchen die meisten Kunden zuerst am Handy nach einem {b['suche']} in der Nähe – und rufen dann den Betrieb an, dessen Seite sofort überzeugt.",
-                "Darum habe ich Ihre Website einmal neu gebaut: <b>kostenlos und unverbindlich</b>, mit Ihren eigenen Bildern und Texten. Scannen Sie einfach den QR-Code unten – der Entwurf öffnet sich direkt auf Ihrem Handy.",
-                "Gefällt Ihnen, was Sie sehen? Dann rufen Sie mich an. Im <b>kostenlosen Erstgespräch</b> zeige ich Ihnen, wie aus der Seite mehr Anfragen werden. Gefällt sie Ihnen nicht, lösche ich den Entwurf einfach wieder.",
+                "Darum habe ich Ihre Website einmal neu gebaut: <b>kostenlos und unverbindlich</b>, mit Ihren eigenen Bildern und Texten. Scannen Sie einfach den QR-Code – der Entwurf öffnet sich direkt auf Ihrem Handy.",
+                "Gefällt Ihnen, was Sie sehen? Dann rufen Sie uns an: Julian von unserem Hotline-Service vereinbart mit Ihnen ein <b>kostenloses Erstgespräch</b>. Dort zeigen wir Ihnen, wie aus der Seite mehr Anfragen werden. Gefällt sie Ihnen nicht, löschen wir den Entwurf einfach wieder.",
             ]
             briefe.append(dict(b, betreff_1="Ihre neue Website ist fertig.",
                                betreff_2=f"Kostenlos für {f['kurzname']} gebaut – einfach anschauen.",
@@ -97,7 +103,10 @@ def build(runde_file):
                                url_kurz="highlevel-performance.de/vorschau/" + slug))
             print("OK", f["firma"], "→", url)
         datum = datetime.date.today().strftime("%d.%m.%Y")
-        html = env.get_template("brief.html.j2").render(briefe=briefe, root=str(ROOT), datum=datum)
+        jt = os.environ.get("JULIAN_TEL", "JULIAN-NUMMER FEHLT")
+        jq = OUT_PDF / "julian-qr.svg"
+        segno.make("tel:" + tel_link(jt), error="m").save(str(jq), scale=10, border=0, dark="#0A1A3A")
+        html = env.get_template("brief.html.j2").render(briefe=briefe, root=str(ROOT), datum=datum, julian_tel=jt, julian_qr=str(jq))
         bf = OUT_PDF / "briefe.html"; bf.write_text(html)
         pg = br.new_page(); pg.goto(bf.as_uri()); pg.wait_for_timeout(1500)
         pdf = OUT_PDF / f"HLP-Briefe-{data['runde']}.pdf"
