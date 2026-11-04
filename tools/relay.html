@@ -1,0 +1,12 @@
+<!doctype html><meta charset="utf-8"><title>relay</title>
+<script>
+parent.postMessage({relay:'ready'},'*');
+addEventListener('message',async e=>{
+  if(!e.data||!e.data.fetch) return;
+  for(const u of e.data.fetch){
+    try{const b=await (await fetch(u)).blob(); e.source.postMessage({relay:'file',name:u.split('/').pop(),blob:b},'*');}
+    catch(err){e.source.postMessage({relay:'err',name:u,msg:String(err)},'*');}
+  }
+  e.source.postMessage({relay:'done'},'*');
+});
+</script>
