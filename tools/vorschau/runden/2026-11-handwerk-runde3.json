@@ -1,0 +1,783 @@
+{
+ "runde": "2026-11-Handwerk-Runde3",
+ "template": "v4",
+ "firmen": [
+  {
+   "slug": "tischlerei-berens",
+   "theme": "holz",
+   "firma": "Tischlerei Josef Berens GmbH & Co. KG",
+   "kurzname": "Tischlerei Berens",
+   "website": "http://tischlerei-berens.de",
+   "telefon": "0591 916740",
+   "email": "info@tischlerei-berens.de",
+   "adresse": "Ramseler Str. 38, 49811 Lingen",
+   "google": [
+    "4,7",
+    25
+   ],
+   "siegel": [
+    "Tischlermeisterbetrieb",
+    "Sicherheitspartner Handwerk"
+   ],
+   "tag": "Tischlermeisterbetrieb seit 1937",
+   "h1": "Qualität ist unsere <span>Tradition seit 1937.</span>",
+   "sub": "Holzfenster, Haustüren, Innenausbau und Möbel aus Lingen – verbaut vom Emsland bis auf Borkum und Norderney.",
+   "trust": [
+    [
+     "1937",
+     "gegründet"
+    ],
+    [
+     "2",
+     "Tischlermeister im Team"
+    ],
+    [
+     "9",
+     "Tischlergesellen"
+    ],
+    [
+     "Denkmal",
+     "Fenster für den Denkmalschutz"
+    ]
+   ],
+   "leist_h2": "Fenster, Türen und Möbel aus Meisterhand.",
+   "leistungen": [
+    "Holzfenster",
+    "Holz-Alu-Fenster",
+    "Kunststofffenster",
+    "Haustüren",
+    "Denkmalschutz",
+    "Innenausbau",
+    "Einzelmöbel",
+    "Wintergärten"
+   ],
+   "about_h2": "Drei Generationen Tischlerhandwerk.",
+   "ueber": [
+    "Tischlermeister Josef Berens sen. gründete die Tischlerei 1937 als Bau- und Möbeltischlerei. Seit 2005 führt Tischlermeister Ludger Krieger die Geschäfte.",
+    "Unsere Fenster sind unter anderem auf Borkum, Norderney, in Düsseldorf, Münster und im ganzen Emsland verbaut."
+   ],
+   "checks": [
+    "2 Tischlermeister, 9 Gesellen, 2 Azubis",
+    "Fenster für denkmalgeschützte Gebäude",
+    "Kreishandwerkerschaft Emsland"
+   ],
+   "logo_url": "http://tischlerei-berens.de/images/logos/logo_372_med.jpg",
+   "min_w": 400,
+   "bild_urls": [
+    "http://tischlerei-berens.de/images/referenzen/referenz_372_1362_thumblarge.jpg",
+    "http://tischlerei-berens.de/images/referenzen/referenz_372_1363_thumblarge.jpg",
+    "http://tischlerei-berens.de/images/referenzen/referenz_372_1365_thumblarge.jpg",
+    "http://tischlerei-berens.de/images/referenzen/referenz_372_1366_thumblarge.jpg",
+    "http://tischlerei-berens.de/images/referenzen/referenz_372_1367_thumblarge.jpg",
+    "http://tischlerei-berens.de/images/referenzen/referenz_372_1368_thumblarge.jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "Tischlerei Josef Berens GmbH & Co. KG",
+     "Herrn Ludger Krieger",
+     "Ramseler Str. 38",
+     "49811 Lingen"
+    ],
+    "anrede": "Sehr geehrter Herr Krieger,",
+    "problem": "dass sie noch ohne sichere Verbindung (https) läuft und auf dem Handy nicht richtig dargestellt wird",
+    "suche": "Tischler"
+   }
+  },
+  {
+   "slug": "broeckerhoff-metall",
+   "theme": "metall",
+   "firma": "metalltechnik Bröckerhoff",
+   "kurzname": "Bröckerhoff Metalltechnik",
+   "website": "https://broeckerhoff.de",
+   "telefon": "05931 98750",
+   "email": "info@broeckerhoff.de",
+   "adresse": "Daimlerstraße 9, 49716 Meppen",
+   "siegel": [
+    "Metall & Edelstahl seit 1948"
+   ],
+   "tag": "Metall- und Edelstahlbau · Meppen",
+   "h1": "Wir können, <span>was wir tun.</span>",
+   "sub": "Geländer, Balkone, Edelstahlarbeiten und Sonderkonstruktionen nach Kundenwunsch – seit 1948 aus Meppen.",
+   "trust": [
+    [
+     "1948",
+     "gegründet"
+    ],
+    [
+     "Edelstahl",
+     "Fertigung nach Maß"
+    ],
+    [
+     "Industrie",
+     "& Privatkunden"
+    ],
+    [
+     "Meppen",
+     "Werkstatt vor Ort"
+    ]
+   ],
+   "leist_h2": "Metall, gefertigt nach Ihrem Wunsch.",
+   "leistungen": [
+    "Balkon- & Treppengeländer",
+    "Edelstahlarbeiten",
+    "Fassadenverkleidungen",
+    "Fenster & Türen",
+    "Garagen- & Sektionaltore",
+    "Sonderkonstruktionen",
+    "Brandschutzelemente",
+    "Vordächer & Überdachungen"
+   ],
+   "about_h2": "Seit 1948 in Meppen.",
+   "ueber": [
+    "Wir sind ein mittelständischer Betrieb in Meppen und fertigen seit 1948 Metall- und Edelstahlprodukte nach Kundenwunsch.",
+    "Jedes Projekt ist für uns eine Referenz – Industriekunden betreuen wir mit individuellem Service."
+   ],
+   "checks": [
+    "Geländer, Handläufe, Balkone",
+    "Fassadenbegrünung",
+    "Individueller Service für die Industrie"
+   ],
+   "logo_url": "https://broeckerhoff.de/images/logo-broeckerhoff.jpg",
+   "min_w": 450,
+   "bild_urls": [
+    "https://broeckerhoff.de/images/halle.jpg",
+    "https://broeckerhoff.de/flash/galerie-2017/data/images1/img-51-02.jpg",
+    "https://broeckerhoff.de/flash/galerie-2017/data/images1/img-45-02.jpg",
+    "https://broeckerhoff.de/flash/galerie-2017/data/images1/img-46-02.jpg",
+    "https://broeckerhoff.de/flash/galerie-2017/data/images1/img-47-02.jpg",
+    "https://broeckerhoff.de/images/img-02.jpg",
+    "https://broeckerhoff.de/images/img-06.jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "metalltechnik Bröckerhoff",
+     "z. Hd. J. Bröckerhoff",
+     "Daimlerstraße 9",
+     "49716 Meppen"
+    ],
+    "anrede": "Guten Tag,",
+    "problem": "dass sie auf dem Handy nicht richtig dargestellt wird und die Galerie seit 2017 nicht erneuert wurde",
+    "suche": "Metallbauer"
+   }
+  },
+  {
+   "slug": "kuipers-metallbau",
+   "theme": "metall",
+   "firma": "Kuipers Metallbau GmbH & Co. KG",
+   "kurzname": "Kuipers Metallbau",
+   "website": "https://www.kuipers-metallbau.de",
+   "telefon": "05931 98800",
+   "email": "info@kuipers-metallbau.de",
+   "adresse": "Industriestr. 11, 49716 Meppen",
+   "siegel": [
+    "Metallbaumeister im Team",
+    "Schüco-Partner"
+   ],
+   "tag": "Metallbau · Fenster · Fassaden · Meppen",
+   "h1": "Erfahren. Flexibel. <span>Zuverlässig.</span>",
+   "sub": "Fenster, Türen und Fassaden aus Aluminium, Stahl und Edelstahl – für Schulen, Schwimmhallen, Autohäuser und denkmalgeschützte Gebäude.",
+   "trust": [
+    [
+     "1924",
+     "Wurzeln in der Schmiede"
+    ],
+    [
+     "Alu",
+     "Stahl & Edelstahl"
+    ],
+    [
+     "CNC",
+     "Schneiden & Kanten"
+    ],
+    [
+     "Meppen",
+     "eigene Fertigung"
+    ]
+   ],
+   "leist_h2": "Fassaden, Fenster, Türen.",
+   "leistungen": [
+    "Fassaden",
+    "Fenster",
+    "Türen",
+    "Brandschutzelemente",
+    "Blechbearbeitung",
+    "CNC-Schneiden & Kanten",
+    "Türen für Fahrzeug- & Containerbau"
+   ],
+   "about_h2": "Tradition seit 1924.",
+   "ueber": [
+    "Unsere Wurzeln liegen in der 1924 gegründeten Schmiede Robbeloth. Seit 2006 führen Christian und Sonja von Hebel die Kuipers Metallbau GmbH & Co. KG.",
+    "Wir fertigen und montieren Fenster, Türen und Fassadenelemente – unter anderem für Schulen, Schwimmhallen und denkmalgeschützte Gebäude."
+   ],
+   "checks": [
+    "Partner von Schüco, Kawneer, TS-Aluminium",
+    "Referenzen wie das Hasebad Bramsche",
+    "Fertigung und Montage aus einer Hand"
+   ],
+   "gal_h2": "Referenzen.",
+   "logo_url": "https://www.kuipers-metallbau.de/medien/bilder/logo.png",
+   "min_w": 450,
+   "bild_urls": [
+    "https://www.kuipers-metallbau.de/medien/bilder/referenzen/kuipers-hasebad-bramsche.jpg",
+    "https://www.kuipers-metallbau.de/medien/bilder/referenzen/metallbau-kuipers-header-2.jpg",
+    "https://www.kuipers-metallbau.de/medien/bilder/referenzen/kuipers-helming-sohn.jpg",
+    "https://www.kuipers-metallbau.de/medien/bilder/referenzen/kuipers-autohaus-peters.jpg",
+    "https://www.kuipers-metallbau.de/medien/bilder/referenzen/kuipers-peters-itterbeck.jpg",
+    "https://www.kuipers-metallbau.de/medien/bilder/referenzen/kuipers-boeckmann-lastrup.jpg",
+    "https://www.kuipers-metallbau.de/medien/bilder/referenzen/kuipers-ludmillenstift-meppen.jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "Kuipers Metallbau GmbH & Co. KG",
+     "Frau Sonja Wellen",
+     "Herrn Christian von Hebel",
+     "Industriestr. 11",
+     "49716 Meppen"
+    ],
+    "anrede": "Sehr geehrte Frau Wellen, sehr geehrter Herr von Hebel,",
+    "problem": "dass im Impressum noch Platzhalter aus der Vorlage stehen und die Seite auf dem Handy nicht richtig dargestellt wird",
+    "suche": "Metallbauer"
+   }
+  },
+  {
+   "slug": "broxtermann-galabau",
+   "theme": "garten",
+   "firma": "Broxtermann Garten- und Landschaftsbau GmbH & Co. KG",
+   "kurzname": "Broxtermann",
+   "website": "https://www.galabau-broxtermann.de",
+   "telefon": "0541 51517",
+   "email": "info@broxtermann.com",
+   "adresse": "Lobbertkamp 8a, 49078 Osnabrück",
+   "google": [
+    "4,8",
+    16
+   ],
+   "siegel": [
+    "Familienbetrieb seit 1954"
+   ],
+   "tag": "Garten- und Landschaftsbau · Osnabrück",
+   "h1": "Spaß <span>am Garten.</span>",
+   "sub": "Seit 1954 steht der Name Broxtermann in Osnabrück für den grünen Bereich – für Privatgärten und öffentliche Flächen.",
+   "trust": [
+    [
+     "1954",
+     "in Osnabrück"
+    ],
+    [
+     "3.",
+     "Generation"
+    ],
+    [
+     "Privat",
+     "& öffentlich"
+    ]
+   ],
+   "leist_h2": "Alles für Ihr Grün.",
+   "leistungen": [
+    "Privatgärten",
+    "Öffentliche Flächen",
+    "Planung",
+    "Pflege",
+    "Bewässerung",
+    "Zaunbau"
+   ],
+   "about_h2": "Drei Generationen im Grünen.",
+   "ueber": [
+    "1954 eröffnete Heinrich Broxtermann eine Friedhofsgärtnerei mit Blumenladen. Sein Sohn Franz übernahm 1984 und machte den Garten- und Landschaftsbau zum Hauptgeschäft.",
+    "Seit 2020 ist mit Leo Broxtermann die dritte Generation im Betrieb."
+   ],
+   "checks": [
+    "Familienbetrieb in 3. Generation",
+    "Planung, Bau und Pflege",
+    "Privat- und öffentliche Auftraggeber"
+   ],
+   "logo_url": "https://www.galabau-broxtermann.de/images/broxtermann_logo_500_kontur.png",
+   "bild_urls": [
+    "https://www.galabau-broxtermann.de/images/bg_1920.jpg",
+    "https://www.galabau-broxtermann.de/images/Stock/1920x1280/privat1.jpg",
+    "https://www.galabau-broxtermann.de/images/Stock/1920x1280/pflege1.jpg",
+    "https://www.galabau-broxtermann.de/images/Stock/1920x1280/oeffentlich2.jpg",
+    "https://www.galabau-broxtermann.de/images/Stock/1920x1280/ueberuns.jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "Broxtermann Garten- und",
+     "Landschaftsbau GmbH & Co. KG",
+     "Herrn Franz Broxtermann",
+     "Herrn Leo Broxtermann",
+     "Lobbertkamp 8a",
+     "49078 Osnabrück"
+    ],
+    "anrede": "Sehr geehrte Herren Broxtermann,",
+    "problem": "dass im Impressum ein Platzhalter steht und auf der Kontaktseite technischer Code sichtbar ist",
+    "suche": "Gartenbauer"
+   }
+  },
+  {
+   "slug": "stolze-garten",
+   "theme": "garten",
+   "firma": "Markus Stolze Garten- und Landschaftsbau GmbH",
+   "kurzname": "Stolze Gartenbau",
+   "website": "https://www.stolze-garten.de",
+   "telefon": "0541 445972",
+   "email": "info@stolze-garten.de",
+   "adresse": "Preußenweg 6, 49076 Osnabrück",
+   "google": [
+    "4,9",
+    25
+   ],
+   "siegel": [
+    "Ausbildungsbetrieb seit 2005"
+   ],
+   "tag": "Garten- und Landschaftsbau · Osnabrück",
+   "h1": "Gewachsenes erhalten, <span>Neues gestalten.</span>",
+   "sub": "Alles rund um den Garten – von der regelmäßigen Pflege bis zur Um- oder Neugestaltung, seit 1993 in Osnabrück.",
+   "trust": [
+    [
+     "1993",
+     "gegründet"
+    ],
+    [
+     "GmbH",
+     "seit 2001"
+    ],
+    [
+     "2005",
+     "Ausbildungsbetrieb"
+    ]
+   ],
+   "leist_h2": "Gärten, die bleiben.",
+   "leistungen": [
+    "Gartengestaltung",
+    "Gartenplanung",
+    "Baumpflanzung & -pflege",
+    "Terrassen",
+    "Pflasterarbeiten",
+    "Zaunbau",
+    "Teichbau & Wasserspiel",
+    "Objektpflege & Winterdienst"
+   ],
+   "about_h2": "Seit 1993 in Osnabrück.",
+   "ueber": [
+    "Das Unternehmen wurde 1993 in Osnabrück gegründet und 2001 zur Stolze Garten- und Landschaftsbau GmbH.",
+    "Wir übernehmen alle Arbeiten rund um den Garten – und bilden seit 2005 selbst aus."
+   ],
+   "checks": [
+    "Pflege, Umgestaltung, Neuanlage",
+    "Anerkannter Ausbildungsbetrieb",
+    "Winterdienst und Objektpflege"
+   ],
+   "logo_url": "https://www.stolze-garten.de/wp-content/uploads/2020/05/Logo-Stolze-Gartenbau.jpg",
+   "bild_urls": [
+    "https://www.stolze-garten.de/wp-content/uploads/2020/07/Gallerie1-5.jpg",
+    "https://www.stolze-garten.de/wp-content/uploads/2024/07/Stolze_Teambild.jpg",
+    "https://www.stolze-garten.de/wp-content/uploads/2020/07/Gallerie3-5.jpg",
+    "https://www.stolze-garten.de/wp-content/uploads/2020/07/Gallerie4-5.jpg",
+    "https://www.stolze-garten.de/wp-content/uploads/2020/07/Gallerie5-3.jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "Markus Stolze Garten- und",
+     "Landschaftsbau GmbH",
+     "Herrn Markus Stolze",
+     "Preußenweg 6",
+     "49076 Osnabrück"
+    ],
+    "anrede": "Sehr geehrter Herr Stolze,",
+    "problem": "dass dort noch von 25 Jahren die Rede ist, obwohl Sie seit 1993 am Markt sind, und der Stand von 2020 angezeigt wird",
+    "suche": "Gartenbauer"
+   }
+  },
+  {
+   "slug": "gerbes-daecher",
+   "theme": "dach",
+   "firma": "Gerbes Dächer GmbH & Co. KG",
+   "kurzname": "Gerbes Dächer",
+   "website": "https://www.gerbes.de",
+   "telefon": "05441 2222",
+   "email": "info@gerbes.de",
+   "adresse": "Strothestraße 38, 49356 Diepholz",
+   "google": [
+    "5,0",
+    29
+   ],
+   "siegel": [
+    "100 TOP DACHDECKER",
+    "Sachverständiger"
+   ],
+   "tag": "Dachdecker & Zimmerer · 6. Generation",
+   "h1": "Bestes <span>unter einem Dach.</span>",
+   "sub": "Tradition und Innovation seit über 150 Jahren – Dach, Zimmerei, Dämmung und Fassade an vier Standorten.",
+   "trust": [
+    [
+     "150+",
+     "Jahre Familienbetrieb"
+    ],
+    [
+     "6.",
+     "Generation"
+    ],
+    [
+     "40+",
+     "Mitarbeiter"
+    ],
+    [
+     "4",
+     "Standorte"
+    ]
+   ],
+   "leist_h2": "Dach, Holz und Fassade.",
+   "leistungen": [
+    "Dacheindeckung",
+    "Zimmererarbeiten",
+    "Wärmedämmung",
+    "Dachentwässerung",
+    "Energetische Sanierung",
+    "Fassadenverkleidung",
+    "Flachdachsanierung",
+    "VELUX-Dachfenster"
+   ],
+   "about_h2": "Seit 1844 unter einem Dach.",
+   "ueber": [
+    "Gerbes ist ein Familienbetrieb in sechster Generation, geführt von Ernst-Christian Gerbes. Mit über 40 Mitarbeitern begleiten wir Sie von der Entscheidung bis zur Ausführung.",
+    "Sie finden uns in Varrel, Diepholz, Rahden und Sulingen."
+   ],
+   "checks": [
+    "Dachdecker- und Zimmermeister",
+    "Öffentlich bestellter Sachverständiger",
+    "Gebäude-Energieberater"
+   ],
+   "inhaber_name": "Ernst-Christian Gerbes",
+   "inhaber_rolle": "Geschäftsführung",
+   "inhaber_idx": 6,
+   "hero_v": "B",
+   "logo_url": "https://www.gerbes.de/images/logo-navigation.png",
+   "min_w": 450,
+   "bild_urls": [
+    "https://www.gerbes.de/images/home/home-dach-und-fach-2.jpg",
+    "https://www.gerbes.de/images/haus-leistungsspektrum.jpg",
+    "https://www.gerbes.de/images/2018/01/19/ins-bl1-1.jpg",
+    "https://www.gerbes.de/images/2018/01/19/ins-bl2-1.jpg",
+    "https://www.gerbes.de/images/2018/01/19/ins-bl3-1.jpg",
+    "https://www.gerbes.de/images/2018/01/19/ins-bl4-1.jpg",
+    "https://www.gerbes.de/images/team/ernst-christian-gerbes.jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "Gerbes Dächer GmbH & Co. KG",
+     "Herrn Ernst-Christian Gerbes",
+     "Strothestraße 38",
+     "49356 Diepholz"
+    ],
+    "anrede": "Sehr geehrter Herr Gerbes,",
+    "problem": "dass sie auf dem Handy nicht richtig dargestellt wird und die neue Domain gerbes-daecher.de noch „Baustelle“ zeigt",
+    "suche": "Dachdecker"
+   }
+  },
+  {
+   "slug": "oldewage-zimmerei",
+   "theme": "dach",
+   "firma": "Zimmerei Oldewage GmbH & Co. KG",
+   "kurzname": "Zimmerei Oldewage",
+   "website": "https://zimmerei-oldewage.de",
+   "telefon": "05441 82341",
+   "email": "info@zimmerei-oldewage.de",
+   "adresse": "Mühlenweg 2, 49356 Diepholz",
+   "google": [
+    "4,3",
+    21
+   ],
+   "siegel": [
+    "Meisterbetrieb",
+    "Gebäudeenergieberater HWK"
+   ],
+   "tag": "Zimmerer-Meisterbetrieb · Diepholz",
+   "h1": "Mit uns <span>hoch hinaus.</span>",
+   "sub": "Holzbau rund ums Haus – ökologisch, nachhaltig und mit Holz aus der Region. Vom Dachstuhl bis zur Zellulosedämmung.",
+   "trust": [
+    [
+     "2003",
+     "selbständig"
+    ],
+    [
+     "1998",
+     "Zimmermeister"
+    ],
+    [
+     "HWK",
+     "Gebäudeenergieberater"
+    ]
+   ],
+   "leist_h2": "Holzbau aus der Region.",
+   "leistungen": [
+    "Holzbau & Wohnbauten",
+    "Dachstuhl & Dacheindeckung",
+    "Energieberatung",
+    "Zellulosedämmung",
+    "VELUX-Dachfenster",
+    "Trockenbau",
+    "Carports",
+    "Fördermittelberatung"
+   ],
+   "about_h2": "Handwerk mit Verantwortung.",
+   "ueber": [
+    "Lars Oldewage begann 1990 seine Ausbildung, machte 1998 den Meister und ist seit 2003 selbständig. Seit 2006 ist er außerdem Gebäudeenergieberater HWK.",
+    "Unser Fokus: ökologisch und nachhaltig bauen – mit Holz aus der Region."
+   ],
+   "checks": [
+    "Zertifizierter Fachbetrieb für Zellulosedämmung",
+    "Lehrlingswart der Zimmererinnung",
+    "Fördermittelberatung"
+   ],
+   "inhaber_name": "Lars Oldewage",
+   "inhaber_rolle": "Zimmermeister · Inhaber",
+   "inhaber_idx": 6,
+   "hero_v": "B",
+   "logo_url": "https://zimmerei-oldewage.de/images/LOGO_OLDEWAGE.png",
+   "min_w": 600,
+   "bild_urls": [
+    "https://zimmerei-oldewage.de/images/ZimmereiOldewage-21-von-78.png",
+    "https://zimmerei-oldewage.de/images/ZimmereiOldewage-40-von-78.png",
+    "https://zimmerei-oldewage.de/images/ZimmereiOldewage-38-von-78.png",
+    "https://zimmerei-oldewage.de/images/ZimmereiOldewage-13-von-78.png",
+    "https://zimmerei-oldewage.de/images/OldewageAtmo1von1.jpg",
+    "https://zimmerei-oldewage.de/images/OldewageAtmo3von1.jpg",
+    "https://zimmerei-oldewage.de/images/LarsOldewage15von1.jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "Zimmerei Oldewage GmbH & Co. KG",
+     "Herrn Lars Oldewage",
+     "Mühlenweg 2",
+     "49356 Diepholz"
+    ],
+    "anrede": "Sehr geehrter Herr Oldewage,",
+    "problem": "dass im Bilder-Slider noch Platzhaltertexte stehen und von „15 Jahren“ die Rede ist, obwohl Sie seit 2003 selbständig sind",
+    "suche": "Zimmerer"
+   }
+  },
+  {
+   "slug": "elektro-thomann",
+   "theme": "elektro",
+   "firma": "Elektro Thomann GmbH & Co. KG",
+   "kurzname": "Elektro Thomann",
+   "website": "https://www.elektrothomann.de",
+   "telefon": "04441 921960",
+   "email": "elektrothomann@t-online.de",
+   "adresse": "Petersburger Str. 19a, 49377 Vechta",
+   "google": [
+    "4,7",
+    15
+   ],
+   "siegel": [
+    "Meisterbetrieb",
+    "Loxone Partner"
+   ],
+   "tag": "Elektro-Meisterbetrieb · Vechta",
+   "h1": "Strom, Licht <span>und Smart Home.</span>",
+   "sub": "Energie- und Gebäudetechnik vom Familienbetrieb in zweiter Generation – präzise und schnell umgesetzt.",
+   "trust": [
+    [
+     "1996",
+     "gegründet"
+    ],
+    [
+     "2.",
+     "Generation"
+    ],
+    [
+     "6",
+     "im Team"
+    ]
+   ],
+   "leist_h2": "Elektrotechnik für Ihr Zuhause.",
+   "leistungen": [
+    "Beratung & Planung",
+    "Installation",
+    "Photovoltaikanlagen",
+    "Netzwerktechnik",
+    "Antennentechnik",
+    "Smart Home",
+    "Beleuchtungskonzepte"
+   ],
+   "about_h2": "Familienbetrieb seit 1996.",
+   "ueber": [
+    "Elektro Thomann steht seit 1996 für Elektrotechnik und ist als Meisterbetrieb in der Energie- und Gebäudetechnik tätig.",
+    "Unser 6-köpfiges Team setzt Ihre Wünsche präzise und schnell um – in zweiter Generation."
+   ],
+   "checks": [
+    "Loxone Partner (Silver)",
+    "Fronius System Partner",
+    "Photovoltaik und Smart Home"
+   ],
+   "svc_noimg": true,
+   "hero_v": "A",
+   "logo_url": "https://www.elektrothomann.de/img/logo.png",
+   "bild_urls": [
+    "https://www.elektrothomann.de/img/header-1.jpg",
+    "https://www.elektrothomann.de/img/header-2.jpg",
+    "https://www.elektrothomann.de/img/header-3.jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "Elektro Thomann GmbH & Co. KG",
+     "Herrn Franz-Josef Thomann",
+     "Herrn Markus Thomann",
+     "Petersburger Str. 19a",
+     "49377 Vechta"
+    ],
+    "anrede": "Sehr geehrte Herren Thomann,",
+    "problem": "dass sie auf dem Handy sehr langsam lädt und kaum Fotos Ihrer Projekte zeigt",
+    "suche": "Elektriker"
+   }
+  },
+  {
+   "slug": "elektro-brueggen",
+   "theme": "elektro",
+   "firma": "Elektro-Brüggen GmbH",
+   "kurzname": "Elektro Brüggen",
+   "website": "https://www.elektro-brueggen.de",
+   "telefon": "04441 2263",
+   "email": "info@elektro-brueggen.de",
+   "adresse": "Gutenbergstraße 11, 49377 Vechta",
+   "google": [
+    "5,0",
+    6
+   ],
+   "siegel": [
+    "Elektromeister"
+   ],
+   "tag": "Elektrotechnik seit 1936 · Vechta",
+   "h1": "Elektrotechnik. <span>Seit 1936.</span>",
+   "sub": "Elektro-, Sicherheits- und Kommunikationstechnik für gewerbliche, öffentliche und private Kunden – von der Planung bis zur Wartung.",
+   "trust": [
+    [
+     "1936",
+     "gegründet"
+    ],
+    [
+     "3.",
+     "Generation"
+    ],
+    [
+     "Gewerbe",
+     "öffentlich & privat"
+    ]
+   ],
+   "leist_h2": "Strom, Sicherheit, Kommunikation.",
+   "leistungen": [
+    "Elektroinstallation",
+    "Beleuchtungstechnik",
+    "Gebäudetechnik (EIB, PHC)",
+    "Verteilungsbau",
+    "Daten- & Netzwerktechnik",
+    "Sicherheitsbeleuchtung",
+    "Brand- & Alarmanlagen",
+    "Stromversorgung XXL"
+   ],
+   "about_h2": "Fast 90 Jahre Erfahrung.",
+   "ueber": [
+    "Hermann Brüggen sen. gründete das Unternehmen 1936. Heute führen Elektromeister Hermann Brüggen jun. und Dierk Brüggen den Betrieb.",
+    "Wir bieten das breite Spektrum der Elektrotechnik – von der Planung über die Installation bis zur Wartung."
+   ],
+   "checks": [
+    "Planung, Installation, Wartung",
+    "Brand- und Alarmanlagen",
+    "Gewerbe, öffentliche Hand, Privat"
+   ],
+   "logo_url": "https://www.elektro-brueggen.de/media/config/theme/logo.png",
+   "min_w": 450,
+   "bild_urls": [
+    "https://www.elektro-brueggen.de/media/config/theme/bild1.jpg",
+    "https://www.elektro-brueggen.de/media/config/theme/bild2.jpg",
+    "https://www.elektro-brueggen.de/media/config/theme/bild3.jpg",
+    "https://www.elektro-brueggen.de/media/de/modulpartner/unternehmen/elektroinstallation/elektroinstallationen_teaser.jpg",
+    "https://www.elektro-brueggen.de/media/de/modulpartner/unternehmen/stomversorgung-xxl/stromversorgung_teaser.jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "Elektro-Brüggen GmbH",
+     "Herrn Hermann Brüggen",
+     "Herrn Dierk Brüggen",
+     "Gutenbergstraße 11",
+     "49377 Vechta"
+    ],
+    "anrede": "Sehr geehrte Herren Brüggen,",
+    "problem": "dass auf der Startseite vor allem Hersteller-Nachrichten stehen und Ihre fast 90-jährige Geschichte noch mit 75 Jahren angegeben ist",
+    "suche": "Elektriker"
+   }
+  },
+  {
+   "slug": "ls-fensterbau",
+   "theme": "fenster",
+   "firma": "LS Fensterbau GmbH",
+   "kurzname": "LS Fensterbau",
+   "website": "https://www.ls-fensterbau.de",
+   "telefon": "04475 388",
+   "email": "info@ls-fensterbau.de",
+   "adresse": "Industriering 7, 49696 Molbergen",
+   "siegel": [
+    "Seit 1990"
+   ],
+   "tag": "Fenster & Türen · Molbergen",
+   "h1": "Wärme, Ruhe <span>und Sicherheit.</span>",
+   "sub": "Fenster und Türen vom Passivhausfenster bis zum Standardfenster – mit gutem Preis-Leistungs-Verhältnis und kurzer Lieferzeit.",
+   "trust": [
+    [
+     "1990",
+     "am Markt"
+    ],
+    [
+     "SYNEGO",
+     "Fenstersysteme"
+    ],
+    [
+     "KfW",
+     "förderfähig"
+    ]
+   ],
+   "leist_h2": "Für ein ruhiges, warmes Zuhause.",
+   "leistungen": [
+    "Fenster",
+    "Haustüren",
+    "Rollläden",
+    "Insektenschutz",
+    "Beschlag & Sicherheit",
+    "Wärme- & Schallschutz",
+    "KfW-Fördermittel"
+   ],
+   "about_h2": "Seit April 1990.",
+   "ueber": [
+    "Die LS Fensterbau GmbH ist seit April 1990 am Markt und liefert Fenster und Türen – vom zukunftsorientierten Passivhausfenster bis zum Standardfenster.",
+    "Im Mittelpunkt stehen Wärme, Ruhe und Sicherheit für Ihr Zuhause."
+   ],
+   "checks": [
+    "Passivhaus- bis Standardfenster",
+    "Kurze Lieferzeiten",
+    "Beratung zu KfW-Fördermitteln"
+   ],
+   "logo_url": "https://www.ls-fensterbau.de/wp-content/uploads/2016/11/logo.png",
+   "min_w": 600,
+   "bild_urls": [
+    "https://www.ls-fensterbau.de/wp-content/uploads/2025/02/Slide_Home1.jpg",
+    "https://www.ls-fensterbau.de/wp-content/uploads/2016/11/IMG_0784.jpg",
+    "https://www.ls-fensterbau.de/wp-content/uploads/2016/11/IMG_0790.jpg",
+    "https://www.ls-fensterbau.de/wp-content/uploads/2016/11/IMG_0795.jpg",
+    "https://www.ls-fensterbau.de/wp-content/uploads/2025/02/Slide_Home2.jpg",
+    "https://www.ls-fensterbau.de/wp-content/uploads/2025/02/ob1.jpg",
+    "https://www.ls-fensterbau.de/wp-content/uploads/2025/02/SYNEGO_Fenster.jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "LS Fensterbau GmbH",
+     "Herrn Jens Ludmann",
+     "Industriering 7",
+     "49696 Molbergen"
+    ],
+    "anrede": "Sehr geehrter Herr Ludmann,",
+    "problem": "dass die Seite „Über uns“ nur aus einem Satz besteht und viele Bilder noch von 2016 sind",
+    "suche": "Fensterbauer"
+   }
+  }
+ ]
+}

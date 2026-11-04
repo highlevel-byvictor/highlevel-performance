@@ -238,7 +238,7 @@ footer b{color:#fff}
   <div class="idx"><b>{{ f.ort_kurz }}</b>{{ f.tag }}</div>
   <div><h1>{{ f.h1 | safe }}</h1><p>{{ f.sub }}</p>
   <div style="display:flex;gap:26px;align-items:center;flex-wrap:wrap"><a class="btn btn-a" href="#kontakt">Kostenlose Beratung anfragen<svg><use href="#ar"/></svg></a>{% if f.telefon %}<a class="tl" href="tel:{{ f.tel_link }}">{{ f.telefon }}</a>{% endif %}</div></div>
-  {% if f.inhaber_idx is defined and f.inhaber_idx is not none %}<div style="display:flex;gap:16px;align-items:center;border-top:1px solid var(--line);padding-top:22px"><img src="{{ f.imgs[f.inhaber_idx] }}" alt="" style="width:64px;height:64px;object-fit:cover;object-position:center 20%"><div><b>{{ f.inhaber_name }}</b><div style="font-size:13px;color:var(--muted)">{{ f.inhaber_rolle }}</div></div></div>{% endif %}
+  {% if f.inhaber_img %}<div style="display:flex;gap:16px;align-items:center;border-top:1px solid var(--line);padding-top:22px"><img src="{{ f.inhaber_img }}" alt="{{ f.inhaber_name }}" style="width:64px;height:64px;object-fit:cover;object-position:center 20%"><div><b>{{ f.inhaber_name }}</b><div style="font-size:13px;color:var(--muted)">{{ f.inhaber_rolle }}</div></div></div>{% endif %}
  </div>
 </section>
 {% elif hv == 'C' %}

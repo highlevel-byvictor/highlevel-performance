@@ -24,10 +24,16 @@ THEMES = {
  "garten":  dict(serif=True, dark="#13261C", acc="#3C8F5A", acc2="#B9DFA0", tint="#F4F7F1", on="#08160F"),
  "fliesen": dict(serif=True, dark="#1C1A18", acc="#A8794B", acc2="#DDBB92", tint="#F5F2EE", on="#1C1A18"),
  "fehl":    dict(dark="#061A33", acc="#E60502", acc2="#3FA2F0", tint="#F4F6F9", on="#fff"),
+ "metall":  dict(dark="#15181C", acc="#E0622A", acc2="#F4A57A", tint="#F3F3F1", on="#fff"),
+ "fenster": dict(dark="#0F1E2E", acc="#2F7FC1", acc2="#9ACFF3", tint="#F4F7FA", on="#fff"),
  "bau":     dict(dark="#141518", acc="#E3B93E", acc2="#F3D985", tint="#F5F4F0", on="#141518"),
 }
 
 STEPS = {
+ "metall":  [("Anfrage","Sie schildern uns Ihr Vorhaben – gern mit Skizze oder Foto."),("Aufmaß & Planung","Wir messen vor Ort auf und planen jedes Detail."),("Fertigung","In unserer Werkstatt entsteht Ihr Bauteil nach Maß."),("Montage","Wir montieren sauber und termingerecht bei Ihnen.")],
+ "fenster": [("Beratung","Wir beraten Sie zu Material, Wärme- und Einbruchschutz."),("Aufmaß","Wir messen Ihre Fenster und Türen exakt vor Ort."),("Lieferung","Ihre Elemente werden passgenau gefertigt und geliefert."),("Einbau","Unser Team baut fachgerecht und sauber ein.")],
+ "elektro": [("Anfrage","Rufen Sie an oder schreiben Sie uns kurz."),("Planung","Wir planen Ihre Installation passend zu Ihrem Gebäude."),("Installation","Unsere Elektriker setzen alles fachgerecht um."),("Service","Wir bleiben Ihr Ansprechpartner für Wartung und Erweiterung.")],
+ "garten":  [("Beratung","Wir schauen uns Ihren Garten an und hören zu."),("Planung","Wir entwickeln einen Plan, der zu Ihnen passt."),("Umsetzung","Unser Team baut Ihren Garten sauber und zuverlässig."),("Pflege","Auf Wunsch kümmern wir uns dauerhaft um Ihr Grün.")],
  "fehl":    [("Erstkontakt","Sie rufen an oder schreiben uns – wir hören zu."),("Besichtigung & Beratung","Wir schauen uns alles an und beraten Sie ehrlich."),("Planung","Ihre Wünsche fließen in einen klaren Bauplan ein."),("Ausführung","Wir bauen termingerecht – Sie sind immer informiert.")],
  "holz":    [("Beratung","Wir besprechen Ihre Idee – gern direkt bei Ihnen vor Ort."),("Aufmaß & Entwurf","Wir messen genau auf und planen Ihr Stück im Detail."),("Fertigung","In der eigenen Werkstatt entsteht Ihr Unikat."),("Montage","Wir bauen alles sauber und passgenau bei Ihnen ein.")],
  "dach":    [("Dach-Check","Rufen Sie an – wir schauen uns Ihr Dach an."),("Angebot","Sie erhalten ein klares, verständliches Angebot."),("Ausführung","Unser Team arbeitet sicher, sauber und termintreu."),("Abnahme","Wir übergeben Ihr Dach und bleiben Ihr Ansprechpartner.")],
@@ -97,10 +103,12 @@ def build(runde_file):
                      tel_link=tel_link(f.get("telefon")),
                      website_kurz=re.sub(r"^https?://(www\.)?|/$", "", f["website"]))
             if data.get("template") in ("v2", "v3", "v4"):
-                order = [imgs[(f.get("hero_idx", 0) + k) % len(imgs)] for k in range(len(imgs))]
+                inh = imgs[f["inhaber_idx"]] if f.get("inhaber_idx") is not None and f["inhaber_idx"] < len(imgs) else None
+                base = [x for x in imgs if x != inh]
+                order = [base[(f.get("hero_idx", 0) + k) % len(base)] for k in range(len(base))]
                 cyc = lambda k: order[k % len(order)]
                 v.update(mosaic=[cyc(0), cyc(1), cyc(2)], band=(None if f.get("band_idx") == "none" else cyc(f.get("band_idx", 3))), about_img=cyc(4), about_img2=cyc(5),
-                         galerie=order, imgs=order, pos=f.get("pos", {}))
+                         galerie=order, imgs=order, pos=f.get("pos", {}), inhaber_img=inh)
                 v.update(slides=[cyc(k) for k in f.get("slides", range(min(4, len(order))))], cta_img=cyc(f.get("cta_idx", 2)))
                 hsh = int(hashlib.sha1(f["slug"].encode()).hexdigest(), 16)
                 v.setdefault("hero_v", "ABC"[hsh % 3]); v.setdefault("svc_v", ["rows", "grid"][(hsh // 3) % 2])
