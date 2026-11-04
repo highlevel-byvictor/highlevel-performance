@@ -23,10 +23,12 @@ THEMES = {
  "elektro": dict(dark="#0B0E17", acc="#F2B200", acc2="#FFE27A", tint="#FFFBEF", on="#0B0E17"),
  "garten":  dict(serif=True, dark="#13261C", acc="#3C8F5A", acc2="#B9DFA0", tint="#F4F7F1", on="#08160F"),
  "fliesen": dict(serif=True, dark="#1C1A18", acc="#A8794B", acc2="#DDBB92", tint="#F5F2EE", on="#1C1A18"),
+ "fehl":    dict(dark="#061A33", acc="#E60502", acc2="#3FA2F0", tint="#F4F6F9", on="#fff"),
  "bau":     dict(dark="#141518", acc="#E3B93E", acc2="#F3D985", tint="#F5F4F0", on="#141518"),
 }
 
 STEPS = {
+ "fehl":    [("Erstkontakt","Sie rufen an oder schreiben uns – wir hören zu."),("Besichtigung & Beratung","Wir schauen uns alles an und beraten Sie ehrlich."),("Planung","Ihre Wünsche fließen in einen klaren Bauplan ein."),("Ausführung","Wir bauen termingerecht – Sie sind immer informiert.")],
  "holz":    [("Beratung","Wir besprechen Ihre Idee – gern direkt bei Ihnen vor Ort."),("Aufmaß & Entwurf","Wir messen genau auf und planen Ihr Stück im Detail."),("Fertigung","In der eigenen Werkstatt entsteht Ihr Unikat."),("Montage","Wir bauen alles sauber und passgenau bei Ihnen ein.")],
  "dach":    [("Dach-Check","Rufen Sie an – wir schauen uns Ihr Dach an."),("Angebot","Sie erhalten ein klares, verständliches Angebot."),("Ausführung","Unser Team arbeitet sicher, sauber und termintreu."),("Abnahme","Wir übergeben Ihr Dach und bleiben Ihr Ansprechpartner.")],
  "maler":   [("Farbberatung","Wir beraten Sie zu Farben, Techniken und Materialien."),("Muster","Farbproben und Musterplatten zeigen vorher das Ergebnis."),("Umsetzung","Wir arbeiten sauber, abgedeckt und termintreu."),("Übergabe","Wir übergeben Ihnen besenreine, fertige Räume.")],
@@ -73,7 +75,7 @@ def build(runde_file):
         br = p.chromium.launch()
         for f in data["firmen"]:
             if f.get("skip"): continue
-            slug = f["slug"] + "-" + hashlib.sha1(f["firma"].encode()).hexdigest()[:4]
+            slug = f.get("slug_exact") or (f["slug"] + "-" + hashlib.sha1(f["firma"].encode()).hexdigest()[:4])
             d = ROOT / "vorschau" / slug; (d / "img").mkdir(parents=True, exist_ok=True)
             imgs = []
             for i, u in enumerate(f.get("bild_urls", [])):
@@ -94,13 +96,16 @@ def build(runde_file):
                      galerie=rest[1:6] if len(rest) >= 3 else rest[:5], imgs=imgs,
                      tel_link=tel_link(f.get("telefon")),
                      website_kurz=re.sub(r"^https?://(www\.)?|/$", "", f["website"]))
-            if data.get("template") in ("v2", "v3"):
+            if data.get("template") in ("v2", "v3", "v4"):
                 order = [imgs[(f.get("hero_idx", 0) + k) % len(imgs)] for k in range(len(imgs))]
                 cyc = lambda k: order[k % len(order)]
                 v.update(mosaic=[cyc(0), cyc(1), cyc(2)], band=(None if f.get("band_idx") == "none" else cyc(f.get("band_idx", 3))), about_img=cyc(4), about_img2=cyc(5),
                          galerie=order, imgs=order, pos=f.get("pos", {}))
                 v.update(slides=[cyc(k) for k in f.get("slides", range(min(4, len(order))))], cta_img=cyc(f.get("cta_idx", 2)))
-                html = env.get_template("vorschau3.html.j2" if data.get("template") == "v3" else "vorschau2.html.j2").render(f=v, t=THEMES[f.get("theme", "shk")], icon_phone=Markup(PHONE_SVG), steps=STEPS.get(f.get("theme","shk"), STEPS["shk"]))
+                hsh = int(hashlib.sha1(f["slug"].encode()).hexdigest(), 16)
+                v.setdefault("hero_v", "ABC"[hsh % 3]); v.setdefault("svc_v", ["rows", "grid"][(hsh // 3) % 2])
+                v["ort_kurz"] = re.sub(r"^\d{5}\s*", "", (f.get("adresse", "").split(",")[-1]).strip()) or ""
+                html = env.get_template({"v3": "vorschau3.html.j2", "v4": "vorschau4.html.j2"}.get(data.get("template"), "vorschau2.html.j2")).render(f=v, t=THEMES[f.get("theme", "shk")], icon_phone=Markup(PHONE_SVG), steps=STEPS.get(f.get("theme","shk"), STEPS["shk"]))
             else:
                 html = env.get_template("vorschau.html.j2").render(f=v, icon_phone=Markup(PHONE_SVG))
             (d / "index.html").write_text(html)
@@ -108,11 +113,11 @@ def build(runde_file):
             sd, sm = OUT_PDF / f"{slug}-desk.jpg", OUT_PDF / f"{slug}-mob.jpg"
             pg = br.new_page(viewport={"width": 1280, "height": 860}, device_scale_factor=1.5)
             pg.goto((d / "index.html").as_uri()); pg.wait_for_timeout(900)
-            pg.evaluate("document.querySelector('.pv').style.display='none';document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'))")
+            pg.evaluate("document.querySelector('.pv').style.display='none';document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'));var cb=document.querySelector('.callbar');cb&&(cb.style.display='none')")
             pg.screenshot(path=str(sd), type="jpeg", quality=85); pg.close()
             pg = br.new_page(viewport={"width": 390, "height": 800}, device_scale_factor=2, is_mobile=True)
             pg.goto((d / "index.html").as_uri()); pg.wait_for_timeout(900)
-            pg.evaluate("document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'));document.querySelector('.pv').style.display='none';document.querySelector('.callbar')&&(document.querySelector('.callbar').style.display='none')")
+            pg.evaluate("document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'));var cb=document.querySelector('.callbar');cb&&(cb.style.display='none');document.querySelector('.pv').style.display='none';document.querySelector('.callbar')&&(document.querySelector('.callbar').style.display='none')")
             pg.screenshot(path=str(sm), type="jpeg", quality=85); pg.close()
             url = BASE + slug + "/"
             qr = OUT_PDF / f"{slug}-qr.svg"

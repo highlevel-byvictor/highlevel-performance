@@ -71,7 +71,14 @@
     "suche": "Fachbetrieb für Strahlen und Beschichten"
    },
    "theme": "bau",
-   "min_w": 450
+   "min_w": 450,
+   "google": [
+    "4,8",
+    6
+   ],
+   "siegel": [
+    "Familienbetrieb seit 1963"
+   ]
   },
   {
    "slug": "tischlerei-hellmann",
@@ -138,7 +145,14 @@
     "suche": "Tischler"
    },
    "theme": "holz",
-   "min_w": 450
+   "min_w": 450,
+   "google": [
+    "4,4",
+    9
+   ],
+   "siegel": [
+    "Stöckel-Partner"
+   ]
   },
   {
    "slug": "holzbau-wagemester",
@@ -207,7 +221,10 @@
     "suche": "Zimmerer"
    },
    "theme": "dach",
-   "min_w": 450
+   "min_w": 450,
+   "siegel": [
+    "Traditionsbetrieb"
+   ]
   },
   {
    "slug": "von-garrel",
@@ -277,7 +294,14 @@
     "suche": "Maler"
    },
    "theme": "maler",
-   "min_w": 450
+   "min_w": 450,
+   "google": [
+    "4,7",
+    19
+   ],
+   "siegel": [
+    "Meister-Innungsfachbetrieb"
+   ]
   },
   {
    "slug": "moehlmann-haustechnik",
@@ -346,7 +370,15 @@
     "suche": "Heizungsbauer"
    },
    "theme": "shk",
-   "min_w": 450
+   "min_w": 450,
+   "google": [
+    "4,9",
+    12
+   ],
+   "siegel": [
+    "Meisterbetrieb seit 1973",
+    "Ausbildungsbetrieb"
+   ]
   },
   {
    "slug": "vonstrohe",
@@ -414,7 +446,14 @@
     "suche": "Heizungsbauer"
    },
    "theme": "shk",
-   "min_w": 450
+   "min_w": 450,
+   "google": [
+    "4,7",
+    18
+   ],
+   "siegel": [
+    "Gebäudeenergieberater (HwK)"
+   ]
   },
   {
    "slug": "tischlerei-wernsing",
@@ -487,7 +526,15 @@
     "suche": "Tischler"
    },
    "theme": "holz",
-   "min_w": 450
+   "min_w": 450,
+   "google": [
+    "4,4",
+    7
+   ],
+   "siegel": [
+    "Meisterbetrieb",
+    "Tischlerinnung Nord"
+   ]
   },
   {
    "slug": "kalz-melke",
@@ -560,7 +607,14 @@
     "suche": "Heizungsbauer"
    },
    "theme": "shk",
-   "min_w": 450
+   "min_w": 450,
+   "google": [
+    "4,9",
+    10
+   ],
+   "siegel": [
+    "Familienbetrieb seit 1971"
+   ]
   },
   {
    "slug": "rasch-heiztechnik",
@@ -628,7 +682,14 @@
     "suche": "Heizungsbauer oder Badsanierer"
    },
    "theme": "shk",
-   "min_w": 450
+   "min_w": 450,
+   "google": [
+    "4,4",
+    10
+   ],
+   "siegel": [
+    "Meisterbetrieb"
+   ]
   },
   {
    "slug": "bdm-dachbau",
@@ -698,7 +759,14 @@
    },
    "logo_invert": true,
    "theme": "dach",
-   "min_w": 450
+   "min_w": 450,
+   "google": [
+    "5,0",
+    9
+   ],
+   "siegel": [
+    "ZVDH-Materialgarantie"
+   ]
   }
  ],
  "template": "v3"

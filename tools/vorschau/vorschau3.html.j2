@@ -46,6 +46,14 @@ em.ac,.grad,.hero h1 span{font-style:{% if t.serif %}italic{% else %}normal{% en
 .hero h1{font-size:clamp(40px,5.2vw,74px)}
 .hero p{font-size:18.5px;color:rgba(255,255,255,.72);margin:22px 0 34px;max-width:470px}
 .cta{display:flex;gap:12px;flex-wrap:wrap}
+.proof{display:flex;gap:10px;flex-wrap:wrap;margin-top:28px}
+.proof .g,.proof .sg{display:flex;align-items:center;gap:9px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:9px 13px;font-size:13px;font-weight:700}
+.proof .stars{display:flex;gap:1px}.proof .stars svg{width:15px;height:15px;fill:#FBBC04}
+.proof .g b{font-family:"Poppins";font-size:16px}.proof .g small{color:rgba(255,255,255,.6);font-weight:600}
+.proof .sg svg{width:18px;height:18px;color:var(--acc2)}
+.owner{display:flex;align-items:center;gap:14px;margin-top:22px}
+.owner img{width:58px;height:58px;border-radius:50%;object-fit:cover;object-position:center 20%;border:2px solid var(--acc2)}
+.owner b{display:block;font-size:15px}.owner span{font-size:13px;color:rgba(255,255,255,.6)}
 .counters{display:flex;gap:34px;margin-top:46px;flex-wrap:wrap}
 .counters b{display:block;font-family:var(--hf);font-size:32px;line-height:1;color:#fff}
 .counters span{font-size:12.5px;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.08em}
@@ -213,9 +221,14 @@ footer b{color:#fff}
   <h1>{{ f.h1 | safe }}</h1>
   <p>{{ f.sub }}</p>
   <div class="cta">
-   <a class="btn btn-acc" href="#kontakt">Jetzt anfragen →</a>
+   <a class="btn btn-acc" href="#kontakt">Kostenlose Beratung anfragen</a>
    {% if f.telefon %}<a class="btn btn-line" href="tel:{{ f.tel_link }}">{{ icon_phone }}{{ f.telefon }}</a>{% endif %}
   </div>
+  {% if f.google or f.siegel %}<div class="proof">
+   {% if f.google %}<div class="g"><span class="stars">{% for k in range(5) %}<svg viewBox="0 0 24 24"><path d="M12 2.5l2.9 6 6.6.8-4.9 4.6 1.3 6.5L12 17.2 6.1 20.4l1.3-6.5L2.5 9.3l6.6-.8z"/></svg>{% endfor %}</span><b>{{ f.google[0] }}</b><small>{{ f.google[1] }} Google-Bewertungen</small></div>{% endif %}
+   {% for sg in f.siegel or [] %}<div class="sg"><svg viewBox="0 0 24 24"><path d="M12 2l8 4v6c0 5-3.5 8.5-8 10-4.5-1.5-8-5-8-10V6z" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8.5 12l2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="2.2"/></svg>{{ sg }}</div>{% endfor %}
+  </div>{% endif %}
+  {% if f.inhaber_idx is not none and f.inhaber_idx is defined %}<div class="owner"><img src="{{ f.imgs[f.inhaber_idx] }}" alt="{{ f.inhaber_name }}"><div><b>{{ f.inhaber_name }}</b><span>{{ f.inhaber_rolle }}</span></div></div>{% endif %}
   <div class="counters">{% for s in f.trust[:3] %}<div><b>{{ s[0] }}</b><span>{{ s[1] }}</span></div>{% endfor %}</div>
  </div>
  <div class="slider" id="hs">
@@ -249,6 +262,8 @@ footer b{color:#fff}
  <div class="carousel" id="pgal">{% for g in f.galerie %}<a class="pg" href="{{ g }}" data-lb><img src="{{ g }}" alt="Projekt {{ loop.index }}" loading="lazy"><span class="n">{{ "%02d"|format(loop.index) }} / {{ "%02d"|format(f.galerie|length) }}</span></a>{% endfor %}</div>
 </section>
 
+{% if f.stimmen %}<section class="proj" style="padding-top:0"><div class="wrap"><div class="sh rv"><div><span class="kick" style="color:var(--acc2)">Kundenstimmen</span><h2>Das sagen unsere Kunden.</h2></div></div>
+ <div class="steps" style="grid-template-columns:repeat({{ f.stimmen|length if f.stimmen|length < 4 else 3 }},1fr)">{% for q in f.stimmen %}<div class="step rv" style="background:rgba(255,255,255,.06);color:#fff;box-shadow:none"><p style="color:rgba(255,255,255,.85);font-size:16px">„{{ q[0] }}“</p><h3 style="font-size:16px;margin-top:16px">{{ q[1] }}</h3></div>{% endfor %}</div></div></section>{% endif %}
 <section><div class="wrap">
  <div class="sh rv"><div><span class="kick">So einfach geht's</span><h2>In {{ steps|length }} Schritten zum <em class="ac">Ergebnis.</em></h2></div></div>
  <div class="steps">
@@ -257,7 +272,7 @@ footer b{color:#fff}
 </div></section>
 
 <div class="ctab"><div class="wrap"><div class="box rv">
- <div class="l"><h2>Bereit für Ihr <em class="ac">Projekt?</em></h2><p>Rufen Sie uns an – wir beraten Sie gern persönlich.</p>
+ <div class="l"><h2>Kostenloses <em class="ac">Beratungsgespräch.</em></h2><p>Rufen Sie uns an – wir nehmen uns Zeit für Ihr Vorhaben und beraten Sie persönlich und unverbindlich.</p>
   <div class="cta">{% if f.telefon %}<a class="btn btn-acc" href="tel:{{ f.tel_link }}">{{ icon_phone }}{{ f.telefon }}</a>{% endif %}<a class="btn btn-line" href="#kontakt">Anfrage schreiben</a></div></div>
  <div class="r"><img src="{{ f.cta_img }}" alt="" loading="lazy"></div>
 </div></div></div>

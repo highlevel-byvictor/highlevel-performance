@@ -1,6 +1,6 @@
 {
  "runde": "2026-11-Handwerk-Runde2",
- "template": "v3",
+ "template": "v4",
  "firmen": [
   {
    "slug": "teepker-dachdecker",
@@ -68,7 +68,14 @@
     "problem": "dass sie seit 2018 nicht mehr erneuert wurde und kaum Fotos Ihrer Projekte zeigt",
     "suche": "Dachdecker"
    },
-   "min_w": 500
+   "min_w": 500,
+   "google": [
+    "4,8",
+    26
+   ],
+   "siegel": [
+    "Meisterbetrieb"
+   ]
   },
   {
    "slug": "moormann-bau",
@@ -136,7 +143,14 @@
     "anrede": "Sehr geehrter Herr Moormann,",
     "problem": "dass im Impressum noch Vorlagentext steht und Ihre Leistungen nur als kurze Liste ohne Bilder erscheinen",
     "suche": "Bauunternehmen"
-   }
+   },
+   "google": [
+    "5,0",
+    8
+   ],
+   "siegel": [
+    "Maurer- & Betonbaumeister"
+   ]
   },
   {
    "slug": "tischlerei-witte",
@@ -204,7 +218,10 @@
     "anrede": "Sehr geehrter Herr Witte,",
     "problem": "dass sie noch ohne sichere Verbindung (https) läuft und seit 2018 nicht erneuert wurde",
     "suche": "Tischler"
-   }
+   },
+   "siegel": [
+    "Familienbetrieb seit 1923"
+   ]
   },
   {
    "slug": "tischlerei-apke",
@@ -273,7 +290,14 @@
     "problem": "dass einige Menüpunkte auf falsche Seiten führen und eine Galerie Ihrer Arbeiten fehlt",
     "suche": "Tischler"
    },
-   "band_idx": 1
+   "band_idx": 1,
+   "google": [
+    "4,8",
+    5
+   ],
+   "siegel": [
+    "Familienbetrieb seit 1960"
+   ]
   },
   {
    "slug": "tischlerei-duehnen",
@@ -342,7 +366,14 @@
     "anrede": "Sehr geehrte Herren Dühnen,",
     "problem": "dass sie auf dem Handy nur als feste Mini-Version läuft und Ihre Leistungen schwer zu finden sind",
     "suche": "Tischler"
-   }
+   },
+   "google": [
+    "4,7",
+    13
+   ],
+   "siegel": [
+    "Meister- & Innungsfachbetrieb"
+   ]
   },
   {
    "slug": "maler-gesen",
@@ -410,7 +441,15 @@
     "anrede": "Sehr geehrter Herr Gesen,",
     "problem": "dass dort noch das 75-jährige Jubiläum aus 2021 angekündigt wird und einige Texte nicht mehr aktuell sind",
     "suche": "Maler"
-   }
+   },
+   "google": [
+    "4,8",
+    12
+   ],
+   "siegel": [
+    "Malermeister",
+    "seit 1946"
+   ]
   },
   {
    "slug": "fliesen-waschefort",
@@ -479,7 +518,14 @@
     "anrede": "Sehr geehrte Herren Waschefort,",
     "problem": "dass der letzte Beitrag unter „Aktuelles“ von 2020 stammt und ein Link in der Navigation nicht funktioniert",
     "suche": "Fliesenleger"
-   }
+   },
+   "google": [
+    "5,0",
+    11
+   ],
+   "siegel": [
+    "Mobiles Badezimmer"
+   ]
   },
   {
    "slug": "fliesen-witte",
@@ -547,7 +593,15 @@
     "anrede": "Sehr geehrter Herr Witte,",
     "problem": "dass dort kaum Fotos Ihrer eigenen Projekte zu sehen sind und keine Referenzen auf der Startseite stehen",
     "suche": "Fliesenleger"
-   }
+   },
+   "google": [
+    "5,0",
+    3
+   ],
+   "siegel": [
+    "Innung Oldenburg",
+    "Meisterbetrieb"
+   ]
   },
   {
    "slug": "deiters-shk",
@@ -620,7 +674,14 @@
    "band_idx": "none",
    "svc_noimg": true,
    "gal_h2": "Unser Team",
-   "gal_p": "Die Menschen hinter Deiters – Ihre Ansprechpartner in Melle."
+   "gal_p": "Die Menschen hinter Deiters – Ihre Ansprechpartner in Melle.",
+   "google": [
+    "4,5",
+    16
+   ],
+   "siegel": [
+    "Installateur- & Heizungsbaumeister"
+   ]
   },
   {
    "slug": "boewer-bau",
@@ -690,7 +751,17 @@
     "problem": "dass die Startseite kaum Text hat und unter „Leistungen & Projekte“ keine Projektbeispiele zu sehen sind",
     "suche": "Bauunternehmen"
    },
-   "band_idx": 0
+   "band_idx": 0,
+   "google": [
+    "5,0",
+    7
+   ],
+   "siegel": [
+    "Dipl.-Ing. in der Führung"
+   ],
+   "inhaber_idx": 4,
+   "inhaber_name": "Klemens & Andreas Böwer",
+   "inhaber_rolle": "Geschäftsführung"
   }
  ]
 }
