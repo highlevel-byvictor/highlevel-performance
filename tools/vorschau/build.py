@@ -15,6 +15,17 @@ BASE = "https://www.highlevel-performance.de/vorschau/"
 OUT_PDF = ROOT.parent / "vorschau-ausgabe"
 PHONE_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>'
 
+THEMES = {
+ "holz":    dict(dark="#1B130C", acc="#C27A3A", acc2="#F2C185", tint="#FBF6EF", on="#1B130C"),
+ "dach":    dict(dark="#12151E", acc="#D9472B", acc2="#FF9E7D", tint="#F7F4F2", on="#fff"),
+ "maler":   dict(dark="#170F2E", acc="#7C3AED", acc2="#F472B6", tint="#FAF7FF", on="#fff"),
+ "shk":     dict(dark="#06182B", acc="#0A8FD8", acc2="#4FE3D1", tint="#F2F8FC", on="#04121F"),
+ "elektro": dict(dark="#0B0E17", acc="#F2B200", acc2="#FFE27A", tint="#FFFBEF", on="#0B0E17"),
+ "garten":  dict(dark="#0D1F16", acc="#2E9E5A", acc2="#B4EBA0", tint="#F3FAF4", on="#08160F"),
+ "fliesen": dict(dark="#10191B", acc="#0F8C82", acc2="#9BEFE2", tint="#F1F8F7", on="#071211"),
+ "bau":     dict(dark="#15171C", acc="#E0761C", acc2="#FFC37A", tint="#F8F6F3", on="#15171C"),
+}
+
 env = jinja2.Environment(loader=jinja2.FileSystemLoader(TPL), autoescape=True)
 ctx = ssl.create_default_context()
 
@@ -22,6 +33,7 @@ def fetch_img(url, dest, maxw=1600):
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     data = urllib.request.urlopen(req, timeout=30, context=ctx).read()
     im = Image.open(io.BytesIO(data))
+    orig = im.size
     logo = dest.stem == "logo"
     if logo:
         im = im.convert("RGBA")
@@ -37,7 +49,7 @@ def fetch_img(url, dest, maxw=1600):
         im = ImageEnhance.Contrast(im).enhance(1.06)
         im = im.filter(ImageFilter.UnsharpMask(radius=1.6, percent=70, threshold=3))
         dest = dest.with_suffix(".webp"); im.save(dest, "WEBP", quality=84)
-    return dest.name, im.size
+    return dest.name, orig
 
 def tel_link(t):
     t = re.sub(r"[^\d+]", "", t or "")
@@ -58,7 +70,7 @@ def build(runde_file):
             for i, u in enumerate(f.get("bild_urls", [])):
                 try:
                     n, sz = fetch_img(u, d / "img" / f"b{i+1}")
-                    if sz[0] >= 500: imgs.append("img/" + n)
+                    if sz[0] >= (700 if data.get("template") == "v2" else 500): imgs.append("img/" + n)
                 except Exception as e:
                     print("  Bild fehlt:", u, e)
             logo = None
@@ -73,7 +85,14 @@ def build(runde_file):
                      galerie=rest[1:6] if len(rest) >= 3 else rest[:5], imgs=imgs,
                      tel_link=tel_link(f.get("telefon")),
                      website_kurz=re.sub(r"^https?://(www\.)?|/$", "", f["website"]))
-            html = env.get_template("vorschau.html.j2").render(f=v, icon_phone=Markup(PHONE_SVG))
+            if data.get("template") == "v2":
+                order = [imgs[(f.get("hero_idx", 0) + k) % len(imgs)] for k in range(len(imgs))]
+                cyc = lambda k: order[k % len(order)]
+                v.update(mosaic=[cyc(0), cyc(1), cyc(2)], band=cyc(3), about_img=cyc(4), about_img2=cyc(5),
+                         galerie=order, imgs=order, pos=f.get("pos", {}))
+                html = env.get_template("vorschau2.html.j2").render(f=v, t=THEMES[f.get("theme", "shk")], icon_phone=Markup(PHONE_SVG))
+            else:
+                html = env.get_template("vorschau.html.j2").render(f=v, icon_phone=Markup(PHONE_SVG))
             (d / "index.html").write_text(html)
             # Screenshots für den Brief
             sd, sm = OUT_PDF / f"{slug}-desk.jpg", OUT_PDF / f"{slug}-mob.jpg"
@@ -93,7 +112,7 @@ def build(runde_file):
             absaetze = [
                 f"ich bin Viktor Fehl von High Level Performance aus Bersenbrück. Ich habe mir Ihre Website {web} angeschaut und dabei gesehen, {b['problem']}.",
                 f"Heute suchen die meisten Kunden zuerst am Handy nach einem {b['suche']} in der Nähe – und rufen dann den Betrieb an, dessen Seite sofort überzeugt.",
-                "Darum habe ich Ihre Website einmal neu gebaut: <b>kostenlos und unverbindlich</b>, mit Ihren eigenen Bildern und Texten. Scannen Sie einfach den QR-Code – der Entwurf öffnet sich direkt auf Ihrem Handy.",
+                "Darum habe ich einen ersten, groben Entwurf Ihrer neuen Website gebaut: <b>kostenlos und unverbindlich</b>, mit Ihren eigenen Bildern und Texten. Scannen Sie einfach den QR-Code – der Entwurf öffnet sich direkt auf Ihrem Handy. Bei einer Zusammenarbeit gehen wir natürlich noch viel intensiver ins Detail.",
                 "Gefällt Ihnen, was Sie sehen? Dann rufen Sie uns an: Julian von unserem Hotline-Service vereinbart mit Ihnen ein <b>kostenloses Erstgespräch</b>. Dort zeigen wir Ihnen, wie aus der Seite mehr Anfragen werden. Gefällt sie Ihnen nicht, löschen wir den Entwurf einfach wieder.",
             ]
             briefe.append(dict(b, betreff_1="Ihre neue Website ist fertig.",
