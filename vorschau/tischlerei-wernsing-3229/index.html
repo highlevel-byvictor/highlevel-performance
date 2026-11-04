@@ -7,180 +7,318 @@
 <title>Tischlerei Wernsing GmbH – Entwurf</title>
 <link rel="stylesheet" href="../../assets/fonts.css">
 <style>
-:root{--ink:#0B1630;--muted:#56627A;--line:#E3E8F1;--bg:#F6F8FC;--acc:#8B5E34;--acc2:#F5C27A;--navy:#0A1A3A}
+:root{--dark:#1B130C;--acc:#B9773C;--acc2:#E9C08C;--tint:#F8F3EC;--on:#1B130C;--ink:#0E1424;--muted:#5B6476;
+--hf:"Bodoni Moda",Georgia,serif;--hw:600}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:"Manrope","Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--bg);line-height:1.6;-webkit-font-smoothing:antialiased}
+body{font-family:"Manrope","Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--tint);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
-.wrap{max-width:1200px;margin:0 auto;padding:0 20px}
-h1,h2,h3{font-family:"Poppins","Helvetica Neue",Arial,sans-serif;line-height:1.1;letter-spacing:-.02em}
-.pv{background:#0B1630;color:#fff;font-size:13px;text-align:center;padding:9px 16px}
-.pv b{color:#38C8FF}
-.nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px;gap:16px}
-.brand{display:flex;align-items:center;gap:12px;font-family:"Poppins";font-weight:700;font-size:17px}
-.brand img{height:44px;width:auto;max-width:170px;object-fit:contain}
-.brand img.inv{filter:invert(1) brightness(.2)}
-.links{display:flex;gap:28px;font-weight:600;font-size:15px;color:var(--muted)}
-.links a:hover{color:var(--ink)}
-.btn{display:inline-flex;align-items:center;gap:10px;font-weight:700;font-size:15px;padding:14px 24px;border-radius:999px;transition:transform .15s;white-space:nowrap}
+.wrap{max-width:1280px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--hf);font-weight:var(--hw);line-height:1.04;letter-spacing:-.01em}
+em.ac,.grad,.hero h1 span{font-style:italic;background:linear-gradient(100deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.kick{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);margin-bottom:14px}
+.kick:before{content:"";width:28px;height:2px;background:currentColor}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:15px;padding:16px 28px;border-radius:999px;transition:transform .2s,box-shadow .2s,background .2s;white-space:nowrap;border:0;cursor:pointer;font-family:inherit}
 .btn:hover{transform:translateY(-2px)}
-.btn-acc{background:var(--acc);color:#fff;box-shadow:0 10px 30px -12px var(--acc)}
-.btn-line{border:1.5px solid rgba(255,255,255,.35);color:#fff}
+.btn-acc{background:linear-gradient(100deg,var(--acc),var(--acc2));color:var(--on);box-shadow:0 16px 36px -16px var(--acc)}
+.btn-line{color:#fff;border:1.5px solid rgba(255,255,255,.3)}
+.btn-line:hover{background:rgba(255,255,255,.08)}
 .btn svg{width:18px;height:18px}
-/* HERO: Text links, Bild rechts – nichts liegt über dem Bild */
-.hero{background:var(--navy);color:#fff;overflow:hidden}
-.hero .wrap{display:grid;grid-template-columns:.9fr 1.1fr;gap:56px;align-items:center;padding-top:56px;padding-bottom:56px}
-.tag{display:inline-flex;align-items:center;gap:8px;font-size:12px;font-weight:800;letter-spacing:.1em;text-transform:uppercase;color:var(--acc2);margin-bottom:18px}
-.tag i{width:8px;height:8px;border-radius:50%;background:var(--acc2)}
-.hero h1{font-size:clamp(34px,4.6vw,58px);font-weight:800}
-.hero h1 span{color:var(--acc2)}
-.hero p{font-size:18px;margin:18px 0 30px;color:rgba(255,255,255,.78);max-width:480px}
+/* Hinweis + Nav */
+.pv{background:#05070D;color:rgba(255,255,255,.78);font-size:12.5px;text-align:center;padding:9px 16px}
+.pv b{color:#fff}
+.nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--dark) 88%,transparent);backdrop-filter:blur(16px);color:#fff;border-bottom:1px solid rgba(255,255,255,.07)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:18px}
+.brand{display:flex;align-items:center;gap:12px;font-family:"Poppins";font-weight:700;font-size:16px}
+.brand .lg{background:#fff;border-radius:12px;padding:6px 10px;display:flex}
+.brand img{height:34px;width:auto;max-width:150px;object-fit:contain}
+.links{display:flex;gap:32px;font-weight:600;font-size:15px;color:rgba(255,255,255,.7)}
+.links a{position:relative}
+.links a:after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:2px;background:var(--acc2);transition:right .3s}
+.links a:hover{color:#fff}.links a:hover:after{right:0}
+/* HERO: Text-Panel links, Bild-Slider rechts – nie Text auf Bildern */
+.hero{display:grid;grid-template-columns:minmax(380px,.85fr) 1.15fr;min-height:calc(100vh - 110px);max-height:900px;background:var(--dark);color:#fff}
+.hero .txt{display:flex;flex-direction:column;justify-content:center;padding:64px 56px 64px max(24px,calc((100vw - 1280px)/2 + 24px));position:relative;overflow:hidden}
+.hero .txt:before{content:"";position:absolute;width:640px;height:640px;left:-220px;bottom:-320px;background:radial-gradient(circle,color-mix(in srgb,var(--acc) 50%,transparent),transparent 65%);opacity:.5}
+.hero .txt>*{position:relative}
+.hero .kick{color:var(--acc2)}
+.hero h1{font-size:clamp(40px,5.2vw,74px)}
+.hero p{font-size:18.5px;color:rgba(255,255,255,.72);margin:22px 0 34px;max-width:470px}
 .cta{display:flex;gap:12px;flex-wrap:wrap}
-.hero .pic{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:4/3.1;box-shadow:0 40px 90px -30px rgba(0,0,0,.7)}
-.hero .pic img{width:100%;height:100%;object-fit:cover;object-position:center}
-.hero .pic:after{content:"";position:absolute;inset:0;border-radius:28px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.12)}
-.chips{display:flex;gap:10px;flex-wrap:wrap;margin-top:34px}
-.chips div{border:1px solid rgba(255,255,255,.14);background:rgba(255,255,255,.05);border-radius:14px;padding:10px 14px;font-size:13px;color:rgba(255,255,255,.7);line-height:1.3}
-.chips b{display:block;font-family:"Poppins";font-size:17px;color:#fff}
-section{padding:96px 0}
-.kick{font-size:12px;font-weight:800;letter-spacing:.12em;text-transform:uppercase;color:var(--acc);margin-bottom:10px}
-.sh{margin-bottom:40px}
-.sh h2{font-size:clamp(30px,4vw,44px);font-weight:800}
-/* Leistungen mit Bildern */
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
-.svc{position:relative;border-radius:22px;overflow:hidden;background:#fff;border:1px solid var(--line);transition:transform .25s,box-shadow .25s}
-.svc:hover{transform:translateY(-5px);box-shadow:0 28px 60px -30px rgba(11,22,48,.35)}
-.svc .im{aspect-ratio:16/10;overflow:hidden}
-.svc .im img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
-.svc:hover .im img{transform:scale(1.06)}
-.svc h3{font-size:18px;font-weight:700;padding:18px 20px 20px;display:flex;justify-content:space-between;align-items:center;gap:12px}
-.svc h3:after{content:"→";color:var(--acc);font-size:20px}
+.counters{display:flex;gap:34px;margin-top:46px;flex-wrap:wrap}
+.counters b{display:block;font-family:var(--hf);font-size:32px;line-height:1;color:#fff}
+.counters span{font-size:12.5px;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.08em}
+.slider{position:relative;overflow:hidden;background:#000;touch-action:pan-y}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity 1.2s ease}
+.slide.on{opacity:1}
+.slide img{width:100%;height:100%;object-fit:cover;transform:scale(1.08);transition:transform 7s ease-out}
+.slide.on img{transform:scale(1)}
+.dots{position:absolute;right:24px;bottom:24px;display:flex;gap:8px;z-index:3}
+.dots button{width:34px;height:4px;border-radius:4px;border:0;background:rgba(255,255,255,.35);cursor:pointer;overflow:hidden;position:relative}
+.dots button.on:after{content:"";position:absolute;inset:0;background:#fff;animation:prog 5.5s linear forwards}
+@keyframes prog{from{transform:translateX(-100%)}to{transform:none}}
+.sarrows{position:absolute;left:24px;bottom:18px;display:flex;gap:8px;z-index:3}
+.sarrows button,.carr button{width:46px;height:46px;border-radius:50%;border:0;cursor:pointer;background:rgba(255,255,255,.92);color:#0E1424;font-size:18px;font-weight:800;box-shadow:0 8px 20px -8px rgba(0,0,0,.5);transition:transform .2s}
+.sarrows button:hover,.carr button:hover{transform:scale(1.08)}
+/* Laufband */
+.marq{background:linear-gradient(100deg,var(--acc),var(--acc2));color:var(--on);overflow:hidden;white-space:nowrap;padding:18px 0;font-family:var(--hf);font-weight:var(--hw);font-size:19px}
+.marq .tr{display:inline-flex;gap:46px;animation:mq 40s linear infinite;padding-left:46px}
+.marq span:after{content:"";display:inline-block;width:9px;height:9px;margin-left:46px;background:currentColor;opacity:.5;transform:rotate(45deg);vertical-align:middle}
+@keyframes mq{to{transform:translateX(-50%)}}
+section{padding:120px 0}
+.sh{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:48px;flex-wrap:wrap}
+.sh h2{font-size:clamp(34px,4.4vw,58px);max-width:720px}
+.sh p{color:var(--muted);max-width:380px;font-size:16.5px}
+/* Swipe-Karussell */
+.carousel{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:6px max(24px,calc((100vw - 1280px)/2 + 24px)) 30px;scroll-padding-left:max(24px,calc((100vw - 1280px)/2 + 24px))}
+.carousel::-webkit-scrollbar{display:none}
+.sv{flex:0 0 min(340px,78vw);scroll-snap-align:start;position:relative;border-radius:28px;overflow:hidden;background:#fff;box-shadow:0 26px 60px -36px rgba(14,20,36,.45);transition:transform .35s}
+.sv:hover{transform:translateY(-6px)}
+.sv .im{aspect-ratio:3/3.4;overflow:hidden}
+.sv .im img{width:100%;height:100%;object-fit:cover;object-position:center 30%;transition:transform .8s}
+.sv:hover .im img{transform:scale(1.07)}
+.sv .bd{padding:22px 24px 26px;display:flex;justify-content:space-between;align-items:center;gap:14px}
+.sv h3{font-size:20px;line-height:1.2}
+.sv .no{font-family:var(--hf);font-size:14px;color:var(--acc);font-weight:800}
+.sv.noimg{background:var(--dark);color:#fff;min-height:220px;display:flex;flex-direction:column;justify-content:space-between;padding:28px}
+.sv.noimg .bd{padding:0}
+.sv.noimg .no{font-size:46px;opacity:.9}
+.carr{display:flex;gap:10px}
+.carr button{background:var(--dark);color:#fff}
+/* Bild-Band */
+.band{height:620px;overflow:hidden;position:relative}
+.band img{width:100%;height:130%;object-fit:cover;position:absolute;top:-15%;will-change:transform}
 /* Über uns */
-.about{background:#fff}
-.about .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:64px;align-items:center}
-.about .ph{border-radius:28px;overflow:hidden;aspect-ratio:5/4;box-shadow:0 40px 80px -40px rgba(11,22,48,.45)}
-.about .ph img{width:100%;height:100%;object-fit:cover}
-.about h2{font-size:clamp(30px,4vw,42px);font-weight:800;margin-bottom:16px}
-.about p{color:var(--muted);font-size:17px}
-.checks{list-style:none;margin-top:24px;display:grid;gap:12px}
-.checks li{display:flex;gap:12px;font-weight:600;align-items:center}
-.checks li:before{content:"✓";flex:none;width:26px;height:26px;border-radius:50%;background:var(--acc);color:#fff;display:grid;place-items:center;font-size:14px}
-/* Galerie groß */
-.gal{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:280px;gap:16px}
-.gal div{border-radius:22px;overflow:hidden;background:#dde3ee}
-.gal div:nth-child(1){grid-column:span 2;grid-row:span 2}
-.gal img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
-.gal div:hover img{transform:scale(1.05)}
+.about .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:80px;align-items:center}
+.stack{position:relative;height:600px}
+.stack div{position:absolute;border-radius:30px;overflow:hidden;box-shadow:0 44px 90px -44px rgba(14,20,36,.6)}
+.stack div:nth-child(1){left:0;top:0;width:72%;height:76%}
+.stack div:nth-child(2){right:0;bottom:0;width:50%;height:54%;border:10px solid var(--tint)}
+.stack img{width:100%;height:100%;object-fit:cover;object-position:center 25%}
+.stack .badge{position:absolute;left:6%;bottom:6%;background:var(--dark);color:#fff;border-radius:22px;padding:18px 22px;box-shadow:0 20px 40px -20px rgba(0,0,0,.6);z-index:2}
+.stack .badge b{display:block;font-family:var(--hf);font-size:34px;line-height:1}
+.stack .badge span{font-size:12.5px;color:rgba(255,255,255,.65)}
+.about h2{font-size:clamp(34px,4vw,54px);margin-bottom:22px}
+.about p{color:var(--muted);font-size:17.5px;margin-bottom:14px}
+.checks{list-style:none;margin-top:28px;display:grid;gap:14px}
+.checks li{display:flex;gap:14px;font-weight:700;align-items:center}
+.checks li:before{content:"";flex:none;width:30px;height:30px;border-radius:50%;background:var(--acc) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 12l5 5L20 7' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat}
+/* Projekte: große Swipe-Galerie */
+.proj{background:var(--dark);color:#fff}
+.proj .sh p{color:rgba(255,255,255,.6)}
+.proj .carr button{background:#fff;color:#0E1424}
+.pg{flex:0 0 min(620px,86vw);scroll-snap-align:start;border-radius:28px;overflow:hidden;aspect-ratio:4/3;position:relative;cursor:zoom-in}
+.pg:nth-child(even){flex-basis:min(440px,74vw)}
+.pg img{width:100%;height:100%;object-fit:cover;transition:transform .9s}
+.pg:hover img{transform:scale(1.05)}
+.pg .n{position:absolute;left:18px;top:18px;background:rgba(5,7,13,.6);backdrop-filter:blur(8px);color:#fff;font-size:12px;font-weight:800;padding:6px 12px;border-radius:999px}
+.lb{position:fixed;inset:0;z-index:90;background:rgba(5,7,13,.94);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+.lb.on{display:flex}
+.lb img{max-height:88vh;border-radius:18px}
+/* Vorher/Nachher */
+.ba{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:16/9;max-width:1000px;margin:0 auto;user-select:none}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+/* Ablauf */
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:s}
+.step{background:#fff;border-radius:28px;padding:36px 32px;position:relative;box-shadow:0 22px 50px -38px rgba(14,20,36,.4);overflow:hidden}
+.step:before{counter-increment:s;content:"0" counter(s);position:absolute;right:24px;top:10px;font-family:var(--hf);font-size:78px;font-weight:800;opacity:.08}
+.step .ic{width:54px;height:54px;border-radius:17px;background:linear-gradient(135deg,var(--acc),var(--acc2));display:grid;place-items:center;color:var(--on);margin-bottom:18px}
+.step .ic svg{width:24px;height:24px}
+.step h3{font-size:22px;margin-bottom:8px}
+.step p{color:var(--muted)}
+/* CTA */
+.ctab{padding:0 0 120px}
+.ctab .box{border-radius:36px;overflow:hidden;display:grid;grid-template-columns:1.1fr .9fr;background:var(--dark);color:#fff}
+.ctab .l{padding:64px;display:flex;flex-direction:column;justify-content:center}
+.ctab h2{font-size:clamp(32px,3.8vw,50px)}
+.ctab p{color:rgba(255,255,255,.7);margin:14px 0 28px;font-size:17px}
+.ctab .r{min-height:380px}
+.ctab .r img{width:100%;height:100%;object-fit:cover}
 /* Kontakt */
-.contact{background:var(--navy);color:#fff}
-.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
-.contact h2{font-size:clamp(32px,4.4vw,50px);font-weight:800;margin-bottom:24px}
+.contact{background:#fff}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+.contact h2{font-size:clamp(34px,4vw,54px);margin-bottom:28px}
 .ci{display:grid;gap:12px}
-.ci a,.ci div{display:flex;gap:14px;align-items:center;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);border-radius:16px;padding:16px 18px;font-weight:600}
-.ci small{display:block;font-size:12px;color:rgba(255,255,255,.6);font-weight:500}
-.ci svg{width:20px;height:20px;color:var(--acc2);flex:none}
-.form{background:#fff;color:var(--ink);border-radius:24px;padding:30px;display:grid;gap:12px}
-.form h3{font-size:22px;margin-bottom:4px}
-.form input,.form textarea,.form select{width:100%;font:inherit;padding:14px 16px;border:1px solid var(--line);border-radius:12px;background:var(--bg)}
-.form textarea{min-height:100px;resize:vertical}
-.form .note{font-size:12px;color:var(--muted)}
-footer{background:#060E22;color:rgba(255,255,255,.6);font-size:14px;padding:32px 0}
+.ci a,.ci div{display:flex;gap:16px;align-items:center;background:var(--tint);border-radius:18px;padding:18px 20px;font-weight:700;transition:transform .2s}
+.ci a:hover{transform:translateX(4px)}
+.ci small{display:block;font-size:12px;color:var(--muted);font-weight:600}
+.ci .ico{flex:none;width:46px;height:46px;border-radius:15px;background:linear-gradient(135deg,var(--acc),var(--acc2));color:var(--on);display:grid;place-items:center}
+.ci svg{width:20px;height:20px}
+.form{background:var(--dark);color:#fff;border-radius:30px;padding:36px;display:grid;gap:12px}
+.form h3{font-size:26px;margin-bottom:6px}
+.form input,.form textarea,.form select{width:100%;font:inherit;padding:15px 16px;border:1px solid rgba(255,255,255,.14);border-radius:14px;background:rgba(255,255,255,.06);color:#fff}
+.form ::placeholder{color:rgba(255,255,255,.5)}
+.form select option{color:#000}
+.form textarea{min-height:110px;resize:vertical}
+.form .note{font-size:12.5px;color:rgba(255,255,255,.55)}
+.draft{padding:60px 0}
+.draft .box{border:2px dashed color-mix(in srgb,var(--acc) 45%,transparent);border-radius:28px;padding:30px 34px;display:flex;gap:22px;align-items:center;background:#fff}
+.draft .ico{flex:none;width:58px;height:58px;border-radius:18px;background:linear-gradient(135deg,var(--acc),var(--acc2));color:var(--on);display:grid;place-items:center;font-size:26px}
+.draft h3{font-family:"Poppins";font-weight:800;font-size:20px;margin-bottom:4px;letter-spacing:-.01em}
+.draft p{color:var(--muted)}
+footer{background:#05070D;color:rgba(255,255,255,.55);font-size:14px;padding:34px 0}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 footer b{color:#fff}
+.pill{position:fixed;left:16px;bottom:16px;z-index:60;background:#05070D;color:#fff;font-size:12.5px;font-weight:700;padding:10px 14px;border-radius:999px;box-shadow:0 10px 30px -10px rgba(0,0,0,.5)}
+.pill i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--acc2);margin-right:8px}
 .callbar{display:none}
-@media(max-width:900px){
+/* Scroll-Reveal (nur mit JS aktiv) */
+.js .rv{opacity:0;transform:translateY(34px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+@media(max-width:1000px){
  .links{display:none}
- .nav .btn{padding:11px 16px;font-size:14px}
- .hero .wrap{grid-template-columns:1fr;gap:28px;padding-top:24px;padding-bottom:48px}
- .hero .pic{order:-1;aspect-ratio:4/3;border-radius:22px}
- .grid{grid-template-columns:1fr 1fr}
- .about .wrap,.contact .wrap{grid-template-columns:1fr;gap:32px}
- .gal{grid-template-columns:1fr 1fr;grid-auto-rows:180px}
+ .nav .btn{padding:12px 18px;font-size:14px}
+ .hero{grid-template-columns:1fr;max-height:none;min-height:0}
+ .slider{order:-1;height:62vh;min-height:360px}
+ .hero .txt{padding:40px 24px 56px}
+ .about .wrap,.contact .wrap,.ctab .box{grid-template-columns:1fr;gap:40px}
+ .stack{height:460px}
+ .steps{grid-template-columns:1fr 1fr}
+ .band{height:380px}
+ .ctab .l{padding:40px 28px}
+ .ctab .r{min-height:260px}
 }
-@media(max-width:560px){
- section{padding:64px 0}
- .grid{grid-template-columns:1fr}
- .brand span{display:none}
- .hero p{font-size:16px}
- .callbar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:30;justify-content:center;gap:10px;background:var(--acc);color:#fff;font-weight:800;padding:16px;border-radius:16px;box-shadow:0 16px 40px -12px rgba(0,0,0,.5)}
- footer{padding-bottom:96px}
+@media(max-width:600px){
+ .steps{grid-template-columns:1fr}
+ section{padding:80px 0}
+ .brand>span{display:none}
+ .counters{gap:24px}
+ .counters b{font-size:26px}
+ .hero p{font-size:16.5px}
+ .stack{height:380px}
+ .sarrows{display:none}
+ .carr{display:none}
+ .draft .box{flex-direction:column;align-items:flex-start}
+ .pill{display:none}
+ .callbar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:70;justify-content:center;gap:10px;background:linear-gradient(100deg,var(--acc),var(--acc2));color:var(--on);font-weight:800;padding:16px;border-radius:16px;box-shadow:0 16px 40px -12px rgba(0,0,0,.5)}
+ footer{padding-bottom:100px}
 }
 </style>
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
-<div class="pv"><b>Unverbindliche Vorschau</b> · erstellt von High Level Performance für Tischlerei Wernsing GmbH</div>
+<div class="pv"><b>Grober Entwurf</b> von High Level Performance für Tischlerei Wernsing GmbH · bei einer Zusammenarbeit wird jedes Detail individuell ausgearbeitet</div>
 
 <header class="nav"><div class="wrap">
- <a class="brand" href="#top"><img src="img/logo.png" alt="Tischlerei Wernsing GmbH"><span>Tischlerei Wernsing</span></a>
+ <a class="brand" href="#top"><span class="lg"><img src="img/logo.png" alt="Tischlerei Wernsing GmbH"></span><span>Tischlerei Wernsing</span></a>
  <nav class="links"><a href="#leistungen">Leistungen</a><a href="#ueber">Über uns</a><a href="#projekte">Projekte</a><a href="#kontakt">Kontakt</a></nav>
  <a class="btn btn-acc" href="tel:+4954629627999"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Anrufen</a>
 </div></header>
 
 <main id="top">
-<section class="hero" style="padding:0"><div class="wrap">
- <div>
-  <div class="tag"><i></i>Meisterbetrieb seit 1995 · Ankum</div>
+<section class="hero" style="padding:0">
+ <div class="txt">
+  <span class="kick">Meisterbetrieb seit 1995 · Ankum</span>
   <h1>Türen, Fenster, Treppen, Küchen. <span>Meisterbetrieb seit 1995.</span></h1>
   <p>Der Familienbetrieb aus Ankum – mit modernem Maschinenpark, eigener Ausstellung und Online-Möbelplaner.</p>
   <div class="cta">
-   <a class="btn btn-acc" href="#kontakt">Anfrage stellen →</a>
+   <a class="btn btn-acc" href="#kontakt">Jetzt anfragen →</a>
    <a class="btn btn-line" href="tel:+4954629627999"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>05462 9627999</a>
   </div>
-  <div class="chips"><div><b>1995</b>gegründet</div><div><b>2</b>Tischlermeister im Team</div><div><b>Innung</b>Mitglied Tischlerinnung Nord</div></div>
+  <div class="counters"><div><b>1995</b><span>gegründet</span></div><div><b>2</b><span>Tischlermeister im Team</span></div><div><b>Innung</b><span>Mitglied Tischlerinnung Nord</span></div></div>
  </div>
- <div class="pic"><img src="img/b1.webp" alt="Tischlerei Wernsing GmbH"></div>
-</div></section>
+ <div class="slider" id="hs">
+  <div class="slide on"><img src="img/b1.webp" alt="Tischlerei Wernsing GmbH"></div><div class="slide"><img src="img/b2.webp" alt="Tischlerei Wernsing GmbH" loading="lazy"></div><div class="slide"><img src="img/b3.webp" alt="Tischlerei Wernsing GmbH" loading="lazy"></div><div class="slide"><img src="img/b4.webp" alt="Tischlerei Wernsing GmbH" loading="lazy"></div>
+  <div class="sarrows"><button aria-label="zurück" data-d="-1">←</button><button aria-label="weiter" data-d="1">→</button></div>
+  <div class="dots"><button aria-label="Bild 1" class="on"></button><button aria-label="Bild 2"></button><button aria-label="Bild 3"></button><button aria-label="Bild 4"></button></div>
+ </div>
+</section>
 
-<section id="leistungen"><div class="wrap">
- <div class="sh"><div class="kick">Leistungen</div><h2>Alles, was ein Zuhause braucht.</h2></div>
- <div class="grid"><div class="svc"><div class="im"><img src="img/b1.webp" alt="Haustüren &amp; Innentüren" loading="lazy"></div><h3>Haustüren &amp; Innentüren</h3></div><div class="svc"><div class="im"><img src="img/b2.webp" alt="Fenster aus Holz &amp; Kunststoff" loading="lazy"></div><h3>Fenster aus Holz &amp; Kunststoff</h3></div><div class="svc"><div class="im"><img src="img/b3.webp" alt="Treppenbau" loading="lazy"></div><h3>Treppenbau</h3></div><div class="svc"><div class="im"><img src="img/b4.webp" alt="Küchen- &amp; Möbelbau" loading="lazy"></div><h3>Küchen- &amp; Möbelbau</h3></div><div class="svc"><div class="im"><img src="img/b5.webp" alt="Rollläden, Markisen, Raffstore" loading="lazy"></div><h3>Rollläden, Markisen, Raffstore</h3></div><div class="svc"><div class="im"><img src="img/b6.webp" alt="Reparaturen" loading="lazy"></div><h3>Reparaturen</h3></div></div>
-</div></section>
+<div class="marq" aria-hidden="true"><div class="tr"><span>Haustüren &amp; Innentüren</span><span>Fenster aus Holz &amp; Kunststoff</span><span>Treppenbau</span><span>Küchen- &amp; Möbelbau</span><span>Rollläden, Markisen, Raffstore</span><span>Reparaturen</span><span>Haustüren &amp; Innentüren</span><span>Fenster aus Holz &amp; Kunststoff</span><span>Treppenbau</span><span>Küchen- &amp; Möbelbau</span><span>Rollläden, Markisen, Raffstore</span><span>Reparaturen</span><span>Haustüren &amp; Innentüren</span><span>Fenster aus Holz &amp; Kunststoff</span><span>Treppenbau</span><span>Küchen- &amp; Möbelbau</span><span>Rollläden, Markisen, Raffstore</span><span>Reparaturen</span><span>Haustüren &amp; Innentüren</span><span>Fenster aus Holz &amp; Kunststoff</span><span>Treppenbau</span><span>Küchen- &amp; Möbelbau</span><span>Rollläden, Markisen, Raffstore</span><span>Reparaturen</span></div></div>
+
+<section id="leistungen" style="padding-bottom:90px">
+ <div class="wrap"><div class="sh rv"><div><span class="kick">Leistungen</span><h2>Alles, was ein Zuhause braucht.</h2></div><div class="carr" data-for="svc"><button aria-label="zurück">←</button><button aria-label="weiter">→</button></div></div></div>
+ <div class="carousel" id="svc"><div class="sv rv"><div class="im"><img src="img/b2.webp" alt="Haustüren &amp; Innentüren" loading="lazy"></div><div class="bd"><h3>Haustüren &amp; Innentüren</h3><span class="no">01</span></div></div><div class="sv rv"><div class="im"><img src="img/b3.webp" alt="Fenster aus Holz &amp; Kunststoff" loading="lazy"></div><div class="bd"><h3>Fenster aus Holz &amp; Kunststoff</h3><span class="no">02</span></div></div><div class="sv rv"><div class="im"><img src="img/b4.webp" alt="Treppenbau" loading="lazy"></div><div class="bd"><h3>Treppenbau</h3><span class="no">03</span></div></div><div class="sv rv"><div class="im"><img src="img/b5.webp" alt="Küchen- &amp; Möbelbau" loading="lazy"></div><div class="bd"><h3>Küchen- &amp; Möbelbau</h3><span class="no">04</span></div></div><div class="sv rv"><div class="im"><img src="img/b6.webp" alt="Rollläden, Markisen, Raffstore" loading="lazy"></div><div class="bd"><h3>Rollläden, Markisen, Raffstore</h3><span class="no">05</span></div></div><div class="sv rv"><div class="im"><img src="img/b1.webp" alt="Reparaturen" loading="lazy"></div><div class="bd"><h3>Reparaturen</h3><span class="no">06</span></div></div></div>
+</section>
+
+<div class="band"><img src="img/b4.webp" alt="" loading="lazy" data-px></div>
 
 <section class="about" id="ueber"><div class="wrap">
- <div class="ph"><img src="img/b2.webp" alt="Tischlerei Wernsing GmbH" loading="lazy"></div>
- <div>
-  <div class="kick">Über uns</div>
+ <div class="stack rv"><div><img src="img/b5.webp" alt="Tischlerei Wernsing GmbH" loading="lazy"></div><div><img src="img/b6.webp" alt="" loading="lazy"></div><div class="badge"><b>1995</b><span>gegründet</span></div></div>
+ <div class="rv">
+  <span class="kick">Über uns</span>
   <h2>Familienbetrieb aus Ankum.</h2>
-  <p>1995 als Tischlerei Ulrich Wernsing gegründet, wurden Maschinenpark und Firmengebäude seitdem laufend modernisiert. Seit 2017 führt Pascale Wernsing den Betrieb als GmbH.</p>
+  <p>1995 als Tischlerei Ulrich Wernsing gegründet, wurden Maschinenpark und Firmengebäude seitdem laufend modernisiert. Seit 2017 führt Pascale Wernsing den Betrieb als GmbH.</p><p>Zum Team gehören zwei Tischlermeister, drei Gesellen, zwei Auszubildende und eine Bürokraft.</p>
   <ul class="checks"><li>Mitglied der Tischlerinnung Nord</li><li>Eigene Ausstellung</li><li>Online-Möbelplaner</li></ul>
  </div>
 </div></section>
 
+<section class="proj" id="projekte">
+ <div class="wrap"><div class="sh rv"><div><span class="kick" style="color:var(--acc2)">Einblicke</span><h2>Aus unserer Arbeit</h2></div><div class="carr" data-for="pgal"><button aria-label="zurück">←</button><button aria-label="weiter">→</button></div></div></div>
+ <div class="carousel" id="pgal"><a class="pg" href="img/b1.webp" data-lb><img src="img/b1.webp" alt="Projekt 1" loading="lazy"><span class="n">01 / 06</span></a><a class="pg" href="img/b2.webp" data-lb><img src="img/b2.webp" alt="Projekt 2" loading="lazy"><span class="n">02 / 06</span></a><a class="pg" href="img/b3.webp" data-lb><img src="img/b3.webp" alt="Projekt 3" loading="lazy"><span class="n">03 / 06</span></a><a class="pg" href="img/b4.webp" data-lb><img src="img/b4.webp" alt="Projekt 4" loading="lazy"><span class="n">04 / 06</span></a><a class="pg" href="img/b5.webp" data-lb><img src="img/b5.webp" alt="Projekt 5" loading="lazy"><span class="n">05 / 06</span></a><a class="pg" href="img/b6.webp" data-lb><img src="img/b6.webp" alt="Projekt 6" loading="lazy"><span class="n">06 / 06</span></a></div>
+</section>
 
-<section id="projekte"><div class="wrap">
- <div class="sh"><div class="kick">Einblicke</div><h2>Aus unserer Arbeit</h2></div>
- <div class="gal"><div><img src="img/b3.webp" alt="Projekt 1" loading="lazy"></div><div><img src="img/b4.webp" alt="Projekt 2" loading="lazy"></div><div><img src="img/b5.webp" alt="Projekt 3" loading="lazy"></div><div><img src="img/b6.webp" alt="Projekt 4" loading="lazy"></div></div>
+<section><div class="wrap">
+ <div class="sh rv"><div><span class="kick">So einfach geht's</span><h2>In 4 Schritten zum <em class="ac">Ergebnis.</em></h2></div></div>
+ <div class="steps">
+  <div class="step rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5L20 7"/></svg></div><h3>Beratung</h3><p>Wir besprechen Ihre Idee – gern direkt bei Ihnen vor Ort.</p></div><div class="step rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5L20 7"/></svg></div><h3>Aufmaß &amp; Entwurf</h3><p>Wir messen genau auf und planen Ihr Stück im Detail.</p></div><div class="step rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5L20 7"/></svg></div><h3>Fertigung</h3><p>In der eigenen Werkstatt entsteht Ihr Unikat.</p></div><div class="step rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5L20 7"/></svg></div><h3>Montage</h3><p>Wir bauen alles sauber und passgenau bei Ihnen ein.</p></div>
+ </div>
 </div></section>
 
+<div class="ctab"><div class="wrap"><div class="box rv">
+ <div class="l"><h2>Bereit für Ihr <em class="ac">Projekt?</em></h2><p>Rufen Sie uns an – wir beraten Sie gern persönlich.</p>
+  <div class="cta"><a class="btn btn-acc" href="tel:+4954629627999"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>05462 9627999</a><a class="btn btn-line" href="#kontakt">Anfrage schreiben</a></div></div>
+ <div class="r"><img src="img/b3.webp" alt="" loading="lazy"></div>
+</div></div></div>
 
 <section class="contact" id="kontakt"><div class="wrap">
- <div>
-  <div class="kick" style="color:var(--acc2)">Kontakt</div>
-  <h2>Sprechen Sie uns an.</h2>
+ <div class="rv">
+  <span class="kick">Kontakt</span>
+  <h2>Sprechen Sie <em class="ac">uns an.</em></h2>
   <div class="ci">
-   <a href="tel:+4954629627999"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span><small>Telefon</small>05462 9627999</span></a>
-   <a href="mailto:info@tischlerei-wernsing.de"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 6 9 7 9-7"/></svg><span><small>E-Mail</small>info@tischlerei-wernsing.de</span></a>
-   <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg><span><small>Adresse</small>Hermann-Kemper-Straße 1, 49577 Ankum</span></div>
+   <a href="tel:+4954629627999"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><span><small>Telefon</small>05462 9627999</span></a>
+   <a href="mailto:info@tischlerei-wernsing.de"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 6 9 7 9-7"/></svg></span><span><small>E-Mail</small>info@tischlerei-wernsing.de</span></a>
+   <div><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span><small>Adresse</small>Hermann-Kemper-Straße 1, 49577 Ankum</span></div>
   </div>
  </div>
- <form class="form" onsubmit="event.preventDefault();this.querySelector('.note').textContent='In der Vorschau ist das Formular noch nicht aktiv.'">
+ <form class="form rv" onsubmit="event.preventDefault();this.querySelector('.note').textContent='Im Entwurf ist das Formular noch nicht aktiv.'">
   <h3>Unverbindlich anfragen</h3>
   <input placeholder="Ihr Name" required>
   <input placeholder="Telefon oder E-Mail" required>
   <select><option>Worum geht es?</option><option>Haustüren &amp; Innentüren</option><option>Fenster aus Holz &amp; Kunststoff</option><option>Treppenbau</option><option>Küchen- &amp; Möbelbau</option><option>Rollläden, Markisen, Raffstore</option><option>Reparaturen</option></select>
   <textarea placeholder="Was haben Sie vor?"></textarea>
-  <button class="btn btn-acc" style="justify-content:center;border:0;cursor:pointer">Anfrage senden</button>
-  <div class="note">Wir melden uns schnellstmöglich.</div>
+  <button class="btn btn-acc" style="justify-content:center">Anfrage senden</button>
+  <div class="note">Wir melden uns schnellstmöglich bei Ihnen.</div>
  </form>
 </div></section>
+
+<div class="draft"><div class="wrap"><div class="box">
+ <div class="ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13 7l4 4"/></svg></div>
+ <div><h3>Das ist nur ein grober Entwurf.</h3><p>Erstellt von High Level Performance mit Bildern und Inhalten von tischlerei-wernsing.de. Bei einer Zusammenarbeit gehen wir viel intensiver rein: eigene Fotos und Texte, Ihre Wünsche im Detail, Google-Optimierung und ein funktionierendes Anfrage-Formular.</p></div>
+</div></div></div>
 </main>
 
 <footer><div class="wrap">
  <div><b>Tischlerei Wernsing GmbH</b> · Hermann-Kemper-Straße 1, 49577 Ankum</div>
- <div>Entwurf von <b>High Level Performance</b> · Inhalte und Bilder von tischlerei-wernsing.de</div>
+ <div>Grober Entwurf von <b>High Level Performance</b></div>
 </div></footer>
+<div class="pill"><i></i>Grober Entwurf · High Level Performance</div>
 <a class="callbar" href="tel:+4954629627999"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Jetzt anrufen</a>
+<div class="lb" id="lb"><img alt=""></div>
+<script>
+(function(){
+ // Hero-Slider mit Autoplay + Wischen
+ var hs=document.getElementById('hs');if(hs){var sl=hs.querySelectorAll('.slide'),dt=hs.querySelectorAll('.dots button'),i=0,tm;
+  function go(n){if(sl.length<2)return;sl[i].classList.remove('on');dt[i]&&dt[i].classList.remove('on');i=(n+sl.length)%sl.length;sl[i].classList.add('on');if(dt[i]){dt[i].classList.remove('on');void dt[i].offsetWidth;dt[i].classList.add('on')}clearTimeout(tm);tm=setTimeout(function(){go(i+1)},5500)}
+  dt.forEach(function(b,k){b.onclick=function(){go(k)}});
+  hs.querySelectorAll('.sarrows button').forEach(function(b){b.onclick=function(){go(i+ +b.dataset.d)}});
+  var x0=null;hs.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  hs.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>40)go(i+(dx<0?1:-1));x0=null});
+  tm=setTimeout(function(){go(1)},5500)}
+ // Karussell-Pfeile
+ document.querySelectorAll('.carr').forEach(function(c){var t=document.getElementById(c.dataset.for);var b=c.querySelectorAll('button');
+  b[0].onclick=function(){t.scrollBy({left:-t.clientWidth*.7,behavior:'smooth'})};b[1].onclick=function(){t.scrollBy({left:t.clientWidth*.7,behavior:'smooth'})}});
+ // Lightbox
+ var lb=document.getElementById('lb'),im=lb.querySelector('img');
+ document.querySelectorAll('[data-lb]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();im.src=a.getAttribute('href');lb.classList.add('on')})});
+ lb.onclick=function(){lb.classList.remove('on')};
+ // Scroll-Reveal
+ var rv=document.querySelectorAll('.rv');
+ if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});rv.forEach(function(el){io.observe(el)})}else{rv.forEach(function(el){el.classList.add('in')})}
+ // Parallax Bild-Band
+ var px=document.querySelector('[data-px]');if(px){window.addEventListener('scroll',function(){var r=px.parentNode.getBoundingClientRect();px.style.transform='translateY('+(r.top*-.12)+'px)'},{passive:true})}
+})();
+</script>
 </body>
 </html>

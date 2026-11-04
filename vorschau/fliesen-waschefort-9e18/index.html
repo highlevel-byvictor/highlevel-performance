@@ -7,164 +7,195 @@
 <title>Fliesenleger Markus Waschefort GmbH – Entwurf</title>
 <link rel="stylesheet" href="../../assets/fonts.css">
 <style>
-:root{--dark:#10191B;--acc:#0F8C82;--acc2:#9BEFE2;--tint:#F1F8F7;--on:#071211;--ink:#0E1424;--muted:#5B6476;--line:rgba(14,20,36,.09)}
+:root{--dark:#1C1A18;--acc:#A8794B;--acc2:#DDBB92;--tint:#F5F2EE;--on:#1C1A18;--ink:#0E1424;--muted:#5B6476;
+--hf:"Bodoni Moda",Georgia,serif;--hw:600}
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:"Manrope","Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--tint);line-height:1.6;-webkit-font-smoothing:antialiased}
+body{font-family:"Manrope","Segoe UI",Arial,sans-serif;color:var(--ink);background:var(--tint);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
-.wrap{max-width:1240px;margin:0 auto;padding:0 22px}
-h1,h2,h3{font-family:"Poppins","Helvetica Neue",Arial,sans-serif;line-height:1.06;letter-spacing:-.025em}
-.grad{background:linear-gradient(100deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
-/* Hinweis */
-.pv{background:#05070D;color:rgba(255,255,255,.8);font-size:13px;text-align:center;padding:9px 16px}
-.pv b{color:#fff}
-/* Nav */
-.nav{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--dark) 86%,transparent);backdrop-filter:blur(14px);border-bottom:1px solid rgba(255,255,255,.08);color:#fff}
-.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:74px;gap:18px}
-.brand{display:flex;align-items:center;gap:12px;font-family:"Poppins";font-weight:700;font-size:17px}
-.brand .lg{background:#fff;border-radius:12px;padding:6px 10px;display:flex;align-items:center}
-.brand img{height:34px;width:auto;max-width:150px;object-fit:contain}
-.links{display:flex;gap:30px;font-weight:600;font-size:15px;color:rgba(255,255,255,.72)}
-.links a:hover{color:#fff}
-.btn{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:15px;padding:15px 26px;border-radius:999px;transition:transform .18s,box-shadow .18s;white-space:nowrap;border:0;cursor:pointer;font-family:inherit}
+.wrap{max-width:1280px;margin:0 auto;padding:0 24px}
+h1,h2,h3{font-family:var(--hf);font-weight:var(--hw);line-height:1.04;letter-spacing:-.01em}
+em.ac,.grad,.hero h1 span{font-style:italic;background:linear-gradient(100deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.kick{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:800;letter-spacing:.16em;text-transform:uppercase;color:var(--acc);margin-bottom:14px}
+.kick:before{content:"";width:28px;height:2px;background:currentColor}
+.btn{display:inline-flex;align-items:center;gap:10px;font-weight:800;font-size:15px;padding:16px 28px;border-radius:999px;transition:transform .2s,box-shadow .2s,background .2s;white-space:nowrap;border:0;cursor:pointer;font-family:inherit}
 .btn:hover{transform:translateY(-2px)}
-.btn-acc{background:linear-gradient(100deg,var(--acc),var(--acc2));color:var(--on);box-shadow:0 14px 34px -14px var(--acc)}
-.btn-ghost{color:#fff;border:1.5px solid rgba(255,255,255,.28)}
+.btn-acc{background:linear-gradient(100deg,var(--acc),var(--acc2));color:var(--on);box-shadow:0 16px 36px -16px var(--acc)}
+.btn-line{color:#fff;border:1.5px solid rgba(255,255,255,.3)}
+.btn-line:hover{background:rgba(255,255,255,.08)}
 .btn svg{width:18px;height:18px}
-/* Hero */
-.hero{position:relative;background:var(--dark);color:#fff;overflow:hidden}
-.hero:before{content:"";position:absolute;width:900px;height:900px;right:-280px;top:-380px;background:radial-gradient(circle,color-mix(in srgb,var(--acc) 55%,transparent),transparent 62%);opacity:.55}
-.hero:after{content:"";position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.07) 1px,transparent 1px);background-size:26px 26px;mask-image:linear-gradient(90deg,#000 0%,transparent 60%)}
-.hero .wrap{position:relative;z-index:2;display:grid;grid-template-columns:.92fr 1.08fr;gap:56px;align-items:center;padding-top:70px;padding-bottom:84px}
-.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--acc2);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.12);padding:8px 14px;border-radius:999px;margin-bottom:22px}
-.eyebrow i{width:7px;height:7px;border-radius:50%;background:var(--acc2);box-shadow:0 0 0 4px color-mix(in srgb,var(--acc2) 25%,transparent)}
-.hero h1{font-size:clamp(38px,5vw,66px);font-weight:800}
-.hero p.lead{font-size:18.5px;margin:22px 0 32px;color:rgba(255,255,255,.74);max-width:500px}
+/* Hinweis + Nav */
+.pv{background:#05070D;color:rgba(255,255,255,.78);font-size:12.5px;text-align:center;padding:9px 16px}
+.pv b{color:#fff}
+.nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--dark) 88%,transparent);backdrop-filter:blur(16px);color:#fff;border-bottom:1px solid rgba(255,255,255,.07)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:76px;gap:18px}
+.brand{display:flex;align-items:center;gap:12px;font-family:"Poppins";font-weight:700;font-size:16px}
+.brand .lg{background:#fff;border-radius:12px;padding:6px 10px;display:flex}
+.brand img{height:34px;width:auto;max-width:150px;object-fit:contain}
+.links{display:flex;gap:32px;font-weight:600;font-size:15px;color:rgba(255,255,255,.7)}
+.links a{position:relative}
+.links a:after{content:"";position:absolute;left:0;right:100%;bottom:-6px;height:2px;background:var(--acc2);transition:right .3s}
+.links a:hover{color:#fff}.links a:hover:after{right:0}
+/* HERO: Text-Panel links, Bild-Slider rechts – nie Text auf Bildern */
+.hero{display:grid;grid-template-columns:minmax(380px,.85fr) 1.15fr;min-height:calc(100vh - 110px);max-height:900px;background:var(--dark);color:#fff}
+.hero .txt{display:flex;flex-direction:column;justify-content:center;padding:64px 56px 64px max(24px,calc((100vw - 1280px)/2 + 24px));position:relative;overflow:hidden}
+.hero .txt:before{content:"";position:absolute;width:640px;height:640px;left:-220px;bottom:-320px;background:radial-gradient(circle,color-mix(in srgb,var(--acc) 50%,transparent),transparent 65%);opacity:.5}
+.hero .txt>*{position:relative}
+.hero .kick{color:var(--acc2)}
+.hero h1{font-size:clamp(40px,5.2vw,74px)}
+.hero p{font-size:18.5px;color:rgba(255,255,255,.72);margin:22px 0 34px;max-width:470px}
 .cta{display:flex;gap:12px;flex-wrap:wrap}
-.stats{display:flex;gap:30px;margin-top:42px;padding-top:28px;border-top:1px solid rgba(255,255,255,.1);flex-wrap:wrap}
-.stats b{display:block;font-family:"Poppins";font-size:26px;font-weight:800;line-height:1}
-.stats span{font-size:13px;color:rgba(255,255,255,.6)}
-.mosaic{display:grid;grid-template-columns:1.45fr 1fr;grid-template-rows:1fr 1fr;gap:14px;height:540px}
-.mosaic div{border-radius:26px;overflow:hidden;position:relative;box-shadow:0 30px 70px -30px rgba(0,0,0,.8)}
-.mosaic div:first-child{grid-row:span 2}
-.mosaic img{width:100%;height:100%;object-fit:cover;transition:transform .8s}
-.mosaic div:hover img{transform:scale(1.05)}
-.mosaic div:after{content:"";position:absolute;inset:0;border-radius:26px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.14)}
+.counters{display:flex;gap:34px;margin-top:46px;flex-wrap:wrap}
+.counters b{display:block;font-family:var(--hf);font-size:32px;line-height:1;color:#fff}
+.counters span{font-size:12.5px;color:rgba(255,255,255,.55);text-transform:uppercase;letter-spacing:.08em}
+.slider{position:relative;overflow:hidden;background:#000;touch-action:pan-y}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity 1.2s ease}
+.slide.on{opacity:1}
+.slide img{width:100%;height:100%;object-fit:cover;transform:scale(1.08);transition:transform 7s ease-out}
+.slide.on img{transform:scale(1)}
+.dots{position:absolute;right:24px;bottom:24px;display:flex;gap:8px;z-index:3}
+.dots button{width:34px;height:4px;border-radius:4px;border:0;background:rgba(255,255,255,.35);cursor:pointer;overflow:hidden;position:relative}
+.dots button.on:after{content:"";position:absolute;inset:0;background:#fff;animation:prog 5.5s linear forwards}
+@keyframes prog{from{transform:translateX(-100%)}to{transform:none}}
+.sarrows{position:absolute;left:24px;bottom:18px;display:flex;gap:8px;z-index:3}
+.sarrows button,.carr button{width:46px;height:46px;border-radius:50%;border:0;cursor:pointer;background:rgba(255,255,255,.92);color:#0E1424;font-size:18px;font-weight:800;box-shadow:0 8px 20px -8px rgba(0,0,0,.5);transition:transform .2s}
+.sarrows button:hover,.carr button:hover{transform:scale(1.08)}
 /* Laufband */
-.marq{background:linear-gradient(100deg,var(--acc),var(--acc2));color:var(--on);overflow:hidden;white-space:nowrap;padding:16px 0;font-family:"Poppins";font-weight:700;font-size:17px}
-.marq .tr{display:inline-flex;gap:44px;animation:mq 38s linear infinite;padding-left:44px}
-.marq span:after{content:"✦";margin-left:44px;opacity:.6}
+.marq{background:linear-gradient(100deg,var(--acc),var(--acc2));color:var(--on);overflow:hidden;white-space:nowrap;padding:18px 0;font-family:var(--hf);font-weight:var(--hw);font-size:19px}
+.marq .tr{display:inline-flex;gap:46px;animation:mq 40s linear infinite;padding-left:46px}
+.marq span:after{content:"";display:inline-block;width:9px;height:9px;margin-left:46px;background:currentColor;opacity:.5;transform:rotate(45deg);vertical-align:middle}
 @keyframes mq{to{transform:translateX(-50%)}}
-section{padding:110px 0}
-.kick{display:inline-block;font-size:12px;font-weight:800;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:12px}
-.sh{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:46px;flex-wrap:wrap}
-.sh h2{font-size:clamp(32px,4.2vw,52px);font-weight:800;max-width:700px}
+section{padding:120px 0}
+.sh{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:48px;flex-wrap:wrap}
+.sh h2{font-size:clamp(34px,4.4vw,58px);max-width:720px}
 .sh p{color:var(--muted);max-width:380px;font-size:16.5px}
-/* Leistungen */
-.svc{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.card{position:relative;background:#fff;border-radius:26px;overflow:hidden;box-shadow:0 1px 0 var(--line),0 20px 50px -34px rgba(14,20,36,.35);transition:transform .3s,box-shadow .3s}
-.card:hover{transform:translateY(-6px);box-shadow:0 34px 70px -34px rgba(14,20,36,.45)}
-.card .im{aspect-ratio:4/3;overflow:hidden}
-.card .im img{width:100%;height:100%;object-fit:cover;object-position:center 28%;transition:transform .7s}
-.card:hover .im img{transform:scale(1.07)}
-.card .bd{padding:22px 24px 24px;display:flex;align-items:center;gap:16px}
-.card .no{flex:none;width:44px;height:44px;border-radius:14px;display:grid;place-items:center;font-family:"Poppins";font-weight:800;font-size:14px;color:var(--on);background:linear-gradient(135deg,var(--acc),var(--acc2))}
-.card h3{font-size:18.5px;font-weight:700;line-height:1.25}
-/* Bildband ohne Text */
-.band{height:520px;background:url("img/b4.webp") center/cover fixed;position:relative}
-.band:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,var(--tint) 0%,transparent 14%,transparent 86%,var(--tint) 100%)}
+/* Swipe-Karussell */
+.carousel{display:flex;gap:20px;overflow-x:auto;scroll-snap-type:x mandatory;scrollbar-width:none;padding:6px max(24px,calc((100vw - 1280px)/2 + 24px)) 30px;scroll-padding-left:max(24px,calc((100vw - 1280px)/2 + 24px))}
+.carousel::-webkit-scrollbar{display:none}
+.sv{flex:0 0 min(340px,78vw);scroll-snap-align:start;position:relative;border-radius:28px;overflow:hidden;background:#fff;box-shadow:0 26px 60px -36px rgba(14,20,36,.45);transition:transform .35s}
+.sv:hover{transform:translateY(-6px)}
+.sv .im{aspect-ratio:3/3.4;overflow:hidden}
+.sv .im img{width:100%;height:100%;object-fit:cover;object-position:center 30%;transition:transform .8s}
+.sv:hover .im img{transform:scale(1.07)}
+.sv .bd{padding:22px 24px 26px;display:flex;justify-content:space-between;align-items:center;gap:14px}
+.sv h3{font-size:20px;line-height:1.2}
+.sv .no{font-family:var(--hf);font-size:14px;color:var(--acc);font-weight:800}
+.sv.noimg{background:var(--dark);color:#fff;min-height:220px;display:flex;flex-direction:column;justify-content:space-between;padding:28px}
+.sv.noimg .bd{padding:0}
+.sv.noimg .no{font-size:46px;opacity:.9}
+.carr{display:flex;gap:10px}
+.carr button{background:var(--dark);color:#fff}
+/* Bild-Band */
+.band{height:620px;overflow:hidden;position:relative}
+.band img{width:100%;height:130%;object-fit:cover;position:absolute;top:-15%;will-change:transform}
 /* Über uns */
-.about .wrap{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
-.duo{position:relative;height:560px}
-.duo div{position:absolute;border-radius:28px;overflow:hidden;box-shadow:0 40px 80px -40px rgba(14,20,36,.55)}
-.duo div:first-child{left:0;top:0;width:76%;height:78%}
-.duo div:last-child{right:0;bottom:0;width:52%;height:52%;border:8px solid var(--tint)}
-.duo img{width:100%;height:100%;object-fit:cover;object-position:center 25%}
-.about h2{font-size:clamp(32px,4vw,48px);font-weight:800;margin-bottom:18px}
-.about p{color:var(--muted);font-size:17px;margin-bottom:14px}
-.checks{list-style:none;margin-top:26px;display:grid;gap:14px}
+.about .wrap{display:grid;grid-template-columns:1.05fr .95fr;gap:80px;align-items:center}
+.stack{position:relative;height:600px}
+.stack div{position:absolute;border-radius:30px;overflow:hidden;box-shadow:0 44px 90px -44px rgba(14,20,36,.6)}
+.stack div:nth-child(1){left:0;top:0;width:72%;height:76%}
+.stack div:nth-child(2){right:0;bottom:0;width:50%;height:54%;border:10px solid var(--tint)}
+.stack img{width:100%;height:100%;object-fit:cover;object-position:center 25%}
+.stack .badge{position:absolute;left:6%;bottom:6%;background:var(--dark);color:#fff;border-radius:22px;padding:18px 22px;box-shadow:0 20px 40px -20px rgba(0,0,0,.6);z-index:2}
+.stack .badge b{display:block;font-family:var(--hf);font-size:34px;line-height:1}
+.stack .badge span{font-size:12.5px;color:rgba(255,255,255,.65)}
+.about h2{font-size:clamp(34px,4vw,54px);margin-bottom:22px}
+.about p{color:var(--muted);font-size:17.5px;margin-bottom:14px}
+.checks{list-style:none;margin-top:28px;display:grid;gap:14px}
 .checks li{display:flex;gap:14px;font-weight:700;align-items:center}
-.checks li:before{content:"✓";flex:none;width:28px;height:28px;border-radius:50%;background:linear-gradient(135deg,var(--acc),var(--acc2));color:var(--on);display:grid;place-items:center;font-size:14px}
-/* Galerie */
-.gal-s{background:var(--dark);color:#fff}
-.gal-s .sh p{color:rgba(255,255,255,.6)}
-.gal{columns:3 280px;column-gap:16px}
-.gal a{display:block;margin-bottom:16px;border-radius:22px;overflow:hidden;break-inside:avoid;position:relative}
-.gal img{width:100%;transition:transform .7s}
-.gal a:hover img{transform:scale(1.05)}
-.lb{position:fixed;inset:0;z-index:90;background:rgba(5,7,13,.92);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
+.checks li:before{content:"";flex:none;width:30px;height:30px;border-radius:50%;background:var(--acc) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M5 12l5 5L20 7' fill='none' stroke='white' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat}
+/* Projekte: große Swipe-Galerie */
+.proj{background:var(--dark);color:#fff}
+.proj .sh p{color:rgba(255,255,255,.6)}
+.proj .carr button{background:#fff;color:#0E1424}
+.pg{flex:0 0 min(620px,86vw);scroll-snap-align:start;border-radius:28px;overflow:hidden;aspect-ratio:4/3;position:relative;cursor:zoom-in}
+.pg:nth-child(even){flex-basis:min(440px,74vw)}
+.pg img{width:100%;height:100%;object-fit:cover;transition:transform .9s}
+.pg:hover img{transform:scale(1.05)}
+.pg .n{position:absolute;left:18px;top:18px;background:rgba(5,7,13,.6);backdrop-filter:blur(8px);color:#fff;font-size:12px;font-weight:800;padding:6px 12px;border-radius:999px}
+.lb{position:fixed;inset:0;z-index:90;background:rgba(5,7,13,.94);display:none;align-items:center;justify-content:center;padding:24px;cursor:zoom-out}
 .lb.on{display:flex}
 .lb img{max-height:88vh;border-radius:18px}
+/* Vorher/Nachher */
+.ba{position:relative;border-radius:28px;overflow:hidden;aspect-ratio:16/9;max-width:1000px;margin:0 auto;user-select:none}
+.ba img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
 /* Ablauf */
-.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.step{background:#fff;border-radius:26px;padding:34px 30px;position:relative;overflow:hidden;box-shadow:0 20px 50px -36px rgba(14,20,36,.35)}
-.step b{font-family:"Poppins";font-size:64px;font-weight:800;line-height:1;opacity:.14;position:absolute;right:22px;top:14px}
-.step h3{font-size:21px;margin:8px 0 8px}
-.step p{color:var(--muted)}
-.step .ic{width:52px;height:52px;border-radius:16px;background:linear-gradient(135deg,var(--acc),var(--acc2));display:grid;place-items:center;color:var(--on)}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;counter-reset:s}
+.step{background:#fff;border-radius:28px;padding:36px 32px;position:relative;box-shadow:0 22px 50px -38px rgba(14,20,36,.4);overflow:hidden}
+.step:before{counter-increment:s;content:"0" counter(s);position:absolute;right:24px;top:10px;font-family:var(--hf);font-size:78px;font-weight:800;opacity:.08}
+.step .ic{width:54px;height:54px;border-radius:17px;background:linear-gradient(135deg,var(--acc),var(--acc2));display:grid;place-items:center;color:var(--on);margin-bottom:18px}
 .step .ic svg{width:24px;height:24px}
+.step h3{font-size:22px;margin-bottom:8px}
+.step p{color:var(--muted)}
 /* CTA */
-.ctab{padding:0 0 110px}
-.ctab .box{border-radius:34px;background:linear-gradient(120deg,var(--dark),color-mix(in srgb,var(--dark) 70%,var(--acc)));color:#fff;padding:64px;display:grid;grid-template-columns:1.3fr 1fr;gap:40px;align-items:center;position:relative;overflow:hidden}
-.ctab .box:before{content:"";position:absolute;width:520px;height:520px;right:-140px;bottom:-260px;background:radial-gradient(circle,color-mix(in srgb,var(--acc2) 50%,transparent),transparent 65%)}
-.ctab h2{font-size:clamp(30px,3.8vw,46px);font-weight:800}
-.ctab p{color:rgba(255,255,255,.72);margin-top:12px;font-size:17px}
-.ctab .r{display:flex;flex-direction:column;gap:12px;align-items:flex-start;position:relative}
+.ctab{padding:0 0 120px}
+.ctab .box{border-radius:36px;overflow:hidden;display:grid;grid-template-columns:1.1fr .9fr;background:var(--dark);color:#fff}
+.ctab .l{padding:64px;display:flex;flex-direction:column;justify-content:center}
+.ctab h2{font-size:clamp(32px,3.8vw,50px)}
+.ctab p{color:rgba(255,255,255,.7);margin:14px 0 28px;font-size:17px}
+.ctab .r{min-height:380px}
+.ctab .r img{width:100%;height:100%;object-fit:cover}
 /* Kontakt */
 .contact{background:#fff}
-.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
-.contact h2{font-size:clamp(32px,4vw,48px);font-weight:800;margin-bottom:26px}
+.contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:start}
+.contact h2{font-size:clamp(34px,4vw,54px);margin-bottom:28px}
 .ci{display:grid;gap:12px}
-.ci a,.ci div{display:flex;gap:16px;align-items:center;background:var(--tint);border-radius:18px;padding:18px 20px;font-weight:700}
+.ci a,.ci div{display:flex;gap:16px;align-items:center;background:var(--tint);border-radius:18px;padding:18px 20px;font-weight:700;transition:transform .2s}
+.ci a:hover{transform:translateX(4px)}
 .ci small{display:block;font-size:12px;color:var(--muted);font-weight:600}
-.ci .ico{flex:none;width:44px;height:44px;border-radius:14px;background:linear-gradient(135deg,var(--acc),var(--acc2));color:var(--on);display:grid;place-items:center}
+.ci .ico{flex:none;width:46px;height:46px;border-radius:15px;background:linear-gradient(135deg,var(--acc),var(--acc2));color:var(--on);display:grid;place-items:center}
 .ci svg{width:20px;height:20px}
-.form{background:var(--dark);color:#fff;border-radius:28px;padding:34px;display:grid;gap:12px}
-.form h3{font-size:24px;margin-bottom:6px}
+.form{background:var(--dark);color:#fff;border-radius:30px;padding:36px;display:grid;gap:12px}
+.form h3{font-size:26px;margin-bottom:6px}
 .form input,.form textarea,.form select{width:100%;font:inherit;padding:15px 16px;border:1px solid rgba(255,255,255,.14);border-radius:14px;background:rgba(255,255,255,.06);color:#fff}
 .form ::placeholder{color:rgba(255,255,255,.5)}
 .form select option{color:#000}
 .form textarea{min-height:110px;resize:vertical}
 .form .note{font-size:12.5px;color:rgba(255,255,255,.55)}
-/* Entwurf-Hinweis */
-.draft{background:var(--tint);padding:56px 0}
-.draft .box{border:2px dashed color-mix(in srgb,var(--acc) 45%,transparent);border-radius:26px;padding:30px 34px;display:flex;gap:22px;align-items:center;background:#fff}
-.draft .ico{flex:none;width:56px;height:56px;border-radius:18px;background:linear-gradient(135deg,var(--acc),var(--acc2));color:var(--on);display:grid;place-items:center;font-size:26px}
-.draft h3{font-size:20px;margin-bottom:4px}
+.draft{padding:60px 0}
+.draft .box{border:2px dashed color-mix(in srgb,var(--acc) 45%,transparent);border-radius:28px;padding:30px 34px;display:flex;gap:22px;align-items:center;background:#fff}
+.draft .ico{flex:none;width:58px;height:58px;border-radius:18px;background:linear-gradient(135deg,var(--acc),var(--acc2));color:var(--on);display:grid;place-items:center;font-size:26px}
+.draft h3{font-family:"Poppins";font-weight:800;font-size:20px;margin-bottom:4px;letter-spacing:-.01em}
 .draft p{color:var(--muted)}
 footer{background:#05070D;color:rgba(255,255,255,.55);font-size:14px;padding:34px 0}
 footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
 footer b{color:#fff}
-.pill{position:fixed;left:16px;bottom:16px;z-index:50;background:#05070D;color:#fff;font-size:12.5px;font-weight:700;padding:10px 14px;border-radius:999px;box-shadow:0 10px 30px -10px rgba(0,0,0,.5)}
+.pill{position:fixed;left:16px;bottom:16px;z-index:60;background:#05070D;color:#fff;font-size:12.5px;font-weight:700;padding:10px 14px;border-radius:999px;box-shadow:0 10px 30px -10px rgba(0,0,0,.5)}
 .pill i{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--acc2);margin-right:8px}
 .callbar{display:none}
-@media(max-width:980px){
+/* Scroll-Reveal (nur mit JS aktiv) */
+.js .rv{opacity:0;transform:translateY(34px);transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1)}
+.js .rv.in{opacity:1;transform:none}
+@media(max-width:1000px){
  .links{display:none}
  .nav .btn{padding:12px 18px;font-size:14px}
- .hero .wrap{grid-template-columns:1fr;gap:34px;padding-top:30px;padding-bottom:56px}
- .mosaic{height:400px;order:-1}
- .svc,.steps{grid-template-columns:1fr 1fr}
- .about .wrap,.contact .wrap,.ctab .box{grid-template-columns:1fr;gap:36px}
- .duo{height:440px}
- .band{background-attachment:scroll;height:360px}
- .ctab .box{padding:40px 28px}
+ .hero{grid-template-columns:1fr;max-height:none;min-height:0}
+ .slider{order:-1;height:62vh;min-height:360px}
+ .hero .txt{padding:40px 24px 56px}
+ .about .wrap,.contact .wrap,.ctab .box{grid-template-columns:1fr;gap:40px}
+ .stack{height:460px}
+ .steps{grid-template-columns:1fr 1fr}
+ .band{height:380px}
+ .ctab .l{padding:40px 28px}
+ .ctab .r{min-height:260px}
 }
 @media(max-width:600px){
- section{padding:72px 0}
- .svc,.steps{grid-template-columns:1fr}
+ .steps{grid-template-columns:1fr}
+ section{padding:80px 0}
  .brand>span{display:none}
- .mosaic{height:330px;gap:10px}
- .mosaic div{border-radius:18px}
- .stats{gap:22px}
- .hero p.lead{font-size:16.5px}
- .duo{height:360px}
+ .counters{gap:24px}
+ .counters b{font-size:26px}
+ .hero p{font-size:16.5px}
+ .stack{height:380px}
+ .sarrows{display:none}
+ .carr{display:none}
  .draft .box{flex-direction:column;align-items:flex-start}
  .pill{display:none}
- .callbar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:60;justify-content:center;gap:10px;background:linear-gradient(100deg,var(--acc),var(--acc2));color:var(--on);font-weight:800;padding:16px;border-radius:16px;box-shadow:0 16px 40px -12px rgba(0,0,0,.5)}
+ .callbar{display:flex;position:fixed;left:12px;right:12px;bottom:12px;z-index:70;justify-content:center;gap:10px;background:linear-gradient(100deg,var(--acc),var(--acc2));color:var(--on);font-weight:800;padding:16px;border-radius:16px;box-shadow:0 16px 40px -12px rgba(0,0,0,.5)}
  footer{padding-bottom:100px}
 }
 </style>
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 <div class="pv"><b>Grober Entwurf</b> von High Level Performance für Fliesenleger Markus Waschefort GmbH · bei einer Zusammenarbeit wird jedes Detail individuell ausgearbeitet</div>
@@ -176,32 +207,36 @@ footer b{color:#fff}
 </div></header>
 
 <main id="top">
-<section class="hero" style="padding:0"><div class="wrap">
- <div>
-  <div class="eyebrow"><i></i>Fliesenleger · Lohne</div>
+<section class="hero" style="padding:0">
+ <div class="txt">
+  <span class="kick">Fliesenleger · Lohne</span>
   <h1>Träume <span class="grad">fliesen!</span></h1>
-  <p class="lead">Bäder, Wohnbereiche, Treppen und Terrassen im ganzen Oldenburger Münsterland – mit mobilem Badezimmer während der Sanierung.</p>
+  <p>Bäder, Wohnbereiche, Treppen und Terrassen im ganzen Oldenburger Münsterland – mit mobilem Badezimmer während der Sanierung.</p>
   <div class="cta">
    <a class="btn btn-acc" href="#kontakt">Jetzt anfragen →</a>
-   <a class="btn btn-ghost" href="tel:+494442888820"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>04442 888820</a>
+   <a class="btn btn-line" href="tel:+494442888820"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>04442 888820</a>
   </div>
-  <div class="stats"><div><b class="grad">2004</b><span>Waschefort in Lohne</span></div><div><b class="grad">Mobil</b><span>Badezimmer-Anhänger</span></div><div><b class="grad">Partner</b><span>alle Gewerke koordiniert</span></div></div>
+  <div class="counters"><div><b>2004</b><span>Waschefort in Lohne</span></div><div><b>Mobil</b><span>Badezimmer-Anhänger</span></div><div><b>Partner</b><span>alle Gewerke koordiniert</span></div></div>
  </div>
- <div class="mosaic"><div><img src="img/b1.webp" alt="Fliesenleger Markus Waschefort GmbH" style="object-position:center"></div><div><img src="img/b2.webp" alt="Fliesenleger Markus Waschefort GmbH" style="object-position:center"></div><div><img src="img/b3.webp" alt="Fliesenleger Markus Waschefort GmbH" style="object-position:center"></div></div>
-</div></section>
+ <div class="slider" id="hs">
+  <div class="slide on"><img src="img/b1.webp" alt="Fliesenleger Markus Waschefort GmbH"></div><div class="slide"><img src="img/b2.webp" alt="Fliesenleger Markus Waschefort GmbH" loading="lazy"></div><div class="slide"><img src="img/b3.webp" alt="Fliesenleger Markus Waschefort GmbH" loading="lazy"></div><div class="slide"><img src="img/b4.webp" alt="Fliesenleger Markus Waschefort GmbH" loading="lazy"></div>
+  <div class="sarrows"><button aria-label="zurück" data-d="-1">←</button><button aria-label="weiter" data-d="1">→</button></div>
+  <div class="dots"><button aria-label="Bild 1" class="on"></button><button aria-label="Bild 2"></button><button aria-label="Bild 3"></button><button aria-label="Bild 4"></button></div>
+ </div>
+</section>
 
 <div class="marq" aria-hidden="true"><div class="tr"><span>Bäder</span><span>Wohnbereich</span><span>Treppen</span><span>Terrassen &amp; Balkone</span><span>Wellness- &amp; Fitnessbereiche</span><span>Mobiles Badezimmer</span><span>Bäder</span><span>Wohnbereich</span><span>Treppen</span><span>Terrassen &amp; Balkone</span><span>Wellness- &amp; Fitnessbereiche</span><span>Mobiles Badezimmer</span><span>Bäder</span><span>Wohnbereich</span><span>Treppen</span><span>Terrassen &amp; Balkone</span><span>Wellness- &amp; Fitnessbereiche</span><span>Mobiles Badezimmer</span><span>Bäder</span><span>Wohnbereich</span><span>Treppen</span><span>Terrassen &amp; Balkone</span><span>Wellness- &amp; Fitnessbereiche</span><span>Mobiles Badezimmer</span></div></div>
 
-<section id="leistungen"><div class="wrap">
- <div class="sh"><div><span class="kick">Leistungen</span><h2>Fliesen, Mosaik, Naturstein.</h2></div><p>Alles aus einer Hand – sprechen Sie uns einfach an.</p></div>
- <div class="svc"><div class="card"><div class="im"><img src="img/b2.webp" alt="Bäder" loading="lazy"></div><div class="bd"><div class="no">01</div><h3>Bäder</h3></div></div><div class="card"><div class="im"><img src="img/b3.webp" alt="Wohnbereich" loading="lazy"></div><div class="bd"><div class="no">02</div><h3>Wohnbereich</h3></div></div><div class="card"><div class="im"><img src="img/b4.webp" alt="Treppen" loading="lazy"></div><div class="bd"><div class="no">03</div><h3>Treppen</h3></div></div><div class="card"><div class="im"><img src="img/b5.webp" alt="Terrassen &amp; Balkone" loading="lazy"></div><div class="bd"><div class="no">04</div><h3>Terrassen &amp; Balkone</h3></div></div><div class="card"><div class="im"><img src="img/b6.webp" alt="Wellness- &amp; Fitnessbereiche" loading="lazy"></div><div class="bd"><div class="no">05</div><h3>Wellness- &amp; Fitnessbereiche</h3></div></div><div class="card"><div class="im"><img src="img/b1.webp" alt="Mobiles Badezimmer" loading="lazy"></div><div class="bd"><div class="no">06</div><h3>Mobiles Badezimmer</h3></div></div></div>
-</div></section>
+<section id="leistungen" style="padding-bottom:90px">
+ <div class="wrap"><div class="sh rv"><div><span class="kick">Leistungen</span><h2>Fliesen, Mosaik, Naturstein.</h2></div><div class="carr" data-for="svc"><button aria-label="zurück">←</button><button aria-label="weiter">→</button></div></div></div>
+ <div class="carousel" id="svc"><div class="sv rv"><div class="im"><img src="img/b2.webp" alt="Bäder" loading="lazy"></div><div class="bd"><h3>Bäder</h3><span class="no">01</span></div></div><div class="sv rv"><div class="im"><img src="img/b3.webp" alt="Wohnbereich" loading="lazy"></div><div class="bd"><h3>Wohnbereich</h3><span class="no">02</span></div></div><div class="sv rv"><div class="im"><img src="img/b4.webp" alt="Treppen" loading="lazy"></div><div class="bd"><h3>Treppen</h3><span class="no">03</span></div></div><div class="sv rv"><div class="im"><img src="img/b5.webp" alt="Terrassen &amp; Balkone" loading="lazy"></div><div class="bd"><h3>Terrassen &amp; Balkone</h3><span class="no">04</span></div></div><div class="sv rv"><div class="im"><img src="img/b6.webp" alt="Wellness- &amp; Fitnessbereiche" loading="lazy"></div><div class="bd"><h3>Wellness- &amp; Fitnessbereiche</h3><span class="no">05</span></div></div><div class="sv rv"><div class="im"><img src="img/b1.webp" alt="Mobiles Badezimmer" loading="lazy"></div><div class="bd"><h3>Mobiles Badezimmer</h3><span class="no">06</span></div></div></div>
+</section>
 
-<div class="band" role="img" aria-label="Fliesenleger Markus Waschefort GmbH"></div>
+<div class="band"><img src="img/b4.webp" alt="" loading="lazy" data-px></div>
 
 <section class="about" id="ueber"><div class="wrap">
- <div class="duo"><div><img src="img/b5.webp" alt="Fliesenleger Markus Waschefort GmbH" loading="lazy"></div><div><img src="img/b6.webp" alt="" loading="lazy"></div></div>
- <div>
+ <div class="stack rv"><div><img src="img/b5.webp" alt="Fliesenleger Markus Waschefort GmbH" loading="lazy"></div><div><img src="img/b6.webp" alt="" loading="lazy"></div><div class="badge"><b>2004</b><span>Waschefort in Lohne</span></div></div>
+ <div class="rv">
   <span class="kick">Über uns</span>
   <h2>Ein eingespieltes Team.</h2>
   <p>Der Fliesenlegerbetrieb aus Lohne setzt auf langjährige Erfahrung und ein eingespieltes Team – mit Projekten im ganzen Oldenburger Münsterland.</p><p>Über Partnerbetriebe koordinieren wir auch alle weiteren Arbeiten. Während der Sanierung gibt es auf Wunsch ein mobiles Badezimmer.</p>
@@ -209,36 +244,35 @@ footer b{color:#fff}
  </div>
 </div></section>
 
-<section class="gal-s" id="projekte"><div class="wrap">
- <div class="sh"><div><span class="kick" style="color:var(--acc2)">Einblicke</span><h2>Aus unserer Arbeit</h2></div><p>Ein Auszug aus unseren Projekten – klicken Sie auf ein Bild für die Großansicht.</p></div>
- <div class="gal"><a href="img/b1.webp" data-lb><img src="img/b1.webp" alt="Projekt 1" loading="lazy"></a><a href="img/b2.webp" data-lb><img src="img/b2.webp" alt="Projekt 2" loading="lazy"></a><a href="img/b3.webp" data-lb><img src="img/b3.webp" alt="Projekt 3" loading="lazy"></a><a href="img/b4.webp" data-lb><img src="img/b4.webp" alt="Projekt 4" loading="lazy"></a><a href="img/b5.webp" data-lb><img src="img/b5.webp" alt="Projekt 5" loading="lazy"></a><a href="img/b6.webp" data-lb><img src="img/b6.webp" alt="Projekt 6" loading="lazy"></a></div>
-</div></section>
+<section class="proj" id="projekte">
+ <div class="wrap"><div class="sh rv"><div><span class="kick" style="color:var(--acc2)">Einblicke</span><h2>Aus unserer Arbeit</h2></div><div class="carr" data-for="pgal"><button aria-label="zurück">←</button><button aria-label="weiter">→</button></div></div></div>
+ <div class="carousel" id="pgal"><a class="pg" href="img/b1.webp" data-lb><img src="img/b1.webp" alt="Projekt 1" loading="lazy"><span class="n">01 / 06</span></a><a class="pg" href="img/b2.webp" data-lb><img src="img/b2.webp" alt="Projekt 2" loading="lazy"><span class="n">02 / 06</span></a><a class="pg" href="img/b3.webp" data-lb><img src="img/b3.webp" alt="Projekt 3" loading="lazy"><span class="n">03 / 06</span></a><a class="pg" href="img/b4.webp" data-lb><img src="img/b4.webp" alt="Projekt 4" loading="lazy"><span class="n">04 / 06</span></a><a class="pg" href="img/b5.webp" data-lb><img src="img/b5.webp" alt="Projekt 5" loading="lazy"><span class="n">05 / 06</span></a><a class="pg" href="img/b6.webp" data-lb><img src="img/b6.webp" alt="Projekt 6" loading="lazy"><span class="n">06 / 06</span></a></div>
+</section>
 
 <section><div class="wrap">
- <div class="sh"><div><span class="kick">So einfach geht's</span><h2>In drei Schritten zum Ergebnis.</h2></div></div>
+ <div class="sh rv"><div><span class="kick">So einfach geht's</span><h2>In 4 Schritten zum <em class="ac">Ergebnis.</em></h2></div></div>
  <div class="steps">
-  <div class="step"><b>01</b><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></div><h3>Anfrage</h3><p>Rufen Sie an oder schreiben Sie uns kurz, was Sie vorhaben.</p></div>
-  <div class="step"><b>02</b><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><h3>Beratung</h3><p>Wir besprechen Ihr Vorhaben und finden die passende Lösung.</p></div>
-  <div class="step"><b>03</b><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.8-3.8a6 6 0 0 1-7.9 7.9l-6.9 6.9a2.1 2.1 0 0 1-3-3l6.9-6.9a6 6 0 0 1 7.9-7.9z"/></svg></div><h3>Umsetzung</h3><p>Unser Team setzt alles sauber und zuverlässig für Sie um.</p></div>
+  <div class="step rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5L20 7"/></svg></div><h3>Beratung</h3><p>Wir besprechen Ihre Wünsche, Formate und Materialien.</p></div><div class="step rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5L20 7"/></svg></div><h3>Planung</h3><p>Wir planen Fugenbild, Material und Ablauf genau.</p></div><div class="step rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5L20 7"/></svg></div><h3>Verlegung</h3><p>Wir verlegen präzise und mit sauberen Kanten.</p></div><div class="step rv"><div class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12l5 5L20 7"/></svg></div><h3>Übergabe</h3><p>Ihr neues Bad oder Ihr Boden ist bereit.</p></div>
  </div>
 </div></section>
 
-<div class="ctab"><div class="wrap"><div class="box">
- <div><h2>Bereit für Ihr Projekt?</h2><p>Rufen Sie uns an – wir beraten Sie gern persönlich.</p></div>
- <div class="r"><a class="btn btn-acc" href="tel:+494442888820"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>04442 888820</a><a class="btn btn-ghost" href="#kontakt">Anfrage schreiben →</a></div>
+<div class="ctab"><div class="wrap"><div class="box rv">
+ <div class="l"><h2>Bereit für Ihr <em class="ac">Projekt?</em></h2><p>Rufen Sie uns an – wir beraten Sie gern persönlich.</p>
+  <div class="cta"><a class="btn btn-acc" href="tel:+494442888820"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>04442 888820</a><a class="btn btn-line" href="#kontakt">Anfrage schreiben</a></div></div>
+ <div class="r"><img src="img/b3.webp" alt="" loading="lazy"></div>
 </div></div></div>
 
 <section class="contact" id="kontakt"><div class="wrap">
- <div>
+ <div class="rv">
   <span class="kick">Kontakt</span>
-  <h2>Sprechen Sie uns an.</h2>
+  <h2>Sprechen Sie <em class="ac">uns an.</em></h2>
   <div class="ci">
    <a href="tel:+494442888820"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg></span><span><small>Telefon</small>04442 888820</span></a>
    <a href="mailto:info@fliesenleger-waschefort.de"><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="3"/><path d="m3 6 9 7 9-7"/></svg></span><span><small>E-Mail</small>info@fliesenleger-waschefort.de</span></a>
    <div><span class="ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span><span><small>Adresse</small>Bahnhofstraße 45, 49393 Lohne</span></div>
   </div>
  </div>
- <form class="form" onsubmit="event.preventDefault();this.querySelector('.note').textContent='Im Entwurf ist das Formular noch nicht aktiv.'">
+ <form class="form rv" onsubmit="event.preventDefault();this.querySelector('.note').textContent='Im Entwurf ist das Formular noch nicht aktiv.'">
   <h3>Unverbindlich anfragen</h3>
   <input placeholder="Ihr Name" required>
   <input placeholder="Telefon oder E-Mail" required>
@@ -250,7 +284,7 @@ footer b{color:#fff}
 </div></section>
 
 <div class="draft"><div class="wrap"><div class="box">
- <div class="ico">✎</div>
+ <div class="ico"><svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 20h4L19 9l-4-4L4 16z"/><path d="M13 7l4 4"/></svg></div>
  <div><h3>Das ist nur ein grober Entwurf.</h3><p>Erstellt von High Level Performance mit Bildern und Inhalten von fliesenleger-waschefort.de. Bei einer Zusammenarbeit gehen wir viel intensiver rein: eigene Fotos und Texte, Ihre Wünsche im Detail, Google-Optimierung und ein funktionierendes Anfrage-Formular.</p></div>
 </div></div></div>
 </main>
@@ -263,9 +297,28 @@ footer b{color:#fff}
 <a class="callbar" href="tel:+494442888820"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Jetzt anrufen</a>
 <div class="lb" id="lb"><img alt=""></div>
 <script>
-(function(){var lb=document.getElementById('lb'),im=lb.querySelector('img');
-document.querySelectorAll('[data-lb]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();im.src=a.getAttribute('href');lb.classList.add('on')})});
-lb.addEventListener('click',function(){lb.classList.remove('on')})})();
+(function(){
+ // Hero-Slider mit Autoplay + Wischen
+ var hs=document.getElementById('hs');if(hs){var sl=hs.querySelectorAll('.slide'),dt=hs.querySelectorAll('.dots button'),i=0,tm;
+  function go(n){if(sl.length<2)return;sl[i].classList.remove('on');dt[i]&&dt[i].classList.remove('on');i=(n+sl.length)%sl.length;sl[i].classList.add('on');if(dt[i]){dt[i].classList.remove('on');void dt[i].offsetWidth;dt[i].classList.add('on')}clearTimeout(tm);tm=setTimeout(function(){go(i+1)},5500)}
+  dt.forEach(function(b,k){b.onclick=function(){go(k)}});
+  hs.querySelectorAll('.sarrows button').forEach(function(b){b.onclick=function(){go(i+ +b.dataset.d)}});
+  var x0=null;hs.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  hs.addEventListener('touchend',function(e){if(x0===null)return;var dx=e.changedTouches[0].clientX-x0;if(Math.abs(dx)>40)go(i+(dx<0?1:-1));x0=null});
+  tm=setTimeout(function(){go(1)},5500)}
+ // Karussell-Pfeile
+ document.querySelectorAll('.carr').forEach(function(c){var t=document.getElementById(c.dataset.for);var b=c.querySelectorAll('button');
+  b[0].onclick=function(){t.scrollBy({left:-t.clientWidth*.7,behavior:'smooth'})};b[1].onclick=function(){t.scrollBy({left:t.clientWidth*.7,behavior:'smooth'})}});
+ // Lightbox
+ var lb=document.getElementById('lb'),im=lb.querySelector('img');
+ document.querySelectorAll('[data-lb]').forEach(function(a){a.addEventListener('click',function(e){e.preventDefault();im.src=a.getAttribute('href');lb.classList.add('on')})});
+ lb.onclick=function(){lb.classList.remove('on')};
+ // Scroll-Reveal
+ var rv=document.querySelectorAll('.rv');
+ if('IntersectionObserver' in window){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12});rv.forEach(function(el){io.observe(el)})}else{rv.forEach(function(el){el.classList.add('in')})}
+ // Parallax Bild-Band
+ var px=document.querySelector('[data-px]');if(px){window.addEventListener('scroll',function(){var r=px.parentNode.getBoundingClientRect();px.style.transform='translateY('+(r.top*-.12)+'px)'},{passive:true})}
+})();
 </script>
 </body>
 </html>

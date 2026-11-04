@@ -69,7 +69,9 @@
     "anrede": "Sehr geehrter Herr Schröder,",
     "problem": "dass sie noch ohne sichere Verbindung (https) läuft. Viele Browser zeigen Besuchern deshalb „Nicht sicher“ an",
     "suche": "Fachbetrieb für Strahlen und Beschichten"
-   }
+   },
+   "theme": "bau",
+   "min_w": 450
   },
   {
    "slug": "tischlerei-hellmann",
@@ -134,7 +136,9 @@
     "anrede": "Sehr geehrter Herr Brinkmann,",
     "problem": "dass Ihr Impressum gerade nicht erreichbar ist (Fehlermeldung) und die Seite noch auf einem älteren Baukasten läuft",
     "suche": "Tischler"
-   }
+   },
+   "theme": "holz",
+   "min_w": 450
   },
   {
    "slug": "holzbau-wagemester",
@@ -201,7 +205,9 @@
     "anrede": "Sehr geehrter Herr Dieckmann,",
     "problem": "dass es noch kein Kontaktformular gibt und Ihre Projektfotos nicht richtig zur Geltung kommen",
     "suche": "Zimmerer"
-   }
+   },
+   "theme": "dach",
+   "min_w": 450
   },
   {
    "slug": "von-garrel",
@@ -269,7 +275,9 @@
     "anrede": "Sehr geehrter Herr Pusdrowski, sehr geehrter Herr Klütz,",
     "problem": "dass Design und Inhalte seit einigen Jahren nicht erneuert wurden und es noch kein Kontaktformular gibt",
     "suche": "Maler"
-   }
+   },
+   "theme": "maler",
+   "min_w": 450
   },
   {
    "slug": "moehlmann-haustechnik",
@@ -336,7 +344,9 @@
     "anrede": "Sehr geehrter Herr Möhlmann,",
     "problem": "dass im Bereich Karriere noch ein Platzhaltertext („Dummy“) steht und einige Blöcke auf der Startseite doppelt erscheinen",
     "suche": "Heizungsbauer"
-   }
+   },
+   "theme": "shk",
+   "min_w": 450
   },
   {
    "slug": "vonstrohe",
@@ -402,7 +412,9 @@
     "anrede": "Sehr geehrter Herr Nolting,",
     "problem": "dass Adresse und E-Mail nur im Impressum stehen und es noch kein Kontaktformular gibt",
     "suche": "Heizungsbauer"
-   }
+   },
+   "theme": "shk",
+   "min_w": 450
   },
   {
    "slug": "tischlerei-wernsing",
@@ -473,7 +485,9 @@
     "anrede": "Guten Tag Pascale Wernsing,",
     "problem": "dass auf der Seite „Über uns“ noch „Coming soon“ steht und ein Kontaktformular fehlt",
     "suche": "Tischler"
-   }
+   },
+   "theme": "holz",
+   "min_w": 450
   },
   {
    "slug": "kalz-melke",
@@ -544,7 +558,9 @@
     "anrede": "Sehr geehrter Herr Melke,",
     "problem": "dass auf der Startseite zwei unterschiedliche Kundenzahlen stehen und fast nur gekaufte Bilder zu sehen sind",
     "suche": "Heizungsbauer"
-   }
+   },
+   "theme": "shk",
+   "min_w": 450
   },
   {
    "slug": "rasch-heiztechnik",
@@ -610,7 +626,9 @@
     "anrede": "Sehr geehrter Herr Abendrot,",
     "problem": "dass die Seite sehr voll ist, kaum eigene Fotos zeigt und Ihre E-Mail-Adresse oben nicht lesbar ist",
     "suche": "Heizungsbauer oder Badsanierer"
-   }
+   },
+   "theme": "shk",
+   "min_w": 450
   },
   {
    "slug": "bdm-dachbau",
@@ -678,7 +696,10 @@
     "problem": "dass Ihre Niederlassung in Bersenbrück dort kaum vorkommt – ohne Adresse und ohne Ihre Telefonnummer vor Ort",
     "suche": "Dachdecker"
    },
-   "logo_invert": true
+   "logo_invert": true,
+   "theme": "dach",
+   "min_w": 450
   }
- ]
+ ],
+ "template": "v3"
 }

@@ -16,14 +16,23 @@ OUT_PDF = ROOT.parent / "vorschau-ausgabe"
 PHONE_SVG = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>'
 
 THEMES = {
- "holz":    dict(dark="#1B130C", acc="#C27A3A", acc2="#F2C185", tint="#FBF6EF", on="#1B130C"),
- "dach":    dict(dark="#12151E", acc="#D9472B", acc2="#FF9E7D", tint="#F7F4F2", on="#fff"),
- "maler":   dict(dark="#170F2E", acc="#7C3AED", acc2="#F472B6", tint="#FAF7FF", on="#fff"),
- "shk":     dict(dark="#06182B", acc="#0A8FD8", acc2="#4FE3D1", tint="#F2F8FC", on="#04121F"),
+ "holz":    dict(serif=True, dark="#1B130C", acc="#B9773C", acc2="#E9C08C", tint="#F8F3EC", on="#1B130C"),
+ "dach":    dict(dark="#16181D", acc="#C0612B", acc2="#EBA374", tint="#F6F3F0", on="#fff"),
+ "maler":   dict(serif=True, dark="#22302B", acc="#B8613E", acc2="#E7B497", tint="#F6F2EC", on="#fff"),
+ "shk":     dict(dark="#06233A", acc="#0A86C9", acc2="#3FD6A4", tint="#F3F8FB", on="#04121F"),
  "elektro": dict(dark="#0B0E17", acc="#F2B200", acc2="#FFE27A", tint="#FFFBEF", on="#0B0E17"),
- "garten":  dict(dark="#0D1F16", acc="#2E9E5A", acc2="#B4EBA0", tint="#F3FAF4", on="#08160F"),
- "fliesen": dict(dark="#10191B", acc="#0F8C82", acc2="#9BEFE2", tint="#F1F8F7", on="#071211"),
- "bau":     dict(dark="#15171C", acc="#E0761C", acc2="#FFC37A", tint="#F8F6F3", on="#15171C"),
+ "garten":  dict(serif=True, dark="#13261C", acc="#3C8F5A", acc2="#B9DFA0", tint="#F4F7F1", on="#08160F"),
+ "fliesen": dict(serif=True, dark="#1C1A18", acc="#A8794B", acc2="#DDBB92", tint="#F5F2EE", on="#1C1A18"),
+ "bau":     dict(dark="#141518", acc="#E3B93E", acc2="#F3D985", tint="#F5F4F0", on="#141518"),
+}
+
+STEPS = {
+ "holz":    [("Beratung","Wir besprechen Ihre Idee – gern direkt bei Ihnen vor Ort."),("Aufmaß & Entwurf","Wir messen genau auf und planen Ihr Stück im Detail."),("Fertigung","In der eigenen Werkstatt entsteht Ihr Unikat."),("Montage","Wir bauen alles sauber und passgenau bei Ihnen ein.")],
+ "dach":    [("Dach-Check","Rufen Sie an – wir schauen uns Ihr Dach an."),("Angebot","Sie erhalten ein klares, verständliches Angebot."),("Ausführung","Unser Team arbeitet sicher, sauber und termintreu."),("Abnahme","Wir übergeben Ihr Dach und bleiben Ihr Ansprechpartner.")],
+ "maler":   [("Farbberatung","Wir beraten Sie zu Farben, Techniken und Materialien."),("Muster","Farbproben und Musterplatten zeigen vorher das Ergebnis."),("Umsetzung","Wir arbeiten sauber, abgedeckt und termintreu."),("Übergabe","Wir übergeben Ihnen besenreine, fertige Räume.")],
+ "fliesen": [("Beratung","Wir besprechen Ihre Wünsche, Formate und Materialien."),("Planung","Wir planen Fugenbild, Material und Ablauf genau."),("Verlegung","Wir verlegen präzise und mit sauberen Kanten."),("Übergabe","Ihr neues Bad oder Ihr Boden ist bereit.")],
+ "shk":     [("Anfrage","Rufen Sie an oder schreiben Sie uns kurz."),("Beratung vor Ort","Wir prüfen Ihre Anlage und beraten zu Förderung."),("Installation","Unsere Monteure bauen alles sauber ein."),("Wartung","Wir bleiben für Service und Notdienst für Sie da.")],
+ "bau":     [("Erstgespräch","Wir besprechen Ihr Bauvorhaben und Ihre Ziele."),("Planung","Wir planen Kosten, Zeit und Ablauf transparent."),("Bauphase","Unser Team baut zuverlässig und in Qualität."),("Übergabe","Wir übergeben Ihr fertiges Projekt.")],
 }
 
 env = jinja2.Environment(loader=jinja2.FileSystemLoader(TPL), autoescape=True)
@@ -85,12 +94,13 @@ def build(runde_file):
                      galerie=rest[1:6] if len(rest) >= 3 else rest[:5], imgs=imgs,
                      tel_link=tel_link(f.get("telefon")),
                      website_kurz=re.sub(r"^https?://(www\.)?|/$", "", f["website"]))
-            if data.get("template") == "v2":
+            if data.get("template") in ("v2", "v3"):
                 order = [imgs[(f.get("hero_idx", 0) + k) % len(imgs)] for k in range(len(imgs))]
                 cyc = lambda k: order[k % len(order)]
                 v.update(mosaic=[cyc(0), cyc(1), cyc(2)], band=(None if f.get("band_idx") == "none" else cyc(f.get("band_idx", 3))), about_img=cyc(4), about_img2=cyc(5),
                          galerie=order, imgs=order, pos=f.get("pos", {}))
-                html = env.get_template("vorschau2.html.j2").render(f=v, t=THEMES[f.get("theme", "shk")], icon_phone=Markup(PHONE_SVG))
+                v.update(slides=[cyc(k) for k in f.get("slides", range(min(4, len(order))))], cta_img=cyc(f.get("cta_idx", 2)))
+                html = env.get_template("vorschau3.html.j2" if data.get("template") == "v3" else "vorschau2.html.j2").render(f=v, t=THEMES[f.get("theme", "shk")], icon_phone=Markup(PHONE_SVG), steps=STEPS.get(f.get("theme","shk"), STEPS["shk"]))
             else:
                 html = env.get_template("vorschau.html.j2").render(f=v, icon_phone=Markup(PHONE_SVG))
             (d / "index.html").write_text(html)
@@ -98,11 +108,11 @@ def build(runde_file):
             sd, sm = OUT_PDF / f"{slug}-desk.jpg", OUT_PDF / f"{slug}-mob.jpg"
             pg = br.new_page(viewport={"width": 1280, "height": 860}, device_scale_factor=1.5)
             pg.goto((d / "index.html").as_uri()); pg.wait_for_timeout(900)
-            pg.evaluate("document.querySelector('.pv').style.display='none'")
+            pg.evaluate("document.querySelector('.pv').style.display='none';document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'))")
             pg.screenshot(path=str(sd), type="jpeg", quality=85); pg.close()
             pg = br.new_page(viewport={"width": 390, "height": 800}, device_scale_factor=2, is_mobile=True)
             pg.goto((d / "index.html").as_uri()); pg.wait_for_timeout(900)
-            pg.evaluate("document.querySelector('.pv').style.display='none';document.querySelector('.callbar')&&(document.querySelector('.callbar').style.display='none')")
+            pg.evaluate("document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'));document.querySelector('.pv').style.display='none';document.querySelector('.callbar')&&(document.querySelector('.callbar').style.display='none')")
             pg.screenshot(path=str(sm), type="jpeg", quality=85); pg.close()
             url = BASE + slug + "/"
             qr = OUT_PDF / f"{slug}-qr.svg"
