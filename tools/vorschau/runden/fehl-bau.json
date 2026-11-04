@@ -105,13 +105,13 @@
     "Rohbau bis schlüsselfertig"
    ],
    "v5": {
-    "fonts": "family=Unbounded:wght@500;600;700&family=Figtree:wght@400;500;600",
-    "fh": "'Unbounded',sans-serif",
-    "fb": "'Figtree',system-ui,sans-serif",
-    "hw": 600,
-    "hls": "-0.03em",
-    "hlh": 1.02,
-    "h1max": 4.6,
+    "fonts": "family=Hanken+Grotesk:wght@400;500;600;700;800",
+    "fh": "'Hanken Grotesk',sans-serif",
+    "fb": "'Hanken Grotesk',system-ui,sans-serif",
+    "hw": 800,
+    "hls": "-0.035em",
+    "hlh": 0.98,
+    "h1max": 5.2,
     "c": {
      "bg": "#F4F3F1",
      "ink": "#061A33",
