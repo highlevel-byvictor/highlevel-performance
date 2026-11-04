@@ -46,7 +46,7 @@ STEPS = {
 env = jinja2.Environment(loader=jinja2.FileSystemLoader(TPL), autoescape=True)
 ctx = ssl.create_default_context()
 
-def fetch_img(url, dest, maxw=1600):
+def fetch_img(url, dest, maxw=1600, trim=0):
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     data = urllib.request.urlopen(req, timeout=30, context=ctx).read()
     im = Image.open(io.BytesIO(data))
@@ -58,6 +58,9 @@ def fetch_img(url, dest, maxw=1600):
         dest = dest.with_suffix(".png"); im.save(dest, optimize=True)
     else:
         im = im.convert("RGB")
+        if trim:
+            tx, ty = round(im.width * trim), round(im.height * trim)
+            im = im.crop((tx, ty, im.width - tx, im.height - ty))
         if im.width > maxw: im = im.resize((maxw, round(im.height * maxw / im.width)), Image.LANCZOS)
         elif im.width < 1100: im = im.resize((1100, round(im.height * 1100 / im.width)), Image.LANCZOS)
         # Bild aufwerten: Tonwerte, Farbe, Kontrast, Schärfe
@@ -83,17 +86,24 @@ def build(runde_file):
             if f.get("skip"): continue
             slug = f.get("slug_exact") or (f["slug"] + "-" + hashlib.sha1(f["firma"].encode()).hexdigest()[:4])
             d = ROOT / "vorschau" / slug; (d / "img").mkdir(parents=True, exist_ok=True)
-            imgs = []
+            imgs = []; allimg = {}
             for i, u in enumerate(f.get("bild_urls", [])):
                 try:
-                    n, sz = fetch_img(u, d / "img" / f"b{i+1}")
+                    n, sz = fetch_img(u, d / "img" / f"b{i+1}", trim=f.get("trim", 0))
+                    allimg[f"b{i+1}"] = "img/" + n
                     if sz[0] >= f.get("min_w", 700 if data.get("template") == "v2" else 500): imgs.append("img/" + n)
                 except Exception as e:
-                    print("  Bild fehlt:", u, e)
+                    old = next(iter(sorted((d / "img").glob(f"b{i+1}.*"))), None)
+                    if old:
+                        allimg[f"b{i+1}"] = "img/" + old.name; imgs.append("img/" + old.name); print("  Bild aus Cache:", old.name)
+                    else: print("  Bild fehlt:", u, e)
             logo = None
             if f.get("logo_url"):
                 try: logo = "img/" + fetch_img(f["logo_url"], d / "img" / "logo")[0]
-                except Exception as e: print("  Logo fehlt:", e)
+                except Exception as e:
+                    old = d / "img" / "logo.png"
+                    if old.exists(): logo = "img/logo.png"
+                    else: print("  Logo fehlt:", e)
             if not imgs: raise SystemExit(f"Keine Bilder für {f['firma']}")
             hero = imgs[f.get("hero_idx", 0) % len(imgs)]
             rest = [x for x in imgs if x != hero]
@@ -102,7 +112,12 @@ def build(runde_file):
                      galerie=rest[1:6] if len(rest) >= 3 else rest[:5], imgs=imgs,
                      tel_link=tel_link(f.get("telefon")),
                      website_kurz=re.sub(r"^https?://(www\.)?|/$", "", f["website"]))
-            if data.get("template") in ("v2", "v3", "v4"):
+            if data.get("template") == "v5":
+                v5 = dict(f["v5"]); v5.setdefault("pos", {})
+                v.update(v5=v5, allimg=allimg, inhaber_k=(f"b{f['inhaber_idx']+1}" if f.get("inhaber_idx") is not None else None))
+                if v5.get("logo") is False: v["logo"] = None
+                html = env.get_template("vorschau5.html.j2").render(f=v, icon_phone=Markup(PHONE_SVG), steps=STEPS.get(f.get("theme","shk"), STEPS["shk"]))
+            elif data.get("template") in ("v2", "v3", "v4"):
                 inh = imgs[f["inhaber_idx"]] if f.get("inhaber_idx") is not None and f["inhaber_idx"] < len(imgs) else None
                 base = [x for x in imgs if x != inh]
                 order = [base[(f.get("hero_idx", 0) + k) % len(base)] for k in range(len(base))]
@@ -120,11 +135,11 @@ def build(runde_file):
             # Screenshots für den Brief
             sd, sm = OUT_PDF / f"{slug}-desk.jpg", OUT_PDF / f"{slug}-mob.jpg"
             pg = br.new_page(viewport={"width": 1280, "height": 860}, device_scale_factor=1.5)
-            pg.goto((d / "index.html").as_uri()); pg.wait_for_timeout(900)
-            pg.evaluate("document.querySelector('.pv').style.display='none';document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'));var cb=document.querySelector('.callbar');cb&&(cb.style.display='none')")
+            pg.goto((d / "index.html").as_uri()); pg.evaluate("document.fonts.ready"); pg.wait_for_timeout(1800 if data.get("template") == "v5" else 900)
+            pg.evaluate("document.querySelector('.pv').style.display='none';document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'));var cb=document.querySelector('.callbar');cb&&(cb.style.display='none');document.querySelectorAll('.bot-btn,.promo').forEach(e=>e.style.display='none')")
             pg.screenshot(path=str(sd), type="jpeg", quality=85); pg.close()
             pg = br.new_page(viewport={"width": 390, "height": 800}, device_scale_factor=2, is_mobile=True)
-            pg.goto((d / "index.html").as_uri()); pg.wait_for_timeout(900)
+            pg.goto((d / "index.html").as_uri()); pg.evaluate("document.fonts.ready"); pg.wait_for_timeout(1800 if data.get("template") == "v5" else 900)
             pg.evaluate("document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'));var cb=document.querySelector('.callbar');cb&&(cb.style.display='none');document.querySelector('.pv').style.display='none';document.querySelector('.callbar')&&(document.querySelector('.callbar').style.display='none')")
             pg.screenshot(path=str(sm), type="jpeg", quality=85); pg.close()
             url = BASE + slug + "/"

@@ -1,6 +1,6 @@
 {
  "runde": "2026-11-Handwerk-Runde3",
- "template": "v4",
+ "template": "v5",
  "firmen": [
   {
    "slug": "tischlerei-berens",
@@ -81,6 +81,72 @@
     "anrede": "Sehr geehrter Herr Krieger,",
     "problem": "dass sie noch ohne sichere Verbindung (https) läuft und auf dem Handy nicht richtig dargestellt wird",
     "suche": "Tischler"
+   },
+   "trim": 0.025,
+   "v5": {
+    "fonts": "family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Instrument+Sans:wght@400;500;600",
+    "fh": "'Fraunces',Georgia,serif",
+    "fb": "'Instrument Sans',system-ui,sans-serif",
+    "hw": 500,
+    "hls": "-0.03em",
+    "hlh": 1.0,
+    "h1vw": 5.6,
+    "h1max": 6.4,
+    "c": {
+     "bg": "#EEF0EA",
+     "ink": "#1E1A16",
+     "acc": "#2F4A3A",
+     "acc2": "#B08D57",
+     "soft": "#E1E5DA",
+     "paper": "#FBFBF8",
+     "star": "#B08D57"
+    },
+    "hero": "mask",
+    "shape": "arch",
+    "hero_img": "b5",
+    "mclip": "inset(0 4% 0 4% round 46vw 46vw 0 0)",
+    "pos": {
+     "b5": "50% 62%",
+     "b1": "50% 30%"
+    },
+    "svc": "index",
+    "svc_imgs": [
+     "b3",
+     "b1",
+     "b3",
+     "b5",
+     "b1",
+     "b4",
+     "b2",
+     "b6"
+    ],
+    "about_img": "b4",
+    "about_img2": "b2",
+    "gal": [
+     "b1",
+     "b6",
+     "b2",
+     "b3",
+     "b4",
+     "b5"
+    ],
+    "cta_img": "b6",
+    "order": [
+     "facts",
+     "svc",
+     "about",
+     "steps",
+     "gal",
+     "cta"
+    ],
+    "steps_cls": "tone",
+    "r": "2px",
+    "logo_h": 66,
+    "hero_slides": [
+     "b5",
+     "b6",
+     "b1"
+    ]
    }
   },
   {
@@ -158,6 +224,70 @@
     "anrede": "Guten Tag,",
     "problem": "dass sie auf dem Handy nicht richtig dargestellt wird und die Galerie seit 2017 nicht erneuert wurde",
     "suche": "Metallbauer"
+   },
+   "v5": {
+    "fonts": "family=Archivo:wdth,wght@62..125,400..900",
+    "fh": "'Archivo',sans-serif",
+    "fb": "'Archivo',sans-serif",
+    "hw": 800,
+    "hls": "-0.01em",
+    "hlh": 0.92,
+    "htt": "uppercase",
+    "h1vw": 5.0,
+    "h1max": 5.8,
+    "hst": "125%",
+    "c": {
+     "bg": "#ECEEF0",
+     "ink": "#1F2327",
+     "acc": "#D7261E",
+     "acc2": "#9AA3AB",
+     "soft": "#DDE0E3",
+     "paper": "#FFFFFF",
+     "hbg": "#2C3136",
+     "hink": "#FFFFFF"
+    },
+    "hero": "mask",
+    "shape": "diag",
+    "hero_img": "b2",
+    "mclip": "polygon(0 9%, 100% 0, 100% 100%, 0 100%)",
+    "logo_bg": "#ECEEF0",
+    "logo_h": 40,
+    "svc": "pin",
+    "svc_imgs": [
+     "b6",
+     "b3",
+     "b7",
+     "b1"
+    ],
+    "svc_cls": "",
+    "pos": {
+     "b1": "40% 50%"
+    },
+    "about_img": "b4",
+    "about_img2": "b5",
+    "gal": [
+     "b5",
+     "b4",
+     "b2",
+     "b6",
+     "b3"
+    ],
+    "cta_img": "b5",
+    "order": [
+     "svc",
+     "facts",
+     "about",
+     "steps",
+     "gal",
+     "cta"
+    ],
+    "facts_cls": "dark",
+    "steps_cls": "tone",
+    "hero_slides": [
+     "b2",
+     "b6",
+     "b3"
+    ]
    }
   },
   {
@@ -237,6 +367,61 @@
     "anrede": "Sehr geehrte Frau Wellen, sehr geehrter Herr von Hebel,",
     "problem": "dass im Impressum noch Platzhalter aus der Vorlage stehen und die Seite auf dem Handy nicht richtig dargestellt wird",
     "suche": "Metallbauer"
+   },
+   "v5": {
+    "fonts": "family=Schibsted+Grotesk:wght@400;500;700;800",
+    "fh": "'Schibsted Grotesk',sans-serif",
+    "fb": "'Schibsted Grotesk',sans-serif",
+    "hw": 800,
+    "hls": "-0.035em",
+    "hlh": 0.95,
+    "h1vw": 5.4,
+    "h1max": 6.2,
+    "c": {
+     "bg": "#F4F8FB",
+     "ink": "#0D1B2A",
+     "acc": "#1E4E79",
+     "acc2": "#6FA8D6",
+     "soft": "#DCE9F3",
+     "paper": "#FFFFFF",
+     "hbg": "#0D1B2A",
+     "hink": "#FFFFFF",
+     "frame": "#B9C2CA"
+    },
+    "hero": "panes",
+    "hero_img": "glass",
+    "cols": 4,
+    "rows": 2,
+    "pane_h": 48,
+    "logo_bg": "#FFFFFF",
+    "pos": {
+     "b7": "50% 40%"
+    },
+    "svc": "index",
+    "svc_imgs": [],
+    "about_img": "glass",
+    "about_img2": null,
+    "gal": [],
+    "cta_img": "glass",
+    "about_flip": true,
+    "order": [
+     "svc",
+     "about",
+     "facts",
+     "steps",
+     "cta"
+    ],
+    "facts_cls": "tone",
+    "steps_cls": "dark",
+    "icons": [
+     "<rect x=\"3\" y=\"3\" width=\"18\" height=\"18\"/><path d=\"M12 3v18M3 12h18\"/>",
+     "<rect x=\"5\" y=\"3\" width=\"14\" height=\"18\"/><path d=\"M12 3v18M5 11h14\"/>",
+     "<path d=\"M5 21V3h11v18M16 12h.01M3 21h18\"/>",
+     "<path d=\"M12 2c3 4 6 6 6 11a6 6 0 0 1-12 0c0-3 2-5 3-7 1 2 2 3 3 3 0-3-1-5 0-7z\"/>",
+     "<path d=\"M3 17l9-10 9 10M3 21h18\"/>",
+     "<path d=\"M4 20L20 4M8 20l12-12M4 14L14 4\"/>",
+     "<rect x=\"2\" y=\"7\" width=\"20\" height=\"12\"/><path d=\"M6 7V4h12v3\"/>"
+    ]
    }
   },
   {
@@ -311,6 +496,54 @@
     "anrede": "Sehr geehrte Herren Broxtermann,",
     "problem": "dass im Impressum ein Platzhalter steht und auf der Kontaktseite technischer Code sichtbar ist",
     "suche": "Gartenbauer"
+   },
+   "v5": {
+    "fonts": "family=DM+Serif+Display&family=DM+Sans:opsz,wght@9..40,400..700",
+    "fh": "'DM Serif Display',Georgia,serif",
+    "fb": "'DM Sans',system-ui,sans-serif",
+    "hw": 400,
+    "hls": "-0.015em",
+    "hlh": 0.98,
+    "h1vw": 7,
+    "h1max": 8,
+    "c": {
+     "bg": "#F2F5EE",
+     "ink": "#1C2A1B",
+     "acc": "#2E4A2C",
+     "acc2": "#8DB357",
+     "soft": "#E2EAD8",
+     "paper": "#FFFFFF"
+    },
+    "hero": "mask",
+    "shape": "blob",
+    "hero_img": "b1",
+    "mclip": "inset(0 4% 0 4% round 48% 52% 46% 54% / 26% 30% 22% 26%)",
+    "logo_h": 40,
+    "svc": "stack",
+    "svc_imgs": [
+     "b2",
+     "b4",
+     "b5",
+     "b3"
+    ],
+    "r": "40px",
+    "about_img": "b2",
+    "about_img2": "b4",
+    "gal": [],
+    "cta_img": "b4",
+    "order": [
+     "facts",
+     "svc",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "steps_cls": "tone",
+    "hero_slides": [
+     "b1",
+     "b2",
+     "b4"
+    ]
    }
   },
   {
@@ -386,6 +619,65 @@
     "anrede": "Sehr geehrter Herr Stolze,",
     "problem": "dass dort noch von 25 Jahren die Rede ist, obwohl Sie seit 1993 am Markt sind, und der Stand von 2020 angezeigt wird",
     "suche": "Gartenbauer"
+   },
+   "v5": {
+    "fonts": "family=Bricolage+Grotesque:opsz,wght@12..96,400..800",
+    "fh": "'Bricolage Grotesque',sans-serif",
+    "fb": "'Bricolage Grotesque',sans-serif",
+    "hw": 750,
+    "hls": "-0.035em",
+    "hlh": 0.93,
+    "h1vw": 6,
+    "h1max": 6.6,
+    "c": {
+     "bg": "#F1F0EC",
+     "ink": "#1F3B2D",
+     "acc": "#1F3B2D",
+     "acc2": "#E8C547",
+     "soft": "#E3E1D9",
+     "paper": "#FFFFFF",
+     "hbg": "#D9D6CF",
+     "ctabtn": "#E8C547",
+     "onctabtn": "#1F3B2D"
+    },
+    "hero": "collage",
+    "prints": [
+     [
+      "b2",
+      "Unser Team"
+     ],
+     [
+      "b3",
+      "Neuanlage"
+     ],
+     [
+      "b1",
+      "Natursteinarbeiten"
+     ]
+    ],
+    "svc": "pin",
+    "svc_imgs": [
+     "b3",
+     "b4",
+     "b1",
+     "b5"
+    ],
+    "r": "40px",
+    "pos": {
+     "b2": "55% 35%"
+    },
+    "about_img": "b2",
+    "about_img2": "b5",
+    "gal": [],
+    "cta_img": "b4",
+    "order": [
+     "svc",
+     "about",
+     "facts",
+     "steps",
+     "cta"
+    ],
+    "steps_cls": "tone"
    }
   },
   {
@@ -472,6 +764,60 @@
     "anrede": "Sehr geehrter Herr Gerbes,",
     "problem": "dass sie auf dem Handy nicht richtig dargestellt wird und die neue Domain gerbes-daecher.de noch „Baustelle“ zeigt",
     "suche": "Dachdecker"
+   },
+   "v5": {
+    "fonts": "family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600",
+    "fh": "'Barlow Condensed',sans-serif",
+    "fb": "'Barlow',system-ui,sans-serif",
+    "hw": 700,
+    "hls": "0em",
+    "hlh": 0.9,
+    "htt": "uppercase",
+    "h1vw": 7.2,
+    "h1max": 8,
+    "c": {
+     "bg": "#F3F6F8",
+     "ink": "#2F3A44",
+     "acc": "#A63D2F",
+     "acc2": "#C67B4E",
+     "soft": "#DCE5EC",
+     "paper": "#FFFFFF",
+     "hbg": "#E7EEF3"
+    },
+    "hero": "mask",
+    "shape": "gable",
+    "hero_img": "b7",
+    "mclip": "polygon(0 20%, 50% 0, 100% 20%, 100% 100%, 0 100%)",
+    "pos": {
+     "b7": "50% 30%",
+     "b6": "50% 50%"
+    },
+    "svc": "index",
+    "svc_imgs": [
+     "b2",
+     "b5",
+     "b6",
+     "b7"
+    ],
+    "gal": [],
+    "cta_img": "b6",
+    "order": [
+     "facts",
+     "svc",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "facts_cls": "dark",
+    "steps_cls": "tone",
+    "hero_slides": [
+     "b7",
+     "b6",
+     "b2"
+    ],
+    "about_owner": false,
+    "about_img": "b6",
+    "about_img2": "b2"
    }
   },
   {
@@ -554,6 +900,54 @@
     "anrede": "Sehr geehrter Herr Oldewage,",
     "problem": "dass im Bilder-Slider noch Platzhaltertexte stehen und von „15 Jahren“ die Rede ist, obwohl Sie seit 2003 selbständig sind",
     "suche": "Zimmerer"
+   },
+   "v5": {
+    "fonts": "family=Big+Shoulders+Display:wght@700;800;900&family=Work+Sans:wght@400;500;600",
+    "fh": "'Big Shoulders Display',sans-serif",
+    "fb": "'Work Sans',system-ui,sans-serif",
+    "hw": 800,
+    "hls": "0em",
+    "hlh": 0.86,
+    "htt": "uppercase",
+    "h1vw": 9.4,
+    "h1max": 10.5,
+    "c": {
+     "bg": "#EEF0EE",
+     "ink": "#222222",
+     "acc": "#D9B57A",
+     "acc2": "#D9B57A",
+     "soft": "#E1E4DF",
+     "paper": "#FFFFFF",
+     "hbg": "#2B3A2F",
+     "hink": "#FFFFFF",
+     "onacc": "#1D1D1D",
+     "ctabtn": "#222222"
+    },
+    "hero": "portrait",
+    "logo_bg": "#FFFFFF",
+    "pos": {
+     "b7": "50% 22%",
+     "b6": "50% 60%"
+    },
+    "svc": "pin",
+    "svc_imgs": [
+     "b1",
+     "b4",
+     "b5",
+     "b3"
+    ],
+    "about_img": "b6",
+    "about_img2": "b2",
+    "gal": [],
+    "cta_img": "b2",
+    "order": [
+     "svc",
+     "about",
+     "facts",
+     "steps",
+     "cta"
+    ],
+    "steps_cls": "dark"
    }
   },
   {
@@ -629,6 +1023,60 @@
     "anrede": "Sehr geehrte Herren Thomann,",
     "problem": "dass sie auf dem Handy sehr langsam lädt und kaum Fotos Ihrer Projekte zeigt",
     "suche": "Elektriker"
+   },
+   "v5": {
+    "fonts": "family=Sora:wght@300..800",
+    "fh": "'Sora',sans-serif",
+    "fb": "'Sora',system-ui,sans-serif",
+    "hw": 700,
+    "hls": "-0.04em",
+    "hlh": 0.98,
+    "h1vw": 5.2,
+    "h1max": 5.8,
+    "c": {
+     "bg": "#F5F6F8",
+     "ink": "#101A2B",
+     "acc": "#FFD23F",
+     "acc2": "#FFD23F",
+     "soft": "#E7EAF0",
+     "paper": "#FFFFFF",
+     "hbg": "#101A2B",
+     "hink": "#FFFFFF",
+     "onacc": "#101A2B",
+     "ctabtn": "#101A2B"
+    },
+    "hero": "circuit",
+    "hero_img": "b1",
+    "logo_h": 50,
+    "r": "6px",
+    "svc": "index",
+    "svc_imgs": [],
+    "icons": [
+     "<path d=\"M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z\"/>",
+     "<path d=\"M9 2v6M15 2v6M6 8h12v4a6 6 0 0 1-12 0zM12 18v4\"/>",
+     "<rect x=\"3\" y=\"12\" width=\"18\" height=\"9\" rx=\"1\"/><path d=\"M3 16.5h18M9 12v9M15 12v9M12 2v3M5.6 4.6l1.8 1.8M18.4 4.6l-1.8 1.8\"/>",
+     "<rect x=\"9\" y=\"2\" width=\"6\" height=\"5\" rx=\"1\"/><rect x=\"2\" y=\"17\" width=\"6\" height=\"5\" rx=\"1\"/><rect x=\"16\" y=\"17\" width=\"6\" height=\"5\" rx=\"1\"/><path d=\"M12 7v5M5 17v-3h14v3\"/>",
+     "<path d=\"M12 21V9M8 21h8M5 3l7 6 7-6M7.5 5.2l4.5 3.8 4.5-3.8\"/>",
+     "<path d=\"M3 11l9-7 9 7v10H3z\"/><path d=\"M9.5 15a3.5 3.5 0 0 1 5 0M7.5 12.8a6.4 6.4 0 0 1 9 0\"/>",
+     "<path d=\"M9 18h6M10 21h4M12 3a6 6 0 0 0-3.6 10.8c.7.5 1.1 1.3 1.1 2.2h5c0-.9.4-1.7 1.1-2.2A6 6 0 0 0 12 3z\"/>"
+    ],
+    "about_img": "b2",
+    "about_img2": "b3",
+    "gal": [],
+    "cta_img": "b3",
+    "order": [
+     "facts",
+     "svc",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "steps_cls": "tone",
+    "hero_slides": [
+     "b1",
+     "b2",
+     "b3"
+    ]
    }
   },
   {
@@ -705,6 +1153,53 @@
     "anrede": "Sehr geehrte Herren Brüggen,",
     "problem": "dass auf der Startseite vor allem Hersteller-Nachrichten stehen und Ihre fast 90-jährige Geschichte noch mit 75 Jahren angegeben ist",
     "suche": "Elektriker"
+   },
+   "v5": {
+    "fonts": "family=Red+Hat+Display:wght@400..900&family=Red+Hat+Text:wght@400;500;600",
+    "fh": "'Red Hat Display',sans-serif",
+    "fb": "'Red Hat Text',system-ui,sans-serif",
+    "hw": 800,
+    "hls": "-0.035em",
+    "hlh": 0.95,
+    "c": {
+     "bg": "#F7F7F5",
+     "ink": "#0F2A33",
+     "acc": "#0F4C5C",
+     "acc2": "#F2A541",
+     "soft": "#E6ECEC",
+     "paper": "#FFFFFF",
+     "star": "#F2A541"
+    },
+    "hero": "numerals",
+    "num": "1936",
+    "num_img": "b1",
+    "logo": false,
+    "wordmark": "Elektro Brüggen",
+    "strip_img": "b3",
+    "pos": {
+     "b3": "50% 40%"
+    },
+    "svc": "index",
+    "svc_imgs": [
+     "b4",
+     "b5",
+     "b2",
+     "b3"
+    ],
+    "about_img": "b5",
+    "about_img2": "b4",
+    "gal": [],
+    "cta_img": "b4",
+    "order": [
+     "strip",
+     "svc",
+     "facts",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "facts_cls": "dark",
+    "steps_cls": "tone"
    }
   },
   {
@@ -777,6 +1272,66 @@
     "anrede": "Sehr geehrter Herr Ludmann,",
     "problem": "dass die Seite „Über uns“ nur aus einem Satz besteht und viele Bilder noch von 2016 sind",
     "suche": "Fensterbauer"
+   },
+   "v5": {
+    "fonts": "family=Outfit:wght@300..800",
+    "fh": "'Outfit',sans-serif",
+    "fb": "'Outfit',system-ui,sans-serif",
+    "hw": 700,
+    "hls": "-0.035em",
+    "hlh": 0.95,
+    "h1vw": 5.4,
+    "h1max": 6.2,
+    "c": {
+     "bg": "#F6F8FA",
+     "ink": "#1B2329",
+     "acc": "#383E42",
+     "acc2": "#C08A55",
+     "soft": "#E6EDF2",
+     "paper": "#FFFFFF",
+     "hbg": "#BFDDF0",
+     "hink": "#0F1E2E",
+     "frame": "#383E42",
+     "ctabtn": "#C08A55"
+    },
+    "hero": "window",
+    "hero_img": "b6",
+    "frame_w": 26,
+    "pos": {
+     "b6": "40% 50%"
+    },
+    "logo_h": 44,
+    "r": "4px",
+    "svc": "stack",
+    "svc_imgs": [
+     "b3",
+     "b2"
+    ],
+    "about_img": "b1",
+    "about_img2": "b7",
+    "gal": [
+     "b1",
+     "b5",
+     "b6",
+     "b3",
+     "b2",
+     "b4"
+    ],
+    "cta_img": "b5",
+    "order": [
+     "svc",
+     "facts",
+     "about",
+     "gal",
+     "steps",
+     "cta"
+    ],
+    "steps_cls": "tone",
+    "hero_slides": [
+     "b6",
+     "b2",
+     "b4"
+    ]
    }
   }
  ]
