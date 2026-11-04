@@ -1,21 +1,170 @@
-{"runde":"Fehl-Bau","template":"v4","firmen":[{
- "slug":"fehl-bau","slug_exact":"fehl-bau-entwurf","theme":"fehl","hero_v":"A","svc_v":"grid","bricks":true,
- "firma":"Bauunternehmen N. Fehl","kurzname":"Bauunternehmen Fehl","website":"https://www.fehl-bau.de",
- "accent":"#E60502","accent2":"#3FA2F0","telefon":"0176 24026592","email":"info@fehl-bau.de","adresse":"Mühlenstraße 25a, 49434 Neuenkirchen-Vörden",
- "tag":"Bauunternehmen · Meisterbetrieb",
- "h1":"Solide gebaut. <span>Der Meisterhand vertraut.</span>",
- "sub":"Rohbau, Maurer- und Betonarbeiten bis zum schlüsselfertigen Haus – mit höchster Präzision und Qualität, von der Planung bis zur Übergabe.",
- "trust":[["40+","abgeschlossene Bauprojekte"],["35+","zufriedene Bauherren"],["10.000 m²","Wohn- und Gewerbefläche"],["15+","Jahre Erfahrung"]],
- "leist_h2":"Vom Fundament bis zum Schlüssel.",
- "leistungen":["Maurerarbeiten","Betonarbeiten","Schlüsselfertig bauen","Projekt- & Baubetreuung"],
- "about_h2":"Ein Partner, auf den man bauen kann.",
- "ueber":["Wir realisieren Rohbau, schlüsselfertige Bauprojekte und individuelle Großprojekte mit höchster Präzision und Qualität.","Offene und ehrliche Kommunikation während des gesamten Projekts, effiziente Arbeitsabläufe und eine gut organisierte Baustellenführung – dafür steht unser Team."],
- "checks":["Qualität & Zuverlässigkeit","Transparenz & Kommunikation","Termintreue & Effizienz","Individuelle Lösungen"],
- "gal_h2":"Gebaut in der Region.",
- "stimmen":[["Vom freundlichen Erstkontakt bis hin zur Besichtigung, Beratung, Planung und schlussendlich der Ausführung kann ich dieses Bauunternehmen mit voller Überzeugung weiterempfehlen.","Fam. Zielke","Bauherren"],["Als Bauherr war ich stets über alle Vorgehen auf der Baustelle informiert und involviert. Die Bauarbeiten wurden zügig und fachgerecht umgesetzt.","Juri Moor","Bauherr"],["Unser Reihenhaus in Ankum wurde termingerecht und in höchster Qualität fertiggestellt. Ein zuverlässiger Partner für jedes Bauprojekt!","Dimmel Immobilien GbR","Reihenhaus in Ankum"],["Sehr gute Leistung zu einem fairen Preis. Pünktlicher Baustart und -abschluss. Ein Bauunternehmen, auf das man bauen kann!","AS Immo GmbH","Bauherr"]],
- "video":"img/imagefilm.mp4","video_poster":"img/imagefilm-poster.jpg",
- "logo_url":"https://www.fehl-bau.de/wp-content/uploads/2025/03/fehl-kelm-bau-tr.webp",
- "bild_urls":["https://www.fehl-bau.de/wp-content/uploads/2025/03/DJI_0495.jpg","https://www.fehl-bau.de/wp-content/uploads/2025/03/FB_IMG_1741626003921.jpg","https://www.fehl-bau.de/wp-content/uploads/2025/03/20230821_071604.jpg","https://www.fehl-bau.de/wp-content/uploads/2025/03/20240808_194712-e1742463771563.webp","https://www.fehl-bau.de/wp-content/uploads/2025/03/IMG-20250310-WA0008.jpg","https://www.fehl-bau.de/wp-content/uploads/2025/03/IMG-20250310-WA0010.jpg","https://www.fehl-bau.de/wp-content/uploads/2025/03/IMG-20250310-WA0009.jpg"],
- "min_w":800,
- "brief":{"anschrift":["Bauunternehmen N. Fehl"],"anrede":"Hallo,","problem":"-","suche":"Bauunternehmen"}
-}]}
+{
+ "runde": "Fehl-Bau",
+ "template": "v5",
+ "firmen": [
+  {
+   "slug": "fehl-bau",
+   "slug_exact": "fehl-bau-entwurf",
+   "theme": "fehl",
+   "hero_v": "A",
+   "svc_v": "grid",
+   "bricks": true,
+   "firma": "Bauunternehmen N. Fehl",
+   "kurzname": "Bauunternehmen Fehl",
+   "website": "https://www.fehl-bau.de",
+   "accent": "#E60502",
+   "accent2": "#3FA2F0",
+   "telefon": "0176 24026592",
+   "email": "info@fehl-bau.de",
+   "adresse": "Mühlenstraße 25a, 49434 Neuenkirchen-Vörden",
+   "tag": "Bauunternehmen und Meisterbetrieb, Neuenkirchen-Vörden",
+   "h1": "Solide gebaut. <span>Von Meisterhand.</span>",
+   "sub": "Rohbau, Maurer- und Betonarbeiten bis zum schlüsselfertigen Haus – mit höchster Präzision und Qualität, von der Planung bis zur Übergabe.",
+   "trust": [
+    [
+     "40+",
+     "abgeschlossene Bauprojekte"
+    ],
+    [
+     "35+",
+     "zufriedene Bauherren"
+    ],
+    [
+     "10.000 m²",
+     "Wohn- und Gewerbefläche"
+    ],
+    [
+     "15+",
+     "Jahre Erfahrung"
+    ]
+   ],
+   "leist_h2": "Vom Fundament bis zum Schlüssel.",
+   "leistungen": [
+    "Maurerarbeiten",
+    "Betonarbeiten",
+    "Schlüsselfertig bauen",
+    "Projekt- & Baubetreuung"
+   ],
+   "about_h2": "Ein Partner, auf den man bauen kann.",
+   "ueber": [
+    "Wir realisieren Rohbau, schlüsselfertige Bauprojekte und individuelle Großprojekte mit höchster Präzision und Qualität.",
+    "Offene und ehrliche Kommunikation während des gesamten Projekts, effiziente Arbeitsabläufe und eine gut organisierte Baustellenführung – dafür steht unser Team."
+   ],
+   "checks": [
+    "Qualität & Zuverlässigkeit",
+    "Transparenz & Kommunikation",
+    "Termintreue & Effizienz",
+    "Individuelle Lösungen"
+   ],
+   "gal_h2": "Gebaut in der Region.",
+   "stimmen": [
+    [
+     "Vom freundlichen Erstkontakt bis hin zur Besichtigung, Beratung, Planung und schlussendlich der Ausführung kann ich dieses Bauunternehmen mit voller Überzeugung weiterempfehlen.",
+     "Fam. Zielke",
+     "Bauherren"
+    ],
+    [
+     "Als Bauherr war ich stets über alle Vorgehen auf der Baustelle informiert und involviert. Die Bauarbeiten wurden zügig und fachgerecht umgesetzt.",
+     "Juri Moor",
+     "Bauherr"
+    ],
+    [
+     "Unser Reihenhaus in Ankum wurde termingerecht und in höchster Qualität fertiggestellt. Ein zuverlässiger Partner für jedes Bauprojekt!",
+     "Dimmel Immobilien GbR",
+     "Reihenhaus in Ankum"
+    ],
+    [
+     "Sehr gute Leistung zu einem fairen Preis. Pünktlicher Baustart und -abschluss. Ein Bauunternehmen, auf das man bauen kann!",
+     "AS Immo GmbH",
+     "Bauherr"
+    ]
+   ],
+   "video": "img/imagefilm.mp4",
+   "video_poster": "img/imagefilm-poster.jpg",
+   "logo_url": "https://www.fehl-bau.de/wp-content/uploads/2025/03/fehl-kelm-bau-tr.webp",
+   "bild_urls": [
+    "https://www.fehl-bau.de/wp-content/uploads/2025/03/DJI_0495.jpg",
+    "https://www.fehl-bau.de/wp-content/uploads/2025/03/FB_IMG_1741626003921.jpg",
+    "https://www.fehl-bau.de/wp-content/uploads/2025/03/20230821_071604.jpg",
+    "https://www.fehl-bau.de/wp-content/uploads/2025/03/20240808_194712-e1742463771563.webp",
+    "https://www.fehl-bau.de/wp-content/uploads/2025/03/IMG-20250310-WA0008.jpg",
+    "https://www.fehl-bau.de/wp-content/uploads/2025/03/IMG-20250310-WA0010.jpg",
+    "https://www.fehl-bau.de/wp-content/uploads/2025/03/IMG-20250310-WA0009.jpg"
+   ],
+   "min_w": 800,
+   "brief": {
+    "anschrift": [
+     "Bauunternehmen N. Fehl"
+    ],
+    "anrede": "Hallo,",
+    "problem": "-",
+    "suche": "Bauunternehmen"
+   },
+   "siegel": [
+    "Meisterbetrieb",
+    "Rohbau bis schlüsselfertig"
+   ],
+   "v5": {
+    "fonts": "family=Unbounded:wght@500;600;700&family=Figtree:wght@400;500;600",
+    "fh": "'Unbounded',sans-serif",
+    "fb": "'Figtree',system-ui,sans-serif",
+    "hw": 600,
+    "hls": "-0.03em",
+    "hlh": 1.02,
+    "h1max": 4.6,
+    "c": {
+     "bg": "#F4F3F1",
+     "ink": "#061A33",
+     "acc": "#E60502",
+     "acc2": "#3FA2F0",
+     "soft": "#E9E4DE",
+     "paper": "#FFFFFF",
+     "hbg": "#061A33",
+     "hink": "#FFFFFF",
+     "ctabtn": "#061A33",
+     "star": "#F5B301"
+    },
+    "hero": "wall",
+    "hero_img": "b6",
+    "hero_slides": [
+     "b6",
+     "b1",
+     "b4"
+    ],
+    "pos": {
+     "b4": "50% 40%"
+    },
+    "logo_h": 56,
+    "r": "4px",
+    "r2": "20px",
+    "svc": "pin",
+    "svc_imgs": [
+     "b2",
+     "b3",
+     "b4",
+     "b5"
+    ],
+    "about_img": "b7",
+    "about_img2": "b2",
+    "stim_img": "b4",
+    "cta_img": "b1",
+    "promo": "Schlüsselfertig bauen",
+    "promo_img": "b4",
+    "order": [
+     "facts",
+     "svc",
+     "film",
+     "about",
+     "stimmen",
+     "steps",
+     "cta"
+    ],
+    "facts_cls": "brickbg",
+    "steps_cls": "tone",
+    "film_h2": "So bauen wir.",
+    "film_txt": "Unser Imagefilm zeigt Baustellen aus der Region: vom Fundament bis zum fertigen Haus.",
+    "logo_text": "Bauunternehmen Fehl"
+   }
+  }
+ ]
+}
