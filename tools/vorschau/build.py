@@ -70,7 +70,7 @@ def build(runde_file):
             for i, u in enumerate(f.get("bild_urls", [])):
                 try:
                     n, sz = fetch_img(u, d / "img" / f"b{i+1}")
-                    if sz[0] >= (700 if data.get("template") == "v2" else 500): imgs.append("img/" + n)
+                    if sz[0] >= f.get("min_w", 700 if data.get("template") == "v2" else 500): imgs.append("img/" + n)
                 except Exception as e:
                     print("  Bild fehlt:", u, e)
             logo = None
@@ -88,7 +88,7 @@ def build(runde_file):
             if data.get("template") == "v2":
                 order = [imgs[(f.get("hero_idx", 0) + k) % len(imgs)] for k in range(len(imgs))]
                 cyc = lambda k: order[k % len(order)]
-                v.update(mosaic=[cyc(0), cyc(1), cyc(2)], band=cyc(3), about_img=cyc(4), about_img2=cyc(5),
+                v.update(mosaic=[cyc(0), cyc(1), cyc(2)], band=(None if f.get("band_idx") == "none" else cyc(f.get("band_idx", 3))), about_img=cyc(4), about_img2=cyc(5),
                          galerie=order, imgs=order, pos=f.get("pos", {}))
                 html = env.get_template("vorschau2.html.j2").render(f=v, t=THEMES[f.get("theme", "shk")], icon_phone=Markup(PHONE_SVG))
             else:
@@ -115,7 +115,7 @@ def build(runde_file):
                 "Darum habe ich einen ersten, groben Entwurf Ihrer neuen Website gebaut: <b>kostenlos und unverbindlich</b>, mit Ihren eigenen Bildern und Texten. Scannen Sie einfach den QR-Code – der Entwurf öffnet sich direkt auf Ihrem Handy. Bei einer Zusammenarbeit gehen wir natürlich noch viel intensiver ins Detail.",
                 "Gefällt Ihnen, was Sie sehen? Dann rufen Sie uns an: Julian von unserem Hotline-Service vereinbart mit Ihnen ein <b>kostenloses Erstgespräch</b>. Dort zeigen wir Ihnen, wie aus der Seite mehr Anfragen werden. Gefällt sie Ihnen nicht, löschen wir den Entwurf einfach wieder.",
             ]
-            briefe.append(dict(b, betreff_1="Ihre neue Website ist fertig.",
+            briefe.append(dict(b, betreff_1="Ein erster Entwurf Ihrer neuen Website.",
                                betreff_2=f"Kostenlos für {f['kurzname']} gebaut – einfach anschauen.",
                                absaetze=[Markup(a) for a in absaetze],
                                shot_desktop=str(sd), shot_mobile=str(sm), qr=str(qr),

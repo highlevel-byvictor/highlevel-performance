@@ -1,0 +1,696 @@
+{
+ "runde": "2026-11-Handwerk-Runde2",
+ "template": "v2",
+ "firmen": [
+  {
+   "slug": "teepker-dachdecker",
+   "theme": "dach",
+   "firma": "Dachdeckermeisterbetrieb Jens Teepker GmbH & Co. KG",
+   "kurzname": "Teepker Dachdecker",
+   "website": "https://teepker-dachdecker.de",
+   "accent": "#D9472B",
+   "accent2": "#FF9E7D",
+   "telefon": "0591 9663695",
+   "email": "info@teepker-dachdecker.de",
+   "adresse": "Schillerstraße 61, 49811 Lingen",
+   "tag": "Dachdeckermeisterbetrieb · Lingen",
+   "h1": "Dach, Wand und Abdichtung. <span class=\"grad\">Aus einer Hand.</span>",
+   "sub": "Der familiär geführte Meisterbetrieb aus Lingen – für Generalunternehmer, Architekten sowie öffentliche und private Bauherren.",
+   "trust": [
+    [
+     "2003",
+     "gegründet"
+    ],
+    [
+     "32",
+     "Mitarbeiter im Team"
+    ],
+    [
+     "Meister",
+     "familiär geführt"
+    ]
+   ],
+   "leist_h2": "Alles rund um Dach und Fassade.",
+   "leistungen": [
+    "Dacheindeckung",
+    "Dachabdichtungen",
+    "Fassadenbekleidungen",
+    "Wärmedämmung",
+    "Klempnerarbeiten",
+    "Gauben, Carports & Überdachungen"
+   ],
+   "about_h2": "Qualität und Termintreue.",
+   "ueber": [
+    "Der Dachdeckermeisterbetrieb wurde 2003 gegründet und ist ein familiär geführtes Unternehmen mit flachen Hierarchien.",
+    "Unser Team aus 32 Mitarbeitern – Meister, Gesellen, Büro und Auszubildende – arbeitet für Generalunternehmer, Architekten sowie öffentliche und private Bauherren."
+   ],
+   "checks": [
+    "Asbestentsorgung nach TRGS 519",
+    "Dachbegrünungen",
+    "Pflege- und Wartungsarbeiten"
+   ],
+   "logo_url": "https://teepker-dachdecker.de/images/logo.png",
+   "bild_urls": [
+    "https://teepker-dachdecker.de/images/slider/slider.jpg",
+    "https://teepker-dachdecker.de/images/about/about.jpg",
+    "https://teepker-dachdecker.de/images/banner/all.jpg",
+    "https://teepker-dachdecker.de/images/banner/service.jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "Dachdeckermeisterbetrieb",
+     "Jens Teepker GmbH & Co. KG",
+     "Herrn Jens Teepker",
+     "Schillerstraße 61",
+     "49811 Lingen"
+    ],
+    "anrede": "Sehr geehrter Herr Teepker,",
+    "problem": "dass sie seit 2018 nicht mehr erneuert wurde und kaum Fotos Ihrer Projekte zeigt",
+    "suche": "Dachdecker"
+   },
+   "min_w": 500
+  },
+  {
+   "slug": "moormann-bau",
+   "theme": "bau",
+   "firma": "Moormann Bauunternehmen GmbH & Co. KG",
+   "kurzname": "Moormann Bauunternehmen",
+   "website": "https://moormann-bauunternehmen.de",
+   "accent": "#E0761C",
+   "accent2": "#FFC37A",
+   "telefon": "05495 994810",
+   "email": "info@moormann-bauunternehmen.de",
+   "adresse": "Auf den Höfften 13, 49434 Neuenkirchen-Vörden",
+   "tag": "Bauunternehmen · Oldenburger Münsterland",
+   "h1": "Klein, flexibel, <span class=\"grad\">meisterhaft gebaut.</span>",
+   "sub": "Maurer- und Betonarbeiten, Sanierung und Baubetreuung – vom Maurer- und Betonbaumeister Ralf Moormann.",
+   "trust": [
+    [
+     "2001",
+     "Maurer- & Betonbaumeister"
+    ],
+    [
+     "2019",
+     "staatl. gepr. Hochbautechniker"
+    ],
+    [
+     "Flexibel",
+     "kleines Team"
+    ]
+   ],
+   "leist_h2": "Vom Rohbau bis zum neuen Bad.",
+   "leistungen": [
+    "Maurer- und Betonarbeiten",
+    "Baubetreuung",
+    "Verblendarbeiten",
+    "Badsanierung",
+    "Sanierungsarbeiten",
+    "Fliesenarbeiten"
+   ],
+   "about_h2": "Erfahrung aus vielen Bereichen.",
+   "ueber": [
+    "Moormann ist ein kleines, flexibles Bauunternehmen im Oldenburger Münsterland. Inhaber Ralf Moormann ist Maurer- und Betonbaumeister und staatlich geprüfter Hochbautechniker.",
+    "Seit Sommer 2022 gibt es die Moormann Bauunternehmen GmbH & Co. KG."
+   ],
+   "checks": [
+    "Maurer- und Betonbaumeister",
+    "Staatlich geprüfter Hochbautechniker",
+    "Auch Ruinenmauern"
+   ],
+   "logo_url": "https://moormann-bauunternehmen.de/wp-content/uploads/2022/08/Logo_Moormann-Bauunternehmen-transp.png",
+   "bild_urls": [
+    "https://moormann-bauunternehmen.de/wp-content/uploads/2024/07/IMG_0760.jpg",
+    "https://moormann-bauunternehmen.de/wp-content/uploads/2024/07/IMG_0759.jpg",
+    "https://moormann-bauunternehmen.de/wp-content/uploads/2024/07/IMG_2083.jpg",
+    "https://moormann-bauunternehmen.de/wp-content/uploads/2023/05/IMG_3937.jpg",
+    "https://moormann-bauunternehmen.de/wp-content/uploads/2024/07/IMG_2081.jpg",
+    "https://moormann-bauunternehmen.de/wp-content/uploads/2023/05/bad-vorher-nachher.jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "Moormann Bauunternehmen GmbH & Co. KG",
+     "Herrn Ralf Moormann",
+     "Auf den Höfften 13",
+     "49434 Neuenkirchen-Vörden"
+    ],
+    "anrede": "Sehr geehrter Herr Moormann,",
+    "problem": "dass im Impressum noch Vorlagentext steht und Ihre Leistungen nur als kurze Liste ohne Bilder erscheinen",
+    "suche": "Bauunternehmen"
+   }
+  },
+  {
+   "slug": "tischlerei-witte",
+   "theme": "holz",
+   "firma": "Johannes Witte GmbH",
+   "kurzname": "Tischlerei Witte",
+   "website": "http://tischlerei-witte.de",
+   "accent": "#C27A3A",
+   "accent2": "#F2C185",
+   "telefon": "05961 94271",
+   "email": "info@tischlerei-witte.de",
+   "adresse": "Industriestraße 2, 49740 Haselünne",
+   "tag": "Tischlerei in 3. Generation · seit 1923",
+   "h1": "Innenausbau mit <span class=\"grad\">100 Jahren Erfahrung.</span>",
+   "sub": "Vom Einzelmöbel bis zum kompletten Innenausbau in Serie – mit CAD-Planung und CNC-Fertigung auf rund 3.000 m².",
+   "trust": [
+    [
+     "1923",
+     "gegründet"
+    ],
+    [
+     "3.",
+     "Generation"
+    ],
+    [
+     "3.000 m²",
+     "Betriebsfläche"
+    ]
+   ],
+   "leist_h2": "Für Klinik, Laden und Zuhause.",
+   "leistungen": [
+    "Objekteinrichtungen",
+    "Individueller Ladenbau",
+    "Innenausbau gewerblich",
+    "Innenausbau privat",
+    "Corian®-Verarbeitung",
+    "Treppen & Möbel nach Maß"
+   ],
+   "about_h2": "Familientradition seit 1923.",
+   "ueber": [
+    "1923 gründete Tischlermeister Johannes Witte die Tischlerei. Heute wird sie in dritter Generation geführt und arbeitet überregional.",
+    "Mit CAD-Planung, vollautomatisiertem Plattenlager und CNC-Zuschnitt fertigen wir vom Einzelmöbel bis zur kompletten Klinikeinrichtung."
+   ],
+   "checks": [
+    "CAD-Planung & CNC-Zuschnitt",
+    "Pflegeeinrichtungen, Kliniken, Praxen",
+    "Überregional im Einsatz"
+   ],
+   "logo_url": "http://tischlerei-witte.de/images/witte-signet.svg",
+   "bild_urls": [
+    "http://tischlerei-witte.de/images/referenzprojekte/tischlerei-witte_2492.JPG",
+    "http://tischlerei-witte.de/images/referenzprojekte/tischlerei-witte_2499.JPG",
+    "http://tischlerei-witte.de/images/referenzprojekte/tischlerei-witte_2501.JPG",
+    "http://tischlerei-witte.de/images/referenzprojekte/witte-bad-rothenfelde-025.jpg",
+    "http://tischlerei-witte.de/images/referenzprojekte/witte-bad-rothenfelde-047.jpg",
+    "http://tischlerei-witte.de/images/historie/witte-gruender.jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "Johannes Witte GmbH",
+     "Herrn Johannes Witte",
+     "Industriestraße 2",
+     "49740 Haselünne"
+    ],
+    "anrede": "Sehr geehrter Herr Witte,",
+    "problem": "dass sie noch ohne sichere Verbindung (https) läuft und seit 2018 nicht erneuert wurde",
+    "suche": "Tischler"
+   }
+  },
+  {
+   "slug": "tischlerei-apke",
+   "theme": "holz",
+   "firma": "Tischlerei Apke",
+   "kurzname": "Tischlerei Apke",
+   "website": "https://tischlerei-apke.de",
+   "accent": "#B8692E",
+   "accent2": "#F5C98E",
+   "telefon": "05961 242",
+   "email": "info@tischlerei-apke.de",
+   "adresse": "Hammer-Tannen-Str. 4, 49740 Haselünne",
+   "tag": "Familienbetrieb seit 1960 · Haselünne",
+   "h1": "Handwerk mit <span class=\"grad\">Herz und Holz.</span>",
+   "sub": "Vom kleinen Regal bis zur maßgefertigten Treppe – individuell, umweltbewusst und termingerecht, in dritter Generation.",
+   "trust": [
+    [
+     "1960",
+     "in Haselünne"
+    ],
+    [
+     "3.",
+     "Generation"
+    ],
+    [
+     "Maß",
+     "individuelle Fertigung"
+    ]
+   ],
+   "leist_h2": "Holz, das zu Ihnen passt.",
+   "leistungen": [
+    "Treppen",
+    "Möbelbau nach Maß",
+    "Zimmertüren & Speziallösungen",
+    "Reparaturen & Restaurierung",
+    "Innenausbau",
+    "Küchenbau"
+   ],
+   "about_h2": "Seit 1960 in Haselünne.",
+   "ueber": [
+    "Die Tischlerei Apke ist seit 1960 in Haselünne ansässig und wird in dritter Generation als Familienbetrieb geführt.",
+    "Wir setzen auf individuelle, umweltbewusste Fertigung, faire Preise und termingerechte Lieferung."
+   ],
+   "checks": [
+    "Familienbetrieb in 3. Generation",
+    "Umweltbewusste Fertigung",
+    "Termingerechte Lieferung"
+   ],
+   "logo_url": "https://tischlerei-apke.de/wp-content/uploads/2024/12/Apke_Logo-1.jpg",
+   "bild_urls": [
+    "https://tischlerei-apke.de/wp-content/uploads/2025/01/WhatsApp-Bild-2025-01-01-um-15.58.14_1d6d44ea.jpg",
+    "https://tischlerei-apke.de/wp-content/uploads/2025/01/WhatsApp-Bild-2025-01-01-um-16.28.30_5e6e7a93.jpg",
+    "https://tischlerei-apke.de/wp-content/uploads/2025/01/WhatsApp-Bild-2025-01-01-um-16.20.20_1b492ab4.jpg",
+    "https://tischlerei-apke.de/wp-content/uploads/2025/01/WhatsApp-Bild-2025-01-06-um-15.35.50_eda03708-1.jpg",
+    "https://tischlerei-apke.de/wp-content/uploads/2025/01/WhatsApp-Bild-2025-01-06-um-15.54.20_a9d7a4df.jpg",
+    "https://tischlerei-apke.de/wp-content/uploads/2025/01/WhatsApp-Bild-2025-01-01-um-18.54.10_d7bdfbc8.jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "Tischlerei Apke",
+     "Herrn Hendrik Apke",
+     "Hammer-Tannen-Str. 4",
+     "49740 Haselünne"
+    ],
+    "anrede": "Sehr geehrter Herr Apke,",
+    "problem": "dass einige Menüpunkte auf falsche Seiten führen und eine Galerie Ihrer Arbeiten fehlt",
+    "suche": "Tischler"
+   },
+   "band_idx": 1
+  },
+  {
+   "slug": "tischlerei-duehnen",
+   "theme": "holz",
+   "firma": "Tischlerei Dühnen GbR",
+   "kurzname": "Tischlerei Dühnen",
+   "website": "https://www.duehnen.de",
+   "accent": "#A8662F",
+   "accent2": "#E9C08C",
+   "telefon": "05961 6128",
+   "email": "info@duehnen.de",
+   "adresse": "Zur Alten Fähre 9, 49740 Haselünne-Huden",
+   "tag": "Meister- & Innungsfachbetrieb · Haselünne",
+   "h1": "Alles rund um Holz. <span class=\"grad\">Qualität, Ideen, Service.</span>",
+   "sub": "Badezimmer, Möbel nach Maß, Treppen und Türen – vom Meister- und Innungsfachbetrieb aus Haselünne-Huden.",
+   "trust": [
+    [
+     "1909",
+     "Familiengeschichte seit"
+    ],
+    [
+     "Meister",
+     "& Holztechniker"
+    ],
+    [
+     "Innung",
+     "Fachbetrieb"
+    ]
+   ],
+   "leist_h2": "Ideen aus Holz.",
+   "leistungen": [
+    "Badezimmer",
+    "Objekteinrichtung",
+    "Möbel nach Maß",
+    "Treppen",
+    "Türen",
+    "Beratung & Service"
+   ],
+   "about_h2": "Tradition mit Ideen.",
+   "ueber": [
+    "Die Tischlerei Dühnen wird von Meister Erwin Dühnen und Meister und Holztechniker Tim Dühnen geführt. Die Familiengeschichte reicht bis zu Zimmermann Bernhard Dühnen zurück, der 1909 seine Gesellenprüfung ablegte.",
+    "Die Aus- und Weiterbildung junger Tischlerinnen und Tischler liegt uns besonders am Herzen."
+   ],
+   "checks": [
+    "Meister- und Innungsfachbetrieb",
+    "Ausbildung junger Tischler",
+    "Beratung und Service"
+   ],
+   "logo_url": "https://static.wixstatic.com/media/a16c53_d9aef8cee1d2449d943105bfdb365cd5~mv2.png",
+   "bild_urls": [
+    "https://static.wixstatic.com/media/a16c53_7d6fb8ca5e0f4ae7886ef7c55b41e37b~mv2.jpg",
+    "https://static.wixstatic.com/media/a16c53_b2409f6f7d7c46dd87561afe4eacf291~mv2.jpg",
+    "https://static.wixstatic.com/media/a16c53_7c0408c87e584a488c7a14420e24382f~mv2.jpg",
+    "https://static.wixstatic.com/media/a16c53_0d8b3a46727d433a899e86d53f7964c4~mv2.jpg",
+    "https://static.wixstatic.com/media/a16c53_10872415b05543ddbfd19e8e53afd5e1~mv2.jpg",
+    "https://static.wixstatic.com/media/a16c53_148d0e6d31b34164b54708950a5bbabd~mv2.jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "Tischlerei Dühnen GbR",
+     "Herrn Erwin Dühnen",
+     "Herrn Tim Dühnen",
+     "Zur Alten Fähre 9",
+     "49740 Haselünne-Huden"
+    ],
+    "anrede": "Sehr geehrte Herren Dühnen,",
+    "problem": "dass sie auf dem Handy nur als feste Mini-Version läuft und Ihre Leistungen schwer zu finden sind",
+    "suche": "Tischler"
+   }
+  },
+  {
+   "slug": "maler-gesen",
+   "theme": "maler",
+   "firma": "Malerfachbetrieb Gesen KG",
+   "kurzname": "Maler Gesen",
+   "website": "https://maler-gesen.de",
+   "accent": "#7C3AED",
+   "accent2": "#F472B6",
+   "telefon": "04472 237",
+   "email": "info@maler-gesen.de",
+   "adresse": "Hünensteine 2, 49688 Lastrup",
+   "tag": "Malerfachbetrieb seit 1946 · Lastrup",
+   "h1": "…immer eine <span class=\"grad\">Idee voraus.</span>",
+   "sub": "Malerarbeiten innen und außen, Bodenbeläge und kreative Wandgestaltung – vom Familienbetrieb in dritter Generation.",
+   "trust": [
+    [
+     "1946",
+     "gegründet"
+    ],
+    [
+     "3.",
+     "Generation"
+    ],
+    [
+     "Meister",
+     "Malermeister Hendrik Gesen"
+    ]
+   ],
+   "leist_h2": "Farbe, die Räume verändert.",
+   "leistungen": [
+    "Malerarbeiten innen",
+    "Fassadenanstriche",
+    "Bodenbeläge",
+    "Kreative Wandgestaltung",
+    "Farbproben & Musterplatten",
+    "Individuelle Beratung"
+   ],
+   "about_h2": "Tradition trifft Moderne.",
+   "ueber": [
+    "Opa Heinrich Gesen gründete den Malerfachbetrieb 1946. 1984 übernahm Josef Gesen, seit 2016 führt Malermeister Hendrik Gesen den Familienbetrieb in dritter Generation.",
+    "Wir beraten individuell und erstellen Farbproben und Musterplatten, damit Sie vorher sehen, was Sie bekommen."
+   ],
+   "checks": [
+    "Familienbetrieb seit 1946",
+    "Farbproben & Musterplatten",
+    "Teppich, PVC, Laminat, Parkett"
+   ],
+   "logo_url": "https://maler-gesen.de/wp-content/uploads/2021/05/LLogo_mobil.png",
+   "bild_urls": [
+    "https://maler-gesen.de/wp-content/uploads/2021/11/7T9A7559-10.jpg",
+    "https://maler-gesen.de/wp-content/uploads/2021/05/DSC00292.jpg",
+    "https://maler-gesen.de/wp-content/uploads/2021/05/DSC00316.jpg",
+    "https://maler-gesen.de/wp-content/uploads/2021/11/7T9A7565-13.jpg",
+    "https://maler-gesen.de/wp-content/uploads/2021/05/DSC00529.jpg",
+    "https://maler-gesen.de/wp-content/uploads/2021/11/7T9A7539-2.jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "Malerfachbetrieb Gesen KG",
+     "Herrn Hendrik Gesen",
+     "Hünensteine 2",
+     "49688 Lastrup"
+    ],
+    "anrede": "Sehr geehrter Herr Gesen,",
+    "problem": "dass dort noch das 75-jährige Jubiläum aus 2021 angekündigt wird und einige Texte nicht mehr aktuell sind",
+    "suche": "Maler"
+   }
+  },
+  {
+   "slug": "fliesen-waschefort",
+   "theme": "fliesen",
+   "firma": "Fliesenleger Markus Waschefort GmbH",
+   "kurzname": "Fliesen Waschefort",
+   "website": "https://www.fliesenleger-waschefort.de",
+   "accent": "#0F8C82",
+   "accent2": "#9BEFE2",
+   "telefon": "04442 888820",
+   "email": "info@fliesenleger-waschefort.de",
+   "adresse": "Bahnhofstraße 45, 49393 Lohne",
+   "tag": "Fliesenleger · Lohne",
+   "h1": "Träume <span class=\"grad\">fliesen!</span>",
+   "sub": "Bäder, Wohnbereiche, Treppen und Terrassen im ganzen Oldenburger Münsterland – mit mobilem Badezimmer während der Sanierung.",
+   "trust": [
+    [
+     "2004",
+     "Waschefort in Lohne"
+    ],
+    [
+     "Mobil",
+     "Badezimmer-Anhänger"
+    ],
+    [
+     "Partner",
+     "alle Gewerke koordiniert"
+    ]
+   ],
+   "leist_h2": "Fliesen, Mosaik, Naturstein.",
+   "leistungen": [
+    "Bäder",
+    "Wohnbereich",
+    "Treppen",
+    "Terrassen & Balkone",
+    "Wellness- & Fitnessbereiche",
+    "Mobiles Badezimmer"
+   ],
+   "about_h2": "Ein eingespieltes Team.",
+   "ueber": [
+    "Der Fliesenlegerbetrieb aus Lohne setzt auf langjährige Erfahrung und ein eingespieltes Team – mit Projekten im ganzen Oldenburger Münsterland.",
+    "Über Partnerbetriebe koordinieren wir auch alle weiteren Arbeiten. Während der Sanierung gibt es auf Wunsch ein mobiles Badezimmer."
+   ],
+   "checks": [
+    "Mobiles Badezimmer (Anhänger)",
+    "Koordination aller Gewerke",
+    "Natursteinpflege"
+   ],
+   "logo_url": "https://www.fliesenleger-waschefort.de/img/logo-getauscht2.png",
+   "bild_urls": [
+    "https://www.fliesenleger-waschefort.de/img/bad/bad_01.jpg",
+    "https://www.fliesenleger-waschefort.de/img/wohnen/wohnen_01.jpg",
+    "https://www.fliesenleger-waschefort.de/img/treppen/treppe_01.jpg",
+    "https://www.fliesenleger-waschefort.de/img/pool/pool_01.jpg",
+    "https://www.fliesenleger-waschefort.de/img/wohnen/kamin.jpg",
+    "https://www.fliesenleger-waschefort.de/img/bad/bad_02.jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "Fliesenleger Markus Waschefort GmbH",
+     "Herrn Markus Waschefort",
+     "Herrn Philipp Waschefort",
+     "Bahnhofstraße 45",
+     "49393 Lohne"
+    ],
+    "anrede": "Sehr geehrte Herren Waschefort,",
+    "problem": "dass der letzte Beitrag unter „Aktuelles“ von 2020 stammt und ein Link in der Navigation nicht funktioniert",
+    "suche": "Fliesenleger"
+   }
+  },
+  {
+   "slug": "fliesen-witte",
+   "theme": "fliesen",
+   "firma": "Andreas Witte – Fliesen, Platten, Mosaik, Naturstein",
+   "kurzname": "Fliesen Witte",
+   "website": "https://www.fliesen-witte-vechta.de",
+   "accent": "#0E7C86",
+   "accent2": "#8EE6EE",
+   "telefon": "04441 852407",
+   "email": "witte.andreas@t-online.de",
+   "adresse": "Blomlage 9, 49377 Vechta",
+   "tag": "Fliesenlegermeister · Vechta",
+   "h1": "Fliesen und Naturstein. <span class=\"grad\">Mit Kreativität verlegt.</span>",
+   "sub": "Der Meisterbetrieb aus Vechta – von der Beratung über die Planung bis zur Ausführung, mit kostenfreiem Angebot.",
+   "trust": [
+    [
+     "30+",
+     "Jahre Meisterbetrieb"
+    ],
+    [
+     "Innung",
+     "Fliesen & Naturstein Oldenburg"
+    ],
+    [
+     "Angebot",
+     "kostenfrei"
+    ]
+   ],
+   "leist_h2": "Vom Bad bis zum Natursteinboden.",
+   "leistungen": [
+    "Badsanierung",
+    "Fliesen & Platten",
+    "Mosaik",
+    "Natursteinböden",
+    "Küchen-Fliesenspiegel",
+    "Fugengestaltung"
+   ],
+   "about_h2": "Handwerk mit Kreativität.",
+   "ueber": [
+    "Andreas Witte hat seinen Meisterbetrieb vor über 30 Jahren gegründet und verbindet hochwertige Handwerksarbeit mit Kreativität.",
+    "Als Mitglied der Fliesen- und Natursteinleger-Innung Oldenburg begleiten wir Sie von der Beratung über die Planung bis zur Ausführung."
+   ],
+   "checks": [
+    "Mitglied der Innung Oldenburg",
+    "DICK BETT-Verlegung",
+    "Kostenfreie Angebote"
+   ],
+   "logo_url": "https://assets.coco-online.de/45161720169821-tlgQLAP6/logo.jpg",
+   "bild_urls": [
+    "https://assets.coco-online.de/45161720169827-vSVXqXY1/badezimmer_full_w.jpg",
+    "https://assets.coco-online.de/45161720169829-9SmlQoq6/slider01_full_w.jpg",
+    "https://assets.coco-online.de/45161720169830-thSvsB03/slider02_full_w.jpg",
+    "https://assets.coco-online.de/45161720169830-IFCPkfis/slider03_full_w.jpg",
+    "https://assets.coco-online.de/45161720169831-RDv2kzkK/slider04_full_w.jpg",
+    "https://assets.coco-online.de/45161720169831-l9j7VfET/slider05_full_w.jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "Fliesen Andreas Witte",
+     "Herrn Andreas Witte",
+     "Blomlage 9",
+     "49377 Vechta"
+    ],
+    "anrede": "Sehr geehrter Herr Witte,",
+    "problem": "dass dort kaum Fotos Ihrer eigenen Projekte zu sehen sind und keine Referenzen auf der Startseite stehen",
+    "suche": "Fliesenleger"
+   }
+  },
+  {
+   "slug": "deiters-shk",
+   "theme": "shk",
+   "firma": "Hermann Deiters GmbH",
+   "kurzname": "Deiters Haustechnik",
+   "website": "https://www.deiters-gmbh.de",
+   "accent": "#0A8FD8",
+   "accent2": "#4FE3D1",
+   "telefon": "05422 930130",
+   "email": "info@deiters-gmbh.de",
+   "adresse": "Rehteich 6, 49324 Melle",
+   "tag": "Sanitär · Heizung · Solar · Melle",
+   "h1": "Bad und Heizung. <span class=\"grad\">Seit 1970 in Melle.</span>",
+   "sub": "Von der computergestützten Badplanung bis zum Notdienst – mit Schwerpunkt auf ökologischen Techniken.",
+   "trust": [
+    [
+     "1970",
+     "in Melle"
+    ],
+    [
+     "3.",
+     "Generation seit 2024"
+    ],
+    [
+     "2",
+     "Installateur- & Heizungsbaumeister"
+    ]
+   ],
+   "leist_h2": "Moderne Wärme, schöne Bäder.",
+   "leistungen": [
+    "Badsanierung",
+    "Barrierefreies Bad",
+    "Wärmepumpe",
+    "Pellets & Gasheizung",
+    "Fußbodenheizung",
+    "Wartung & Rohrbruch"
+   ],
+   "about_h2": "Ein starkes Team aus Melle.",
+   "ueber": [
+    "Die Hermann Deiters GmbH sitzt seit 1970 in Melle. Seit dem 01.01.2024 führt die dritte Generation den Betrieb.",
+    "Zum Team gehören 7 Monteure und zwei Auszubildende, darunter zwei Installateur- und Heizungsbaumeister."
+   ],
+   "checks": [
+    "Computergestützte Badplanung",
+    "Hydraulischer Abgleich & Heizungscheck",
+    "Notdienst bei Rohrbruch"
+   ],
+   "logo_url": "https://www.deiters-gmbh.de/media/config/theme/logo.png",
+   "bild_urls": [
+    "https://www.deiters-gmbh.de/media/de/unternehmen/shk/ueber_uns/ue_team_01.jpg",
+    "https://www.deiters-gmbh.de/media/de/unternehmen/shk/ueber_uns/ue_team_02.jpg",
+    "https://www.deiters-gmbh.de/media/de/unternehmen/shk/ueber_uns/ue_team_03.jpg",
+    "https://www.deiters-gmbh.de/media/de/unternehmen/shk/ueber_uns/ue_team_05.jpg",
+    "https://www.deiters-gmbh.de/media/de/unternehmen/shk/ueber_uns/ue_team_06.jpg",
+    "https://www.deiters-gmbh.de/media/de/unternehmen/shk/ueber_uns/ue_team_08.jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "Hermann Deiters GmbH",
+     "Herrn Steffen Deiters",
+     "Rehteich 6",
+     "49324 Melle"
+    ],
+    "anrede": "Sehr geehrter Herr Deiters,",
+    "problem": "dass ganz oben Hersteller-Nachrichten stehen statt Ihrer eigenen Arbeit und Ihres Teams",
+    "suche": "Heizungsbauer"
+   },
+   "min_w": 600,
+   "band_idx": "none",
+   "svc_noimg": true,
+   "gal_h2": "Unser Team",
+   "gal_p": "Die Menschen hinter Deiters – Ihre Ansprechpartner in Melle."
+  },
+  {
+   "slug": "boewer-bau",
+   "theme": "bau",
+   "firma": "Böwer Bau GmbH",
+   "kurzname": "Böwer Bau",
+   "website": "https://boewer-bau.de",
+   "accent": "#D9651A",
+   "accent2": "#FFB870",
+   "telefon": "05465 1274",
+   "email": "bauen@boewerbau.de",
+   "adresse": "Uhlenbrock 6, 49586 Neuenkirchen",
+   "tag": "Bauunternehmen · Neuenkirchen bei Bramsche",
+   "h1": "Bauen mit <span class=\"grad\">Qualität.</span>",
+   "sub": "Wohnungsbau, Gewerbe- und Objektbau und landwirtschaftliches Bauen – in der Region Osnabrück und Münster.",
+   "trust": [
+    [
+     "40+",
+     "Jahre Bauunternehmen"
+    ],
+    [
+     "2",
+     "Generationen in der Führung"
+    ],
+    [
+     "Region",
+     "Osnabrück & Münster"
+    ]
+   ],
+   "leist_h2": "Vom Einfamilienhaus bis zum Kindergarten.",
+   "leistungen": [
+    "Wohnungsbau",
+    "Gewerbe- & Objektbau",
+    "Landwirtschaftliches Bauen",
+    "Planung",
+    "Sanierungen",
+    "Neu- und Umbau"
+   ],
+   "about_h2": "Vater und Sohn, gleichberechtigt.",
+   "ueber": [
+    "Böwer Bau wurde vor über 40 Jahren gegründet. Heute führen Klemens Böwer und sein Sohn Dipl.-Ing. Andreas Böwer das Unternehmen gleichberechtigt.",
+    "Unser Team aus Maurern, Betonbauern und Beratern setzt Bauprojekte in der Region Osnabrück und Münster um – nachhaltig und mit regionalen Partnern."
+   ],
+   "checks": [
+    "Massivbau: Maurer- und Betonarbeiten",
+    "Öffentliche Aufträge",
+    "Regionale Partner"
+   ],
+   "logo_url": "https://boewer-bau.de/wp-content/uploads/2022/05/LOGO_B%C3%B6werBau.png",
+   "bild_urls": [
+    "https://boewer-bau.de/wp-content/uploads/2022/09/start_mfh.jpg",
+    "https://boewer-bau.de/wp-content/uploads/2022/11/Mitarbeiter_Kran.jpg",
+    "https://boewer-bau.de/wp-content/uploads/2022/11/Mitarbeiter_Maurer.jpg",
+    "https://boewer-bau.de/wp-content/uploads/2022/11/Mitarbeiter_Dach-scaled.jpg",
+    "https://boewer-bau.de/wp-content/uploads/2022/11/Andreas_Klemens_Boewer_1000x1000px.jpg",
+    "https://boewer-bau.de/wp-content/uploads/2022/11/Azubi-scaled.jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "Böwer Bau GmbH",
+     "Herrn Klemens Böwer",
+     "Herrn Andreas Böwer",
+     "Uhlenbrock 6",
+     "49586 Neuenkirchen"
+    ],
+    "anrede": "Sehr geehrte Herren Böwer,",
+    "problem": "dass die Startseite kaum Text hat und unter „Leistungen & Projekte“ keine Projektbeispiele zu sehen sind",
+    "suche": "Bauunternehmen"
+   },
+   "band_idx": 0
+  }
+ ]
+}
