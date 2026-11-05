@@ -1,0 +1,1300 @@
+{
+ "runde": "2026-11-Handwerk-Runde4",
+ "template": "v5",
+ "firmen": [
+  {
+   "slug": "malerbetrieb-baumbach",
+   "theme": "maler",
+   "firma": "Malerbetrieb Baumbach",
+   "kurzname": "Malerbetrieb Baumbach",
+   "website": "https://www.malerbetrieb-baumbach.de",
+   "telefon": "04471 7008050",
+   "email": "info@malerbetrieb-baumbach.de",
+   "adresse": "Ostring 5, 49661 Cloppenburg",
+   "google": [
+    "4,9",
+    18
+   ],
+   "siegel": [
+    "Meisterbetrieb für das Malerhandwerk"
+   ],
+   "tag": "Malermeisterbetrieb in Cloppenburg",
+   "h1": "Räume, in denen <span>man sich wohlfühlt.</span>",
+   "sub": "Malerarbeiten, Tapeten, Bodenbeläge und Raumgestaltung für Privathaus und Gewerbe – geplant mit Ihnen persönlich.",
+   "trust": [
+    [
+     "Meister",
+     "betrieb im Malerhandwerk"
+    ],
+    [
+     "Innen",
+     "und außen"
+    ],
+    [
+     "Privat",
+     "und Gewerbe"
+    ]
+   ],
+   "leist_h2": "Farbe, Tapete, Boden.",
+   "leistungen": [
+    "Malerarbeiten",
+    "Tapezierung",
+    "Bodenbeläge",
+    "Raumgestaltung",
+    "Fassade",
+    "Seniorenservice",
+    "Beratungsservice",
+    "Do-it-yourself-Beratung"
+   ],
+   "about_h2": "Jeder Auftrag wird persönlich geplant.",
+   "ueber": [
+    "Als Meisterbetrieb für das Malerhandwerk kümmern wir uns um Ihre Wunschvorhaben im Innen- und Außenbereich, im Privathaus und im Gewerbeobjekt.",
+    "Durch regelmäßige Schulungen und Fortbildungen ist unser Team immer auf dem neuesten Stand bei Techniken, Putzen und Materialien."
+   ],
+   "checks": [
+    "Ausführliche, persönliche Beratung",
+    "Zahlreiche Musterbücher für Tapeten",
+    "Laminat, CV-Belag und Teppichboden"
+   ],
+   "inhaber_name": "Viktor Baumbach",
+   "inhaber_rolle": "Inhaber",
+   "logo_url": "https://www.malerbetrieb-baumbach.de/s/misc/logo.jpg",
+   "min_w": 600,
+   "bild_urls": [
+    "https://www.malerbetrieb-baumbach.de/s/cc_images/teaserbox_2480150436.JPG",
+    "https://www.malerbetrieb-baumbach.de/s/cc_images/teaserbox_2480150434.JPG",
+    "https://www.malerbetrieb-baumbach.de/s/cc_images/teaserbox_2480150437.jpg",
+    "https://www.malerbetrieb-baumbach.de/s/cc_images/cache_2480149553.JPG",
+    "https://www.malerbetrieb-baumbach.de/s/cc_images/cache_2480149550.JPG",
+    "https://www.malerbetrieb-baumbach.de/s/cc_images/cache_2480149549.JPG"
+   ],
+   "brief": {
+    "anschrift": [
+     "Malerbetrieb Baumbach",
+     "Herrn Viktor Baumbach",
+     "Ostring 5",
+     "49661 Cloppenburg"
+    ],
+    "anrede": "Sehr geehrter Herr Baumbach,",
+    "problem": "dass dort noch Platzhaltertexte wie „Hier fügen Sie einfach eine kleine Beschreibung ein“ stehen und sie auf dem Handy wenig von Ihrer Arbeit zeigt",
+    "suche": "Maler"
+   },
+   "v5": {
+    "fonts": "family=Familjen+Grotesk:wght@400;500;600;700",
+    "fh": "'Familjen Grotesk',sans-serif",
+    "fb": "'Familjen Grotesk',system-ui,sans-serif",
+    "hw": 700,
+    "hls": "-0.035em",
+    "hlh": 0.95,
+    "h1vw": 5.8,
+    "h1max": 6.4,
+    "c": {
+     "bg": "#F4F5F7",
+     "ink": "#16202C",
+     "acc": "#1E5AA8",
+     "acc2": "#F2C200",
+     "soft": "#E7EAEF",
+     "paper": "#FFFFFF",
+     "hbg": "#E9ECF1",
+     "ctabtn": "#F2C200",
+     "onctabtn": "#16202C",
+     "star": "#F2C200"
+    },
+    "hero": "collage",
+    "prints": [
+     [
+      "b2",
+      "Küche mit neuen Wänden"
+     ],
+     [
+      "b1",
+      "Tapete mit Muster"
+     ],
+     [
+      "b4",
+      "Neuer Boden"
+     ]
+    ],
+    "r": "999px",
+    "r2": "18px",
+    "logo_bg": "#FFFFFF",
+    "logo_h": 46,
+    "svc": "pin",
+    "svc_imgs": [
+     "b2",
+     "b1",
+     "b5",
+     "b3"
+    ],
+    "about_img": "b3",
+    "about_img2": "b6",
+    "cta_img": "b2",
+    "promo": "Tapeten und Wandgestaltung",
+    "order": [
+     "svc",
+     "facts",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "steps_cls": "tone"
+   }
+  },
+  {
+   "slug": "malereibetrieb-hinxlage",
+   "theme": "maler",
+   "firma": "Malereibetrieb Hinxlage",
+   "kurzname": "Malereibetrieb Hinxlage",
+   "website": "http://www.maler-hinxlage.de",
+   "telefon": "04443 1878",
+   "email": "hermann@maler-hinxlage.de",
+   "adresse": "Dinklager Landstr. 19, 49393 Lohne",
+   "google": [
+    "4,8",
+    5
+   ],
+   "siegel": [
+    "Malermeisterbetrieb"
+   ],
+   "tag": "Maler und Tapezierer in Lohne",
+   "h1": "Ein neuer Anstrich. <span>Ein neues Zuhause.</span>",
+   "sub": "Maler-, Lackier- und Tapezierarbeiten, Fassaden und Wärmedämmung – zuverlässig, termintreu und zu fairen Konditionen.",
+   "trust": [
+    [
+     "Meister",
+     "betrieb"
+    ],
+    [
+     "Innen",
+     "und außen"
+    ],
+    [
+     "Fair",
+     "und termintreu"
+    ]
+   ],
+   "leist_h2": "Innen schön. Außen geschützt.",
+   "leistungen": [
+    "Malerarbeiten",
+    "Tapezierarbeiten",
+    "Lackierarbeiten",
+    "Fassadenanstrich",
+    "Fassadenreinigung",
+    "Wärmedämmung",
+    "Betonschutz",
+    "Stuck und Putz"
+   ],
+   "about_h2": "Erfahrung trifft Kreativität.",
+   "ueber": [
+    "Als erfahrener Meisterbetrieb setzen wir Ihre Arbeiten zu fairen Konditionen zuverlässig und termintreu um – ob im Außen- oder Innenbereich.",
+    "Wir vereinen langjährige Erfahrung mit Kreativität und innovativen Techniken. Die Zufriedenheit unserer Kunden ist unsere Motivation."
+   ],
+   "checks": [
+    "Nur Materialien führender Hersteller",
+    "Sauber und termingerecht",
+    "Für Privat und Gewerbe"
+   ],
+   "logo_url": "http://www.maler-hinxlage.de/s/misc/logo.jpg",
+   "min_w": 600,
+   "bild_urls": [
+    "http://www.maler-hinxlage.de/s/cc_images/cache_2450125386.jpg",
+    "http://www.maler-hinxlage.de/s/cc_images/cache_2450125390.jpg",
+    "http://www.maler-hinxlage.de/s/cc_images/cache_2450125389.jpg",
+    "http://www.maler-hinxlage.de/s/cc_images/cache_2450125387.jpg",
+    "http://www.maler-hinxlage.de/s/cc_images/teaserbox_2450124433.jpg",
+    "http://www.maler-hinxlage.de/s/cc_images/teaserbox_2450124339.jpg",
+    "http://www.maler-hinxlage.de/s/cc_images/teaserbox_2450124027.jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "Malereibetrieb Hinxlage",
+     "Herrn Hermann Hinxlage",
+     "Dinklager Landstr. 19",
+     "49393 Lohne"
+    ],
+    "anrede": "Sehr geehrter Herr Hinxlage,",
+    "problem": "dass sie ohne sichere Verbindung (https) läuft und auf dem Handy veraltet wirkt",
+    "suche": "Maler"
+   },
+   "v5": {
+    "fonts": "family=Gloock&family=Figtree:wght@400;500;600",
+    "fh": "'Gloock',Georgia,serif",
+    "fb": "'Figtree',system-ui,sans-serif",
+    "hw": 400,
+    "hls": "-0.015em",
+    "hlh": 1.0,
+    "h1vw": 5.6,
+    "h1max": 6.4,
+    "c": {
+     "bg": "#F7F3F5",
+     "ink": "#2A1B26",
+     "acc": "#A3195B",
+     "acc2": "#E9A7C6",
+     "soft": "#EFE4EA",
+     "paper": "#FFFFFF",
+     "star": "#E0A21B"
+    },
+    "hero": "mask",
+    "shape": "arch",
+    "hero_img": "b1",
+    "hero_slides": [
+     "b1",
+     "b4",
+     "b2"
+    ],
+    "mclip": "inset(0 4% 0 4% round 46vw 46vw 0 0)",
+    "logo_h": 50,
+    "r": "2px",
+    "svc": "index",
+    "svc_imgs": [
+     "b2",
+     "b5",
+     "b3",
+     "b1",
+     "b4",
+     "b7",
+     "b6",
+     "b5"
+    ],
+    "about_img": "b4",
+    "about_img2": "b6",
+    "cta_img": "b1",
+    "promo": "Fassadenanstrich",
+    "order": [
+     "facts",
+     "svc",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "steps_cls": "tone"
+   }
+  },
+  {
+   "slug": "stoever-bedachungen",
+   "theme": "dach",
+   "firma": "Stöver Bedachungen GmbH & Co. KG",
+   "kurzname": "Stöver Bedachungen",
+   "website": "https://www.stoever-bedachungen.de",
+   "telefon": "05491 4830",
+   "email": "info@dachdecker-damme.de",
+   "adresse": "Zu den Klünen 13, 49401 Damme",
+   "siegel": [
+    "Dachdeckermeisterbetrieb seit 1991"
+   ],
+   "tag": "Dachdecker aus Damme",
+   "h1": "Alles unter <span>Dach und Fach.</span>",
+   "sub": "Steildach, Flachdach, Gründach, Sanierung und Dämmung – seit mehr als 30 Jahren aus Damme, für die Region von Vechta bis Osnabrück.",
+   "trust": [
+    [
+     "1991",
+     "gegründet"
+    ],
+    [
+     "30+",
+     "Jahre Erfahrung"
+    ],
+    [
+     "32",
+     "Jahre Berufserfahrung des Meisters"
+    ]
+   ],
+   "leist_h2": "Alles rund ums Dach.",
+   "leistungen": [
+    "Steildach",
+    "Flachdach",
+    "Gründach",
+    "Dachsanierung",
+    "Dämmarbeiten",
+    "Reparaturservice",
+    "Wartung"
+   ],
+   "about_h2": "Ein Name für alles rund ums Dach.",
+   "ueber": [
+    "1991 gründete Dachdeckermeister Matthias Stöver den Familienbetrieb in Damme. Seit 2021 führt Dachdeckermeister Daniel Merkes das Unternehmen weiter.",
+    "Melanie Müller sorgt im Büro für eine reibungslose Abwicklung und ist die freundliche Stimme am Telefon."
+   ],
+   "checks": [
+    "Hochwertige Arbeit mit Herz und Verstand",
+    "Faire Preise und zügige Durchführung",
+    "Ausbildungs- und Praktikumsplätze"
+   ],
+   "logo_url": "https://www.stoever-bedachungen.de/templates/design20221/images/designer/03b0b58b0c443a114a1dd831f2a66cd5_logoangepasstweb.png",
+   "min_w": 600,
+   "bild_urls": [
+    "https://www.stoever-bedachungen.de/templates/design20221/images/designer/381f77d907ecd6923bc78982ab350710_dachschieferaltdeutschedeckungfca10d66.jpg",
+    "https://www.stoever-bedachungen.de/templates/design20221/images/designer/fa0da0f8e0ea89a20e1d5b0b3f916f69_AdobeStock_125086948.jpeg"
+   ],
+   "brief": {
+    "anschrift": [
+     "Stöver Bedachungen GmbH & Co. KG",
+     "Herrn Daniel Merkes",
+     "Zu den Klünen 13",
+     "49401 Damme"
+    ],
+    "anrede": "Sehr geehrter Herr Merkes,",
+    "problem": "dass sie kaum Fotos Ihrer eigenen Arbeit zeigt und viele Inhalte hinter Symbolbildern versteckt",
+    "suche": "Dachdecker"
+   },
+   "v5": {
+    "fonts": "family=Saira+Condensed:wght@500;600;700&family=Saira:wght@400;500",
+    "fh": "'Saira Condensed',sans-serif",
+    "fb": "'Saira',system-ui,sans-serif",
+    "hw": 700,
+    "hls": "0em",
+    "hlh": 0.9,
+    "htt": "uppercase",
+    "h1vw": 7,
+    "h1max": 8,
+    "c": {
+     "bg": "#EEF3F8",
+     "ink": "#1C2733",
+     "acc": "#0053A7",
+     "acc2": "#5FA8E8",
+     "soft": "#DDE7F1",
+     "paper": "#FFFFFF",
+     "hbg": "#1C2733",
+     "hink": "#FFFFFF"
+    },
+    "hero": "mask",
+    "shape": "gable",
+    "hero_img": "b2",
+    "hero_slides": [
+     "b2",
+     "b1"
+    ],
+    "mclip": "polygon(0 20%, 50% 0, 100% 20%, 100% 100%, 0 100%)",
+    "logo_bg": "#0053A7",
+    "logo_h": 44,
+    "svc": "index",
+    "svc_imgs": [],
+    "icons": [
+     "<path d=\"M3 12l9-7 9 7\"/><path d=\"M5 10v10h14V10\"/>",
+     "<path d=\"M3 9h18v3H3zM5 12v8h14v-8\"/>",
+     "<path d=\"M5 19c0-8 6-14 15-14 0 9-6 15-14 15\"/><path d=\"M5 19l7-7\"/>",
+     "<path d=\"M14 7l3-3 3 3-3 3M17 4L8 13l-4 7 7-4 9-9\"/>",
+     "<path d=\"M14 14V5a2 2 0 0 0-4 0v9a4 4 0 1 0 4 0z\"/>",
+     "<path d=\"M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z\"/>",
+     "<path d=\"M9 12l2 2 4-4\"/><circle cx=\"12\" cy=\"12\" r=\"9\"/>"
+    ],
+    "about_img": "b1",
+    "about_img2": "b2",
+    "cta_img": "b2",
+    "promo": "Dachsanierung",
+    "order": [
+     "facts",
+     "svc",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "facts_cls": "dark",
+    "steps_cls": "tone"
+   }
+  },
+  {
+   "slug": "dachdeckerei-boettcher",
+   "theme": "dach",
+   "firma": "Dachdeckerei Böttcher GmbH",
+   "kurzname": "Dachdeckerei Böttcher",
+   "website": "https://www.dachdecker-boettcher.de",
+   "telefon": "05427 927030",
+   "email": "info@dachdecker-boettcher.de",
+   "adresse": "Lammersbrink 18, 49328 Melle",
+   "google": [
+    "4,7",
+    44
+   ],
+   "siegel": [
+    "Meisterbetrieb seit 1992",
+    "VELUX-Experte"
+   ],
+   "tag": "Dachdeckerei in Melle-Buer",
+   "h1": "Alles Punkt für Punkt <span>bedacht.</span>",
+   "sub": "Steildach, Fassade, Flachdach, Zimmerei, Dämmung, Solar und eigener Autokran – inhabergeführt seit 1992.",
+   "trust": [
+    [
+     "1992",
+     "gegründet"
+    ],
+    [
+     "28",
+     "erfahrene Mitarbeiter"
+    ],
+    [
+     "27 t",
+     "betriebseigener Autokran"
+    ]
+   ],
+   "leist_h2": "Dach und Fassade aus einer Hand.",
+   "leistungen": [
+    "Steildach",
+    "Fassaden",
+    "Flachdach",
+    "Zimmereiarbeiten",
+    "Dämmung",
+    "Solartechnik",
+    "Kranarbeiten",
+    "Bauklempnerei"
+   ],
+   "about_h2": "Seit 1992 inhabergeführt.",
+   "ueber": [
+    "Die Dachdeckerei Böttcher wurde 1992 von Martin Böttcher und seiner Frau Andrea gegründet. Seitdem wurde jedes Jahr ein neuer Mitarbeiter eingestellt.",
+    "Heute betreut das Team mit 28 erfahrenen Mitarbeitern Projekte im Landkreis Osnabrück und in ganz Niedersachsen."
+   ],
+   "checks": [
+    "Ehrliche, persönliche Beratung",
+    "Eigene Betriebs- und Lagerhalle",
+    "Autokran auch zur Miete"
+   ],
+   "logo_url": "https://www.dachdecker-boettcher.de/img/logo.png",
+   "min_w": 300,
+   "bild_urls": [
+    "https://www.dachdecker-boettcher.de/img/slides/2.jpg",
+    "https://www.dachdecker-boettcher.de/img/slides/1.jpg",
+    "https://www.dachdecker-boettcher.de/img/unternehmen.jpg",
+    "https://www.dachdecker-boettcher.de/img/start1.jpg",
+    "https://www.dachdecker-boettcher.de/img/start4.jpg",
+    "https://www.dachdecker-boettcher.de/img/start5.jpg",
+    "https://www.dachdecker-boettcher.de/img/start6.jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "Dachdeckerei Böttcher GmbH",
+     "Herrn Martin Böttcher",
+     "Lammersbrink 18",
+     "49328 Melle"
+    ],
+    "anrede": "Sehr geehrter Herr Böttcher,",
+    "problem": "dass auf der Startseite noch Vorlage-Texte wie „Lorem ipsum“ und „Clinic Departments“ stehen und sie auf dem Handy nicht richtig dargestellt wird",
+    "suche": "Dachdecker"
+   },
+   "v5": {
+    "fonts": "family=Lexend:wght@300;400;600;700",
+    "fh": "'Lexend',sans-serif",
+    "fb": "'Lexend',system-ui,sans-serif",
+    "hw": 700,
+    "hls": "-0.04em",
+    "hlh": 0.96,
+    "h1vw": 5.4,
+    "h1max": 6,
+    "c": {
+     "bg": "#F5F4F2",
+     "ink": "#211B1B",
+     "acc": "#C8202B",
+     "acc2": "#F07A43",
+     "soft": "#ECE6E3",
+     "paper": "#FFFFFF",
+     "hbg": "#211B1B",
+     "hink": "#FFFFFF"
+    },
+    "hero": "mask",
+    "shape": "diag",
+    "hero_img": "b1",
+    "hero_slides": [
+     "b1",
+     "b2",
+     "b3"
+    ],
+    "mclip": "polygon(0 9%, 100% 0, 100% 100%, 0 100%)",
+    "logo_bg": "#FFFFFF",
+    "logo_h": 44,
+    "r": "6px",
+    "svc": "stack",
+    "svc_imgs": [
+     "b2",
+     "b3",
+     "b1"
+    ],
+    "about_img": "b3",
+    "about_img2": "b4",
+    "cta_img": "b2",
+    "promo": "Dachsanierung mit Förderung",
+    "order": [
+     "svc",
+     "facts",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "facts_cls": "dark",
+    "steps_cls": "tone"
+   }
+  },
+  {
+   "slug": "birkemeyer-rueters",
+   "theme": "shk",
+   "firma": "Andreas Birkemeyer-Rüters Heizung-Sanitär GmbH & Co. KG",
+   "kurzname": "Birkemeyer-Rüters",
+   "website": "https://www.birkemeyer-rueters.de",
+   "telefon": "05406 9447",
+   "email": "info@birkemeyer-rueters.de",
+   "adresse": "Schloßstraße 57, 49191 Belm",
+   "google": [
+    "4,6",
+    30
+   ],
+   "siegel": [
+    "Familienbetrieb seit 1999",
+    "24-Stunden-Notdienst"
+   ],
+   "tag": "Heizung und Sanitär in Belm",
+   "h1": "Wärme und Wasser, <span>auf die Verlass ist.</span>",
+   "sub": "Bäder, Heizung, Wärmepumpe, Solar und Kundendienst – vom familiengeführten Fachbetrieb in Belm, mit 24-Stunden-Notdienst.",
+   "trust": [
+    [
+     "1999",
+     "Familienbetrieb"
+    ],
+    [
+     "24 h",
+     "Notdienst"
+    ],
+    [
+     "SHK",
+     "Fachbetrieb"
+    ]
+   ],
+   "leist_h2": "Bad, Heizung, Energie.",
+   "leistungen": [
+    "Badezimmer",
+    "Heizungsanlagen",
+    "Wärmepumpe",
+    "Solaranlage",
+    "Fußbodenheizung",
+    "Trinkwasserhygiene",
+    "Wartungsservice",
+    "Kundendienst und Notdienst"
+   ],
+   "about_h2": "Familiengeführt seit 1999.",
+   "ueber": [
+    "Als familiengeführtes Unternehmen ist Birkemeyer-Rüters seit 1999 Ihr Fachbetrieb rund um Sanitär- und Heizungstechnik.",
+    "Unsere Fachleute kümmern sich schnell und zuverlässig um Neuinstallationen, Sanierungen, Wartungen und Reparaturen."
+   ],
+   "checks": [
+    "Fachkompetente, individuelle Beratung",
+    "Termingenaue Ausführung",
+    "Faires Preis-Leistungs-Verhältnis"
+   ],
+   "logo_url": "https://www.birkemeyer-rueters.de/fileadmin/daten/mitglieder/124096/logo/124096.png",
+   "min_w": 500,
+   "bild_urls": [
+    "https://images.unsplash.com/photo-1584622650111-993a426fbf0a?w=1800&q=85&fm=jpg",
+    "https://images.unsplash.com/photo-1763485956310-55f3c0e822d5?w=1800&q=85&fm=jpg",
+    "https://images.unsplash.com/photo-1621215065447-28744f6b9e87?w=1800&q=85&fm=jpg",
+    "https://images.unsplash.com/photo-1776860150305-108ed577d7d4?w=1800&q=85&fm=jpg",
+    "https://images.unsplash.com/photo-1668911094844-527491335108?w=1800&q=85&fm=jpg",
+    "https://www.birkemeyer-rueters.de/fileadmin/daten/vkeeltkauf/nachichten/2026_10_endverbraucher_news_hydraulischer_abgleich.jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "Andreas Birkemeyer-Rüters",
+     "Heizung-Sanitär GmbH & Co. KG",
+     "Herrn Andreas Birkemeyer-Rüters",
+     "Schloßstraße 57",
+     "49191 Belm"
+    ],
+    "anrede": "Sehr geehrter Herr Birkemeyer-Rüters,",
+    "problem": "dass sie auf einer Standard-Vorlage mit allgemeinen Bildern basiert und Ihr Betrieb selbst kaum zu sehen ist",
+    "suche": "Heizungsbauer"
+   },
+   "v5": {
+    "fonts": "family=Plus+Jakarta+Sans:wght@400;500;700;800",
+    "fh": "'Plus Jakarta Sans',sans-serif",
+    "fb": "'Plus Jakarta Sans',system-ui,sans-serif",
+    "hw": 800,
+    "hls": "-0.04em",
+    "hlh": 0.96,
+    "h1vw": 5.4,
+    "h1max": 6,
+    "c": {
+     "bg": "#F2F8FA",
+     "ink": "#0B2E3F",
+     "acc": "#0A7EA4",
+     "acc2": "#7FD1E8",
+     "soft": "#DDEFF4",
+     "paper": "#FFFFFF"
+    },
+    "hero": "mask",
+    "shape": "blob",
+    "hero_img": "b1",
+    "hero_slides": [
+     "b1",
+     "b2",
+     "b5"
+    ],
+    "mclip": "inset(0 4% 0 4% round 48% 52% 46% 54% / 26% 30% 22% 26%)",
+    "logo_h": 46,
+    "r": "999px",
+    "r2": "22px",
+    "svc": "index",
+    "svc_imgs": [
+     "b1",
+     "b6",
+     "b4",
+     "b4",
+     "b2",
+     "b5",
+     "b6",
+     "b3"
+    ],
+    "about_img": "b3",
+    "about_img2": "b4",
+    "cta_img": "b2",
+    "promo": "Wärmepumpe mit Förderung",
+    "order": [
+     "facts",
+     "svc",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "steps_cls": "tone"
+   }
+  },
+  {
+   "slug": "elektro-sandkaemper",
+   "theme": "elektro",
+   "firma": "Elektro Sandkämper GmbH",
+   "kurzname": "Elektro Sandkämper",
+   "website": "https://www.elektro-sandkaemper.de",
+   "telefon": "05401 842730",
+   "email": "info@elektro-sandkaemper.de",
+   "adresse": "Kleeort 14, 49124 Georgsmarienhütte",
+   "google": [
+    "5,0",
+    22
+   ],
+   "siegel": [
+    "Elektromeisterbetrieb seit 1992",
+    "Brumberg Competence Partner"
+   ],
+   "tag": "Elektroinstallation in Georgsmarienhütte",
+   "h1": "Strom, Licht <span>und Sicherheit.</span>",
+   "sub": "Neuinstallation, Wartung und Reparatur, Smart Home, Sicherheitstechnik und Photovoltaik – maßgeschneidert und zukunftssicher seit 1992.",
+   "trust": [
+    [
+     "1992",
+     "gegründet"
+    ],
+    [
+     "3",
+     "Elektromeister in der Geschäftsführung"
+    ],
+    [
+     "5,0",
+     "Sterne bei Google"
+    ]
+   ],
+   "leist_h2": "Elektrotechnik für Ihr Zuhause.",
+   "leistungen": [
+    "Elektroinstallation",
+    "Smart Home",
+    "Sicherheitstechnik",
+    "Türsprechanlagen",
+    "LED und Licht",
+    "Photovoltaik",
+    "Elektromobilität",
+    "Überspannungsschutz"
+   ],
+   "about_h2": "Fachleute für Ihr Haus.",
+   "ueber": [
+    "Seit 1992 bieten wir Ihnen kompetenten Service rund um die Elektroinstallation – geführt von den Elektromeistern Andreas Sandkämper, Carsten Völskow und Dmitrij Eckert.",
+    "Wir entwickeln maßgeschneiderte, zukunftssichere Installationen und stellen höchste Ansprüche an die Aus- und Weiterbildung unserer Mitarbeiter."
+   ],
+   "checks": [
+    "Planung, Installation, Wartung",
+    "Barrierefreie Elektroinstallation",
+    "Wir bilden aus"
+   ],
+   "logo_url": "https://www.elektro-sandkaemper.de/fileadmin/daten/mitglieder/116446/logo/116446.png",
+   "min_w": 600,
+   "bild_urls": [
+    "https://www.elektro-sandkaemper.de/fileadmin/daten/vkeeltkauf/nachichten/2026_10_endverbraucher_news_ueberspannungsschutz.jpg",
+    "https://www.elektro-sandkaemper.de/fileadmin/_processed_/a/3/csm_biologisch_wirksames_licht_ed5edcf099.jpg",
+    "https://www.elektro-sandkaemper.de/fileadmin/_processed_/a/5/csm_hausueberwachung_029023cd2d.jpg",
+    "https://www.elektro-sandkaemper.de/fileadmin/_processed_/d/c/csm_kontaktlose_schalter_4becbce6a2.jpg",
+    "https://www.elektro-sandkaemper.de/fileadmin/_processed_/9/4/csm_kaufkriterien_fuer_ueberwachungskameras_8783b7dc15.jpg",
+    "https://www.elektro-sandkaemper.de/fileadmin/_processed_/c/6/csm_internet_ueber_steckdose_8c9d2b2e25.jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "Elektro Sandkämper GmbH",
+     "Herrn Andreas Sandkämper",
+     "Kleeort 14",
+     "49124 Georgsmarienhütte"
+    ],
+    "anrede": "Sehr geehrter Herr Sandkämper,",
+    "problem": "dass sie auf einer Standard-Vorlage mit allgemeinen Bildern basiert und Ihr Team kaum zu sehen ist",
+    "suche": "Elektriker"
+   },
+   "v5": {
+    "fonts": "family=Onest:wght@400;500;700;800",
+    "fh": "'Onest',sans-serif",
+    "fb": "'Onest',system-ui,sans-serif",
+    "hw": 800,
+    "hls": "-0.04em",
+    "hlh": 0.96,
+    "h1vw": 5.2,
+    "h1max": 5.8,
+    "c": {
+     "bg": "#F5F5F6",
+     "ink": "#15171C",
+     "acc": "#E30613",
+     "acc2": "#FF5A5F",
+     "soft": "#E9E9EC",
+     "paper": "#FFFFFF",
+     "hbg": "#15171C",
+     "hink": "#FFFFFF",
+     "ctabtn": "#15171C"
+    },
+    "hero": "circuit",
+    "hero_img": "b1",
+    "hero_slides": [
+     "b1",
+     "b3",
+     "b2"
+    ],
+    "logo_bg": "#FFFFFF",
+    "logo_h": 44,
+    "r": "8px",
+    "svc": "index",
+    "svc_imgs": [],
+    "icons": [
+     "<path d=\"M9 2v6M15 2v6M6 8h12v4a6 6 0 0 1-12 0zM12 18v4\"/>",
+     "<path d=\"M3 11l9-7 9 7v10H3z\"/><path d=\"M9.5 15a3.5 3.5 0 0 1 5 0\"/>",
+     "<path d=\"M12 3l8 3v6c0 4.5-3.4 8-8 9-4.6-1-8-4.5-8-9V6z\"/>",
+     "<path d=\"M6 16V11a6 6 0 0 1 12 0v5l2 2H4z\"/><path d=\"M10 20a2 2 0 0 0 4 0\"/>",
+     "<circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5\"/>",
+     "<circle cx=\"12\" cy=\"12\" r=\"4\"/><path d=\"M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5\"/>",
+     "<path d=\"M5 17h14M6 17l1.5-6h9L18 17M7 17v2M17 17v2\"/><circle cx=\"12\" cy=\"7\" r=\"2\"/>",
+     "<path d=\"M13 2L4 14h7l-1 8 9-12h-7z\"/>"
+    ],
+    "about_img": "b2",
+    "about_img2": "b4",
+    "cta_img": "b3",
+    "promo": "Photovoltaik und Speicher",
+    "order": [
+     "facts",
+     "svc",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "steps_cls": "tone"
+   }
+  },
+  {
+   "slug": "arno-niehaus",
+   "theme": "metall",
+   "firma": "Landmaschinen und Stahlbau Arno Niehaus GmbH",
+   "kurzname": "Arno Niehaus",
+   "website": "https://www.arno-niehaus.de",
+   "telefon": "05491 977500",
+   "email": "info@arno-niehaus.de",
+   "adresse": "Robert-Bosch-Str. 16b, 49401 Damme",
+   "siegel": [
+    "Inhabergeführter Meisterbetrieb",
+    "Schweißen nach DIN EN 1090"
+   ],
+   "tag": "Stahlbau und Landmaschinen in Damme",
+   "h1": "Stahlharte <span>Lösungen.</span>",
+   "sub": "Geländer, Treppen, Tore, Hallen, Stalleinrichtungen und Terrassenüberdachungen – dazu Reparatur und Handel mit Landmaschinen.",
+   "trust": [
+    [
+     "2",
+     "Laseranlagen"
+    ],
+    [
+     "Stahl",
+     "Edelstahl und Aluminium"
+    ],
+    [
+     "EN 1090",
+     "Schweißarbeiten"
+    ]
+   ],
+   "leist_h2": "Metall nach Maß.",
+   "leistungen": [
+    "Stahlbau",
+    "Hallenbau",
+    "Blechbearbeitung",
+    "Terrassenüberdachungen",
+    "Stalleinrichtungen",
+    "Land- und Baumaschinen",
+    "Gebrauchtmaschinen"
+   ],
+   "about_h2": "Ihr Ansprechpartner im Landkreis Vechta.",
+   "ueber": [
+    "Wir entwerfen, konstruieren und montieren Geländer, Treppen, Tore, Gatter, Vordächer und Balkone – aus Stahl, Edelstahl und Aluminium.",
+    "Als inhabergeführter Meisterbetrieb stehen wir für Service, innovative Technik und hochwertige Konstruktionen. Bei uns arbeiten motivierte Fachkräfte mit großem Know-how."
+   ],
+   "checks": [
+    "Laser- und Abkanttechnik",
+    "Sonderbauten nach Ihren Wünschen",
+    "Reparatur und Handel mit Landmaschinen"
+   ],
+   "logo_url": "https://www.arno-niehaus.de/files/images/logo.png",
+   "min_w": 380,
+   "bild_urls": [
+    "https://www.arno-niehaus.de/files/bilder/slider-03.jpg",
+    "https://www.arno-niehaus.de/files/bilder/slider-02.jpg",
+    "https://www.arno-niehaus.de/files/bilder/slider-01.jpg",
+    "https://www.arno-niehaus.de/assets/images/f/niehaus-terassenueberdachung1-148b745f.png",
+    "https://www.arno-niehaus.de/assets/images/a/niehaus-terassenueberdachung2-4c4b967a.png"
+   ],
+   "brief": {
+    "anschrift": [
+     "Arno Niehaus GmbH",
+     "Herrn Arno Niehaus",
+     "Robert-Bosch-Str. 16b",
+     "49401 Damme"
+    ],
+    "anrede": "Sehr geehrter Herr Niehaus,",
+    "problem": "dass sie zuletzt 2015 gestaltet wurde und vor allem Fremdbilder statt Ihrer eigenen Arbeiten zeigt",
+    "suche": "Metallbauer"
+   },
+   "v5": {
+    "fonts": "family=Archivo:wdth,wght@62..125,400..900",
+    "fh": "'Archivo',sans-serif",
+    "fb": "'Archivo',system-ui,sans-serif",
+    "hw": 800,
+    "hls": "-0.01em",
+    "hlh": 0.92,
+    "htt": "uppercase",
+    "h1vw": 5.8,
+    "h1max": 6.8,
+    "hst": "118%",
+    "c": {
+     "bg": "#EEF1F5",
+     "ink": "#121A26",
+     "acc": "#1B4A8C",
+     "acc2": "#F28C28",
+     "soft": "#DEE3EA",
+     "paper": "#FFFFFF",
+     "hbg": "#121A26",
+     "hink": "#FFFFFF",
+     "frame": "#9AA6B5"
+    },
+    "hero": "panes",
+    "hero_img": "b1",
+    "hero_slides": [
+     "b1",
+     "b2",
+     "b3"
+    ],
+    "cols": 5,
+    "rows": 2,
+    "pane_h": 56,
+    "logo_bg": "#FFFFFF",
+    "logo_h": 50,
+    "svc": "pin",
+    "svc_imgs": [
+     "b2",
+     "b4",
+     "b1",
+     "b5"
+    ],
+    "about_img": "b3",
+    "about_img2": "b4",
+    "cta_img": "b4",
+    "promo": "Terrassenüberdachungen",
+    "order": [
+     "svc",
+     "about",
+     "facts",
+     "steps",
+     "cta"
+    ],
+    "facts_cls": "dark",
+    "steps_cls": "tone"
+   }
+  },
+  {
+   "slug": "kronen-meister",
+   "theme": "dach",
+   "firma": "Kronen Meister Zimmerei GmbH",
+   "kurzname": "Kronen Meister",
+   "website": "https://www.kronenmeister.de",
+   "telefon": "05432 809717",
+   "email": "info@kronenmeister.de",
+   "adresse": "Roevenkamp 2, 49624 Löningen",
+   "google": [
+    "4,7",
+    20
+   ],
+   "siegel": [
+    "Zimmerermeisterbetrieb seit 2003"
+   ],
+   "tag": "Abbundtechnik und Zimmerei in Löningen",
+   "h1": "Wir freuen uns <span>auf Ihre Ideen.</span>",
+   "sub": "Vom kleinen Vordach über Dachstühle, Holzrahmenbau und CLT-Holzhäuser bis zum reinen Lohnabbund – mit Tradition und modernster Technik.",
+   "trust": [
+    [
+     "2003",
+     "gegründet"
+    ],
+    [
+     "CLT",
+     "Holzhäuser"
+    ],
+    [
+     "K2i",
+     "Abbundanlage"
+    ]
+   ],
+   "leist_h2": "Holzbau mit Präzision.",
+   "leistungen": [
+    "Dachstühle",
+    "Holzrahmenbau",
+    "CLT-Holzhäuser",
+    "Objektbau",
+    "Lohnabbund",
+    "Zuschnitt und Transport",
+    "Vordächer"
+   ],
+   "about_h2": "Unter unserem Dach.",
+   "ueber": [
+    "Wir sind eine Zimmerei mit Tradition und Leidenschaft und fertigen seit 2003 komplette Dachkonstruktionen.",
+    "Geführt von Bauingenieur Johann Klein und Zimmerermeister Andreas Bangert – mit direktem, vertrauensvollem Kontakt zu Ihnen."
+   ],
+   "checks": [
+    "Qualität, Schnelligkeit, Präzision",
+    "Modernste Planungs- und Fertigungstechnik",
+    "Ganzheitliche Abwicklung von der Planung bis zur Umsetzung"
+   ],
+   "inhaber_name": "Johann Klein und Andreas Bangert",
+   "inhaber_rolle": "Geschäftsführung",
+   "inhaber_idx": 0,
+   "logo_url": "https://www.kronenmeister.de/images/logo-kronenmeister.png",
+   "min_w": 600,
+   "bild_urls": [
+    "https://www.kronenmeister.de/images/9Kronenmeister-2-22.jpg",
+    "https://www.kronenmeister.de/images/9Kronenmeiser-1178.jpg",
+    "https://www.kronenmeister.de/images/8Kronenmeister-4168.jpg",
+    "https://www.kronenmeister.de/gallery/g10/29064425_2144893695741156_2751191183781905696_o.jpg",
+    "https://www.kronenmeister.de/gallery/g10/28947161_2144893755741150_4524281833877173892_o.jpg",
+    "https://www.kronenmeister.de/gallery/g10/28828412_2144893625741163_1210062810524283781_o.jpg",
+    "https://www.kronenmeister.de/gallery/g5/IMG-20190321-WA0183.jpg",
+    "https://www.kronenmeister.de/gallery/g5/IMG-20190418-WA0012.jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "Kronen Meister Zimmerei GmbH",
+     "Herrn Johann Klein",
+     "Roevenkamp 2",
+     "49624 Löningen"
+    ],
+    "anrede": "Sehr geehrter Herr Klein,",
+    "problem": "dass Ihre starken Projekte und Ihr Team auf dem Handy erst weit unten zu sehen sind",
+    "suche": "Zimmerei"
+   },
+   "v5": {
+    "fonts": "family=Zilla+Slab:wght@500;600;700&family=Karla:wght@400;500;600",
+    "fh": "'Zilla Slab',Georgia,serif",
+    "fb": "'Karla',system-ui,sans-serif",
+    "hw": 700,
+    "hls": "-0.02em",
+    "hlh": 0.95,
+    "h1vw": 7.4,
+    "h1max": 8.4,
+    "c": {
+     "bg": "#F6F3EE",
+     "ink": "#1F1B17",
+     "acc": "#C8692A",
+     "acc2": "#E9B98A",
+     "soft": "#ECE4D8",
+     "paper": "#FFFFFF",
+     "hbg": "#1F1B17",
+     "hink": "#FFFFFF",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#1F1B17"
+    },
+    "hero": "portrait",
+    "logo_bg": "#FFFFFF",
+    "pos": {
+     "b1": "50% 22%"
+    },
+    "svc": "pin",
+    "svc_imgs": [
+     "b5",
+     "b4",
+     "b8",
+     "b3"
+    ],
+    "about_img": "b3",
+    "about_img2": "b2",
+    "cta_img": "b6",
+    "promo": "Dachstuhl und Holzrahmenbau",
+    "order": [
+     "svc",
+     "about",
+     "facts",
+     "steps",
+     "cta"
+    ],
+    "steps_cls": "dark"
+   }
+  },
+  {
+   "slug": "tischlerei-lammers",
+   "theme": "holz",
+   "firma": "Tischlerei Lammers GmbH & Co. KG",
+   "kurzname": "Tischlerei Lammers",
+   "website": "https://www.tischlerei-lammers.de",
+   "telefon": "05951 99590",
+   "email": "",
+   "adresse": "Bahnhofstraße 77, 49757 Werlte",
+   "siegel": [
+    "Tischler seit 1884",
+    "Familienunternehmen in 4. Generation"
+   ],
+   "tag": "Tischlerei in Werlte",
+   "h1": "Tradition und Moderne <span>im Handwerk.</span>",
+   "sub": "Fassaden- und Fensterbau, Innenausbau, Objekteinrichtungen und die Sanierung historischer Gebäude – von der Planung bis zur Fertigung.",
+   "trust": [
+    [
+     "1884",
+     "gegründet"
+    ],
+    [
+     "4.",
+     "Generation"
+    ],
+    [
+     "Bremen",
+     "bis Rostock"
+    ]
+   ],
+   "leist_h2": "Vom Boden bis unters Dach.",
+   "leistungen": [
+    "Fassaden- und Fensterbau",
+    "Innenausbau",
+    "Objekteinrichtungen",
+    "Sanierung historischer Gebäude",
+    "Sakrales",
+    "Treppen und Türen"
+   ],
+   "about_h2": "Seit 1884 maßgeschneiderte Holzarbeiten.",
+   "ueber": [
+    "Die Tischlerei Lammers in Werlte übernimmt und koordiniert alle Aufgaben von der Planung bis zur Fertigung – heute in vierter Generation.",
+    "Wir unterstützen Privatkunden und Architekten, etwa bei Kliniken, Kirchen, Schulen und Hotels von Bremen bis Rostock."
+   ],
+   "checks": [
+    "Handwerk und Hightech",
+    "Traditionelle Holzfenster",
+    "Hochwertige Baudenkmäler"
+   ],
+   "logo_url": "https://www.tischlerei-lammers.de/designs/design1/imgs/logo.png",
+   "min_w": 600,
+   "bild_urls": [
+    "https://www.tischlerei-lammers.de/designs/design1/imgs/slider/1200/slider05.jpg",
+    "https://www.tischlerei-lammers.de/designs/design1/imgs/slider/1200/slider04.jpg",
+    "https://www.tischlerei-lammers.de/designs/design1/imgs/slider/1200/slider13.jpg",
+    "https://www.tischlerei-lammers.de/designs/design1/imgs/slider/1200/slider09.jpg",
+    "https://www.tischlerei-lammers.de/designs/design1/imgs/slider/1200/slider02.jpg",
+    "https://www.tischlerei-lammers.de/designs/design1/imgs/slider/1200/slider07.jpg",
+    "https://www.tischlerei-lammers.de/designs/design1/imgs/slider/1200/slider03.jpg",
+    "https://www.tischlerei-lammers.de/designs/design1/imgs/slider/1200/slider12.jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "Tischlerei Lammers GmbH & Co. KG",
+     "Bahnhofstraße 77",
+     "49757 Werlte"
+    ],
+    "anrede": "Sehr geehrte Damen und Herren,",
+    "problem": "dass Ihre beeindruckenden Referenzen auf dem Handy kaum zur Geltung kommen",
+    "suche": "Tischler"
+   },
+   "v5": {
+    "fonts": "family=Playfair+Display:wght@500;700;900&family=Inter+Tight:wght@400;500;600",
+    "fh": "'Playfair Display',Georgia,serif",
+    "fb": "'Inter Tight',system-ui,sans-serif",
+    "hw": 700,
+    "hls": "-0.02em",
+    "hlh": 1.0,
+    "c": {
+     "bg": "#F7F6F3",
+     "ink": "#22191A",
+     "acc": "#9E1B32",
+     "acc2": "#C9A46A",
+     "soft": "#EDE8E1",
+     "paper": "#FFFFFF",
+     "star": "#C9A46A"
+    },
+    "hero": "numerals",
+    "num": "1884",
+    "num_img": "b2",
+    "strip_img": "b1",
+    "logo_h": 52,
+    "svc": "index",
+    "svc_imgs": [
+     "b4",
+     "b3",
+     "b6",
+     "b2",
+     "b5",
+     "b7"
+    ],
+    "about_img": "b1",
+    "about_img2": "b8",
+    "cta_img": "b4",
+    "promo": "Traditionelle Holzfenster",
+    "gal_h2": "Referenzen.",
+    "gal": [
+     "b5",
+     "b3",
+     "b6",
+     "b7",
+     "b8",
+     "b4"
+    ],
+    "order": [
+     "strip",
+     "svc",
+     "facts",
+     "gal",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "facts_cls": "dark",
+    "steps_cls": "tone"
+   }
+  },
+  {
+   "slug": "tischlerei-stolte",
+   "theme": "holz",
+   "firma": "Tischlerei Marcus Stolte",
+   "kurzname": "Tischlerei Stolte",
+   "website": "https://www.stolte-tischlerei.de",
+   "telefon": "05933 3654",
+   "email": "",
+   "adresse": "Mühlentannen 16, 49762 Lathen",
+   "google": [
+    "4,8",
+    16
+   ],
+   "siegel": [
+    "Tischlermeisterbetrieb",
+    "Familienbetrieb seit 1993"
+   ],
+   "tag": "Tischlermeister in Lathen",
+   "h1": "Wir wollen unsere <span>Kunden begeistern.</span>",
+   "sub": "Fenster, Haustüren, Treppen, Küchen und Möbel nach Maß – vom Tischler-Meisterbetrieb mit Leidenschaft für Holz.",
+   "trust": [
+    [
+     "1993",
+     "Familienbetrieb"
+    ],
+    [
+     "RAL",
+     "zertifizierte Montage"
+    ],
+    [
+     "4,8",
+     "Sterne bei Google"
+    ]
+   ],
+   "leist_h2": "Holz in seiner schönsten Form.",
+   "leistungen": [
+    "Fenster und Haustüren",
+    "Treppen",
+    "Küchen nach Maß",
+    "Möbel und Einbauschränke",
+    "Parkett",
+    "Wintergärten"
+   ],
+   "about_h2": "Ein Beruf mit Berufung.",
+   "ueber": [
+    "Holz ist für uns der schönste Rohstoff. Mit persönlicher, kompetenter Beratung verwirklichen wir Ihre Vorstellungen – vom ersten Gespräch bis zur sauberen Montage.",
+    "Unser Team besteht aus Tischlern aus Überzeugung mit langjähriger Berufserfahrung und regelmäßigen Fortbildungen."
+   ],
+   "checks": [
+    "Inhaber Marcus Stolte berät selbst",
+    "Fortbildungen in Gestaltung und Energieberatung",
+    "Saubere Montage bei Ihnen vor Ort"
+   ],
+   "logo_url": "http://www.stolte-tischlerei.com/ts/wp-content/uploads/logo_stolte_400.jpg",
+   "min_w": 700,
+   "bild_urls": [
+    "https://www.stolte-tischlerei.de/ts/wp-content/uploads/DSC_0067.jpg",
+    "https://www.stolte-tischlerei.de/ts/wp-content/uploads/IMG_0208.jpg",
+    "https://www.stolte-tischlerei.de/ts/wp-content/uploads/DSC_0103.jpg",
+    "https://www.stolte-tischlerei.de/ts/wp-content/uploads/DSC_0096.jpg",
+    "https://www.stolte-tischlerei.de/ts/wp-content/uploads/DSC_0063-e1420325378755.jpg",
+    "https://www.stolte-tischlerei.de/ts/wp-content/uploads/IMG_0210-e1420233657290.jpg",
+    "https://www.stolte-tischlerei.de/ts/wp-content/uploads/DSC_0023.jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "Tischlerei Stolte",
+     "Herrn Marcus Stolte",
+     "Mühlentannen 16",
+     "49762 Lathen"
+    ],
+    "anrede": "Sehr geehrter Herr Stolte,",
+    "problem": "dass sie auf einem älteren System läuft und Ihre schönen Arbeiten auf dem Handy nur klein zu sehen sind",
+    "suche": "Tischler"
+   },
+   "v5": {
+    "fonts": "family=Young+Serif&family=Instrument+Sans:wght@400;500;600",
+    "fh": "'Young Serif',Georgia,serif",
+    "fb": "'Instrument Sans',system-ui,sans-serif",
+    "hw": 400,
+    "hls": "-0.02em",
+    "hlh": 1.02,
+    "h1vw": 5.4,
+    "h1max": 6.2,
+    "c": {
+     "bg": "#F3F2EF",
+     "ink": "#231F1C",
+     "acc": "#C8202F",
+     "acc2": "#B5651D",
+     "soft": "#E8E3DC",
+     "paper": "#FFFFFF",
+     "hbg": "#E4D7C7",
+     "hink": "#231F1C",
+     "frame": "#5A3A22",
+     "ctabtn": "#231F1C"
+    },
+    "hero": "window",
+    "hero_img": "b1",
+    "hero_slides": [
+     "b1",
+     "b2",
+     "b3"
+    ],
+    "frame_w": 24,
+    "logo_h": 54,
+    "r": "3px",
+    "svc": "stack",
+    "svc_imgs": [
+     "b2",
+     "b5",
+     "b3"
+    ],
+    "about_img": "b6",
+    "about_img2": "b4",
+    "cta_img": "b2",
+    "promo": "Küchen nach Maß",
+    "gal": [
+     "b3",
+     "b4",
+     "b6",
+     "b7"
+    ],
+    "order": [
+     "svc",
+     "facts",
+     "about",
+     "gal",
+     "steps",
+     "cta"
+    ],
+    "steps_cls": "tone"
+   }
+  }
+ ]
+}
