@@ -1,0 +1,4579 @@
+{
+ "runde": "2026-11-Mittelstand-Runde6",
+ "template": "v5",
+ "firmen": [
+  {
+   "slug": "euro-pizzeria",
+   "theme": "gastro",
+   "firma": "Euro Pizzeria Bersenbrück",
+   "kurzname": "Euro Pizzeria",
+   "website": "https://www.europizzeria-bersenbrueck.de",
+   "telefon": "05439 808530",
+   "email": "",
+   "adresse": "Bramscher Straße 45, 49593 Bersenbrück",
+   "siegel": [
+    "Pizza, Kebab und Salate frisch zubereitet"
+   ],
+   "tag": "Pizzeria und Kebab in Bersenbrück",
+   "h1": "Frisch aus dem Ofen. <span>Mitten in Bersenbrück.</span>",
+   "sub": "Pizza, Calzone, Kebab vom Drehspieß und knackige Salate – zum Abholen, Liefern oder direkt bei uns genießen.",
+   "trust": [
+    [
+     "Pizza",
+     "aus dem Steinofen"
+    ],
+    [
+     "Kebab",
+     "vom Drehspieß"
+    ],
+    [
+     "Liefern",
+     "oder abholen"
+    ]
+   ],
+   "leist_h2": "Worauf haben Sie heute Lust?",
+   "leistungen": [
+    "Pizza",
+    "Calzone",
+    "Kebab vom Drehspieß",
+    "Überbackene Kebabgerichte",
+    "Salate"
+   ],
+   "about_h2": "Ihre Pizzeria an der Bramscher Straße.",
+   "ueber": [
+    "Bei uns kommt alles frisch auf den Teller: Pizza mit Tomatensauce, Käse und Oregano, Kebab vom Drehspieß und Salate mit Ihrem Lieblingsdressing.",
+    "Bestellen Sie direkt bei uns – telefonisch, zum Abholen oder zur Lieferung nach Hause."
+   ],
+   "checks": [
+    "Über 40 Pizzasorten",
+    "Kebab, Dürüm und überbackene Gerichte",
+    "Direkt bestellen statt über Portale"
+   ],
+   "inhaber_name": "Team der Euro Pizzeria",
+   "inhaber_rolle": "Bersenbrück",
+   "logo_url": "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r6/local/logo_europizza.png",
+   "min_w": 500,
+   "bild_urls": [
+    "https://images.unsplash.com/photo-1593504049359-74330189a345?w=1800&q=85&fm=jpg",
+    "https://images.unsplash.com/photo-1716237388087-4e47595a6615?w=1800&q=85&fm=jpg",
+    "https://images.unsplash.com/photo-1571757392712-7c1052de7ce5?w=1800&q=85&fm=jpg",
+    "https://images.unsplash.com/photo-1627626775846-122b778965ae?w=1800&q=85&fm=jpg",
+    "https://images.unsplash.com/photo-1621538997517-58ce53933faa?w=1800&q=85&fm=jpg",
+    "https://images.unsplash.com/photo-1494346480775-936a9f0d0877?w=1800&q=85&fm=jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "Euro Pizzeria Bersenbrück",
+     "Bramscher Straße 45",
+     "49593 Bersenbrück"
+    ],
+    "anrede": "Sehr geehrte Damen und Herren,",
+    "problem": "dass Ihre Website von Lieferando betrieben wird – Ihre Gäste landen dort auf einer Bestellseite, die nicht Ihnen gehört und auf der Sie jedes Mal Gebühren zahlen",
+    "suche": "Pizzeria"
+   },
+   "v5": {
+    "soft": true,
+    "r": "999px",
+    "r2": "28px",
+    "svc_cls": "orb",
+    "steps_cls": "tone orb",
+    "facts_cls": "dark",
+    "fonts": "family=Fraunces:opsz,wght@9..144,600;800&family=Rubik:wght@400;500;600",
+    "fh": "'Fraunces',Georgia,serif",
+    "fb": "'Rubik',system-ui,sans-serif",
+    "hw": 800,
+    "hls": "-0.02em",
+    "hlh": 0.96,
+    "h1vw": 5.4,
+    "h1max": 6.2,
+    "c": {
+     "bg": "#FFF8F0",
+     "ink": "#13235E",
+     "acc": "#D01818",
+     "acc2": "#F5C400",
+     "soft": "#FDECD9",
+     "paper": "#FFFFFF",
+     "hbg": "#FFF8F0",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#13235E",
+     "star": "#F5C400"
+    },
+    "hero": "mask",
+    "shape": "coin",
+    "mclip": "circle(27% at 73% 52%)",
+    "hero_img": "b1",
+    "hero_slides": [
+     "b1",
+     "b3",
+     "b5"
+    ],
+    "logo_h": 60,
+    "svc": "rows",
+    "svc_imgs": [
+     "b1",
+     "b4",
+     "b2"
+    ],
+    "rows_intro": "Alles frisch zubereitet – bestellen Sie direkt bei uns, ohne Umweg über Portale.",
+    "rws": [
+     [
+      "b1",
+      "Pizza aus dem Ofen",
+      "Klassiker wie Margherita, Salami oder Quattro Stagioni und Spezialitäten mit Kebab, Sucuk oder Meeresfrüchten.",
+      [
+       "Margherita",
+       "Kebab-Pizza",
+       "Quattro Stagioni"
+      ],
+      "Pizza",
+      "b5"
+     ],
+     [
+      "b4",
+      "Klassiker und Kebab",
+      "Margherita, Salami, Tonno – und saftiges Kebabfleisch im Brot, als Teller oder überbacken mit Sauce Hollandaise.",
+      [
+       "Margherita",
+       "Döner",
+       "Dürüm"
+      ],
+      "Klassiker"
+     ],
+     [
+      "b2",
+      "Calzone und Salate",
+      "Gefüllte Calzone und frische Salate mit Thunfisch, Schinken, Hirtenkäse oder Kebab – mit Dressing nach Wahl.",
+      [
+       "Calzone",
+       "Salat",
+       "Vegetarisch"
+      ],
+      "Frisch"
+     ]
+    ],
+    "blend": [
+     "b3",
+     "b6",
+     "b1",
+     "Bestellen Sie direkt bei uns.",
+     "Anrufen, abholen, genießen – ohne Umweg über Lieferportale."
+    ],
+    "about_img": "b6",
+    "about_img2": "b2",
+    "cta_img": "b3",
+    "promo": "Direkt bestellen",
+    "promo_tag": "Ohne Portal",
+    "promo_sub": "Rufen Sie an und holen Sie Ihre Pizza frisch ab – schnell und ohne Umweg.",
+    "promo_img": "b1",
+    "promo_btn": "Jetzt anrufen und bestellen",
+    "stock": true,
+    "bot_name": "Toni",
+    "steps_h2": "So kommt Ihre Pizza zu Ihnen.",
+    "order": [
+     "svc",
+     "blend",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "pos": {},
+    "cta_h2": "Hunger? Rufen Sie an.",
+    "cta_p": "Bestellen Sie direkt bei uns – zum Abholen oder Liefern. Frisch zubereitet, ohne Umweg über Portale.",
+    "row_link": "Jetzt bestellen",
+    "rev_sub": "Stimmen unserer Gäste.",
+    "form_q": "Was möchten Sie bestellen?",
+    "cta_btn": "Jetzt anrufen und bestellen"
+   },
+   "steps": [
+    [
+     "Anrufen",
+     "Sie bestellen telefonisch direkt bei uns."
+    ],
+    [
+     "Zubereiten",
+     "Wir backen Ihre Pizza frisch."
+    ],
+    [
+     "Abholen oder liefern",
+     "Sie holen ab oder lassen liefern."
+    ],
+    [
+     "Genießen",
+     "Guten Appetit!"
+    ]
+   ]
+  },
+  {
+   "slug": "rudis-fahrschule",
+   "theme": "laden",
+   "firma": "Rudi's Fahrschule",
+   "kurzname": "Rudi's Fahrschule",
+   "website": "https://www.rudis-fahrschule.de",
+   "telefon": "0176 20201905",
+   "email": "info@rudis-fahrschule.de",
+   "adresse": "Lindenstraße 9, 49593 Bersenbrück",
+   "google": [
+    "5,0",
+    51
+   ],
+   "siegel": [
+    "Mitglied im Fahrlehrerverband Niedersachsen"
+   ],
+   "tag": "Fahrschule in Bersenbrück und Ankum",
+   "h1": "Steig ein. <span>Wir bringen dich ans Ziel.</span>",
+   "sub": "Die moderne Traditionsfahrschule in vierter Generation: Auto, Anhänger und Zweirad – mit geduldigen Fahrlehrern und viel Spaß beim Lernen.",
+   "trust": [
+    [
+     "4.",
+     "Generation"
+    ],
+    [
+     "B, BE",
+     "und alle Zweiradklassen"
+    ],
+    [
+     "5,0",
+     "Sterne bei Google"
+    ]
+   ],
+   "leist_h2": "Welchen Führerschein willst du machen?",
+   "leistungen": [
+    "Klasse B und B197",
+    "Anhänger BE und B96",
+    "Motorrad A, A2, A1",
+    "B196 und AM",
+    "Mofa"
+   ],
+   "about_h2": "Fahren lernen macht hier Spaß.",
+   "ueber": [
+    "Gegründet von Rudi (Rüdiger) Staden, heute in vierter Generation: Unsere Fahrlehrer Ingo, Julian und Volker begleiten dich bis zur bestandenen Prüfung.",
+    "Theorie und Praxis in Bersenbrück und Ankum – geduldig, entspannt und mit modernen Fahrschulautos."
+   ],
+   "checks": [
+    "Fahrschulen in Bersenbrück und Ankum",
+    "Geduldige Fahrlehrer, auch für Nervöse",
+    "Viele bestehen beim ersten Versuch"
+   ],
+   "inhaber_name": "Ingo",
+   "inhaber_rolle": "Fahrlehrer bei Rudi's Fahrschule",
+   "inhaber_idx": 1,
+   "logo_url": "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r6/local/logo_rudis2.png",
+   "logo_keep": true,
+   "min_w": 500,
+   "bild_urls": [
+    "https://www.rudis-fahrschule.de/s/img/background.jpg?1735362253",
+    "https://www.rudis-fahrschule.de/s/cc_images/teaserbox_41840892.jpg",
+    "https://www.rudis-fahrschule.de/s/cc_images/teaserbox_21684288.jpg",
+    "https://www.rudis-fahrschule.de/s/cc_images/teaserbox_41840899.jpg",
+    "https://www.rudis-fahrschule.de/s/cc_images/teaserbox_41840904.jpg",
+    "https://www.rudis-fahrschule.de/s/cc_images/cache_21684288.jpg"
+   ],
+   "reviews": [
+    [
+     "Das ganze Team ist unglaublich freundlich, geduldig und professionell. Die Fahrstunden haben Spaß gemacht und ich habe mich von Anfang an sicher gefühlt.",
+     "“"
+    ],
+    [
+     "Super Fahrschule! Mein Fahrlehrer ist auf meine Bedürfnisse eingegangen und hat mich perfekt vorbereitet. Hat richtig Spaß gemacht.",
+     "“"
+    ],
+    [
+     "Gut vorbereitet auf B und BE – beide Prüfungen beim ersten Versuch bestanden. Der Unterricht ist informativ und macht Spaß.",
+     "“"
+    ],
+    [
+     "Die beste Entscheidung. Ich empfehle die Fahrschule jedem, besonders wenn man nervös ist.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Rudi's Fahrschule",
+     "Lindenstraße 9",
+     "49593 Bersenbrück"
+    ],
+    "anrede": "Sehr geehrte Damen und Herren,",
+    "problem": "dass Fahrschüler dort zuerst einen langen Willkommenstext lesen und Ihre 5-Sterne-Bewertungen gar nicht sehen",
+    "suche": "Fahrschule"
+   },
+   "v5": {
+    "soft": true,
+    "r": "999px",
+    "r2": "28px",
+    "svc_cls": "orb",
+    "steps_cls": "tone orb",
+    "facts_cls": "dark",
+    "fonts": "family=Bricolage+Grotesque:opsz,wght@12..96,600;800&family=Figtree:wght@400;500;600",
+    "fh": "'Bricolage Grotesque',sans-serif",
+    "fb": "'Figtree',system-ui,sans-serif",
+    "hw": 800,
+    "hls": "-0.03em",
+    "hlh": 0.95,
+    "h1vw": 5.4,
+    "h1max": 6.4,
+    "c": {
+     "bg": "#FFFDF2",
+     "ink": "#1E1F5C",
+     "acc": "#1E1F5C",
+     "acc2": "#F04060",
+     "soft": "#FFF5B5",
+     "paper": "#FFFFFF",
+     "hbg": "#F7E85A",
+     "hink": "#1E1F5C",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#F04060",
+     "onctabtn": "#FFFFFF",
+     "frame": "#1E1F5C",
+     "star": "#F04060"
+    },
+    "hero": "window",
+    "hero_img": "b1",
+    "hero_slides": [
+     "b1",
+     "b2",
+     "b3"
+    ],
+    "frame_w": 22,
+    "logo_h": 56,
+    "svc": "rows",
+    "svc_imgs": [
+     "b3",
+     "b4",
+     "b6"
+    ],
+    "rows_intro": "Ob Auto, Anhänger oder Motorrad: Wir bilden dich für alle gängigen Klassen aus.",
+    "rws": [
+     [
+      "b3",
+      "Klasse B und B197",
+      "Der Klassiker: Auto fahren lernen, entspannt und sicher – auf Wunsch mit B197 für Schalt- und Automatikwagen.",
+      [
+       "B",
+       "B197",
+       "BF17"
+      ],
+      "Auto",
+      "b5"
+     ],
+     [
+      "b4",
+      "Anhänger BE und B96",
+      "Wohnwagen, Pferdeanhänger oder Bootstrailer: Mit BE oder B96 bist du sicher unterwegs.",
+      [
+       "BE",
+       "B96"
+      ],
+      "Anhänger"
+     ],
+     [
+      "b6",
+      "Zweirad: A, A2, A1, B196",
+      "Vom Mofa bis zum großen Motorrad – wir bringen dich sicher auf zwei Rädern auf die Straße.",
+      [
+       "A",
+       "A2",
+       "A1",
+       "B196",
+       "AM"
+      ],
+      "Zweirad"
+     ]
+    ],
+    "about_img": "b2",
+    "about_img2": "b5",
+    "cta_img": "b1",
+    "promo": "Jetzt anmelden",
+    "promo_tag": "Neuer Kurs",
+    "promo_sub": "Theorie startet regelmäßig – sichere dir deinen Platz in Bersenbrück oder Ankum.",
+    "promo_img": "b2",
+    "promo_btn": "Jetzt anrufen",
+    "bot_name": "Rudi",
+    "robot_tag": "Dein Fahrschul-Guide",
+    "robot_hello": "Hey! Ich bin Rudi, der digitale Guide der Fahrschule. Soll ich dir kurz alles zeigen?",
+    "bot_hi": "Hey! Ich bin Rudi. Wobei kann ich dir helfen?",
+    "tour_l": "Hier siehst du alle Führerscheinklassen – von B bis Motorrad.",
+    "tour_r": "51 Fahrschüler geben uns 5 von 5 Sternen bei Google.",
+    "tour_u": "Hier lernst du unser Team kennen.",
+    "tour_k": "Und hier meldest du dich an. Ruf einfach an unter 0176 20201905.",
+    "steps_h2": "So kommst du zum Führerschein.",
+    "rev_h2": "51 Bewertungen. Alle mit 5 Sternen.",
+    "order": [
+     "svc",
+     "reviews",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "pos": {
+     "b2": "50% 30%",
+     "b1": "50% 60%"
+    },
+    "du": true,
+    "cta_h2": "Melde dich jetzt an.",
+    "cta_p": "Ruf uns an oder hinterlass deine Nummer. Wir melden uns und besprechen, welcher Führerschein zu dir passt.",
+    "row_link": "Dafür anmelden",
+    "rev_sub": "Das sagen unsere Fahrschüler.",
+    "form_q": "Welcher Führerschein?",
+    "cta_btn": "Jetzt anmelden"
+   },
+   "steps": [
+    [
+     "Anmelden",
+     "Ruf an oder komm vorbei."
+    ],
+    [
+     "Theorie",
+     "Lernen im Unterricht und mit der App."
+    ],
+    [
+     "Fahrstunden",
+     "Mit geduldigen Fahrlehrern."
+    ],
+    [
+     "Prüfung",
+     "Wir bereiten dich perfekt vor."
+    ]
+   ]
+  },
+  {
+   "slug": "kartoffelhof-lohbeck",
+   "theme": "hof",
+   "firma": "Kartoffelhof Lohbeck",
+   "kurzname": "Kartoffelhof Lohbeck",
+   "website": "https://www.hof-lohbeck.de",
+   "telefon": "05439 2209",
+   "email": "info@hof-lohbeck.de",
+   "adresse": "Lohbecker Straße 106, 49593 Bersenbrück",
+   "google": [
+    "4,7",
+    27
+   ],
+   "siegel": [
+    "Landwirtschaft seit 1371"
+   ],
+   "tag": "Hofladen in Bersenbrück, täglich 8 bis 21 Uhr",
+   "h1": "Seit über 650 Jahren. <span>Frisch vom Feld.</span>",
+   "sub": "Kartoffeln, Eier, Gemüse und regionale Spezialitäten aus 15 Generationen Familienbetrieb – im Hofladen jeden Tag von 8 bis 21 Uhr.",
+   "trust": [
+    [
+     "1371",
+     "Landwirtschaft"
+    ],
+    [
+     "15",
+     "Generationen"
+    ],
+    [
+     "8–21",
+     "Uhr, täglich geöffnet"
+    ]
+   ],
+   "leist_h2": "Was es bei uns gibt.",
+   "leistungen": [
+    "Kartoffeln aus eigenem Anbau",
+    "Eier und Gemüse",
+    "Regionale Spezialitäten",
+    "Kaffee und Eis"
+   ],
+   "about_h2": "Klasse statt Masse.",
+   "ueber": [
+    "Seit mindestens 15 Generationen bauen wir Getreide, Mais und Kartoffeln an. Daraus wächst unsere Verantwortung für die Region.",
+    "Wir setzen auf vielfältige Fruchtfolgen, bienenfreundliche Landwirtschaft und kurze Wege – vom Pflanzen bis zum Verpacken liegt alles in unserer Hand."
+   ],
+   "checks": [
+    "Hofladen täglich 8 bis 21 Uhr",
+    "Bar, mit Karte oder PayPal bezahlen",
+    "Beliebter Halt bei Radtouren"
+   ],
+   "inhaber_name": "Familie Lohbeck",
+   "inhaber_rolle": "Kartoffelhof seit 1371",
+   "inhaber_idx": 9,
+   "logo_url": "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r6/local/logo_lohbeck.png",
+   "min_w": 500,
+   "bild_urls": [
+    "https://fotos.verwaltungsportal.de/seitengenerator/1cd237c93b5dc79c54fa14d4a4835b66221214/gross/landw._seit_._letztes_bild2.jpg",
+    "https://daten.verwaltungsportal.de/dateien/banner/1/1/3/2/8/field-2168030_1920.jpg",
+    "https://fotos.verwaltungsportal.de/seitengenerator/1cd237c93b5dc79c54fa14d4a4835b66221214/gross/begutachtung.jpg",
+    "https://fotos.verwaltungsportal.de/seitengenerator/1cd237c93b5dc79c54fa14d4a4835b66221214/gross/20211209_102430.jpg",
+    "https://fotos.verwaltungsportal.de/seitengenerator/1cd237c93b5dc79c54fa14d4a4835b66221214/gross/annabelle_1.jpg",
+    "https://daten.verwaltungsportal.de/dateien//mypage/8/9/0/7/7/3/Au_enansicht_Hofladen.jpg?v=1633934913",
+    "https://fotos.verwaltungsportal.de/seitengenerator/1cd237c93b5dc79c54fa14d4a4835b66221214/gross/getreideernte_1973.jpg",
+    "https://daten.verwaltungsportal.de/dateien/menuAdministration/1/3/3/9/7/4/Titelseite_4.jpg",
+    "https://daten.verwaltungsportal.de/dateien/menuAdministration/1/3/3/7/8/0/Startseite.jpg",
+    "https://fotos.verwaltungsportal.de/seitengenerator/1cd237c93b5dc79c54fa14d4a4835b66221214/gross/erster_trecker.jpg",
+    "https://fotos.verwaltungsportal.de/seitengenerator/1cd237c93b5dc79c54fa14d4a4835b66221214/gross/belana.jpg"
+   ],
+   "reviews": [
+    [
+     "Toller Hofladen! Große Auswahl inklusive Kaffee, Keksen und Eis – perfekt für eine Pause bei der Radtour.",
+     "“"
+    ],
+    [
+     "Toller Hofladen mit fantastischen Produkten zu fairen Preisen. Man kann sogar draußen einen Kaffee trinken.",
+     "“"
+    ],
+    [
+     "Käse, Kartoffeln, Zwiebeln, Eier, saisonales Gemüse. Bezahlen mit Karte ist einfach – und abends lange geöffnet.",
+     "“"
+    ],
+    [
+     "Die Qualität ist top. Wir waren im Urlaub in der Nähe und mussten zweimal hin, weil es so gut ist.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Kartoffelhof Lohbeck",
+     "Lohbecker Straße 106",
+     "49593 Bersenbrück"
+    ],
+    "anrede": "Sehr geehrte Familie Lohbeck,",
+    "problem": "dass Ihre wunderbare Geschichte seit 1371 dort im Text versteckt ist und Besucher am Handy zuerst Cookie-Hinweise und kleine Bilder sehen",
+    "suche": "Hofladen"
+   },
+   "v5": {
+    "soft": true,
+    "r": "999px",
+    "r2": "28px",
+    "svc_cls": "orb",
+    "steps_cls": "tone orb",
+    "facts_cls": "dark",
+    "fonts": "family=Bitter:wght@500;700;800&family=Nunito+Sans:wght@400;600;700",
+    "fh": "'Bitter',Georgia,serif",
+    "fb": "'Nunito Sans',system-ui,sans-serif",
+    "hw": 800,
+    "hls": "-0.02em",
+    "hlh": 0.98,
+    "h1vw": 5.6,
+    "h1max": 6.4,
+    "c": {
+     "bg": "#F8F6EE",
+     "ink": "#1E2A1C",
+     "acc": "#108A2E",
+     "acc2": "#C99A3E",
+     "soft": "#E8F0DE",
+     "paper": "#FFFFFF",
+     "hbg": "#1E2A1C",
+     "hink": "#FFFFFF",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#108A2E",
+     "frame": "#F8F6EE",
+     "star": "#E0A21B"
+    },
+    "hero": "panes",
+    "hero_img": "b1",
+    "hero_slides": [
+     "b1",
+     "b2",
+     "b3"
+    ],
+    "cols": 4,
+    "rows": 2,
+    "pane_h": 44,
+    "logo_bg": "glass",
+    "logo_h": 60,
+    "svc": "rows",
+    "svc_imgs": [
+     "b5",
+     "b8",
+     "b4"
+    ],
+    "rows_intro": "Ehrliche Lebensmittel aus der Region – direkt vom Feld in den Hofladen.",
+    "rws": [
+     [
+      "b5",
+      "Kartoffeln aus eigenem Anbau",
+      "Frühkartoffeln, festkochend oder mehligkochend: Bei uns kommt jede Knolle direkt vom eigenen Feld.",
+      [
+       "Frühkartoffeln",
+       "Festkochend",
+       "Mehligkochend"
+      ],
+      "Kartoffeln",
+      "b11"
+     ],
+     [
+      "b8",
+      "Eier, Gemüse und Saison",
+      "Frische Eier, Kürbisse, Zwiebeln und saisonales Gemüse – immer so, wie die Natur es gerade hergibt.",
+      [
+       "Eier",
+       "Kürbis",
+       "Gemüse"
+      ],
+      "Saison"
+     ],
+     [
+      "b4",
+      "Regionale Spezialitäten",
+      "Marmelade, Gurken, Käse, Honig und kleine Leckereien – ideal für zuhause oder als Mitbringsel.",
+      [
+       "Marmelade",
+       "Honig",
+       "Käse"
+      ],
+      "Hofladen"
+     ]
+    ],
+    "blend": [
+     "b1",
+     "b7",
+     "b10",
+     "Landwirtschaft seit 1371.",
+     "Fünfzehn Generationen, ein Hof – und die Verantwortung für die nächsten."
+    ],
+    "about_img": "b6",
+    "about_img2": "b10",
+    "cta_img": "b2",
+    "promo": "Frühkartoffeln sind da",
+    "promo_tag": "Saison",
+    "promo_sub": "Frisch vom Feld in den Hofladen – täglich von 8 bis 21 Uhr.",
+    "promo_img": "b5",
+    "promo_btn": "Jetzt anrufen",
+    "bot_name": "Knolle",
+    "robot_hello": "Hallo! Ich bin Knolle vom Kartoffelhof Lohbeck. Soll ich Ihnen kurz zeigen, was es bei uns gibt?",
+    "rev_h2": "Was Besucher über unseren Hofladen sagen.",
+    "order": [
+     "svc",
+     "reviews",
+     "blend",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "pos": {
+     "b3": "50% 30%"
+    },
+    "cta_h2": "Besuchen Sie uns auf dem Hof.",
+    "cta_p": "Hofladen täglich von 8 bis 21 Uhr. Fragen zu Sorten, Mengen oder Saison? Rufen Sie uns an.",
+    "row_link": "Im Hofladen fragen",
+    "rev_sub": "Stimmen unserer Besucher.",
+    "cta_btn": "Jetzt anrufen"
+   },
+   "steps": [
+    [
+     "Vorbeikommen",
+     "Hofladen täglich von 8 bis 21 Uhr."
+    ],
+    [
+     "Aussuchen",
+     "Kartoffeln, Eier, Gemüse und Spezialitäten."
+    ],
+    [
+     "Bezahlen",
+     "Bar, mit Karte oder PayPal."
+    ],
+    [
+     "Genießen",
+     "Frisch vom Feld auf Ihren Teller."
+    ]
+   ]
+  },
+  {
+   "slug": "impuls-optik",
+   "theme": "laden",
+   "firma": "Impuls Optik GmbH & Co. KG",
+   "kurzname": "Impuls Optik",
+   "website": "https://www.impuls-optik.de",
+   "telefon": "05439 8084170",
+   "email": "info@impuls-optik.de",
+   "adresse": "Bramscher Straße 45, 49593 Bersenbrück",
+   "google": [
+    "4,6",
+    19
+   ],
+   "siegel": [
+    "Visio Office Zentriersystem"
+   ],
+   "tag": "Augenoptiker in Bersenbrück",
+   "h1": "Sehen Sie Ihre Welt. <span>Natürlich und komfortabel.</span>",
+   "sub": "Brillen, Gleitsichtgläser, Sonnen- und Sportbrillen – mit ausführlicher Sehstärkenbestimmung und modernster Zentriertechnik. Auch ohne Termin.",
+   "trust": [
+    [
+     "Ohne",
+     "Termin möglich"
+    ],
+    [
+     "Visio",
+     "Office Zentriertechnik"
+    ],
+    [
+     "Fair",
+     "gute Lösungen müssen nicht teuer sein"
+    ]
+   ],
+   "leist_h2": "Für jeden Blick die richtige Brille.",
+   "leistungen": [
+    "Gleitsichtbrillen",
+    "Brillen für Bildschirm und Arbeit",
+    "Sonnen- und Sportbrillen",
+    "Myopie-Gläser für Kinder",
+    "Vergrößernde Sehhilfen"
+   ],
+   "about_h2": "Wir nehmen uns Zeit für Sie.",
+   "ueber": [
+    "In einer umfangreichen Glasstärkenbestimmung finden wir die Werte, die Ihre Sehansprüche wirklich optimieren.",
+    "Unser Visio Office Zentriersystem misst Ihre persönlichen Zentrier- und Tragebedingungen genau aus – bevor die Gläser eingearbeitet werden."
+   ],
+   "checks": [
+    "Ausführliche Sehstärkenbestimmung",
+    "Ehrliche Beratung statt teuerster Lösung",
+    "Myopie-Management für Kinder"
+   ],
+   "inhaber_name": "Team Impuls Optik",
+   "inhaber_rolle": "Bersenbrück",
+   "logo_url": "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r6/local/logo_impuls.png",
+   "min_w": 600,
+   "bild_urls": [
+    "https://assets.coco-online.de/29351714641367-ZvkDnC6g/sehtest-header_full_w.jpg",
+    "https://assets.coco-online.de/29351714641370-ptGrKCjK/impuls-optik-impressionen7.jpg",
+    "https://assets.coco-online.de/29351714641369-ktmoftsW/impuls-optik-impressionen4.jpg",
+    "https://assets.coco-online.de/29351714641371-JukAef2w/impuls-optik-impressionen9.jpg",
+    "https://assets.coco-online.de/29351714641368-H0c1I4YH/impuls-optik-impressionen10.jpg",
+    "https://assets.coco-online.de/29351714641369-ybjnB51c/impuls-optik-impressionen5.jpg",
+    "https://assets.coco-online.de/29351750397438-vKNYKQYJ/auswahl-brillen-vienna-design.webp",
+    "https://assets.coco-online.de/29351714641371-Zp9dlPYG/impuls-optik-impressionen8.jpg"
+   ],
+   "reviews": [
+    [
+     "Mit meiner Gleitsichtbrille bin ich rundum zufrieden. Die Messungen waren sehr genau, die Beratung kompetent, geduldig und auf mich abgestimmt.",
+     "“"
+    ],
+    [
+     "Persönlicher, ausgezeichneter Service. Der Inhaber ist sehr freundlich, nimmt sich Zeit und überzeugt mit Fachwissen.",
+     "“"
+    ],
+    [
+     "Seit Jahren komme ich hierher, obwohl ich nicht mehr in Bersenbrück wohne. Ehrliche Beratung – nicht das teuerste Modell, sondern das passende.",
+     "“"
+    ],
+    [
+     "Nach einer ruhigen, gründlichen Augenmessung habe ich hier eine sehr kompetente Beratung bekommen.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Impuls Optik GmbH & Co. KG",
+     "Bramscher Straße 45",
+     "49593 Bersenbrück"
+    ],
+    "anrede": "Sehr geehrte Damen und Herren,",
+    "problem": "dass Besucher dort zuerst eine große Cookie-Box und Preislisten sehen, bevor sie erfahren, wie gründlich Sie beraten",
+    "suche": "Optiker"
+   },
+   "v5": {
+    "soft": true,
+    "r": "999px",
+    "r2": "28px",
+    "svc_cls": "orb",
+    "steps_cls": "tone orb",
+    "facts_cls": "dark",
+    "fonts": "family=Manrope:wght@400;500;600;800&family=Instrument+Serif:ital@0;1",
+    "fh": "'Manrope',system-ui,sans-serif",
+    "fb": "'Manrope',system-ui,sans-serif",
+    "hw": 800,
+    "hls": "-0.04em",
+    "hlh": 0.95,
+    "h1vw": 5.2,
+    "h1max": 6,
+    "c": {
+     "bg": "#F6F7F2",
+     "ink": "#2E3134",
+     "acc": "#5E6366",
+     "acc2": "#C9DA2B",
+     "soft": "#EEF3D2",
+     "paper": "#FFFFFF",
+     "hbg": "#F6F7F2",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#2E3134",
+     "onctabtn": "#E2F04A",
+     "star": "#E0A21B"
+    },
+    "hero": "mask",
+    "shape": "coin",
+    "mclip": "circle(27% at 73% 52%)",
+    "hero_img": "b1",
+    "hero_slides": [
+     "b1",
+     "b2",
+     "b3"
+    ],
+    "logo_h": 46,
+    "svc": "rows",
+    "svc_imgs": [
+     "b2",
+     "b5",
+     "b7"
+    ],
+    "rows_intro": "Unser Angebot umfasst alle Bereiche moderner Augenoptik – von der Fernbrille bis zur vergrößernden Sehhilfe.",
+    "rws": [
+     [
+      "b2",
+      "Gleitsicht und Einstärken",
+      "Präzise vermessen, sauber zentriert: Gläser mit Superentspiegelung und Hartschicht für entspanntes Sehen.",
+      [
+       "Gleitsicht",
+       "Einstärken",
+       "Bildschirm"
+      ],
+      "Brillengläser",
+      "b8"
+     ],
+     [
+      "b5",
+      "Fassungen für jeden Stil",
+      "Große Auswahl moderner Fassungen, zum Beispiel aus der Kollektion Vienna Design.",
+      [
+       "Vienna Design",
+       "Sonnenbrille",
+       "Sportbrille"
+      ],
+      "Fassungen"
+     ],
+     [
+      "b7",
+      "Myopie-Gläser für Kinder",
+      "Spezielle Brillengläser können fortschreitende Kurzsichtigkeit bei Kindern deutlich verlangsamen.",
+      [
+       "Kinder",
+       "Myopie",
+       "Beratung"
+      ],
+      "Kinder"
+     ]
+    ],
+    "rows_more": [
+     "Vergrößernde Sehhilfen",
+     "Kontaktlinsen-Beratung"
+    ],
+    "about_img": "b4",
+    "about_img2": "b6",
+    "cta_img": "b2",
+    "promo": "Ohne Termin vorbeikommen",
+    "promo_tag": "Bersenbrück",
+    "promo_sub": "Mo bis Fr 9 bis 13 Uhr – wir nehmen uns Zeit für Ihre Augen.",
+    "promo_img": "b3",
+    "bot_name": "Iris",
+    "robot_hello": "Hallo! Ich bin Iris von Impuls Optik. Soll ich Sie kurz durch unser Angebot führen?",
+    "rev_h2": "Kunden über Impuls Optik.",
+    "order": [
+     "svc",
+     "reviews",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "pos": {
+     "b1": "30% 50%"
+    },
+    "cta_h2": "Wir nehmen uns Zeit für Ihre Augen.",
+    "cta_p": "Kommen Sie ohne Termin vorbei oder vereinbaren Sie einen Termin für die ausführliche Sehstärkenbestimmung.",
+    "row_link": "Dazu beraten lassen",
+    "cta_btn": "Jetzt Termin anfragen"
+   },
+   "steps": [
+    [
+     "Vorbeikommen",
+     "Mit oder ohne Termin."
+    ],
+    [
+     "Sehtest",
+     "Ausführliche Sehstärkenbestimmung."
+    ],
+    [
+     "Auswählen",
+     "Fassung und Gläser, ehrlich beraten."
+    ],
+    [
+     "Zentrieren",
+     "Präzise mit Visio Office – dann abholen."
+    ]
+   ]
+  },
+  {
+   "slug": "gartenbau-plois",
+   "theme": "garten",
+   "firma": "Gartenbau Plois",
+   "kurzname": "Gartenbau Plois",
+   "website": "https://www.baumschule-plois.de",
+   "telefon": "05439 2526",
+   "email": "info@gartenbau-plois.de",
+   "adresse": "Wehberger Straße 21, 49593 Bersenbrück",
+   "google": [
+    "4,7",
+    21
+   ],
+   "siegel": [
+    "Garten- und Landschaftsbau, Gartencenter und Baumschule"
+   ],
+   "tag": "Gartenbau in Bersenbrück-Woltrup",
+   "h1": "Entdecken Sie Ihren <span>Traumgarten.</span>",
+   "sub": "Planung, Neuanlage und Pflege vom Gartenbau-Team – dazu Gartencenter und Baumschule mit Pflanzen in bester Qualität.",
+   "trust": [
+    [
+     "Planung",
+     "bis Ausführung"
+    ],
+    [
+     "Baumschule",
+     "mit großer Auswahl"
+    ],
+    [
+     "Mo–Sa",
+     "geöffnet"
+    ]
+   ],
+   "leist_h2": "Alles für Ihren Garten.",
+   "leistungen": [
+    "Gartenplanung",
+    "Garten- und Landschaftsbau",
+    "Pflasterarbeiten",
+    "Gartencenter",
+    "Baumschule",
+    "Gartenpflege"
+   ],
+   "about_h2": "Hand in Hand mit Ihnen.",
+   "ueber": [
+    "Ihr Garten ist in die Jahre gekommen? Sie planen eine komplette Neuanlage oder brauchen Hilfe bei der Pflege? Unser Gartenbau-Team steht Ihnen mit Rat und Tat zur Seite.",
+    "Von der Planung über die Beratung bis zur Ausführung arbeiten wir mit Ihnen Hand in Hand – ob nach unserem Entwurf oder Ihren Ideen."
+   ],
+   "checks": [
+    "Planung und Ausführung aus einer Hand",
+    "Pflanzen aus der eigenen Baumschule",
+    "Mo bis Fr 8 bis 18, Sa 8 bis 13 Uhr"
+   ],
+   "inhaber_name": "Gartenbau Plois",
+   "inhaber_rolle": "Bersenbrück",
+   "logo_url": "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r6/local/logo_plois.png",
+   "min_w": 500,
+   "bild_urls": [
+    "https://www.baumschule-plois.de/images/2023/12/08/dscn2849.jpg",
+    "https://www.baumschule-plois.de/images/2023/12/01/dsc_2670.jpg",
+    "https://www.baumschule-plois.de/images/2023/12/08/img-20190501-wa0009.jpg",
+    "https://www.baumschule-plois.de/images/2023/12/04/bild_gartencenter20.png",
+    "https://www.baumschule-plois.de/images/2023/12/01/bild_garten_landschaftsbau29.png",
+    "https://www.baumschule-plois.de/images/2023/12/01/bild_garten_landschaftsbau6.png",
+    "https://www.baumschule-plois.de/images/2023/12/01/bild_garten_landschaftsbau2.png",
+    "https://www.baumschule-plois.de/images/2023/12/01/bild_garten_landschaftsbau24.png",
+    "https://www.baumschule-plois.de/images/2023/12/04/bild_Uber_uns2.png"
+   ],
+   "reviews": [
+    [
+     "Große Auswahl an Pflanzen aller Art, alle in sehr guter Qualität und zu fairen Preisen. Bäume und Sträucher vom letzten Jahr sind prächtig gewachsen.",
+     "“"
+    ],
+    [
+     "Gemüsepflanzen geholt – ich konnte mir alles in Ruhe anschauen und bin begeistert. Wer Rat braucht, bekommt ihn vom Fachpersonal.",
+     "“"
+    ],
+    [
+     "Schöne Pflanzen, gute Auswahl. 200 Blutbuchen gekauft – fast alle sind wunderbar angewachsen.",
+     "“"
+    ],
+    [
+     "Eine riesige Vielfalt an Pflanzen und immer eine hervorragende Beratung.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Gartenbau Plois",
+     "Wehberger Straße 21",
+     "49593 Bersenbrück"
+    ],
+    "anrede": "Sehr geehrte Damen und Herren,",
+    "problem": "dass Ihre schönen Gartenprojekte dort nur als kleine Bilder in einer Galerie erscheinen und der Startbereich vor allem einen dunklen Slider zeigt",
+    "suche": "Gartenbau"
+   },
+   "v5": {
+    "soft": true,
+    "r": "999px",
+    "r2": "28px",
+    "svc_cls": "orb",
+    "steps_cls": "tone orb",
+    "facts_cls": "dark",
+    "fonts": "family=Gloock&family=Plus+Jakarta+Sans:wght@400;500;600",
+    "fh": "'Gloock',Georgia,serif",
+    "fb": "'Plus Jakarta Sans',system-ui,sans-serif",
+    "hw": 400,
+    "hls": "-0.01em",
+    "hlh": 1.0,
+    "h1vw": 5.6,
+    "h1max": 6.6,
+    "c": {
+     "bg": "#F5F8EF",
+     "ink": "#2E3530",
+     "acc": "#5E9E2B",
+     "acc2": "#A7CF6A",
+     "soft": "#E6F0D6",
+     "paper": "#FFFFFF",
+     "hbg": "#2E3530",
+     "hink": "#FFFFFF",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#2E3530",
+     "onctabtn": "#C9EB8E",
+     "star": "#E0A21B"
+    },
+    "hero": "mask",
+    "shape": "blob",
+    "mclip": "inset(0 4% 0 4% round 48% 52% 46% 54% / 26% 30% 22% 26%)",
+    "hero_img": "b1",
+    "hero_slides": [
+     "b1",
+     "b2",
+     "b4"
+    ],
+    "logo_bg": "glass",
+    "logo_h": 52,
+    "svc": "rows",
+    "svc_imgs": [
+     "b2",
+     "b5",
+     "b1"
+    ],
+    "rows_intro": "Ob Neuanlage, Umgestaltung oder Pflege: Wir finden mit Ihnen das Passende.",
+    "rws": [
+     [
+      "b2",
+      "Garten- und Landschaftsbau",
+      "Teiche, Terrassen, Wege und Beete – wir verwandeln Ihr Grundstück in einen Garten zum Wohlfühlen.",
+      [
+       "Neuanlage",
+       "Umgestaltung",
+       "Teich"
+      ],
+      "Galabau",
+      "b6"
+     ],
+     [
+      "b5",
+      "Pflaster und Terrassen",
+      "Gepflasterte Wege, Einfahrten und Terrassen aus Klinker oder Naturstein – sauber verlegt.",
+      [
+       "Klinker",
+       "Naturstein",
+       "Terrasse"
+      ],
+      "Pflaster"
+     ],
+     [
+      "b1",
+      "Gartencenter und Baumschule",
+      "Gehölze, Stauden und Saisonpflanzen in Gärtnerqualität – mit Beratung direkt vor Ort.",
+      [
+       "Gehölze",
+       "Stauden",
+       "Beratung"
+      ],
+      "Pflanzen",
+      "b9"
+     ]
+    ],
+    "blend": [
+     "b3",
+     "b4",
+     "b7",
+     "Vom Plan zum Traumgarten.",
+     "Planung, Ausführung und Pflanzen – alles aus einer Hand in Bersenbrück."
+    ],
+    "about_img": "b4",
+    "about_img2": "b8",
+    "cta_img": "b2",
+    "promo": "Garten neu gestalten?",
+    "promo_tag": "Beratung",
+    "promo_sub": "Wir kommen vorbei, hören zu und planen mit Ihnen Ihren Traumgarten.",
+    "promo_img": "b2",
+    "bot_name": "Flora",
+    "robot_hello": "Hallo! Ich bin Flora von Gartenbau Plois. Soll ich Sie kurz durch unser Angebot führen?",
+    "rev_h2": "Kunden über Gartenbau Plois.",
+    "order": [
+     "svc",
+     "reviews",
+     "blend",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "pos": {},
+    "cta_h2": "Lassen Sie uns über Ihren Garten sprechen.",
+    "cta_p": "Rufen Sie uns an. Wir kommen vorbei, hören zu und planen mit Ihnen den Garten, der zu Ihnen passt.",
+    "cta_btn": "Kostenlos beraten lassen"
+   }
+  },
+  {
+   "slug": "hotel-hilker",
+   "theme": "hotel",
+   "firma": "Hotel Hilker",
+   "kurzname": "Hotel Hilker",
+   "website": "https://hotel-hilker.de",
+   "telefon": "05439 60750",
+   "email": "info@hotel-hilker.de",
+   "adresse": "Bramscher Straße 58, 49593 Bersenbrück",
+   "google": [
+    "4,7",
+    501
+   ],
+   "siegel": [
+    "Seit 100 Jahren in Familienbesitz"
+   ],
+   "tag": "Hotel, Gasthof und Boardinghouse in Bersenbrück",
+   "h1": "Zu Gast bei <span>Familie Hilker.</span>",
+   "sub": "Hotel, Gasthof und Boardinghouse im Herzen des Osnabrücker Landes – Ihr Startpunkt für Rad- und Wanderurlaub im Hasetal.",
+   "trust": [
+    [
+     "100",
+     "Jahre in Familienhand"
+    ],
+    [
+     "4,7",
+     "Sterne, 501 Bewertungen"
+    ],
+    [
+     "Hasetal",
+     "vor der Haustür"
+    ]
+   ],
+   "leist_h2": "Bleiben Sie eine Nacht. Oder länger.",
+   "leistungen": [
+    "Hotelzimmer",
+    "Boardinghouse",
+    "Gasthof",
+    "Aktivurlaub im Hasetal",
+    "Feiern und Tagungen"
+   ],
+   "about_h2": "Gastfreundschaft aus Leidenschaft.",
+   "ueber": [
+    "Unser Haus ist seit 100 Jahren in Familienbesitz und wurde immer wieder modernisiert – damit Sie sich bei uns rundum wohlfühlen.",
+    "Ob Geschäftsreise, Radurlaub oder Familienbesuch: Familie Hilker und das ganze Team heißen Sie herzlich willkommen."
+   ],
+   "checks": [
+    "Moderne Zimmer und Apartments",
+    "Gasthof mit regionaler Küche",
+    "Ideal für Rad- und Wandertouren"
+   ],
+   "inhaber_name": "Familie Hilker",
+   "inhaber_rolle": "Gastgeber",
+   "inhaber_idx": 0,
+   "logo_url": "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r6/local/logo_hilker.png",
+   "min_w": 600,
+   "bild_urls": [
+    "https://hotel-hilker.de/wp-content/uploads/2024/07/happy-family-checking-in-hotel-at-reception-desk-2023-11-27-05-19-54-utc-scaled.jpg",
+    "https://hotel-hilker.de/wp-content/uploads/2025/10/rennrad-1536x1025.png",
+    "https://hotel-hilker.de/wp-content/uploads/2024/06/®2_1801-scaled.jpg",
+    "https://hotel-hilker.de/wp-content/uploads/2026/08/®2_1654-scaled-1.jpg",
+    "https://hotel-hilker.de/wp-content/uploads/2024/07/IMG_6198-1536x1152.jpg",
+    "https://hotel-hilker.de/wp-content/uploads/2025/10/burg-1536x1150.png",
+    "https://hotel-hilker.de/wp-content/uploads/2024/06/dlh15sDQ.jpeg",
+    "https://hotel-hilker.de/wp-content/uploads/2026/08/®2_1586-scaled-1.jpg",
+    "https://hotel-hilker.de/wp-content/uploads/2024/06/man-running-and-fitness-on-forest-path-nature-woods-bridge-or-countryside-environment-for-health-.jpg",
+    "https://hotel-hilker.de/wp-content/uploads/2024/05/®2_8645-scaled.jpg"
+   ],
+   "reviews": [
+    [
+     "Gute Atmosphäre und das Essen war ebenfalls super!",
+     "“"
+    ],
+    [
+     "Alles gut – und die Menschen sehr freundlich.",
+     "“"
+    ],
+    [
+     "Ein guter Ort für Essen und gesellige Abende.",
+     "“"
+    ],
+    [
+     "Top!",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Hotel Hilker",
+     "Herrn Thomas Hilker",
+     "Bramscher Straße 58",
+     "49593 Bersenbrück"
+    ],
+    "anrede": "Sehr geehrter Herr Hilker,",
+    "problem": "dass Gäste dort zuerst einen englischen Slider und eine große Cookie-Box sehen, bevor sie Ihr Haus und Ihre Familie kennenlernen",
+    "suche": "Hotel"
+   },
+   "v5": {
+    "soft": true,
+    "r": "999px",
+    "r2": "28px",
+    "svc_cls": "orb",
+    "steps_cls": "tone orb",
+    "facts_cls": "dark",
+    "fonts": "family=Gilda+Display&family=Nunito+Sans:wght@400;600;700",
+    "fh": "'Gilda Display',Georgia,serif",
+    "fb": "'Nunito Sans',system-ui,sans-serif",
+    "hw": 400,
+    "hls": "-0.01em",
+    "hlh": 1.0,
+    "h1vw": 5.6,
+    "h1max": 6.6,
+    "c": {
+     "bg": "#FBF7F2",
+     "ink": "#2B1A17",
+     "acc": "#8A2414",
+     "acc2": "#C9A46A",
+     "soft": "#F3E6DA",
+     "paper": "#FFFFFF",
+     "hbg": "#2B1A17",
+     "hink": "#FFFFFF",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#8A2414",
+     "frame": "#FBF7F2",
+     "star": "#C9A46A"
+    },
+    "hero": "portrait",
+    "logo_bg": "glass",
+    "logo_h": 56,
+    "svc": "rows",
+    "svc_imgs": [
+     "b3",
+     "b5",
+     "b4"
+    ],
+    "rows_intro": "Ob für eine Nacht oder mehrere Wochen: Bei uns finden Sie das passende Zuhause auf Zeit.",
+    "rws": [
+     [
+      "b3",
+      "Hotelzimmer",
+      "Gemütliche, ruhige Zimmer mit allem, was Sie brauchen – ideal nach einem Tag im Hasetal.",
+      [
+       "Einzelzimmer",
+       "Doppelzimmer",
+       "Frühstück"
+      ],
+      "Hotel",
+      "b7"
+     ],
+     [
+      "b5",
+      "Boardinghouse",
+      "Moderne Apartments für längere Aufenthalte – ein Zuhause fernab von Zuhause.",
+      [
+       "Apartments",
+       "Langzeit",
+       "Monteure"
+      ],
+      "Wohnen"
+     ],
+     [
+      "b4",
+      "Gasthof",
+      "Traditionelle Gastfreundschaft und der Charme des ländlichen Lebens – mit regionaler Küche.",
+      [
+       "Restaurant",
+       "Feiern",
+       "Regional"
+      ],
+      "Gasthof"
+     ]
+    ],
+    "blend": [
+     "b2",
+     "b6",
+     "b9",
+     "Aktivurlaub im Hasetal.",
+     "Radwege, Wanderrouten und Natur – direkt vor der Haustür des Hotels."
+    ],
+    "about_img": "b1",
+    "about_img2": "b8",
+    "cta_img": "b2",
+    "promo": "Radurlaub im Hasetal",
+    "promo_tag": "Aktiv",
+    "promo_sub": "Übernachtung, Frühstück und die schönsten Touren direkt ab Hotel.",
+    "promo_img": "b2",
+    "promo_btn": "Jetzt Zimmer anfragen",
+    "bot_name": "Hasi",
+    "robot_hello": "Herzlich willkommen! Ich bin Hasi, der digitale Concierge vom Hotel Hilker. Soll ich Ihnen kurz das Haus zeigen?",
+    "robot_tag": "Ihr digitaler Concierge",
+    "rev_h2": "501 Gäste. 4,7 Sterne.",
+    "order": [
+     "svc",
+     "blend",
+     "reviews",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "pos": {
+     "b1": "50% 35%"
+    },
+    "cta_h2": "Wir freuen uns auf Ihren Besuch.",
+    "cta_p": "Rufen Sie an oder hinterlassen Sie Ihre Nummer – wir melden uns mit freien Zimmern und Terminen.",
+    "row_link": "Jetzt anfragen",
+    "rev_sub": "Stimmen unserer Gäste.",
+    "form_q": "Was möchten Sie anfragen?",
+    "por_vw": 5.6,
+    "por_max": 6.4,
+    "cta_btn": "Jetzt Zimmer anfragen"
+   },
+   "steps": [
+    [
+     "Anfragen",
+     "Rufen Sie an oder schreiben Sie uns."
+    ],
+    [
+     "Ankommen",
+     "Familie Hilker empfängt Sie persönlich."
+    ],
+    [
+     "Erleben",
+     "Hasetal, Radwege und unser Gasthof."
+    ],
+    [
+     "Wiederkommen",
+     "Wir freuen uns auf Ihren nächsten Besuch."
+    ]
+   ]
+  },
+  {
+   "slug": "era-gym",
+   "theme": "fitness",
+   "firma": "Era Gym Bersenbrück",
+   "kurzname": "Era Gym",
+   "website": "https://www.era-gym.de",
+   "telefon": "05439 6095812",
+   "email": "",
+   "adresse": "Am Tüv 8B, 49593 Bersenbrück",
+   "google": [
+    "4,8",
+    223
+   ],
+   "siegel": [
+    "InBody-Analyse und persönliche Trainings-App"
+   ],
+   "tag": "Fitnessstudio in Bersenbrück",
+   "h1": "Made to be <span>great.</span>",
+   "sub": "Premium-Fitness zu einem fairen Preis: individuelle Betreuung, Trainingspläne auf Basis deiner InBody-Analyse und zertifizierte Trainer, die dich weiterbringen.",
+   "trust": [
+    [
+     "4,8",
+     "Sterne, 223 Bewertungen"
+    ],
+    [
+     "InBody",
+     "Analyse inklusive"
+    ],
+    [
+     "Trainer",
+     "jederzeit für dich da"
+    ]
+   ],
+   "leist_h2": "Alles für deine Fitnessreise.",
+   "leistungen": [
+    "Gerätetraining",
+    "InBody-Analyse",
+    "Persönliche Trainingspläne",
+    "Kurse",
+    "Era Gym Cube"
+   ],
+   "about_h2": "Du stehst im Mittelpunkt.",
+   "ueber": [
+    "Unsere Premium Fitness-, Gesundheits- und Lifestyle-Clubs bieten erstklassige Einrichtungen zu einem erschwinglichen Preis.",
+    "Regelmäßig neue Trainingspläne, umfassende Einweisungen und eine herzliche, familiäre Atmosphäre – an allen Standorten."
+   ],
+   "checks": [
+    "Individuelle Pläne per App",
+    "Zertifizierte Trainer",
+    "Familiäre Atmosphäre"
+   ],
+   "inhaber_name": "Era Gym Team",
+   "inhaber_rolle": "Bersenbrück",
+   "logo_url": "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r6/local/logo_eragym.png",
+   "logo_keep": true,
+   "min_w": 600,
+   "bild_urls": [
+    "https://www.era-gym.de/wp-content/uploads/2022/12/eg_gronau_1-1024x683.jpg",
+    "https://www.era-gym.de/wp-content/uploads/2025/10/herne_2-1024x768.png",
+    "https://www.era-gym.de/wp-content/uploads/2022/12/1J7A4793-1024x683.jpg",
+    "https://www.era-gym.de/wp-content/uploads/2021/03/wechseln.jpeg",
+    "https://www.era-gym.de/wp-content/uploads/2025/03/Era-Cube-Alfhausen-1J7A9426.jpg",
+    "https://www.era-gym.de/wp-content/uploads/2022/12/recke-1024x683.jpeg",
+    "https://www.era-gym.de/wp-content/uploads/2025/03/Era-Cube-Alfhausen.jpg",
+    "https://www.era-gym.de/wp-content/uploads/2026/02/5-1024x765.jpg",
+    "https://www.era-gym.de/wp-content/uploads/2024/03/1J7A4961-1024x683.jpg"
+   ],
+   "reviews": [
+    [
+     "Ein wirklich herausragendes Studio! Die Ausstattung ist top, die Geräte sind immer in einwandfreiem Zustand und es gibt Trainingsmöglichkeiten für jedes Level.",
+     "“"
+    ],
+    [
+     "Tolles Studio, freundliche Trainer und nicht zu voll.",
+     "“"
+    ],
+    [
+     "Die Leute hier sind kompetent und erfahren – das beste Studio, in dem ich je war.",
+     "“"
+    ],
+    [
+     "Ich liebe diesen Ort – immer nette Leute.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Era Gym Bersenbrück",
+     "Am Tüv 8B",
+     "49593 Bersenbrück"
+    ],
+    "anrede": "Sehr geehrte Damen und Herren,",
+    "problem": "dass Besucher dort zuerst Angebote für andere Standorte sehen und das Studio in Bersenbrück erst suchen müssen",
+    "suche": "Fitnessstudio"
+   },
+   "v5": {
+    "soft": true,
+    "r": "4px",
+    "r2": "18px",
+    "svc_cls": "orb",
+    "steps_cls": "tone orb",
+    "facts_cls": "dark",
+    "fonts": "family=Bebas+Neue&family=Barlow:wght@400;500;600;700",
+    "fh": "'Bebas Neue',Impact,sans-serif",
+    "fb": "'Barlow',system-ui,sans-serif",
+    "hw": 400,
+    "hls": "0.01em",
+    "hlh": 0.9,
+    "htt": "uppercase",
+    "h1vw": 8,
+    "h1max": 9,
+    "c": {
+     "bg": "#121212",
+     "ink": "#F2F0EA",
+     "acc": "#E8C040",
+     "acc2": "#B88A1E",
+     "soft": "#1E1E1E",
+     "paper": "#1A1A1A",
+     "hbg": "#0C0C0C",
+     "hink": "#FFFFFF",
+     "onacc": "#121212",
+     "ctabtn": "#E8C040",
+     "onctabtn": "#121212",
+     "star": "#E8C040"
+    },
+    "hero": "mask",
+    "shape": "diag",
+    "mclip": "polygon(62% 0%, 100% 0%, 100% 100%, 46% 100%)",
+    "hero_img": "b1",
+    "hero_slides": [
+     "b1",
+     "b2",
+     "b3"
+    ],
+    "logo_h": 60,
+    "svc": "rows",
+    "svc_imgs": [
+     "b2",
+     "b4",
+     "b6"
+    ],
+    "rows_intro": "Unser Fokus: individuelle Betreuung und Trainingspläne, die auf einer präzisen Analyse basieren.",
+    "rws": [
+     [
+      "b2",
+      "Gerätetraining",
+      "Moderne Kraft- und Cardiogeräte, Freihantelbereich und viel Platz – für jedes Level.",
+      [
+       "Kraft",
+       "Cardio",
+       "Freihantel"
+      ],
+      "Training",
+      "b5"
+     ],
+     [
+      "b4",
+      "InBody-Analyse und App",
+      "Wir messen Muskeln, Fett und Wasser – und dein Trainingsplan kommt direkt in die persönliche App.",
+      [
+       "InBody",
+       "App",
+       "Pläne"
+      ],
+      "Analyse"
+     ],
+     [
+      "b6",
+      "Betreuung durch Trainer",
+      "Zertifizierte Trainer, regelmäßige neue Pläne und Einweisungen – damit du dein Ziel erreichst.",
+      [
+       "Einweisung",
+       "Coaching",
+       "Motivation"
+      ],
+      "Betreuung"
+     ]
+    ],
+    "blend": [
+     "b3",
+     "b8",
+     "b9",
+     "Join the evolution.",
+     "Gemeinsam deine Erfolgsgeschichte schreiben – in Bersenbrück."
+    ],
+    "about_img": "b8",
+    "about_img2": "b7",
+    "cta_img": "b1",
+    "promo": "Probetraining sichern",
+    "promo_tag": "Special Deal",
+    "promo_sub": "Lerne das Studio und die Trainer kennen – mit InBody-Analyse.",
+    "promo_img": "b2",
+    "promo_btn": "Jetzt Probetraining anfragen",
+    "bot_name": "Max",
+    "robot_tag": "Dein Fitness-Guide",
+    "robot_hello": "Hey! Ich bin Max, dein digitaler Guide im Era Gym. Soll ich dir kurz alles zeigen?",
+    "bot_hi": "Hey! Ich bin Max. Wobei kann ich dir helfen?",
+    "tour_l": "Hier siehst du, was dich im Studio erwartet – von Geräten bis InBody-Analyse.",
+    "tour_r": "223 Mitglieder geben uns 4,8 Sterne bei Google.",
+    "tour_u": "Hier lernst du unser Konzept kennen.",
+    "tour_k": "Und hier sicherst du dir dein Probetraining.",
+    "steps_h2": "So startest du bei uns.",
+    "rev_h2": "4,8 Sterne. 223 Mitglieder.",
+    "order": [
+     "svc",
+     "blend",
+     "reviews",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "pos": {},
+    "du": true,
+    "cta_h2": "Starte jetzt deine Fitnessreise.",
+    "cta_p": "Hinterlass deine Nummer – wir melden uns und vereinbaren dein Probetraining mit InBody-Analyse.",
+    "row_link": "Probetraining anfragen",
+    "rev_sub": "Das sagen unsere Mitglieder.",
+    "form_q": "Was ist dein Ziel?",
+    "cta_btn": "Probetraining anfragen"
+   },
+   "steps": [
+    [
+     "Melden",
+     "Hinterlass deine Nummer oder komm vorbei."
+    ],
+    [
+     "Probetraining",
+     "Lerne Studio und Trainer kennen."
+    ],
+    [
+     "InBody-Analyse",
+     "Wir messen, wo du startest."
+    ],
+    [
+     "Dein Plan",
+     "Direkt in deiner App – los geht’s."
+    ]
+   ]
+  },
+  {
+   "slug": "double-tree-yoga",
+   "theme": "fitness",
+   "firma": "Double Tree Yoga Studio und Café ALVA",
+   "kurzname": "Double Tree",
+   "website": "https://www.yoga-doubletree.de",
+   "telefon": "0171 6221597",
+   "email": "",
+   "adresse": "Bieste-Westendorf 41, 49597 Rieste",
+   "google": [
+    "5,0",
+    34
+   ],
+   "siegel": [
+    "Yoga, Pilates und Fitness"
+   ],
+   "tag": "Yoga-Studio und Café in Rieste",
+   "h1": "Tür auf. <span>Die Welt bleibt draußen.</span>",
+   "sub": "Yoga, Reformer-Pilates, Aerial und Fitness in einem liebevoll gestalteten Studio – ganz ohne Räucherstäbchen, einfach du selbst.",
+   "trust": [
+    [
+     "5,0",
+     "Sterne bei Google"
+    ],
+    [
+     "Reformer",
+     "Pilates und Aerial"
+    ],
+    [
+     "Café",
+     "ALVA im Haus"
+    ]
+   ],
+   "leist_h2": "Finde deinen Kurs.",
+   "leistungen": [
+    "Yoga",
+    "Reformer-Pilates",
+    "Aerial Yoga",
+    "Fitnesskurse",
+    "Events und JGA"
+   ],
+   "about_h2": "Yoga für jeden.",
+   "ueber": [
+    "Unser Ziel ist es, Yoga für jeden zugänglich zu machen. Wir sind überzeugt: Regelmäßiges Yoga verändert deine Gesundheit und Lebensqualität zum Besseren.",
+    "Bleib authentisch, auch auf deiner Matte. Nimm deinen Körper wahr, lass deinen Geist zur Ruhe kommen – Alexandra, Vanessa und das Team freuen sich auf dich."
+   ],
+   "checks": [
+    "Offene Kurse zum Ausprobieren",
+    "Partner von Hansefit",
+    "Team-Events und Junggesellinnenabschiede"
+   ],
+   "inhaber_name": "Alexandra und Vanessa",
+   "inhaber_rolle": "Double Tree",
+   "inhaber_idx": 7,
+   "logo_url": "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r6/local/logo_doubletree.png",
+   "min_w": 600,
+   "bild_urls": [
+    "https://static.wixstatic.com/media/ac9393_2c0062e790ed411ba8e703f3df6bd053~mv2.jpg",
+    "https://static.wixstatic.com/media/ac9393_c0121b147c054abcbd7be9c192f6e1f2~mv2.jpg",
+    "https://static.wixstatic.com/media/ac9393_4b4333a2cbbb40cf8d263d964fff6b73~mv2.jpg",
+    "https://static.wixstatic.com/media/ac9393_2f956effd5a24cc79c928f2a84876900~mv2.jpg",
+    "https://static.wixstatic.com/media/d86c54_12bc875d2d2f45788913b95fb9e43ad4~mv2.jpg",
+    "https://static.wixstatic.com/media/11062b_94061c8a035d4fafaae8486ad0566355~mv2.jpg",
+    "https://static.wixstatic.com/media/ac9393_c92020f068c1461295ba625772817ef0~mv2.jpg",
+    "https://static.wixstatic.com/media/ac9393_ec47326df4d148e2a1193dafc448adf7~mv2.jpg",
+    "https://static.wixstatic.com/media/ac9393_145966e82bc44660bbf3131fa66d0573~mv2.jpg",
+    "https://static.wixstatic.com/media/ac9393_a344aa909ead47a09cfafc3168bb0613~mv2.jpg"
+   ],
+   "reviews": [
+    [
+     "Reformer-Pilates und Yoga in diesem liebevoll eingerichteten Studio – beides hat riesig Spaß gemacht.",
+     "“"
+    ],
+    [
+     "Als Team hatten wir hier ein ganz besonderes Event: verschiedene Kurse ausprobiert, Neues erlebt und gemeinsam entspannt.",
+     "“"
+    ],
+    [
+     "Ein wunderschönes Studio, von Alexandra und Vanessa mit Liebe renoviert und perfekt eingerichtet.",
+     "“"
+    ],
+    [
+     "Ich freue mich jede Woche auf mein Training bei DoubleTree – hier ist für jeden etwas dabei.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Double Tree Yoga Studio",
+     "Bieste-Westendorf 41",
+     "49597 Rieste"
+    ],
+    "anrede": "Liebe Alexandra, liebe Vanessa,",
+    "problem": "dass sie auf dem Handy nicht richtig angepasst ist – Texte werden abgeschnitten und man muss seitlich scrollen",
+    "suche": "Yoga-Studio"
+   },
+   "v5": {
+    "soft": true,
+    "r": "999px",
+    "r2": "28px",
+    "svc_cls": "orb",
+    "steps_cls": "tone orb",
+    "facts_cls": "dark",
+    "fonts": "family=Bellefair&family=Outfit:wght@300;400;500;600",
+    "fh": "'Bellefair',Georgia,serif",
+    "fb": "'Outfit',system-ui,sans-serif",
+    "hw": 400,
+    "hls": "0",
+    "hlh": 1.0,
+    "h1vw": 5.8,
+    "h1max": 6.8,
+    "c": {
+     "bg": "#F7F1E8",
+     "ink": "#3A2A1E",
+     "acc": "#9C7A3C",
+     "acc2": "#7A8B5C",
+     "soft": "#EFE4D2",
+     "paper": "#FFFDF8",
+     "hbg": "#F7F1E8",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#3A2A1E",
+     "onctabtn": "#F7F1E8",
+     "star": "#C9A24B"
+    },
+    "hero": "mask",
+    "shape": "arch",
+    "mclip": "inset(0 4% 0 4% round 46vw 46vw 0 0)",
+    "hero_img": "b1",
+    "hero_slides": [
+     "b1",
+     "b3",
+     "b6"
+    ],
+    "logo_h": 60,
+    "svc": "rows",
+    "svc_imgs": [
+     "b1",
+     "b5",
+     "b4"
+    ],
+    "rows_intro": "Offene Kurse geben dir die Chance, Neues auszuprobieren und reinzuschnuppern.",
+    "rws": [
+     [
+      "b1",
+      "Yoga",
+      "Kraftvoll oder ruhig, für Einsteiger und Erfahrene – ohne OMs und Mantras, einfach authentisch.",
+      [
+       "Hatha",
+       "Vinyasa",
+       "Yin"
+      ],
+      "Yoga",
+      "b10"
+     ],
+     [
+      "b5",
+      "Reformer-Pilates",
+      "Auf dem Reformer trainierst du Kraft, Haltung und Beweglichkeit – präzise und effektiv.",
+      [
+       "Reformer",
+       "Mat",
+       "Core"
+      ],
+      "Pilates"
+     ],
+     [
+      "b4",
+      "Aerial Yoga und Fitness",
+      "Schwerelos im Tuch oder schweißtreibend im Fitnesskurs – Abwechslung für Körper und Kopf.",
+      [
+       "Aerial",
+       "Fitness",
+       "Barre"
+      ],
+      "Aerial"
+     ]
+    ],
+    "blend": [
+     "b2",
+     "b7",
+     "b9",
+     "Ankommen. Durchatmen.",
+     "Ein Studio zum Wohlfühlen – mit Café ALVA direkt nebenan."
+    ],
+    "about_img": "b8",
+    "about_img2": "b10",
+    "cta_img": "b2",
+    "promo": "Dein erstes Mal",
+    "promo_tag": "Probestunde",
+    "promo_sub": "Komm in einen offenen Kurs und lerne das Studio kennen – barfuß und ganz entspannt.",
+    "promo_img": "b1",
+    "promo_btn": "Jetzt Kurs anfragen",
+    "bot_name": "Ama",
+    "robot_tag": "Dein Studio-Guide",
+    "robot_hello": "Hallo! Ich bin Ama, der digitale Guide von Double Tree. Soll ich dir kurz das Studio zeigen?",
+    "bot_hi": "Hallo! Ich bin Ama. Wobei kann ich dir helfen?",
+    "tour_l": "Hier findest du alle Kurse – Yoga, Reformer-Pilates und Aerial.",
+    "tour_r": "34 Bewertungen, alle mit 5 Sternen.",
+    "tour_u": "Hier lernst du Alexandra, Vanessa und das Team kennen.",
+    "tour_k": "Und hier meldest du dich für deine erste Stunde an.",
+    "steps_h2": "So startest du bei uns.",
+    "rev_h2": "34 Bewertungen. Alle mit 5 Sternen.",
+    "order": [
+     "svc",
+     "blend",
+     "reviews",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "pos": {
+     "b8": "50% 30%"
+    },
+    "du": true,
+    "cta_h2": "Komm vorbei und probier es aus.",
+    "cta_p": "Hinterlass deine Nummer – wir melden uns und finden den Kurs, der zu dir passt.",
+    "row_link": "Kurs anfragen",
+    "rev_sub": "Das sagen unsere Teilnehmer.",
+    "form_q": "Welcher Kurs interessiert dich?",
+    "cta_btn": "Probestunde anfragen"
+   },
+   "steps": [
+    [
+     "Kurs wählen",
+     "Yoga, Pilates, Aerial oder Fitness."
+    ],
+    [
+     "Ankommen",
+     "Matte, Wasser, durchatmen."
+    ],
+    [
+     "Üben",
+     "Mit erfahrenen Trainerinnen."
+    ],
+    [
+     "Dranbleiben",
+     "Mit Abo oder Hansefit."
+    ]
+   ]
+  },
+  {
+   "slug": "raum-fuer-bewegung",
+   "theme": "fitness",
+   "firma": "Raum für Bewegung & Energie",
+   "kurzname": "Raum für Bewegung & Energie",
+   "website": "https://www.raum-fuer-bewegung-und-energie.de",
+   "telefon": "01522 7150315",
+   "email": "info@raum-fuer-bewegung-und-energie.de",
+   "adresse": "Alte Post-Passage 4, 49577 Ankum",
+   "google": [
+    "5,0",
+    26
+   ],
+   "siegel": [
+    "Yoga, Tai Chi, Qi Gong und TCM"
+   ],
+   "tag": "Yoga-Studio in Ankum, Annette Raben",
+   "h1": "Gutes für Körper, <span>Geist und Seele.</span>",
+   "sub": "Yoga, Tai Chi, Qi Gong, Schwangeren- und Rückbildungs-Yoga, Tuina-Massage und Ernährung nach den 5 Elementen – mitten in Ankum.",
+   "trust": [
+    [
+     "5,0",
+     "Sterne bei Google"
+    ],
+    [
+     "Yoga",
+     "für jedes Alter"
+    ],
+    [
+     "TCM",
+     "Massage und Ernährung"
+    ]
+   ],
+   "leist_h2": "Finde, was dir gut tut.",
+   "leistungen": [
+    "Yoga",
+    "Tai Chi und Qi Gong",
+    "Schwangeren- und Rückbildungs-Yoga",
+    "Tuina-Massage",
+    "Ernährung nach den 5 Elementen",
+    "Workshops"
+   ],
+   "about_h2": "Fühl dich willkommen.",
+   "ueber": [
+    "Du suchst Entspannung, willst zur Ruhe kommen, körperliche Beschwerden lindern oder neue Energie tanken? Dann bist du bei uns genau richtig.",
+    "Annette Raben und ihr Team von Yoga-Lehrerinnen begleiten dich achtsam, präzise und mit viel Herz – mit allem, was du im Gepäck hast."
+   ],
+   "checks": [
+    "Kurse in kleinen Gruppen",
+    "Erfahrene Yoga-Lehrerinnen",
+    "Workshops online buchbar"
+   ],
+   "inhaber_name": "Annette Raben",
+   "inhaber_rolle": "Gründerin, Yoga- und Tai-Chi-Lehrerin",
+   "inhaber_idx": 2,
+   "logo_url": "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r6/local/logo_raumbewegung.png",
+   "min_w": 600,
+   "bild_urls": [
+    "https://le-cdn.website-editor.net/s/21a0ac05a6db4f78b2c3613e3ba8c18f/dms3rep/multi/opt/Raben_042-2-1920w.jpg?Expires=1795923258&Signature=YGtQ8~oTHql2J5D4iMje~8-x5HihNe2AQhg3vStzIGosk2~vBEXne-Z2qrbrFD-XDgODh~HgEgpvhZAl0PMCI31TsKMy3wVWE92~rmDzG396ZTD7GVtTO3KkD8mwDBQF4fZuxeznaVxY1tPKbgnxGLNdqiqL6-UM3D9ERTaQ-uHMtuBQ1gliwSxPjc5JbMZA2dN7SJ79d9qiONxSsmKZwUc8czCvXL4mk1M7pbpLLuMPNMRnHouu9-vIv0wydTWPGcGw~2uzmoyZeRFPdeIpSKpbeaBLHCZdT3e50UIRN-5WfYHz1t1qB338KwZ94xlRJU5hpmIioLuUqv4xH1udgQ__&Key-Pair-Id=K2NXBXLF010TJW",
+    "https://le-cdn.website-editor.net/s/21a0ac05a6db4f78b2c3613e3ba8c18f/dms3rep/multi/opt/Raben_116-1920w.jpg?Expires=1795923258&Signature=O7fjRT7NHcPFYczWNpf4FeZ7s1TevEFgTywm35-dxNBWJBeESaRgriVnfbrHde--VMwQk1gJ2jlG9NmUcy935fABsQkgeaL4VIAyERkWUwROKixhOHpYS7Cm4Wfk6Kuzcg7YeVjvbTZ3Qzkq1BAXSX288bTt38s24qZ6YV0jgO9zS3tQh11R0iyyz0NluVgX0AzIP2GqK~2ascoy4X7tFzfAnaxLqOEKoAChm5ZubNjen2Hhbw8-rVH2Rre4TM00NIL4Rvrvl0hLhAhan47AHUpFrJqzaSrnlhM3lRxb54Ec7UscNXT34526k68cq55x~eiK0MwgAomdodqqFTN78g__&Key-Pair-Id=K2NXBXLF010TJW",
+    "https://le-cdn.website-editor.net/s/21a0ac05a6db4f78b2c3613e3ba8c18f/dms3rep/multi/opt/IMG_9707-1920w.jpg?Expires=1795991997&Signature=WLhySX255-kL9x2zDqXg1g2ZCIYDN4H9C9QkCftcdDDkMSHxsT82tdoPbpx3Ot-ZoBCaJX8oNlkrbUof9lbMXjTRuItzFW0VYt1-k6bgZpwM-xVyk-vBU4BL5EdFP7nA1A16A6bgHrAN~r3WAmF~lNIJD4b93nfdrYSX-ROYPFmbLCfYJK3bmGYai8C3B1J3HAewferWKLhkW~OYd7X0P3HFUQjgwqgYlHQzhAy2N~eQxY2SAIH5rXGTMtO~6zurdBRkzGGhVcpSp2r5oJLRo4Wn9~J3seGwOuE0iLJvNLLeTeRZrVdkn4dP35txSHwYAaVQHp5jm~r2ytdGtJCDew__&Key-Pair-Id=K2NXBXLF010TJW",
+    "https://le-cdn.website-editor.net/s/21a0ac05a6db4f78b2c3613e3ba8c18f/dms3rep/multi/opt/IMG_9675-1920w.jpeg?Expires=1795923258&Signature=O0uDdeFl92hpTQfpeqDRwhq-73ytbido5cxe-uYONWWKNoTrx3O5BFyfiyGuW9trCrnW3XO85eknxu47zqHvUKNtyQ0Cdq0T7~T3QhblXs5pmn-BDWAHiOcr0jq8eK8I4XOctcIQ8MCH9tk9r2Boq1Ds-Hphq2GWrdgsCbTyGrrlTfrN6gNqBqFvt0j2z3y1R5LLE0NiS6xZKjEUmZH3ekRqWqLo1ucP4m3AMRFJ-zp4UAKOgXsUgNQPw7Tn9~DECa2YkZWfu5e5tWeBPro2jyBzpdjxccvzJhRcv8iTx9DRvkqp76uRIhQGlkXMZhtt5cwwscfhEm7Mmaly~wmNmQ__&Key-Pair-Id=K2NXBXLF010TJW",
+    "https://le-cdn.website-editor.net/s/21a0ac05a6db4f78b2c3613e3ba8c18f/dms3rep/multi/opt/Raben_096-25ddf376-1920w.jpg?Expires=1795923258&Signature=afgMdPTp7u8lzeaBPJQ5~I-TMi1u4nUSnf-hLAhc9Kl0pF4PokW2HdecOlQkCM7qTFPXL7cb48otfH0xuxYs71we1Hz-VFu3COsGbqNPnmx2jGfrkVCqFTxtnFhcZbeo3two8wOhrCDboD771oerrn77AAsiGnrZ88dj6vo-dAD5y5izIho6kWY2ZVtMOdxG-UsM~9Etj2n0smnhRl6qI1usMKlhLfMgFHA6wZz-DHjgJhBv4YygQpMr0TzjFidUNXe-F-8WCKKhZDfehn2sh7~u72V0JRVizh2-9nBBKNKl6F9bFUu6o-DHIKcAk~8G5NRs-Dpl7M80HZawCJZOXQ__&Key-Pair-Id=K2NXBXLF010TJW",
+    "https://le-cdn.website-editor.net/md/and1/dms3rep/multi/opt/115639-1920w.jpeg",
+    "https://le-cdn.website-editor.net/s/21a0ac05a6db4f78b2c3613e3ba8c18f/dms3rep/multi/opt/Raben_042-1920w.jpg?Expires=1795991997&Signature=N10q85lLAeNdcZqCYkPa~HOQ~mp2Un979nl7ST-Aa1AHS8VTjYzbpgPl4JJk-HpPWIUtIukNRnFaeN3SDgMGPbAI9Pn9Y1uxYyVELNjPRJqYHoGgc5WB3tZC76kxngIEevsaNyloOfMtA0JDb1t87-~tc8slgS11OFL4P7bsLVcT3UTP8i2LRDjm32E02BH~V5E~OryQpMw51~qOIg7eXfl5a-Rwb-fIskkvO4-nQKCayOJolYiVR0x79FpyZB2ldQyRckd-hTMjgUlQyaMrcTbqjcKghxwHAAqq~J5nOI8JHsTigTp8HA~q1TWy822y7vALFkCHYaflbrU1ddHI0w__&Key-Pair-Id=K2NXBXLF010TJW",
+    "https://le-cdn.website-editor.net/s/21a0ac05a6db4f78b2c3613e3ba8c18f/dms3rep/multi/opt/Team+2024-1920w.jpg?Expires=1795923258&Signature=WTdAuoRmgy-QU78T0qeus1taBDDumPB1gDcmsqe49Ov2vhrS24B1bLp9w20s7HovHiLsLMessqtA3spdl4FlQucU-uDz9HZ8RQTzLbNE7oevGfHmpsJh7JxQqtZlZMpkcCQkSkOzCWd9Cbflpw1jbbw9tDMqpH1RQ9FXgh54n~g7BFhVbNiW7GRKTsTMseBwVkDhtfCUPCxoHEqcseMHyzLPy34h7giq9m4ViAH99gbQxrUpCDndDAPjLfKBrx9~6tKR8Tr0drQR~TbfPeCrDJaUk3uHjhoZtYDe7UXG0j5FphvlXIqvZVfmx9e2DMkcdPaBgAWDykbce3FRx8h7sQ__&Key-Pair-Id=K2NXBXLF010TJW",
+    "https://le-cdn.website-editor.net/21a0ac05a6db4f78b2c3613e3ba8c18f/dms3rep/multi/opt/Raum-f%C3%BCr-Bewegung---Energie-016-1920w.jpg",
+    "https://le-cdn.website-editor.net/s/21a0ac05a6db4f78b2c3613e3ba8c18f/dms3rep/multi/opt/Raum-f%C3%BCr-Bewegung---Energie-005-2470d533-2880w.jpg?Expires=1795958351&Signature=MCtp50I87QsC1-8u3CPGy1C8Zy9xg5nEy8nuOxEfMeO5SWAeeJZH93Ra3EXIrQp6LI5maFk9JJ5kSv7lMzQ7eNWC-hJXag0IXj3izTSg5rogusGN5FfK29FXCzeB8ztSgjSj5AWfg6rYkw8BclF0q9X-Kw8WUYFa6kFbuyGmcn-FdVXx-IoAN4Gylw1KAJ7RkjXv18yFcy~IDQ-YMwmJmqSYSCjCqkGFI5Urbg3MDXzybFzPIewd~TpGYPuVSXpmN7IrPxBDHFFgHoXo~0PtK0QX7zvaoC9REThVoCmfdGUEH5Z3PlKJkNsDcHwYzywE4f1P11YQ3GqvkAX6YO3oeQ__&Key-Pair-Id=K2NXBXLF010TJW"
+   ],
+   "reviews": [
+    [
+     "Seit über einem Jahr mache ich regelmäßig Yoga bei Annette und bin jede Woche begeistert. Hier finde ich absolute Ruhe.",
+     "“"
+    ],
+    [
+     "Ihre ruhige, angenehme Stimme schafft sofort eine entspannte Atmosphäre, in der man den Alltag komplett hinter sich lässt.",
+     "“"
+    ],
+    [
+     "Ein ganz besonderer Ort für Körper und Geist. Man fühlt sich sofort willkommen.",
+     "“"
+    ],
+    [
+     "Immer wieder erstaunlich, wie sie spontan auf die Bedürfnisse jeder Teilnehmerin mit gezielten Übungen eingeht.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Raum für Bewegung & Energie",
+     "Frau Annette Raben",
+     "Alte Post-Passage 4",
+     "49577 Ankum"
+    ],
+    "anrede": "Sehr geehrte Frau Raben,",
+    "problem": "dass Besucher am Handy zuerst zwei Cookie-Banner und einen leeren Buchungs-Rahmen sehen – und die Seite breiter ist als der Bildschirm",
+    "suche": "Yoga-Kurs"
+   },
+   "v5": {
+    "soft": true,
+    "r": "999px",
+    "r2": "28px",
+    "svc_cls": "orb",
+    "steps_cls": "tone orb",
+    "facts_cls": "dark",
+    "fonts": "family=Lora:wght@500;600;700&family=Nunito+Sans:wght@400;600;700",
+    "fh": "'Lora',Georgia,serif",
+    "fb": "'Nunito Sans',system-ui,sans-serif",
+    "hw": 600,
+    "hls": "-0.015em",
+    "hlh": 1.0,
+    "h1vw": 5.4,
+    "h1max": 6.2,
+    "c": {
+     "bg": "#F7F9F1",
+     "ink": "#26331B",
+     "acc": "#5A8A1C",
+     "acc2": "#EE7A1E",
+     "soft": "#EAF1DC",
+     "paper": "#FFFFFF",
+     "hbg": "#F7F9F1",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#26331B",
+     "onctabtn": "#FFFFFF",
+     "star": "#EE7A1E"
+    },
+    "hero": "collage",
+    "prints": [
+     [
+      "b1",
+      "Yoga in Ankum"
+     ],
+     [
+      "b2",
+      "Tai Chi"
+     ],
+     [
+      "b4",
+      "Ankommen"
+     ]
+    ],
+    "logo_h": 50,
+    "strokes": [
+     "#5A8A1C",
+     "#EE7A1E"
+    ],
+    "svc": "rows",
+    "svc_imgs": [
+     "b1",
+     "b2",
+     "b5"
+    ],
+    "rows_intro": "In unseren Kursen findest du Gutes für Körper, Geist und Seele.",
+    "rws": [
+     [
+      "b1",
+      "Yoga",
+      "Achtsam, präzise und mit sanfter Motivation – vom ruhigen Hatha bis zur „Kleinen Auszeit“.",
+      [
+       "Hatha",
+       "Kleine Auszeit",
+       "Senioren"
+      ],
+      "Yoga",
+      "b8"
+     ],
+     [
+      "b2",
+      "Tai Chi und Qi Gong",
+      "Meditation in Bewegung: langsame, fließende Bewegungen bringen deine Energie zum Fließen.",
+      [
+       "Tai Chi",
+       "Qi Gong",
+       "Konzentration"
+      ],
+      "Bewegung"
+     ],
+     [
+      "b5",
+      "Tuina-Massage und TCM",
+      "Traditionelle chinesische Medizin: Massage und Ernährung nach den 5 Elementen für neue Energie.",
+      [
+       "Tuina",
+       "5 Elemente",
+       "Workshops"
+      ],
+      "TCM",
+      "b6"
+     ]
+    ],
+    "rows_more": [
+     "Schwangeren-Yoga",
+     "Rückbildungs-Yoga"
+    ],
+    "blend": [
+     "b7",
+     "b9",
+     "b10",
+     "Dein Raum zum Durchatmen.",
+     "Kurse, Workshops und Massagen in der Alten Post-Passage in Ankum."
+    ],
+    "about_img": "b3",
+    "about_img2": "b8",
+    "cta_img": "b1",
+    "promo": "Neue Workshops",
+    "promo_tag": "Jetzt buchen",
+    "promo_sub": "Entdecke aktuelle Workshops zu Yoga, TCM und Ernährung nach den 5 Elementen.",
+    "promo_img": "b6",
+    "promo_btn": "Jetzt Platz anfragen",
+    "bot_name": "Lotus",
+    "robot_tag": "Dein Studio-Guide",
+    "robot_hello": "Hallo! Ich bin Lotus. Soll ich dir kurz zeigen, was dich im Raum für Bewegung & Energie erwartet?",
+    "bot_hi": "Hallo! Ich bin Lotus. Wobei kann ich dir helfen?",
+    "tour_l": "Hier findest du alle Kurse – von Yoga bis Tai Chi.",
+    "tour_r": "26 Bewertungen, alle mit 5 Sternen.",
+    "tour_u": "Hier lernst du Annette und das Team kennen.",
+    "tour_k": "Und hier meldest du dich für deinen Kurs an.",
+    "steps_h2": "So findest du deinen Kurs.",
+    "rev_h2": "Was Teilnehmerinnen sagen.",
+    "order": [
+     "svc",
+     "reviews",
+     "blend",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "pos": {
+     "b3": "50% 25%"
+    },
+    "du": true,
+    "cta_h2": "Finde deinen Kurs.",
+    "cta_p": "Ruf an oder hinterlass deine Nummer – Annette meldet sich und findet mit dir das passende Angebot.",
+    "row_link": "Kurs anfragen",
+    "rev_sub": "Das sagen unsere Teilnehmerinnen.",
+    "form_q": "Was interessiert dich?",
+    "cta_btn": "Probestunde anfragen"
+   },
+   "steps": [
+    [
+     "Kennenlernen",
+     "Ruf an oder schreib Annette."
+    ],
+    [
+     "Kurs finden",
+     "Yoga, Tai Chi, Qi Gong oder Workshop."
+    ],
+    [
+     "Ankommen",
+     "In kleiner Gruppe, ganz ohne Druck."
+    ],
+    [
+     "Auftanken",
+     "Neue Energie für deinen Alltag."
+    ]
+   ]
+  },
+  {
+   "slug": "zeitlos-ankum",
+   "theme": "gastro",
+   "firma": "Zeitlos Ankum Café & Bar",
+   "kurzname": "Zeitlos",
+   "website": "https://www.zeitlos-ankum.de",
+   "telefon": "05462 4039717",
+   "email": "info@zeitlos-ankum.de",
+   "adresse": "Lingener Straße 27, 49577 Ankum",
+   "google": [
+    "4,8",
+    50
+   ],
+   "siegel": [
+    "Café, Frühstück, Cocktailbar und Events"
+   ],
+   "tag": "Café und Bar in Ankum",
+   "h1": "Wo die Uhr stillsteht. <span>Und der Genuss nie endet.</span>",
+   "sub": "Duftender Kaffee am Morgen, erlesene Weine am Abend und kreative Cocktails bis tief in die Nacht – dazu Frühstücksbuffet und Events.",
+   "trust": [
+    [
+     "4,8",
+     "Sterne bei Google"
+    ],
+    [
+     "Frühstück",
+     "auch sonntags"
+    ],
+    [
+     "Events",
+     "Live-Musik, Bingo, Karaoke"
+    ]
+   ],
+   "leist_h2": "Vom ersten Kaffee bis zum letzten Cocktail.",
+   "leistungen": [
+    "Kaffee und Kuchen",
+    "Frühstücksbuffet",
+    "Cocktailbar",
+    "Events",
+    "Mobile Bar",
+    "Feiern"
+   ],
+   "about_h2": "Klassische Eleganz, moderne Gemütlichkeit.",
+   "ueber": [
+    "Unser Café und unsere Cocktailbar vereinen stilvolle Gemütlichkeit mit einem Hauch von Extravaganz.",
+    "Lehnen Sie sich zurück, lassen Sie den Alltag draußen – und erleben Sie den Geschmack von Zeitlos."
+   ],
+   "checks": [
+    "Tischreservierung online",
+    "Mobile Bar für Ihre Feier",
+    "Regelmäßige Events"
+   ],
+   "inhaber_name": "Team Zeitlos",
+   "inhaber_rolle": "Ankum",
+   "logo_url": "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r6/local/logo_zeitlos.png",
+   "logo_keep": true,
+   "min_w": 600,
+   "bild_urls": [
+    "https://www.zeitlos-ankum.de/images/atmosphaere.jpg",
+    "https://www.zeitlos-ankum.de/images/kaffeegenuss.jpg",
+    "https://www.zeitlos-ankum.de/images/cocktails.jpg",
+    "https://www.zeitlos-ankum.de/images/charme.jpg",
+    "https://www.zeitlos-ankum.de/media/81e271e1-34c5-4f70-b851-f386a40c32a5.png",
+    "https://www.zeitlos-ankum.de/media/93aaf5a4-0755-4cbc-b092-761841b7775d.jpg",
+    "https://www.zeitlos-ankum.de/media/70b05e6a-787f-4a36-a001-a191fd7ad949.png"
+   ],
+   "reviews": [
+    [
+     "Die Cocktails sind hervorragend. Suli hat uns sogar Kreationen gemacht, die noch nicht auf der Karte stehen.",
+     "“"
+    ],
+    [
+     "Wunderbares Frühstück – herzlich empfangen, tolle Auswahl am Buffet und viele hausgemachte Leckereien.",
+     "“"
+    ],
+    [
+     "Sehr schöne Atmosphäre, freundliches Personal, top Service, ausgezeichnetes Essen und leckere Cocktails.",
+     "“"
+    ],
+    [
+     "Schöner Ort, modern und nicht überladen. Genau das, was Ankum braucht.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Zeitlos Ankum",
+     "Lingener Straße 27",
+     "49577 Ankum"
+    ],
+    "anrede": "Sehr geehrte Damen und Herren,",
+    "problem": "dass Ihre Events, die Mobile Bar und die vielen guten Bewertungen auf der Startseite kaum zu sehen sind",
+    "suche": "Café"
+   },
+   "v5": {
+    "soft": true,
+    "r": "999px",
+    "r2": "28px",
+    "svc_cls": "orb",
+    "steps_cls": "tone orb",
+    "facts_cls": "dark",
+    "fonts": "family=Playfair+Display:ital,wght@0,600;0,800;1,600&family=Montserrat:wght@400;500;600",
+    "fh": "'Playfair Display',Georgia,serif",
+    "fb": "'Montserrat',system-ui,sans-serif",
+    "hw": 600,
+    "hls": "-0.01em",
+    "hlh": 1.0,
+    "h1vw": 5,
+    "h1max": 5.8,
+    "c": {
+     "bg": "#F6EFE6",
+     "ink": "#2A1E17",
+     "acc": "#B08A5A",
+     "acc2": "#6E4B2F",
+     "soft": "#EBDDCB",
+     "paper": "#FFFBF5",
+     "hbg": "#1B1410",
+     "hink": "#FFFFFF",
+     "onacc": "#1B1410",
+     "ctabtn": "#2A1E17",
+     "onctabtn": "#E8C99A",
+     "frame": "#1B1410",
+     "star": "#D9A85B"
+    },
+    "hero": "panes",
+    "hero_img": "b1",
+    "hero_slides": [
+     "b1",
+     "b2",
+     "b3"
+    ],
+    "cols": 4,
+    "rows": 2,
+    "pane_h": 44,
+    "logo_h": 34,
+    "svc": "rows",
+    "svc_imgs": [
+     "b2",
+     "b4",
+     "b3"
+    ],
+    "rows_intro": "Ob morgens, mittags oder abends: Bei uns gibt es immer einen guten Grund zu bleiben.",
+    "rws": [
+     [
+      "b2",
+      "Kaffee und Frühstück",
+      "Kräftiger Espresso, cremiger Cappuccino, Matcha – und am Wochenende unser Frühstücksbuffet.",
+      [
+       "Espresso",
+       "Matcha",
+       "Frühstücksbuffet"
+      ],
+      "Café"
+     ],
+     [
+      "b3",
+      "Cocktailbar",
+      "Handverlesene Weine, Klassiker an der Bar und kreative Cocktails für einen langen Abend.",
+      [
+       "Cocktails",
+       "Wein",
+       "Bar"
+      ],
+      "Bar"
+     ],
+     [
+      "b4",
+      "Events und Feiern",
+      "Live-Musik, Bingo & Booze, Karaoke, Paint & Sip – oder Ihre eigene Feier mit unserer Mobilen Bar.",
+      [
+       "Live-Musik",
+       "Karaoke",
+       "Mobile Bar"
+      ],
+      "Events",
+      "b5"
+     ]
+    ],
+    "blend": [
+     "b1",
+     "b3",
+     "b2",
+     "Treten Sie ein.",
+     "Lassen Sie den Alltag draußen – drinnen wartet Zeitlos."
+    ],
+    "about_img": "b4",
+    "about_img2": "b2",
+    "cta_img": "b3",
+    "promo": "Live-Musik im Zeitlos",
+    "promo_tag": "Event",
+    "promo_sub": "Regelmäßig Live-Musik, Karaoke und Bingo – sichern Sie sich Ihren Tisch.",
+    "promo_img": "b5",
+    "promo_btn": "Jetzt Tisch anfragen",
+    "bot_name": "Lou",
+    "robot_tag": "Ihr Gastgeber-Guide",
+    "robot_hello": "Willkommen im Zeitlos! Ich bin Lou. Soll ich Ihnen kurz zeigen, was heute bei uns los ist?",
+    "rev_h2": "4,8 Sterne. Und jeder Besuch ein Genuss.",
+    "order": [
+     "svc",
+     "blend",
+     "reviews",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "pos": {},
+    "cta_h2": "Reservieren Sie Ihren Tisch.",
+    "cta_p": "Für Frühstück, Kaffee, einen Abend an der Bar oder Ihre Feier mit der Mobilen Bar – rufen Sie uns an.",
+    "row_link": "Tisch reservieren",
+    "rev_sub": "Stimmen unserer Gäste.",
+    "form_q": "Was planen Sie?",
+    "cta_btn": "Jetzt Tisch reservieren"
+   },
+   "steps": [
+    [
+     "Reservieren",
+     "Rufen Sie an oder buchen Sie online."
+    ],
+    [
+     "Ankommen",
+     "Treten Sie ein, lassen Sie den Alltag draußen."
+    ],
+    [
+     "Genießen",
+     "Kaffee, Frühstück oder Cocktails."
+    ],
+    [
+     "Wiederkommen",
+     "Zum nächsten Event."
+    ]
+   ]
+  },
+  {
+   "slug": "mks-kosmetik",
+   "theme": "beauty",
+   "firma": "MKS Kosmetikinstitut",
+   "kurzname": "MKS Kosmetikinstitut",
+   "website": "https://www.mks-kosmetikinstitut.de",
+   "telefon": "05462 3911616",
+   "email": "mks-termin@mail.de",
+   "adresse": "Aslager Straße 18, 49577 Ankum",
+   "google": [
+    "5,0",
+    31
+   ],
+   "siegel": [
+    "Dermazeutische und apparative Kosmetik"
+   ],
+   "tag": "Kosmetikinstitut in Ankum",
+   "h1": "Sie bestimmen selbst, <span>wie Sie aussehen.</span>",
+   "sub": "Dermazeutische und apparative Kosmetik für Frauen: Hautanalyse, Mikrodermabrasion und Behandlungen, die sichtbare Ergebnisse zeigen.",
+   "trust": [
+    [
+     "5,0",
+     "Sterne bei Google"
+    ],
+    [
+     "25",
+     "Jahre Erfahrung im medizinischen Bereich"
+    ],
+    [
+     "Hautanalyse",
+     "vor jeder Behandlung"
+    ]
+   ],
+   "leist_h2": "Behandlungen für Ihre Haut.",
+   "leistungen": [
+    "Hautanalyse und Beratung",
+    "Diamant-Mikrodermabrasion",
+    "Gesichtsbehandlungen",
+    "Beauty Basics und Specials"
+   ],
+   "about_h2": "Meine Leidenschaft ist Ihre Haut.",
+   "ueber": [
+    "Meine Leidenschaft hat mich dazu bewegt, mein eigenes Kosmetikinstitut zu gründen – mit zertifizierter Ausbildung in der dermatologisch-medizinischen Kosmetik.",
+    "25 Jahre Erfahrung im medizinischen Bereich garantieren Qualität und ein Rundum-Wohlfühl-Ergebnis."
+   ],
+   "checks": [
+    "Fundierte Hautanalyse",
+    "Transparente Beratung ohne Verkaufsdruck",
+    "Profi-Produkte von Janssen und Binella"
+   ],
+   "inhaber_name": "Oksana",
+   "inhaber_rolle": "Kosmetikerin",
+   "min_w": 600,
+   "bild_urls": [
+    "https://static.wixstatic.com/media/f6ff38_e8d28308afb247a380fadd9181dc4f71~mv2.jpg",
+    "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1800&q=85&fm=jpg",
+    "https://images.unsplash.com/photo-1552693673-1bf958298935?w=1800&q=85&fm=jpg",
+    "https://images.unsplash.com/photo-1761718209835-c8586b7dcac0?w=1800&q=85&fm=jpg",
+    "https://static.wixstatic.com/media/f6ff38_6bcfdb79ccc94376987d0f6d35d497b5~mv2.jpg",
+    "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=1800&q=85&fm=jpg"
+   ],
+   "reviews": [
+    [
+     "Eine wirklich fantastische Kosmetikerin. Sie erklärt jeden Schritt, alles ist transparent – man fühlt sich nie zum Kauf gedrängt.",
+     "“"
+    ],
+    [
+     "Oksana arbeitet mit größter Professionalität und Sorgfalt – sichtbare Ergebnisse schon nach einer Behandlung.",
+     "“"
+    ],
+    [
+     "Nach Akne hatte ich kleine Narben und unreine Haut. Die Narben sind viel feiner, die Poren klein – ich fühle mich ohne Make-up wohl.",
+     "“"
+    ],
+    [
+     "Sehr kompetent und freundlich, geht auf individuelle Bedürfnisse ein und erklärt alle Behandlungen genau.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "MKS Kosmetikinstitut",
+     "Aslager Straße 18",
+     "49577 Ankum"
+    ],
+    "anrede": "Sehr geehrte Damen und Herren,",
+    "problem": "dass sie auf dem Handy nicht richtig angepasst ist und Ihre beeindruckenden Behandlungsergebnisse dort kaum zu sehen sind",
+    "suche": "Kosmetikerin"
+   },
+   "v5": {
+    "soft": true,
+    "r": "999px",
+    "r2": "28px",
+    "svc_cls": "orb",
+    "steps_cls": "tone orb",
+    "facts_cls": "dark",
+    "fonts": "family=Cormorant+Garamond:ital,wght@1,400;1,500&family=Pinyon+Script&family=Jost:wght@300;400;500",
+    "fh": "'Cormorant Garamond',Georgia,serif",
+    "hfs": "italic",
+    "wmf": "'Pinyon Script',cursive",
+    "wmw": 400,
+    "wms": "30px",
+    "fb": "'Jost',system-ui,sans-serif",
+    "hw": 500,
+    "hls": "-0.01em",
+    "hlh": 1.0,
+    "h1vw": 6,
+    "h1max": 7,
+    "c": {
+     "bg": "#FBF5F3",
+     "ink": "#3A2A2E",
+     "acc": "#C2557A",
+     "acc2": "#E6C3B4",
+     "soft": "#F6E6E1",
+     "paper": "#FFFFFF",
+     "hbg": "#FBF5F3",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#3A2A2E",
+     "onctabtn": "#F6E6E1",
+     "star": "#D9A85B"
+    },
+    "hero": "mask",
+    "shape": "blob",
+    "mclip": "inset(0 4% 0 4% round 48% 52% 46% 54% / 26% 30% 22% 26%)",
+    "hero_img": "b1",
+    "hero_slides": [
+     "b1",
+     "b2",
+     "b3"
+    ],
+    "wordmark": "MKS Kosmetik",
+    "logo": false,
+    "svc": "rows",
+    "svc_imgs": [
+     "b2",
+     "b4",
+     "b3"
+    ],
+    "rows_intro": "Die neuesten Trends und wissenschaftlich belegte Behandlungserfolge – für Ihre Haut.",
+    "rws": [
+     [
+      "b2",
+      "Hautanalyse und Beratung",
+      "Am Anfang steht die Analyse: Wir schauen uns Ihre Haut genau an und erklären jeden Schritt.",
+      [
+       "Hautanalyse",
+       "Beratung",
+       "Pflegeplan"
+      ],
+      "Analyse",
+      "b6"
+     ],
+     [
+      "b4",
+      "Diamant-Mikrodermabrasion",
+      "Sanfte Erneuerung für ein feineres Hautbild – ideal bei Narben, Pigmentflecken und großen Poren.",
+      [
+       "Narben",
+       "Poren",
+       "Erneuerung"
+      ],
+      "Apparativ"
+     ],
+     [
+      "b3",
+      "Gesichtsbehandlungen",
+      "Dermazeutische Pflege mit Profi-Produkten – für Ruhe, Glow und sichtbare Ergebnisse.",
+      [
+       "Janssen",
+       "Binella",
+       "Glow"
+      ],
+      "Pflege"
+     ]
+    ],
+    "blend": [
+     "b1",
+     "b2",
+     "b6",
+     "Wohlfühlen für Ihre Haut.",
+     "Dermazeutische Kosmetik mit Erfahrung aus 25 Jahren im medizinischen Bereich."
+    ],
+    "about_img": "b6",
+    "about_img2": "b3",
+    "cta_img": "b2",
+    "promo": "Erste Hautanalyse",
+    "promo_tag": "Neu bei uns",
+    "promo_sub": "Lernen Sie uns kennen: Analyse, Beratung und ein Pflegeplan für Ihre Haut.",
+    "promo_img": "b2",
+    "promo_btn": "Jetzt Termin anfragen",
+    "stock": true,
+    "bot_name": "Rosa",
+    "robot_hello": "Hallo! Ich bin Rosa vom MKS Kosmetikinstitut. Soll ich Ihnen kurz unsere Behandlungen zeigen?",
+    "rev_h2": "31 Bewertungen. Alle mit 5 Sternen.",
+    "order": [
+     "svc",
+     "reviews",
+     "blend",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "pos": {},
+    "cta_h2": "Vereinbaren Sie Ihren Termin.",
+    "cta_p": "Zum Kennenlernen beginnen wir mit einer Hautanalyse und ehrlicher Beratung – ohne Verkaufsdruck.",
+    "row_link": "Termin anfragen",
+    "rev_sub": "Stimmen unserer Kundinnen.",
+    "form_q": "Welche Behandlung?",
+    "cta_btn": "Jetzt Termin anfragen"
+   },
+   "steps": [
+    [
+     "Termin",
+     "Rufen Sie an oder schreiben Sie uns."
+    ],
+    [
+     "Hautanalyse",
+     "Wir schauen genau hin und erklären."
+    ],
+    [
+     "Behandlung",
+     "Abgestimmt auf Ihre Haut."
+    ],
+    [
+     "Pflegeplan",
+     "Damit das Ergebnis bleibt."
+    ]
+   ]
+  },
+  {
+   "slug": "hotel-billenkamp",
+   "theme": "hotel",
+   "firma": "Hotel und Gaststätte Billenkamp",
+   "kurzname": "Hotel Billenkamp",
+   "website": "https://www.hotel-billenkamp.de",
+   "telefon": "05462 74150",
+   "email": "",
+   "adresse": "Hauptstraße 2, 49577 Ankum",
+   "google": [
+    "4,8",
+    177
+   ],
+   "siegel": [
+    "Familienbetrieb seit 1835"
+   ],
+   "tag": "Hotel und Gaststätte in Ankum",
+   "h1": "Gastfreundschaft <span>seit 1835.</span>",
+   "sub": "Ruhige Nichtraucherzimmer, ein reichhaltiges Frühstück am Tisch und unsere gemütliche Bierkneipe mit Terrasse – mitten in Ankum.",
+   "trust": [
+    [
+     "1835",
+     "Familie Billenkamp"
+    ],
+    [
+     "4,8",
+     "Sterne, 177 Bewertungen"
+    ],
+    [
+     "10",
+     "ruhige Zimmer"
+    ]
+   ],
+   "leist_h2": "Ankommen und wohlfühlen.",
+   "leistungen": [
+    "Hotelzimmer",
+    "Frühstück",
+    "Bierkneipe und Terrasse",
+    "Ausflüge rund um Ankum"
+   ],
+   "about_h2": "Gastfreundlichkeit hat bei uns Tradition.",
+   "ueber": [
+    "Schon rund 180 Jahre steht die Bewirtung unserer Gäste bei uns an erster Stelle. Ob für eine Nacht oder mehrere Tage – wir tun alles, damit Sie sich wohlfühlen.",
+    "Wir freuen uns auf Sie! Ihre Familie Billenkamp"
+   ],
+   "checks": [
+    "WLAN kostenlos in allen Zimmern",
+    "Frühstück am Tisch serviert",
+    "Zustellbetten auf Wunsch"
+   ],
+   "inhaber_name": "Familie Billenkamp",
+   "inhaber_rolle": "Gastgeber seit 1835",
+   "logo_url": "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r6/local/logo_billenkamp.png",
+   "min_w": 600,
+   "bild_urls": [
+    "https://www.billenkamp.com/images/2025/04/07/gaststaette-3.jpg",
+    "https://www.billenkamp.com/images/2025/04/07/slider-2.jpg",
+    "https://www.billenkamp.com/images/2025/04/07/gaststaette-2.jpg",
+    "https://www.billenkamp.com/images/2025/04/07/gaststaette-4.jpg",
+    "https://www.billenkamp.com/images/2025/04/07/hotel.jpg",
+    "https://www.billenkamp.com/images/2025/04/07/fruehstueck.jpg",
+    "https://www.billenkamp.com/images/2025/04/07/ankum-3.jpg",
+    "https://www.billenkamp.com/images/2025/04/07/gaststaette-1.jpg",
+    "https://www.billenkamp.com/images/2025/04/07/aktuelles.jpg",
+    "https://www.billenkamp.com/images/2025/04/07/freizeit-1.jpg"
+   ],
+   "reviews": [
+    [
+     "Sehr schönes Hotel, sehr sauber und gemütlich. Das Frühstück war fantastisch.",
+     "“"
+    ],
+    [
+     "Ich habe mich vom ersten Moment an wohlgefühlt. Besonders die herzlichen, aufmerksamen Gastgeber – man merkt, dass Gastfreundschaft hier gelebt wird.",
+     "“"
+    ],
+    [
+     "Sehr empfehlenswert: drei Nächte mit Frühstück, volle Punktzahl, sehr nette Gastgeber.",
+     "“"
+    ],
+    [
+     "Auf meiner Motorradtour hier übernachtet – gut eingerichtetes Zimmer, bequemes Bett, modernes Bad.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Hotel Billenkamp",
+     "Familie Billenkamp",
+     "Hauptstraße 2",
+     "49577 Ankum"
+    ],
+    "anrede": "Sehr geehrte Familie Billenkamp,",
+    "problem": "dass Gäste dort zuerst eine große Cookie-Box und ein dunkles Zimmerbild sehen, bevor sie Ihre Gastfreundschaft seit 1835 erleben",
+    "suche": "Hotel"
+   },
+   "v5": {
+    "soft": true,
+    "r": "999px",
+    "r2": "28px",
+    "svc_cls": "orb",
+    "steps_cls": "tone orb",
+    "facts_cls": "dark",
+    "fonts": "family=Crimson+Pro:wght@500;600;700&family=Source+Sans+3:wght@400;500;600",
+    "fh": "'Crimson Pro',Georgia,serif",
+    "fb": "'Source Sans 3',system-ui,sans-serif",
+    "hw": 600,
+    "hls": "-0.015em",
+    "hlh": 1.0,
+    "h1vw": 5.8,
+    "h1max": 6.8,
+    "c": {
+     "bg": "#FAF6F2",
+     "ink": "#2A1618",
+     "acc": "#7A1424",
+     "acc2": "#C9A46A",
+     "soft": "#F1E3DE",
+     "paper": "#FFFFFF",
+     "hbg": "#2A1618",
+     "hink": "#FFFFFF",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#7A1424",
+     "star": "#C9A46A"
+    },
+    "hero": "mask",
+    "shape": "gable",
+    "mclip": "polygon(0 20%, 50% 0, 100% 20%, 100% 100%, 0 100%)",
+    "hero_img": "b1",
+    "hero_slides": [
+     "b1",
+     "b2",
+     "b3"
+    ],
+    "logo_bg": "glass",
+    "logo_h": 50,
+    "svc": "rows",
+    "svc_imgs": [
+     "b5",
+     "b6",
+     "b4"
+    ],
+    "rows_intro": "Ob nur für eine Nacht oder für mehrere Tage – wir tun alles, damit Sie sich wohlfühlen.",
+    "rws": [
+     [
+      "b5",
+      "Ruhige Zimmer",
+      "10 Nichtraucherzimmer mit Bad, TV und kostenlosem WLAN – Einzel- und Doppelzimmer, Zustellbetten auf Wunsch.",
+      [
+       "Einzelzimmer",
+       "Doppelzimmer",
+       "WLAN"
+      ],
+      "Zimmer",
+      "b9"
+     ],
+     [
+      "b6",
+      "Frühstück am Tisch",
+      "Ein guter Start in den Tag: Unser reichhaltiges Frühstück servieren wir Ihnen direkt am Tisch.",
+      [
+       "Frühstück",
+       "Regional",
+       "Serviert"
+      ],
+      "Frühstück"
+     ],
+     [
+      "b4",
+      "Bierkneipe und Terrasse",
+      "Den Tag ausklingen lassen: in unserer gemütlichen Kneipe oder an lauen Abenden auf der Bierterrasse.",
+      [
+       "Kneipe",
+       "Terrasse",
+       "Gesellig"
+      ],
+      "Abends",
+      "b8"
+     ]
+    ],
+    "blend": [
+     "b7",
+     "b10",
+     "b2",
+     "Ankum und das Artland entdecken.",
+     "Radtouren, Kutschfahrten und Kultur – Ihr Ausgangspunkt mitten im Ort."
+    ],
+    "about_img": "b2",
+    "about_img2": "b6",
+    "cta_img": "b1",
+    "promo": "Zimmer frei",
+    "promo_tag": "Ankum",
+    "promo_sub": "Übernachtung mit Frühstück am Tisch – rufen Sie an, wir reservieren gern.",
+    "promo_img": "b5",
+    "promo_btn": "Jetzt Zimmer anfragen",
+    "bot_name": "Bruno",
+    "robot_tag": "Ihr digitaler Gastgeber",
+    "robot_hello": "Herzlich willkommen! Ich bin Bruno, der digitale Gastgeber der Familie Billenkamp. Soll ich Ihnen kurz das Haus zeigen?",
+    "rev_h2": "177 Gäste. 4,8 Sterne.",
+    "order": [
+     "svc",
+     "reviews",
+     "blend",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "pos": {},
+    "cta_h2": "Wir freuen uns auf Sie.",
+    "cta_p": "Rufen Sie an – Familie Billenkamp reserviert Ihr Zimmer gern persönlich.",
+    "row_link": "Jetzt anfragen",
+    "rev_sub": "Stimmen unserer Gäste.",
+    "form_q": "Was möchten Sie anfragen?",
+    "cta_btn": "Jetzt Zimmer anfragen"
+   },
+   "steps": [
+    [
+     "Anfragen",
+     "Rufen Sie an – wir reservieren persönlich."
+    ],
+    [
+     "Ankommen",
+     "Mitten in Ankum, herzlich empfangen."
+    ],
+    [
+     "Frühstücken",
+     "Reichhaltig, am Tisch serviert."
+    ],
+    [
+     "Entdecken",
+     "Artland, Radwege und mehr."
+    ]
+   ]
+  },
+  {
+   "slug": "reiterhof-eilfort",
+   "theme": "hotel",
+   "firma": "Reiterhof Eilfort",
+   "kurzname": "Reiterhof Eilfort",
+   "website": "https://www.reiterhof-eilfort.de",
+   "telefon": "05462 318",
+   "email": "info@reiterhof-eilfort.de",
+   "adresse": "Tütingen 6, 49577 Ankum",
+   "google": [
+    "4,9",
+    41
+   ],
+   "siegel": [
+    "Ferien auf dem Bauernhof"
+   ],
+   "tag": "Reiterhof und Ferienwohnungen in Ankum-Tütingen",
+   "h1": "Ferien auf dem <span>Reiterhof.</span>",
+   "sub": "Moderne Ferienwohnungen, Reitunterricht, Pferdepflege, Radtouren und gemütliche Abende am Grillplatz – zwischen Bremen und Osnabrück.",
+   "trust": [
+    [
+     "4,9",
+     "Sterne bei Google"
+    ],
+    [
+     "Reithalle",
+     "neu und hell"
+    ],
+    [
+     "Familien",
+     "willkommen"
+    ]
+   ],
+   "leist_h2": "Was Sie bei uns erleben.",
+   "leistungen": [
+    "Ferienwohnungen",
+    "Reitunterricht",
+    "Pferdepflege und Einstellen",
+    "Familienurlaub",
+    "Ausflüge ins Hasetal und Artland"
+   ],
+   "about_h2": "Herzlich willkommen auf dem Hof.",
+   "ueber": [
+    "Zwischen Bremen und Osnabrück finden Sie Ihr ideales Urlaubsziel: den Reiterhof Eilfort in Tütingen bei Ankum.",
+    "Familie Eilfort-Böcker freut sich auf Sie – mit Ferienwohnungen, Reitunterricht und viel Platz für Kinder und Pferde."
+   ],
+   "checks": [
+    "Moderne, liebevoll eingerichtete Ferienwohnungen",
+    "Neue, helle Reithalle",
+    "Ausgangspunkt für Osnabrücker Land, Hasetal und Artland"
+   ],
+   "inhaber_name": "Familie Eilfort-Böcker",
+   "inhaber_rolle": "Reiterhof Eilfort",
+   "inhaber_idx": 0,
+   "logo_url": "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r6/local/logo_eilfort.png",
+   "min_w": 500,
+   "bild_urls": [
+    "https://www.reiterhof-eilfort.de/typo3temp/yag/04/Urlaub_auf_dem_Reiterhof__407_537f97584828.jpg",
+    "https://www.reiterhof-eilfort.de/typo3temp/yag/03/Reiterparade-9_395_537f9757b3ce.jpg",
+    "https://www.reiterhof-eilfort.de/typo3temp/yag/04/Weide-1_411_537f97589eb7.jpg",
+    "https://www.reiterhof-eilfort.de/typo3temp/yag/03/Reiterparade-2_381_537f9756995d.jpg",
+    "https://www.reiterhof-eilfort.de/fileadmin/_processed_/csm_Hof-Eilfort-Gebaeude_296a2559b1.jpg",
+    "https://www.reiterhof-eilfort.de/typo3temp/yag/04/Weide-2_413_537f9758c27a.jpg",
+    "https://www.reiterhof-eilfort.de/typo3temp/yag/03/Pferd-neugierig_377_537f975643d4.jpg",
+    "https://www.reiterhof-eilfort.de/typo3temp/yag/03/Reiterparade-6_389_537f97574412.jpg",
+    "https://www.reiterhof-eilfort.de/typo3temp/yag/02/249_52ac3e941c7c.jpg",
+    "https://www.reiterhof-eilfort.de/typo3temp/yag/02/281_52ac3e992fa3.jpg"
+   ],
+   "reviews": [
+    [
+     "Fantastische Ferienwohnung, ausgezeichneter Reitunterricht und freundliche Gastgeber. Ein wunderbarer, ruhiger Reiterhof für den Familienurlaub.",
+     "“"
+    ],
+    [
+     "Wir haben eine Woche in der Remise 1 gewohnt und uns rundum wohlgefühlt – gemütlich und mit viel Liebe zum Detail eingerichtet.",
+     "“"
+    ],
+    [
+     "Hier lernt man schnell und gut reiten, und die Hofbesitzer sind sehr freundlich.",
+     "“"
+    ],
+    [
+     "Sehr schöne Reitanlage mit tollen Ferienhäusern, großzügigen Boxen und einer schönen Reithalle.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Reiterhof Eilfort",
+     "Familie Eilfort-Böcker",
+     "Tütingen 6",
+     "49577 Ankum"
+    ],
+    "anrede": "Sehr geehrte Familie Eilfort-Böcker,",
+    "problem": "dass sie auf dem Handy nicht angepasst ist – Gäste sehen winzige Texte und müssen zoomen, bevor sie Ihre schönen Ferienwohnungen entdecken",
+    "suche": "Reiterhof"
+   },
+   "v5": {
+    "soft": true,
+    "r": "999px",
+    "r2": "28px",
+    "svc_cls": "orb",
+    "steps_cls": "tone orb",
+    "facts_cls": "dark",
+    "fonts": "family=Vollkorn:wght@500;600;700&family=Nunito:wght@400;600;700",
+    "fh": "'Vollkorn',Georgia,serif",
+    "fb": "'Nunito',system-ui,sans-serif",
+    "hw": 700,
+    "hls": "-0.015em",
+    "hlh": 1.0,
+    "h1vw": 6,
+    "h1max": 7,
+    "c": {
+     "bg": "#FBF8EE",
+     "ink": "#2B2A1E",
+     "acc": "#3B7A2A",
+     "acc2": "#F0C000",
+     "soft": "#F6EBC0",
+     "paper": "#FFFFFF",
+     "hbg": "#FBF8EE",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#2B2A1E",
+     "onctabtn": "#F0C000",
+     "star": "#E0A21B"
+    },
+    "hero": "collage",
+    "prints": [
+     [
+      "b2",
+      "Ausritt"
+     ],
+     [
+      "b3",
+      "Auf der Weide"
+     ],
+     [
+      "b4",
+      "Unser Hof"
+     ]
+    ],
+    "logo_h": 70,
+    "strokes": [
+     "#3B7A2A",
+     "#F0C000"
+    ],
+    "svc": "rows",
+    "svc_imgs": [
+     "b5",
+     "b6",
+     "b8"
+    ],
+    "rows_intro": "Ein tolles Freizeitangebot macht Ihren Familienurlaub zu einem unvergesslichen Erlebnis.",
+    "rws": [
+     [
+      "b5",
+      "Ferienwohnungen",
+      "Moderne, liebevoll eingerichtete Wohnungen mit gut ausgestatteter Küche – mitten auf dem Hof.",
+      [
+       "Remise",
+       "Küche",
+       "Familien"
+      ],
+      "Wohnen",
+      "b1"
+     ],
+     [
+      "b2",
+      "Reitunterricht und Ausritte",
+      "Für Anfänger und Fortgeschrittene – in der neuen Reithalle oder draußen in der Natur.",
+      [
+       "Unterricht",
+       "Ausritt",
+       "Reithalle"
+      ],
+      "Reiten",
+      "b7"
+     ],
+     [
+      "b8",
+      "Freizeit für die ganze Familie",
+      "Pferdepflege, Radtouren, Grillabende und Ausflüge ins Osnabrücker Land, Hasetal und Artland.",
+      [
+       "Grillplatz",
+       "Radtouren",
+       "Ausflüge"
+      ],
+      "Freizeit",
+      "b10"
+     ]
+    ],
+    "blend": [
+     "b6",
+     "b3",
+     "b9",
+     "Urlaub, der nach Heu duftet.",
+     "Ferien auf dem Bauernhof – mit Pferden, Natur und viel Zeit füreinander."
+    ],
+    "about_img": "b4",
+    "about_img2": "b10",
+    "cta_img": "b2",
+    "promo": "Ferien im Sommer",
+    "promo_tag": "Jetzt anfragen",
+    "promo_sub": "Die beliebten Wochen sind schnell weg – sichern Sie sich Ihre Ferienwohnung.",
+    "promo_img": "b5",
+    "promo_btn": "Jetzt Wohnung anfragen",
+    "bot_name": "Fohli",
+    "robot_hello": "Hallo! Ich bin Fohli vom Reiterhof Eilfort. Soll ich Ihnen kurz den Hof zeigen?",
+    "rev_h2": "41 Gäste. 4,9 Sterne.",
+    "order": [
+     "svc",
+     "blend",
+     "reviews",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "pos": {
+     "b1": "50% 30%"
+    },
+    "cta_h2": "Ihr Urlaub auf dem Reiterhof.",
+    "cta_p": "Rufen Sie an oder hinterlassen Sie Ihre Nummer – wir melden uns mit freien Terminen.",
+    "row_link": "Jetzt anfragen",
+    "rev_sub": "Stimmen unserer Gäste.",
+    "form_q": "Was möchten Sie anfragen?",
+    "cta_btn": "Jetzt Ferienwohnung anfragen"
+   },
+   "steps": [
+    [
+     "Anfragen",
+     "Rufen Sie an oder schreiben Sie uns."
+    ],
+    [
+     "Ankommen",
+     "In Ihrer Ferienwohnung auf dem Hof."
+    ],
+    [
+     "Erleben",
+     "Reiten, Pferdepflege, Radtouren."
+    ],
+    [
+     "Erinnern",
+     "Und nächstes Jahr wiederkommen."
+    ]
+   ]
+  },
+  {
+   "slug": "berling-ankum",
+   "theme": "laden",
+   "firma": "Uhren-Schmuck-Optik-Studio A. Berling GmbH",
+   "kurzname": "Berling",
+   "website": "https://www.optik-uhren-berling.de",
+   "telefon": "05462 72057",
+   "email": "service@a-berling.de",
+   "adresse": "Hauptstraße 46, 49577 Ankum",
+   "google": [
+    "4,7",
+    26
+   ],
+   "siegel": [
+    "Augenoptikermeister, Goldschmied, 10 Jahre Akustik"
+   ],
+   "tag": "Optik, Akustik, Uhren und Schmuck in Ankum",
+   "h1": "Ihr Partner <span>für die Sinne.</span>",
+   "sub": "Sehen, Hören, Schmücken, Zeit: Brillen, Hörgeräte, Uhren und Schmuck unter einem Dach – mit Beratung, die sich Zeit nimmt.",
+   "trust": [
+    [
+     "4",
+     "Bereiche unter einem Dach"
+    ],
+    [
+     "Meister",
+     "Augenoptik und Goldschmied"
+    ],
+    [
+     "3D",
+     "Sehtest mit Vision Simulator"
+    ]
+   ],
+   "leist_h2": "Alles für Ihre Sinne.",
+   "leistungen": [
+    "Optik",
+    "Hörgeräte",
+    "Uhren",
+    "Schmuck",
+    "Service und Reparatur"
+   ],
+   "about_h2": "Ein Haus. Vier Leidenschaften.",
+   "ueber": [
+    "Ob es um die schönen Dinge im Leben geht, mit denen man sich schmückt, oder um die Zeit, die immer mitgeht – bei uns finden Sie einen zuverlässigen Ansprechpartner.",
+    "Familie Berling und ihr Team nehmen sich Zeit für jeden Kunden – in unserem neu gestalteten Studio an der Hauptstraße."
+   ],
+   "checks": [
+    "Augenoptikermeister Alfred Berling",
+    "Hörakustik seit über 10 Jahren",
+    "Goldschmied im Haus"
+   ],
+   "inhaber_name": "Anne Berling",
+   "inhaber_rolle": "Geschäftsführerin",
+   "logo_url": "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r6/local/logo_berling.png",
+   "min_w": 500,
+   "bild_urls": [
+    "https://www.optik-uhren-berling.de/wp-content/uploads/2026/08/laden02.jpg",
+    "https://www.optik-uhren-berling.de/wp-content/uploads/2026/08/Team.jpg",
+    "https://www.optik-uhren-berling.de/wp-content/uploads/2026/08/umbau16.jpg",
+    "https://www.optik-uhren-berling.de/wp-content/uploads/2026/08/5BB8OE_Q.jpg",
+    "https://www.optik-uhren-berling.de/wp-content/uploads/2026/08/Ania-Haie_0000.jpg",
+    "https://www.optik-uhren-berling.de/wp-content/uploads/2026/08/Hoya-Vision-Simulator.jpg",
+    "https://www.optik-uhren-berling.de/wp-content/uploads/2026/08/MASSANGEPASSTER-GEHOERSCHUTZ.jpg",
+    "https://www.optik-uhren-berling.de/wp-content/uploads/2026/08/umbau18.jpg",
+    "https://www.optik-uhren-berling.de/wp-content/uploads/2026/08/geschaeft_berling.jpg",
+    "https://www.optik-uhren-berling.de/wp-content/uploads/2026/08/Kiotonakamura_0000_Kioto_Posting_7_1080x1080.jpg"
+   ],
+   "reviews": [
+    [
+     "Wer diesen Laden betritt, sollte etwas Zeit mitbringen – das freundliche Team nimmt sich für jeden Kunden Zeit.",
+     "“"
+    ],
+    [
+     "Super freundlich, hervorragende Beratung. Ob Brille, Schmuck, Uhren oder Hörgeräte – Berling ist die richtige Adresse.",
+     "“"
+    ],
+    [
+     "Ausgezeichnete, gründliche Beratung beim Schmuckkauf – und eine Augenmessung so genau wie nie zuvor.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Uhren-Schmuck-Optik-Studio A. Berling GmbH",
+     "Frau Anne Berling",
+     "Hauptstraße 46",
+     "49577 Ankum"
+    ],
+    "anrede": "Sehr geehrte Frau Berling,",
+    "problem": "dass Ihre vier starken Bereiche dort nur in einem kleinen Menü auftauchen und Ihr schönes, neues Studio kaum zu sehen ist",
+    "suche": "Optiker"
+   },
+   "v5": {
+    "soft": true,
+    "r": "999px",
+    "r2": "28px",
+    "svc_cls": "orb",
+    "steps_cls": "tone orb",
+    "facts_cls": "dark",
+    "fonts": "family=Cormorant+Garamond:wght@500;600;700&family=Karla:wght@400;500;600",
+    "fh": "'Cormorant Garamond',Georgia,serif",
+    "fb": "'Karla',system-ui,sans-serif",
+    "hw": 600,
+    "hls": "-0.01em",
+    "hlh": 0.98,
+    "h1vw": 6.2,
+    "h1max": 7.2,
+    "c": {
+     "bg": "#F7F5F1",
+     "ink": "#2E2E2E",
+     "acc": "#B8892E",
+     "acc2": "#D9C08A",
+     "soft": "#EFE8DA",
+     "paper": "#FFFFFF",
+     "hbg": "#F7F5F1",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#2E2E2E",
+     "onctabtn": "#E6C98A",
+     "star": "#B8892E"
+    },
+    "hero": "collage",
+    "prints": [
+     [
+      "b1",
+      "Unser Haus in Ankum"
+     ],
+     [
+      "b4",
+      "Uhren"
+     ],
+     [
+      "b5",
+      "Schmuck"
+     ]
+    ],
+    "logo_h": 56,
+    "svc": "rows",
+    "svc_imgs": [
+     "b3",
+     "b6",
+     "b4"
+    ],
+    "rows_intro": "Für alle schönen Dinge finden Sie bei uns im Haus einen zuverlässigen Ansprechpartner.",
+    "rws": [
+     [
+      "b3",
+      "Optik",
+      "Brillen, die zu Ihnen passen – mit 3D-Sehtest im Vision Simulator und präziser Augenmessung.",
+      [
+       "Brillen",
+       "Kontaktlinsen",
+       "3D-Sehtest"
+      ],
+      "Sehen",
+      "b10"
+     ],
+     [
+      "b7",
+      "Hörakustik",
+      "Damit Sie perfekt hören: Hörtest, Beratung und moderne Hörsysteme – seit über 10 Jahren bei Berling.",
+      [
+       "Hörtest",
+       "Hörgeräte",
+       "Service"
+      ],
+      "Hören"
+     ],
+     [
+      "b4",
+      "Uhren und Schmuck",
+      "Für den perfekten Zeitpunkt: Uhren, Gold- und Silberschmuck – mit Goldschmied im Haus.",
+      [
+       "Uhren",
+       "Goldschmuck",
+       "Reparatur"
+      ],
+      "Zeit & Schmuck",
+      "b5"
+     ]
+    ],
+    "about_img": "b2",
+    "about_img2": "b8",
+    "cta_img": "b9",
+    "promo": "3D-Sehtest erleben",
+    "promo_tag": "Neu",
+    "promo_sub": "Mit dem Vision Simulator sehen Sie Ihre neuen Gläser, bevor sie gefertigt werden.",
+    "promo_img": "b6",
+    "promo_btn": "Jetzt Termin anfragen",
+    "bot_name": "Bella",
+    "robot_hello": "Hallo! Ich bin Bella von Berling. Soll ich Ihnen kurz zeigen, was es bei uns gibt – Optik, Hören, Uhren und Schmuck?",
+    "rev_h2": "Kunden über Berling.",
+    "order": [
+     "svc",
+     "reviews",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "pos": {
+     "b2": "50% 30%"
+    },
+    "cta_h2": "Wir nehmen uns Zeit für Sie.",
+    "cta_p": "Ob Brille, Hörgerät, Uhr oder Schmuck: Rufen Sie an oder kommen Sie im Studio an der Hauptstraße vorbei.",
+    "cta_btn": "Jetzt Termin anfragen"
+   },
+   "steps": [
+    [
+     "Vorbeikommen",
+     "Im Studio an der Hauptstraße."
+    ],
+    [
+     "Beraten",
+     "Wir nehmen uns Zeit für Sie."
+    ],
+    [
+     "Messen",
+     "3D-Sehtest oder Hörtest."
+    ],
+    [
+     "Abholen",
+     "Perfekt angepasst."
+    ]
+   ]
+  },
+  {
+   "slug": "kleintierpraxis-ankum",
+   "theme": "tier",
+   "firma": "Kleintierpraxis Ankum",
+   "kurzname": "Kleintierpraxis Ankum",
+   "website": "https://www.kleintierpraxis-ankum.de",
+   "telefon": "05462 962325",
+   "email": "info@kleintierpraxis-ankum.de",
+   "adresse": "Tiefer Weg 39, 49577 Ankum",
+   "google": [
+    "4,5",
+    58
+   ],
+   "siegel": [
+    "Tierärztliche Gemeinschaftspraxis Dres. Arnold"
+   ],
+   "tag": "Kleintierpraxis in Ankum",
+   "h1": "Das Glück <span>trägt Fell.</span>",
+   "sub": "Spezialisierte Kleintierpraxis im ländlichen Raum: moderne Diagnostik, Chirurgie und innere Medizin – und viel Zeit für Sie und Ihr Tier.",
+   "trust": [
+    [
+     "Termin",
+     "oft am selben Tag"
+    ],
+    [
+     "OP",
+     "mit Inhalationsnarkose"
+    ],
+    [
+     "Vögel",
+     "und Tauben spezialisiert"
+    ]
+   ],
+   "leist_h2": "Was wir für Ihr Tier tun.",
+   "leistungen": [
+    "Haustierärztliche Versorgung",
+    "Chirurgie",
+    "Innere Medizin",
+    "Labor und Diagnostik",
+    "Ziergeflügel, Tauben und Ziervögel"
+   ],
+   "about_h2": "Wir nehmen uns Zeit.",
+   "ueber": [
+    "Unser Verständnis von Service ist unsere Kompetenz: Wir hören zu, finden individuelle Lösungen, beraten Sie und kümmern uns.",
+    "Das Zusammenspiel aus individueller Betreuung, umfangreicher Ausstattung und Fachwissen dient einem Ziel: dem Wohlbefinden Ihres Tieres."
+   ],
+   "checks": [
+    "Diagnostik vor Ort",
+    "Überwachte Narkose bei Operationen",
+    "Spezialisiert auf Vögel und Tauben"
+   ],
+   "inhaber_name": "Unser Praxisteam",
+   "inhaber_rolle": "Kleintierpraxis Ankum",
+   "inhaber_idx": 0,
+   "logo_url": "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r6/local/logo_kleintier.png",
+   "min_w": 600,
+   "bild_urls": [
+    "https://www.kleintierpraxis-ankum.de/wp-content/uploads/2025/12/150-scaled.jpg",
+    "https://www.kleintierpraxis-ankum.de/wp-content/uploads/2021/09/philo-min.jpg",
+    "https://www.kleintierpraxis-ankum.de/wp-content/uploads/2021/09/team9-min.jpg",
+    "https://www.kleintierpraxis-ankum.de/wp-content/uploads/2021/09/arbeit2-min.jpg",
+    "https://www.kleintierpraxis-ankum.de/wp-content/uploads/2021/09/team2-min.jpg",
+    "https://www.kleintierpraxis-ankum.de/wp-content/uploads/2021/09/team7-min.jpg",
+    "https://www.kleintierpraxis-ankum.de/wp-content/uploads/2021/09/leistungen4-min-1024x682.jpg",
+    "https://www.kleintierpraxis-ankum.de/wp-content/uploads/2021/09/team10-min.jpg",
+    "https://www.kleintierpraxis-ankum.de/wp-content/uploads/2021/09/team8-min.jpg",
+    "https://www.kleintierpraxis-ankum.de/wp-content/uploads/2025/12/066-Kopie-scaled.jpg"
+   ],
+   "reviews": [
+    [
+     "Erstes Mal mit meiner Hündin hier, weil sie starke Schmerzen hatte – ich habe problemlos noch am selben Tag einen Termin bekommen.",
+     "“"
+    ],
+    [
+     "Die beste Tierarztpraxis, bei der wir je waren. Das Team nimmt sich immer viel Zeit und ist unglaublich kompetent.",
+     "“"
+    ],
+    [
+     "Kompetent und mitfühlend beraten, schon am Telefon. Die Behandlung war gründlich und herzlich.",
+     "“"
+    ],
+    [
+     "Eine wirklich kompetente und sehr freundliche Praxis.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Kleintierpraxis Ankum",
+     "Tierärztliche Gemeinschaftspraxis Dres. Arnold",
+     "Tiefer Weg 39",
+     "49577 Ankum"
+    ],
+    "anrede": "Sehr geehrte Damen und Herren,",
+    "problem": "dass Ihre wunderschönen Praxisfotos und Ihr starkes Team dort hinter langen Menüs und Texten verschwinden",
+    "suche": "Tierarzt"
+   },
+   "v5": {
+    "soft": true,
+    "r": "999px",
+    "r2": "28px",
+    "svc_cls": "orb",
+    "steps_cls": "tone orb",
+    "facts_cls": "dark",
+    "fonts": "family=Nunito:wght@500;700;800&family=Caveat+Brush",
+    "fh": "'Nunito',system-ui,sans-serif",
+    "fb": "'Nunito',system-ui,sans-serif",
+    "hw": 800,
+    "hls": "-0.03em",
+    "hlh": 0.98,
+    "h1vw": 5.6,
+    "h1max": 6.6,
+    "c": {
+     "bg": "#F6FAF0",
+     "ink": "#24321A",
+     "acc": "#6FA51A",
+     "acc2": "#B5D36E",
+     "soft": "#E6F1D2",
+     "paper": "#FFFFFF",
+     "hbg": "#F6FAF0",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#24321A",
+     "onctabtn": "#D7EBA6",
+     "star": "#E0A21B"
+    },
+    "hero": "portrait",
+    "logo_h": 56,
+    "svc": "rows",
+    "svc_imgs": [
+     "b2",
+     "b4",
+     "b6"
+    ],
+    "rows_intro": "Neben der vollumfänglichen Versorgung Ihrer Haustiere betreuen wir Ziergeflügel, Tauben und Ziervögel hochspezialisiert.",
+    "rws": [
+     [
+      "b3",
+      "Haustierärztliche Versorgung",
+      "Impfungen, Vorsorge und Versorgung bei Verletzungen nach Bissen oder Unfällen – wenn möglich unter örtlicher Betäubung.",
+      [
+       "Vorsorge",
+       "Impfung",
+       "Verletzungen"
+      ],
+      "Hausarzt",
+      "b2"
+     ],
+     [
+      "b4",
+      "Labor und Diagnostik",
+      "Unsere Diagnostik vor Ort liefert schnelle Ergebnisse – damit Ihr Tier rasch die richtige Behandlung bekommt.",
+      [
+       "Labor",
+       "Ultraschall",
+       "Röntgen"
+      ],
+      "Diagnostik",
+      "b9"
+     ],
+     [
+      "b7",
+      "Chirurgie und innere Medizin",
+      "Allgemeine und Weichteilchirurgie mit Inhalationsnarkose und apparativer Überwachung der Vitalwerte.",
+      [
+       "OP",
+       "Narkose",
+       "Innere Medizin"
+      ],
+      "Medizin"
+     ]
+    ],
+    "rows_more": [
+     "Ziergeflügel und Tauben",
+     "Ziervögel"
+    ],
+    "blend": [
+     "b5",
+     "b6",
+     "b10",
+     "Moderne Medizin mit viel Gefühl.",
+     "Damit Ihr Tier gesund bleibt – und Sie sich gut aufgehoben fühlen."
+    ],
+    "about_img": "b5",
+    "about_img2": "b2",
+    "cta_img": "b2",
+    "promo": "Taubenimpfung",
+    "promo_tag": "Jetzt",
+    "promo_sub": "Ab sofort impfen wir gegen die Jungtaubenkrankheit – vereinbaren Sie einen Termin.",
+    "promo_img": "b8",
+    "promo_btn": "Jetzt Termin anfragen",
+    "bot_name": "Pfote",
+    "robot_hello": "Hallo! Ich bin Pfote von der Kleintierpraxis Ankum. Soll ich Ihnen kurz die Praxis zeigen?",
+    "rev_h2": "Tierhalter über unsere Praxis.",
+    "order": [
+     "svc",
+     "blend",
+     "reviews",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "pos": {
+     "b1": "50% 30%"
+    },
+    "cta_h2": "Vereinbaren Sie einen Termin.",
+    "cta_p": "Rufen Sie uns an – in dringenden Fällen bemühen wir uns um einen Termin noch am selben Tag.",
+    "row_link": "Termin vereinbaren",
+    "rev_sub": "Das sagen Tierhalter.",
+    "form_q": "Worum geht es bei Ihrem Tier?",
+    "cta_btn": "Jetzt Termin vereinbaren"
+   },
+   "steps": [
+    [
+     "Anrufen",
+     "Wir vereinbaren einen Termin."
+    ],
+    [
+     "Untersuchen",
+     "Gründlich und mit Ruhe."
+    ],
+    [
+     "Diagnostik",
+     "Labor und Bildgebung vor Ort."
+    ],
+    [
+     "Behandeln",
+     "Mit klarem Plan für Ihr Tier."
+    ]
+   ]
+  },
+  {
+   "slug": "bestattungen-hellmann",
+   "theme": "laden",
+   "firma": "Bestattungen Hellmann",
+   "kurzname": "Bestattungen Hellmann",
+   "website": "https://www.bestattungen-hellmann.de",
+   "telefon": "05462 71515",
+   "email": "info@bestattungen-hellmann.de",
+   "adresse": "Bersenbrücker Straße 13, 49577 Ankum",
+   "google": [
+    "5,0",
+    3
+   ],
+   "siegel": [
+    "Familiengeführt, Tag und Nacht erreichbar"
+   ],
+   "tag": "Bestattungen in Ankum",
+   "h1": "Würdevoll <span>Abschied nehmen.</span>",
+   "sub": "Wir stehen Ihnen in den Stunden des Abschieds vertrauensvoll zur Seite – mit persönlichem Beistand und Erfahrung aus Jahrzehnten.",
+   "trust": [
+    [
+     "24 h",
+     "erreichbar"
+    ],
+    [
+     "Familie",
+     "geführt"
+    ],
+    [
+     "Persönlich",
+     "gestaltet"
+    ]
+   ],
+   "leist_h2": "Wir kümmern uns um alles.",
+   "leistungen": [
+    "Erstgespräch und Beratung",
+    "Formalitäten und Behörden",
+    "Überführungen",
+    "Trauerfeier und Beisetzung",
+    "Bestattungsvorsorge"
+   ],
+   "about_h2": "Persönlicher Beistand ist uns wichtig.",
+   "ueber": [
+    "Uns liegt es am Herzen, dass bei jeder Verabschiedung die Persönlichkeit des Verstorbenen im Mittelpunkt steht.",
+    "Wenn Sie es wünschen, gestalten Sie die Beerdigung aktiv mit. Ingo Hellmann und sein Team begleiten Sie mit Ruhe und Einfühlungsvermögen."
+   ],
+   "checks": [
+    "Tag und Nacht erreichbar",
+    "Alle Formalitäten aus einer Hand",
+    "Individuelle, würdevolle Trauerfeiern"
+   ],
+   "inhaber_name": "Ingo Hellmann",
+   "inhaber_rolle": "Bestatter",
+   "logo_url": "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r6/local/logo_hellmann.png",
+   "min_w": 500,
+   "bild_urls": [
+    "https://images.unsplash.com/photo-1693418617590-e3dce76b6c0b?w=1800&q=85&fm=jpg",
+    "https://www.bestattungen-hellmann.de/images/2024/09/25/956bdf6268575ebbd9adf2e47432e5f2_logo2021.png",
+    "https://images.unsplash.com/photo-1715297923840-44ed5c4c2cc6?w=1800&q=85&fm=jpg"
+   ],
+   "reviews": [
+    [
+     "Ein großes Dankeschön an Ingo Hellmann, der nach dem plötzlichen Tod meiner Mutter einen liebevollen, würdigen Abschied ermöglicht hat.",
+     "“"
+    ],
+    [
+     "Mit seiner einfühlsamen, menschlichen Art und absoluter Kompetenz hat Herr Hellmann einen würdigen Rahmen geschaffen. Wir fühlten uns verstanden und begleitet.",
+     "“"
+    ],
+    [
+     "Ingo ist auf unsere Wünsche eingegangen und hat alles Nötige mit den Behörden schnell erledigt. Die Trauerfeier war würdevoll.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Bestattungen Hellmann",
+     "Herrn Ingo Hellmann",
+     "Bersenbrücker Straße 13",
+     "49577 Ankum"
+    ],
+    "anrede": "Sehr geehrter Herr Hellmann,",
+    "problem": "dass Angehörige dort zuerst ein Cookie-Fenster und langen Text sehen, bevor sie Ihre Telefonnummer finden – in einem Moment, in dem jede Minute zählt",
+    "suche": "Bestatter"
+   },
+   "v5": {
+    "soft": true,
+    "r": "999px",
+    "r2": "28px",
+    "svc_cls": "orb",
+    "steps_cls": "tone orb",
+    "facts_cls": "dark",
+    "fonts": "family=Libre+Baskerville:wght@400;700&family=Lato:wght@300;400;700",
+    "fh": "'Libre Baskerville',Georgia,serif",
+    "fb": "'Lato',system-ui,sans-serif",
+    "hw": 400,
+    "hls": "-0.01em",
+    "hlh": 1.1,
+    "h1vw": 4.6,
+    "h1max": 5.4,
+    "c": {
+     "bg": "#F7F5F2",
+     "ink": "#221A3A",
+     "acc": "#2C1E5C",
+     "acc2": "#B9B2A1",
+     "soft": "#ECE8E2",
+     "paper": "#FFFFFF",
+     "hbg": "#F7F5F2",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#2C1E5C",
+     "star": "#B9A36A"
+    },
+    "hero": "mask",
+    "shape": "arch",
+    "mclip": "inset(0 4% 0 4% round 46vw 46vw 0 0)",
+    "hero_img": "b1",
+    "hero_slides": [
+     "b1",
+     "b3"
+    ],
+    "logo_h": 60,
+    "svc": "rows",
+    "svc_imgs": [
+     "b2",
+     "b3",
+     "b1"
+    ],
+    "rows_intro": "Wir kümmern uns um die Formalitäten und um die gesamte Organisation und Durchführung der Bestattung.",
+    "rws": [
+     [
+      "b2",
+      "Beratung und Formalitäten",
+      "Wir übernehmen Behördengänge, Urkunden und alle offiziellen Angelegenheiten – damit Sie Zeit für Ihre Trauer haben.",
+      [
+       "Behörden",
+       "Urkunden",
+       "Organisation"
+      ],
+      "Begleitung"
+     ],
+     [
+      "b3",
+      "Trauerfeier und Beisetzung",
+      "Persönlich gestaltet, mit Raum für Erinnerungen – als Erd-, Feuer- oder Seebestattung.",
+      [
+       "Trauerfeier",
+       "Beisetzung",
+       "Persönlich"
+      ],
+      "Abschied"
+     ]
+    ],
+    "about_img": "b1",
+    "about_img2": "b2",
+    "cta_img": "b3",
+    "no_promo": true,
+    "stock": true,
+    "bot_name": "Ruth",
+    "robot_tag": "Wir sind für Sie da",
+    "robot_delay": 6000,
+    "robot_hello": "Guten Tag. Ich bin Ruth, die digitale Begleiterin von Bestattungen Hellmann. Darf ich Ihnen zeigen, wie wir Ihnen helfen können?",
+    "bot_hi": "Guten Tag. Ich bin Ruth. Wie kann ich Ihnen helfen? Im Trauerfall erreichen Sie uns jederzeit unter 05462 71515.",
+    "tour_l": "Hier sehen Sie, wie wir Sie in den Tagen des Abschieds begleiten.",
+    "tour_r": "Das schreiben Angehörige über unsere Begleitung.",
+    "tour_u": "Hier lernen Sie Ingo Hellmann kennen.",
+    "tour_k": "Im Trauerfall erreichen Sie uns Tag und Nacht unter 05462 71515.",
+    "steps_h2": "Was im Trauerfall zu tun ist.",
+    "rev_h2": "Was Angehörige sagen.",
+    "order": [
+     "svc",
+     "reviews",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "pos": {},
+    "cta_h2": "Wir sind für Sie da. Tag und Nacht.",
+    "cta_p": "Im Trauerfall rufen Sie uns jederzeit an. Wir kommen zu Ihnen und besprechen alles Weitere in Ruhe.",
+    "row_link": "Mit uns sprechen",
+    "rev_sub": "Das schreiben Angehörige.",
+    "form_q": "Wie können wir helfen?",
+    "cta_btn": "Jetzt anrufen, Tag und Nacht"
+   },
+   "steps": [
+    [
+     "Anrufen",
+     "Rufen Sie uns an – Tag und Nacht."
+    ],
+    [
+     "Gespräch",
+     "Wir besprechen in Ruhe alle Wünsche."
+    ],
+    [
+     "Organisation",
+     "Wir übernehmen Formalitäten und Ablauf."
+    ],
+    [
+     "Abschied",
+     "Eine würdevolle, persönliche Trauerfeier."
+    ]
+   ]
+  },
+  {
+   "slug": "markthalle-alfhausen",
+   "theme": "hof",
+   "firma": "Markthalle Alfhauser Dorf(er)leben eG",
+   "kurzname": "Markthalle Alfhausen",
+   "website": "https://markthalle-alfhausen.de",
+   "telefon": "0176 50932644",
+   "email": "",
+   "adresse": "Alte Schulstraße 5, 49594 Alfhausen",
+   "google": [
+    "4,9",
+    12
+   ],
+   "siegel": [
+    "Aus der Region – für die Region"
+   ],
+   "tag": "Dorfladen und Treffpunkt in Alfhausen",
+   "h1": "Aus der Region. <span>Für die Region.</span>",
+   "sub": "Regionales Gemüse, Wild, Fleisch, Liköre, Nudeln und Kaffee – dazu Veranstaltungen, Kochabende und Feiern in unserer Markthalle.",
+   "trust": [
+    [
+     "4,9",
+     "Sterne bei Google"
+    ],
+    [
+     "Regional",
+     "Erzeuger aus der Umgebung"
+    ],
+    [
+     "eG",
+     "von Alfhausern getragen"
+    ]
+   ],
+   "leist_h2": "Besonders. Regional. Nachhaltig.",
+   "leistungen": [
+    "Frisches Gemüse und Obst",
+    "Fleisch und Wild aus der Region",
+    "Liköre, Öle und Feinkost",
+    "Veranstaltungen",
+    "Feiern und Gruppen"
+   ],
+   "about_h2": "Von der Idee zur Markthalle.",
+   "ueber": [
+    "Die Markthalle ist ein Projekt der Alfhauser Dorf(er)leben eG – von Menschen aus dem Ort, für den Ort.",
+    "Hier kaufen Sie ein, treffen Nachbarn und feiern gemeinsam: mit Spanferkel-Abenden, Kochkursen und Spieleabenden."
+   ],
+   "checks": [
+    "Produkte von Erzeugern aus der Region",
+    "Veranstaltungen für Gruppen nach Absprache",
+    "Alfhausen-App mit allen Terminen"
+   ],
+   "inhaber_name": "Alfhauser Dorf(er)leben eG",
+   "inhaber_rolle": "Markthalle",
+   "logo_url": "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r6/local/logo_markthalle.png",
+   "min_w": 600,
+   "bild_urls": [
+    "https://markthalle-alfhausen.de/wp-content/uploads/2025/06/die-neue-markthalle-03.jpg",
+    "https://markthalle-alfhausen.de/wp-content/uploads/2025/06/die-neue-markthalle-02.jpg",
+    "https://markthalle-alfhausen.de/wp-content/uploads/2025/06/die-neue-markthalle-01.jpg",
+    "https://markthalle-alfhausen.de/wp-content/uploads/2025/06/die-neue-markthalle-07.jpg",
+    "https://markthalle-alfhausen.de/wp-content/uploads/2025/06/fleisch.jpg",
+    "https://markthalle-alfhausen.de/wp-content/uploads/2025/06/romanesco-und-tomaten.jpg",
+    "https://markthalle-alfhausen.de/wp-content/uploads/2025/06/offener-mittagstisch-02-1024x473.jpg",
+    "https://markthalle-alfhausen.de/wp-content/uploads/2025/06/weinabende-02-1024x473.jpg",
+    "https://markthalle-alfhausen.de/wp-content/uploads/2025/06/regionales-obst.jpg",
+    "https://markthalle-alfhausen.de/wp-content/uploads/2025/06/markthallenfest-2024-02-1024x473.jpg",
+    "https://markthalle-alfhausen.de/wp-content/uploads/2025/06/die-neue-markthalle-09.jpg"
+   ],
+   "reviews": [
+    [
+     "Ein schöner, gut sortierter Dorfladen mit regionalen Produkten – Fleisch, Liköre, Kaffeebohnen, Nudeln, Gewürze, Eier. Sehr empfehlenswert.",
+     "“"
+    ],
+    [
+     "Tolle regionale Produkte und sehr freundliches Personal. Ich kaufe hier sehr gern für unsere kleine Familie ein.",
+     "“"
+    ],
+    [
+     "Schöner kleiner Laden mit tollen Produkten aus der Region.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Markthalle Alfhauser Dorf(er)leben eG",
+     "Alte Schulstraße 5",
+     "49594 Alfhausen"
+    ],
+    "anrede": "Sehr geehrte Damen und Herren,",
+    "problem": "dass Besucher dort zuerst lange Dateinamen und eine App-Werbung sehen, statt sofort Lust auf Ihre regionalen Produkte zu bekommen",
+    "suche": "Hofladen"
+   },
+   "v5": {
+    "soft": true,
+    "r": "999px",
+    "r2": "28px",
+    "svc_cls": "orb",
+    "steps_cls": "tone orb",
+    "facts_cls": "dark",
+    "fonts": "family=Bitter:wght@500;700;800&family=Source+Sans+3:wght@400;500;600",
+    "fh": "'Bitter',Georgia,serif",
+    "fb": "'Source Sans 3',system-ui,sans-serif",
+    "hw": 800,
+    "hls": "-0.02em",
+    "hlh": 0.98,
+    "h1vw": 5.6,
+    "h1max": 6.4,
+    "c": {
+     "bg": "#FBF7F2",
+     "ink": "#3A2420",
+     "acc": "#B8292E",
+     "acc2": "#8DA35A",
+     "soft": "#F3E4DC",
+     "paper": "#FFFFFF",
+     "hbg": "#3A2420",
+     "hink": "#FFFFFF",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#B8292E",
+     "frame": "#FBF7F2",
+     "star": "#E0A21B"
+    },
+    "hero": "panes",
+    "hero_img": "b1",
+    "hero_slides": [
+     "b1",
+     "b2",
+     "b3"
+    ],
+    "cols": 4,
+    "rows": 2,
+    "pane_h": 44,
+    "logo_bg": "glass",
+    "logo_h": 60,
+    "svc": "rows",
+    "svc_imgs": [
+     "b5",
+     "b6",
+     "b4"
+    ],
+    "rows_intro": "Aktuelle Angebote und Neuigkeiten finden Sie direkt in der Markthalle – oder in der Alfhausen-App.",
+    "rws": [
+     [
+      "b2",
+      "Frisch vom Feld",
+      "Gemüse und Obst der Saison, direkt von Erzeugern aus der Umgebung.",
+      [
+       "Gemüse",
+       "Obst",
+       "Saison"
+      ],
+      "Frisch",
+      "b5"
+     ],
+     [
+      "b6",
+      "Fleisch und Wild",
+      "Fleisch und Wild aus der Region – ehrlich, regional und mit kurzen Wegen.",
+      [
+       "Wild",
+       "Fleisch",
+       "Regional"
+      ],
+      "Metzgerei"
+     ],
+     [
+      "b4",
+      "Liköre, Öle und Feinkost",
+      "Liköre, Spirituosen, Öle, Nudeln und Kaffee – ideal für zuhause oder als Geschenk.",
+      [
+       "Liköre",
+       "Feinkost",
+       "Geschenke"
+      ],
+      "Feinkost",
+      "b11"
+     ]
+    ],
+    "blend": [
+     "b7",
+     "b8",
+     "b10",
+     "Ein Treffpunkt für Alfhausen.",
+     "Spanferkel-Abende, Kochkurse und Feiern – mitten im Dorf."
+    ],
+    "about_img": "b7",
+    "about_img2": "b9",
+    "cta_img": "b1",
+    "promo": "Spanferkel-Abend",
+    "promo_tag": "Event",
+    "promo_sub": "Regelmäßig Veranstaltungen in der Markthalle – fragen Sie nach den nächsten Terminen.",
+    "promo_img": "b8",
+    "promo_btn": "Jetzt anrufen",
+    "bot_name": "Emma",
+    "robot_hello": "Hallo! Ich bin Emma aus der Markthalle Alfhausen. Soll ich Ihnen kurz zeigen, was es bei uns gibt?",
+    "steps_h2": "So einfach geht regional.",
+    "rev_h2": "Kunden über die Markthalle.",
+    "order": [
+     "svc",
+     "reviews",
+     "blend",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "pos": {},
+    "cta_h2": "Kommen Sie vorbei.",
+    "cta_p": "Regionale Produkte, Veranstaltungen und Feiern in der Markthalle – rufen Sie uns an.",
+    "row_link": "Mehr erfahren",
+    "rev_sub": "Stimmen unserer Kunden.",
+    "cta_btn": "Jetzt anrufen"
+   },
+   "steps": [
+    [
+     "Vorbeikommen",
+     "In der Alten Schulstraße."
+    ],
+    [
+     "Entdecken",
+     "Regionale Produkte aus der Umgebung."
+    ],
+    [
+     "Treffen",
+     "Nachbarn, Kaffee, Veranstaltungen."
+    ],
+    [
+     "Feiern",
+     "Ihre Feier in der Markthalle."
+    ]
+   ]
+  },
+  {
+   "slug": "gasthof-dueckinghaus",
+   "theme": "gastro",
+   "firma": "Gasthof Dückinghaus mit Hotel Bahnhof Lechtrup-Merzen",
+   "kurzname": "Gasthof Dückinghaus",
+   "website": "https://www.dueckinghaus.de",
+   "telefon": "05466 368",
+   "email": "info@dueckinghaus.de",
+   "adresse": "Osterodener Weg 20, 49586 Merzen",
+   "google": [
+    "4,7",
+    1092
+   ],
+   "siegel": [
+    "Erlebnisgastronomie mit Eisenbahnservice"
+   ],
+   "tag": "Gasthof und Waggon-Hotel in Merzen",
+   "h1": "Alles einsteigen. <span>Genuss fährt ein.</span>",
+   "sub": "Restaurant mit authentischem Eisenbahnservice, Übernachten im umgebauten Waggon und Feiern im großen Festsaal – bei Familie Dückinghaus.",
+   "trust": [
+    [
+     "4,7",
+     "Sterne, 1.092 Bewertungen"
+    ],
+    [
+     "Waggon",
+     "Hotel im Eisenbahnwagen"
+    ],
+    [
+     "Festsaal",
+     "für große Feiern"
+    ]
+   ],
+   "leist_h2": "Hier wird’s besonders.",
+   "leistungen": [
+    "Restaurant mit Eisenbahnservice",
+    "Übernachten im Waggon",
+    "Festsaal und Feiern",
+    "Hochzeiten",
+    "Schlaf- und Schlemmerscheine"
+   ],
+   "about_h2": "Schön, dass du da bist!",
+   "ueber": [
+    "Bei uns ist jeder herzlich willkommen – besonders alle, die das Besondere schätzen und erleben möchten.",
+    "Familie Dückinghaus und das gesamte Eisenbahn-Team freuen sich darauf, dich bald persönlich in unserem Gasthof zu begrüßen."
+   ],
+   "checks": [
+    "Getränke kommen mit der Modelleisenbahn",
+    "Frisch renovierte Waggon-Zimmer",
+    "Gutscheine für jeden Anlass"
+   ],
+   "inhaber_name": "Familie Dückinghaus",
+   "inhaber_rolle": "Gastgeber",
+   "inhaber_idx": 0,
+   "logo_url": "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r6/local/logo_dueckinghaus.png",
+   "min_w": 600,
+   "bild_urls": [
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sdde2f4d9992571ac/image/i02768dad9b0fb063/version/1686223243/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sdde2f4d9992571ac/image/iac3471fc2fdf49d7/version/1778068569/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sdde2f4d9992571ac/image/idd0b9641d22e2a71/version/1686221738/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sdde2f4d9992571ac/image/i22b1a372f9aeb0a5/version/1686222164/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sdde2f4d9992571ac/image/if4c26d9ef5c5d307/version/1686222164/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sdde2f4d9992571ac/image/i674c087ecdcd7e0f/version/1501616243/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sdde2f4d9992571ac/image/i79b5314d4358c66c/version/1501616407/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sdde2f4d9992571ac/image/i4636877e0f191a6b/version/1501616250/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sdde2f4d9992571ac/image/i03953b18ffc7ad60/version/1581451285/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sdde2f4d9992571ac/image/if651b8e0a100a8a9/version/1501603670/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sdde2f4d9992571ac/image/ia4f6e5deacdeca76/version/1686220665/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sdde2f4d9992571ac/image/ia274adca1b73d5c4/version/1686222164/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sdde2f4d9992571ac/image/ie89eca67302a64d9/version/1501616250/image.jpg"
+   ],
+   "reviews": [
+    [
+     "Anders als ein gewöhnliches Hotel – und genau das macht das Erlebnis aus. Service und Essen sind großartig, freundliches Team.",
+     "“"
+    ],
+    [
+     "Ein schönes Zimmer im alten Waggon, gutes Essen und ein ausgezeichnetes Frühstück. Das Team sieht wirklich jeden Gast.",
+     "“"
+    ],
+    [
+     "Ein sehr schönes Themenhotel mit freundlichem Personal!",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Gasthof Dückinghaus",
+     "Familie Dückinghaus",
+     "Osterodener Weg 20",
+     "49586 Merzen"
+    ],
+    "anrede": "Liebe Familie Dückinghaus,",
+    "problem": "dass Ihr einzigartiges Eisenbahn-Erlebnis dort erst nach mehreren Klicks sichtbar wird – obwohl es genau das ist, worüber 1.092 Gäste schwärmen",
+    "suche": "Restaurant"
+   },
+   "v5": {
+    "soft": true,
+    "r": "999px",
+    "r2": "28px",
+    "svc_cls": "orb",
+    "steps_cls": "tone orb",
+    "facts_cls": "dark",
+    "fonts": "family=Arvo:wght@400;700&family=Lato:wght@400;700",
+    "fh": "'Arvo',Georgia,serif",
+    "fb": "'Lato',system-ui,sans-serif",
+    "hw": 700,
+    "hls": "-0.02em",
+    "hlh": 1.0,
+    "h1vw": 4.2,
+    "h1max": 4.8,
+    "c": {
+     "bg": "#FAF6F3",
+     "ink": "#2A1416",
+     "acc": "#9A1426",
+     "acc2": "#C9A46A",
+     "soft": "#F2E2E0",
+     "paper": "#FFFFFF",
+     "hbg": "#2A1416",
+     "hink": "#FFFFFF",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#9A1426",
+     "star": "#C9A46A"
+    },
+    "hero": "portrait",
+    "logo_bg": "glass",
+    "logo_h": 56,
+    "svc": "rows",
+    "svc_imgs": [
+     "b3",
+     "b4",
+     "b6"
+    ],
+    "rows_intro": "Egal ob Restaurant, Waggon-Hotel oder Festsaal – unser Ziel ist, dass du dich pudelwohl fühlst.",
+    "rws": [
+     [
+      "b3",
+      "Restaurant mit Eisenbahnservice",
+      "Bei uns fährt die Modelleisenbahn durchs Restaurant und bringt die Getränke direkt an den Tisch.",
+      [
+       "Eisenbahn",
+       "Regional",
+       "Familie"
+      ],
+      "Restaurant",
+      "b11"
+     ],
+     [
+      "b4",
+      "Übernachten im Waggon",
+      "Schlafen in umgebauten, frisch renovierten Eisenbahnwaggons – ein Erlebnis für Groß und Klein.",
+      [
+       "Waggon",
+       "Frühstück",
+       "Erlebnis"
+      ],
+      "Hotel",
+      "b12"
+     ],
+     [
+      "b6",
+      "Feiern im Festsaal",
+      "Hochzeit, Geburtstag oder Firmenfeier: Im Festsaal feierst du mit Familie und Freunden ausgelassen.",
+      [
+       "Hochzeit",
+       "Festsaal",
+       "Buffet"
+      ],
+      "Feiern",
+      "b13"
+     ]
+    ],
+    "blend": [
+     "b10",
+     "b5",
+     "b7",
+     "Zwei Nächte für eine.",
+     "Schlaf- und Schlemmerscheine – das besondere Geschenk für deine Liebsten."
+    ],
+    "about_img": "b2",
+    "about_img2": "b9",
+    "cta_img": "b3",
+    "promo": "Zwei Nächte für eine",
+    "promo_tag": "Angebot",
+    "promo_sub": "Übernachte zwei Nächte im Eisenbahnwaggon und zahle nur eine – solange Termine frei sind.",
+    "promo_img": "b4",
+    "promo_btn": "Jetzt reservieren",
+    "bot_name": "Schaffner Paul",
+    "robot_tag": "Dein Zugbegleiter",
+    "robot_hello": "Alles einsteigen! Ich bin Paul, euer digitaler Schaffner. Soll ich dir kurz zeigen, was dich bei uns erwartet?",
+    "bot_hi": "Hallo! Ich bin Paul, der digitale Schaffner. Wobei kann ich dir helfen?",
+    "tour_l": "Hier siehst du Restaurant, Waggon-Hotel und Festsaal.",
+    "tour_r": "1.092 Gäste geben uns 4,7 Sterne bei Google.",
+    "tour_u": "Hier lernst du Familie Dückinghaus kennen.",
+    "tour_k": "Und hier reservierst du deinen Tisch oder Waggon – unter 05466 368.",
+    "steps_h2": "So kommst du an Bord.",
+    "rev_h2": "1.092 Gäste. 4,7 Sterne.",
+    "order": [
+     "svc",
+     "blend",
+     "reviews",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "pos": {
+     "b1": "50% 40%"
+    },
+    "du": true,
+    "cta_h2": "Alles einsteigen.",
+    "cta_p": "Ruf an oder hinterlass deine Nummer – wir melden uns für Tisch, Waggon oder deine Feier.",
+    "row_link": "Jetzt anfragen",
+    "rev_sub": "Das sagen unsere Gäste.",
+    "form_q": "Was möchtest du anfragen?",
+    "por_vw": 5,
+    "por_max": 5.8,
+    "cta_btn": "Jetzt reservieren"
+   },
+   "steps": [
+    [
+     "Reservieren",
+     "Ruf an – Tisch, Waggon oder Festsaal."
+    ],
+    [
+     "Einsteigen",
+     "Wir empfangen dich am Bahnhof."
+    ],
+    [
+     "Genießen",
+     "Die Eisenbahn bringt die Getränke."
+    ],
+    [
+     "Übernachten",
+     "Im Waggon schlafen wie nirgends sonst."
+    ]
+   ]
+  },
+  {
+   "slug": "winkeljohann-merzen",
+   "theme": "garten",
+   "firma": "Winkeljohann GbR",
+   "kurzname": "Winkeljohann",
+   "website": "https://www.blumen-winkeljohann.de",
+   "telefon": "05466 1616",
+   "email": "merzen@blumen-winkeljohann.de",
+   "adresse": "Hauptstraße 30, 49586 Merzen",
+   "google": [
+    "4,7",
+    18
+   ],
+   "siegel": [
+    "FLEUROP 4-Sterne-Florist"
+   ],
+   "tag": "Blumen, Floristik, Baumschule und Gartenbau in Merzen und Voltlage",
+   "h1": "Blumen mit <span>Gärtnerqualität.</span>",
+   "sub": "Täglich frische Schnitt- und Topfblumen, Floristik für jeden Anlass, Pflanzen aus eigener Anzucht und Gartengestaltung vom Gärtnermeister.",
+   "trust": [
+    [
+     "60+",
+     "Jahre Familienbetrieb"
+    ],
+    [
+     "4 Sterne",
+     "FLEUROP-Florist"
+    ],
+    [
+     "Eigene",
+     "Anzucht"
+    ]
+   ],
+   "leist_h2": "Von der Blume bis zum ganzen Garten.",
+   "leistungen": [
+    "Floristik",
+    "Topf- und Schnittblumen",
+    "Beet- und Balkonpflanzen",
+    "Baumschule",
+    "Garten- und Landschaftsbau",
+    "Gemüse aus eigener Kultur"
+   ],
+   "about_h2": "Seit 1955 mit Liebe zur Pflanze.",
+   "ueber": [
+    "1955 wurde die Gärtnerei in Voltlage gegründet, 1991 kam das Blumengeschäft in Merzen dazu – heute mit eigenen Gewächshäusern in der Ortsmitte.",
+    "Seit 2021 ergänzt Gärtnermeister Philipp Winkeljohann das Angebot um den Garten- und Landschaftsbau."
+   ],
+   "checks": [
+    "Täglich frische Blumen",
+    "Pflanzen aus eigener Anzucht",
+    "Geschäfte in Merzen und Voltlage"
+   ],
+   "inhaber_name": "Philipp Winkeljohann",
+   "inhaber_rolle": "Gärtnermeister",
+   "logo_url": "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r6/local/logo_winkeljohann.png",
+   "min_w": 600,
+   "bild_urls": [
+    "https://www.blumen-winkeljohann.de/wp-content/uploads/2023/11/IMG_0525kl.jpg",
+    "https://www.blumen-winkeljohann.de/wp-content/uploads/2023/02/IMG_0523arr-1.jpg",
+    "https://www.blumen-winkeljohann.de/wp-content/uploads/2022/03/merzen2-1.jpg",
+    "https://www.blumen-winkeljohann.de/wp-content/uploads/2022/03/einschlag22031-1.jpg",
+    "https://www.blumen-winkeljohann.de/wp-content/uploads/sb-instagram-feed-images/883299942_18139954450635743_6210286639693439739_nfull.webp",
+    "https://www.blumen-winkeljohann.de/wp-content/uploads/2022/11/sommerblumen2-1-1-705x529.jpg",
+    "https://www.blumen-winkeljohann.de/wp-content/uploads/2022/03/PICNIC_20220323_094640043-1.jpg",
+    "https://www.blumen-winkeljohann.de/wp-content/uploads/sb-instagram-feed-images/775603212_18132247087635743_7415357406162441414_nfull.webp",
+    "https://www.blumen-winkeljohann.de/wp-content/uploads/2022/03/einschlag22032-1.jpg",
+    "https://www.blumen-winkeljohann.de/wp-content/uploads/sb-instagram-feed-images/774042809_18132245668635743_4750266961852035697_nfull.webp",
+    "https://www.blumen-winkeljohann.de/wp-content/uploads/2023/02/1955_web-1-1.jpg"
+   ],
+   "reviews": [
+    [
+     "Die Sträuße werden hier mit großer Sorgfalt gebunden. Sehr freundliches Personal – ein Besuch lohnt sich.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Winkeljohann GbR",
+     "Herrn Philipp Winkeljohann",
+     "Hauptstraße 30",
+     "49586 Merzen"
+    ],
+    "anrede": "Sehr geehrter Herr Winkeljohann,",
+    "problem": "dass Ihre wunderschönen Sträuße und Ihr neuer Garten- und Landschaftsbau dort erst weit unten oder auf Unterseiten zu finden sind",
+    "suche": "Blumenladen"
+   },
+   "v5": {
+    "soft": true,
+    "r": "999px",
+    "r2": "28px",
+    "svc_cls": "orb",
+    "steps_cls": "tone orb",
+    "facts_cls": "dark",
+    "fonts": "family=Gloock&family=Manrope:wght@400;500;600",
+    "fh": "'Gloock',Georgia,serif",
+    "fb": "'Manrope',system-ui,sans-serif",
+    "hw": 400,
+    "hls": "-0.01em",
+    "hlh": 1.0,
+    "h1vw": 5.8,
+    "h1max": 6.8,
+    "c": {
+     "bg": "#F7F8F2",
+     "ink": "#14301A",
+     "acc": "#0E4A1C",
+     "acc2": "#E2231A",
+     "soft": "#E7EFE0",
+     "paper": "#FFFFFF",
+     "hbg": "#F7F8F2",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#0E4A1C",
+     "onctabtn": "#FFFFFF",
+     "frame": "#0E4A1C",
+     "star": "#E0A21B"
+    },
+    "hero": "window",
+    "hero_img": "b1",
+    "hero_slides": [
+     "b1",
+     "b2",
+     "b4"
+    ],
+    "frame_w": 20,
+    "logo_h": 56,
+    "strokes": [
+     "#0E4A1C",
+     "#E2231A"
+    ],
+    "svc": "rows",
+    "svc_imgs": [
+     "b5",
+     "b6",
+     "b4"
+    ],
+    "rows_intro": "Wir bieten laufend Neuheiten, die dem Trend entsprechen – in Gärtnerqualität.",
+    "rws": [
+     [
+      "b5",
+      "Floristik",
+      "Sträuße, Gestecke und Brautschmuck – mit großer Sorgfalt gebunden, als FLEUROP 4-Sterne-Florist.",
+      [
+       "Sträuße",
+       "Hochzeit",
+       "Trauer"
+      ],
+      "Floristik",
+      "b10"
+     ],
+     [
+      "b6",
+      "Pflanzen aus eigener Anzucht",
+      "Beet- und Balkonpflanzen in Gärtnerqualität und im Sommer frisches Gemüse aus eigener Kultur.",
+      [
+       "Beetpflanzen",
+       "Balkon",
+       "Gemüse"
+      ],
+      "Gärtnerei"
+     ],
+     [
+      "b4",
+      "Garten- und Landschaftsbau",
+      "Gartengestaltung, Baumschule und Pflanzung vom Gärtnermeister – für Ihren Garten nach Maß.",
+      [
+       "Gestaltung",
+       "Baumschule",
+       "Pflanzung"
+      ],
+      "Garten",
+      "b9"
+     ]
+    ],
+    "blend": [
+     "b2",
+     "b3",
+     "b8",
+     "Täglich frisch für Sie.",
+     "In unseren Geschäften in Merzen und Voltlage."
+    ],
+    "about_img": "b11",
+    "about_img2": "b7",
+    "cta_img": "b2",
+    "promo": "Frische Sträuße",
+    "promo_tag": "Heute",
+    "promo_sub": "Täglich frisch gebunden – rufen Sie an und wir stellen Ihren Strauß zusammen.",
+    "promo_img": "b5",
+    "promo_btn": "Jetzt Strauß bestellen",
+    "bot_name": "Blüte",
+    "robot_hello": "Hallo! Ich bin Blüte von Winkeljohann. Soll ich Ihnen kurz zeigen, was bei uns gerade blüht?",
+    "rev_h2": "Kunden über Winkeljohann.",
+    "order": [
+     "svc",
+     "blend",
+     "reviews",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "pos": {},
+    "cta_h2": "Blumen, Pflanzen, Gärten.",
+    "cta_p": "Rufen Sie an – wir binden Ihren Strauß oder beraten Sie zu Pflanzen und Gartengestaltung.",
+    "row_link": "Jetzt anfragen",
+    "cta_btn": "Jetzt Strauß bestellen"
+   },
+   "steps": [
+    [
+     "Anrufen",
+     "Oder in Merzen und Voltlage vorbeikommen."
+    ],
+    [
+     "Beraten",
+     "Wir hören zu, was Sie sich wünschen."
+    ],
+    [
+     "Binden",
+     "Ihr Strauß, mit Sorgfalt gebunden."
+    ],
+    [
+     "Freude",
+     "Für Sie oder Ihre Liebsten."
+    ]
+   ]
+  },
+  {
+   "slug": "gasthaus-bei-dine",
+   "theme": "gastro",
+   "firma": "Gasthaus Bei Dine",
+   "kurzname": "Gasthaus Bei Dine",
+   "website": "https://www.bei-dine.de",
+   "telefon": "05465 697",
+   "email": "info@bei-dine.de",
+   "adresse": "Lindenstraße 5, 49586 Neuenkirchen",
+   "siegel": [
+    "Gepflegte Gastlichkeit seit Generationen"
+   ],
+   "tag": "Gasthaus in Neuenkirchen",
+   "h1": "„Kommt, lasst uns <span>zu Dine gehen!“</span>",
+   "sub": "Gepflegte Gastlichkeit, kulinarische Köstlichkeiten aus der Region, gut gezapftes Pils und ein Biergarten zum Verweilen.",
+   "trust": [
+    [
+     "Pils",
+     "frisch gezapft"
+    ],
+    [
+     "Biergarten",
+     "im Sommer"
+    ],
+    [
+     "Feiern",
+     "Hochzeit bis Radtour"
+    ]
+   ],
+   "leist_h2": "Gast sein heißt, willkommen sein.",
+   "leistungen": [
+    "Regionale Küche",
+    "Kneipe und Pils",
+    "Biergarten",
+    "Feiern und Gesellschaften",
+    "Radlerstopp"
+   ],
+   "about_h2": "Mechthilde und Rainer Pinke.",
+   "ueber": [
+    "Gastlichkeit ist mehr als ein Wort, es ist eine Frage der Einstellung. Das Gasthaus „Bei Dine“ ist über die Grenzen Neuenkirchens hinaus für seine Gastfreundschaft bekannt.",
+    "Wir kümmern uns – um Ihre Wünsche, Ihr leibliches Wohl und mit aller Liebe. Lassen Sie den Alltag draußen vor der Tür."
+   ],
+   "checks": [
+    "Montags Würfelabend",
+    "Biergarten für Radgruppen",
+    "Feiern mit regionaler Küche"
+   ],
+   "inhaber_name": "Mechthilde und Rainer Pinke",
+   "inhaber_rolle": "Gastgeber",
+   "inhaber_idx": 0,
+   "min_w": 600,
+   "bild_urls": [
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sc4a06590a25c4ca4/image/icf3de60c5e7bf87e/version/1495646303/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sc4a06590a25c4ca4/image/if73db364d8f5145b/version/1500192309/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sc4a06590a25c4ca4/image/i8c69bb96e54196cd/version/1500192046/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sc4a06590a25c4ca4/image/i4fd792d35a05dfb0/version/1500192332/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sc4a06590a25c4ca4/image/i83b469685482d8a7/version/1500192167/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sc4a06590a25c4ca4/image/ife06caa252fba871/version/1500192167/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sc4a06590a25c4ca4/image/i4de3d230344a792f/version/1500192303/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sc4a06590a25c4ca4/image/if7482069667d3886/version/1517214921/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sc4a06590a25c4ca4/image/ia61bbe79ddf695f3/version/1500192167/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sc4a06590a25c4ca4/image/i5d84c3f89890c40d/version/1500192170/image.jpg"
+   ],
+   "reviews": [
+    [
+     "Mit unserer Radgruppe haben wir uns wie immer sehr wohlgefühlt. Ein schönes Bier und ein deftiges Butterbrot – perfekt.",
+     "“"
+    ],
+    [
+     "Sehr gemütlich, das Essen war lecker und der Service ausgezeichnet. Wir kommen wieder.",
+     "“"
+    ],
+    [
+     "Liebe Gastgeber, tolle Atmosphäre. Vor drei Jahren haben wir hier Hochzeit gefeiert – großartig.",
+     "“"
+    ],
+    [
+     "Ausgezeichneter Service, gutes Essen, fantastischer Biergarten.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Gasthaus Bei Dine",
+     "Mechthilde und Rainer Pinke",
+     "Lindenstraße 5",
+     "49586 Neuenkirchen"
+    ],
+    "anrede": "Liebe Frau Pinke, lieber Herr Pinke,",
+    "problem": "dass Gäste dort zuerst eine große Cookie-Box über einer Zeichnung sehen – und Ihre herzliche Gastfreundschaft erst danach entdecken",
+    "suche": "Gasthaus"
+   },
+   "v5": {
+    "soft": true,
+    "r": "999px",
+    "r2": "28px",
+    "svc_cls": "orb",
+    "steps_cls": "tone orb",
+    "facts_cls": "dark",
+    "fonts": "family=EB+Garamond:wght@500;600;700&family=Source+Sans+3:wght@400;500;600",
+    "fh": "'EB Garamond',Georgia,serif",
+    "fb": "'Source Sans 3',system-ui,sans-serif",
+    "hw": 600,
+    "hls": "-0.015em",
+    "hlh": 1.0,
+    "h1vw": 4.2,
+    "h1max": 4.8,
+    "c": {
+     "bg": "#F8F5EF",
+     "ink": "#1C2A4A",
+     "acc": "#2A4C9C",
+     "acc2": "#C98A3A",
+     "soft": "#E6E9F2",
+     "paper": "#FFFFFF",
+     "hbg": "#1C2A4A",
+     "hink": "#FFFFFF",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#2A4C9C",
+     "star": "#E0A21B"
+    },
+    "hero": "portrait",
+    "wordmark": "Gasthaus Bei Dine",
+    "logo": false,
+    "svc": "rows",
+    "svc_imgs": [
+     "b2",
+     "b4",
+     "b3"
+    ],
+    "rows_intro": "Fühlen Sie sich willkommen – in einem Gasthaus, in dem die Seele verwöhnt und dem Gaumen geschmeichelt wird.",
+    "rws": [
+     [
+      "b2",
+      "Regionale Küche",
+      "Kulinarische Köstlichkeiten aus der Region – vom deftigen Butterbrot bis zum Festessen.",
+      [
+       "Regional",
+       "Hausmannskost",
+       "Festessen"
+      ],
+      "Küche",
+      "b7"
+     ],
+     [
+      "b4",
+      "Kneipe und Pils",
+      "Gut gezapftes Pils, gesellige Runden und montags der beliebte Würfelabend.",
+      [
+       "Pils",
+       "Würfelabend",
+       "Stammtisch"
+      ],
+      "Kneipe",
+      "b10"
+     ],
+     [
+      "b3",
+      "Biergarten und Feiern",
+      "Im Sommer im Biergarten, ganzjährig für Hochzeiten, Geburtstage und Radgruppen.",
+      [
+       "Biergarten",
+       "Hochzeit",
+       "Radgruppen"
+      ],
+      "Feiern",
+      "b9"
+     ]
+    ],
+    "blend": [
+     "b5",
+     "b3",
+     "b8",
+     "Lassen Sie den Alltag draußen.",
+     "Und seien Sie wieder einmal ganz und gar Gast."
+    ],
+    "about_img": "b6",
+    "about_img2": "b8",
+    "cta_img": "b2",
+    "promo": "Radlerstopp im Biergarten",
+    "promo_tag": "Sommer",
+    "promo_sub": "Ein kühles Pils und ein deftiges Butterbrot – Radgruppen sind herzlich willkommen.",
+    "promo_img": "b3",
+    "promo_btn": "Jetzt Tisch reservieren",
+    "bot_name": "Dine",
+    "robot_hello": "Herzlich willkommen! Ich bin Dine, die digitale Gastgeberin. Soll ich Ihnen kurz unser Gasthaus zeigen?",
+    "rev_h2": "Gäste über Bei Dine.",
+    "order": [
+     "svc",
+     "blend",
+     "reviews",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "pos": {
+     "b1": "50% 30%"
+    },
+    "cta_h2": "Kommen Sie zu Dine.",
+    "cta_p": "Für einen Abend, ein Pils im Biergarten oder Ihre Feier – Mechthilde und Rainer Pinke freuen sich auf Sie.",
+    "row_link": "Jetzt reservieren",
+    "form_q": "Was planen Sie?",
+    "por_vw": 4.8,
+    "por_max": 5.6,
+    "cta_btn": "Jetzt Tisch reservieren"
+   },
+   "steps": [
+    [
+     "Reservieren",
+     "Rufen Sie an – wir halten Ihren Platz frei."
+    ],
+    [
+     "Ankommen",
+     "Herzlich empfangen von Familie Pinke."
+    ],
+    [
+     "Genießen",
+     "Regionale Küche und frisch gezapftes Pils."
+    ],
+    [
+     "Wiederkommen",
+     "Montags zum Würfelabend."
+    ]
+   ]
+  }
+ ]
+}

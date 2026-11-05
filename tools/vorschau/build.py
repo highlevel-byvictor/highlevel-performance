@@ -4,7 +4,7 @@ Aufruf: python3 tools/vorschau/build.py tools/vorschau/runden/<runde>.json
 """
 import json, sys, os, io, re, urllib.request, ssl, hashlib, datetime
 from pathlib import Path
-from PIL import Image, ImageOps, ImageEnhance, ImageFilter
+from PIL import ImageDraw, Image, ImageOps, ImageEnhance, ImageFilter
 import jinja2, segno
 from markupsafe import Markup
 from playwright.sync_api import sync_playwright
@@ -41,12 +41,38 @@ STEPS = {
  "fliesen": [("Beratung","Wir besprechen Ihre Wünsche, Formate und Materialien."),("Planung","Wir planen Fugenbild, Material und Ablauf genau."),("Verlegung","Wir verlegen präzise und mit sauberen Kanten."),("Übergabe","Ihr neues Bad oder Ihr Boden ist bereit.")],
  "shk":     [("Anfrage","Rufen Sie an oder schreiben Sie uns kurz."),("Beratung vor Ort","Wir prüfen Ihre Anlage und beraten zu Förderung."),("Installation","Unsere Monteure bauen alles sauber ein."),("Wartung","Wir bleiben für Service und Notdienst für Sie da.")],
  "bau":     [("Erstgespräch","Wir besprechen Ihr Bauvorhaben und Ihre Ziele."),("Planung","Wir planen Kosten, Zeit und Ablauf transparent."),("Bauphase","Unser Team baut zuverlässig und in Qualität."),("Übergabe","Wir übergeben Ihr fertiges Projekt.")],
+ "gastro":  [("Tisch reservieren","Rufen Sie an – wir halten Ihren Platz frei."),("Ankommen","Wir empfangen Sie herzlich und nehmen uns Zeit."),("Genießen","Frisch zubereitet, mit Liebe angerichtet."),("Wiederkommen","Wir freuen uns schon auf Ihren nächsten Besuch.")],
+ "fitness": [("Kennenlernen","Melden Sie sich – wir vereinbaren ein Probetraining."),("Probetraining","Sie lernen uns, die Kurse und das Team kennen."),("Ihr Plan","Gemeinsam legen wir Ihre Ziele und Ihren Weg fest."),("Dranbleiben","Wir begleiten Sie, damit Sie Ihr Ziel erreichen.")],
+ "beauty":  [("Termin","Rufen Sie an oder schreiben Sie uns."),("Beratung","Wir schauen uns Haut und Wünsche genau an."),("Behandlung","Sie lehnen sich zurück – wir kümmern uns um Sie."),("Pflege für zuhause","Sie erhalten Tipps, damit das Ergebnis lange hält.")],
+ "hotel":   [("Anfrage","Rufen Sie an oder schreiben Sie uns Ihren Wunschtermin."),("Bestätigung","Wir bestätigen Ihr Zimmer schnell und persönlich."),("Ankommen","Wir empfangen Sie herzlich – fühlen Sie sich zuhause."),("Erleben","Wir geben Ihnen gern Tipps für Ausflüge in der Region.")],
+ "auto":    [("Anfrage","Rufen Sie an oder schreiben Sie uns."),("Prüfung","Wir prüfen genau, was gebraucht wird."),("Angebot","Sie erhalten ein klares Angebot ohne Überraschungen."),("Lieferung","Wir liefern schnell und zuverlässig.")],
+ "tier":    [("Termin","Rufen Sie an oder buchen Sie online."),("Untersuchung","Wir nehmen uns Zeit für Ihr Tier."),("Behandlung","Moderne Medizin mit viel Gefühl."),("Nachsorge","Wir bleiben an Ihrer Seite.")],
+ "laden":   [("Vorbeikommen","Besuchen Sie uns – wir freuen uns auf Sie."),("Beraten lassen","Wir nehmen uns Zeit für Ihre Wünsche."),("Auswählen","Sie finden genau das Passende."),("Wiederkommen","Wir sind auch danach für Sie da.")],
+ "hof":     [("Vorbeikommen","Besuchen Sie uns direkt auf dem Hof."),("Probieren","Frisch, regional und mit Geschmack."),("Mitnehmen","Ehrliche Lebensmittel für Ihre Küche."),("Wiederkommen","Die Saison bringt immer wieder Neues.")],
 }
 
 env = jinja2.Environment(loader=jinja2.FileSystemLoader(TPL), autoescape=True)
 ctx = ssl.create_default_context()
 
-def fetch_img(url, dest, maxw=1600, trim=0):
+def knockout(im):
+    """Hellen, einfarbigen Logo-Hintergrund transparent machen."""
+    W, H = im.size
+    cs = [(0, 0), (W - 1, 0), (0, H - 1), (W - 1, H - 1)]
+    px = [im.getpixel(c) for c in cs]
+    if any(p[3] < 200 for p in px): return im
+    if not all(min(p[:3]) > 222 for p in px): return im
+    if max(max(abs(a - b) for a, b in zip(px[0][:3], p[:3])) for p in px) > 24: return im
+    rgb = im.convert("RGB"); mk = (255, 0, 254)
+    for c in cs: ImageDraw.floodfill(rgb, c, mk, thresh=40)
+    out = im.copy(); a = out.getchannel("A"); ap = a.load(); rp = rgb.load()
+    for y in range(H):
+        for x in range(W):
+            if rp[x, y] == mk: ap[x, y] = 0
+    out.putalpha(a.filter(ImageFilter.GaussianBlur(0.6)))
+    return out
+
+def fetch_img(url, dest, maxw=1600, trim=0, knock=True):
+    if url.startswith("http"): url = urllib.parse.quote(url, safe=":/?&=%~+#,;@!$'()*")
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     data = urllib.request.urlopen(req, timeout=30, context=ctx).read()
     im = Image.open(io.BytesIO(data))
@@ -54,7 +80,10 @@ def fetch_img(url, dest, maxw=1600, trim=0):
     logo = dest.stem == "logo"
     if logo:
         im = im.convert("RGBA")
-        if im.width > 600: im = im.resize((600, round(im.height * 600 / im.width)))
+        if im.width > 600: im = im.resize((600, round(im.height * 600 / im.width)), Image.LANCZOS)
+        if knock: im = knockout(im)
+        bb = im.getchannel("A").getbbox()
+        if bb: im = im.crop(bb)
         dest = dest.with_suffix(".png"); im.save(dest, optimize=True)
     elif im.mode in ("RGBA", "LA") or (im.mode == "P" and "transparency" in im.info):
         im = im.convert("RGBA")
@@ -103,7 +132,7 @@ def build(runde_file):
                     else: print("  Bild fehlt:", u, e)
             logo = None
             if f.get("logo_url"):
-                try: logo = "img/" + fetch_img(f["logo_url"], d / "img" / "logo")[0]
+                try: logo = "img/" + fetch_img(f["logo_url"], d / "img" / "logo", knock=not f.get("logo_keep"))[0]
                 except Exception as e:
                     old = d / "img" / "logo.png"
                     if old.exists(): logo = "img/logo.png"
@@ -120,7 +149,7 @@ def build(runde_file):
                 v5 = dict(f["v5"]); v5.setdefault("pos", {})
                 v.update(v5=v5, allimg=allimg, inhaber_k=(f"b{f['inhaber_idx']+1}" if f.get("inhaber_idx") is not None else None))
                 if v5.get("logo") is False: v["logo"] = None
-                html = env.get_template("vorschau5.html.j2").render(f=v, icon_phone=Markup(PHONE_SVG), steps=STEPS.get(f.get("theme","shk"), STEPS["shk"]))
+                html = env.get_template("vorschau5.html.j2").render(f=v, icon_phone=Markup(PHONE_SVG), steps=f.get("steps") or STEPS.get(f.get("theme","shk"), STEPS["shk"]))
             elif data.get("template") in ("v2", "v3", "v4"):
                 inh = imgs[f["inhaber_idx"]] if f.get("inhaber_idx") is not None and f["inhaber_idx"] < len(imgs) else None
                 base = [x for x in imgs if x != inh]

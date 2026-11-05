@@ -15,7 +15,7 @@ html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!
 body{background:var(--bg);color:var(--ink);font-family:var(--fb);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
 img{display:block;width:100%;height:100%;object-fit:cover}
 a{color:inherit}
-h1,h2,h3{font-family:var(--fh);font-weight:var(--hw);letter-spacing:var(--hls);line-height:var(--hlh);text-transform:var(--htt);font-stretch:var(--hst)}
+h1,h2,h3{font-family:var(--fh);font-weight:var(--hw);letter-spacing:var(--hls);line-height:var(--hlh);text-transform:var(--htt);font-stretch:var(--hst);font-style:normal}
 h1 span{display:block}
 h1,h2,h3,.facts,.hn-num,.big,.tel,.ptel{font-variant-numeric:lining-nums}
 h2{font-size:clamp(2.2rem,5vw,4.4rem);margin-bottom:.5em;max-width:16ch}
@@ -106,7 +106,7 @@ video.sl{width:100%;height:100%;object-fit:cover}.sl.hv{animation:none}
 /* ===== Hero: Portrait ===== */
 .h-por{background:var(--hbg);color:var(--hink);min-height:100vh;display:grid;grid-template-columns:1.25fr 1fr;padding-top:72px}
 .hpo-t{display:flex;flex-direction:column;justify-content:center;padding:6vh 4vw 6vh max(32px,5vw)}
-.hpo-t .ht h1{font-size:clamp(3.4rem,9.4vw,10.5rem)}
+.hpo-t .ht h1{font-size:clamp(3rem,9.4vw,10.5rem)}
 .hpo-p{position:relative;overflow:hidden}
 .hpo-p figcaption{position:absolute;left:0;bottom:0;background:var(--acc);color:#FFFFFF;padding:16px 22px;font-size:15px;line-height:1.35}
 .hpo-p figcaption b{display:block;font-family:var(--fh);font-size:22px;font-weight:var(--hw);letter-spacing:var(--hls)}
@@ -414,6 +414,32 @@ footer .note{grid-column:1/-1;margin-top:28px;padding-top:22px;border-top:1px so
 .rv-grid{grid-template-columns:1fr}.rc{width:280px}
 .promo2{grid-template-columns:96px 1fr;left:12px;bottom:210px;width:calc(100vw - 24px)}.promo2 .pi{min-height:118px}.promo2 .pt{padding:12px 36px 12px 14px}.promo2 b{font-size:17px;margin:4px 0 8px}.promo2 p{display:none}.promo2 .pb{padding:9px 14px;font-size:13.5px}
 }
+/* Runde 6: weiche Gestaltung */
+
+/* Runde 6: KI-Roboter-Guide */
+.robo{position:fixed;right:18px;bottom:60px;z-index:61;display:flex;align-items:flex-end;gap:10px;pointer-events:none}
+.robo>*{pointer-events:auto}
+.robo-av{width:84px;height:96px;border:0;background:none;cursor:pointer;padding:0;filter:drop-shadow(0 16px 20px rgba(0,0,0,.32));animation:rbob 3.4s ease-in-out infinite}
+@keyframes rbob{50%{transform:translateY(-7px)}}
+.robo-av .eye{animation:rblink 4.6s infinite;transform-origin:center;transform-box:fill-box}
+@keyframes rblink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
+.robo-av .ant{animation:rglow 1.8s ease-in-out infinite}
+@keyframes rglow{50%{opacity:.35}}
+.robo-av .arm{transform-origin:20% 90%;transform-box:fill-box;animation:rwave 2.6s ease-in-out 1}
+.robo.wave .robo-av .arm{animation:rwave 1.3s ease-in-out 2}
+@keyframes rwave{0%,100%{transform:rotate(0)}25%{transform:rotate(-24deg)}75%{transform:rotate(14deg)}}
+.robo-say{position:relative;width:min(330px,calc(100vw - 120px));padding:16px 18px 14px;border-radius:20px 20px 4px 20px;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);color:var(--ink);box-shadow:0 26px 50px -22px rgba(0,0,0,.5);font-size:15px;line-height:1.45;opacity:0;transform:translateY(10px) scale(.96);transform-origin:bottom right;transition:opacity .35s,transform .45s cubic-bezier(.2,.9,.2,1);margin-bottom:46px}
+.robo-say.on{opacity:1;transform:none}
+.robo-say b{display:block;font-size:13px;opacity:.6;font-weight:600;margin-bottom:4px}
+.robo-say .rb{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+.robo-say .rb button{border:0;cursor:pointer;font:inherit;font-size:13.5px;font-weight:600;padding:9px 14px;border-radius:999px;background:var(--acc);color:#FFFFFF}
+.robo-say .rb button.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px color-mix(in srgb,var(--ink) 30%,transparent)}
+.robo-say .rx{position:absolute;right:8px;top:6px;border:0;background:none;font-size:20px;cursor:pointer;color:inherit;opacity:.5}
+.robo-say .st{font-size:12px;opacity:.55;margin-left:auto;align-self:center}
+.tour-hl{outline:3px solid color-mix(in srgb,var(--acc) 70%,transparent);outline-offset:-10px;transition:outline-color .4s}
+.bot{bottom:170px}
+@media (max-width:900px){.promo2{display:none!important}}
+@media (max-width:900px){.robo-say{background:var(--paper)!important}.robo{right:8px;bottom:118px}.robo-av{width:62px;height:72px}.robo-say{width:calc(100vw - 92px);font-size:14px;margin-bottom:30px}.bot{bottom:200px}}
 @media (max-width:520px){.steps{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
@@ -454,11 +480,11 @@ footer .note{grid-column:1/-1;margin-top:28px;padding-top:22px;border-top:1px so
 
 <section class="sec " id="leistungen"><div class="wrap">
   <div class="rows-head"><h2>Wir bauen, was Sie vorhaben.</h2><p>Ob Eigenheim, Halle oder Kita: Wir übernehmen die Verantwortung für eine ordnungsgemäße Ausführung und halten Termine.</p></div>
-  <article class="rw"><div class="rw-ph"><img src="img/b3.webp" alt="Bauunternehmen Kreinest" class="" style="object-position:50% 50%" loading="eager"><span class="nr">Wohnbau</span></div>
-  <div class="rw-t"><h3>Ein- und Mehrfamilienhäuser</h3><p>Wir gestalten mit Ihnen Ihr Haus bis ins kleinste Detail und sorgen für die einwandfreie Ausführung aller Arbeiten.</p><ul><li>Neubau</li><li>Doppelhaus</li><li>Mehrfamilienhaus</li></ul><a href="#kontakt">Dazu beraten lassen</a></div></article><article class="rw"><div class="rw-ph"><img src="img/b6.webp" alt="Bauunternehmen Kreinest" class="" style="object-position:50% 50%" loading="eager"><span class="nr">Gewerbe</span></div>
-  <div class="rw-t"><h3>Gewerbe-, Industrie- und Projektbau</h3><p>Produktions- und Montagehallen, Bürogebäude und alle Bauwerke, die für eine Anlage nötig sind.</p><ul><li>Hallen</li><li>Büro</li><li>Projektbau</li></ul><a href="#kontakt">Dazu beraten lassen</a></div></article><article class="rw"><div class="rw-ph"><img src="img/b5.webp" alt="Bauunternehmen Kreinest" class="" style="object-position:50% 50%" loading="eager"><span class="nr">Öffentlich</span></div>
-  <div class="rw-t"><h3>Öffentliche Bauten</h3><p>Ihr Partner für Bauten der Kommunen, des Landes und des Kreises – wirtschaftlich und funktional.</p><ul><li>Kitas</li><li>Schulen</li><li>Kommunen</li></ul><a href="#kontakt">Dazu beraten lassen</a></div></article><article class="rw"><div class="rw-ph"><img src="img/b4.webp" alt="Bauunternehmen Kreinest" class="" style="object-position:50% 50%" loading="eager"><span class="nr">Rohbau</span></div>
-  <div class="rw-t"><h3>Rohbau mit eigenem Kran</h3><p>Moderner Maschinenpark, Bau- und Versetzkräne: Wir arbeiten rationell, schnell und sauber.</p><ul><li>Rohbau</li><li>Kran</li><li>Betonarbeiten</li></ul><a href="#kontakt">Dazu beraten lassen</a></div></article><article class="rw"><div class="rw-ph"><img src="img/b10.webp" alt="Bauunternehmen Kreinest" class="" style="object-position:50% 50%" loading="eager"><span class="nr">Bestand</span></div>
+  <article class="rw"><div class="rw-m"><div class="rw-ph"><img src="img/b3.webp" alt="Bauunternehmen Kreinest" class="" style="object-position:50% 50%" loading="eager"><span class="nr">Wohnbau</span></div></div>
+  <div class="rw-t"><h3>Ein- und Mehrfamilienhäuser</h3><p>Wir gestalten mit Ihnen Ihr Haus bis ins kleinste Detail und sorgen für die einwandfreie Ausführung aller Arbeiten.</p><ul><li>Neubau</li><li>Doppelhaus</li><li>Mehrfamilienhaus</li></ul><a href="#kontakt">Dazu beraten lassen</a></div></article><article class="rw"><div class="rw-m"><div class="rw-ph"><img src="img/b6.webp" alt="Bauunternehmen Kreinest" class="" style="object-position:50% 50%" loading="eager"><span class="nr">Gewerbe</span></div></div>
+  <div class="rw-t"><h3>Gewerbe-, Industrie- und Projektbau</h3><p>Produktions- und Montagehallen, Bürogebäude und alle Bauwerke, die für eine Anlage nötig sind.</p><ul><li>Hallen</li><li>Büro</li><li>Projektbau</li></ul><a href="#kontakt">Dazu beraten lassen</a></div></article><article class="rw"><div class="rw-m"><div class="rw-ph"><img src="img/b5.webp" alt="Bauunternehmen Kreinest" class="" style="object-position:50% 50%" loading="eager"><span class="nr">Öffentlich</span></div></div>
+  <div class="rw-t"><h3>Öffentliche Bauten</h3><p>Ihr Partner für Bauten der Kommunen, des Landes und des Kreises – wirtschaftlich und funktional.</p><ul><li>Kitas</li><li>Schulen</li><li>Kommunen</li></ul><a href="#kontakt">Dazu beraten lassen</a></div></article><article class="rw"><div class="rw-m"><div class="rw-ph"><img src="img/b4.webp" alt="Bauunternehmen Kreinest" class="" style="object-position:50% 50%" loading="eager"><span class="nr">Rohbau</span></div></div>
+  <div class="rw-t"><h3>Rohbau mit eigenem Kran</h3><p>Moderner Maschinenpark, Bau- und Versetzkräne: Wir arbeiten rationell, schnell und sauber.</p><ul><li>Rohbau</li><li>Kran</li><li>Betonarbeiten</li></ul><a href="#kontakt">Dazu beraten lassen</a></div></article><article class="rw"><div class="rw-m"><div class="rw-ph"><img src="img/b10.webp" alt="Bauunternehmen Kreinest" class="" style="object-position:50% 50%" loading="eager"><span class="nr">Bestand</span></div></div>
   <div class="rw-t"><h3>Umbau und Altbausanierung</h3><p>Aus- und Umbau sowie Sanierung im Bestand – fachgerecht und mit Blick auf langfristig sinnvolle Lösungen.</p><ul><li>Umbau</li><li>Anbau</li><li>Sanierung</li></ul><a href="#kontakt">Dazu beraten lassen</a></div></article>
   <p class="more"><span>Landwirtschaftliche Gebäude</span><span>Tankstellen und WHG-Anlagen</span><span>Bauberatung</span></p>
 </div></section>
@@ -522,10 +548,11 @@ footer .note{grid-column:1/-1;margin-top:28px;padding-top:22px;border-top:1px so
 </div></footer>
 
 <aside class="pv" id="pv"><b>Grober Entwurf</b>Erstellt von High Level Performance. Bei einer Zusammenarbeit arbeiten wir jede Seite viel intensiver aus.<button type="button" aria-label="Hinweis schließen" onclick="this.parentNode.remove()">x</button></aside>
-<button class="bot-btn" type="button" id="botbtn"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></svg></i><span>Fragen? Assistent</span></button>
+<div class="robo" id="robo"><div class="robo-say" id="rsay" role="status" aria-live="polite"></div><button class="robo-av" type="button" id="botbtn" aria-label="Digitalen Guide öffnen"><svg viewBox="0 0 84 96" aria-hidden="true"><line x1="42" y1="6" x2="42" y2="18" stroke="#151515" stroke-width="3"/><circle class="ant" cx="42" cy="6" r="5" fill="#8C8C8C"/><rect x="10" y="18" width="64" height="50" rx="20" fill="#E30613"/><rect x="18" y="28" width="48" height="28" rx="14" fill="#151515"/><ellipse class="eye" cx="32" cy="42" rx="5" ry="6" fill="#fff"/><ellipse class="eye" cx="52" cy="42" rx="5" ry="6" fill="#fff"/><path d="M34 51q8 5 16 0" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/><rect x="4" y="36" width="6" height="14" rx="3" fill="#151515"/><rect x="74" y="36" width="6" height="14" rx="3" fill="#151515"/><rect x="24" y="68" width="36" height="22" rx="10" fill="#E30613"/><circle cx="42" cy="79" r="4" fill="#8C8C8C"/><rect class="arm" x="60" y="60" width="9" height="22" rx="4.5" fill="#151515"/></svg></button></div>
+
 <div class="bot" id="bot" role="dialog" aria-label="Assistent">
-  <header><div>Bauunternehmen Kreinest<small>Digitaler Assistent, rund um die Uhr</small></div><button type="button" aria-label="Schließen" id="botx">&times;</button></header>
-  <div class="msgs" id="msgs"><div class="m">Guten Tag! Ich bin der digitale Assistent von Bauunternehmen Kreinest. Wobei kann ich helfen?</div></div>
+  <header><div>Lumi<small>Digitaler Assistent von Bauunternehmen Kreinest, rund um die Uhr</small></div><button type="button" aria-label="Schließen" id="botx">&times;</button></header>
+  <div class="msgs" id="msgs"><div class="m">Guten Tag! Ich bin Lumi, der digitale Assistent von Bauunternehmen Kreinest. Wobei kann ich helfen?</div></div>
   <div class="chips" id="chips"><button type="button" data-a="0">Welche Leistungen bieten Sie an?</button><button type="button" data-a="1">Wo finde ich Sie?</button><button type="button" data-a="2">Kostenlose Beratung</button></div>
   <p class="demo">Beispiel-Funktion im Entwurf. Im fertigen System beantwortet der KI-Assistent Fragen mit Ihren eigenen Infos und trägt Anfragen ins CRM ein.</p>
 </div>
@@ -548,17 +575,32 @@ lis.forEach(function(l){l.addEventListener('mouseenter',function(){act(+l.datase
 if('IntersectionObserver' in window&&mi.length){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)act(+e.target.dataset.i)})},{rootMargin:'-45% 0px -45% 0px'});lis.forEach(function(l){io.observe(l)})}
 var A=["Wir bieten unter anderem: Ein- und Mehrfamilienh\u00e4user, Gewerbe- und Industriebau, Landwirtschaftliche Geb\u00e4ude, \u00d6ffentliche Bauten, Umbau und Altbausanierung, Bauberatung.","Sie finden uns hier: Dammer Stra\u00dfe 49, 49451 Holdorf. Telefon: 05494 977880.","Sehr gern! Rufen Sie einfach an unter 05494 977880 oder nutzen Sie das Formular unten. Die Beratung ist kostenlos und unverbindlich."];
 var bot=document.getElementById('bot'),msgs=document.getElementById('msgs'),pr=document.getElementById('promo');
-document.getElementById('botbtn').onclick=function(){bot.classList.toggle('open');pr&&pr.classList.remove('show')};
+
+var robo=document.getElementById('robo');
+if(robo){var say=document.getElementById('rsay'),BN="Lumi";
+var T={leistungen:"Hier sehen Sie, was wir f\u00fcr Sie tun: Ein- und Mehrfamilienh\u00e4user, Gewerbe- und Industriebau, Landwirtschaftliche Geb\u00e4ude und mehr.",bewertungen:"Hier lesen Sie, was Kunden \u00fcber uns sagen.",ueber:"Hier lernen Sie uns kennen \u2013 die Menschen hinter Bauunternehmen Kreinest.",kontakt:"Und hier erreichen Sie uns direkt. Rufen Sie an unter 05494 977880 \u2013 die Beratung ist kostenlos."};
+var steps=['leistungen','bewertungen','ueber','kontakt'].filter(function(id){return document.getElementById(id)}),si=-1,hl=null,closed=false;
+function go(el){var y=el.getBoundingClientRect().top+scrollY-70;if(window.__lenis)window.__lenis.scrollTo(y,{duration:1.4});else scrollTo({top:y,behavior:'smooth'})}
+function show(html){say.innerHTML=html;say.classList.add('on');var x=say.querySelector('.rx');x&&(x.onclick=function(){say.classList.remove('on');closed=true;hl&&hl.classList.remove('tour-hl')})}
+function hello(){if(closed)return;robo.classList.add('wave');show('<button class="rx" aria-label="Schließen">&times;</button><b>'+BN+' · '+"Ihr digitaler Guide"+'</b>'+"Hallo! Ich bin Lumi, der digitale Assistent von Bauunternehmen Kreinest. Soll ich Sie kurz durch die Seite f\u00fchren?"+'<div class="rb"><button type="button" id="rt1">Ja, gern</button><button type="button" class="ghost" id="rt2">Ich habe eine Frage</button></div>');document.getElementById('rt1').onclick=next;document.getElementById('rt2').onclick=chat}
+function chat(){say.classList.remove('on');bot.classList.add('open');pr&&pr.classList.remove('show')}
+function next(){si++;hl&&hl.classList.remove('tour-hl');if(si>=steps.length){show('<button class="rx" aria-label="Schließen">&times;</button><b>'+BN+'</b>'+"Das war die kurze Tour. Haben Sie noch eine Frage? Ich helfe gern weiter."+'<div class="rb"><button type="button" id="rt3">Frage stellen</button><button type="button" class="ghost" id="rt4">Nochmal von vorn</button></div>');document.getElementById('rt3').onclick=chat;document.getElementById('rt4').onclick=function(){si=-1;next()};return}
+var id=steps[si],el=document.getElementById(id);hl=el;el.classList.add('tour-hl');go(el);
+show('<button class="rx" aria-label="Schließen">&times;</button><b>'+BN+' · Tour</b>'+T[id]+'<div class="rb"><button type="button" id="rtn">'+(si<steps.length-1?'Weiter':'Fertig')+'</button><span class="st">'+(si+1)+' / '+steps.length+'</span></div>');document.getElementById('rtn').onclick=next}
+if(innerWidth<900){var hs=false;var hm=function(){if(!hs&&scrollY>innerHeight*.6){hs=true;removeEventListener('scroll',hm);setTimeout(hello,600)}};addEventListener('scroll',hm,{passive:true});setTimeout(function(){if(!hs){hs=true;hello()}},14000)}else setTimeout(hello,2600);
+document.getElementById('botbtn').onclick=function(){if(say.classList.contains('on')){chat()}else{closed=false;si=-1;hello()}};}
+else{document.getElementById('botbtn').onclick=function(){bot.classList.toggle('open');pr&&pr.classList.remove('show')}}
+
 document.getElementById('botx').onclick=function(){bot.classList.remove('open')};
 document.querySelectorAll('#chips button').forEach(function(b){b.onclick=function(){var u=document.createElement('div');u.className='m u';u.textContent=b.textContent;msgs.appendChild(u);setTimeout(function(){var m=document.createElement('div');m.className='m';m.textContent=A[b.dataset.a];msgs.appendChild(m);msgs.scrollTop=1e6},450)}});
-var shown=false;function sp(force){if(shown||!pr||bot.classList.contains('open'))return;if(force===true||scrollY>innerHeight*1.4){shown=true;pr.classList.add('show')}}addEventListener('scroll',sp,{passive:true});if(pr&&pr.classList.contains('promo2')){setTimeout(function(){sp(true)},9000);var ph=function(){setTimeout(function(){if(!pr.matches(':hover'))pr.classList.remove('show')},14000)};pr.addEventListener('transitionend',function(e){if(pr.classList.contains('show')&&e.propertyName==='transform')ph()})}
+var shown=false;function sp(force){if(shown||!pr||bot.classList.contains('open'))return;if(force===true||scrollY>innerHeight*1.4){shown=true;pr.classList.add('show')}}addEventListener('scroll',sp,{passive:true});if(pr&&pr.classList.contains('promo2')){setTimeout(function(){var rs=document.getElementById('rsay');if(!(rs&&rs.classList.contains('on')))sp(true)},document.getElementById('robo')?20000:9000);var ph=function(){setTimeout(function(){if(!pr.matches(':hover'))pr.classList.remove('show')},14000)};pr.addEventListener('transitionend',function(e){if(pr.classList.contains('show')&&e.propertyName==='transform')ph()})}
 document.querySelectorAll('.hm-in,.glass,.hc-img,.hp-img').forEach(function(w){var sl=w.querySelectorAll('.sl'),dt=w.querySelectorAll('.dots i');if(sl.length<2)return;var k=0;setInterval(function(){sl[k].classList.remove('on');dt[k]&&dt[k].classList.remove('on');k=(k+1)%sl.length;sl[k].classList.add('on');dt[k]&&dt[k].classList.add('on')},5200)});
 var fb=document.getElementById('filmbtn');if(fb){fb.onclick=function(){var v=document.getElementById('film');v.controls=true;v.play();fb.remove()}}
 var bw=document.querySelector('.h-wall .bricks');
 var RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
 if(RM||!window.gsap)return;
 gsap.registerPlugin(ScrollTrigger);
-var lenis=new Lenis({lerp:.1});
+var lenis=new Lenis({lerp:.1});window.__lenis=lenis;
 lenis.on('scroll',ScrollTrigger.update);
 gsap.ticker.add(function(t){lenis.raf(t*1000)});gsap.ticker.lagSmoothing(0);
 document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var id=a.getAttribute('href');if(id.length>1){e.preventDefault();lenis.scrollTo(id,{offset:-70})}})});
