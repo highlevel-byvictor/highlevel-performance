@@ -52,7 +52,7 @@ h2{font-size:clamp(2.2rem,5vw,4.4rem);margin-bottom:.5em;max-width:16ch}
 .facts{font-size:clamp(1.3rem,2.3vw,2.1rem);line-height:1.45;max-width:46ch}
 .facts b{font-family:var(--fh);font-weight:var(--hw);font-size:1.5em;letter-spacing:var(--hls);color:var(--acc)}
 /* ===== Hero: Maske ===== */
-.h-mask{position:relative;height:210vh;background:var(--hbg);color:var(--hink)}
+.h-mask{position:relative;height:120vh;background:var(--hbg);color:var(--hink)}
 .hm-stick{position:sticky;top:0;height:100vh;overflow:hidden}
 .hm-stick .ht{position:absolute;left:max(32px,4vw);bottom:15vh;width:min(46vw,640px)}
 .hm-img{position:absolute;inset:0;will-change:clip-path}
@@ -79,6 +79,11 @@ video.sl{width:100%;height:100%;object-fit:cover}.sl.hv{animation:none}
  .h-mask[data-shape=coin] .sl{object-position:var(--vpos,65% 40%)}
  .h-mask[data-shape=diag] .hm-img{clip-path:polygon(62% 0%, 100% 0%, 100% 100%, 46% 100%)}
  .h-mask[data-shape=diag] .hm-in{transform:translateX(27%) scale(1.12)}
+ .h-mask[data-shape=full] .hm-img{clip-path:none}
+ .h-mask[data-shape=full] .hm-in{transform:none}
+ .h-mask[data-shape=full] .hm-img::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,color-mix(in srgb,var(--hbg) 92%,transparent) 0%,color-mix(in srgb,var(--hbg) 70%,transparent) 34%,transparent 60%),linear-gradient(0deg,color-mix(in srgb,var(--hbg) 70%,transparent),transparent 35%)}
+ .h-mask[data-shape=full] .ht{z-index:3}
+ .h-mask[data-shape=full] .sl{object-position:var(--vpos,70% 50%)}
 }
 @media (min-width:901px) and (prefers-reduced-motion:reduce){.h-mask,.h-win{height:100vh}.pin-track{width:auto;overflow-x:auto}}
 /* ===== Hero: Fenster / Scheiben ===== */
@@ -115,6 +120,7 @@ video.sl{width:100%;height:100%;object-fit:cover}.sl.hv{animation:none}
 .h-col .wrap{display:grid;grid-template-columns:1fr 1.05fr;gap:40px;align-items:center}
 .prints{position:relative;height:min(74vh,680px)}
 .print{position:absolute;background:#fff;padding:12px 12px 44px;box-shadow:0 22px 44px -18px rgba(0,0,0,.4);will-change:transform}
+.print img{object-fit:cover;background:#fff}
 .print figcaption{position:absolute;left:14px;bottom:12px;font-size:14px;color:#333;font-family:var(--fh)}
 .print:nth-child(1){width:58%;height:60%;left:0;top:4%;transform:rotate(-5deg)}
 .print:nth-child(2){width:56%;height:58%;right:0;top:0;transform:rotate(4deg)}
@@ -481,7 +487,7 @@ footer .note{grid-column:1/-1;margin-top:28px;padding-top:22px;border-top:1px so
 
 
 
-<section class="h-mask" data-shape="gable" style="--mclip:polygon(0 20%, 50% 0, 100% 20%, 100% 100%, 0 100%)">
+<section class="h-mask" data-shape="full" style="--mclip:none">
   <div class="hm-stick">
     <div class="ht ">
   <p class="kicker">Hotel und Gaststätte in Ankum</p>
@@ -495,7 +501,7 @@ footer .note{grid-column:1/-1;margin-top:28px;padding-top:22px;border-top:1px so
   <div class="proof"><p class="g"><span class="stars" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg></span><span><b>4,8</b> von 5 bei Google, 177 Bewertungen</span></p><p class="seal"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 2.1 3.2-.3.8 3.1 2.8 1.6-1.2 3 1.2 3-2.8 1.6-.8 3.1-3.2-.3L12 22l-2.4-2.1-3.2.3-.8-3.1-2.8-1.6 1.2-3-1.2-3 2.8-1.6.8-3.1 3.2.3z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8.5 12.2l2.3 2.2 4.7-4.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Familienbetrieb seit 1835</p>
 </div>
 </div>
-    <div class="hm-img"><div class="hm-in"><img src="img/b1.webp" alt="Hotel Billenkamp" class="sl on" style="object-position:50% 50%" loading="eager"><img src="img/b2.webp" alt="Hotel Billenkamp" class="sl" style="object-position:50% 50%" loading="eager"><img src="img/b3.webp" alt="Hotel Billenkamp" class="sl" style="object-position:50% 50%" loading="eager"><div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i></div></div></div>
+    <div class="hm-img"><div class="hm-in"><img src="img/b2.webp" alt="Hotel Billenkamp" class="sl on" style="object-position:60% 55%" loading="eager"><img src="img/b1.webp" alt="Hotel Billenkamp" class="sl" style="object-position:60% 50%" loading="eager"><img src="img/b4.webp" alt="Hotel Billenkamp" class="sl" style="object-position:50% 50%" loading="eager"><div class="dots" aria-hidden="true"><i class="on"></i><i></i><i></i></div></div></div>
   </div>
 </section>
 
@@ -528,14 +534,14 @@ footer .note{grid-column:1/-1;margin-top:28px;padding-top:22px;border-top:1px so
 
 
 
-<section class="blend"><div class="b b1"><img src="img/b7.webp" alt="Hotel Billenkamp" class="" style="object-position:50% 50%" loading="eager"></div><div class="b b2"><img src="img/b10.webp" alt="Hotel Billenkamp" class="" style="object-position:50% 50%" loading="eager"></div><div class="b b3"><img src="img/b2.webp" alt="Hotel Billenkamp" class="" style="object-position:50% 50%" loading="eager"></div><div class="bt"><h2>Ankum und das Artland entdecken.</h2><p>Radtouren, Kutschfahrten und Kultur – Ihr Ausgangspunkt mitten im Ort.</p></div></section>
+<section class="blend"><div class="b b1"><img src="img/b7.webp" alt="Hotel Billenkamp" class="" style="object-position:50% 50%" loading="eager"></div><div class="b b2"><img src="img/b10.webp" alt="Hotel Billenkamp" class="" style="object-position:50% 50%" loading="eager"></div><div class="b b3"><img src="img/b2.webp" alt="Hotel Billenkamp" class="" style="object-position:60% 55%" loading="eager"></div><div class="bt"><h2>Ankum und das Artland entdecken.</h2><p>Radtouren, Kutschfahrten und Kultur – Ihr Ausgangspunkt mitten im Ort.</p></div></section>
 
 
 
 
 <section class="sec " id="ueber"><div class="wrap ab ">
   <figure class="ab-img">
-    <img src="img/b2.webp" alt="Hotel Billenkamp" class="" style="object-position:50% 50%" loading="eager"><div class="small"><img src="img/b6.webp" alt="Hotel Billenkamp" class="" style="object-position:50% 50%" loading="eager"></div>
+    <img src="img/b2.webp" alt="Hotel Billenkamp" class="" style="object-position:60% 55%" loading="eager"><div class="small"><img src="img/b6.webp" alt="Hotel Billenkamp" class="" style="object-position:50% 50%" loading="eager"></div>
     <div class="ab-badge"><b>4,8</b><span class="stars" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg></span>177 Bewertungen bei Google</div>
   </figure>
   <div class="ab-t">
@@ -570,7 +576,7 @@ footer .note{grid-column:1/-1;margin-top:28px;padding-top:22px;border-top:1px so
       <small>Beispiel-Funktion: Anfragen landen direkt im CRM, mit automatischer Bestätigung.</small>
     </form>
   </div>
-  <div class="cta-img"><img src="img/b1.webp" alt="Hotel Billenkamp" class="" style="object-position:50% 50%" loading="eager"></div>
+  <div class="cta-img"><img src="img/b1.webp" alt="Hotel Billenkamp" class="" style="object-position:60% 50%" loading="eager"></div>
 </section>
 
 
@@ -645,7 +651,8 @@ var SH={
  gable:['polygon(50% 34%, 72.5% 12%, 95% 34%, 95% 100%, 50% 100%)','polygon(0% 0%, 50% 0%, 100% 0%, 100% 100%, 0% 100%)',22.5],
  blob:['inset(13% 4% 9% 49% round 46% 54% 48% 52% / 56% 44% 56% 44%)','inset(0% 0% 0% 0% round 0% 0% 0% 0% / 0% 0% 0% 0%)',22.5],
  coin:['circle(27% at 73% 52%)','circle(80% at 50% 50%)',23,0],
- diag:['polygon(62% 0%, 100% 0%, 100% 100%, 46% 100%)','polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',27]
+ diag:['polygon(62% 0%, 100% 0%, 100% 100%, 46% 100%)','polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',27],
+ full:['inset(0% 0% 0% 0% round 0)','inset(0% 0% 0% 0% round 0)',0,0]
 };
 if(hero==='mask'&&document.querySelector('.h-mask').dataset.shape==='coin'){
  var csec=document.querySelector('.h-mask'),cb=csec.querySelector('.hm-img'),cht=csec.querySelector('.ht');

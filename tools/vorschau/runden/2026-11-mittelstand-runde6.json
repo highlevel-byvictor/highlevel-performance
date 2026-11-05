@@ -3,207 +3,6 @@
  "template": "v5",
  "firmen": [
   {
-   "slug": "euro-pizzeria",
-   "theme": "gastro",
-   "firma": "Euro Pizzeria Bersenbrück",
-   "kurzname": "Euro Pizzeria",
-   "website": "https://www.europizzeria-bersenbrueck.de",
-   "telefon": "05439 808530",
-   "email": "",
-   "adresse": "Bramscher Straße 45, 49593 Bersenbrück",
-   "siegel": [
-    "Pizza, Kebab und Salate frisch zubereitet"
-   ],
-   "tag": "Pizzeria und Kebab in Bersenbrück",
-   "h1": "Frisch aus dem Ofen. <span>Mitten in Bersenbrück.</span>",
-   "sub": "Pizza, Calzone, Kebab vom Drehspieß und knackige Salate – zum Abholen, Liefern oder direkt bei uns genießen.",
-   "trust": [
-    [
-     "Pizza",
-     "aus dem Steinofen"
-    ],
-    [
-     "Kebab",
-     "vom Drehspieß"
-    ],
-    [
-     "Liefern",
-     "oder abholen"
-    ]
-   ],
-   "leist_h2": "Worauf haben Sie heute Lust?",
-   "leistungen": [
-    "Pizza",
-    "Calzone",
-    "Kebab vom Drehspieß",
-    "Überbackene Kebabgerichte",
-    "Salate"
-   ],
-   "about_h2": "Ihre Pizzeria an der Bramscher Straße.",
-   "ueber": [
-    "Bei uns kommt alles frisch auf den Teller: Pizza mit Tomatensauce, Käse und Oregano, Kebab vom Drehspieß und Salate mit Ihrem Lieblingsdressing.",
-    "Bestellen Sie direkt bei uns – telefonisch, zum Abholen oder zur Lieferung nach Hause."
-   ],
-   "checks": [
-    "Über 40 Pizzasorten",
-    "Kebab, Dürüm und überbackene Gerichte",
-    "Direkt bestellen statt über Portale"
-   ],
-   "inhaber_name": "Team der Euro Pizzeria",
-   "inhaber_rolle": "Bersenbrück",
-   "logo_url": "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r6/local/logo_europizza.png",
-   "min_w": 500,
-   "bild_urls": [
-    "https://images.unsplash.com/photo-1593504049359-74330189a345?w=1800&q=85&fm=jpg",
-    "https://images.unsplash.com/photo-1716237388087-4e47595a6615?w=1800&q=85&fm=jpg",
-    "https://images.unsplash.com/photo-1571757392712-7c1052de7ce5?w=1800&q=85&fm=jpg",
-    "https://images.unsplash.com/photo-1627626775846-122b778965ae?w=1800&q=85&fm=jpg",
-    "https://images.unsplash.com/photo-1621538997517-58ce53933faa?w=1800&q=85&fm=jpg",
-    "https://images.unsplash.com/photo-1494346480775-936a9f0d0877?w=1800&q=85&fm=jpg"
-   ],
-   "brief": {
-    "anschrift": [
-     "Euro Pizzeria Bersenbrück",
-     "Bramscher Straße 45",
-     "49593 Bersenbrück"
-    ],
-    "anrede": "Sehr geehrte Damen und Herren,",
-    "problem": "dass Ihre Website von Lieferando betrieben wird – Ihre Gäste landen dort auf einer Bestellseite, die nicht Ihnen gehört und auf der Sie jedes Mal Gebühren zahlen",
-    "suche": "Pizzeria"
-   },
-   "v5": {
-    "soft": true,
-    "r": "999px",
-    "r2": "28px",
-    "svc_cls": "orb",
-    "steps_cls": "tone orb",
-    "facts_cls": "dark",
-    "fonts": "family=Fraunces:opsz,wght@9..144,600;800&family=Rubik:wght@400;500;600",
-    "fh": "'Fraunces',Georgia,serif",
-    "fb": "'Rubik',system-ui,sans-serif",
-    "hw": 800,
-    "hls": "-0.02em",
-    "hlh": 0.96,
-    "h1vw": 5.4,
-    "h1max": 6.2,
-    "c": {
-     "bg": "#FFF8F0",
-     "ink": "#13235E",
-     "acc": "#D01818",
-     "acc2": "#F5C400",
-     "soft": "#FDECD9",
-     "paper": "#FFFFFF",
-     "hbg": "#FFF8F0",
-     "onacc": "#FFFFFF",
-     "ctabtn": "#13235E",
-     "star": "#F5C400"
-    },
-    "hero": "mask",
-    "shape": "coin",
-    "mclip": "circle(27% at 73% 52%)",
-    "hero_img": "b1",
-    "hero_slides": [
-     "b1",
-     "b3",
-     "b5"
-    ],
-    "logo_h": 60,
-    "svc": "rows",
-    "svc_imgs": [
-     "b1",
-     "b4",
-     "b2"
-    ],
-    "rows_intro": "Alles frisch zubereitet – bestellen Sie direkt bei uns, ohne Umweg über Portale.",
-    "rws": [
-     [
-      "b1",
-      "Pizza aus dem Ofen",
-      "Klassiker wie Margherita, Salami oder Quattro Stagioni und Spezialitäten mit Kebab, Sucuk oder Meeresfrüchten.",
-      [
-       "Margherita",
-       "Kebab-Pizza",
-       "Quattro Stagioni"
-      ],
-      "Pizza",
-      "b5"
-     ],
-     [
-      "b4",
-      "Klassiker und Kebab",
-      "Margherita, Salami, Tonno – und saftiges Kebabfleisch im Brot, als Teller oder überbacken mit Sauce Hollandaise.",
-      [
-       "Margherita",
-       "Döner",
-       "Dürüm"
-      ],
-      "Klassiker"
-     ],
-     [
-      "b2",
-      "Calzone und Salate",
-      "Gefüllte Calzone und frische Salate mit Thunfisch, Schinken, Hirtenkäse oder Kebab – mit Dressing nach Wahl.",
-      [
-       "Calzone",
-       "Salat",
-       "Vegetarisch"
-      ],
-      "Frisch"
-     ]
-    ],
-    "blend": [
-     "b3",
-     "b6",
-     "b1",
-     "Bestellen Sie direkt bei uns.",
-     "Anrufen, abholen, genießen – ohne Umweg über Lieferportale."
-    ],
-    "about_img": "b6",
-    "about_img2": "b2",
-    "cta_img": "b3",
-    "promo": "Direkt bestellen",
-    "promo_tag": "Ohne Portal",
-    "promo_sub": "Rufen Sie an und holen Sie Ihre Pizza frisch ab – schnell und ohne Umweg.",
-    "promo_img": "b1",
-    "promo_btn": "Jetzt anrufen und bestellen",
-    "stock": true,
-    "bot_name": "Toni",
-    "steps_h2": "So kommt Ihre Pizza zu Ihnen.",
-    "order": [
-     "svc",
-     "blend",
-     "about",
-     "steps",
-     "cta"
-    ],
-    "pos": {},
-    "cta_h2": "Hunger? Rufen Sie an.",
-    "cta_p": "Bestellen Sie direkt bei uns – zum Abholen oder Liefern. Frisch zubereitet, ohne Umweg über Portale.",
-    "row_link": "Jetzt bestellen",
-    "rev_sub": "Stimmen unserer Gäste.",
-    "form_q": "Was möchten Sie bestellen?",
-    "cta_btn": "Jetzt anrufen und bestellen"
-   },
-   "steps": [
-    [
-     "Anrufen",
-     "Sie bestellen telefonisch direkt bei uns."
-    ],
-    [
-     "Zubereiten",
-     "Wir backen Ihre Pizza frisch."
-    ],
-    [
-     "Abholen oder liefern",
-     "Sie holen ab oder lassen liefern."
-    ],
-    [
-     "Genießen",
-     "Guten Appetit!"
-    ]
-   ]
-  },
-  {
    "slug": "rudis-fahrschule",
    "theme": "laden",
    "firma": "Rudi's Fahrschule",
@@ -326,15 +125,26 @@
      "frame": "#1E1F5C",
      "star": "#F04060"
     },
-    "hero": "window",
-    "hero_img": "b1",
-    "hero_slides": [
-     "b1",
-     "b2",
-     "b3"
+    "hero": "collage",
+    "prints": [
+     [
+      "b2",
+      "Dein Fahrlehrer"
+     ],
+     [
+      "b3",
+      "Fahrschulauto 11"
+     ],
+     [
+      "b4",
+      "Fahrschulauto 12"
+     ]
     ],
-    "frame_w": 22,
     "logo_h": 56,
+    "strokes": [
+     "#1E1F5C",
+     "#F04060"
+    ],
     "svc": "rows",
     "svc_imgs": [
      "b3",
@@ -1154,7 +964,6 @@
    ],
    "inhaber_name": "Familie Hilker",
    "inhaber_rolle": "Gastgeber",
-   "inhaber_idx": 0,
    "logo_url": "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r6/local/logo_hilker.png",
    "min_w": 600,
    "bild_urls": [
@@ -1227,7 +1036,16 @@
      "frame": "#FBF7F2",
      "star": "#C9A46A"
     },
-    "hero": "portrait",
+    "hero": "mask",
+    "shape": "full",
+    "mclip": "none",
+    "mask_h": 120,
+    "hero_img": "b8",
+    "hero_slides": [
+     "b8",
+     "b4",
+     "b3"
+    ],
     "logo_bg": "glass",
     "logo_h": 56,
     "svc": "rows",
@@ -1274,19 +1092,19 @@
      ]
     ],
     "blend": [
-     "b2",
-     "b6",
-     "b9",
-     "Aktivurlaub im Hasetal.",
-     "Radwege, Wanderrouten und Natur – direkt vor der Haustür des Hotels."
+     "b8",
+     "b10",
+     "b7",
+     "Ankommen und bleiben.",
+     "Gemütliche Zimmer, ein gutes Frühstück und das Hasetal direkt vor der Tür."
     ],
-    "about_img": "b1",
-    "about_img2": "b8",
-    "cta_img": "b2",
+    "about_img": "b4",
+    "about_img2": "b7",
+    "cta_img": "b3",
     "promo": "Radurlaub im Hasetal",
     "promo_tag": "Aktiv",
     "promo_sub": "Übernachtung, Frühstück und die schönsten Touren direkt ab Hotel.",
-    "promo_img": "b2",
+    "promo_img": "b10",
     "promo_btn": "Jetzt Zimmer anfragen",
     "bot_name": "Hasi",
     "robot_hello": "Herzlich willkommen! Ich bin Hasi, der digitale Concierge vom Hotel Hilker. Soll ich Ihnen kurz das Haus zeigen?",
@@ -1301,15 +1119,13 @@
      "cta"
     ],
     "pos": {
-     "b1": "50% 35%"
+     "b8": "55% 60%"
     },
     "cta_h2": "Wir freuen uns auf Ihren Besuch.",
     "cta_p": "Rufen Sie an oder hinterlassen Sie Ihre Nummer – wir melden uns mit freien Zimmern und Terminen.",
     "row_link": "Jetzt anfragen",
     "rev_sub": "Stimmen unserer Gäste.",
     "form_q": "Was möchten Sie anfragen?",
-    "por_vw": 5.6,
-    "por_max": 6.4,
     "cta_btn": "Jetzt Zimmer anfragen"
    },
    "steps": [
@@ -1388,15 +1204,15 @@
    "logo_keep": true,
    "min_w": 600,
    "bild_urls": [
-    "https://www.era-gym.de/wp-content/uploads/2022/12/eg_gronau_1-1024x683.jpg",
-    "https://www.era-gym.de/wp-content/uploads/2025/10/herne_2-1024x768.png",
-    "https://www.era-gym.de/wp-content/uploads/2022/12/1J7A4793-1024x683.jpg",
-    "https://www.era-gym.de/wp-content/uploads/2021/03/wechseln.jpeg",
+    "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r6/eg/Bersenbrueck-1U6A8193.jpg",
+    "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r6/eg/Bersenbrueck.jpg",
+    "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r6/eg/Bersenbrueck-1U6A8166.jpg",
+    "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r6/eg/Bersenbrueck-3.jpg",
+    "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r6/eg/Bersenbrueck-1.jpg",
+    "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r6/eg/Bersenbrueck-1U6A8174.jpg",
+    "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r6/eg/Bersenbrueck-2.jpg",
     "https://www.era-gym.de/wp-content/uploads/2025/03/Era-Cube-Alfhausen-1J7A9426.jpg",
-    "https://www.era-gym.de/wp-content/uploads/2022/12/recke-1024x683.jpeg",
-    "https://www.era-gym.de/wp-content/uploads/2025/03/Era-Cube-Alfhausen.jpg",
-    "https://www.era-gym.de/wp-content/uploads/2026/02/5-1024x765.jpg",
-    "https://www.era-gym.de/wp-content/uploads/2024/03/1J7A4961-1024x683.jpg"
+    "https://www.era-gym.de/wp-content/uploads/2025/03/Era-Cube-Alfhausen.jpg"
    ],
    "reviews": [
     [
@@ -1459,23 +1275,23 @@
     "hero": "mask",
     "shape": "diag",
     "mclip": "polygon(62% 0%, 100% 0%, 100% 100%, 46% 100%)",
-    "hero_img": "b1",
+    "hero_img": "b2",
     "hero_slides": [
-     "b1",
      "b2",
-     "b3"
+     "b3",
+     "b1"
     ],
     "logo_h": 60,
     "svc": "rows",
     "svc_imgs": [
-     "b2",
+     "b5",
      "b4",
      "b6"
     ],
     "rows_intro": "Unser Fokus: individuelle Betreuung und Trainingspläne, die auf einer präzisen Analyse basieren.",
     "rws": [
      [
-      "b2",
+      "b5",
       "Gerätetraining",
       "Moderne Kraft- und Cardiogeräte, Freihantelbereich und viel Platz – für jedes Level.",
       [
@@ -1484,7 +1300,7 @@
        "Freihantel"
       ],
       "Training",
-      "b5"
+      "b3"
      ],
      [
       "b4",
@@ -1495,7 +1311,8 @@
        "App",
        "Pläne"
       ],
-      "Analyse"
+      "Analyse",
+      "b7"
      ],
      [
       "b6",
@@ -1510,20 +1327,23 @@
      ]
     ],
     "blend": [
-     "b3",
+     "b2",
+     "b1",
      "b8",
-     "b9",
-     "Join the evolution.",
-     "Gemeinsam deine Erfolgsgeschichte schreiben – in Bersenbrück."
+     "Gleich nebenan: Era Gym Cube.",
+     "Unser zweiter Standort in Alfhausen – kompakt, modern, nah."
     ],
-    "about_img": "b8",
-    "about_img2": "b7",
+    "about_img": "b6",
+    "about_img2": "b3",
     "cta_img": "b1",
     "promo": "Probetraining sichern",
     "promo_tag": "Special Deal",
     "promo_sub": "Lerne das Studio und die Trainer kennen – mit InBody-Analyse.",
-    "promo_img": "b2",
+    "promo_img": "b5",
     "promo_btn": "Jetzt Probetraining anfragen",
+    "rv_bg": "#E8C040",
+    "rv_fg": "#121212",
+    "rv_star": "#121212",
     "bot_name": "Max",
     "robot_tag": "Dein Fitness-Guide",
     "robot_hello": "Hey! Ich bin Max, dein digitaler Guide im Era Gym. Soll ich dir kurz alles zeigen?",
@@ -1695,13 +1515,14 @@
      "star": "#C9A24B"
     },
     "hero": "mask",
-    "shape": "arch",
-    "mclip": "inset(0 4% 0 4% round 46vw 46vw 0 0)",
-    "hero_img": "b1",
+    "shape": "full",
+    "mclip": "none",
+    "mask_h": 120,
+    "hero_img": "b7",
     "hero_slides": [
-     "b1",
-     "b3",
-     "b6"
+     "b7",
+     "b6",
+     "b5"
     ],
     "logo_h": 60,
     "svc": "rows",
@@ -1781,7 +1602,10 @@
      "cta"
     ],
     "pos": {
-     "b8": "50% 30%"
+     "b8": "50% 30%",
+     "b7": "60% 50%",
+     "b6": "75% 50%",
+     "b5": "75% 50%"
     },
     "du": true,
     "cta_h2": "Komm vorbei und probier es aus.",
@@ -2183,24 +2007,30 @@
      "acc2": "#6E4B2F",
      "soft": "#EBDDCB",
      "paper": "#FFFBF5",
-     "hbg": "#1B1410",
-     "hink": "#FFFFFF",
+     "hbg": "#F6EFE6",
+     "hink": "#2A1E17",
      "onacc": "#1B1410",
      "ctabtn": "#2A1E17",
      "onctabtn": "#E8C99A",
      "frame": "#1B1410",
      "star": "#D9A85B"
     },
-    "hero": "panes",
-    "hero_img": "b1",
-    "hero_slides": [
-     "b1",
-     "b2",
-     "b3"
+    "hero": "collage",
+    "prints": [
+     [
+      "b5",
+      "Live-Musik am 28.11."
+     ],
+     [
+      "b6",
+      "Paint & Sip am 18.11."
+     ],
+     [
+      "b7",
+      "Bingo & Booze am 13.11."
+     ]
     ],
-    "cols": 4,
-    "rows": 2,
-    "pane_h": 44,
+    "print_fit": "contain",
     "logo_h": 34,
     "svc": "rows",
     "svc_imgs": [
@@ -2241,12 +2071,11 @@
        "Karaoke",
        "Mobile Bar"
       ],
-      "Events",
-      "b5"
+      "Events"
      ]
     ],
     "blend": [
-     "b1",
+     "b4",
      "b3",
      "b2",
      "Treten Sie ein.",
@@ -2354,11 +2183,7 @@
    "min_w": 600,
    "bild_urls": [
     "https://static.wixstatic.com/media/f6ff38_e8d28308afb247a380fadd9181dc4f71~mv2.jpg",
-    "https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?w=1800&q=85&fm=jpg",
-    "https://images.unsplash.com/photo-1552693673-1bf958298935?w=1800&q=85&fm=jpg",
-    "https://images.unsplash.com/photo-1761718209835-c8586b7dcac0?w=1800&q=85&fm=jpg",
-    "https://static.wixstatic.com/media/f6ff38_6bcfdb79ccc94376987d0f6d35d497b5~mv2.jpg",
-    "https://images.unsplash.com/photo-1616394584738-fc6e612e71b9?w=1800&q=85&fm=jpg"
+    "https://static.wixstatic.com/media/f6ff38_6bcfdb79ccc94376987d0f6d35d497b5~mv2.jpg"
    ],
    "reviews": [
     [
@@ -2425,78 +2250,29 @@
     "mclip": "inset(0 4% 0 4% round 48% 52% 46% 54% / 26% 30% 22% 26%)",
     "hero_img": "b1",
     "hero_slides": [
-     "b1",
-     "b2",
-     "b3"
+     "b1"
     ],
     "wordmark": "MKS Kosmetik",
     "logo": false,
-    "svc": "rows",
+    "svc": "index",
     "svc_imgs": [
-     "b2",
-     "b4",
-     "b3"
+     "b1",
+     "b2"
     ],
     "rows_intro": "Die neuesten Trends und wissenschaftlich belegte Behandlungserfolge – für Ihre Haut.",
-    "rws": [
-     [
-      "b2",
-      "Hautanalyse und Beratung",
-      "Am Anfang steht die Analyse: Wir schauen uns Ihre Haut genau an und erklären jeden Schritt.",
-      [
-       "Hautanalyse",
-       "Beratung",
-       "Pflegeplan"
-      ],
-      "Analyse",
-      "b6"
-     ],
-     [
-      "b4",
-      "Diamant-Mikrodermabrasion",
-      "Sanfte Erneuerung für ein feineres Hautbild – ideal bei Narben, Pigmentflecken und großen Poren.",
-      [
-       "Narben",
-       "Poren",
-       "Erneuerung"
-      ],
-      "Apparativ"
-     ],
-     [
-      "b3",
-      "Gesichtsbehandlungen",
-      "Dermazeutische Pflege mit Profi-Produkten – für Ruhe, Glow und sichtbare Ergebnisse.",
-      [
-       "Janssen",
-       "Binella",
-       "Glow"
-      ],
-      "Pflege"
-     ]
-    ],
-    "blend": [
-     "b1",
-     "b2",
-     "b6",
-     "Wohlfühlen für Ihre Haut.",
-     "Dermazeutische Kosmetik mit Erfahrung aus 25 Jahren im medizinischen Bereich."
-    ],
-    "about_img": "b6",
-    "about_img2": "b3",
-    "cta_img": "b2",
+    "about_img": "b2",
+    "cta_img": "b1",
     "promo": "Erste Hautanalyse",
     "promo_tag": "Neu bei uns",
     "promo_sub": "Lernen Sie uns kennen: Analyse, Beratung und ein Pflegeplan für Ihre Haut.",
-    "promo_img": "b2",
+    "promo_img": "b1",
     "promo_btn": "Jetzt Termin anfragen",
-    "stock": true,
     "bot_name": "Rosa",
     "robot_hello": "Hallo! Ich bin Rosa vom MKS Kosmetikinstitut. Soll ich Ihnen kurz unsere Behandlungen zeigen?",
     "rev_h2": "31 Bewertungen. Alle mit 5 Sternen.",
     "order": [
      "svc",
      "reviews",
-     "blend",
      "about",
      "steps",
      "cta"
@@ -2652,13 +2428,14 @@
      "star": "#C9A46A"
     },
     "hero": "mask",
-    "shape": "gable",
-    "mclip": "polygon(0 20%, 50% 0, 100% 20%, 100% 100%, 0 100%)",
-    "hero_img": "b1",
+    "shape": "full",
+    "mclip": "none",
+    "mask_h": 120,
+    "hero_img": "b2",
     "hero_slides": [
-     "b1",
      "b2",
-     "b3"
+     "b1",
+     "b4"
     ],
     "logo_bg": "glass",
     "logo_h": 50,
@@ -2733,7 +2510,10 @@
      "steps",
      "cta"
     ],
-    "pos": {},
+    "pos": {
+     "b2": "60% 55%",
+     "b1": "60% 50%"
+    },
     "cta_h2": "Wir freuen uns auf Sie.",
     "cta_p": "Rufen Sie an – Familie Billenkamp reserviert Ihr Zimmer gern persönlich.",
     "row_link": "Jetzt anfragen",
@@ -3282,7 +3062,6 @@
    ],
    "inhaber_name": "Unser Praxisteam",
    "inhaber_rolle": "Kleintierpraxis Ankum",
-   "inhaber_idx": 0,
    "logo_url": "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r6/local/logo_kleintier.png",
    "min_w": 600,
    "bild_urls": [
@@ -3354,7 +3133,16 @@
      "onctabtn": "#D7EBA6",
      "star": "#E0A21B"
     },
-    "hero": "portrait",
+    "hero": "mask",
+    "shape": "full",
+    "mclip": "none",
+    "mask_h": 120,
+    "hero_img": "b2",
+    "hero_slides": [
+     "b2",
+     "b3",
+     "b6"
+    ],
     "logo_h": 56,
     "svc": "rows",
     "svc_imgs": [
@@ -3411,8 +3199,8 @@
      "Moderne Medizin mit viel Gefühl.",
      "Damit Ihr Tier gesund bleibt – und Sie sich gut aufgehoben fühlen."
     ],
-    "about_img": "b5",
-    "about_img2": "b2",
+    "about_img": "b8",
+    "about_img2": "b6",
     "cta_img": "b2",
     "promo": "Taubenimpfung",
     "promo_tag": "Jetzt",
@@ -3431,7 +3219,9 @@
      "cta"
     ],
     "pos": {
-     "b1": "50% 30%"
+     "b2": "68% 40%",
+     "b3": "60% 50%",
+     "b8": "50% 40%"
     },
     "cta_h2": "Vereinbaren Sie einen Termin.",
     "cta_p": "Rufen Sie uns an – in dringenden Fällen bemühen wir uns um einen Termin noch am selben Tag.",
@@ -3456,208 +3246,6 @@
     [
      "Behandeln",
      "Mit klarem Plan für Ihr Tier."
-    ]
-   ]
-  },
-  {
-   "slug": "bestattungen-hellmann",
-   "theme": "laden",
-   "firma": "Bestattungen Hellmann",
-   "kurzname": "Bestattungen Hellmann",
-   "website": "https://www.bestattungen-hellmann.de",
-   "telefon": "05462 71515",
-   "email": "info@bestattungen-hellmann.de",
-   "adresse": "Bersenbrücker Straße 13, 49577 Ankum",
-   "google": [
-    "5,0",
-    3
-   ],
-   "siegel": [
-    "Familiengeführt, Tag und Nacht erreichbar"
-   ],
-   "tag": "Bestattungen in Ankum",
-   "h1": "Würdevoll <span>Abschied nehmen.</span>",
-   "sub": "Wir stehen Ihnen in den Stunden des Abschieds vertrauensvoll zur Seite – mit persönlichem Beistand und Erfahrung aus Jahrzehnten.",
-   "trust": [
-    [
-     "24 h",
-     "erreichbar"
-    ],
-    [
-     "Familie",
-     "geführt"
-    ],
-    [
-     "Persönlich",
-     "gestaltet"
-    ]
-   ],
-   "leist_h2": "Wir kümmern uns um alles.",
-   "leistungen": [
-    "Erstgespräch und Beratung",
-    "Formalitäten und Behörden",
-    "Überführungen",
-    "Trauerfeier und Beisetzung",
-    "Bestattungsvorsorge"
-   ],
-   "about_h2": "Persönlicher Beistand ist uns wichtig.",
-   "ueber": [
-    "Uns liegt es am Herzen, dass bei jeder Verabschiedung die Persönlichkeit des Verstorbenen im Mittelpunkt steht.",
-    "Wenn Sie es wünschen, gestalten Sie die Beerdigung aktiv mit. Ingo Hellmann und sein Team begleiten Sie mit Ruhe und Einfühlungsvermögen."
-   ],
-   "checks": [
-    "Tag und Nacht erreichbar",
-    "Alle Formalitäten aus einer Hand",
-    "Individuelle, würdevolle Trauerfeiern"
-   ],
-   "inhaber_name": "Ingo Hellmann",
-   "inhaber_rolle": "Bestatter",
-   "logo_url": "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r6/local/logo_hellmann.png",
-   "min_w": 500,
-   "bild_urls": [
-    "https://images.unsplash.com/photo-1693418617590-e3dce76b6c0b?w=1800&q=85&fm=jpg",
-    "https://www.bestattungen-hellmann.de/images/2024/09/25/956bdf6268575ebbd9adf2e47432e5f2_logo2021.png",
-    "https://images.unsplash.com/photo-1715297923840-44ed5c4c2cc6?w=1800&q=85&fm=jpg"
-   ],
-   "reviews": [
-    [
-     "Ein großes Dankeschön an Ingo Hellmann, der nach dem plötzlichen Tod meiner Mutter einen liebevollen, würdigen Abschied ermöglicht hat.",
-     "“"
-    ],
-    [
-     "Mit seiner einfühlsamen, menschlichen Art und absoluter Kompetenz hat Herr Hellmann einen würdigen Rahmen geschaffen. Wir fühlten uns verstanden und begleitet.",
-     "“"
-    ],
-    [
-     "Ingo ist auf unsere Wünsche eingegangen und hat alles Nötige mit den Behörden schnell erledigt. Die Trauerfeier war würdevoll.",
-     "“"
-    ]
-   ],
-   "brief": {
-    "anschrift": [
-     "Bestattungen Hellmann",
-     "Herrn Ingo Hellmann",
-     "Bersenbrücker Straße 13",
-     "49577 Ankum"
-    ],
-    "anrede": "Sehr geehrter Herr Hellmann,",
-    "problem": "dass Angehörige dort zuerst ein Cookie-Fenster und langen Text sehen, bevor sie Ihre Telefonnummer finden – in einem Moment, in dem jede Minute zählt",
-    "suche": "Bestatter"
-   },
-   "v5": {
-    "soft": true,
-    "r": "999px",
-    "r2": "28px",
-    "svc_cls": "orb",
-    "steps_cls": "tone orb",
-    "facts_cls": "dark",
-    "fonts": "family=Libre+Baskerville:wght@400;700&family=Lato:wght@300;400;700",
-    "fh": "'Libre Baskerville',Georgia,serif",
-    "fb": "'Lato',system-ui,sans-serif",
-    "hw": 400,
-    "hls": "-0.01em",
-    "hlh": 1.1,
-    "h1vw": 4.6,
-    "h1max": 5.4,
-    "c": {
-     "bg": "#F7F5F2",
-     "ink": "#221A3A",
-     "acc": "#2C1E5C",
-     "acc2": "#B9B2A1",
-     "soft": "#ECE8E2",
-     "paper": "#FFFFFF",
-     "hbg": "#F7F5F2",
-     "onacc": "#FFFFFF",
-     "ctabtn": "#2C1E5C",
-     "star": "#B9A36A"
-    },
-    "hero": "mask",
-    "shape": "arch",
-    "mclip": "inset(0 4% 0 4% round 46vw 46vw 0 0)",
-    "hero_img": "b1",
-    "hero_slides": [
-     "b1",
-     "b3"
-    ],
-    "logo_h": 60,
-    "svc": "rows",
-    "svc_imgs": [
-     "b2",
-     "b3",
-     "b1"
-    ],
-    "rows_intro": "Wir kümmern uns um die Formalitäten und um die gesamte Organisation und Durchführung der Bestattung.",
-    "rws": [
-     [
-      "b2",
-      "Beratung und Formalitäten",
-      "Wir übernehmen Behördengänge, Urkunden und alle offiziellen Angelegenheiten – damit Sie Zeit für Ihre Trauer haben.",
-      [
-       "Behörden",
-       "Urkunden",
-       "Organisation"
-      ],
-      "Begleitung"
-     ],
-     [
-      "b3",
-      "Trauerfeier und Beisetzung",
-      "Persönlich gestaltet, mit Raum für Erinnerungen – als Erd-, Feuer- oder Seebestattung.",
-      [
-       "Trauerfeier",
-       "Beisetzung",
-       "Persönlich"
-      ],
-      "Abschied"
-     ]
-    ],
-    "about_img": "b1",
-    "about_img2": "b2",
-    "cta_img": "b3",
-    "no_promo": true,
-    "stock": true,
-    "bot_name": "Ruth",
-    "robot_tag": "Wir sind für Sie da",
-    "robot_delay": 6000,
-    "robot_hello": "Guten Tag. Ich bin Ruth, die digitale Begleiterin von Bestattungen Hellmann. Darf ich Ihnen zeigen, wie wir Ihnen helfen können?",
-    "bot_hi": "Guten Tag. Ich bin Ruth. Wie kann ich Ihnen helfen? Im Trauerfall erreichen Sie uns jederzeit unter 05462 71515.",
-    "tour_l": "Hier sehen Sie, wie wir Sie in den Tagen des Abschieds begleiten.",
-    "tour_r": "Das schreiben Angehörige über unsere Begleitung.",
-    "tour_u": "Hier lernen Sie Ingo Hellmann kennen.",
-    "tour_k": "Im Trauerfall erreichen Sie uns Tag und Nacht unter 05462 71515.",
-    "steps_h2": "Was im Trauerfall zu tun ist.",
-    "rev_h2": "Was Angehörige sagen.",
-    "order": [
-     "svc",
-     "reviews",
-     "about",
-     "steps",
-     "cta"
-    ],
-    "pos": {},
-    "cta_h2": "Wir sind für Sie da. Tag und Nacht.",
-    "cta_p": "Im Trauerfall rufen Sie uns jederzeit an. Wir kommen zu Ihnen und besprechen alles Weitere in Ruhe.",
-    "row_link": "Mit uns sprechen",
-    "rev_sub": "Das schreiben Angehörige.",
-    "form_q": "Wie können wir helfen?",
-    "cta_btn": "Jetzt anrufen, Tag und Nacht"
-   },
-   "steps": [
-    [
-     "Anrufen",
-     "Rufen Sie uns an – Tag und Nacht."
-    ],
-    [
-     "Gespräch",
-     "Wir besprechen in Ruhe alle Wünsche."
-    ],
-    [
-     "Organisation",
-     "Wir übernehmen Formalitäten und Ablauf."
-    ],
-    [
-     "Abschied",
-     "Eine würdevolle, persönliche Trauerfeier."
     ]
    ]
   },
@@ -4015,7 +3603,14 @@
      "ctabtn": "#9A1426",
      "star": "#C9A46A"
     },
-    "hero": "portrait",
+    "hero": "mask",
+    "shape": "full",
+    "mclip": "none",
+    "mask_h": 120,
+    "hero_img": "b1",
+    "hero_slides": [
+     "b1"
+    ],
     "logo_bg": "glass",
     "logo_h": 56,
     "svc": "rows",
@@ -4097,7 +3692,7 @@
      "cta"
     ],
     "pos": {
-     "b1": "50% 40%"
+     "b1": "72% 45%"
     },
     "du": true,
     "cta_h2": "Alles einsteigen.",
@@ -4105,8 +3700,6 @@
     "row_link": "Jetzt anfragen",
     "rev_sub": "Das sagen unsere Gäste.",
     "form_q": "Was möchtest du anfragen?",
-    "por_vw": 5,
-    "por_max": 5.8,
     "cta_btn": "Jetzt reservieren"
    },
    "steps": [
