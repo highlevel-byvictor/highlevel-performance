@@ -44,6 +44,7 @@ img{display:block;width:100%;height:100%;object-fit:cover}
 a{color:inherit}
 h1,h2,h3{font-family:var(--fh);font-weight:var(--hw);letter-spacing:var(--hls);line-height:var(--hlh);text-transform:var(--htt);font-stretch:var(--hst)}
 h1 span{display:block}
+h1,h2,h3,.facts,.hn-num,.big,.tel,.ptel{font-variant-numeric:lining-nums}
 h2{font-size:clamp(2.2rem,5vw,4.4rem);margin-bottom:.5em;max-width:16ch}
 .wrap{width:min(1240px,100% - 48px);margin:0 auto}
 :focus-visible{outline:3px solid var(--acc2);outline-offset:3px}
@@ -127,7 +128,7 @@ video.sl{width:100%;height:100%;object-fit:cover}.sl.hv{animation:none}
 .h-num{background:var(--hbg);color:var(--hink);padding:120px 0 0;overflow:hidden}
 .hn-top{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:end}
 .hn-top .ht h1{font-size:clamp(2.4rem,4.6vw,4.6rem);margin:0}
-.hn-num{font-family:var(--fh);font-weight:900;font-size:min(36vw,560px);line-height:.78;letter-spacing:-.06em;text-align:center;margin:3vw 0 0;color:transparent;background-image:url("{{ f.allimg[V.num_img] }}");background-size:{{ V.get('num_bgsize', 'cover') }};background-position:30% 50%;-webkit-background-clip:text;background-clip:text;will-change:background-position}
+.hn-num{font-family:var(--fh);font-weight:900;font-size:min(36vw,560px);line-height:.78;letter-spacing:-.06em;text-align:center;margin:3vw 0 0;color:transparent;background-image:url("{{ f.allimg[V.num_img] }}");background-size:{{ V.get('num_bgsize', 'cover') }};background-position:30% 50%;-webkit-background-clip:text;background-clip:text;will-change:background-position{% if V.get('num_stroke') %};-webkit-text-stroke:{{ V.num_stroke }}{% endif %}}
 .hn-strip{height:56vh;position:relative}
 /* ===== Hero: Portrait ===== */
 .h-por{background:var(--hbg);color:var(--hink);min-height:100vh;display:grid;grid-template-columns:1.25fr 1fr;padding-top:72px}
@@ -383,6 +384,63 @@ footer .note{grid-column:1/-1;margin-top:28px;padding-top:22px;border-top:1px so
   .callbar svg{width:18px;height:18px}
   footer{padding-bottom:150px}
 }
+/* Runde 5: Leistungs-Reihen */
+.rows-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:clamp(40px,6vw,80px)}
+.rows-head p{max-width:38ch;opacity:.8}
+.rw{display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(28px,5vw,80px);align-items:center;margin-bottom:clamp(56px,8vw,120px)}
+.rw:nth-child(even){grid-template-columns:1fr 1.15fr}
+.rw:nth-child(even) .rw-ph{order:2}
+.rw-ph{position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:{{ V.get('r2', '14px') }} {{ V.get('r2', '14px') }} {{ V.get('r2', '14px') }} 0;box-shadow:0 40px 70px -40px rgba(0,0,0,.45)}
+.rw:nth-child(even) .rw-ph{border-radius:{{ V.get('r2', '14px') }} {{ V.get('r2', '14px') }} 0 {{ V.get('r2', '14px') }}}
+.rw-ph img{transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
+.rw:hover .rw-ph img{transform:scale(1.04)}
+.rw-ph .nr{position:absolute;left:18px;bottom:16px;padding:8px 14px;background:color-mix(in srgb,var(--paper) 72%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);font-size:13px;font-weight:600;border-radius:999px;color:var(--ink)}
+.rw-t h3{font-size:clamp(1.8rem,3.4vw,3rem);margin-bottom:.45em}
+.rw-t p{font-size:18px;max-width:42ch;opacity:.86;margin-bottom:22px}
+.rw-t ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
+.rw-t li{font-size:14px;padding:7px 14px;border:1px solid color-mix(in srgb,var(--ink) 18%,transparent);border-radius:999px}
+.rw-t a{font-weight:600;text-decoration:none;border-bottom:2px solid var(--acc);padding-bottom:3px}
+/* Runde 5: Bewertungen */
+.rv{position:relative;overflow:hidden;background:var(--soft)}
+.rv-grid{display:grid;grid-template-columns:minmax(260px,.8fr) 2fr;gap:clamp(32px,5vw,72px);align-items:center}
+.rv-score{position:relative;padding:clamp(28px,4vw,44px);background:var(--ink);color:#fff;border-radius:{{ V.get('r2', '14px') }} {{ V.get('r2', '14px') }} {{ V.get('r2', '14px') }} 0;box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}
+.rv-score .big{white-space:nowrap;font-family:var(--fh);font-weight:var(--hw);font-size:clamp(4rem,7vw,6.4rem);line-height:.85;letter-spacing:-.04em}
+.rv-score .big small{font-size:.32em;opacity:.55;letter-spacing:0;margin-left:6px}
+.rv-score .stars{display:flex;gap:4px;margin:16px 0 14px}
+.rv-score .stars svg{width:28px;height:28px;fill:{{ c.get('star', '#F5B800') }}}
+.rv-score p{opacity:.8;font-size:15px}
+.rv-score .gl{display:flex;align-items:center;gap:10px;margin-top:22px;padding-top:18px;border-top:1px solid rgba(255,255,255,.18);font-size:14px}
+.rv-score .gl i{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#fff;color:#4285F4;font-style:normal;font-weight:700;font-family:Arial,sans-serif}
+.rv-h{margin-bottom:28px}
+.rv-h h2{margin-bottom:.25em}
+.rv-h p{opacity:.75;max-width:46ch}
+.rv-lane{display:flex;gap:20px;width:max-content;animation:rvm var(--rvt,60s) linear infinite}
+.rv-mask{overflow:hidden;-webkit-mask:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);padding:10px 0 26px}
+.rv-mask:hover .rv-lane{animation-play-state:paused}
+@keyframes rvm{to{transform:translateX(-50%)}}
+.rc{width:340px;flex:none;padding:24px 24px 20px;background:var(--paper);border-radius:4px {{ V.get('r2', '14px') }} {{ V.get('r2', '14px') }} {{ V.get('r2', '14px') }};box-shadow:0 22px 40px -26px rgba(0,0,0,.35);display:flex;flex-direction:column}
+.rc .stars{display:flex;gap:2px;margin-bottom:12px}
+.rc .stars svg{width:17px;height:17px;fill:{{ c.get('star', '#F5B800') }}}
+.rc p{font-size:15.5px;line-height:1.55;flex:1}
+.rc .rcf{display:flex;align-items:center;gap:10px;margin-top:16px;font-size:13px;opacity:.7}
+.rc .rcf i{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--acc);color:{{ c.get('onacc', '#fff') }};font-style:normal;font-weight:700;font-size:13px}
+.rv-note{font-size:12px;opacity:.55;margin-top:6px}
+/* Runde 5: Aktions-Popup */
+.promo2{position:fixed;left:24px;bottom:64px;z-index:58;width:min(500px,calc(100vw - 24px));display:grid;grid-template-columns:170px 1fr;background:var(--paper);color:var(--ink);border-radius:{{ V.get('r2', '14px') }};overflow:hidden;box-shadow:0 40px 90px -30px rgba(0,0,0,.6);transform:translateY(160%);transition:transform .7s cubic-bezier(.2,.9,.2,1)}
+.promo2.show{transform:none}
+.promo2 .pi{position:relative;min-height:190px}
+.promo2 .pi .tg{position:absolute;left:12px;top:12px;padding:6px 12px;border-radius:999px;background:var(--acc);color:{{ c.get('onacc', '#fff') }};font-size:12px;font-weight:700}
+.promo2 .pt{padding:20px 44px 20px 22px}
+.promo2 small{font-size:11.5px;opacity:.55;display:block}
+.promo2 b{display:block;font-family:var(--fh);font-weight:var(--hw);font-size:24px;line-height:1.08;letter-spacing:var(--hls);margin:6px 0 8px}
+.promo2 p{font-size:14.5px;line-height:1.45;opacity:.85;margin-bottom:14px}
+.promo2 .pb{display:inline-block;background:{{ c.get('ctabtn', c.ink) }};color:{{ c.get('onctabtn', '#fff') }};padding:11px 18px;font-weight:600;font-size:14.5px;text-decoration:none;border-radius:{{ V.get('r', '0') }}}
+.promo2 .x{position:absolute;right:10px;top:8px;border:0;background:none;font-size:24px;cursor:pointer;color:inherit;opacity:.6}
+@media (max-width:900px){
+.rows-head{display:block}.rw,.rw:nth-child(even){grid-template-columns:1fr;gap:22px;margin-bottom:64px}.rw:nth-child(even) .rw-ph{order:0}
+.rv-grid{grid-template-columns:1fr}.rc{width:280px}
+.promo2{grid-template-columns:96px 1fr;left:12px;bottom:210px;width:calc(100vw - 24px)}.promo2 .pi{min-height:118px}.promo2 .pt{padding:12px 36px 12px 14px}.promo2 b{font-size:17px;margin:4px 0 8px}.promo2 p{display:none}.promo2 .pb{padding:9px 14px;font-size:13.5px}
+}
 @media (max-width:520px){.steps{grid-template-columns:1fr}}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 </style>
@@ -485,6 +543,13 @@ footer .note{grid-column:1/-1;margin-top:28px;padding-top:22px;border-top:1px so
   <div class="stk">{% for l in f.leistungen[:svc_imgs|length] %}<article class="stk-it">{{ img(svc_imgs[loop.index0]) }}<div class="lbl"><h3>{{ l }}</h3></div></article>{% endfor %}</div>
   {% if f.leistungen|length > svc_imgs|length %}<p class="more">{% for l in f.leistungen[svc_imgs|length:] %}<span>{{ l }}</span>{% endfor %}</p>{% endif %}
 </div></section>
+{% elif V.svc == 'rows' %}
+<section class="sec {{ V.get('svc_cls', '') }}" id="leistungen"><div class="wrap">
+  <div class="rows-head"><h2>{{ f.leist_h2 }}</h2><p>{{ V.get('rows_intro', 'Sprechen Sie uns zu jedem dieser Bereiche an. Wir beraten Sie kostenlos und ehrlich.') }}</p></div>
+  {% for it in V.rws %}<article class="rw"><div class="rw-ph">{{ img(it[0]) }}{% if it|length > 4 and it[4] %}<span class="nr">{{ it[4] }}</span>{% endif %}</div>
+  <div class="rw-t"><h3>{{ it[1] }}</h3><p>{{ it[2] }}</p>{% if it[3] %}<ul>{% for t in it[3] %}<li>{{ t }}</li>{% endfor %}</ul>{% endif %}<a href="#kontakt">Dazu beraten lassen</a></div></article>{% endfor %}
+  {% if V.get('rows_more') %}<p class="more">{% for l in V.rows_more %}<span>{{ l }}</span>{% endfor %}</p>{% endif %}
+</div></section>
 {% endif %}
 
 {% elif s == 'about' %}
@@ -519,6 +584,14 @@ footer .note{grid-column:1/-1;margin-top:28px;padding-top:22px;border-top:1px so
 
 {% elif s == 'badges' %}
 <section class="sec badges {{ V.get('badges_cls', '') }}" style="padding-block:clamp(64px,8vw,110px)"><div class="wrap"><div class="bd-row">{% for k, l, t in V.badges %}<figure>{{ img(k) }}<figcaption>{{ l }}<small>{{ t }}</small></figcaption></figure>{% endfor %}</div></div></section>
+
+{% elif s == 'reviews' %}
+<section class="sec rv" id="bewertungen"><div class="wrap rv-grid">
+  <div class="rv-score"><div class="big">{{ f.google[0] }}<small>/ 5</small></div><span class="stars" aria-hidden="true">{% for i in range(5) %}<svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg>{% endfor %}</span><p>{{ f.google[1] }} Bewertungen von echten Kunden aus der Region.</p><div class="gl"><i>G</i>Google-Bewertungen</div></div>
+  <div style="min-width:0"><div class="rv-h"><h2>{{ V.get('rev_h2', 'Was Kunden über uns sagen.') }}</h2><p>{{ V.get('rev_sub', 'Ehrliche Stimmen von Menschen, für die wir schon gearbeitet haben.') }}</p></div>
+  {% if f.get('reviews') %}{% set R = f.reviews %}<div class="rv-mask"><div class="rv-lane" style="--rvt:{{ 14 * R|length }}s">{% for rep in range(2) %}{% for t, k in R %}<article class="rc"{% if rep %} aria-hidden="true"{% endif %}><span class="stars">{% for i in range(5) %}<svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg>{% endfor %}</span><p>„{{ t }}“</p><div class="rcf"><i>{{ k }}</i>Google-Rezension</div></article>{% endfor %}{% endfor %}</div></div>
+  <p class="rv-note">Auszüge aus öffentlichen Google-Rezensionen, gekürzt und sinngemäß wiedergegeben.</p>{% endif %}</div>
+</div></section>
 
 {% elif s == 'stimmen' %}
 <section class="sec stim"><div class="stim-bg">{{ img(V.stim_img) }}</div>
@@ -555,7 +628,7 @@ footer .note{grid-column:1/-1;margin-top:28px;padding-top:22px;border-top:1px so
   <div><h4>{{ f.kurzname }}</h4><p>{{ f.firma }}<br>{{ f.adresse }}</p></div>
   <div><p><a href="tel:{{ f.tel_link }}">{{ f.telefon }}</a><br>{% if f.email %}<a href="mailto:{{ f.email }}">{{ f.email }}</a>{% endif %}</p></div>
   <div><p><a href="#">Impressum</a><br><a href="#">Datenschutz</a></p></div>
-  <p class="note">Grober Entwurf von High Level Performance mit Bildern und Texten von {{ f.website_kurz }}. Bei einer Zusammenarbeit wird alles viel intensiver ausgearbeitet.</p>
+  <p class="note">Grober Entwurf von High Level Performance mit Bildern und Texten von {{ f.website_kurz }}. Bei einer Zusammenarbeit wird alles viel intensiver ausgearbeitet.{% if V.get('stock') %} Einige Fotos sind freie Stimmungsbilder (Unsplash) und zeigen keine Arbeiten des Betriebs.{% endif %}</p>
 </div></footer>
 
 <aside class="pv" id="pv"><b>Grober Entwurf</b>Erstellt von High Level Performance. Bei einer Zusammenarbeit arbeiten wir jede Seite viel intensiver aus.<button type="button" aria-label="Hinweis schließen" onclick="this.parentNode.remove()">x</button></aside>
@@ -566,7 +639,8 @@ footer .note{grid-column:1/-1;margin-top:28px;padding-top:22px;border-top:1px so
   <div class="chips" id="chips"><button type="button" data-a="0">Welche Leistungen bieten Sie an?</button><button type="button" data-a="1">Wo finde ich Sie?</button><button type="button" data-a="2">Kostenlose Beratung</button></div>
   <p class="demo">Beispiel-Funktion im Entwurf. Im fertigen System beantwortet der KI-Assistent Fragen mit Ihren eigenen Infos und trägt Anfragen ins CRM ein.</p>
 </div>
-<aside class="promo" id="promo"><div class="pi">{{ img(V.get('promo_img') or (V.svc_imgs[0] if V.svc_imgs else V.hero_img)) }}</div><div class="pt"><small>Beispiel: Aktions-Hinweis</small><b>{{ V.get('promo', f.leistungen[0]) }}</b>Jetzt gefragt. Lassen Sie sich kostenlos beraten.<br><a href="tel:{{ f.tel_link }}">{{ f.telefon }}</a></div><button class="x" type="button" aria-label="Schließen" onclick="this.parentNode.remove()">&times;</button></aside>
+{% if V.get('promo_sub') %}<aside class="promo2" id="promo"><div class="pi">{{ img(V.get('promo_img') or (V.svc_imgs[0] if V.svc_imgs else V.hero_img)) }}{% if V.get('promo_tag') %}<span class="tg">{{ V.promo_tag }}</span>{% endif %}</div><div class="pt"><small>Beispiel: Aktions-Hinweis im Entwurf</small><b>{{ V.promo }}</b><p>{{ V.promo_sub }}</p><a class="pb" href="tel:{{ f.tel_link }}">{{ V.get('promo_btn', 'Jetzt kostenlos beraten lassen') }}</a></div><button class="x" type="button" aria-label="Schließen" onclick="this.parentNode.classList.remove('show');this.parentNode.dataset.closed=1">&times;</button></aside>
+{% else %}<aside class="promo" id="promo"><div class="pi">{{ img(V.get('promo_img') or (V.svc_imgs[0] if V.svc_imgs else V.hero_img)) }}</div><div class="pt"><small>Beispiel: Aktions-Hinweis</small><b>{{ V.get('promo', f.leistungen[0]) }}</b>Jetzt gefragt. Lassen Sie sich kostenlos beraten.<br><a href="tel:{{ f.tel_link }}">{{ f.telefon }}</a></div><button class="x" type="button" aria-label="Schließen" onclick="this.parentNode.remove()">&times;</button></aside>{% endif %}
 <div class="callbar"><a href="tel:{{ f.tel_link }}">{{ icon_phone }}Anrufen</a><a href="tel:{{ f.tel_link }}">Kostenlose Beratung</a></div>
 
 <script src="../../assets/vendor/gsap.min.js"></script>
@@ -587,7 +661,7 @@ var bot=document.getElementById('bot'),msgs=document.getElementById('msgs'),pr=d
 document.getElementById('botbtn').onclick=function(){bot.classList.toggle('open');pr&&pr.classList.remove('show')};
 document.getElementById('botx').onclick=function(){bot.classList.remove('open')};
 document.querySelectorAll('#chips button').forEach(function(b){b.onclick=function(){var u=document.createElement('div');u.className='m u';u.textContent=b.textContent;msgs.appendChild(u);setTimeout(function(){var m=document.createElement('div');m.className='m';m.textContent=A[b.dataset.a];msgs.appendChild(m);msgs.scrollTop=1e6},450)}});
-var shown=false;function sp(){if(shown||!pr||bot.classList.contains('open'))return;if(scrollY>innerHeight*1.4){shown=true;pr.classList.add('show')}}addEventListener('scroll',sp,{passive:true});
+var shown=false;function sp(force){if(shown||!pr||bot.classList.contains('open'))return;if(force===true||scrollY>innerHeight*1.4){shown=true;pr.classList.add('show')}}addEventListener('scroll',sp,{passive:true});if(pr&&pr.classList.contains('promo2')){setTimeout(function(){sp(true)},9000);var ph=function(){setTimeout(function(){if(!pr.matches(':hover'))pr.classList.remove('show')},14000)};pr.addEventListener('transitionend',function(e){if(pr.classList.contains('show')&&e.propertyName==='transform')ph()})}
 document.querySelectorAll('.hm-in,.glass,.hc-img,.hp-img').forEach(function(w){var sl=w.querySelectorAll('.sl'),dt=w.querySelectorAll('.dots i');if(sl.length<2)return;var k=0;setInterval(function(){sl[k].classList.remove('on');dt[k]&&dt[k].classList.remove('on');k=(k+1)%sl.length;sl[k].classList.add('on');dt[k]&&dt[k].classList.add('on')},5200)});
 var fb=document.getElementById('filmbtn');if(fb){fb.onclick=function(){var v=document.getElementById('film');v.controls=true;v.play();fb.remove()}}
 var bw=document.querySelector('.h-wall .bricks');

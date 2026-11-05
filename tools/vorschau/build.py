@@ -140,7 +140,7 @@ def build(runde_file):
             sd, sm = OUT_PDF / f"{slug}-desk.jpg", OUT_PDF / f"{slug}-mob.jpg"
             pg = br.new_page(viewport={"width": 1280, "height": 860}, device_scale_factor=1.5)
             pg.goto((d / "index.html").as_uri()); pg.evaluate("document.fonts.ready"); pg.wait_for_timeout(1800 if data.get("template") == "v5" else 900)
-            pg.evaluate("document.querySelector('.pv').style.display='none';document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'));var cb=document.querySelector('.callbar');cb&&(cb.style.display='none');document.querySelectorAll('.bot-btn,.promo').forEach(e=>e.style.display='none')")
+            pg.evaluate("document.querySelector('.pv').style.display='none';document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'));var cb=document.querySelector('.callbar');cb&&(cb.style.display='none');document.querySelectorAll('.bot-btn,.promo,.promo2').forEach(e=>e.style.display='none')")
             pg.screenshot(path=str(sd), type="jpeg", quality=85); pg.close()
             pg = br.new_page(viewport={"width": 390, "height": 800}, device_scale_factor=2, is_mobile=True)
             pg.goto((d / "index.html").as_uri()); pg.evaluate("document.fonts.ready"); pg.wait_for_timeout(1800 if data.get("template") == "v5" else 900)

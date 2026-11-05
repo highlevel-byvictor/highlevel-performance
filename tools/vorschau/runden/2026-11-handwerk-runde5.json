@@ -1,0 +1,2172 @@
+{
+ "runde": "2026-11-Handwerk-Runde5",
+ "template": "v5",
+ "firmen": [
+  {
+   "slug": "stolte-holzbau",
+   "theme": "holz",
+   "firma": "Stolte Holzbau GmbH & Co. KG",
+   "kurzname": "Stolte Holzbau",
+   "website": "https://www.stolte-holzbau.de",
+   "telefon": "05471 2209",
+   "email": "info@stolte-holzbau.de",
+   "adresse": "Leverner Straße 11, 49163 Bohmte",
+   "google": [
+    "5,0",
+    5
+   ],
+   "siegel": [
+    "Holzbau Deutschland Fachbetrieb",
+    "Anerkannter Ausbildungsbetrieb"
+   ],
+   "tag": "Zimmerei in vierter Generation, Bohmte",
+   "h1": "Holz, gebaut <span>für Generationen.</span>",
+   "sub": "Holzrahmenbau, Fachwerk, Dächer und Dachfenster vom Zimmermeister – im Umkreis von rund 30 km um Bohmte.",
+   "trust": [
+    [
+     "1891",
+     "gegründet"
+    ],
+    [
+     "4.",
+     "Generation"
+    ],
+    [
+     "10",
+     "Mitarbeiter"
+    ]
+   ],
+   "leist_h2": "Was wir aus Holz bauen.",
+   "leistungen": [
+    "Holzrahmenbau",
+    "Fachwerk und Restauration",
+    "Holzbau",
+    "Ziegeldächer",
+    "Dachflächenfenster",
+    "Innenausbau"
+   ],
+   "about_h2": "Seit 1891 in Familienhand.",
+   "ueber": [
+    "Zimmermeister Martin Stolte führt den 1891 gegründeten Familienbetrieb in vierter Generation – mit rund zehn Mitarbeitern.",
+    "Wir arbeiten in Bohmte, Bad Essen, Belm, Ostercappeln, Osnabrück, Wallenhorst und überall im Umkreis von rund 30 km."
+   ],
+   "checks": [
+    "Zimmermannsmäßige Holzverbindungen wie Zapfen, Blatt und Holznagel",
+    "Eiche zur Zweitverwendung auf Lager",
+    "Anerkannter Ausbildungsbetrieb für Zimmerer"
+   ],
+   "inhaber_name": "Martin Stolte",
+   "inhaber_rolle": "Zimmermeister und Geschäftsführer",
+   "inhaber_idx": 2,
+   "logo_url": "https://www.stolte-holzbau.de/wp-content/uploads/2016/09/logo-stolte1.png",
+   "min_w": 400,
+   "bild_urls": [
+    "https://www.stolte-holzbau.de/wp-content/uploads/2016/07/Fachwerk-P1040283.jpg",
+    "https://www.stolte-holzbau.de/wp-content/uploads/2016/09/Holzrahmenbau-P1040293.jpg",
+    "https://www.stolte-holzbau.de/wp-content/uploads/2016/07/MStolteIMG_1410-re2.jpg",
+    "https://www.stolte-holzbau.de/wp-content/uploads/2016/09/HR-P1040307.jpg",
+    "https://www.stolte-holzbau.de/wp-content/uploads/2016/07/F-P1040288.jpg",
+    "https://www.stolte-holzbau.de/wp-content/uploads/2016/07/Z-P1040291.jpg",
+    "https://www.stolte-holzbau.de/wp-content/uploads/2016/09/D-P1040285.jpg",
+    "https://www.stolte-holzbau.de/wp-content/uploads/2016/07/H-P1040317.jpg",
+    "https://www.stolte-holzbau.de/wp-content/uploads/2016/07/H-P1040290.jpg",
+    "https://www.stolte-holzbau.de/wp-content/uploads/2016/07/Luft-19412-084-750x410.jpg",
+    "https://www.stolte-holzbau.de/wp-content/uploads/2016/09/HR-P1040311.jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "Stolte Holzbau GmbH & Co. KG",
+     "Herrn Martin Stolte",
+     "Leverner Straße 11",
+     "49163 Bohmte"
+    ],
+    "anrede": "Sehr geehrter Herr Stolte,",
+    "problem": "dass sie auf dem Handy breiter ist als der Bildschirm und Ihre vielen starken Projektfotos dadurch kaum zur Geltung kommen",
+    "suche": "Zimmerei"
+   },
+   "v5": {
+    "fonts": "family=Alegreya:wght@500;700;800&family=Alegreya+Sans:wght@400;500;700",
+    "fh": "'Alegreya',Georgia,serif",
+    "fb": "'Alegreya Sans',system-ui,sans-serif",
+    "hw": 800,
+    "hls": "-0.02em",
+    "hlh": 0.95,
+    "h1vw": 6.2,
+    "h1max": 7,
+    "c": {
+     "bg": "#F7F3EE",
+     "ink": "#2B1A12",
+     "acc": "#5E2410",
+     "acc2": "#B7794A",
+     "soft": "#EDE3D8",
+     "paper": "#FFFFFF",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#5E2410",
+     "star": "#E0A21B"
+    },
+    "hero": "numerals",
+    "num": "1891",
+    "num_img": "b1",
+    "num_stroke": "2px #5E2410",
+    "logo_h": 56,
+    "r": "4px",
+    "r2": "10px",
+    "svc": "rows",
+    "svc_imgs": [
+     "b4",
+     "b5",
+     "b9",
+     "b6",
+     "b7"
+    ],
+    "rows_intro": "Vom Dachstuhl bis zum Fachwerkhaus: Wir wählen das passende Holz und bauen es so, dass es hält.",
+    "rws": [
+     [
+      "b4",
+      "Holzrahmenbau",
+      "Modern, trocken und gesund: Wir planen und bauen Ihren Neubau, Anbau, Ihre Aufstockung oder Erweiterung in Holzrahmenbauweise.",
+      [
+       "Neubau",
+       "Anbau",
+       "Aufstockung"
+      ],
+      "Holzrahmenbau"
+     ],
+     [
+      "b5",
+      "Fachwerk und Restauration",
+      "Historische Gebäude sind Juwelen. Wir sanieren sanft mit zimmermannsmäßigen Verbindungen – Ihr Fachwerkhaus ist bei uns in guten Händen.",
+      [
+       "Fachwerk",
+       "Denkmal",
+       "Holzschutz"
+      ],
+      "Restauration"
+     ],
+     [
+      "b9",
+      "Holzbau",
+      "Dachstuhl, Gaube, Erker, Fassade, Balkon, Terrasse, Carport, Halle oder Scheune – mit dem richtigen Holz für jeden Zweck.",
+      [
+       "Dachstuhl",
+       "Gaube",
+       "Carport"
+      ],
+      "Holzbau"
+     ],
+     [
+      "b6",
+      "Ziegeldächer und Dachsanierung",
+      "Wir decken ein, warten und reparieren Ihr Dach und bringen die Dämmung auf den aktuellen Stand – inklusive Rinnen aus Zink oder Kupfer.",
+      [
+       "Neueindeckung",
+       "Dämmung",
+       "Dachrinne"
+      ],
+      "Dach"
+     ],
+     [
+      "b7",
+      "Dachflächenfenster",
+      "Licht und Luft zum Leben: Einbau, Austausch und Modernisierung von Velux- und Roto-Fenstern samt Sonnen- und Insektenschutz.",
+      [
+       "Velux",
+       "Roto",
+       "Austausch"
+      ],
+      "Dachfenster"
+     ]
+    ],
+    "about_owner": false,
+    "about_img": "b9",
+    "about_img2": "b3",
+    "cta_img": "b5",
+    "promo": "Mehr Licht unterm Dach",
+    "promo_tag": "Dachfenster",
+    "promo_sub": "Beratung, Austausch und Einbau von Velux- und Roto-Fenstern direkt vom Zimmermeister.",
+    "promo_img": "b7",
+    "order": [
+     "svc",
+     "facts",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "facts_cls": "dark",
+    "steps_cls": "tone",
+    "pos": {
+     "b1": "50% 60%",
+     "b3": "50% 20%"
+    }
+   }
+  },
+  {
+   "slug": "ks-zimmerei",
+   "theme": "dach",
+   "firma": "K&S Zimmerei GmbH",
+   "kurzname": "K&S Zimmerei",
+   "website": "https://ks-zimmerei.de",
+   "telefon": "05435 902690",
+   "email": "",
+   "adresse": "Upwiesenweg 3, 49626 Bippen",
+   "google": [
+    "4,7",
+    14
+   ],
+   "siegel": [
+    "Zimmerei und Dachdeckerei aus einer Hand"
+   ],
+   "tag": "Zimmerei und Dachdeckerei in Bippen",
+   "h1": "Alles unter <span>Dach und Fach.</span>",
+   "sub": "Dachstühle, Holzrahmenbau, Dächer, Sanierungen und Tiny Houses – seit über 20 Jahren aus Bippen, mit einem Ansprechpartner für alles.",
+   "trust": [
+    [
+     "20+",
+     "Jahre Erfahrung"
+    ],
+    [
+     "1",
+     "Ansprechpartner für alles"
+    ],
+    [
+     "CNC",
+     "gesteuerter Zuschnitt"
+    ]
+   ],
+   "leist_h2": "Ein Team. Alle Gewerke am Dach.",
+   "leistungen": [
+    "Zimmerei",
+    "Dachdeckerei und Klempnerei",
+    "Holzrahmenbau",
+    "Tiny Houses",
+    "Terrassendächer und Carports",
+    "Sanierung"
+   ],
+   "about_h2": "Moderne trifft Tradition.",
+   "ueber": [
+    "Seit über 20 Jahren schaffen wir Holzkonstruktionen für Wohnhäuser, Kindergärten, Turnhallen und Schulen – und sanieren alte Fachwerkhäuser.",
+    "Geführt von Ralf Küpker und Christian Schwietert. Viele Teile fertigen wir in der eigenen Halle vor: kurze Bauzeiten, faire Kosten."
+   ],
+   "checks": [
+    "Planung, Statik, Zeichnung und 3D-Ansicht",
+    "Bauantrag mit unserer Unterstützung",
+    "Bausätze für Carports und Terrassendächer deutschlandweit"
+   ],
+   "inhaber_name": "Ralf Küpker und Christian Schwietert",
+   "inhaber_rolle": "Geschäftsführer",
+   "logo_url": "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r5/local/ks-logo.png",
+   "min_w": 500,
+   "bild_urls": [
+    "https://ks-zimmerei.de/images/slider/slider_04.jpg",
+    "https://ks-zimmerei.de/images/slider/slider_03.jpg",
+    "https://ks-zimmerei.de/images/slider/slider_02.jpg",
+    "https://ks-zimmerei.de/images/slider/slider_01.jpg",
+    "https://ks-zimmerei.de/images/aktuelles/2022-03-24_tiny-office-house.jpg",
+    "https://ks-zimmerei.de/images/aktuelles/2022-05-09-terrassenueberdachung.jpg",
+    "https://ks-zimmerei.de/images/aktuelles/2022-02-04_dachsanierung.jpg",
+    "https://ks-zimmerei.de/images/bauprojekte/bauprojekte_02.jpg",
+    "https://ks-zimmerei.de/images/leistungen/dachdeckerei/dachdeckerei_klempnerei_c2.jpg",
+    "https://ks-zimmerei.de/images/leistungen/sanierung/sanierung_c1.jpg",
+    "https://ks-zimmerei.de/images/leistungen/zimmerei/zimmerei_b2.jpg"
+   ],
+   "reviews": [
+    [
+     "Sehr professionelle und gewissenhafte Arbeit. Ob große Projekte wie ein kompletter Dachüberstand oder kleine Reparaturen – alles wird abgesprochen und wie vereinbart umgesetzt.",
+     "“"
+    ],
+    [
+     "Unser Haus in Holzrahmenbau und das komplette Dach hat K&S errichtet. Preis-Leistung, Pünktlichkeit, Bauzeit, Service und Qualität: hervorragend.",
+     "“"
+    ],
+    [
+     "Beim Umbau unserer Scheune zu Wohnungen stand das neue Dach nach nur 2,5 Tagen und war wieder dicht.",
+     "“"
+    ],
+    [
+     "Hervorragende Beratung, professionelles Team. Vielen Dank!",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "K&S Zimmerei GmbH",
+     "Herrn Ralf Küpker",
+     "Upwiesenweg 3",
+     "49626 Bippen"
+    ],
+    "anrede": "Sehr geehrter Herr Küpker,",
+    "problem": "dass die neuesten Beiträge dort noch aus dem Jahr 2022 stammen und Besucher am Handy zuerst lange durch Hinweise und Text scrollen",
+    "suche": "Zimmerei"
+   },
+   "v5": {
+    "fonts": "family=Red+Hat+Display:wght@500;700;900&family=Red+Hat+Text:wght@400;500;600",
+    "fh": "'Red Hat Display',sans-serif",
+    "fb": "'Red Hat Text',system-ui,sans-serif",
+    "hw": 900,
+    "hls": "-0.03em",
+    "hlh": 0.92,
+    "h1vw": 6,
+    "h1max": 7,
+    "c": {
+     "bg": "#F5F8FB",
+     "ink": "#13202E",
+     "acc": "#E2001A",
+     "acc2": "#009FE3",
+     "soft": "#E3F1FA",
+     "paper": "#FFFFFF",
+     "hbg": "#13202E",
+     "hink": "#FFFFFF",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#13202E",
+     "star": "#F5B800"
+    },
+    "hero": "panes",
+    "hero_img": "b1",
+    "hero_slides": [
+     "b1",
+     "b3",
+     "b2"
+    ],
+    "cols": 4,
+    "rows": 2,
+    "pane_h": 50,
+    "logo_bg": "#FFFFFF",
+    "logo_h": 50,
+    "r": "6px",
+    "r2": "16px",
+    "svc": "rows",
+    "svc_imgs": [
+     "b2",
+     "b9",
+     "b5",
+     "b6",
+     "b7"
+    ],
+    "rows_intro": "Vom Flachdach bis zum Steildach, vom Dachstuhl bis zur Dachrinne: Bei uns kommt alles aus einer Hand.",
+    "rws": [
+     [
+      "b2",
+      "Zimmerei",
+      "Traditionelle Holzkonstruktion für Dachstuhl, Trocken- und Innenbau, Gauben, die Ihr Haus zum Hingucker machen, und aufwendige Fachwerkarbeiten.",
+      [
+       "Dachstuhl",
+       "Gauben",
+       "Fachwerk"
+      ],
+      "Zimmerei"
+     ],
+     [
+      "b9",
+      "Dachdeckerei und Klempnerei",
+      "Flach- und Steildach, Dachbegrünung, Dachfenster, Lichtkuppeln und Solartechnik – inklusive aller Bauklempnerarbeiten.",
+      [
+       "Steildach",
+       "Flachdach",
+       "Solar"
+      ],
+      "Dach"
+     ],
+     [
+      "b5",
+      "Holzrahmenbau und Tiny Houses",
+      "Holz speichert CO2 und dämmt hervorragend. Wir fertigen in der eigenen Halle vor – auch Tiny Houses, etwa als mobiles Büro.",
+      [
+       "Holzrahmenbau",
+       "Tiny House",
+       "Vorfertigung"
+      ],
+      "Holzbau"
+     ],
+     [
+      "b6",
+      "Terrassendächer und Carports",
+      "Passgenaue Bausätze nach Ihrem Wunsch, deutschlandweit geliefert: mit VSG-Glas, Zapfenverbindungen und witterungsfestem Anstrich.",
+      [
+       "VSG-Glas",
+       "Satteldach",
+       "Flachdach"
+      ],
+      "Bausätze"
+     ],
+     [
+      "b7",
+      "Sanierung und Wohnraumerweiterung",
+      "Energetische Dachsanierung, offene Wohnkonzepte und mehr Platz unterm Dach – das steigert den Wert und senkt die Heizkosten.",
+      [
+       "Dachdämmung",
+       "Ausbau",
+       "Umbau"
+      ],
+      "Sanierung"
+     ]
+    ],
+    "about_img": "b4",
+    "about_img2": "b11",
+    "cta_img": "b8",
+    "promo": "Terrassendach als Bausatz",
+    "promo_tag": "Deutschlandweit",
+    "promo_sub": "Mit VSG-Glas, millimetergenau CNC-gefertigt und nach Ihrem Wunsch lasiert – wir beraten Sie gern.",
+    "promo_img": "b6",
+    "rev_h2": "Bauherren über K&S.",
+    "order": [
+     "svc",
+     "reviews",
+     "about",
+     "facts",
+     "steps",
+     "cta"
+    ],
+    "facts_cls": "dark",
+    "steps_cls": "tone",
+    "pos": {
+     "b1": "62% 35%",
+     "b4": "50% 40%"
+    }
+   }
+  },
+  {
+   "slug": "kreinest-bau",
+   "theme": "bau",
+   "firma": "F.J. Kreinest GmbH Bauunternehmen",
+   "kurzname": "Bauunternehmen Kreinest",
+   "website": "https://kreinest-bau.de",
+   "telefon": "05494 977880",
+   "email": "",
+   "adresse": "Dammer Straße 49, 49451 Holdorf",
+   "siegel": [
+    "Fachbetrieb nach § 19 WHG"
+   ],
+   "tag": "Bauunternehmen in Holdorf",
+   "h1": "Auf uns können <span>Sie bauen.</span>",
+   "sub": "Einfamilienhäuser, Gewerbe- und Hallenbauten, öffentliche Bauten und Altbausanierung – vom Rohbau bis zur Abnahme.",
+   "trust": [
+    [
+     "Privat",
+     "und Gewerbe"
+    ],
+    [
+     "Kran",
+     "eigene Bau- und Versetzkräne"
+    ],
+    [
+     "WHG",
+     "zertifizierter Fachbetrieb"
+    ]
+   ],
+   "leist_h2": "Wir bauen, was Sie vorhaben.",
+   "leistungen": [
+    "Ein- und Mehrfamilienhäuser",
+    "Gewerbe- und Industriebau",
+    "Landwirtschaftliche Gebäude",
+    "Öffentliche Bauten",
+    "Umbau und Altbausanierung",
+    "Bauberatung"
+   ],
+   "about_h2": "Ein Ansprechpartner. Von der Planung bis zur Abnahme.",
+   "ueber": [
+    "Wir bieten Ihnen eine vertrauensvolle, zuverlässige und flexible Abwicklung aller Bauarbeiten – mit modernem Maschinenpark und qualifiziertem Team.",
+    "Unsere Bauberatung bewahrt Sie vor Fehlentscheidungen und unnötigen Kosten. Wir arbeiten eng mit Bauherren und Architekten zusammen."
+   ],
+   "checks": [
+    "Rohbau schnell, zuverlässig und sauber",
+    "Einsatz von Bau- und Versetzkränen",
+    "Zuverlässige Termine mit qualifizierten Partnerfirmen"
+   ],
+   "inhaber_name": "Michael Kreinest",
+   "inhaber_rolle": "Geschäftsführer",
+   "logo_url": "https://kreinest-bau.de/assets/img/kreinest-logo.png",
+   "min_w": 600,
+   "bild_urls": [
+    "https://kreinest-bau.de/index.php?rex_media_type=fullscreen&rex_media_file=banner-33-gr.jpg",
+    "https://kreinest-bau.de/index.php?rex_media_type=fullscreen&rex_media_file=banner-3-gr.jpg",
+    "https://kreinest-bau.de/media/projekt-9.jpg",
+    "https://kreinest-bau.de/media/projekt-32-1.jpg",
+    "https://kreinest-bau.de/referenzen/oeffentliche-auftraggeber/index.php?rex_media_type=lightgallery_1100&rex_media_file=projekt-29.jpg",
+    "https://kreinest-bau.de/referenzen/gewerbe-und-industrie/index.php?rex_media_type=lightgallery_1100&rex_media_file=projekt-6.jpg",
+    "https://kreinest-bau.de/referenzen/einfamilienhaeuser/index.php?rex_media_type=lightgallery_1100&rex_media_file=projekt-8.jpg",
+    "https://kreinest-bau.de/referenzen/einfamilienhaeuser/index.php?rex_media_type=lightgallery_1100&rex_media_file=projekt-3.jpg",
+    "https://kreinest-bau.de/media/projekt-16.jpg",
+    "https://kreinest-bau.de/index.php?rex_media_type=fullscreen&rex_media_file=banner-1-sw.jpg"
+   ],
+   "brief": {
+    "anschrift": [
+     "F.J. Kreinest GmbH Bauunternehmen",
+     "Herrn Michael Kreinest",
+     "Dammer Straße 49",
+     "49451 Holdorf"
+    ],
+    "anrede": "Sehr geehrter Herr Kreinest,",
+    "problem": "dass Ihre beeindruckenden Referenzen dort erst auf Unterseiten zu finden sind und Bauherren auf der Startseite wenig davon sehen",
+    "suche": "Bauunternehmen"
+   },
+   "v5": {
+    "fonts": "family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600",
+    "fh": "'Sora',sans-serif",
+    "fb": "'Inter',system-ui,sans-serif",
+    "hw": 800,
+    "hls": "-0.035em",
+    "hlh": 0.95,
+    "h1vw": 5.8,
+    "h1max": 6.6,
+    "c": {
+     "bg": "#F6F6F5",
+     "ink": "#151515",
+     "acc": "#E30613",
+     "acc2": "#8C8C8C",
+     "soft": "#ECECEA",
+     "paper": "#FFFFFF",
+     "hbg": "#151515",
+     "hink": "#FFFFFF",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#151515"
+    },
+    "hero": "mask",
+    "shape": "gable",
+    "mclip": "polygon(0 20%, 50% 0, 100% 20%, 100% 100%, 0 100%)",
+    "hero_img": "b1",
+    "hero_slides": [
+     "b1",
+     "b2"
+    ],
+    "logo_bg": "#FFFFFF",
+    "logo_h": 42,
+    "r": "0",
+    "r2": "6px",
+    "svc": "rows",
+    "svc_imgs": [
+     "b3",
+     "b6",
+     "b5",
+     "b4",
+     "b10"
+    ],
+    "rows_intro": "Ob Eigenheim, Halle oder Kita: Wir übernehmen die Verantwortung für eine ordnungsgemäße Ausführung und halten Termine.",
+    "rws": [
+     [
+      "b3",
+      "Ein- und Mehrfamilienhäuser",
+      "Wir gestalten mit Ihnen Ihr Haus bis ins kleinste Detail und sorgen für die einwandfreie Ausführung aller Arbeiten.",
+      [
+       "Neubau",
+       "Doppelhaus",
+       "Mehrfamilienhaus"
+      ],
+      "Wohnbau"
+     ],
+     [
+      "b6",
+      "Gewerbe-, Industrie- und Projektbau",
+      "Produktions- und Montagehallen, Bürogebäude und alle Bauwerke, die für eine Anlage nötig sind.",
+      [
+       "Hallen",
+       "Büro",
+       "Projektbau"
+      ],
+      "Gewerbe"
+     ],
+     [
+      "b5",
+      "Öffentliche Bauten",
+      "Ihr Partner für Bauten der Kommunen, des Landes und des Kreises – wirtschaftlich und funktional.",
+      [
+       "Kitas",
+       "Schulen",
+       "Kommunen"
+      ],
+      "Öffentlich"
+     ],
+     [
+      "b4",
+      "Rohbau mit eigenem Kran",
+      "Moderner Maschinenpark, Bau- und Versetzkräne: Wir arbeiten rationell, schnell und sauber.",
+      [
+       "Rohbau",
+       "Kran",
+       "Betonarbeiten"
+      ],
+      "Rohbau"
+     ],
+     [
+      "b10",
+      "Umbau und Altbausanierung",
+      "Aus- und Umbau sowie Sanierung im Bestand – fachgerecht und mit Blick auf langfristig sinnvolle Lösungen.",
+      [
+       "Umbau",
+       "Anbau",
+       "Sanierung"
+      ],
+      "Bestand"
+     ]
+    ],
+    "rows_more": [
+     "Landwirtschaftliche Gebäude",
+     "Tankstellen und WHG-Anlagen",
+     "Bauberatung"
+    ],
+    "about_img": "b7",
+    "about_img2": "b9",
+    "cta_img": "b8",
+    "promo": "Ihr Haus. Unser Rohbau.",
+    "promo_tag": "Bauberatung",
+    "promo_sub": "Sprechen Sie mit uns über Ihr Bauvorhaben – wir beraten Sie ehrlich, bevor teure Fehler passieren.",
+    "promo_img": "b3",
+    "order": [
+     "svc",
+     "facts",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "facts_cls": "dark",
+    "steps_cls": "tone",
+    "pos": {}
+   }
+  },
+  {
+   "slug": "maler-luennemann",
+   "theme": "maler",
+   "firma": "Malerfachgeschäft Lünnemann",
+   "kurzname": "Maler Lünnemann",
+   "website": "http://www.maler-luennemann.de",
+   "telefon": "05462 1372",
+   "email": "malerluennemann@t-online.de",
+   "adresse": "Schulstraße 10, 49577 Eggermühlen",
+   "google": [
+    "4,6",
+    9
+   ],
+   "siegel": [
+    "Meisterbetrieb seit 1934"
+   ],
+   "tag": "Malerfachgeschäft mit Showroom in Eggermühlen",
+   "h1": "Gönnen Sie Ihren Wänden <span>einen neuen Look.</span>",
+   "sub": "Wandgestaltung, Bodenbeläge, Fassaden und Glaserarbeiten – mit eigenem Showroom und Verleih für Arbeitsbühnen.",
+   "trust": [
+    [
+     "1934",
+     "gegründet"
+    ],
+    [
+     "4.",
+     "Generation im Betrieb"
+    ],
+    [
+     "Showroom",
+     "mit Tapeten und Böden"
+    ]
+   ],
+   "leist_h2": "Wände, Böden, Fassade.",
+   "leistungen": [
+    "Wandgestaltung",
+    "Bodenbeläge",
+    "Fassadensanierung",
+    "Glaserarbeiten",
+    "Showroom",
+    "Verleih"
+   ],
+   "about_h2": "Seit 1934 in Eggermühlen.",
+   "ueber": [
+    "Hermann Lünnemann gründete den Betrieb am 4. Juni 1934. Heute leitet Jürgen Lünnemann den Meisterbetrieb in dritter Generation – gemeinsam mit seinem Sohn Nico und dem ganzen Team.",
+    "Aus Anstrich und Tapete ist ein Rundum-Angebot geworden: Strukturputz, Deckenverkleidungen, Bodenbeläge und ein Showroom voller Ideen."
+   ],
+   "checks": [
+    "Individuelle Gestaltungskonzepte",
+    "Große Auswahl an Tapeten und Böden im Showroom",
+    "Verleih von Arbeitsbühnen und Werkzeug"
+   ],
+   "inhaber_name": "Jürgen Lünnemann und Team",
+   "inhaber_rolle": "Malermeister in dritter Generation",
+   "inhaber_idx": 3,
+   "logo_url": "http://www.maler-luennemann.de/.cm4all/uproc.php/0/.Logo_farbig.png/picture-1200?_=17c4a3e6e90",
+   "min_w": 600,
+   "bild_urls": [
+    "http://www.maler-luennemann.de/.cm4all/uproc.php/0/.IMG_6134_1.jpg/picture-2600?_=17c4581c528",
+    "http://www.maler-luennemann.de/.cm4all/uproc.php/0/.IMG_6112.jpg/picture-2600?_=17c465d7758",
+    "http://www.maler-luennemann.de/.cm4all/uproc.php/0/.IMG_6164-3.jpg/picture-2600?_=17b5ac16d18",
+    "http://www.maler-luennemann.de/.cm4all/uproc.php/0/.IMG_6125-6.jpg/picture-2600?_=17b59e68220",
+    "http://www.maler-luennemann.de/.cm4all/uproc.php/0/.CXDF5460-3.jpg/picture-2600?_=17b5ace4240",
+    "http://www.maler-luennemann.de/.cm4all/uproc.php/0/.HVXW5534-2.jpg/picture-1600?_=17b5ace3e58",
+    "http://www.maler-luennemann.de/.cm4all/uproc.php/0/.IMG_6108%20Wand%20Kopie.jpg/picture-1600?_=17c47b74749",
+    "http://www.maler-luennemann.de/.cm4all/uproc.php/0/.IMG_6093.jpg/picture-2600?_=17b5a28c6f8",
+    "http://www.maler-luennemann.de/.cm4all/uproc.php/0/.IMG_6150-2.jpg/picture-2600?_=17c47bd1310",
+    "http://www.maler-luennemann.de/.cm4all/uproc.php/0/.IMG_6137.jpg/picture-2600?_=17c47c29d08",
+    "http://www.maler-luennemann.de/.cm4all/uproc.php/0/.IMG_6075-2_2.jpg/picture-1600?_=17c480f7c22"
+   ],
+   "reviews": [
+    [
+     "Habe dort schon mehrfach beauftragt. Sehr gute Arbeit mit hochwertigem Material, Aufträge sind im Handumdrehen erledigt. Zuverlässig.",
+     "“"
+    ],
+    [
+     "Was die leisten, ist unglaublich. Super Arbeit, absolut freundlich und extrem schnell. Kann ich jedem empfehlen.",
+     "“"
+    ],
+    [
+     "Sprachlos. Alles super, die Jungs sind klasse.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Malerfachgeschäft Lünnemann",
+     "Herrn Jürgen Lünnemann",
+     "Schulstraße 10",
+     "49577 Eggermühlen"
+    ],
+    "anrede": "Sehr geehrter Herr Lünnemann,",
+    "problem": "dass sie ohne sichere Verbindung läuft – viele Browser zeigen deshalb „nicht sicher“ an – und Ihre schönen Projekte größtenteils in Schwarz-Weiß erscheinen",
+    "suche": "Maler"
+   },
+   "v5": {
+    "fonts": "family=DM+Serif+Display&family=DM+Sans:wght@400;500;700",
+    "fh": "'DM Serif Display',Georgia,serif",
+    "fb": "'DM Sans',system-ui,sans-serif",
+    "hw": 400,
+    "hls": "-0.015em",
+    "hlh": 0.98,
+    "h1vw": 4.7,
+    "h1max": 5.6,
+    "c": {
+     "bg": "#F5F8FC",
+     "ink": "#12233A",
+     "acc": "#0062AE",
+     "acc2": "#E03333",
+     "soft": "#E2ECF7",
+     "paper": "#FFFFFF",
+     "hbg": "#12233A",
+     "hink": "#FFFFFF",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#12233A",
+     "star": "#F5B800"
+    },
+    "hero": "mask",
+    "shape": "blob",
+    "mclip": "inset(0 4% 0 4% round 48% 52% 46% 54% / 26% 30% 22% 26%)",
+    "hero_img": "b2",
+    "hero_slides": [
+     "b2",
+     "b5",
+     "b1"
+    ],
+    "logo_bg": "#FFFFFF",
+    "logo_h": 44,
+    "r": "999px",
+    "r2": "20px",
+    "strokes": [
+     "#0062AE",
+     "#E03333",
+     "#0062AE"
+    ],
+    "svc": "rows",
+    "svc_imgs": [
+     "b7",
+     "b6",
+     "b2",
+     "b9",
+     "b11"
+    ],
+    "rows_intro": "Egal ob Strukturputz, Tapete, Lack- oder Wischtechnik: Wir finden mit Ihnen den Look, der zu Ihnen passt.",
+    "rws": [
+     [
+      "b7",
+      "Wandgestaltung",
+      "Individuelle Raumgestaltung mit Strukturputz, Tapeten, Anstrichen, Lackierungen, Textil- und Glasfaserbelägen sowie modernen Lack- und Wischtechniken.",
+      [
+       "Strukturputz",
+       "Tapete",
+       "Wischtechnik"
+      ],
+      "Innen"
+     ],
+     [
+      "b6",
+      "Bodenbeläge",
+      "Design-, Vinyl-, PVC-, Laminat-, Parkett-, Kork- und Teppichböden – inklusive Trittschall- und Wärmedämmung.",
+      [
+       "Vinyl",
+       "Parkett",
+       "Kork"
+      ],
+      "Boden"
+     ],
+     [
+      "b2",
+      "Fassadensanierung",
+      "Energiesparende Fassadensanierung, Kunststoffputze und Beschichtungen, Vollwärmeschutz und Gebäude-Imprägnierung.",
+      [
+       "Vollwärmeschutz",
+       "Putz",
+       "Imprägnierung"
+      ],
+      "Fassade"
+     ],
+     [
+      "b9",
+      "Objekte und öffentliche Gebäude",
+      "Auch große Projekte wie Schulen gestalten wir farbig, robust und pflegeleicht – sauber geplant und termingerecht umgesetzt.",
+      [
+       "Schulen",
+       "Gewerbe",
+       "Objekte"
+      ],
+      "Objekt"
+     ],
+     [
+      "b11",
+      "Showroom und Verleih",
+      "In unserem Showroom an der Schulstraße finden Sie Tapeten- und Bodenmuster, Farben und Lacke. Arbeitsbühnen leihen Sie direkt bei uns.",
+      [
+       "Tapetenmuster",
+       "Böden",
+       "Arbeitsbühnen"
+      ],
+      "Showroom"
+     ]
+    ],
+    "rows_more": [
+     "Glaserarbeiten",
+     "Deckenverkleidungen",
+     "Teppichreinigung"
+    ],
+    "about_img": "b4",
+    "cta_img": "b5",
+    "promo": "Neue Böden aus dem Showroom",
+    "promo_tag": "Showroom",
+    "promo_sub": "Design-, Vinyl-, Laminat- oder Korkboden: Muster ansehen, beraten lassen, verlegen lassen.",
+    "promo_img": "b6",
+    "rev_h2": "Kunden über Lünnemann.",
+    "order": [
+     "svc",
+     "reviews",
+     "about",
+     "facts",
+     "steps",
+     "cta"
+    ],
+    "facts_cls": "dark",
+    "steps_cls": "tone",
+    "pos": {
+     "b4": "50% 40%"
+    }
+   }
+  },
+  {
+   "slug": "tischlerei-holtze",
+   "theme": "holz",
+   "firma": "Tischlerei Holtze",
+   "kurzname": "Tischlerei Holtze",
+   "website": "https://www.tischlerei-holtze.de",
+   "telefon": "05468 6300",
+   "email": "info@tischlerei-holtze.de",
+   "adresse": "Schleptruper Strang 30, 49565 Bramsche",
+   "google": [
+    "4,6",
+    11
+   ],
+   "siegel": [
+    "Meisterbetrieb der Tischler-Innung"
+   ],
+   "tag": "Tischlerei in Bramsche-Schleptrup",
+   "h1": "Sicher wohnen. <span>Schön wohnen.</span>",
+   "sub": "Einbruchschutz, Innenausbau, Türen, Insektenschutz und Möbelrestauration – vom Meisterbetrieb der Innung, mit Ihren Ideen im Mittelpunkt.",
+   "trust": [
+    [
+     "Meister",
+     "betrieb der Innung"
+    ],
+    [
+     "Ausbildungs",
+     "betrieb mit Gesellenstücken"
+    ],
+    [
+     "Alt",
+     "wird neu: Möbelrestauration"
+    ]
+   ],
+   "leist_h2": "Was wir für Ihr Zuhause tun.",
+   "leistungen": [
+    "Einbruchschutz",
+    "Innenausbau",
+    "Zimmertüren und Windfang",
+    "Insektenschutz",
+    "Möbelrestauration",
+    "Schiebetüren"
+   ],
+   "about_h2": "Die Natur ist unsere Inspiration.",
+   "ueber": [
+    "In unserem Handwerksbetrieb stehen Sie als Kunde mit Ihren Ideen und Wünschen im Fokus unserer Arbeit.",
+    "Wir bilden aus: Unsere Auszubildenden stellen ihre Gesellenstücke jedes Jahr bei der Tischler-Innung Bersenbrück aus."
+   ],
+   "checks": [
+    "Beratung zur Sicherheit im Haus",
+    "Möbel für Praxis, Büro, Küche und Bad",
+    "Aus alt wird neu: Möbel mit zweitem Leben"
+   ],
+   "inhaber_name": "Team der Tischlerei Holtze",
+   "inhaber_rolle": "Bramsche",
+   "logo_url": "https://www.tischlerei-holtze.de/s/misc/logo.jpg?t=1790315519",
+   "min_w": 500,
+   "bild_urls": [
+    "https://www.tischlerei-holtze.de/s/cc_images/teaserbox_2476764130.png",
+    "https://www.tischlerei-holtze.de/s/cc_images/teaserbox_2497411752.JPG",
+    "https://www.tischlerei-holtze.de/s/cc_images/cache_2482057319.JPG",
+    "https://www.tischlerei-holtze.de/s/cc_images/cache_2482057394.jpg",
+    "https://images.unsplash.com/photo-1759523121247-76be6b3490b2?w=1800&q=85&fm=jpg",
+    "https://images.unsplash.com/photo-1788296817269-8df0458ab799?w=1800&q=85&fm=jpg",
+    "https://images.unsplash.com/photo-1659930087003-2d64e33181f7?w=1800&q=85&fm=jpg",
+    "https://images.unsplash.com/photo-1779031242515-205111711b23?w=1800&q=85&fm=jpg"
+   ],
+   "reviews": [
+    [
+     "Zwei Türen wurden repariert. Andere hatten abgesagt oder zum Austausch geraten – Tischlerei Holtze hat den Auftrag angenommen und hervorragende Arbeit geliefert.",
+     "“"
+    ],
+    [
+     "Tolle, schnelle Arbeit. Jederzeit wieder. Nur das Beste!",
+     "“"
+    ],
+    [
+     "Tolles Team, tolle Arbeit und super unkompliziert. Immer wieder gern mit René und Annefriede.",
+     "“"
+    ],
+    [
+     "Sehr nett, tolles Team, kompetent, lösungsorientiert und sehr authentisch.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Tischlerei Holtze",
+     "Schleptruper Strang 30",
+     "49565 Bramsche"
+    ],
+    "anrede": "Sehr geehrte Damen und Herren,",
+    "problem": "dass sie mit dunklem Hintergrund, kleinen Bildern und langen Menülisten nicht mehr zeigt, wie gut Ihre Arbeit ist",
+    "suche": "Tischler"
+   },
+   "v5": {
+    "fonts": "family=Literata:opsz,wght@7..72,500;600;700&family=Public+Sans:wght@400;500;600",
+    "fh": "'Literata',Georgia,serif",
+    "fb": "'Public Sans',system-ui,sans-serif",
+    "hw": 700,
+    "hls": "-0.025em",
+    "hlh": 0.98,
+    "h1vw": 5.6,
+    "h1max": 6.4,
+    "c": {
+     "bg": "#F4F7F5",
+     "ink": "#17302A",
+     "acc": "#2F7262",
+     "acc2": "#8DB63C",
+     "soft": "#E2ECE7",
+     "paper": "#FFFFFF",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#17302A",
+     "onctabtn": "#FFFFFF",
+     "star": "#E0A21B"
+    },
+    "hero": "collage",
+    "prints": [
+     [
+      "b1",
+      "Unser Team"
+     ],
+     [
+      "b5",
+      "Echte Handarbeit"
+     ],
+     [
+      "b2",
+      "Tischlerei Holtze"
+     ]
+    ],
+    "logo_h": 50,
+    "r": "8px",
+    "r2": "14px",
+    "strokes": [
+     "#2F7262",
+     "#8DB63C"
+    ],
+    "svc": "rows",
+    "svc_imgs": [
+     "b1",
+     "b3",
+     "b5",
+     "b4"
+    ],
+    "rows_intro": "Wir planen mit Ihnen, fertigen in unserer Werkstatt und montieren sauber bei Ihnen vor Ort.",
+    "rws": [
+     [
+      "b1",
+      "Einbruchschutz und Sicherheit",
+      "Wir zeigen Ihnen, wo Ihr Haus Schwachstellen hat, und rüsten Fenster und Türen fachgerecht nach – damit Sie ruhig schlafen.",
+      [
+       "Fenster",
+       "Haustür",
+       "Beratung"
+      ],
+      "Sicherheit"
+     ],
+     [
+      "b3",
+      "Innenausbau und Möbel nach Maß",
+      "Einbauschränke, Regale, Trennwände, Flurmöbel, Küchen- und Büromöbel – bis zur kompletten Einrichtung einer Arztpraxis.",
+      [
+       "Einbauschrank",
+       "Praxis",
+       "Küche"
+      ],
+      "Innenausbau"
+     ],
+     [
+      "b5",
+      "Möbelrestauration: Aus alt wird neu",
+      "Aus einem alten Bett wird eine Sitzbank, aus dem Erbstück wieder ein Schmuckstück. Wir geben Möbeln ein zweites Leben.",
+      [
+       "Restauration",
+       "Umbau",
+       "Unikate"
+      ],
+      "Restauration"
+     ],
+     [
+      "b4",
+      "Zimmertüren und Windfang",
+      "Neue Zimmertüren, Windfangelemente und Schiebetüren, die Räume verbinden und Wärme im Haus halten.",
+      [
+       "Zimmertüren",
+       "Windfang",
+       "Schiebetüren"
+      ],
+      "Türen"
+     ]
+    ],
+    "rows_more": [
+     "Insektenschutz für Fenster und Türen",
+     "Showroom"
+    ],
+    "about_img": "b1",
+    "about_img2": "b2",
+    "cta_img": "b3",
+    "promo": "Einbruchschutz für Ihr Zuhause",
+    "promo_tag": "Sicherheit",
+    "promo_sub": "Wir prüfen Fenster und Türen auf Schwachstellen und rüsten fachgerecht nach.",
+    "promo_img": "b1",
+    "stock": true,
+    "rev_h2": "Kunden über die Tischlerei Holtze.",
+    "order": [
+     "svc",
+     "reviews",
+     "about",
+     "facts",
+     "steps",
+     "cta"
+    ],
+    "facts_cls": "dark",
+    "steps_cls": "tone",
+    "pos": {
+     "b1": "50% 45%"
+    }
+   }
+  },
+  {
+   "slug": "tischlerei-hehemann",
+   "theme": "holz",
+   "firma": "Tischlerei Hehemann",
+   "kurzname": "Tischlerei Hehemann",
+   "website": "https://www.tischlerei-hehemann.de",
+   "telefon": "05409 1440",
+   "email": "info@tischlerei-hehemann.de",
+   "adresse": "Dratumer Straße 23, 49326 Melle",
+   "google": [
+    "5,0",
+    15
+   ],
+   "siegel": [
+    "Familienbetrieb in vierter Generation"
+   ],
+   "tag": "Tischlerei in Melle-Dratum",
+   "h1": "Ist es aus Holz, <span>ist es was für uns.</span>",
+   "sub": "Treppen, Möbel, Fenster, Türen und Innenausbau nach Maß – geplant am CAD, gefertigt in der eigenen Werkstatt. Auch per WhatsApp erreichbar.",
+   "trust": [
+    [
+     "100+",
+     "Jahre Erfahrung"
+    ],
+    [
+     "4.",
+     "Generation"
+    ],
+    [
+     "30",
+     "Jahre CAD und CNC"
+    ]
+   ],
+   "leist_h2": "Alles nach Maß. Alles aus einer Hand.",
+   "leistungen": [
+    "Treppen",
+    "Möbel nach Maß",
+    "Innenausbau",
+    "Fenster und Türen",
+    "Trockenbau und Fußboden"
+   ],
+   "about_h2": "Über 100 Jahre Tischlerhandwerk in Melle.",
+   "ueber": [
+    "Die Tischlerei wird bereits in der vierten Generation geführt. Holz kombinieren wir gern mit Glas, Kunststoff und Metall.",
+    "Florian Hehemann und sein Team begleiten Einzelprojekte genauso wie die komplette Bauphase – von der Beratung bis zur Montage."
+   ],
+   "checks": [
+    "CAD-Planung und CNC-Fertigung seit fast 30 Jahren",
+    "Partner für Einzelprojekte und komplette Bauphasen",
+    "Telefon und WhatsApp: 05409 1440"
+   ],
+   "inhaber_name": "Florian Hehemann",
+   "inhaber_rolle": "Tischlermeister",
+   "logo_url": "https://www.tischlerei-hehemann.de/wp-content/uploads/go-x/u/78e20e0f-5b66-44d4-89f1-cc7739cbf9d4/image-320x222.png",
+   "min_w": 700,
+   "bild_urls": [
+    "https://www.tischlerei-hehemann.de/wp-content/uploads/go-x/u/26971afe-d1fa-45c0-a581-f756a6215d02/image.jpg",
+    "https://www.tischlerei-hehemann.de/wp-content/uploads/go-x/u/5743ae6d-c136-45c8-9d37-b2d10385ca09/l0,t399,w1200,h1200/image.jpg",
+    "https://www.tischlerei-hehemann.de/wp-content/uploads/go-x/u/bf45946c-0774-4313-b6a8-4fe4c4db60c4/l0,t250,w1500,h1500/image-1366x1366.jpg",
+    "https://www.tischlerei-hehemann.de/wp-content/uploads/go-x/u/606bf1dc-322e-4df0-9b76-d3acab6c4dea/image.jpg",
+    "https://www.tischlerei-hehemann.de/wp-content/uploads/go-x/u/00f904e8-b7b9-48c1-8142-2c0ac7b00b86/image.jpg",
+    "https://www.tischlerei-hehemann.de/wp-content/uploads/go-x/u/c684d9e6-8cae-43ab-8bca-ab4449e113b2/l0,t0,w1125,h1125/image-768x768.jpg",
+    "https://www.tischlerei-hehemann.de/wp-content/uploads/go-x/u/a35112f2-b7f8-4914-9989-fb53ef1bf013/l116,t316,w968,h968/image-768x768.jpg"
+   ],
+   "reviews": [
+    [
+     "Treppe, Fensterbänke und Esstisch nach Maß: Mit der Kommunikation von Herrn Hehemann sind wir äußerst zufrieden, die Handwerksarbeit ist hervorragend.",
+     "“"
+    ],
+    [
+     "Alle Innentüren, ein beleuchtetes Treppengeländer und ein Waschtisch aus Eiche – mit Florian Hehemann und seinem Team immer freundlich und professionell.",
+     "“"
+    ],
+    [
+     "Alle Fenster und die Haustür wurden ersetzt. Obwohl wir nicht vor Ort waren, lief alles reibungslos. Sehr zuverlässig und kompetent.",
+     "“"
+    ],
+    [
+     "Rollläden und Haustür repariert. Hervorragende Arbeit und ein sehr freundliches Team. Gern wieder!",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Tischlerei Hehemann",
+     "Herrn Florian Hehemann",
+     "Dratumer Straße 23",
+     "49326 Melle"
+    ],
+    "anrede": "Sehr geehrter Herr Hehemann,",
+    "problem": "dass der Startbereich vor allem ein graues Werkstattbild mit Text zeigt und Ihre schönen Treppen und Möbel erst weit unten auftauchen",
+    "suche": "Tischler"
+   },
+   "v5": {
+    "fonts": "family=Young+Serif&family=Figtree:wght@400;500;600",
+    "fh": "'Young Serif',Georgia,serif",
+    "fb": "'Figtree',system-ui,sans-serif",
+    "hw": 400,
+    "hls": "-0.02em",
+    "hlh": 1.0,
+    "h1vw": 5.4,
+    "h1max": 6.2,
+    "c": {
+     "bg": "#F8F5F2",
+     "ink": "#2E1C1D",
+     "acc": "#6F3F40",
+     "acc2": "#C2B000",
+     "soft": "#EFE6E1",
+     "paper": "#FFFFFF",
+     "hbg": "#2E1C1D",
+     "hink": "#FFFFFF",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#2E1C1D",
+     "onctabtn": "#E6D54A",
+     "star": "#E0A21B"
+    },
+    "hero": "mask",
+    "shape": "arch",
+    "mclip": "inset(0 4% 0 4% round 46vw 46vw 0 0)",
+    "hero_img": "b1",
+    "hero_slides": [
+     "b1",
+     "b2",
+     "b4"
+    ],
+    "logo_bg": "#FFFFFF",
+    "logo_h": 58,
+    "r": "2px",
+    "r2": "22px",
+    "svc": "rows",
+    "svc_imgs": [
+     "b2",
+     "b3",
+     "b4",
+     "b5"
+    ],
+    "rows_intro": "Von Fenstern über Treppen und Türen bis zu Möbeln: Wir fertigen alles nach Ihren Wünschen selbst an.",
+    "rws": [
+     [
+      "b2",
+      "Treppen",
+      "Offene Holztreppen, Lamellenwände und beleuchtete Geländer – passgenau geplant und in Eiche gefertigt.",
+      [
+       "Eiche",
+       "Lamellen",
+       "Geländer"
+      ],
+      "Treppenbau"
+     ],
+     [
+      "b3",
+      "Möbel nach Maß",
+      "Sideboards, Esstische, Waschtische und kleine Alltagshelfer – handgefertigt, funktional und langlebig.",
+      [
+       "Sideboard",
+       "Esstisch",
+       "Waschtisch"
+      ],
+      "Möbelbau"
+     ],
+     [
+      "b4",
+      "Innenausbau und Raumteiler",
+      "Raumteiler, Trockenbau, Fußboden und Innentüren – wir sind Ihr Partner für Einzelprojekte oder die komplette Bauphase.",
+      [
+       "Raumteiler",
+       "Innentüren",
+       "Fußboden"
+      ],
+      "Innenausbau"
+     ],
+     [
+      "b5",
+      "Eigene Werkstatt mit CNC",
+      "CAD-Zeichnungen und CNC-Bearbeitung sind bei uns seit fast 30 Jahren Alltag – präzise bis ins Detail.",
+      [
+       "CAD",
+       "CNC",
+       "Präzision"
+      ],
+      "Werkstatt"
+     ]
+    ],
+    "rows_more": [
+     "Fenster und Haustüren",
+     "Rollläden",
+     "Reparaturen"
+    ],
+    "about_img": "b3",
+    "about_img2": "b6",
+    "cta_img": "b4",
+    "promo": "Treppen nach Maß",
+    "promo_tag": "Aus Melle",
+    "promo_sub": "Holztreppe, Lamellenwand oder beleuchtetes Geländer – am CAD geplant, in der eigenen Werkstatt gefertigt.",
+    "promo_img": "b2",
+    "rev_h2": "15 Bewertungen. Alle mit 5 Sternen.",
+    "order": [
+     "svc",
+     "reviews",
+     "about",
+     "facts",
+     "steps",
+     "cta"
+    ],
+    "facts_cls": "dark",
+    "steps_cls": "tone",
+    "pos": {
+     "b1": "50% 60%",
+     "b3": "50% 35%"
+    }
+   }
+  },
+  {
+   "slug": "maler-bolte",
+   "theme": "maler",
+   "firma": "Meisterbetrieb Maler Bolte",
+   "kurzname": "Maler Bolte",
+   "website": "https://www.maler-bolte.de",
+   "telefon": "05401 2595",
+   "email": "",
+   "adresse": "Schützenstraße 13, 49124 Georgsmarienhütte",
+   "google": [
+    "5,0",
+    15
+   ],
+   "siegel": [
+    "Zertifizierter Malerfachbetrieb seit 1933"
+   ],
+   "tag": "Malermeisterbetrieb in Georgsmarienhütte",
+   "h1": "Außer Farblosigkeit <span>alles möglich.</span>",
+   "sub": "Raumgestaltung, Fassade, Putz- und Lackierarbeiten, Bodenbeläge und Energieberatung – mit Rund-um-sorglos-Service vom Familienbetrieb.",
+   "trust": [
+    [
+     "1933",
+     "gegründet"
+    ],
+    [
+     "Full",
+     "Service mit allen Gewerken abgestimmt"
+    ],
+    [
+     "Privat",
+     "und Gewerbe"
+    ]
+   ],
+   "leist_h2": "Farbe, Putz, Boden, Fassade.",
+   "leistungen": [
+    "Raumgestaltung",
+    "Fassade",
+    "Putz- und Lackierarbeiten",
+    "Küche und Bad",
+    "Bodenbeläge",
+    "Energieberatung"
+   ],
+   "about_h2": "Seit 1933 ein Quäntchen besser als erwartet.",
+   "ueber": [
+    "Der 1933 gegründete Familienbetrieb steht für perfekte Ergebnisse mit absolutem Full-Service – für Wohn- und Gewerbeflächen, innen und außen.",
+    "Wir beraten intensiv, stimmen uns mit allen Gewerken ab und arbeiten termingerecht und sauber. Auch kleine Schönheitsreparaturen übernehmen wir gern."
+   ],
+   "checks": [
+    "Kostenlose Beratung direkt bei Ihnen vor Ort",
+    "Kreative Putz-, Wisch- und Lasurtechniken",
+    "Nur hochwertige, langlebige Materialien"
+   ],
+   "inhaber_name": "Ihr Team von Maler Bolte",
+   "inhaber_rolle": "Meisterbetrieb seit 1933",
+   "logo_url": "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r5/local/bolte_Logo_web2.png",
+   "min_w": 500,
+   "bild_urls": [
+    "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r5/local/bolte_Kopfbild_UnserBetrieb.jpg",
+    "https://images.unsplash.com/photo-1688372199140-cade7ae820fe?w=1800&q=85&fm=jpg",
+    "https://images.unsplash.com/photo-1768839725085-829e6ac7ac26?w=1800&q=85&fm=jpg",
+    "https://images.unsplash.com/photo-1525909002-1b05e0c869d8?w=1800&q=85&fm=jpg",
+    "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r5/local/bolte_Kopfbild_Wohnbereich.jpg",
+    "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r5/local/bolte_Kopfbild_Kueche2.jpg",
+    "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r5/local/bolte_Kopfbild_Bad3.jpg",
+    "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r5/local/bolte_Kopfbild_Energieberatung.jpg",
+    "file:///tmp/claude-0/-home-claude/989b6246-dfb9-566e-a5d6-7bfee2f519a2/scratchpad/r5/local/bolte_Kopfbild_Bodenbelaege.jpg",
+    "https://images.unsplash.com/photo-1598928506311-c55ded91a20c?w=1800&q=85&fm=jpg"
+   ],
+   "reviews": [
+    [
+     "Vom Auftrag bis zur Fertigstellung lief alles wie abgesprochen, teils sogar besser als erwartet. Besonders hervorzuheben: die präzise Ausführung und die hohe Qualität.",
+     "“"
+    ],
+    [
+     "Die Firma Bolte hat unser Haus außen gestrichen. Von der Farbauswahl bis zur Ausführung waren wir rundum zufrieden. Sehr sauber und schnell.",
+     "“"
+    ],
+    [
+     "Schon mehrfach für uns tätig, immer äußerst zufrieden. Zuverlässig, pünktlich, freundlich, saubere Arbeit. Jederzeit wieder!",
+     "“"
+    ],
+    [
+     "Die Mitarbeiter haben Freude an ihrer Arbeit und sind gewissenhaft, zügig und vertrauenswürdig.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Meisterbetrieb Maler Bolte",
+     "Schützenstraße 13",
+     "49124 Georgsmarienhütte"
+    ],
+    "anrede": "Sehr geehrte Damen und Herren,",
+    "problem": "dass das Menü auf dem Computer nur noch als einfache Textliste erscheint und die Seite seit 2015 nicht mehr erneuert wurde",
+    "suche": "Maler"
+   },
+   "v5": {
+    "fonts": "family=Spectral:wght@500;600;700&family=Mulish:wght@400;500;600;700",
+    "fh": "'Spectral',Georgia,serif",
+    "fb": "'Mulish',system-ui,sans-serif",
+    "hw": 700,
+    "hls": "-0.02em",
+    "hlh": 0.98,
+    "h1vw": 4.6,
+    "h1max": 5.4,
+    "c": {
+     "bg": "#FAF6F5",
+     "ink": "#2A1515",
+     "acc": "#A82020",
+     "acc2": "#5E8A8C",
+     "soft": "#F1E6E4",
+     "paper": "#FFFFFF",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#2A1515",
+     "star": "#F5B800"
+    },
+    "hero": "collage",
+    "prints": [
+     [
+      "b4",
+      "Farbe für jeden Raum"
+     ],
+     [
+      "b2",
+      "Farbe mit Leidenschaft"
+     ],
+     [
+      "b3",
+      "Putz und Fassade"
+     ]
+    ],
+    "strip_img": "b1",
+    "logo_bg": "#FFFFFF",
+    "logo_h": 50,
+    "r": "4px",
+    "r2": "12px",
+    "strokes": [
+     "#A82020",
+     "#5E8A8C"
+    ],
+    "svc": "rows",
+    "svc_imgs": [
+     "b5",
+     "b3",
+     "b6",
+     "b9",
+     "b8"
+    ],
+    "rows_intro": "Die Möglichkeiten sind so vielfältig wie das Farbspektrum selbst. Wir beraten Sie zu Farben, Struktur und Kombinationen.",
+    "rws": [
+     [
+      "b5",
+      "Raumgestaltung",
+      "Vom einfachen Anstrich bis zu Multicolor-Beschichtungen, Lasuren, Wisch- und Wickeltechniken – jeder Raum wird ein Unikat.",
+      [
+       "Lasur",
+       "Wischtechnik",
+       "Effektlack"
+      ],
+      "Innen"
+     ],
+     [
+      "b3",
+      "Fassade und Putz",
+      "Klassisch verputzt oder ganz individuell: Wir gestalten Ihre Fassade nach Ihren Vorstellungen – mit Material, das lange hält.",
+      [
+       "Fassade",
+       "Putz",
+       "Anstrich"
+      ],
+      "Außen"
+     ],
+     [
+      "b6",
+      "Küche und Bad",
+      "Lebensmittelpunkt zum Wohlfühlen: Wir planen gemeinsam mit Fliesen- und Innenausbau-Gewerken.",
+      [
+       "Küche",
+       "Bad",
+       "Abstimmung"
+      ],
+      "Wohnräume"
+     ],
+     [
+      "b9",
+      "Bodenbeläge",
+      "Neue Böden passend zu Wand und Raum – fachgerecht verlegt von einem Team.",
+      [
+       "Boden",
+       "Verlegung",
+       "Beratung"
+      ],
+      "Boden"
+     ],
+     [
+      "b8",
+      "Energieberatung und Wärmedämmung",
+      "Wir beraten zu Energieausweis und Wärmedämmung – damit Ihr Haus schöner wird und weniger Energie braucht.",
+      [
+       "Energieausweis",
+       "Dämmung",
+       "Beratung"
+      ],
+      "Energie"
+     ]
+    ],
+    "about_img": "b10",
+    "about_img2": "b4",
+    "cta_img": "b10",
+    "promo": "Fassade neu gestalten",
+    "promo_tag": "Außen",
+    "promo_sub": "Farbberatung, Putz und Anstrich aus einer Hand – damit Ihr Haus wieder strahlt.",
+    "promo_img": "b3",
+    "stock": true,
+    "rev_h2": "5,0 Sterne. Und das seit Jahren.",
+    "order": [
+     "svc",
+     "reviews",
+     "about",
+     "strip",
+     "facts",
+     "steps",
+     "cta"
+    ],
+    "facts_cls": "dark",
+    "steps_cls": "tone",
+    "pos": {
+     "b1": "50% 40%"
+    }
+   }
+  },
+  {
+   "slug": "tischlerei-siebert",
+   "theme": "holz",
+   "firma": "Tischlerei Wilhelm Siebert GbR",
+   "kurzname": "Tischlerei Siebert",
+   "website": "https://www.tischlerei-siebert.de",
+   "telefon": "05422 8224",
+   "email": "info@tischlerei-siebert.de",
+   "adresse": "Hellortsweg 17, 49324 Melle",
+   "google": [
+    "4,6",
+    9
+   ],
+   "siegel": [
+    "Familienbetrieb seit 1635"
+   ],
+   "tag": "Tischlerei in Melle-Westerhausen",
+   "h1": "Seit 1635. <span>Möbel nach Maß.</span>",
+   "sub": "Möbel, Innenausbau, Fenster, Türen und Praxiseinrichtungen vom Tischlermeister – fotorealistisch geplant, in der eigenen Werkstatt gefertigt.",
+   "trust": [
+    [
+     "1635",
+     "begonnen"
+    ],
+    [
+     "CAD",
+     "fotorealistische Planung"
+    ],
+    [
+     "Eigene",
+     "Werkstatt in Melle"
+    ]
+   ],
+   "leist_h2": "Aus unserer Werkstatt in Melle.",
+   "leistungen": [
+    "Möbel nach Maß",
+    "Innenausbau",
+    "Fenster und Türen",
+    "Objektbau und Praxis",
+    "Reparatur und Service"
+   ],
+   "about_h2": "Fast 400 Jahre echtes Handwerk.",
+   "ueber": [
+    "Was 1635 begann, führen wir heute mit moderner Technik und einem starken Team weiter – mit Leidenschaft für Holz und Blick fürs Detail.",
+    "Beratung mit Handschlagqualität: transparent, persönlich und auf Augenhöhe – von der ersten Idee bis zur Montage."
+   ],
+   "checks": [
+    "Individuelle Möbelplanung mit fotorealistischer Darstellung",
+    "Hochwertige Materialien und Beschläge",
+    "Langfristiger Kundenservice und Reparatur"
+   ],
+   "inhaber_name": "Tischlerei Siebert",
+   "inhaber_rolle": "Melle",
+   "logo_url": "https://www.tischlerei-siebert.de/style/images/body-logo.png",
+   "min_w": 600,
+   "bild_urls": [
+    "https://www.tischlerei-siebert.de/content/110/images/17606924380_720_sr__8889.jpg",
+    "https://www.tischlerei-siebert.de/content/110/images/17512918670_720_SR__8740.jpg",
+    "https://www.tischlerei-siebert.de/content/300/images/16457202415_sr__8877.jpg",
+    "https://www.tischlerei-siebert.de/content/300/images/16457202414_sr__8811.jpg",
+    "https://www.tischlerei-siebert.de/content/300/images/16457202412_sr__8748.jpg",
+    "https://www.tischlerei-siebert.de/content/300/images/16457202411_sr__8737.jpg",
+    "https://www.tischlerei-siebert.de/content/300/images/16457202410_sr__8712.jpg",
+    "https://www.tischlerei-siebert.de/content/510/images/17508591510_750_fenster.jpg",
+    "https://www.tischlerei-siebert.de/content/210/images/15861853130_vorstellung_01.jpg",
+    "https://www.tischlerei-siebert.de/content/153/images/17508590520_750_tueren.jpg",
+    "https://www.tischlerei-siebert.de/content/152/images/17512753210_750_innenausbau.jpg"
+   ],
+   "reviews": [
+    [
+     "Die einzige Tischlerei in der Umgebung, die mir Front und Sockelblende passend zur Küche gefertigt hat. Kompetenter junger Chef, sehr hilfsbereit.",
+     "“"
+    ],
+    [
+     "Kompetenter Tischler in der Nähe gefunden – wir sind begeistert von unseren neuen Innentüren. Schnell und professionell.",
+     "“"
+    ],
+    [
+     "Mein Türrahmen war kaputt. Nach einem Anruf kam sofort jemand und hat ihn repariert. Handwerk mit Top-Qualität.",
+     "“"
+    ],
+    [
+     "Die Arbeiten am Wintergarten wurden sehr schnell, sehr gut und sehr sauber ausgeführt. Inhaber und Mitarbeiter sehr freundlich.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Tischlerei Wilhelm Siebert GbR",
+     "Hellortsweg 17",
+     "49324 Melle"
+    ],
+    "anrede": "Sehr geehrte Damen und Herren,",
+    "problem": "dass Besucher dort zuerst „Willkommen auf unserer Website!“ lesen, statt sofort zu sehen, dass Ihr Betrieb seit 1635 besteht",
+    "suche": "Tischler"
+   },
+   "v5": {
+    "fonts": "family=Saira+Condensed:wght@600;700;800&family=Saira:wght@400;500;600",
+    "fh": "'Saira Condensed',sans-serif",
+    "fb": "'Saira',system-ui,sans-serif",
+    "hw": 800,
+    "hls": "-0.01em",
+    "hlh": 0.9,
+    "htt": "uppercase",
+    "h1vw": 6.4,
+    "h1max": 7.4,
+    "c": {
+     "bg": "#F7F6F5",
+     "ink": "#221A20",
+     "acc": "#F07020",
+     "acc2": "#221A20",
+     "soft": "#F3E8DE",
+     "paper": "#FFFFFF",
+     "hbg": "#221A20",
+     "hink": "#FFFFFF",
+     "onacc": "#221A20",
+     "ctabtn": "#221A20",
+     "onctabtn": "#F07020",
+     "frame": "#F07020",
+     "star": "#F5B800"
+    },
+    "hero": "panes",
+    "hero_img": "b1",
+    "hero_slides": [
+     "b1",
+     "b2"
+    ],
+    "cols": 5,
+    "rows": 2,
+    "pane_h": 50,
+    "logo_bg": "#FFFFFF",
+    "logo_h": 44,
+    "r": "0",
+    "r2": "4px",
+    "svc": "rows",
+    "svc_imgs": [
+     "b5",
+     "b11",
+     "b8",
+     "b3",
+     "b6"
+    ],
+    "rows_intro": "Ob elegantes Sideboard, cleverer Einbauschrank oder komplette Wohnwand: Wir entwickeln Lösungen, die sich perfekt einfügen.",
+    "rws": [
+     [
+      "b5",
+      "Möbel nach Maß",
+      "Küchen, Wohnzimmer, Essgarnituren und Einbauschränke – ganz individuell geplant und in unserer Werkstatt gefertigt.",
+      [
+       "Küche",
+       "Wohnwand",
+       "Einbauschrank"
+      ],
+      "Möbelbau"
+     ],
+     [
+      "b11",
+      "Innenausbau",
+      "Wandverkleidungen, Raumteiler und Einbaulösungen für Zuhause und Büro – funktional und wohnlich.",
+      [
+       "Wandverkleidung",
+       "Raumteiler",
+       "Büro"
+      ],
+      "Innenausbau"
+     ],
+     [
+      "b8",
+      "Fenster und Türen",
+      "Für Neubau und Denkmal: in eigener Werkstatt gefertigt, auf Wunsch kombiniert mit Aluminium oder Glas.",
+      [
+       "Holzfenster",
+       "Haustüren",
+       "Denkmal"
+      ],
+      "Bautischlerei"
+     ],
+     [
+      "b3",
+      "Objektbau und Praxiseinrichtung",
+      "Vom Empfangstresen bis zum kompletten Innenausbau für Praxis, Büro, Laden oder Gastronomie.",
+      [
+       "Praxis",
+       "Tresen",
+       "Laden"
+      ],
+      "Objekt"
+     ],
+     [
+      "b6",
+      "Reparatur und Service",
+      "Türrahmen kaputt, Fenster klemmt? Wir sind schnell da – und bleiben Ihr Ansprechpartner auch Jahre später.",
+      [
+       "Reparatur",
+       "Wartung",
+       "Service"
+      ],
+      "Service"
+     ]
+    ],
+    "about_img": "b9",
+    "about_img2": "b4",
+    "cta_img": "b2",
+    "promo": "Möbel nach Maß aus Melle",
+    "promo_tag": "Seit 1635",
+    "promo_sub": "Fotorealistisch geplant, in der eigenen Werkstatt gefertigt und von uns montiert.",
+    "promo_img": "b5",
+    "rev_h2": "Kunden über die Tischlerei Siebert.",
+    "order": [
+     "svc",
+     "reviews",
+     "about",
+     "facts",
+     "steps",
+     "cta"
+    ],
+    "facts_cls": "dark",
+    "steps_cls": "tone",
+    "pos": {}
+   }
+  },
+  {
+   "slug": "tischlerei-lahrmann",
+   "theme": "holz",
+   "firma": "Tischlerei Heinrich Lahrmann",
+   "kurzname": "Tischlerei Lahrmann",
+   "website": "https://www.tischlerei-lahrmann.de",
+   "telefon": "05407 2945",
+   "email": "info@tischlerei-lahrmann.de",
+   "adresse": "Im Alten Dorf 17, 49134 Wallenhorst",
+   "google": [
+    "4,5",
+    6
+   ],
+   "siegel": [
+    "Tischlermeisterbetrieb seit 1889"
+   ],
+   "tag": "Tischlerei in Wallenhorst, fünfte Generation",
+   "h1": "Genau. Zuverlässig. <span>Seit 1889.</span>",
+   "sub": "Möbel nach Maß, Einbauschränke für Dachschrägen, Fenster, Türen, Objekteinrichtungen und Carports – vom Familienbetrieb Im Alten Dorf.",
+   "trust": [
+    [
+     "1889",
+     "gegründet"
+    ],
+    [
+     "5.",
+     "Generation"
+    ],
+    [
+     "Im",
+     "Alten Dorf, Wallenhorst"
+    ]
+   ],
+   "leist_h2": "Von der kleinen Reparatur bis zur ganzen Einrichtung.",
+   "leistungen": [
+    "Inneneinrichtung und Möbelbau",
+    "Einbauschränke für Dachschrägen",
+    "Fenster, Türen und Rollläden",
+    "Objekteinrichtung",
+    "Carports"
+   ],
+   "about_h2": "Fünf Generationen. Ein Standort.",
+   "ueber": [
+    "Unser Familienbetrieb ist in der fünften Generation am Standort „Im Alten Dorf“ für seine Kunden da. Stephan Lahrmann hat den Betrieb 2009 übernommen.",
+    "Von der Planung über die Kalkulation bis zur Fertigung und Auslieferung – mit dem Wissen unserer Vorgänger beraten wir Sie in allen Fragen rund ums Tischlerhandwerk."
+   ],
+   "checks": [
+    "Passgenaue Einbauschränke in Dachschrägen",
+    "Fenster aus Holz, Kunststoff und Dachschrägenfenster",
+    "Einrichtung für Kindergärten und Büros"
+   ],
+   "inhaber_name": "Stephan Lahrmann",
+   "inhaber_rolle": "Inhaber",
+   "logo_url": "https://www.tischlerei-lahrmann.de/images/logo%20lahrmann.png",
+   "min_w": 480,
+   "bild_urls": [
+    "https://www.tischlerei-lahrmann.de/images/dsc_0018.jpg",
+    "https://images.unsplash.com/photo-1779031242515-205111711b23?w=1800&q=85&fm=jpg",
+    "https://images.unsplash.com/photo-1788296817269-8df0458ab799?w=1800&q=85&fm=jpg",
+    "https://www.tischlerei-lahrmann.de/images/dsc_0093.jpg",
+    "https://www.tischlerei-lahrmann.de/images/20160512_171330.jpg",
+    "https://www.tischlerei-lahrmann.de/images/20160318_091941_bearbeitet.jpg",
+    "https://images.unsplash.com/photo-1589268395705-ecd1dca58cb9?w=1800&q=85&fm=jpg",
+    "https://images.unsplash.com/photo-1594026112499-ac6e20b2c480?w=1800&q=85&fm=jpg"
+   ],
+   "reviews": [
+    [
+     "Ein Top-Tischlereibetrieb! Alle Tischler super freundlich, hochwertige Arbeit zu einem fairen Preis.",
+     "“"
+    ],
+    [
+     "Kann diesen Tischler sehr empfehlen. Schnell und zuverlässig. Vielen Dank an das ganze Team.",
+     "“"
+    ],
+    [
+     "Ein sympathischer Familienbetrieb. Kompetente, freundliche Ansprechpartner und tolle Arbeit!",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Tischlerei Heinrich Lahrmann",
+     "Herrn Stephan Lahrmann",
+     "Im Alten Dorf 17",
+     "49134 Wallenhorst"
+    ],
+    "anrede": "Sehr geehrter Herr Lahrmann,",
+    "problem": "dass sie auf dem Handy nicht angepasst ist – Text und Bilder erscheinen winzig, und man muss hin und her zoomen",
+    "suche": "Tischler"
+   },
+   "v5": {
+    "fonts": "family=Bree+Serif&family=Source+Sans+3:wght@400;500;600",
+    "fh": "'Bree Serif',Georgia,serif",
+    "fb": "'Source Sans 3',system-ui,sans-serif",
+    "hw": 400,
+    "hls": "-0.01em",
+    "hlh": 1.0,
+    "h1vw": 5.4,
+    "h1max": 6.2,
+    "c": {
+     "bg": "#FBFAF3",
+     "ink": "#1F2A1F",
+     "acc": "#1E8C3A",
+     "acc2": "#17702E",
+     "soft": "#FFF6B0",
+     "paper": "#FFFFFF",
+     "hbg": "#FFE500",
+     "hink": "#1F2A1F",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#1F2A1F",
+     "onctabtn": "#FFE500",
+     "frame": "#1E8C3A",
+     "star": "#1F2A1F"
+    },
+    "hero": "window",
+    "hero_img": "b1",
+    "hero_slides": [
+     "b1",
+     "b2",
+     "b3"
+    ],
+    "logo_h": 52,
+    "r": "6px",
+    "r2": "14px",
+    "svc": "rows",
+    "svc_imgs": [
+     "b7",
+     "b8",
+     "b4",
+     "b3",
+     "b5"
+    ],
+    "rows_intro": "Von der kleinen Reparatur über Maßmöbel bis zur Einrichtung von Kindergärten und Büros: Wir machen Ihnen gern ein Angebot.",
+    "rws": [
+     [
+      "b7",
+      "Inneneinrichtung und Möbelbau",
+      "Holz macht Ihr Zuhause zur Wohlfühloase: Möbel für Bad und Wohnbereich, geplant und gefertigt nach Maß.",
+      [
+       "Wohnbereich",
+       "Bad",
+       "Maßmöbel"
+      ],
+      "Möbelbau"
+     ],
+     [
+      "b8",
+      "Einbauschränke für Dachschrägen",
+      "Passgenaue Einbauschränke in Dachschrägen eingearbeitet? Kein Problem – wir machen das.",
+      [
+       "Dachschräge",
+       "Stauraum",
+       "Einbau"
+      ],
+      "Einbau"
+     ],
+     [
+      "b4",
+      "Fenster, Türen und Rollläden",
+      "Von der kleinen Reparatur bis zum Einsetzen von Holz-, Kunststoff- oder Dachschrägenfenstern.",
+      [
+       "Reparatur",
+       "Fenster",
+       "Rollladen"
+      ],
+      "Bautischlerei"
+     ],
+     [
+      "b3",
+      "Objekteinrichtung",
+      "Möbel, Trockenbau und Bodenverlegung für Kindergärten und Büros – alles aus einer Hand.",
+      [
+       "Kita",
+       "Büro",
+       "Trockenbau"
+      ],
+      "Objekt"
+     ],
+     [
+      "b5",
+      "Carports und Überdachungen",
+      "Solide Carports und Terrassenüberdachungen aus Holz, passend zu Ihrem Haus.",
+      [
+       "Carport",
+       "Terrasse",
+       "Holz"
+      ],
+      "Außen"
+     ]
+    ],
+    "about_img": "b1",
+    "about_img2": "b4",
+    "cta_img": "b6",
+    "promo": "Einbauschränke für Dachschrägen",
+    "promo_tag": "Maßarbeit",
+    "promo_sub": "Jede Schräge wird zum Stauraum – passgenau geplant und eingebaut vom Tischlermeister.",
+    "promo_img": "b8",
+    "stock": true,
+    "rev_h2": "Kunden über die Tischlerei Lahrmann.",
+    "order": [
+     "svc",
+     "reviews",
+     "about",
+     "facts",
+     "steps",
+     "cta"
+    ],
+    "facts_cls": "dark",
+    "steps_cls": "tone",
+    "pos": {
+     "b1": "55% 50%"
+    }
+   }
+  },
+  {
+   "slug": "notbusch-tischlerei",
+   "theme": "holz",
+   "firma": "notbusch objekteinrichtungen & feine möbel",
+   "kurzname": "notbusch",
+   "website": "https://www.notbusch.de",
+   "telefon": "05407 6322",
+   "email": "info@notbusch.de",
+   "adresse": "Stiegte 5, 49134 Wallenhorst",
+   "google": [
+    "5,0",
+    20
+   ],
+   "siegel": [
+    "Tischlerei für Objekteinrichtungen und feine Möbel"
+   ],
+   "tag": "Tischlerei in Wallenhorst-Rulle bei Osnabrück",
+   "h1": "Feine Möbel. <span>Starke Auftritte.</span>",
+   "sub": "Exklusive Einzelstücke, Küchen und Wohnmöbel für Privatkunden – Empfangstresen, Praxen, Büros und Ladenbau für Unternehmen.",
+   "trust": [
+    [
+     "Privat",
+     "feine Einzelstücke"
+    ],
+    [
+     "Gewerbe",
+     "Praxis, Büro, Laden"
+    ],
+    [
+     "Rulle",
+     "bei Osnabrück"
+    ]
+   ],
+   "leist_h2": "Für Zuhause. Für Ihr Unternehmen.",
+   "leistungen": [
+    "Feine Möbel und Einzelstücke",
+    "Küchen",
+    "Arztpraxen und Kliniken",
+    "Empfangstresen und Ladenbau",
+    "Büro- und Objekteinrichtung"
+   ],
+   "about_h2": "Die Spezialisten für feine Möbel aus Wallenhorst-Rulle.",
+   "ueber": [
+    "Wir fertigen feine Möbel für Arztpraxen, Küchen, den Innenausbau sowie für Büro- und Objekteinrichtungen – in und um Osnabrück.",
+    "Für Privatkunden entstehen exklusive Einzelstücke, Wohn-, Bad-, Garderoben- und Schlafzimmermöbel."
+   ],
+   "checks": [
+    "Persönliche, fachkundige Beratung",
+    "Einzelstücke, die es so nicht zu kaufen gibt",
+    "Ladenbau, Praxen, Apotheken und Autohäuser"
+   ],
+   "inhaber_name": "Oliver Notbusch",
+   "inhaber_rolle": "Inhaber",
+   "logo_url": "https://www.notbusch.de/files/img/logo.png",
+   "min_w": 500,
+   "bild_urls": [
+    "https://www.notbusch.de/index.php?rex_img_type=detail&rex_img_file=eleganter-tresen.jpg",
+    "https://www.notbusch.de/index.php?rex_img_type=detail&rex_img_file=exklusiv_12.jpg",
+    "https://www.notbusch.de/index.php?rex_img_type=detail&rex_img_file=exklusiv_4.jpg",
+    "https://www.notbusch.de/index.php?rex_img_type=detail&rex_img_file=marienhospital_os.jpg",
+    "https://www.notbusch.de/index.php?rex_img_type=detail&rex_img_file=stilvolle_k__che.jpg",
+    "https://www.notbusch.de/index.php?rex_img_type=detail&rex_img_file=confiserie-westercappeln4.jpg",
+    "https://www.notbusch.de/index.php?rex_img_type=detail&rex_img_file=exklusiv_9.jpg",
+    "https://www.notbusch.de/index.php?rex_img_type=detail&rex_img_file=x-force-osnabrueck-titel.jpg",
+    "https://www.notbusch.de/index.php?rex_img_type=detail&rex_img_file=exklusiv_19.jpg",
+    "https://www.notbusch.de/index.php?rex_img_type=detail&rex_img_file=garderobe_privat_2.jpg"
+   ],
+   "reviews": [
+    [
+     "Wir haben mehrere Projekte umgesetzt – jedes Mal zu unserer vollsten Zufriedenheit. Besonders schätzen wir die fachkundige, persönliche Beratung.",
+     "“"
+    ],
+    [
+     "Die Tischlerei hat uns wunderschöne, einzigartige Schreibtische gebaut, die es so nicht zu kaufen gibt und die perfekt zu uns passen.",
+     "“"
+    ],
+    [
+     "Schön, dass es noch solche Handwerker gibt. Freundlich, detailverliebt, geht auf individuelle Wünsche ein. Hervorragender Service.",
+     "“"
+    ],
+    [
+     "Sehr freundlicher Kontakt. Hilfsbereite Mitarbeiter und Geschäftsführung.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "notbusch objekteinrichtungen & feine möbel",
+     "Herrn Oliver Notbusch",
+     "Stiegte 5",
+     "49134 Wallenhorst"
+    ],
+    "anrede": "Sehr geehrter Herr Notbusch,",
+    "problem": "dass Ihre feinen Möbel und Objekte dort nur als kleine Vorschaubilder erscheinen und dadurch kaum wirken",
+    "suche": "Tischler"
+   },
+   "v5": {
+    "fonts": "family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600",
+    "fh": "'Cormorant Garamond',Georgia,serif",
+    "fb": "'Manrope',system-ui,sans-serif",
+    "hw": 600,
+    "hls": "-0.01em",
+    "hlh": 0.95,
+    "h1vw": 6.4,
+    "h1max": 7.4,
+    "c": {
+     "bg": "#F4F3F1",
+     "ink": "#141414",
+     "acc": "#141414",
+     "acc2": "#9A9A9A",
+     "soft": "#E6E4E0",
+     "paper": "#FFFFFF",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#141414",
+     "star": "#E0A21B"
+    },
+    "hero": "collage",
+    "prints": [
+     [
+      "b1",
+      "Empfangstresen"
+     ],
+     [
+      "b2",
+      "Esstisch, Einzelstück"
+     ],
+     [
+      "b3",
+      "Wohnen nach Maß"
+     ]
+    ],
+    "logo_h": 46,
+    "r": "0",
+    "r2": "2px",
+    "svc": "rows",
+    "svc_imgs": [
+     "b9",
+     "b5",
+     "b4",
+     "b6",
+     "b8"
+    ],
+    "rows_intro": "Ob ein Möbel für Ihr Wohnzimmer oder die komplette Einrichtung Ihrer Praxis: Wir planen, fertigen und montieren.",
+    "rws": [
+     [
+      "b9",
+      "Feine Möbel und Einzelstücke",
+      "Wohnmöbel, Sideboards, Garderoben und Schlafzimmermöbel – Unikate, die es so nirgends zu kaufen gibt.",
+      [
+       "Unikate",
+       "Wohnmöbel",
+       "Garderobe"
+      ],
+      "Privat"
+     ],
+     [
+      "b5",
+      "Küchen",
+      "Küchen, die Material, Licht und Ablauf perfekt verbinden – gefertigt für Ihren Raum.",
+      [
+       "Küche",
+       "Kochinsel",
+       "Maßarbeit"
+      ],
+      "Privat"
+     ],
+     [
+      "b4",
+      "Arztpraxen und Kliniken",
+      "Empfang, Behandlungsräume und Krankenhauseinrichtung – robust, hygienisch und freundlich gestaltet.",
+      [
+       "Praxis",
+       "Klinik",
+       "Empfang"
+      ],
+      "Gewerbe"
+     ],
+     [
+      "b6",
+      "Ladenbau",
+      "Verkaufsräume, die Produkte in Szene setzen – vom Tresen bis zur Warenpräsentation.",
+      [
+       "Ladenbau",
+       "Tresen",
+       "Präsentation"
+      ],
+      "Gewerbe"
+     ],
+     [
+      "b8",
+      "Büro- und Objekteinrichtung",
+      "Empfangstresen, Backoffice und Büromöbel für Unternehmen, Studios und Autohäuser.",
+      [
+       "Büro",
+       "Tresen",
+       "Objekt"
+      ],
+      "Gewerbe"
+     ]
+    ],
+    "about_img": "b7",
+    "about_img2": "b10",
+    "cta_img": "b2",
+    "promo": "Empfangstresen nach Maß",
+    "promo_tag": "Für Unternehmen",
+    "promo_sub": "Für Praxis, Kanzlei oder Laden – der erste Eindruck Ihrer Kunden, gefertigt in Wallenhorst-Rulle.",
+    "promo_img": "b1",
+    "rev_h2": "20 Bewertungen. Alle mit 5 Sternen.",
+    "order": [
+     "svc",
+     "reviews",
+     "about",
+     "facts",
+     "steps",
+     "cta"
+    ],
+    "facts_cls": "dark",
+    "steps_cls": "tone",
+    "pos": {}
+   }
+  }
+ ]
+}
