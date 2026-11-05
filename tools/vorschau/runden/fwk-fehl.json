@@ -1,0 +1,149 @@
+{
+ "runde": "FWK-Fehl",
+ "template": "v5",
+ "firmen": [
+  {
+   "slug": "fwk-fehl",
+   "slug_exact": "fwk-fehl-entwurf",
+   "firma": "Finanz- & Wirtschaftskanzlei Fehl & Kollegen GmbH & Co. KG",
+   "kurzname": "Fehl & Kollegen",
+   "website": "https://www.fwk-fehl.de",
+   "telefon": "05439 8094221",
+   "email": "info@alf-haus.gmbh",
+   "adresse": "Quakenbrücker Str. 14 A, 49593 Bersenbrück",
+   "siegel": [
+    "Finanz- und Vermögensberater seit 2007",
+    "Referent und Finanz-Coach"
+   ],
+   "tag": "Finanz- und Wirtschaftskanzlei in Bersenbrück",
+   "h1": "Leben gestalten. <span>Zukunft sichern.</span>",
+   "sub": "Eine Adresse für alle Finanzfragen: Vorsorge, Versicherung, Immobilien, Edelmetalle und Baufinanzierung. Mit einem Konzept, das zu Ihren Zielen passt.",
+   "trust": [
+    [
+     "2007",
+     "als Finanz- und Vermögensberater unterwegs"
+    ],
+    [
+     "Privatkunden",
+     "als Schwerpunkt"
+    ],
+    [
+     "3",
+     "Betreuungsmodelle zur Wahl"
+    ]
+   ],
+   "leist_h2": "Eine Adresse für alle Finanzfragen.",
+   "leistungen": [
+    "Leben",
+    "Kranken",
+    "Sach",
+    "Investment",
+    "Edelmetalle",
+    "Immobilien",
+    "Baufinanzierung",
+    "Bankprodukte",
+    "Notfallplanung",
+    "Sekretariatsservice"
+   ],
+   "about_h2": "Strategie statt Produktberatung.",
+   "ueber": [
+    "Ich bin Alexej Fehl, Geschäftsführer und Inhaber der Finanz- & Wirtschaftskanzlei Fehl & Kollegen. Seit 2007 berate ich Privatkunden rund um ihre Lebens- und Finanzsituation.",
+    "Sie entscheiden selbst, wie Sie betreut werden möchten: Premium, Komfort oder Basis. Was zu Ihnen passt, klären wir im kostenlosen Erstgespräch."
+   ],
+   "checks": [
+    "Strategie und Konzept statt Produktberatung",
+    "Klare Übersicht über Einnahmen und Ausgaben",
+    "Gespräche, in denen man versteht, worum es geht",
+    "Faire Kostenstruktur der Serviceleistungen"
+   ],
+   "inhaber_name": "Alexej Fehl",
+   "inhaber_rolle": "Geschäftsführer und Inhaber",
+   "video": "img/imagefilm.mp4",
+   "video_poster": "img/b2.webp",
+   "v5": {
+    "fonts": "family=Marcellus&family=Albert+Sans:wght@400;500;600",
+    "fh": "'Marcellus',Georgia,serif",
+    "fb": "'Albert Sans',system-ui,sans-serif",
+    "hw": 400,
+    "hls": "-0.01em",
+    "hlh": 1.05,
+    "h1vw": 5.6,
+    "h1max": 6.4,
+    "c": {
+     "bg": "#F5F4F0",
+     "ink": "#1D1C1A",
+     "acc": "#B8913A",
+     "acc2": "#D9B860",
+     "soft": "#EAE5D9",
+     "paper": "#FFFFFF",
+     "hbg": "#1D1C1A",
+     "hink": "#FFFFFF",
+     "onacc": "#1D1C1A",
+     "ctabtn": "#1D1C1A",
+     "star": "#D9B860"
+    },
+    "hero": "mask",
+    "shape": "coin",
+    "hero_img": "b1",
+    "hero_video": "img/hero-loop.mp4",
+    "mclip": "circle(49% at 50% 50%)",
+    "logo_h": 46,
+    "r": "2px",
+    "r2": "16px",
+    "svc": "index",
+    "svc_imgs": [
+     "b3",
+     "b7",
+     "b8",
+     "b5",
+     "b6",
+     "b9",
+     "b4",
+     "b10",
+     "b3",
+     "b2"
+    ],
+    "about_img": "b2",
+    "about_img2": "b6",
+    "cta_img": "b9",
+    "stim_img": "b5",
+    "promo": "Kostenloses Erstgespräch",
+    "promo_img": "b3",
+    "order": [
+     "facts",
+     "svc",
+     "film",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "facts_cls": "dark",
+    "steps_cls": "tone",
+    "film_h2": "Lernen Sie uns kennen.",
+    "film_txt": "Im Imagefilm zeigen wir unsere Kanzlei in Bersenbrück und wie wir mit unseren Mandanten arbeiten.",
+    "pos": {
+     "b1": "50% 35%",
+     "b2": "50% 40%"
+    }
+   }
+  }
+ ],
+ "steps": [
+  [
+   "Kennenlernen",
+   "Wir stellen uns und unsere Serviceleistungen vor und schauen, ob wir zueinander passen."
+  ],
+  [
+   "Analyse",
+   "Gemeinsam erfassen wir Ihre Ziele und Wünsche, Ihre Absicherung und Ihre Vermögenswerte."
+  ],
+  [
+   "Finanzkonzept",
+   "Wir erstellen ein Konzept, das genau auf Ihre Ziele abgestimmt ist, und stellen es Ihnen persönlich vor."
+  ],
+  [
+   "Umsetzung",
+   "Wir kümmern uns um Anträge und alle Schritte und kontrollieren, dass alles so umgesetzt wird."
+  ]
+ ]
+}

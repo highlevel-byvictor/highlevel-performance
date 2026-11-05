@@ -1,7 +1,7 @@
 {%- set c = f.v5.c -%}
 {%- set V = f.v5 -%}
 {%- macro img(k, cls="", alt="") -%}{% if k == 'glass' %}<div class="glassbg {{ cls }}" role="img" aria-label="{{ f.kurzname }}"></div>{% else %}<img src="{{ f.allimg[k] }}" alt="{{ alt or f.kurzname }}" class="{{ cls }}" style="object-position:{{ V.pos.get(k, '50% 50%') }}" loading="eager">{% endif %}{%- endmacro -%}
-{%- macro hmedia(first) -%}{% set L = V.get('hero_slides') or [first] %}{% for k in L %}{% if k == 'glass' %}{{ img(k) }}{% else %}<img src="{{ f.allimg[k] }}" alt="{{ f.kurzname }}" class="sl{{ ' on' if loop.first }}" style="object-position:{{ V.pos.get(k, '50% 50%') }}" loading="eager">{% endif %}{% endfor %}{% if L|length > 1 %}<div class="dots" aria-hidden="true">{% for k in L %}<i{% if loop.first %} class="on"{% endif %}></i>{% endfor %}</div>{% endif %}{%- endmacro -%}
+{%- macro hmedia(first) -%}{% if V.get('hero_video') %}<video class="sl on hv" src="{{ V.hero_video }}" poster="{{ f.allimg[first] }}" autoplay muted loop playsinline preload="auto"></video>{% else %}{% set L = V.get('hero_slides') or [first] %}{% for k in L %}{% if k == 'glass' %}{{ img(k) }}{% else %}<img src="{{ f.allimg[k] }}" alt="{{ f.kurzname }}" class="sl{{ ' on' if loop.first }}" style="object-position:{{ V.pos.get(k, '50% 50%') }}" loading="eager">{% endif %}{% endfor %}{% if L|length > 1 %}<div class="dots" aria-hidden="true">{% for k in L %}<i{% if loop.first %} class="on"{% endif %}></i>{% endfor %}</div>{% endif %}{% endif %}{%- endmacro -%}
 {%- macro stars() -%}<span class="stars" aria-hidden="true">{% for i in range(5) %}<svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg>{% endfor %}</span>{%- endmacro -%}
 {%- macro proof() -%}
 <div class="proof">
@@ -84,6 +84,7 @@ h2{font-size:clamp(2.2rem,5vw,4.4rem);margin-bottom:.5em;max-width:16ch}
 .hm-in{position:absolute;inset:0;will-change:transform}
 .sl{position:absolute;inset:0;opacity:0;transition:opacity 1.6s ease}
 .sl.on{opacity:1;animation:kb 10s linear both}
+video.sl{width:100%;height:100%;object-fit:cover}.sl.hv{animation:none}
 @keyframes kb{from{transform:scale(1.02)}to{transform:scale(1.14)}}
 .dots{position:absolute;right:5vw;bottom:5vh;z-index:4;display:flex;gap:8px}
 .dots i{width:28px;height:3px;background:rgba(255,255,255,.5);transition:.4s}
@@ -98,6 +99,8 @@ h2{font-size:clamp(2.2rem,5vw,4.4rem);margin-bottom:.5em;max-width:16ch}
  .h-mask[data-shape=gable] .hm-in{transform:translateX(22.5%) scale(1.12)}
  .h-mask[data-shape=blob] .hm-img{clip-path:inset(13% 4% 9% 49% round 46% 54% 48% 52% / 56% 44% 56% 44%)}
  .h-mask[data-shape=blob] .hm-in{transform:translateX(22.5%) scale(1.12)}
+ .h-mask[data-shape=coin] .hm-img{clip-path:circle(27% at 73% 52%)}
+ .h-mask[data-shape=coin] .hm-in{transform:translate(23%,10%) scale(1.12)}
  .h-mask[data-shape=diag] .hm-img{clip-path:polygon(62% 0%, 100% 0%, 100% 100%, 46% 100%)}
  .h-mask[data-shape=diag] .hm-in{transform:translateX(27%) scale(1.12)}
 }
@@ -219,7 +222,7 @@ h2{font-size:clamp(2.2rem,5vw,4.4rem);margin-bottom:.5em;max-width:16ch}
 .cta-t{padding:clamp(56px,8vw,120px) max(32px,5vw);display:flex;flex-direction:column;justify-content:center}
 .cta-t h2{max-width:13ch}
 .cta-t p{max-width:46ch;opacity:.9;margin-bottom:34px}
-.cta-t .big{font-family:var(--fh);font-weight:var(--hw);font-size:clamp(2.2rem,5vw,4.6rem);letter-spacing:var(--hls);text-decoration:none;line-height:1}
+.cta-t .big{font-variant-numeric:lining-nums;font-family:var(--fh);font-weight:var(--hw);font-size:clamp(2.2rem,5vw,4.6rem);letter-spacing:var(--hls);text-decoration:none;line-height:1}
 .cta-t .mail{margin-top:18px;opacity:.85}
 .cta-t .btn{background:{{ c.get('ctabtn', c.ink) }};color:{{ c.get('onctabtn', '#fff') }};margin-top:34px;align-self:flex-start}
 .cta-img{position:relative;overflow:hidden;min-height:50vh}
@@ -589,15 +592,16 @@ var SH={
  arch:['inset(15% 4% 0% 50% round 23vw 23vw 0 0)','inset(0% 0% 0% 0% round 0vw 0vw 0 0)',23],
  gable:['polygon(50% 34%, 72.5% 12%, 95% 34%, 95% 100%, 50% 100%)','polygon(0% 0%, 50% 0%, 100% 0%, 100% 100%, 0% 100%)',22.5],
  blob:['inset(13% 4% 9% 49% round 46% 54% 48% 52% / 56% 44% 56% 44%)','inset(0% 0% 0% 0% round 0% 0% 0% 0% / 0% 0% 0% 0%)',22.5],
+ coin:['circle(27% at 73% 52%)','circle(80% at 50% 50%)',23,10],
  diag:['polygon(62% 0%, 100% 0%, 100% 100%, 46% 100%)','polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',27]
 };
 if(hero==='mask'){
  var sec=document.querySelector('.h-mask'),sh=SH[sec.dataset.shape],box=sec.querySelector('.hm-img'),im=box.querySelector('.hm-in'),ht=sec.querySelector('.ht');
  mm.add('(min-width:901px)',function(){
-  gsap.set(box,{clipPath:sh[0]});gsap.set(im,{xPercent:sh[2],scale:1.12});
+  gsap.set(box,{clipPath:sh[0]});gsap.set(im,{xPercent:sh[2],yPercent:sh[3]||0,scale:1.12});
   gsap.from(im,{scale:1.35,duration:1.1,ease:'expo.out'});
   var tl=gsap.timeline({scrollTrigger:{trigger:sec,start:'top top',end:'bottom bottom',scrub:.6}});
-  tl.to(ht,{y:-80,opacity:0,duration:.35,ease:'none'},0).to(box,{clipPath:sh[1],duration:1,ease:'power2.inOut'},0).to(im,{xPercent:0,scale:1,duration:1,ease:'power2.inOut'},0);
+  tl.to(ht,{y:-80,opacity:0,duration:.35,ease:'none'},0).to(box,{clipPath:sh[1],duration:1,ease:'power2.inOut'},0).to(im,{xPercent:0,yPercent:0,scale:1,duration:1,ease:'power2.inOut'},0);
  });
 }
 if(hero==='panes'){
