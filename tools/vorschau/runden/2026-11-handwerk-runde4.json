@@ -66,7 +66,13 @@
     "https://www.malerbetrieb-baumbach.de/s/cc_images/teaserbox_2480150437.jpg",
     "https://www.malerbetrieb-baumbach.de/s/cc_images/cache_2480149553.JPG",
     "https://www.malerbetrieb-baumbach.de/s/cc_images/cache_2480149550.JPG",
-    "https://www.malerbetrieb-baumbach.de/s/cc_images/cache_2480149549.JPG"
+    "https://www.malerbetrieb-baumbach.de/s/cc_images/cache_2480149549.JPG",
+    "https://www.malerbetrieb-baumbach.de/s/cc_images/teaserbox_2461542156.png",
+    "https://www.malerbetrieb-baumbach.de/s/cc_images/teaserbox_2460187352.png",
+    "https://www.malerbetrieb-baumbach.de/s/cc_images/teaserbox_2460187353.png",
+    "https://www.malerbetrieb-baumbach.de/s/cc_images/teaserbox_2460187354.png",
+    "https://www.malerbetrieb-baumbach.de/s/cc_images/teaserbox_2480150433.JPG",
+    "https://www.malerbetrieb-baumbach.de/s/cc_images/teaserbox_2480150435.JPG"
    ],
    "brief": {
     "anschrift": [
@@ -89,31 +95,31 @@
     "h1vw": 5.8,
     "h1max": 6.4,
     "c": {
-     "bg": "#F7F8F3",
-     "ink": "#2F2E2A",
+     "bg": "#F8F9F4",
+     "ink": "#3A3934",
      "acc": "#8BBB4B",
-     "acc2": "#F2C200",
-     "soft": "#E8EEDD",
+     "acc2": "#FFE600",
+     "soft": "#EAF0DF",
      "paper": "#FFFFFF",
      "hbg": "#EEF3E6",
      "onacc": "#1E2A12",
-     "ctabtn": "#2F2E2A",
-     "onctabtn": "#FFFFFF",
-     "star": "#F2C200"
+     "ctabtn": "#3A3934",
+     "onctabtn": "#FFE600",
+     "star": "#F5B800"
     },
     "hero": "collage",
     "prints": [
      [
+      "b7",
+      "Malerarbeiten"
+     ],
+     [
+      "b11",
+      "Bad in neuem Glanz"
+     ],
+     [
       "b2",
       "Küche mit neuen Wänden"
-     ],
-     [
-      "b1",
-      "Tapete mit Muster"
-     ],
-     [
-      "b4",
-      "Neuer Boden"
      ]
     ],
     "r": "999px",
@@ -125,20 +131,50 @@
      "b2",
      "b1",
      "b5",
+     "b11",
+     "b12",
      "b3"
     ],
-    "about_img": "b3",
-    "about_img2": "b6",
-    "cta_img": "b2",
+    "about_img": "b11",
+    "about_img2": "b7",
+    "cta_img": "b11",
     "promo": "Tapeten und Wandgestaltung",
     "order": [
+     "badges",
      "svc",
      "facts",
      "about",
      "steps",
      "cta"
     ],
-    "steps_cls": "tone"
+    "steps_cls": "tone",
+    "strokes": [
+     "#E3262E",
+     "#8E2BB5",
+     "#2E9E4B",
+     "#FFE600"
+    ],
+    "badges": [
+     [
+      "b8",
+      "Malerarbeiten",
+      "Wände, Decken, Türen und Fassade"
+     ],
+     [
+      "b9",
+      "Farben",
+      "Beratung und beste Produkte"
+     ],
+     [
+      "b10",
+      "Tapezierung",
+      "Zahlreiche Musterbücher"
+     ]
+    ],
+    "badges_cls": "tone",
+    "pos": {
+     "b7": "78% 50%"
+    }
    }
   },
   {

@@ -8,7 +8,7 @@
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#F7F8F3;--ink:#2F2E2A;--acc:#8BBB4B;--acc2:#F2C200;--soft:#E8EEDD;--paper:#FFFFFF;--hbg:#EEF3E6;--hink:#2F2E2A;--fh:'Familjen Grotesk',sans-serif;--fb:'Familjen Grotesk',system-ui,sans-serif;--hw:700;--hls:-0.035em;--htt:none;--hlh:0.95;--hst:100%}
+:root{--bg:#F8F9F4;--ink:#3A3934;--acc:#8BBB4B;--acc2:#FFE600;--soft:#EAF0DF;--paper:#FFFFFF;--hbg:#EEF3E6;--hink:#3A3934;--fh:'Familjen Grotesk',sans-serif;--fb:'Familjen Grotesk',system-ui,sans-serif;--hw:700;--hls:-0.035em;--htt:none;--hlh:0.95;--hst:100%}
 *{box-sizing:border-box;margin:0;padding:0}
 html,body{overflow-x:clip}
 html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}
@@ -46,7 +46,7 @@ h2{font-size:clamp(2.2rem,5vw,4.4rem);margin-bottom:.5em;max-width:16ch}
 .tel{display:flex;align-items:center;gap:10px;font-weight:600;text-decoration:none;font-size:18px}
 .proof{display:flex;flex-wrap:wrap;gap:10px 26px;font-size:14.5px}
 .proof p{display:flex;align-items:center;gap:8px}
-.stars{display:flex;gap:2px}.stars svg{width:17px;height:17px;fill:#F2C200}
+.stars{display:flex;gap:2px}.stars svg{width:17px;height:17px;fill:#F5B800}
 .seal svg{width:22px;height:22px;color:var(--acc2)}
 .facts{font-size:clamp(1.3rem,2.3vw,2.1rem);line-height:1.45;max-width:46ch}
 .facts b{font-family:var(--fh);font-weight:var(--hw);font-size:1.5em;letter-spacing:var(--hls);color:var(--acc)}
@@ -199,7 +199,7 @@ video.sl{width:100%;height:100%;object-fit:cover}.sl.hv{animation:none}
 .cta-t p{max-width:46ch;opacity:.9;margin-bottom:34px}
 .cta-t .big{font-variant-numeric:lining-nums;font-family:var(--fh);font-weight:var(--hw);font-size:clamp(2.2rem,5vw,4.6rem);letter-spacing:var(--hls);text-decoration:none;line-height:1}
 .cta-t .mail{margin-top:18px;opacity:.85}
-.cta-t .btn{background:#2F2E2A;color:#FFFFFF;margin-top:34px;align-self:flex-start}
+.cta-t .btn{background:#3A3934;color:#FFE600;margin-top:34px;align-self:flex-start}
 .cta-img{position:relative;overflow:hidden;min-height:50vh}
 /* Fuß */
 footer{background:var(--ink);color:var(--paper);padding:64px 0 120px;font-size:15px}
@@ -222,7 +222,7 @@ footer .note{grid-column:1/-1;margin-top:28px;padding-top:22px;border-top:1px so
 .lead{margin-top:34px;display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:520px;background:color-mix(in srgb,#000 14%,transparent);padding:18px;border-radius:18px;backdrop-filter:blur(6px)}
 .lead input,.lead select{width:100%;padding:13px 14px;border:0;font:inherit;font-size:15px;background:rgba(255,255,255,.94);color:#111;border-radius:999px}
 .lead select,.lead button,.lead small{grid-column:1/-1}
-.lead button{padding:15px;border:0;font:inherit;font-weight:600;cursor:pointer;background:#2F2E2A;color:#FFFFFF;border-radius:999px}
+.lead button{padding:15px;border:0;font:inherit;font-weight:600;cursor:pointer;background:#3A3934;color:#FFE600;border-radius:999px}
 .lead small{font-size:12.5px;opacity:.85}
 /* Assistent */
 .bot-btn{position:fixed;right:20px;bottom:54px;z-index:58;display:flex;align-items:center;gap:10px;padding:12px 18px 12px 12px;border:0;cursor:pointer;background:var(--ink);color:var(--paper);font:inherit;font-weight:600;font-size:14.5px;border-radius:40px;box-shadow:0 14px 30px -10px rgba(0,0,0,.5)}
@@ -282,6 +282,12 @@ footer .note{grid-column:1/-1;margin-top:28px;padding-top:22px;border-top:1px so
 .film-v button{position:absolute;inset:0;border:0;cursor:pointer;background:linear-gradient(to top,rgba(0,0,0,.45),transparent 60%);display:flex;align-items:flex-end;gap:14px;padding:26px;color:#fff;font:inherit;font-weight:600;font-size:17px}
 .film-v button i{width:68px;height:68px;border-radius:50%;background:var(--acc);display:grid;place-items:center}
 .film-v button svg{width:26px;height:26px;margin-left:4px}
+.strokes{display:flex;gap:7px;margin:-4px 0 20px}
+.strokes i{display:block;width:54px;height:10px;border-radius:10px 3px 10px 3px;transform:skew(-14deg)}
+.badges .bd-row{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,4vw,60px);text-align:center}
+.badges figure img{width:clamp(110px,12vw,170px);height:auto;aspect-ratio:1;border-radius:50%;margin:0 auto 18px;object-fit:contain;box-shadow:0 18px 40px -18px rgba(0,0,0,.35)}
+.badges figcaption{font-family:var(--fh);font-weight:var(--hw);font-size:clamp(1.3rem,2vw,1.8rem);letter-spacing:var(--hls)}
+.badges figcaption small{display:block;font-family:var(--fb);font-weight:400;font-size:15px;opacity:.75;margin-top:6px;letter-spacing:0}
 /* ===== Mobil ===== */
 @media (max-width:900px){
   body{font-size:16px}
@@ -368,6 +374,7 @@ footer .note{grid-column:1/-1;margin-top:28px;padding-top:22px;border-top:1px so
   <div class="wrap">
     <div class="ht ">
   <p class="kicker">Malermeisterbetrieb in Cloppenburg</p>
+  <span class="strokes" aria-hidden="true"><i style="background:#E3262E"></i><i style="background:#8E2BB5"></i><i style="background:#2E9E4B"></i><i style="background:#FFE600"></i></span>
   <h1>Räume, in denen <span>man sich wohlfühlt.</span></h1>
   <p class="sub">Malerarbeiten, Tapeten, Bodenbeläge und Raumgestaltung für Privathaus und Gewerbe – geplant mit Ihnen persönlich.</p>
   <div class="acts">
@@ -377,10 +384,15 @@ footer .note{grid-column:1/-1;margin-top:28px;padding-top:22px;border-top:1px so
   <div class="proof"><p class="g"><span class="stars" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg></span><span><b>4,9</b> von 5 bei Google, 18 Bewertungen</span></p><p class="seal"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 2.1 3.2-.3.8 3.1 2.8 1.6-1.2 3 1.2 3-2.8 1.6-.8 3.1-3.2-.3L12 22l-2.4-2.1-3.2.3-.8-3.1-2.8-1.6 1.2-3-1.2-3 2.8-1.6.8-3.1 3.2.3z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8.5 12.2l2.3 2.2 4.7-4.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>Meisterbetrieb für das Malerhandwerk</p>
 </div>
 </div>
-    <div class="prints"><figure class="print"><img src="img/b2.webp" alt="Malerbetrieb Baumbach" class="eager" style="object-position:50% 50%" loading="eager"><figcaption>Küche mit neuen Wänden</figcaption></figure><figure class="print"><img src="img/b1.webp" alt="Malerbetrieb Baumbach" class="eager" style="object-position:50% 50%" loading="eager"><figcaption>Tapete mit Muster</figcaption></figure><figure class="print"><img src="img/b4.webp" alt="Malerbetrieb Baumbach" class="eager" style="object-position:50% 50%" loading="eager"><figcaption>Neuer Boden</figcaption></figure></div>
+    <div class="prints"><figure class="print"><img src="img/b7.png" alt="Malerbetrieb Baumbach" class="eager" style="object-position:78% 50%" loading="eager"><figcaption>Malerarbeiten</figcaption></figure><figure class="print"><img src="img/b11.webp" alt="Malerbetrieb Baumbach" class="eager" style="object-position:50% 50%" loading="eager"><figcaption>Bad in neuem Glanz</figcaption></figure><figure class="print"><img src="img/b2.webp" alt="Malerbetrieb Baumbach" class="eager" style="object-position:50% 50%" loading="eager"><figcaption>Küche mit neuen Wänden</figcaption></figure></div>
   </div>
 </section>
 
+
+
+
+
+<section class="sec badges tone" style="padding-block:clamp(64px,8vw,110px)"><div class="wrap"><div class="bd-row"><figure><img src="img/b8.png" alt="Malerbetrieb Baumbach" class="" style="object-position:50% 50%" loading="eager"><figcaption>Malerarbeiten<small>Wände, Decken, Türen und Fassade</small></figcaption></figure><figure><img src="img/b9.png" alt="Malerbetrieb Baumbach" class="" style="object-position:50% 50%" loading="eager"><figcaption>Farben<small>Beratung und beste Produkte</small></figcaption></figure><figure><img src="img/b10.png" alt="Malerbetrieb Baumbach" class="" style="object-position:50% 50%" loading="eager"><figcaption>Tapezierung<small>Zahlreiche Musterbücher</small></figcaption></figure></div></div></section>
 
 
 
@@ -391,9 +403,9 @@ footer .note{grid-column:1/-1;margin-top:28px;padding-top:22px;border-top:1px so
   <div class="wrap svc-mob" style="display:none"><h2>Farbe, Tapete, Boden.</h2></div>
   <div class="pin-track">
     <div class="pin-intro"><h2>Farbe, Tapete, Boden.</h2><p style="opacity:.8;max-width:34ch">Ein Ausschnitt aus unserer Arbeit. Ziehen Sie weiter, um mehr zu sehen.</p></div>
-    <article class="pin-it"><div class="ph"><img src="img/b2.webp" alt="Malerbetrieb Baumbach" class="" style="object-position:50% 50%" loading="eager"></div><h3>Malerarbeiten</h3></article><article class="pin-it"><div class="ph"><img src="img/b1.webp" alt="Malerbetrieb Baumbach" class="" style="object-position:50% 50%" loading="eager"></div><h3>Tapezierung</h3></article><article class="pin-it"><div class="ph"><img src="img/b5.webp" alt="Malerbetrieb Baumbach" class="" style="object-position:50% 50%" loading="eager"></div><h3>Bodenbeläge</h3></article><article class="pin-it"><div class="ph"><img src="img/b3.webp" alt="Malerbetrieb Baumbach" class="" style="object-position:50% 50%" loading="eager"></div><h3>Raumgestaltung</h3></article>
+    <article class="pin-it"><div class="ph"><img src="img/b2.webp" alt="Malerbetrieb Baumbach" class="" style="object-position:50% 50%" loading="eager"></div><h3>Malerarbeiten</h3></article><article class="pin-it"><div class="ph"><img src="img/b1.webp" alt="Malerbetrieb Baumbach" class="" style="object-position:50% 50%" loading="eager"></div><h3>Tapezierung</h3></article><article class="pin-it"><div class="ph"><img src="img/b5.webp" alt="Malerbetrieb Baumbach" class="" style="object-position:50% 50%" loading="eager"></div><h3>Bodenbeläge</h3></article><article class="pin-it"><div class="ph"><img src="img/b11.webp" alt="Malerbetrieb Baumbach" class="" style="object-position:50% 50%" loading="eager"></div><h3>Raumgestaltung</h3></article><article class="pin-it"><div class="ph"><img src="img/b12.webp" alt="Malerbetrieb Baumbach" class="" style="object-position:50% 50%" loading="eager"></div><h3>Fassade</h3></article><article class="pin-it"><div class="ph"><img src="img/b3.webp" alt="Malerbetrieb Baumbach" class="" style="object-position:50% 50%" loading="eager"></div><h3>Seniorenservice</h3></article>
   </div>
-  <div class="wrap"><p class="more"><span>Fassade</span><span>Seniorenservice</span><span>Beratungsservice</span><span>Do-it-yourself-Beratung</span></p></div>
+  <div class="wrap"><p class="more"><span>Beratungsservice</span><span>Do-it-yourself-Beratung</span></p></div>
 </section>
 
 
@@ -407,7 +419,7 @@ footer .note{grid-column:1/-1;margin-top:28px;padding-top:22px;border-top:1px so
 
 <section class="sec " id="ueber"><div class="wrap ab ">
   <figure class="ab-img">
-    <img src="img/b3.webp" alt="Malerbetrieb Baumbach" class="" style="object-position:50% 50%" loading="eager"><div class="small"><img src="img/b6.webp" alt="Malerbetrieb Baumbach" class="" style="object-position:50% 50%" loading="eager"></div>
+    <img src="img/b11.webp" alt="Malerbetrieb Baumbach" class="" style="object-position:50% 50%" loading="eager"><div class="small"><img src="img/b7.png" alt="Malerbetrieb Baumbach" class="" style="object-position:78% 50%" loading="eager"></div>
     <div class="ab-badge"><b>4,9</b><span class="stars" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg></span>18 Bewertungen bei Google</div>
   </figure>
   <div class="ab-t">
@@ -442,7 +454,7 @@ footer .note{grid-column:1/-1;margin-top:28px;padding-top:22px;border-top:1px so
       <small>Beispiel-Funktion: Anfragen landen direkt im CRM, mit automatischer Bestätigung.</small>
     </form>
   </div>
-  <div class="cta-img"><img src="img/b2.webp" alt="Malerbetrieb Baumbach" class="" style="object-position:50% 50%" loading="eager"></div>
+  <div class="cta-img"><img src="img/b11.webp" alt="Malerbetrieb Baumbach" class="" style="object-position:50% 50%" loading="eager"></div>
 </section>
 
 

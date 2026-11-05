@@ -56,6 +56,10 @@ def fetch_img(url, dest, maxw=1600, trim=0):
         im = im.convert("RGBA")
         if im.width > 600: im = im.resize((600, round(im.height * 600 / im.width)))
         dest = dest.with_suffix(".png"); im.save(dest, optimize=True)
+    elif im.mode in ("RGBA", "LA") or (im.mode == "P" and "transparency" in im.info):
+        im = im.convert("RGBA")
+        if im.width < 600: im = im.resize((600, round(im.height * 600 / im.width)), Image.LANCZOS)
+        dest = dest.with_suffix(".png"); im.save(dest, optimize=True)
     else:
         im = im.convert("RGB")
         if trim:
