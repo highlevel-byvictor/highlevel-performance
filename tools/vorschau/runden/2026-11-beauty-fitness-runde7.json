@@ -56,7 +56,6 @@
    "inhaber_name": "Dein new-life-Team",
    "inhaber_rolle": "Bramsche",
    "inhaber_idx": 0,
-   "logo_url": "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/s8003f6bfae808930/image/i0100b54dcbe9911f/version/1530072595/image.jpg",
    "min_w": 600,
    "bild_urls": [
     "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/s8003f6bfae808930/image/i7700168c0d360cc1/version/1530072577/image.jpg",
@@ -252,7 +251,126 @@
      "Dranbleiben",
      "Mit kurzen Laufzeiten."
     ]
-   ]
+   ],
+   "template": "beauty",
+   "beauty": {
+    "c": {
+     "bg": "#FFF7F9",
+     "pearl": "#FEEEF2",
+     "blush": "#FBDDE5",
+     "acc": "#C4123A",
+     "acc_d": "#930C2A",
+     "champ": "#F2A6B8",
+     "ink": "#3A1F27",
+     "mute": "#68505A",
+     "star": "#FFA41C"
+    },
+    "du": true,
+    "wm": [
+     "new",
+     "life"
+    ],
+    "wm_sub": "Fitness für Frauen · Bramsche",
+    "cta_btn": "Probetraining sichern",
+    "mb_btn": "Probetraining sichern",
+    "hero_bg_src": "b5",
+    "hero_bg_alt": "Trainingsfläche von new life",
+    "cut_src": "b1",
+    "cut_alt": "Trainerin von new life",
+    "eyebrow": "Fitnessstudio für Frauen in Bramsche",
+    "h1": "Fitness, die sich <em>nach dir richtet.</em>",
+    "sub": "Training nur für Frauen, immer mit Trainerin, 30 bis 45 Minuten pro Einheit – persönlich, ohne Schnickschnack und ohne lange Verträge.",
+    "cta2": "So trainierst du bei uns",
+    "proof_txt": "4 Wochen kostenlos testen – ohne Vertrag, ohne versteckte Kosten.",
+    "chip": [
+     "4 Wochen",
+     "kostenlos testen"
+    ],
+    "seal": "Fitness für Frauen · Bramsche · ",
+    "seal_mono": "nl",
+    "intro": "Hier gibt es keine Fitness-Prinzessinnen, sondern <em>Frauen wie dich.</em>",
+    "intro_sig": "new life · Lindenstraße 60 · Bramsche",
+    "svc_h2": "So trainierst du <em>bei uns.</em>",
+    "svc_intro": "Nur für Frauen, immer mit Trainerin, 30 bis 45 Minuten pro Einheit.",
+    "svc": [
+     [
+      "b11",
+      "Gerätezirkel",
+      "Dein Training im Zirkel: kurz, effektiv und mit Trainerin an deiner Seite.",
+      [
+       "30–45 Minuten"
+      ]
+     ],
+     [
+      "b2",
+      "Kurse",
+      "Gemeinsam trainieren, gegenseitig motivieren.",
+      []
+     ],
+     [
+      "b6",
+      "Figurtraining",
+      "Mit dem „Zauberstab“ trainierst du Rücken, Bauch und Beckenboden – für bessere Haltung und festeres Bindegewebe.",
+      []
+     ],
+     [
+      "b10",
+      "Rückentraining",
+      "Gezielt stärken, was dich durch den Alltag trägt.",
+      []
+     ],
+     [
+      "b4",
+      "Training mit Studioschlüssel",
+      "Trainiere auch dann, wenn es dir am besten passt.",
+      []
+     ]
+    ],
+    "signature": {
+     "img": "b7",
+     "alt": "Trainingsfläche bei new life",
+     "tag": "4 Wochen<br>kostenlos",
+     "eyebrow": "Dein Start",
+     "h2": "Erst testen. <em>Dann entscheiden.</em>",
+     "p": "Lerne Studio, Trainerinnen und Kurse kennen – ohne langen Vertrag zu unterschreiben.",
+     "ritual": [
+      "Kennenlernen",
+      "4 Wochen kostenlos trainieren",
+      "Kurze Laufzeiten, keine versteckten Kosten"
+     ],
+     "btn": "Probetraining sichern"
+    },
+    "moment": {
+     "img": "b5",
+     "text": "Kurz, effektiv – <em>und immer mit Trainerin.</em>"
+    },
+    "rev_eyebrow": "Das sagen unsere Mitglieder",
+    "team_img": "b3",
+    "team_ratio": "1100/732",
+    "team_alt": "Mitglieder und Trainerinnen von new life",
+    "team_eyebrow": "Gemeinschaft",
+    "team_h2": "Frauen <em>wie du.</em>",
+    "steps_h2": "So startest <em>du.</em>",
+    "cta_h2": "Starte mit <em>4 Wochen kostenlos.</em>",
+    "cta_p": "Ruf an oder hinterlass deine Nummer – wir vereinbaren dein persönliches Probetraining.",
+    "info": [
+     "<b>Parken</b> · direkt vor der Tür",
+     "<b>Verträge</b> · kurze Laufzeiten"
+    ],
+    "form_h3": "Probetraining anfragen",
+    "form_p": "Wir melden uns und vereinbaren deinen Termin.",
+    "form_q": "Was interessiert dich?",
+    "bot_name": "Vita",
+    "robot_tag": "Dein Studio-Guide",
+    "robot_hello": "Hallo! Ich bin Vita von new life. Soll ich dir kurz zeigen, wie das Training bei uns läuft?",
+    "bot_hi": "Hallo! Ich bin Vita. Wobei kann ich dir helfen?",
+    "tour_l": "Hier siehst du, wie du bei uns trainierst – vom Zirkel bis zum Figurtraining.",
+    "tour_s": "Dein Start: 4 Wochen kostenlos testen.",
+    "tour_r": "19 Mitglieder geben uns 4,8 von 5 Sternen.",
+    "tour_u": "Hier lernst du die Gemeinschaft kennen.",
+    "tour_k": "Und hier sicherst du dir dein Probetraining: 05461 706567.",
+    "pos": {}
+   }
   },
   {
    "slug": "lucorose-quakenbrueck",
@@ -617,7 +735,11 @@
     "tour_s": "Mehrere Behandlungen in einem Termin: unsere Beauty-Pakete.",
     "tour_r": "42 Kundinnen geben uns 5 von 5 Sternen.",
     "tour_u": "Hier lernen Sie Aleksandra kennen.",
-    "tour_k": "Und hier vereinbaren Sie Ihren Termin: 0172 4028181."
+    "tour_k": "Und hier vereinbaren Sie Ihren Termin: 0172 4028181.",
+    "moment": {
+     "img": "b2",
+     "text": "Ihr Wohlfühlort <em>in Quakenbrück.</em>"
+    }
    }
   },
   {
@@ -1035,7 +1157,11 @@
      "b9": "50% 30%",
      "b1": "100% 50%"
     },
-    "a_extra": " Gutscheine gibt es auch per Versand."
+    "a_extra": " Gutscheine gibt es auch per Versand.",
+    "moment": {
+     "img": "b8",
+     "text": "Gönne dir eine Auszeit <em>für deine Seele.</em>"
+    }
    }
   },
   {
@@ -1375,7 +1501,11 @@
     "tour_s": "Der beste Start: Hautanalyse mit Pflegeplan.",
     "tour_r": "54 Kundinnen geben 5 von 5 Sternen.",
     "tour_u": "Hier lernen Sie Katharina kennen.",
-    "tour_k": "Und hier vereinbaren Sie Ihren Termin: 0176 72924308."
+    "tour_k": "Und hier vereinbaren Sie Ihren Termin: 0176 72924308.",
+    "moment": {
+     "img": "b8",
+     "text": "Ruhige Räume, Zeit und <em>ehrliche Beratung.</em>"
+    }
    }
   },
   {
@@ -1722,7 +1852,11 @@
     "tour_l": "Hier sehen Sie alle Behandlungen – vom Aqua Facial bis zum Speedbronzer.",
     "tour_s": "Die Spezialität des Studios: das Aqua Facial 2.0.",
     "tour_r": "Hier lesen Sie, was Kundinnen sagen.",
-    "tour_k": "Und hier vereinbaren Sie Ihren Termin: 04443 513430."
+    "tour_k": "Und hier vereinbaren Sie Ihren Termin: 04443 513430.",
+    "moment": {
+     "img": "b4",
+     "text": "Ganz ohne Hektik. <em>Nur Sie und Ihre Haut.</em>"
+    }
    }
   },
   {
@@ -2087,7 +2221,11 @@
     "tour_u": "Hier lernen Sie unser Team kennen.",
     "tour_k": "Und hier vereinbaren Sie Ihren Termin: 05439 3810.",
     "no_logo": true,
-    "seal_pos": "br"
+    "seal_pos": "br",
+    "moment": {
+     "img": "b3",
+     "text": "Ihr Kurzurlaub <em>vor der Haustür.</em>"
+    }
    }
   },
   {
@@ -2436,7 +2574,11 @@
     "tour_s": "Für deinen großen Tag: Brautstyling mit Probestyling vorab.",
     "tour_r": "32 Kundinnen geben Tina 5 von 5 Sternen.",
     "tour_u": "Hier lernst du Tina kennen.",
-    "tour_k": "Und hier schreibst du Tina für deinen Termin: 01573 1103006."
+    "tour_k": "Und hier schreibst du Tina für deinen Termin: 01573 1103006.",
+    "moment": {
+     "img": "b2",
+     "text": "Ruhig, vorbereitet, <em>mit Blick fürs Detail.</em>"
+    }
    }
   },
   {
@@ -2788,7 +2930,469 @@
     "tour_s": "Probieren Sie das Aquafacial: Tiefenreinigung mit sofortigem Glow.",
     "tour_r": "37 Kundinnen geben 5 von 5 Sternen.",
     "tour_u": "Hier lernen Sie Lilli Geibel kennen.",
-    "tour_k": "Und hier vereinbaren Sie Ihren Termin: 05436 7229889."
+    "tour_k": "Und hier vereinbaren Sie Ihren Termin: 05436 7229889.",
+    "moment": {
+     "img": "b6",
+     "text": "Helle Räume, moderne Technik <em>und Zeit für Sie.</em>"
+    }
+   }
+  },
+  {
+   "slug": "chillout-cosmetic",
+   "theme": "beauty",
+   "template": "beauty",
+   "firma": "Chillout Cosmetic",
+   "kurzname": "Chillout Cosmetic",
+   "website": "https://chillout-cosmetic.de",
+   "telefon": "0176 63048527",
+   "email": "mail@chillout-cosmetic.de",
+   "adresse": "Brandstraße 2, 49661 Cloppenburg",
+   "google": [
+    "4,9",
+    59
+   ],
+   "siegel": [
+    "3D-Hautanalyse"
+   ],
+   "tag": "Kosmetikstudio in Cloppenburg",
+   "h1": "Entspannen. Genießen. <span>Vertrauen.</span>",
+   "sub": "Gesichtsbehandlungen, 3D-Hautanalyse, Akne- und Couperose-Programme, Micro Needling, Lifting für Wimpern und Brauen – mit hochwertigsten Pflegeprodukten und neuester Technik.",
+   "leistungen": [
+    "Gesichtsbehandlungen",
+    "3D-Hautanalyse",
+    "Akne und Couperose",
+    "Micro Needling",
+    "Wimpern- und Browlifting",
+    "Hand- und Fußpflege",
+    "Waxing",
+    "Massagen"
+   ],
+   "ueber": [
+    "„Chillout“ ist für uns mehr als nur ein Name – es ist unsere Philosophie. In unserem Studio stehst Du im Mittelpunkt. Wir nehmen uns Zeit, hören zu und gehen individuell auf Deine Hautbedürfnisse ein.",
+    "Unsere Mission: Deine Hautgesundheit zu fördern und Deine natürliche Ausstrahlung zum Leuchten zu bringen – mit professionellen Behandlungssystemen, ausgewählten Cosmeceuticals und neuester Technik."
+   ],
+   "checks": [
+    "Exklusive 3D-Hautanalyse",
+    "Produkte von Dr. Grandel, Mesoestetic, CNC, Phyris",
+    "Für Sie und Ihn"
+   ],
+   "inhaber_name": "Anja Gerken",
+   "min_w": 600,
+   "bild_urls": [
+    "https://chillout-cosmetic.de/images/01-chillout-home-03.png",
+    "https://chillout-cosmetic.de/images/igallery/resized/galerie-1/chillout-cosmetic-galerie-01-1600-1000-80.jpg",
+    "https://chillout-cosmetic.de/images/igallery/resized/galerie-1/chillout-cosmetic-galerie-02-1600-1000-80.jpg",
+    "https://chillout-cosmetic.de/images/igallery/resized/galerie-1/chillout-cosmetic-galerie-05-1600-1000-80.jpg",
+    "https://chillout-cosmetic.de/images/igallery/resized/galerie-1/chillout-cosmetic-galerie-07-1600-1000-80.jpg",
+    "https://chillout-cosmetic.de/images/igallery/resized/galerie-1/chillout-cosmetic-galerie-09-1600-1000-80.jpg",
+    "https://chillout-cosmetic.de/images/igallery/resized/galerie-1/chillout-cosmetic-galerie-10-1600-1000-80.jpg",
+    "https://chillout-cosmetic.de/images/igallery/resized/galerie-1/chillout-cosmetic-galerie-11-1600-1000-80.jpg",
+    "https://chillout-cosmetic.de/images/igallery/resized/galerie-1/chillout-cosmetic-galerie-12-1600-1000-80.jpg",
+    "https://chillout-cosmetic.de/images/igallery/resized/galerie-1/chillout-cosmetic-galerie-14-1600-1000-80.jpg",
+    "https://chillout-cosmetic.de/images/igallery/resized/galerie-1/chillout-cosmetic-galerie-15-1600-1000-80.jpg",
+    "https://chillout-cosmetic.de/images/igallery/resized/galerie-1/chillout-cosmetic-galerie-17-1600-1000-80.jpg",
+    "https://chillout-cosmetic.de/images/igallery/resized/galerie-1/chillout-cosmetic-galerie-13-1600-1000-80.jpg"
+   ],
+   "reviews": [
+    [
+     "Noch nie hat mir jemand so galant und schmerzfrei die Augenbrauen gezupft. Bei Anja fühlte ich mich mit meiner Problemhaut sehr gut aufgehoben.",
+     "“"
+    ],
+    [
+     "Ein wunderschönes, liebevoll eingerichtetes Studio mit sehr herzlicher Atmosphäre – man fühlt sich sofort wie zuhause.",
+     "“"
+    ],
+    [
+     "Bei meiner Akne hat bisher nichts geholfen. Hier sehe ich schon nach zwei Behandlungen eine Verbesserung.",
+     "“"
+    ],
+    [
+     "Sehr sauber, gemütlich und einladend. Mir wurde nichts aufgedrängt – es ging nur darum, dass ich richtig entspannen kann.",
+     "“"
+    ]
+   ],
+   "steps": [
+    [
+     "Termin",
+     "Ruf an oder schreib uns."
+    ],
+    [
+     "Hautanalyse",
+     "Wir schauen genau hin."
+    ],
+    [
+     "Behandlung",
+     "Mit Tiefenwirkung, ganz entspannt."
+    ],
+    [
+     "Pflege zuhause",
+     "Damit das Ergebnis bleibt."
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Chillout Cosmetic",
+     "Frau Anja Gerken",
+     "Brandstraße 2",
+     "49661 Cloppenburg"
+    ],
+    "anrede": "Sehr geehrte Frau Gerken,",
+    "problem": "dass Ihre wunderschönen Studiofotos dort kaum zur Geltung kommen und es oben keinen klaren Button gibt, mit dem Kundinnen direkt einen Termin anfragen können",
+    "suche": "Kosmetikstudio"
+   },
+   "beauty": {
+    "c": {
+     "bg": "#FBF8F3",
+     "pearl": "#F4EEE4",
+     "blush": "#E6EFEA",
+     "acc": "#6E9C8E",
+     "acc_d": "#4A776A",
+     "champ": "#E2C79E",
+     "ink": "#2E2A26",
+     "mute": "#5B554E",
+     "star": "#FFA41C"
+    },
+    "du": true,
+    "wm": [
+     "Chillout",
+     "Cosmetic"
+    ],
+    "wm_sub": "Kosmetik · Cloppenburg",
+    "cta_btn": "Termin anfragen",
+    "mb_btn": "Termin anfragen",
+    "hero_bg_src": "b5",
+    "hero_bg_alt": "Behandlungsraum von Chillout Cosmetic",
+    "cut_src": "b1",
+    "cut_alt": "Anja Gerken, Inhaberin von Chillout Cosmetic",
+    "eyebrow": "Kosmetikstudio in Cloppenburg",
+    "h1": "Entspannen. Genießen. <em>Vertrauen.</em>",
+    "sub": "Gesichtsbehandlungen, 3D-Hautanalyse, Akne- und Couperose-Programme, Micro Needling, Lifting für Wimpern und Brauen – mit hochwertigsten Pflegeprodukten und neuester Technik.",
+    "cta2": "Behandlungen ansehen",
+    "proof_txt": "Echte Ergebnisse, keine Kompromisse – für Sie und Ihn.",
+    "seal": "Chillout Cosmetic · Cloppenburg · ",
+    "seal_mono": "C",
+    "intro": "„Chillout“ ist für uns mehr als ein Name – <em>es ist unsere Philosophie.</em>",
+    "intro_sig": "Chillout Cosmetic · Brandstraße 2 · Cloppenburg",
+    "svc_h2": "Erlebe Kosmetik <em>mit Tiefenwirkung.</em>",
+    "svc_intro": "Wir nehmen uns Zeit, hören zu und gehen individuell auf Deine Hautbedürfnisse ein.",
+    "svc": [
+     [
+      "b2",
+      "Gesichtsbehandlungen",
+      "Von der Hautrein- bis zur Intensiv-Behandlung – mit Produkten von Dr. Grandel.",
+      [
+       "Reinigung",
+       "Pflege",
+       "Massage"
+      ]
+     ],
+     [
+      "b6",
+      "Akne und Couperose",
+      "Effektive Behandlungen bei Akne, Couperose und Pigmentstörungen.",
+      []
+     ],
+     [
+      "b3",
+      "Micro Needling",
+      "Hautregeneration durch Stimulation – für ein verfeinertes, festeres Hautbild.",
+      []
+     ],
+     [
+      "b4",
+      "Wimpern- und Browlifting",
+      "Für einen offenen, wachen Blick.",
+      []
+     ],
+     [
+      "b5",
+      "Hand- und Fußpflege, Waxing",
+      "Gepflegt bis in die Fingerspitzen – und professionelles Waxing.",
+      []
+     ],
+     [
+      "b10",
+      "Aromatherapie und Massagen",
+      "Luxuriöse Gesichts- und Körperpflege zum Abschalten.",
+      []
+     ]
+    ],
+    "signature": {
+     "img": "b11",
+     "alt": "Behandlungsliege mit Tablet zur Hautanalyse",
+     "tag": "Exklusiv<br>bei uns",
+     "eyebrow": "Unser Highlight",
+     "h2": "3D-Hautanalyse. <em>Wissen, was Deine Haut braucht.</em>",
+     "p": "Mit der exklusiven 3D-Hautanalyse schauen wir tief in Deine Haut – und stimmen jede Behandlung genau darauf ab.",
+     "ritual": [
+      "3D-Hautanalyse",
+      "Ehrliche Beratung",
+      "Behandlung mit Tiefenwirkung"
+     ],
+     "btn": "Hautanalyse anfragen"
+    },
+    "moment": {
+     "img": "b7",
+     "text": "Schön, dass <em>Du da bist.</em>"
+    },
+    "rev_eyebrow": "Das sagen unsere Kundinnen",
+    "story": {
+     "eyebrow": "Unsere Produkte",
+     "h2": "Hochwertigste Pflege – <em>auch für zuhause.</em>",
+     "p": [
+      "Wir arbeiten mit Produkten von Dr. Grandel, Mesoestetic, CNC, Phyris und weiteren – damit Deine Haut auch zuhause bekommt, was sie braucht."
+     ],
+     "img1": "b8",
+     "lab1": "Pflege",
+     "cap1": "Ausgewählte Cosmeceuticals",
+     "img2": "b9",
+     "lab2": "Studio",
+     "cap2": "Brandstraße 2",
+     "bw": false
+    },
+    "team_img": "b13",
+    "team_ratio": "1501/1000",
+    "team_alt": "Im Studio von Chillout Cosmetic",
+    "team_eyebrow": "Unser Team",
+    "team_h2": "Anja, Melanie und Lydia <em>heißen Dich willkommen.</em>",
+    "steps_h2": "So läuft Dein <em>Besuch</em> ab.",
+    "cta_h2": "Gönn Dir <em>Deine Auszeit.</em>",
+    "cta_p": "Ruf an oder schreib uns – wir melden uns schnell zurück.",
+    "info": [
+     "<b>Für</b> · Sie und Ihn"
+    ],
+    "form_h3": "Rückruf anfordern",
+    "form_p": "Wir melden uns und finden gemeinsam Deinen Termin.",
+    "form_q": "Welche Behandlung?",
+    "bot_name": "Nova",
+    "robot_tag": "Dein Studio-Guide",
+    "robot_hello": "Hallo! Ich bin Nova von Chillout Cosmetic. Soll ich Dir kurz zeigen, was Dich bei uns erwartet?",
+    "bot_hi": "Hallo! Ich bin Nova. Wobei kann ich Dir helfen?",
+    "tour_l": "Hier findest Du alle Behandlungen – von der Gesichtspflege bis zum Waxing.",
+    "tour_s": "Unser Highlight: die exklusive 3D-Hautanalyse.",
+    "tour_r": "59 Bewertungen, im Schnitt 4,9 von 5 Sternen.",
+    "tour_u": "Hier lernst Du unser Team kennen.",
+    "tour_k": "Und hier fragst Du Deinen Termin an: 0176 63048527.",
+    "pos": {},
+    "halo_top": "34%",
+    "seal_pos": "br"
+   }
+  },
+  {
+   "slug": "auszeit-lingen",
+   "theme": "beauty",
+   "template": "beauty",
+   "firma": "Auszeit – Kosmetikstudio Maria Schomaker",
+   "kurzname": "Auszeit Kosmetikstudio",
+   "website": "https://auszeit-lingen.de",
+   "telefon": "0151 15797594",
+   "email": "info@auszeit-lingen.de",
+   "adresse": "Bauerntanzstraße 7, 49808 Lingen (Ems)",
+   "google": [
+    "4,6",
+    19
+   ],
+   "siegel": [
+    "Seit mehr als 30 Jahren Hautexpertin"
+   ],
+   "tag": "Kosmetikstudio in Lingen",
+   "h1": "Ihre Haut. <span>Auf dem nächsten Level.</span>",
+   "sub": "Individuelle Hautanalysen, H2 Aquafacial, Gesichtsbehandlungen, Anti-Aging und Spezialbehandlungen wie MEZOTIX – im Herzen von Lingen.",
+   "leistungen": [
+    "Individuelle Hautanalyse",
+    "H2 Aquafacial und H2 Jet Boost",
+    "Gesichtsbehandlung",
+    "Anti Aging und Spezialbehandlung",
+    "Genesis Treatment"
+   ],
+   "ueber": [
+    "Mein Name ist Maria Schomaker und mein Kosmetikstudio findet Ihr im Herzen von Lingen. Seit mehr als 30 Jahren steht das Thema Haut im Mittelpunkt meiner beruflichen Laufbahn.",
+    "Es begann in einer namhaften Parfümerie. Danach habe ich in 17 Jahren Pharmaindustrie im dermatologischen Fachbereich unglaublich viel über den Hautalterungsprozess und das Zusammenspiel von Wirkstoffen gelernt."
+   ],
+   "checks": [
+    "Computergestützte Hautanalyse",
+    "Ganzheitlicher Pflegeplan",
+    "Eigene Pflegelinie MySkinUpdate"
+   ],
+   "inhaber_name": "Maria Schomaker",
+   "min_w": 700,
+   "bild_urls": [
+    "https://auszeit-lingen.de/media/yootheme/cache/e0/frau_1-750fe40f-e0904ffb.jpg",
+    "https://auszeit-lingen.de/media/yootheme/cache/7b/IMG_2954-7b492ab6.jpg",
+    "https://auszeit-lingen.de/media/yootheme/cache/75/1111-750f870e.jpg",
+    "https://auszeit-lingen.de/media/yootheme/cache/59/IMG_2966-5970433d.jpg",
+    "https://auszeit-lingen.de/images/images/frau_2-e06f0cdc.jpg",
+    "https://auszeit-lingen.de/images/images/magazin/mabelle-01.jpg",
+    "https://auszeit-lingen.de/images/images/magazin/mabelle-03.jpg",
+    "https://auszeit-lingen.de/images/images/magazin/mabelle-02.jpg"
+   ],
+   "reviews": [
+    [
+     "Maria arbeitet sehr professionell und geht individuell auf meine Haut ein. Tiefenreinigung, Microneedling und Mezotix sind immer fantastisch.",
+     "“"
+    ],
+    [
+     "Fachliche Beratung, die weit über ein normales Kundengespräch hinausgeht. Marias Professionalität und Fachwissen haben mich überzeugt.",
+     "“"
+    ],
+    [
+     "Hochwertige Produkte und gute Ergebnisse. Ich fühle mich sehr gut aufgehoben und genieße meine regelmäßige Auszeit.",
+     "“"
+    ],
+    [
+     "Durchweg wunderbare Behandlungen mit tollen Ergebnissen. Besonders schätze ich Marias Fachwissen und ihre freundliche Art.",
+     "“"
+    ]
+   ],
+   "steps": [
+    [
+     "Hautanalyse",
+     "Computergestützt und ausführlich."
+    ],
+    [
+     "Pflegeplan",
+     "Gemeinsam für Sie erstellt."
+    ],
+    [
+     "Behandlung",
+     "Mit Fokus auf Ergebnisse."
+    ],
+    [
+     "Pflege zuhause",
+     "Mit den passenden Wirkstoffen."
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Auszeit – Kosmetikstudio",
+     "Frau Maria Schomaker",
+     "Bauerntanzstraße 7",
+     "49808 Lingen (Ems)"
+    ],
+    "anrede": "Sehr geehrte Frau Schomaker,",
+    "problem": "dass Ihre starken Themen wie die Hautanalyse und MEZOTIX dort zwischen Shop, Gutscheinen und langen Texten etwas untergehen",
+    "suche": "Kosmetikstudio"
+   },
+   "beauty": {
+    "c": {
+     "bg": "#FCF9F4",
+     "pearl": "#F6EEE3",
+     "blush": "#F5E4E1",
+     "acc": "#B98F3E",
+     "acc_d": "#8A6624",
+     "champ": "#E7CFA0",
+     "ink": "#2B2620",
+     "mute": "#5C554B",
+     "star": "#FFA41C"
+    },
+    "du": false,
+    "wm": [
+     "Auszeit",
+     "Maria Schomaker"
+    ],
+    "wm_sub": "Kosmetikstudio · Lingen",
+    "cta_btn": "Termin anfragen",
+    "mb_btn": "Termin anfragen",
+    "hero_bg_src": "b2",
+    "hero_bg_alt": "Behandlungsraum im Kosmetikstudio Auszeit",
+    "cut_src": "b1",
+    "cut_alt": "Maria Schomaker, Inhaberin von Auszeit",
+    "eyebrow": "Kosmetikstudio in Lingen",
+    "h1": "Ihre Haut. <em>Auf dem nächsten Level.</em>",
+    "sub": "Individuelle Hautanalysen, H2 Aquafacial, Gesichtsbehandlungen, Anti-Aging und Spezialbehandlungen wie MEZOTIX – im Herzen von Lingen.",
+    "cta2": "Leistungen ansehen",
+    "proof_txt": "Seit mehr als 30 Jahren Hautexpertin – davon 17 Jahre im dermatologischen Fachbereich.",
+    "chip": [
+     "Hautanalyse",
+     "Der erste Schritt"
+    ],
+    "seal": "30 Jahre Hautexpertin · Lingen · ",
+    "seal_mono": "A",
+    "intro": "Seit mehr als 30 Jahren steht <em>das Thema Haut</em> im Mittelpunkt meiner Arbeit.",
+    "intro_sig": "Auszeit · Bauerntanzstraße 7 · Lingen",
+    "svc_h2": "Meine <em>Leistungen.</em>",
+    "svc_intro": "Mit einem auf Ihre Haut eingestellten Beauty-Konzept – für nachhaltige Ergebnisse.",
+    "svc": [
+     [
+      "b2",
+      "H2 Aquafacial und H2 Jet Boost",
+      "Intensive Reinigung und Pflege für einen frischen, strahlenden Teint.",
+      []
+     ],
+     [
+      "b3",
+      "Gesichtsbehandlung",
+      "Individuell auf Ihr Hautbild abgestimmt – mit hochwirksamen Inhaltsstoffen.",
+      []
+     ],
+     [
+      "b4",
+      "Anti Aging und Spezialbehandlung",
+      "Von MEZOTIX bis zum neuen Genesis Treatment – Hautregeneration auf Zellebene.",
+      [
+       "MEZOTIX",
+       "Genesis Treatment"
+      ]
+     ]
+    ],
+    "signature": {
+     "img": "b4",
+     "alt": "Behandlung im Studio",
+     "tag": "Der erste<br>Schritt",
+     "eyebrow": "Individuelle Hautanalyse",
+     "h2": "Erst verstehen. <em>Dann behandeln.</em>",
+     "p": "Nach einer professionellen, computergestützten Hautanalyse erstellen wir gemeinsam einen ganzheitlichen Pflegeplan – für Studio und Zuhause.",
+     "ritual": [
+      "Computergestützte Hautanalyse",
+      "Gemeinsamer Pflegeplan",
+      "Pflege für Zuhause"
+     ],
+     "btn": "Kennenlern-Behandlung anfragen"
+    },
+    "moment": {
+     "img": "b3",
+     "text": "Ihre regelmäßige <em>Auszeit.</em>"
+    },
+    "rev_eyebrow": "Das sagen meine Kundinnen",
+    "story": {
+     "eyebrow": "Im Magazin",
+     "h2": "MEZOTIX <em>im Mabelle-Magazin.</em>",
+     "p": [
+      "Lesen Sie den Erfahrungsbericht über die MEZOTIX-Behandlung in meinem Studio – erschienen im Mabelle-Magazin."
+     ],
+     "img1": "b8",
+     "lab1": "Mabelle",
+     "cap1": "Der Beitrag",
+     "img2": "b6",
+     "lab2": "Erfahrungsbericht",
+     "cap2": "MEZOTIX bei Auszeit",
+     "bw": false
+    },
+    "team_img": "b5",
+    "team_ratio": "1/1",
+    "team_alt": "Maria Schomaker",
+    "team_eyebrow": "Über mich",
+    "team_h2": "Mein Name ist <em>Maria Schomaker.</em>",
+    "steps_h2": "So läuft Ihr <em>Besuch</em> ab.",
+    "cta_h2": "Gönnen Sie sich <em>Ihre Auszeit.</em>",
+    "cta_p": "Rufen Sie an oder hinterlassen Sie Ihre Nummer – ich melde mich persönlich bei Ihnen.",
+    "info": [
+     "<b>Gutscheine</b> · immer eine gute Idee",
+     "<b>Onlineshop</b> · MySkinUpdate-Pflege"
+    ],
+    "form_h3": "Rückruf anfordern",
+    "form_p": "Ich melde mich persönlich bei Ihnen.",
+    "form_q": "Welche Behandlung?",
+    "bot_name": "Lia",
+    "robot_tag": "Ihr Studio-Guide",
+    "robot_hello": "Hallo! Ich bin Lia vom Kosmetikstudio Auszeit. Soll ich Ihnen kurz zeigen, was Sie erwartet?",
+    "bot_hi": "Hallo! Ich bin Lia. Wobei darf ich Ihnen helfen?",
+    "tour_l": "Hier sehen Sie alle Leistungen – vom Aquafacial bis zur Spezialbehandlung.",
+    "tour_s": "Der erste Schritt: die individuelle Hautanalyse.",
+    "tour_r": "Hier lesen Sie, was Kundinnen sagen.",
+    "tour_u": "Hier lernen Sie Maria Schomaker kennen.",
+    "tour_k": "Und hier vereinbaren Sie Ihren Termin: 0151 15797594.",
+    "pos": {}
    }
   }
  ]

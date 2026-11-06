@@ -179,6 +179,8 @@ h2{font-size:clamp(38px,4.6vw,68px)}
 .vband::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,var(--bg) 0%,color-mix(in srgb,var(--bg) 25%,transparent) 22%,color-mix(in srgb,var(--blush) 30%,transparent) 50%,color-mix(in srgb,var(--bg) 25%,transparent) 78%,var(--bg) 100%)}
 .vband p{font:400 clamp(30px,3.6vw,56px)/1.2 var(--fh);letter-spacing:-.01em;max-width:18em;padding:0 24px;text-shadow:0 0 30px #fff,0 0 12px color-mix(in srgb,#fff 80%,transparent)}
 .vband p em{color:var(--acc-d)}
+.vband .km{position:absolute;inset:-8%;z-index:-2;background-size:cover;filter:blur(12px) saturate(.95) brightness(1.05);animation:kb 24s ease-in-out infinite alternate}
+@keyframes kb{0%{transform:scale(1.05) translate3d(-2%,-1%,0)}50%{transform:scale(1.14) translate3d(2%,1.5%,0)}100%{transform:scale(1.08) translate3d(1%,-2%,0)}}
 @media (prefers-reduced-motion:reduce){.vband video{display:none}.vband{background:var(--grad-soft)}}
 
 /* ---------- Bewertungen ---------- */
@@ -357,7 +359,7 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
  .svc-media{display:none}
  .svc-list li{padding:28px 0 34px 0}
  .svc-list li::before{position:static;display:block;margin-bottom:12px}
- .svc-list .mi{display:block;aspect-ratio:16/11;border-radius:28px;overflow:hidden;margin-bottom:22px}
+ .svc-list .mi{display:block;aspect-ratio:4/3;border-radius:28px;overflow:hidden;margin-bottom:22px}
  .svc-list .mi img{width:100%;height:100%;object-fit:cover}
  .svc-list li.on h3{transform:none}
  .sig-sec,.team,.ct{padding:110px 0}
@@ -461,7 +463,10 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
 </section>
 
 
-
+<section class="vband vimg">
+ <div class="km" style="background-image:url('img/b3.webp');background-position:50% 50%" aria-hidden="true"></div>
+ <p class="rv">Ihr Kurzurlaub <em>vor der Haustür.</em></p>
+</section>
 <section class="rev" id="bewertungen"><div class="wrap">
  <span class="eyebrow rv">Das sagen unsere Gäste</span>
  <div class="score rv d1"><b>4,5</b><span><span class="stars"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.4l-5.9 3.3 1.3-6.6L2.5 9.5l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.4l-5.9 3.3 1.3-6.6L2.5 9.5l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.4l-5.9 3.3 1.3-6.6L2.5 9.5l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.4l-5.9 3.3 1.3-6.6L2.5 9.5l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.4l-5.9 3.3 1.3-6.6L2.5 9.5l6.6-.8z"/></svg></span><br>39 Bewertungen<br>bei Google</span></div>

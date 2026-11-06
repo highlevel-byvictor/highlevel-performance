@@ -88,8 +88,13 @@ def check_page(br, page_dir: Path, shots=None):
         pg.evaluate("scrollTo(0,0)"); pg.wait_for_timeout(200)
         ow = pg.evaluate("document.documentElement.scrollWidth - innerWidth")
         if ow > 1: errs.append(f"[{name}] Seite läuft {ow}px seitlich über")
-        for o in pg.evaluate(JS_IMGS):
+        passes = [None] + list(range(pg.evaluate("document.querySelectorAll('.svc-list li').length") if pg.evaluate("!!document.querySelector('#svcm') && getComputedStyle(document.querySelector('#svcm')).display!=='none'") else 0))
+        for ps in passes:
+          if ps is not None:
+            pg.evaluate(f"document.querySelectorAll('.svc-list li')[{ps}].dispatchEvent(new Event('mouseenter'))"); pg.wait_for_timeout(50)
+          for o in pg.evaluate(JS_IMGS):
             if not o["vis"]: continue
+            if ps is not None and "svc" not in pg.evaluate(f"document.images[{o['i']}].parentElement.id||''"): continue
             p = Path(o["src"].replace("file://", "").split("?")[0])
             fs = faces(p)
             if not fs: continue
@@ -107,6 +112,10 @@ def check_page(br, page_dir: Path, shots=None):
                 if not all(np.isfinite([X, Y, Wf, Hf])): errs.append(f"[{name}] {p.name}: Zuschnitt nicht berechenbar ({o['fit']} {o['pos']})"); continue
                 face = [(X + Wf * a, Y + Hf * b) for a in (.2, .5, .8) for b in (.2, .5, .85)]
                 head = [(X + Wf * a, Y - Hf * .3) for a in (.25, .5, .75)] + [(X - Wf * .12, Y + Hf * .4), (X + Wf * 1.12, Y + Hf * .4), (X + Wf * .5, Y + Hf * 1.12)]
+                # Punkte, die schon im Originalfoto außerhalb liegen, kann kein Zuschnitt retten -> nur werten, wenn das Gesicht selbst knapp am Rand klebt
+                src_ok = lambda hx, hy: 0 <= (hx - ox - r[0]) / (o["nw"] * sx) <= 1 and 0 <= (hy - oy - r[1]) / (o["nh"] * sy) <= 1
+                if fy > fh * .12 and fx > fw * .1 and fx + fw < 1 - fw * .1:
+                    head = [pt for pt in head if src_ok(*pt)]
                 rf = pg.evaluate(JS_PROBE, [o["i"], face]); rh = pg.evaluate(JS_PROBE, [o["i"], head])
                 if "ok" not in rf:
                     if "ok" in rh: errs.append(f"[{name}] {p.name}: Person angeschnitten, Gesicht fehlt im Zuschnitt")
