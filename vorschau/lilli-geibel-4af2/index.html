@@ -5,39 +5,40 @@
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <meta name="robots" content="noindex,nofollow">
 <title>Lilli Geibel – Entwurf</title>
-<link rel="preload" as="image" href="img/hero-bg.webp"><link rel="preload" as="image" href="img/inhaberin.webp">
+<link rel="preload" as="image" href="img/hero-bg.webp"><link rel="preload" as="image" href="None">
 <style>
 @font-face {
-  font-family: 'Cormorant';
-  font-style: italic;
-  font-weight: 500;
-  font-display: swap;
-  src: url(../../assets/fonts/H4c0BXOCl9bbnla_nHIq6oGzilJm9otsA9kQmfda7yWq.woff2) format('woff2');
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
-}
-@font-face {
-  font-family: 'Inter';
+  font-family: 'Montserrat';
   font-style: normal;
   font-weight: 300 600;
   font-display: swap;
-  src: url(../../assets/fonts/UcC73FwrK3iLTeHuS_nVMrMxCp50SjIa1ZL7.woff2) format('woff2');
+  src: url(../../assets/fonts/JTUSjIg1_i6t8kCHKm459Wlhyw.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 @font-face {
-  font-family: 'Italiana';
-  font-style: normal;
-  font-weight: 400;
+  font-family: 'Playfair Display';
+  font-style: italic;
+  font-weight: 400 700;
   font-display: swap;
-  src: url(../../assets/fonts/QldNNTtLsx4E__B0XQmWaXw.woff2) format('woff2');
+  src: url(../../assets/fonts/nuFkD-vYSZviVYUb_rj3ij__anPXDTnogkk7.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Playfair Display';
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url(../../assets/fonts/nuFiD-vYSZviVYUb_rj3ij__anPXDTzYgA.woff2) format('woff2');
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 :root{
- --bg:#121014;--pearl:#1D1A1F;--blush:#2A2320;--acc:#C9A54A;--acc-d:#E2C47A;--champ:#8E7748;--ink:#F2ECE1;--mute:#B3AA9C;--star:#FFA41C;
+ --bg:#FDFBF7;--pearl:#F7F1E6;--blush:#EFE4CF;--acc:#B8913A;--acc-d:#8C6A1F;--champ:#DCC283;--ink:#24201A;--mute:#5E574C;--star:#FFA41C;
  --grad:linear-gradient(120deg,var(--acc) 0%,color-mix(in srgb,var(--acc) 55%,var(--champ)) 55%,var(--champ) 100%);
  --grad-soft:linear-gradient(160deg,var(--pearl) 0%,var(--blush) 55%,color-mix(in srgb,var(--champ) 45%,var(--pearl)) 100%);
- --fh:'Italiana',Georgia,serif;--fb:'Inter',system-ui,sans-serif;
- --ease:cubic-bezier(.22,.8,.24,1);--r:2px;--fa:'Cormorant',Georgia,serif;--hw:400;--hls:.005em;
+ --fh:'Playfair Display',Georgia,serif;--fb:'Montserrat',system-ui,sans-serif;
+ --ease:cubic-bezier(.22,.8,.24,1);--h1:clamp(42px,4.3vw,70px);--r:2px;--fa:'Playfair Display',Georgia,serif;--hw:600;--hls:-.01em;
+ --pat:url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56"><g fill="none" stroke="%23B8913A" stroke-width="1"><path d="M28 2L54 28 28 54 2 28z"/><path d="M28 14L42 28 28 42 14 28z"/></g><circle cx="28" cy="28" r="2" fill="%23B8913A"/></svg>');--pat-s:56px 56px;--pat-o:0.4;
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%;scroll-behavior:auto}
@@ -48,7 +49,7 @@ a{color:inherit}
 .eyebrow{display:inline-flex;align-items:center;gap:14px;font:500 13.5px/1.2 var(--fb);letter-spacing:.2em;text-transform:uppercase;color:var(--acc-d)}
 .eyebrow::before{content:"";width:34px;height:1px;background:currentColor;opacity:.6}
 h1,h2,h3{font-family:var(--fh);font-weight:var(--hw);line-height:1.04;letter-spacing:var(--hls);color:var(--ink)}
-h1 em,h2 em,h3 em{font-family:var(--fa);font-style:italic;font-weight:500;color:var(--acc-d);}
+h1 em,h2 em,h3 em{font-family:var(--fa);font-style:italic;font-weight:400;color:var(--acc-d);}
 h2{font-size:clamp(38px,4.6vw,68px)}
 .lead{font-size:clamp(18.5px,1.45vw,21px);color:color-mix(in srgb,var(--ink) 82%,var(--mute));max-width:34em}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:58px;padding:0 32px;border-radius:999px;text-decoration:none;font:500 16.5px/1 var(--fb);letter-spacing:.06em;transition:transform .5s var(--ease),box-shadow .5s var(--ease),background-position .8s var(--ease)}
@@ -92,7 +93,7 @@ h2{font-size:clamp(38px,4.6vw,68px)}
 .h-txt::before{content:"";position:absolute;inset:-14% -18% -6% -30%;z-index:-1;pointer-events:none;background:radial-gradient(closest-side,color-mix(in srgb,#fff 82%,transparent),color-mix(in srgb,#fff 55%,transparent) 55%,transparent);filter:blur(10px)}
 .h-txt .lead,.h-txt .eyebrow,.h-proof{text-shadow:0 0 18px #fff,0 0 2px color-mix(in srgb,#fff 80%,transparent)}
 .h-txt .eyebrow{margin-bottom:30px}
-.hero h1{font-size:clamp(48px,5.5vw,96px);line-height:.98;letter-spacing:-.025em;margin-bottom:30px}
+.hero h1{font-size:var(--h1,clamp(48px,5.5vw,96px));line-height:.98;letter-spacing:-.025em;margin-bottom:30px}
 .hero h1 em{display:block;background:linear-gradient(100deg,var(--acc-d),var(--acc) 50%,color-mix(in srgb,var(--champ) 80%,var(--acc-d)));-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:.08em}
 .hero .lead{margin-bottom:40px}
 .h-cta{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:46px}
@@ -174,15 +175,25 @@ h2{font-size:clamp(38px,4.6vw,68px)}
 .sig-q{font:italic 400 22px/1.45 var(--fh);color:var(--ink);max-width:24em;margin-bottom:36px}
 .sig-q .stars{display:flex;margin-bottom:12px}
 
-/* ---------- Video-Band (eigenes Video der Firma, weich verschwommen) ---------- */
-.vband{position:relative;height:min(78svh,720px);overflow:hidden;isolation:isolate;display:grid;place-items:center;text-align:center}
-.vband video{position:absolute;inset:-6%;width:112%;height:112%;object-fit:cover;z-index:-2;filter:blur(14px) saturate(.92) brightness(1.04);transform:scale(1.06)}
-.vband::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,var(--bg) 0%,color-mix(in srgb,var(--bg) 25%,transparent) 22%,color-mix(in srgb,var(--blush) 30%,transparent) 50%,color-mix(in srgb,var(--bg) 25%,transparent) 78%,var(--bg) 100%)}
-.vband p{font:400 clamp(30px,3.6vw,56px)/1.2 var(--fh);letter-spacing:-.01em;max-width:18em;padding:0 24px;text-shadow:0 0 30px #fff,0 0 12px color-mix(in srgb,#fff 80%,transparent)}
-.vband p em{color:var(--acc-d)}
-.vband .km{position:absolute;inset:-8%;z-index:-2;background-size:cover;filter:blur(12px) saturate(.95) brightness(1.05);animation:kb 24s ease-in-out infinite alternate}
-@keyframes kb{0%{transform:scale(1.05) translate3d(-2%,-1%,0)}50%{transform:scale(1.14) translate3d(2%,1.5%,0)}100%{transform:scale(1.08) translate3d(1%,-2%,0)}}
-@media (prefers-reduced-motion:reduce){.vband video{display:none}.vband{background:var(--grad-soft)}}
+/* ---------- Bildband: scharfe eigene Fotos, Text auf ruhiger Karte (nie Schrift auf Foto) ---------- */
+.mband{position:relative;padding:30px 0 70px}
+.mb-in{display:grid;gap:clamp(12px,1.6vw,22px);grid-template-columns:repeat(var(--n,1),minmax(0,1fr))}
+.mb-n1{--n:1}.mb-n2{--n:2}.mb-n3{--n:3}
+.mb-f{position:relative;height:var(--mbh,clamp(300px,36vw,520px));border-radius:var(--r);overflow:hidden;box-shadow:0 50px 80px -60px color-mix(in srgb,var(--ink) 60%,transparent)}
+.mb-n3 .mb-f:nth-child(2){transform:translateY(-34px)}
+.mb-f img,.mb-f video{width:100%;height:100%;object-fit:cover;display:block}
+.mb-card{position:relative;z-index:2;width:min(760px,calc(100% - 40px));margin:-74px auto 0;padding:34px clamp(26px,4vw,56px) 36px;text-align:center;border-radius:calc(var(--r) * .8);background:var(--bg);box-shadow:0 40px 70px -40px color-mix(in srgb,var(--acc-d) 45%,transparent),inset 0 0 0 1px color-mix(in srgb,var(--acc) 16%,transparent)}
+.mb-card p{font:var(--hw) clamp(26px,2.8vw,42px)/1.22 var(--fh);letter-spacing:var(--hls);}
+.mb-card p em{font-family:var(--fa);font-style:italic;color:var(--acc-d)}
+.mb-orn{display:block;width:120px;height:14px;margin:0 auto 16px;background:var(--pat) center/var(--pat-s);opacity:.8;-webkit-mask:linear-gradient(90deg,transparent,#000 30%,#000 70%,transparent);mask:linear-gradient(90deg,transparent,#000 30%,#000 70%,transparent)}
+
+/* ---------- Muster-Übergänge ---------- */
+.pdiv{position:relative;height:64px;margin:0 auto;width:min(1240px,calc(100% - 64px));display:grid;place-items:center}
+.pdiv::before{content:"";position:absolute;inset:0;background:var(--pat) center/var(--pat-s);opacity:var(--pat-o);-webkit-mask:linear-gradient(90deg,transparent,#000 22%,#000 78%,transparent);mask:linear-gradient(90deg,transparent,#000 22%,#000 78%,transparent)}
+.pdiv span{position:relative;width:16px;height:16px;transform:rotate(45deg);background:var(--bg);box-shadow:0 0 0 7px var(--bg),inset 0 0 0 1.5px var(--acc)}
+.hero-pat{position:absolute;inset:0;z-index:-2;background:var(--pat) 0 0/var(--pat-s),linear-gradient(160deg,var(--pearl),var(--bg) 60%);opacity:1}
+.hero-pat::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,color-mix(in srgb,var(--bg) 88%,transparent) 40%,color-mix(in srgb,var(--bg) 55%,transparent) 100%)}
+.sig-sec::after,.ct::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--pat) 0 0/var(--pat-s);opacity:calc(var(--pat-o) * .45);pointer-events:none}
 
 /* ---------- Bewertungen ---------- */
 .rev{padding:150px 0 140px;text-align:center;position:relative}
@@ -344,7 +355,8 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
 .h-center .chip{left:50%;transform:translateX(-50%);bottom:8%;animation:none}
 .h-center .h-por .halo{width:min(520px,100%)}
 /* Hero Vollbild: echtes Foto, Text auf weichem Verlauf */
-.h-full .hero-bg{filter:none;inset:0;animation:breathe 30s ease-in-out infinite alternate}
+.h-full .hero-bg{filter:none;inset:0;animation:none;transform:none}
+.h-full .hero-bg.part{-webkit-mask-image:linear-gradient(90deg,transparent,#000 22%);mask-image:linear-gradient(90deg,transparent,#000 22%)}
 .h-full .hero-wash{background:linear-gradient(90deg,var(--bg) 0%,color-mix(in srgb,var(--bg) 92%,transparent) 30%,color-mix(in srgb,var(--bg) 40%,transparent) 55%,transparent 75%),linear-gradient(180deg,transparent 70%,var(--bg) 100%)}
 .h-full .liquid{display:none}
 .h-full .top{background:color-mix(in srgb,var(--bg) 72%,transparent);backdrop-filter:blur(16px) saturate(1.2);-webkit-backdrop-filter:blur(16px) saturate(1.2)}
@@ -437,7 +449,7 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
 .rv-mq blockquote{width:min(420px,78vw);padding:30px 32px;border-radius:calc(var(--r) * .8);background:color-mix(in srgb,#fff 75%,var(--pearl));text-align:left;box-shadow:0 30px 60px -45px color-mix(in srgb,var(--acc-d) 70%,transparent)}
 .rv-mq p{margin-top:14px;font:400 20px/1.45 var(--fh)}
 /* Nachtmodus */
-.dark{--bg:#121014;color-scheme:dark}
+.dark{--bg:#FDFBF7;color-scheme:dark}
 .dark .btn-g{background:color-mix(in srgb,#fff 10%,transparent);color:var(--ink);box-shadow:inset 0 0 0 1px color-mix(in srgb,#fff 25%,transparent)}
 .dark .btn-g:hover{background:color-mix(in srgb,#fff 18%,transparent)}
 .dark .h-txt .lead,.dark .h-txt .eyebrow,.dark .h-proof,.dark .h-side{text-shadow:none}
@@ -453,8 +465,73 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
 .dark .ft-logo{background:transparent;padding:0}
 .dark footer{background:color-mix(in srgb,var(--bg) 70%,#000)}
 .dark .flow li .dot{background:var(--pearl)}
-.dark .vband p{text-shadow:0 0 30px var(--bg),0 0 12px var(--bg)}
-.dark .vband .km,.dark .vband video{filter:blur(12px) brightness(.55) saturate(.9)}
+
+/* Hero geteilt: echtes, scharfes Foto (optional Slider), Text auf ruhigem Grund mit Muster */
+.h-split .hero .wrap{grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(30px,5vw,80px);align-items:center}
+.h-split .h-txt{padding-bottom:4vh}
+.h-split .h-txt::before{display:none}
+.h-split .h-txt .lead,.h-split .h-txt .eyebrow,.h-split .h-proof{text-shadow:none}
+.h-split .top{background:color-mix(in srgb,var(--bg) 80%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.h-media{position:relative;align-self:center}
+.hm-main{position:relative;overflow:hidden}
+.hm-main img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.4s var(--ease),transform 7s linear}
+.hm-main img.on{opacity:1}
+.hm-dots{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);display:flex;gap:8px;z-index:3}
+.hm-dots i{width:26px;height:4px;border-radius:4px;background:color-mix(in srgb,#fff 60%,transparent);transition:background .5s,width .5s}
+.hm-dots i.on{background:#fff;width:42px}
+.hm-inset{position:absolute;z-index:2;overflow:hidden;box-shadow:0 30px 60px -30px color-mix(in srgb,var(--ink) 70%,transparent);border:6px solid var(--bg)}
+.hm-inset img{width:100%;height:100%;object-fit:cover}
+.hm-badge{position:absolute;z-index:3;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border-radius:50%;background:var(--grad);color:#fff;box-shadow:0 24px 50px -20px color-mix(in srgb,var(--acc-d) 80%,transparent);animation:float 7s ease-in-out infinite}
+.hm-badge b{font:var(--hw) 30px/1 var(--fh)}.hm-badge span{font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin-top:4px;max-width:8em;line-height:1.25}
+/* Form: Rahmen (hochkant, versetzte Goldlinie) */
+.sh-frame .hm-main{aspect-ratio:4/5;width:min(100%,calc(74svh * .8));margin-left:auto;border-radius:calc(var(--r) * .5)}
+.sh-frame::before{content:"";position:absolute;inset:-22px 22px 22px auto;width:min(100%,calc(74svh * .8));border:1px solid var(--acc);border-radius:calc(var(--r) * .5 + 6px);pointer-events:none}
+.sh-frame .hm-inset{width:34%;aspect-ratio:1;border-radius:50%;left:-12%;bottom:8%}
+/* Form: Bogen */
+.sh-arch .hm-main{aspect-ratio:4/5;width:min(100%,calc(76svh * .8));margin-left:auto;border-radius:999px 999px var(--r) var(--r)}
+.sh-arch .hm-inset{width:36%;aspect-ratio:1;border-radius:50%;left:-10%;bottom:6%}
+/* Form: quer (Gruppenfotos, Studio-Slider) */
+.sh-wide .hm-main{aspect-ratio:3/2;border-radius:var(--r)}
+.sh-wide .hm-inset{width:44%;aspect-ratio:3/2;border-radius:calc(var(--r) * .7);left:-14%;bottom:-16%}
+.sh-wide .hm-badge{width:136px;height:136px;right:-24px;top:-40px}
+/* Form: schräg gekippt mit Farbblock (sportlich) */
+.sh-tilt::before{content:"";position:absolute;inset:-26px -26px 26px 26px;border-radius:var(--r);background:var(--pat) 0 0/var(--pat-s),var(--acc);transform:rotate(4deg)}
+.sh-tilt .hm-main{aspect-ratio:3/2;border-radius:var(--r);transform:rotate(-2.2deg);box-shadow:0 50px 80px -40px color-mix(in srgb,var(--ink) 60%,transparent)}
+.sh-tilt .hm-inset{width:48%;aspect-ratio:3/2;border-radius:calc(var(--r) * .7);left:-16%;bottom:-24%;transform:rotate(3deg)}
+.sh-tilt .hm-badge{width:140px;height:140px;right:-30px;top:-50px;background:var(--ink)}
+/* Form: randlos bis an den Bildschirmrand */
+.sh-bleed{position:absolute!important;top:0;bottom:0;width:47vw;align-self:stretch!important;justify-self:stretch}
+.side-right .sh-bleed{right:0}.side-left .sh-bleed{left:0;top:96px;bottom:36px}
+.sh-bleed .hm-main{position:absolute;inset:0}
+.side-left .sh-bleed .hm-main{border-radius:0 calc(var(--r) * 2) calc(var(--r) * 2) 0}
+.side-right .sh-bleed .hm-main{border-radius:0 0 0 calc(var(--r) * 2)}
+.sh-bleed .hm-inset{width:min(230px,16vw);aspect-ratio:3/4;border-radius:999px 999px 999px 999px;bottom:10%}
+.side-left .sh-bleed .hm-inset{right:-8%}.side-right .sh-bleed .hm-inset{left:-8%}
+.side-left.h-split .hero .wrap{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.side-left.h-split .h-txt{grid-column:2;padding-left:clamp(10px,3vw,50px)}
+.side-left .h-media:not(.sh-bleed){order:-1}
+.h-split:has(.sh-bleed) .top:not(.solid){background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none}
+/* Bühne: Inhaberin groß und mittig vor einem Bogen */
+.h-stage .hero .wrap{grid-template-columns:minmax(0,.95fr) minmax(0,1.25fr) minmax(0,.55fr);gap:clamp(16px,2vw,36px)}
+.h-stage .h-por{height:min(94svh,980px)}
+.h-stage .h-por .halo{top:14%;width:min(560px,94%);aspect-ratio:4/5;border-radius:999px 999px 0 0;background:linear-gradient(180deg,color-mix(in srgb,var(--blush) 78%,transparent),color-mix(in srgb,var(--blush) 55%,transparent)),var(--pat) 0 0/var(--pat-s),var(--bg);transform:translateX(-50%)}
+.h-stage .h-por .ring{top:11%;width:min(600px,100%);aspect-ratio:4/5;border-radius:999px 999px 0 0;border:1.5px solid var(--champ)}
+.h-stage .h-por>img{-webkit-mask-image:linear-gradient(180deg,#000 88%,transparent 100%);mask-image:linear-gradient(180deg,#000 88%,transparent 100%);filter:drop-shadow(0 30px 40px color-mix(in srgb,var(--acc-d) 25%,transparent))}
+.h-stage .h-txt::before{display:none}
+.h-stage .h-side .hs-x{font-size:15.5px;display:flex;align-items:center;gap:12px}
+/* Vollbild-Slider: scharfe Studio-Fotos, Text auf ruhiger Karte */
+.h-slides .hero-bg{inset:0;opacity:0;transition:opacity 1.6s var(--ease);animation:none;transform:none}
+.h-slides .hero-bg.on{opacity:1;animation:slz 9s ease-out both}
+@keyframes slz{from{transform:scale(1.04)}to{transform:scale(1)}}
+.h-slides .hero-wash{background:linear-gradient(180deg,color-mix(in srgb,var(--ink) 28%,transparent),transparent 26%,transparent 75%,color-mix(in srgb,var(--bg) 70%,transparent))}
+.h-slides .hero .wrap{grid-template-columns:minmax(0,.62fr) minmax(0,.38fr);align-items:end;padding-bottom:110px}
+.h-slides .h-txt{padding:clamp(30px,3.4vw,52px);border-radius:calc(var(--r) * .9);background:color-mix(in srgb,var(--bg) 94%,transparent);box-shadow:0 50px 90px -40px color-mix(in srgb,var(--ink) 55%,transparent);align-self:end}
+.h-slides .h-txt::before{inset:auto 0 0 0;height:10px;filter:none;border-radius:0 0 calc(var(--r) * .9) calc(var(--r) * .9);background:var(--pat) 0 0/var(--pat-s);opacity:.6;top:auto}
+.h-slides .h-txt .lead,.h-slides .h-txt .eyebrow,.h-slides .h-proof{text-shadow:none}
+.h-slides .hero h1{font-size:clamp(44px,4.6vw,78px)}
+.h-slides .top:not(.solid){background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none}
+.h-slides .top:not(.solid) .nav a{color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.35)}
+.hs-dots{display:flex;gap:8px;margin-top:26px}
 
 /* ---------- Tablet / Handy ---------- */
 @media (max-width:1080px){
@@ -540,6 +617,33 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
  .zz{grid-template-columns:1fr;gap:22px}.zz:nth-child(even) .zz-img{order:0}.zz-img{aspect-ratio:4/3}
  .svc-menu{padding:30px 20px}.svc-menu ul{grid-template-columns:1fr;gap:28px}.svc-menu li{grid-template-columns:68px 1fr;gap:16px}.mn-img{width:68px;height:68px}
  .rv-split{grid-template-columns:1fr;gap:30px}.rs-l{position:static}
+ /* neue Hero-Formen am Handy */
+ .h-split .hero .wrap,.side-left.h-split .hero .wrap,.h-stage .hero .wrap,.h-slides .hero .wrap{grid-template-columns:1fr}
+ .side-left.h-split .h-txt{grid-column:auto;padding-left:0}
+ .h-split .h-media{order:-1;margin:6px 0 34px}
+ .sh-bleed{position:relative!important;width:auto;height:62svh;margin:0 -22px 34px!important;top:auto!important;bottom:auto!important}
+ .sh-bleed .hm-main{border-radius:0 0 calc(var(--r) * 1.4) calc(var(--r) * 1.4)!important}
+ .sh-bleed .hm-inset{display:none}
+ .h-split:has(.sh-bleed) .hero .wrap{padding-top:0}
+ .h-split:has(.sh-bleed) .hero{padding-top:0}
+ .sh-frame::before{inset:-12px 12px 12px -12px;width:auto}.sh-frame .hm-main{width:100%}.sh-frame .hm-inset{width:30%;left:-4%}
+ .sh-arch .hm-inset{left:-2%}
+ .sh-wide .hm-inset,.sh-tilt .hm-inset{left:-4%;bottom:-14%;width:42%}
+ .sh-tilt::before{inset:-12px -8px 12px 14px}
+ .sh-wide .hm-badge,.sh-tilt .hm-badge{width:100px;height:100px;right:-6px;top:-30px}.hm-badge b{font-size:22px}.hm-badge span{font-size:10.5px}
+ .h-split .h-media:has(.hm-inset) {margin-bottom:60px}
+ .h-stage .h-por{height:auto;order:-1;margin-top:0}
+ .h-stage .h-por>img{width:min(86vw,420px)}
+ .h-stage .h-por .halo{top:8%;width:84%}.h-stage .h-por .ring{top:5%;width:92%}
+ .h-slides .hero{min-height:0}
+ .h-slides .hero-bg{bottom:auto;height:60svh}
+ .h-slides .hero-wash{bottom:auto;height:60svh;background:linear-gradient(180deg,color-mix(in srgb,var(--ink) 30%,transparent),transparent 30%)}
+ .h-full .hero-bg.part{left:0!important;-webkit-mask-image:none;mask-image:none}
+ .h-slides .hero .wrap{padding-top:52svh;padding-bottom:70px}
+ .h-slides .h-txt{padding:26px 22px}
+ .mb-in{grid-template-columns:1fr!important}.mb-f{height:260px}.mb-n3 .mb-f:nth-child(2){transform:none}.mb-n3 .mb-f:nth-child(3){display:none}
+ .mb-card{margin-top:-50px;padding:26px 20px 28px}
+ .pdiv{width:calc(100% - 44px);height:48px}
  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:55;background:var(--ink);padding-bottom:env(safe-area-inset-bottom)}
  .callbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:10px;padding:18px 10px;color:#fff;text-decoration:none;font:500 16.5px var(--fb);letter-spacing:.04em}
  .callbar a+a{background:var(--grad)}
@@ -547,14 +651,15 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
 }
 </style>
 </head>
-<body class="h-right s-arch r-split dark"><header class="top" id="top"><div class="wrap">
+<body class="h-split side-right pat-deco s-arch r-split"><header class="top" id="top"><div class="wrap">
  <a class="wm wm-logo" href="#"><img src="img/logo.png" alt="Lilli Geibel"></a>
- <nav class="nav"><a href="#leistungen">Behandlungen</a><a href="#geschichte">Geschichte</a><a href="#ueber">Team</a><a href="#kontakt">Kontakt</a></nav>
+ <nav class="nav"><a href="#leistungen">Behandlungen</a><a href="#bewertungen">Bewertungen</a><a href="#ueber">Team</a><a href="#kontakt">Kontakt</a></nav>
  <a class="btn btn-p" href="#kontakt">Termin anfragen</a>
 </div></header>
 
 <section class="hero" aria-label="Willkommen">
- <div class="hero-bg" role="img" aria-label="Behandlungsraum im Kosmetikinstitut Lilli Geibel"></div><div class="hero-wash"></div><div class="liquid a"></div><div class="liquid b"></div>
+ <div class="hero-pat" aria-hidden="true"></div>
+ 
  <div class="wrap">
   <div class="h-txt">
    <span class="eyebrow h-load">Kosmetikinstitut in Nortrup</span>
@@ -566,15 +671,16 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
     <span class="sg">Modernste Laser- und Bodyforming-Technik – Termine auch kurzfristig.</span>
    </div>
   </div>
-  <div class="h-por h-load">
-   <span class="halo"></span><span class="ring"></span>
-   <img src="img/inhaberin.webp" alt="Lilli Geibel, Inhaberin" width="673" height="1169" fetchpriority="high">
-   <div class="chip"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M12 3c3 4 6 7.2 6 10.5a6 6 0 0 1-12 0C6 10.2 9 7 12 3z"/></svg></i><div><b>Aquafacial</b><span>Sofort sichtbarer Glow</span></div></div>
-   <div class="seal" aria-label="Modernste Beauty-Technologie · "><svg viewBox="0 0 128 128" aria-hidden="true"><defs><path id="sc" d="M64 64m-49 0a49 49 0 1 1 98 0a49 49 0 1 1-98 0"/></defs><text><textPath href="#sc">Modernste Beauty-Technologie · </textPath></text></svg><b>LG</b></div>
+  <div class="h-media h-load sh-frame">
+   <div class="hm-main"><img class="hm-s on" src="img/b5.webp" alt="Lilli Geibel bei einer Gesichtsbehandlung" style="object-position:55% 74%" fetchpriority="high" decoding="async"></div>
+   <div class="hm-inset"><img src="img/b7.webp" alt="Behandlung mit moderner Technik" decoding="async"></div>
+   
+   
   </div>
   
+  
  </div>
- <div class="h-wave"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 52C180 18 360 6 560 30s380 58 560 46 260-38 320-48V90H0z"/></svg></div>
+ <div class="h-wave"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 90C360 6 1080 6 1440 90z"/></svg></div>
 </section>
 
 
@@ -584,6 +690,7 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
  <div class="sig rv d1">Kosmetikinstitut Lilli Geibel · Am Alten Sportplatz 20 · Nortrup</div>
 </div></section>
 
+<div class="pdiv" aria-hidden="true"><span></span></div>
 <section class="svc" id="leistungen"><div class="wrap">
  <div class="svc-head">
   <div><span class="eyebrow rv">Behandlungen</span><h2 class="rv d1">Für jede Haut <em>die passende Pflege.</em></h2></div>
@@ -605,7 +712,7 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
 
 
 <section class="sig-sec" id="signatur">
- <div class="wtop"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 52C180 18 360 6 560 30s380 58 560 46 260-38 320-48V90H0z"/></svg></div>
+ <div class="wtop"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 90C360 6 1080 6 1440 90z"/></svg></div>
  <div class="wrap sig-in">
   <div class="oval-w rv sh-circle"><div class="oval"><img src="img/b4.webp" alt="Behandlungsraum im Kosmetikinstitut" loading="lazy" decoding="async"></div><span class="tag">Jetzt<br>kennen&shy;lernen</span></div>
   <div>
@@ -617,14 +724,17 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
    <a class="btn btn-p rv d3" href="#kontakt">Aquafacial anfragen</a>
   </div>
  </div>
- <div class="wbot"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 52C180 18 360 6 560 30s380 58 560 46 260-38 320-48V90H0z"/></svg></div>
+ <div class="wbot"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 90C360 6 1080 6 1440 90z"/></svg></div>
 </section>
 
 
-<section class="vband vimg">
- <div class="km" style="background-image:url('img/b6.webp');background-position:50% 50%" aria-hidden="true"></div>
- <p class="rv">Helle Räume, moderne Technik <em>und Zeit für Sie.</em></p>
-</section>
+
+<section class="mband"><div class="wrap">
+ <div class="mb-in mb-n2">
+  <figure class="mb-f rv d1"><img src="img/b4.webp" alt="Lilli Geibel" loading="lazy" decoding="async"></figure><figure class="mb-f rv d2"><img src="img/b6.webp" alt="Lilli Geibel" loading="lazy" decoding="async"></figure>
+ </div>
+ <div class="mb-card rv d2"><span class="mb-orn" aria-hidden="true"></span><p>Helle Räume, moderne Technik <em>und Zeit für Sie.</em></p></div>
+</div></section>
 <section class="rev" id="bewertungen"><div class="wrap">
  
  <div class="rv-split"><div class="rs-l rv"><span class="eyebrow">Das sagen unsere Kundinnen</span><b class="rs-n">5,0</b><span class="stars"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.4l-5.9 3.3 1.3-6.6L2.5 9.5l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.4l-5.9 3.3 1.3-6.6L2.5 9.5l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.4l-5.9 3.3 1.3-6.6L2.5 9.5l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.4l-5.9 3.3 1.3-6.6L2.5 9.5l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.4l-5.9 3.3 1.3-6.6L2.5 9.5l6.6-.8z"/></svg></span><small>37 Bewertungen bei Google</small></div>
@@ -632,6 +742,7 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
  
 </div></section>
 
+<div class="pdiv" aria-hidden="true"><span></span></div>
 
 
 <section class="team" id="ueber"><div class="wrap team-in">
@@ -644,17 +755,18 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
  </div>
 </div></section>
 
+<div class="pdiv" aria-hidden="true"><span></span></div>
 <section class="flow"><div class="wrap">
  <span class="eyebrow rv">Ablauf</span>
  <h2 class="rv d1">So läuft Ihr <em>Besuch</em> ab.</h2>
  <div class="flow-in rv" id="flow">
-  <svg class="flow-line" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="fg" x1="0" x2="1"><stop offset="0" stop-color="#C9A54A"/><stop offset="1" stop-color="#8E7748"/></linearGradient></defs><path d="M150 22C300 22 300 68 450 68S600 22 750 22s150 46 300 46"/></svg>
+  <svg class="flow-line" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="fg" x1="0" x2="1"><stop offset="0" stop-color="#B8913A"/><stop offset="1" stop-color="#DCC283"/></linearGradient></defs><path d="M150 22C300 22 300 68 450 68S600 22 750 22s150 46 300 46"/></svg>
   <ol><li><span class="dot">1</span><div><b>Termin</b><span>Rufen Sie an oder schreiben Sie uns.</span></div></li><li><span class="dot">2</span><div><b>Beratung</b><span>Wir schauen uns Ihre Haut genau an.</span></div></li><li><span class="dot">3</span><div><b>Behandlung</b><span>Abgestimmt auf Sie, in Ruhe.</span></div></li><li><span class="dot">4</span><div><b>Wohlfühlen</b><span>Und wiederkommen.</span></div></li></ol>
  </div>
 </div></section>
 
 <section class="ct" id="kontakt">
- <div class="wtop"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 52C180 18 360 6 560 30s380 58 560 46 260-38 320-48V90H0z"/></svg></div>
+ <div class="wtop"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 90C360 6 1080 6 1440 90z"/></svg></div>
  <div class="wrap ct-in">
   <div>
    <span class="eyebrow rv">Kontakt</span>
@@ -682,7 +794,7 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
 </div></footer>
 
 <aside class="pv" id="pv"><b>Grober Entwurf</b>Erstellt von High Level Performance. Bei einer Zusammenarbeit arbeiten wir jede Seite viel intensiver aus.<button type="button" aria-label="Hinweis schließen" onclick="this.parentNode.remove()">x</button></aside>
-<div class="robo" id="robo"><div class="robo-say" id="rsay" role="status" aria-live="polite"></div><button class="robo-av" type="button" id="botbtn" aria-label="Digitalen Guide öffnen"><svg viewBox="0 0 84 100" aria-hidden="true"><defs><linearGradient id="rg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#C9A54A"/><stop offset="1" stop-color="#8E7748"/></linearGradient><linearGradient id="rb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#1D1A1F"/></linearGradient></defs><line x1="42" y1="8" x2="42" y2="20" stroke="#E2C47A" stroke-width="2.4" stroke-linecap="round"/><circle class="ant" cx="42" cy="7" r="5" fill="url(#rg)"/><rect x="9" y="20" width="66" height="52" rx="26" fill="url(#rb)" stroke="#2A2320" stroke-width="1.5"/><rect x="17" y="30" width="50" height="30" rx="15" fill="#F2ECE1"/><ellipse class="eye" cx="32" cy="45" rx="4.6" ry="5.6" fill="url(#rg)"/><ellipse class="eye" cx="52" cy="45" rx="4.6" ry="5.6" fill="url(#rg)"/><path d="M35 53q7 4.5 14 0" stroke="#8E7748" stroke-width="2.2" fill="none" stroke-linecap="round"/><circle cx="8" cy="46" r="5" fill="url(#rg)"/><circle cx="76" cy="46" r="5" fill="url(#rg)"/><rect x="25" y="72" width="34" height="22" rx="11" fill="url(#rb)" stroke="#2A2320" stroke-width="1.5"/><circle cx="42" cy="83" r="4" fill="url(#rg)"/><rect class="arm" x="61" y="64" width="9" height="22" rx="4.5" fill="url(#rg)"/></svg></button></div>
+<div class="robo" id="robo"><div class="robo-say" id="rsay" role="status" aria-live="polite"></div><button class="robo-av" type="button" id="botbtn" aria-label="Digitalen Guide öffnen"><svg viewBox="0 0 84 100" aria-hidden="true"><defs><linearGradient id="rg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B8913A"/><stop offset="1" stop-color="#DCC283"/></linearGradient><linearGradient id="rb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#F7F1E6"/></linearGradient></defs><line x1="42" y1="8" x2="42" y2="20" stroke="#8C6A1F" stroke-width="2.4" stroke-linecap="round"/><circle class="ant" cx="42" cy="7" r="5" fill="url(#rg)"/><rect x="9" y="20" width="66" height="52" rx="26" fill="url(#rb)" stroke="#EFE4CF" stroke-width="1.5"/><rect x="17" y="30" width="50" height="30" rx="15" fill="#24201A"/><ellipse class="eye" cx="32" cy="45" rx="4.6" ry="5.6" fill="url(#rg)"/><ellipse class="eye" cx="52" cy="45" rx="4.6" ry="5.6" fill="url(#rg)"/><path d="M35 53q7 4.5 14 0" stroke="#DCC283" stroke-width="2.2" fill="none" stroke-linecap="round"/><circle cx="8" cy="46" r="5" fill="url(#rg)"/><circle cx="76" cy="46" r="5" fill="url(#rg)"/><rect x="25" y="72" width="34" height="22" rx="11" fill="url(#rb)" stroke="#EFE4CF" stroke-width="1.5"/><circle cx="42" cy="83" r="4" fill="url(#rg)"/><rect class="arm" x="61" y="64" width="9" height="22" rx="4.5" fill="url(#rg)"/></svg></button></div>
 <div class="bot" id="bot" role="dialog" aria-label="Assistent">
  <header><div>Lumi<small>Digitaler Guide von Lilli Geibel, rund um die Uhr</small></div><button type="button" aria-label="Schließen" id="botx">&times;</button></header>
  <div class="msgs" id="msgs"><div class="m">Hallo! Ich bin Lumi. Wobei darf ich Ihnen helfen?</div></div>
@@ -707,6 +819,10 @@ var li=document.querySelectorAll('.svc-list li'),mi=document.querySelectorAll('#
 function act(i){li.forEach(function(l,k){l.classList.toggle('on',k==i)});mi.forEach(function(m,k){m.classList.toggle('on',k==i)})}
 li.forEach(function(l){l.addEventListener('mouseenter',function(){act(+l.dataset.i)})});
 if('IntersectionObserver' in window){var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)act(+e.target.dataset.i)})},{rootMargin:'-48% 0px -48% 0px'});li.forEach(function(l){io2.observe(l)})}
+/* Hero-Slider (scharfe Fotos, weich überblendet) */
+var sl=document.querySelectorAll('.hm-main img,.hs-s'),sd=document.querySelectorAll('.hm-dots i'),sk=0;
+window.__slide=function(i){sk=i;sl.forEach(function(e,k){e.classList.toggle('on',k==i)});sd.forEach(function(e,k){e.classList.toggle('on',k==i)})};
+if(!QA&&sl.length>1&&!matchMedia('(prefers-reduced-motion: reduce)').matches)setInterval(function(){__slide((sk+1)%sl.length)},5200);
 /* Bewertungen */
 var qs=document.querySelectorAll('#quotes blockquote'),qd=document.querySelectorAll('#qdots button'),qk=0,qt;
 function q(i){qk=i;qs.forEach(function(b,k){b.classList.toggle('on',k==i)});qd.forEach(function(b,k){b.classList.toggle('on',k==i)})}

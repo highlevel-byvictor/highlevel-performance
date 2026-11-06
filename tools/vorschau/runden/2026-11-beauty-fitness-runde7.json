@@ -275,18 +275,14 @@
     "mb_btn": "Probetraining sichern",
     "hero_bg_src": "b5",
     "hero_bg_alt": "Trainingsfläche von new life",
-    "cut_src": "b1",
     "cut_alt": "Trainerin von new life",
     "eyebrow": "Fitnessstudio für Frauen in Bramsche",
     "h1": "Fitness, die sich <em>nach dir richtet.</em>",
     "sub": "Training nur für Frauen, immer mit Trainerin, 30 bis 45 Minuten pro Einheit – persönlich, ohne Schnickschnack und ohne lange Verträge.",
     "cta2": "So trainierst du bei uns",
     "proof_txt": "4 Wochen kostenlos testen – ohne Vertrag, ohne versteckte Kosten.",
-    "chip": [
-     "4 Wochen",
-     "kostenlos testen"
-    ],
-    "seal": "Fitness für Frauen · Bramsche · ",
+    "chip": null,
+    "seal": null,
     "seal_mono": "nl",
     "intro": "Hier gibt es keine Fitness-Prinzessinnen, sondern <em>Frauen wie dich.</em>",
     "intro_sig": "new life · Lindenstraße 60 · Bramsche",
@@ -300,12 +296,6 @@
       [
        "30–45 Minuten"
       ]
-     ],
-     [
-      "b2",
-      "Kurse",
-      "Gemeinsam trainieren, gegenseitig motivieren.",
-      []
      ],
      [
       "b6",
@@ -341,7 +331,11 @@
      "btn": "Probetraining sichern"
     },
     "moment": {
-     "img": "b5",
+     "imgs": [
+      "b6",
+      "b11",
+      "b10"
+     ],
      "text": "Kurz, effektiv – <em>und immer mit Trainerin.</em>"
     },
     "rev_eyebrow": "Das sagen unsere Mitglieder",
@@ -378,7 +372,7 @@
     "hcase": "uppercase",
     "ew": 900,
     "r": "18px",
-    "hero": "left",
+    "hero": "split",
     "svc_layout": "cols",
     "svc_banner": "b4",
     "rev_layout": "marquee",
@@ -388,7 +382,43 @@
      "Nur für Frauen",
      "Immer mit Trainerin",
      "30 bis 45 Minuten"
-    ]
+    ],
+    "split": {
+     "imgs": [
+      "b3"
+     ],
+     "shape": "tilt",
+     "side": "right",
+     "inset": "b2",
+     "inset_alt": "Kurs im new life",
+     "alt": "Lachende Frauen im new life Fitnessstudio",
+     "badge": [
+      "4 Wochen",
+      "kostenlos testen"
+     ]
+    },
+    "pattern": "stripes",
+    "edge": "slant",
+    "pat_o": 0.35,
+    "nav": [
+     [
+      "leistungen",
+      "Training"
+     ],
+     [
+      "bewertungen",
+      "Stimmen"
+     ],
+     [
+      "ueber",
+      "Team"
+     ],
+     [
+      "kontakt",
+      "Probetraining"
+     ]
+    ],
+    "svc_eyebrow": "Training"
    }
   },
   {
@@ -756,7 +786,9 @@
     "tour_u": "Hier lernen Sie Aleksandra kennen.",
     "tour_k": "Und hier vereinbaren Sie Ihren Termin: 0172 4028181.",
     "moment": {
-     "img": "b2",
+     "imgs": [
+      "b2"
+     ],
      "text": "Ihr Wohlfühlort <em>in Quakenbrück.</em>"
     },
     "font_set": "lucorose",
@@ -764,10 +796,13 @@
     "fb": "'Outfit',system-ui,sans-serif",
     "hls": "-.01em",
     "r": "28px",
-    "hero": "center",
+    "hero": "stage",
     "svc_layout": "mosaic",
     "rev_layout": "marquee",
-    "sig_shape": "blob"
+    "sig_shape": "blob",
+    "pattern": "petals",
+    "edge": "scallop",
+    "pat_o": 0.55
    }
   },
   {
@@ -1187,10 +1222,15 @@
     },
     "a_extra": " Gutscheine gibt es auch per Versand.",
     "moment": {
-     "img": "b8",
+     "imgs": [
+      "b8"
+     ],
      "text": "Gönne dir eine Auszeit <em>für deine Seele.</em>"
     },
-    "font_set": "kraemer"
+    "font_set": "kraemer",
+    "pattern": "petals",
+    "edge": "wave",
+    "pat_o": 0.45
    }
   },
   {
@@ -1446,7 +1486,6 @@
     "wm_sub": "Kosmetikstudio · Ankum",
     "hero_bg_src": "b6",
     "hero_bg_alt": "Studio von Katharina Melenberg",
-    "cut_src": "b6",
     "cut_keep": 0.66,
     "cut_alt": "Katharina Melenberg, Inhaberin und Hautexpertin",
     "eyebrow": "Kosmetikstudio in Ankum",
@@ -1458,7 +1497,7 @@
      "Hautanalyse",
      "Ihr Start zu besserer Haut"
     ],
-    "seal": "Hautexpertin seit 2018 · Ankum · ",
+    "seal": null,
     "seal_mono": "KM",
     "intro": "Mein Ziel ist eine <em>gesunde, ausgeglichene und strahlende Haut</em> – jede Behandlung individuell auf Ihr Hautbild abgestimmt.",
     "intro_sig": "Katharina Melenberg · Hauptstraße 55 · Ankum",
@@ -1532,7 +1571,10 @@
     "tour_u": "Hier lernen Sie Katharina kennen.",
     "tour_k": "Und hier vereinbaren Sie Ihren Termin: 0176 72924308.",
     "moment": {
-     "img": "b8",
+     "imgs": [
+      "b5",
+      "b4"
+     ],
      "text": "Ruhige Räume, Zeit und <em>ehrliche Beratung.</em>"
     },
     "font_set": "melenberg",
@@ -1542,7 +1584,7 @@
     "hw": 600,
     "hls": "-.04em",
     "r": "14px",
-    "hero": "left",
+    "hero": "split",
     "svc_layout": "cols",
     "svc_banner": "b3",
     "rev_layout": "split",
@@ -1561,7 +1603,21 @@
       "Google-Bewertungen"
      ]
     ],
-    "banner_ratio": "16/8"
+    "banner_ratio": "16/8",
+    "split": {
+     "imgs": [
+      "b3",
+      "b2",
+      "b8"
+     ],
+     "shape": "wide",
+     "side": "right",
+     "alt": "Katharina Melenberg bei der Behandlung",
+     "inset": null
+    },
+    "pattern": "arches",
+    "edge": "arc",
+    "pat_o": 0.45
    }
   },
   {
@@ -1910,7 +1966,10 @@
     "tour_r": "Hier lesen Sie, was Kundinnen sagen.",
     "tour_k": "Und hier vereinbaren Sie Ihren Termin: 04443 513430.",
     "moment": {
-     "img": "b4",
+     "imgs": [
+      "b3",
+      "b5"
+     ],
      "text": "Ganz ohne Hektik. <em>Nur Sie und Ihre Haut.</em>"
     },
     "font_set": "meeners",
@@ -1925,7 +1984,11 @@
     "svc_layout": "menu",
     "menu_title": "Behandlungskarte",
     "rev_layout": "single",
-    "sig_shape": "arch"
+    "sig_shape": "arch",
+    "pattern": "waves",
+    "edge": "wave",
+    "pat_o": 0.5,
+    "full_left": "36%"
    }
   },
   {
@@ -1996,7 +2059,10 @@
     "https://day-spa-warkentin.de/wp-content/uploads/2020/01/DAY-SPA-Tatiana-Warkentin-Beauty-und-Kosmetik-komp-1024x683.jpg",
     "https://day-spa-warkentin.de/wp-content/uploads/2020/02/IMG_20200111_112339.jpg",
     "https://day-spa-warkentin.de/wp-content/uploads/2020/02/IMG_20200111_105225.jpg",
-    "https://day-spa-warkentin.de/wp-content/uploads/2020/02/IMG_0214.jpg"
+    "https://day-spa-warkentin.de/wp-content/uploads/2020/02/IMG_0214.jpg",
+    "https://day-spa-warkentin.de/wp-content/uploads/2021/01/IMG_7951.jpg",
+    "https://day-spa-warkentin.de/wp-content/uploads/2020/01/VID_20190816_161432.00_02_05_20.Standbild006-scaled.jpg",
+    "https://day-spa-warkentin.de/wp-content/uploads/2021/01/IMG_7876.jpg"
    ],
    "reviews": [
     [
@@ -2292,8 +2358,12 @@
     "no_logo": true,
     "seal_pos": "br",
     "moment": {
-     "img": "b3",
-     "text": "Ihr Kurzurlaub <em>vor der Haustür.</em>"
+     "imgs": [
+      "b13"
+     ],
+     "h": "min(620px,50vw)",
+     "text": "Lachen, abschalten, <em>gemeinsam genießen.</em>",
+     "alt": "Fröhliche Gäste im DAY-SPA"
     },
     "font_set": "warkentin",
     "fh": "'Marcellus',Georgia,serif",
@@ -2303,7 +2373,7 @@
     "hls": "0",
     "r": "20px",
     "hero": "full",
-    "full_img": "b3",
+    "full_img": "b14",
     "full_pos": "50% 60%",
     "svc_layout": "mosaic",
     "rev_layout": "single",
@@ -2321,7 +2391,10 @@
       "39",
       "Google-Bewertungen"
      ]
-    ]
+    ],
+    "pattern": "leaves",
+    "edge": "double",
+    "pat_o": 0.4
    }
   },
   {
@@ -2565,14 +2638,14 @@
    "template": "beauty",
    "beauty": {
     "c": {
-     "bg": "#FBF8F2",
-     "pearl": "#F4ECDD",
-     "blush": "#EFE3CB",
-     "acc": "#B8902E",
-     "acc_d": "#8A6A1A",
-     "champ": "#E2CC98",
-     "ink": "#1C1917",
-     "mute": "#5D554A",
+     "bg": "#FBF6F1",
+     "pearl": "#F4E9DF",
+     "blush": "#EBD9C9",
+     "acc": "#B5734A",
+     "acc_d": "#8A4F2C",
+     "champ": "#D9B48C",
+     "ink": "#2A1E18",
+     "mute": "#64544A",
      "star": "#FFA41C"
     },
     "cta_btn": "Termin anfragen",
@@ -2586,18 +2659,14 @@
     "wm_sub": "Brautstyling & Kosmetik · Damme",
     "hero_bg_src": "b2",
     "hero_bg_alt": "Arbeitsplatz von Tinas Beauty Manufaktur",
-    "cut_src": "b1",
     "cut_alt": "Tina Runnebaum, Gründerin von Tinas Beauty Manufaktur",
     "eyebrow": "Brautstyling und Kosmetik in Damme",
     "h1": "Dein schönster Tag. <em>Dein schönstes Ich.</em>",
     "sub": "Brautstyling, Eventstyling, Lashlifting, Brow-Styling und kosmetisches Zahnbleaching – im Homestudio in Damme, mit Zeit und Ruhe für dich.",
     "cta2": "Leistungen ansehen",
     "proof_txt": "Braut- und Eventstyling seit 2020 – im eigenen Homestudio.",
-    "chip": [
-     "Probestyling",
-     "Vor deiner Hochzeit"
-    ],
-    "seal": "Braut- und Eventstyling · Damme · ",
+    "chip": null,
+    "seal": null,
     "seal_mono": "T",
     "intro": "Ich bin an deinem Tag <em>ganz bei dir</em> – ruhig, vorbereitet und mit Blick fürs Detail.",
     "intro_sig": "Tinas Beauty Manufaktur · Ringstraße 12 · Damme",
@@ -2672,22 +2741,38 @@
     "tour_u": "Hier lernst du Tina kennen.",
     "tour_k": "Und hier schreibst du Tina für deinen Termin: 01573 1103006.",
     "moment": {
-     "img": "b2",
+     "imgs": [
+      "b6",
+      "b7"
+     ],
      "text": "Ruhig, vorbereitet, <em>mit Blick fürs Detail.</em>"
     },
     "font_set": "tinas",
-    "fh": "'Playfair Display',Georgia,serif",
-    "fb": "'Work Sans',system-ui,sans-serif",
-    "fa": "'Great Vibes',cursive",
-    "hw": 500,
+    "fh": "'Prata',Georgia,serif",
+    "fb": "'Jost',system-ui,sans-serif",
+    "fa": "'Allura',cursive",
+    "hw": 400,
     "hls": "-.02em",
     "es": "normal",
-    "esize": "1.18em",
+    "esize": "1.25em",
     "r": "6px",
-    "hero": "right",
+    "hero": "split",
     "svc_layout": "zigzag",
     "rev_layout": "single",
-    "sig_shape": "arch"
+    "sig_shape": "arch",
+    "split": {
+     "imgs": [
+      "b4"
+     ],
+     "shape": "bleed",
+     "side": "left",
+     "inset": "b3",
+     "inset_alt": "Tina beim Brautstyling",
+     "alt": "Braut mit Tina vor dem großen Tag"
+    },
+    "pattern": "sparkle",
+    "edge": "arc",
+    "pat_o": 0.45
    }
   },
   {
@@ -2925,14 +3010,14 @@
    "template": "beauty",
    "beauty": {
     "c": {
-     "bg": "#121014",
-     "pearl": "#1D1A1F",
-     "blush": "#2A2320",
-     "acc": "#C9A54A",
-     "acc_d": "#E2C47A",
-     "champ": "#8E7748",
-     "ink": "#F2ECE1",
-     "mute": "#B3AA9C",
+     "bg": "#FDFBF7",
+     "pearl": "#F7F1E6",
+     "blush": "#EFE4CF",
+     "acc": "#B8913A",
+     "acc_d": "#8C6A1F",
+     "champ": "#DCC283",
+     "ink": "#24201A",
+     "mute": "#5E574C",
      "star": "#FFA41C"
     },
     "cta_btn": "Termin anfragen",
@@ -2947,18 +3032,14 @@
     "logo_h": 84,
     "hero_bg_src": "b4",
     "hero_bg_alt": "Behandlungsraum im Kosmetikinstitut Lilli Geibel",
-    "cut_src": "b1",
     "cut_alt": "Lilli Geibel, Inhaberin",
     "eyebrow": "Kosmetikinstitut in Nortrup",
     "h1": "Individuelle Lösungen <em>für anspruchsvolle Haut.</em>",
     "sub": "Spezialisierte Aknebehandlungen, Gesichtsbehandlungen, dauerhafte Haarentfernung, Bodyforming und kosmetische Zahnaufhellung – mit modernster Technik in entspannter Atmosphäre.",
     "cta2": "Behandlungen ansehen",
     "proof_txt": "Modernste Laser- und Bodyforming-Technik – Termine auch kurzfristig.",
-    "chip": [
-     "Aquafacial",
-     "Sofort sichtbarer Glow"
-    ],
-    "seal": "Modernste Beauty-Technologie · ",
+    "chip": null,
+    "seal": null,
     "seal_mono": "LG",
     "intro": "Kosmetik ist für mich mehr als ein Beruf – <em>sie ist meine Leidenschaft.</em>",
     "intro_sig": "Kosmetikinstitut Lilli Geibel · Am Alten Sportplatz 20 · Nortrup",
@@ -3041,21 +3122,40 @@
     "tour_u": "Hier lernen Sie Lilli Geibel kennen.",
     "tour_k": "Und hier vereinbaren Sie Ihren Termin: 05436 7229889.",
     "moment": {
-     "img": "b6",
+     "imgs": [
+      "b4",
+      "b6"
+     ],
      "text": "Helle Räume, moderne Technik <em>und Zeit für Sie.</em>"
     },
     "font_set": "lilli",
-    "fh": "'Italiana',Georgia,serif",
-    "fb": "'Inter',system-ui,sans-serif",
-    "fa": "'Cormorant',Georgia,serif",
-    "ew": 500,
-    "hls": ".005em",
+    "fh": "'Playfair Display',Georgia,serif",
+    "fb": "'Montserrat',system-ui,sans-serif",
+    "fa": "'Playfair Display',Georgia,serif",
+    "ew": 400,
+    "hls": "-.01em",
     "r": "2px",
-    "hero": "right",
-    "dark": true,
+    "hero": "split",
+    "dark": false,
     "svc_layout": "arch",
     "rev_layout": "split",
-    "sig_shape": "circle"
+    "sig_shape": "circle",
+    "split": {
+     "imgs": [
+      "b5"
+     ],
+     "shape": "frame",
+     "side": "right",
+     "inset": "b7",
+     "inset_alt": "Behandlung mit moderner Technik",
+     "alt": "Lilli Geibel bei einer Gesichtsbehandlung"
+    },
+    "pattern": "deco",
+    "edge": "arc",
+    "pat_o": 0.4,
+    "hw": 600,
+    "es": "italic",
+    "h1_size": "clamp(42px,4.3vw,70px)"
    }
   },
   {
@@ -3183,14 +3283,13 @@
     "mb_btn": "Termin anfragen",
     "hero_bg_src": "b5",
     "hero_bg_alt": "Behandlungsraum von Chillout Cosmetic",
-    "cut_src": "b1",
     "cut_alt": "Anja Gerken, Inhaberin von Chillout Cosmetic",
-    "eyebrow": "Kosmetikstudio in Cloppenburg",
+    "eyebrow": "beruhigend natürlich · entspannt schön",
     "h1": "Entspannen. Genießen. <em>Vertrauen.</em>",
-    "sub": "Gesichtsbehandlungen, 3D-Hautanalyse, Akne- und Couperose-Programme, Micro Needling, Lifting für Wimpern und Brauen – mit hochwertigsten Pflegeprodukten und neuester Technik.",
+    "sub": "Kosmetik mit Tiefenwirkung in Cloppenburg – mit Zeit für Dich und Deine Haut.",
     "cta2": "Behandlungen ansehen",
     "proof_txt": "Echte Ergebnisse, keine Kompromisse – für Sie und Ihn.",
-    "seal": "Chillout Cosmetic · Cloppenburg · ",
+    "seal": null,
     "seal_mono": "C",
     "intro": "„Chillout“ ist für uns mehr als ein Name – <em>es ist unsere Philosophie.</em>",
     "intro_sig": "Chillout Cosmetic · Brandstraße 2 · Cloppenburg",
@@ -3200,12 +3299,8 @@
      [
       "b2",
       "Gesichtsbehandlungen",
-      "Von der Hautrein- bis zur Intensiv-Behandlung – mit Produkten von Dr. Grandel.",
-      [
-       "Reinigung",
-       "Pflege",
-       "Massage"
-      ]
+      "Von der Hautreinigung bis zur Intensiv-Behandlung.",
+      []
      ],
      [
       "b6",
@@ -3216,7 +3311,7 @@
      [
       "b3",
       "Micro Needling",
-      "Hautregeneration durch Stimulation – für ein verfeinertes, festeres Hautbild.",
+      "Hautregeneration durch Stimulation.",
       []
      ],
      [
@@ -3228,13 +3323,7 @@
      [
       "b5",
       "Hand- und Fußpflege, Waxing",
-      "Gepflegt bis in die Fingerspitzen – und professionelles Waxing.",
-      []
-     ],
-     [
-      "b10",
-      "Aromatherapie und Massagen",
-      "Luxuriöse Gesichts- und Körperpflege zum Abschalten.",
+      "Gepflegt bis in die Fingerspitzen.",
       []
      ]
     ],
@@ -3253,24 +3342,16 @@
      "btn": "Hautanalyse anfragen"
     },
     "moment": {
-     "img": "b7",
-     "text": "Schön, dass <em>Du da bist.</em>"
+     "imgs": [
+      "b7",
+      "b9",
+      "b10"
+     ],
+     "text": "Unsere <em>Räumlichkeiten.</em>",
+     "alt": "Studio Chillout Cosmetic"
     },
     "rev_eyebrow": "Das sagen unsere Kundinnen",
-    "story": {
-     "eyebrow": "Unsere Produkte",
-     "h2": "Hochwertigste Pflege – <em>auch für zuhause.</em>",
-     "p": [
-      "Wir arbeiten mit Produkten von Dr. Grandel, Mesoestetic, CNC, Phyris und weiteren – damit Deine Haut auch zuhause bekommt, was sie braucht."
-     ],
-     "img1": "b8",
-     "lab1": "Pflege",
-     "cap1": "Ausgewählte Cosmeceuticals",
-     "img2": "b9",
-     "lab2": "Studio",
-     "cap2": "Brandstraße 2",
-     "bw": false
-    },
+    "story": null,
     "team_img": "b13",
     "team_ratio": "1501/1000",
     "team_alt": "Im Studio von Chillout Cosmetic",
@@ -3302,11 +3383,22 @@
     "hls": "-.02em",
     "ew": 300,
     "r": "40px",
-    "hero": "center",
-    "svc_layout": "menu",
+    "hero": "full",
+    "svc_layout": "mosaic",
     "menu_title": "Unsere Behandlungen",
     "rev_layout": "marquee",
-    "sig_shape": "circle"
+    "sig_shape": "circle",
+    "slides": [
+     "b2",
+     "b6",
+     "b8",
+     "b4"
+    ],
+    "full_img": "b2",
+    "pattern": "leaves",
+    "edge": "wave",
+    "pat_o": 0.5,
+    "chip": null
    }
   },
   {
@@ -3481,7 +3573,10 @@
      "btn": "Kennenlern-Behandlung anfragen"
     },
     "moment": {
-     "img": "b3",
+     "imgs": [
+      "b7",
+      "b3"
+     ],
      "text": "Ihre regelmäßige <em>Auszeit.</em>"
     },
     "rev_eyebrow": "Das sagen meine Kundinnen",
@@ -3546,7 +3641,10 @@
       "4,6",
       "Sterne bei Google"
      ]
-    ]
+    ],
+    "pattern": "dots",
+    "edge": "double",
+    "pat_o": 0.3
    }
   }
  ]

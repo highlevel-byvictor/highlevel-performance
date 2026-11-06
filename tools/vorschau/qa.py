@@ -60,6 +60,18 @@ JS_TPROBE = """([b]) => { const res=[]; const xs=[.12,.5,.88], ys=[.3,.7];
   if(!own) continue;
   res.push(e.tagName.toLowerCase()+(typeof e.className==='string'&&e.className?'.'+e.className.split(' ')[0]:'')); } return res; }"""
 
+PIX_MAX = 1.35
+JS_PIX = """async (dpr) => { const out=[]; const skip=e=>e.closest('.robo,.bot,.pv,.callbar,.top,footer');
+ for(const im of document.images){ const r=im.getBoundingClientRect(); const cs=getComputedStyle(im);
+  if(skip(im)||cs.display==='none'||parseFloat(cs.opacity)<0.05||r.width<80||!im.naturalWidth) continue;
+  const s=(cs.objectFit==='contain'?Math.min(r.width/im.naturalWidth,r.height/im.naturalHeight):Math.max(r.width/im.naturalWidth,r.height/im.naturalHeight))*dpr;
+  out.push([(im.currentSrc||im.src).split('/').pop(), s, r.width, r.height]); }
+ for(const el of document.querySelectorAll('.hero-bg,[style*="background-image"]')){ const cs=getComputedStyle(el); if(cs.display==='none'||parseFloat(cs.opacity)<0.05) continue;
+  const m=/url\\(["']?([^"')]+)/.exec(cs.backgroundImage); if(!m||/hero-bg/.test(m[1])) continue;
+  const r=el.getBoundingClientRect(); const i=new Image(); i.src=m[1]; try{await i.decode()}catch(e){continue}
+  out.push([m[1].split('/').pop(), Math.max(r.width/i.naturalWidth,r.height/i.naturalHeight)*dpr, r.width, r.height]); }
+ return out; }"""
+
 def visible_src_box(o):
     """Welcher Ausschnitt des Originalbilds (0..1) ist im Element sichtbar? (object-fit cover/contain/fill)"""
     W, H, nw, nh = o["w"], o["h"], o["nw"], o["nh"]
@@ -88,13 +100,18 @@ def check_page(br, page_dir: Path, shots=None):
         pg.evaluate("scrollTo(0,0)"); pg.wait_for_timeout(200)
         ow = pg.evaluate("document.documentElement.scrollWidth - innerWidth")
         if ow > 1: errs.append(f"[{name}] Seite läuft {ow}px seitlich über")
-        passes = [None] + list(range(pg.evaluate("document.querySelectorAll('.svc-list li').length") if pg.evaluate("!!document.querySelector('#svcm') && getComputedStyle(document.querySelector('#svcm')).display!=='none'") else 0))
+        nsvc = pg.evaluate("document.querySelectorAll('.svc-list li').length") if pg.evaluate("!!document.querySelector('#svcm') && getComputedStyle(document.querySelector('#svcm')).display!=='none'") else 0
+        nsl = pg.evaluate("document.querySelectorAll('.hm-main img,.hs-s').length")
+        passes = [None] + [("svc", k) for k in range(nsvc)] + [("sl", k) for k in range(1, nsl)]
         for ps in passes:
-          if ps is not None:
-            pg.evaluate(f"document.querySelectorAll('.svc-list li')[{ps}].dispatchEvent(new Event('mouseenter'))"); pg.wait_for_timeout(50)
+          if ps is not None and ps[0] == "svc":
+            pg.evaluate(f"document.querySelectorAll('.svc-list li')[{ps[1]}].dispatchEvent(new Event('mouseenter'))"); pg.wait_for_timeout(50)
+          if ps is not None and ps[0] == "sl":
+            pg.evaluate(f"window.__slide({ps[1]})"); pg.wait_for_timeout(50)
           for o in pg.evaluate(JS_IMGS):
             if not o["vis"]: continue
-            if ps is not None and "svc" not in pg.evaluate(f"document.images[{o['i']}].parentElement.id||''"): continue
+            if ps is not None and ps[0] == "svc" and "svc" not in pg.evaluate(f"document.images[{o['i']}].parentElement.id||''"): continue
+            if ps is not None and ps[0] == "sl" and not pg.evaluate(f"!!document.images[{o['i']}].closest('.hm-main')"): continue
             p = Path(o["src"].replace("file://", "").split("?")[0])
             fs = faces(p)
             if not fs: continue
@@ -124,6 +141,14 @@ def check_page(br, page_dir: Path, shots=None):
                 if cov: errs.append(f"[{name}] {p.name}: Gesicht überdeckt von {cov[0]}")
                 if any(v in ("out", "clip") for v in rf + rh):
                     errs.append(f"[{name}] {p.name}: Kopf/Gesicht abgeschnitten (Zuschnitt {o['w']:.0f}x{o['h']:.0f}px)")
+        if nsl > 1: pg.evaluate("window.__slide(0)")
+        # Pixel: kein Bild darf sichtbar hochskaliert (verpixelt) werden
+        lim = 2.4 if mob else PIX_MAX
+        for k in range(max(1, nsl)):
+            if nsl > 1: pg.evaluate(f"window.__slide({k})")
+            for src, sc, w, h in pg.evaluate(JS_PIX, dpr):
+                if sc > lim: errs.append(f"[{name}] {src}: {sc:.2f}x hochskaliert ({w:.0f}x{h:.0f}px Fläche) – verpixelt, größeres Bild oder kleinere Fläche nehmen")
+        if nsl > 1: pg.evaluate("window.__slide(0)")
         # Texte
         for b in pg.evaluate(JS_TEXT):
             if b.get("over"): errs.append(f"[{name}] Überschrift \"{b['t'][:40]}\" läuft aus dem Bildschirm")

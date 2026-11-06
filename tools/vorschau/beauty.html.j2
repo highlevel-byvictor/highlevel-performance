@@ -2,6 +2,20 @@
     Leitbild: ruhig wie Wasser, weiche Rundungen, Luxus-Editorial (Sturm, Bader, Aesop, La Mer). -#}
 {%- set B = f.beauty -%}{%- set c = B.c -%}{%- set I = f.allimg -%}
 {%- set du = B.get('du', True) -%}
+{%- set HS = B.get('split') -%}{%- set HERO = B.get('hero','right') -%}
+{%- set pc = (B.get('pat_c') or c.acc) | replace('#','%23') -%}
+{%- set PATS = {
+ 'petals': ('<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><g fill="none" stroke="' ~ pc ~ '" stroke-width="1.1"><path d="M32 22c3-6 9-5 9 0 6-1 7 6 1 8 3 5-3 9-6 5-2 6-9 4-8-1-6 1-7-6-1-8-3-5 3-9 5-4z"/><circle cx="32" cy="29" r="2.2"/></g><circle cx="4" cy="60" r="1.6" fill="' ~ pc ~ '"/></svg>', '64px 64px'),
+ 'leaves': ('<svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" viewBox="0 0 90 90"><g fill="none" stroke="' ~ pc ~ '" stroke-width="1"><path d="M14 76C20 50 40 34 66 30"/><path d="M26 56c-8-2-12-9-10-16 8 1 12 8 10 16zM38 46c-2-8 2-15 9-17 2 8-2 14-9 17zM50 38c-7-4-8-12-4-18 7 4 8 11 4 18z"/></g></svg>', '90px 90px'),
+ 'dots': ('<svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 26 26"><circle cx="6" cy="6" r="2.4" fill="' ~ pc ~ '"/><circle cx="19" cy="19" r="2.4" fill="' ~ pc ~ '"/></svg>', '26px 26px'),
+ 'stripes': ('<svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 22 22"><path d="M-2 24L24-2M-2 2L2-2M20 24l4-4" stroke="' ~ pc ~ '" stroke-width="3"/></svg>', '22px 22px'),
+ 'deco': ('<svg xmlns="http://www.w3.org/2000/svg" width="56" height="56" viewBox="0 0 56 56"><g fill="none" stroke="' ~ pc ~ '" stroke-width="1"><path d="M28 2L54 28 28 54 2 28z"/><path d="M28 14L42 28 28 42 14 28z"/></g><circle cx="28" cy="28" r="2" fill="' ~ pc ~ '"/></svg>', '56px 56px'),
+ 'sparkle': ('<svg xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 70 70"><path d="M20 8c1 8 4 11 12 12-8 1-11 4-12 12-1-8-4-11-12-12 8-1 11-4 12-12zM52 44c.6 5 2.4 6.8 7.4 7.4-5 .6-6.8 2.4-7.4 7.4-.6-5-2.4-6.8-7.4-7.4 5-.6 6.8-2.4 7.4-7.4z" fill="' ~ pc ~ '"/></svg>', '70px 70px'),
+ 'waves': ('<svg xmlns="http://www.w3.org/2000/svg" width="80" height="24" viewBox="0 0 80 24"><path d="M0 12c10-8 20-8 30 0s20 8 30 0 20-8 30 0" fill="none" stroke="' ~ pc ~ '" stroke-width="1.2"/></svg>', '80px 24px'),
+ 'arches': ('<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><path d="M8 44V22a16 16 0 0 1 32 0v22" fill="none" stroke="' ~ pc ~ '" stroke-width="1"/></svg>', '48px 48px')
+} -%}
+{%- set P = PATS.get(B.get('pattern','petals')) -%}
+{%- set EDGE = B.get('edge','wave') -%}
 {%- macro im(k, alt='', cls='', pos=None, eager=False) -%}<img src="{{ I[k] }}" alt="{{ alt }}"{% if cls %} class="{{ cls }}"{% endif %}{% if pos or B.pos.get(k) %} style="object-position:{{ pos or B.pos.get(k) }}"{% endif %}{% if not eager %} loading="lazy"{% endif %} decoding="async">{%- endmacro -%}
 <!DOCTYPE html>
 <html lang="de">
@@ -18,7 +32,8 @@
  --grad:linear-gradient(120deg,var(--acc) 0%,color-mix(in srgb,var(--acc) 55%,var(--champ)) 55%,var(--champ) 100%);
  --grad-soft:linear-gradient(160deg,var(--pearl) 0%,var(--blush) 55%,color-mix(in srgb,var(--champ) 45%,var(--pearl)) 100%);
  --fh:{{ B.get('fh', "'Bodoni Moda',Didot,'Times New Roman',serif") | safe }};--fb:{{ B.get('fb', "'Jost','Helvetica Neue',system-ui,sans-serif") | safe }};
- --ease:cubic-bezier(.22,.8,.24,1);--r:{{ B.get('r','36px') }};--fa:{{ (B.get('fa') or 'var(--fh)') | safe }};--hw:{{ B.get('hw',400) }};--hls:{{ B.get('hls','-.015em') }};
+ --ease:cubic-bezier(.22,.8,.24,1);{% if B.get('h1_size') %}--h1:{{ B.h1_size }};{% endif %}--r:{{ B.get('r','36px') }};--fa:{{ (B.get('fa') or 'var(--fh)') | safe }};--hw:{{ B.get('hw',400) }};--hls:{{ B.get('hls','-.015em') }};
+ --pat:url('data:image/svg+xml;utf8,{{ P[0] | safe }}');--pat-s:{{ P[1] }};--pat-o:{{ B.get('pat_o', 0.5) }};
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%;scroll-behavior:auto}
@@ -73,7 +88,7 @@ h2{font-size:clamp(38px,4.6vw,68px)}
 .h-txt::before{content:"";position:absolute;inset:-14% -18% -6% -30%;z-index:-1;pointer-events:none;background:radial-gradient(closest-side,color-mix(in srgb,#fff 82%,transparent),color-mix(in srgb,#fff 55%,transparent) 55%,transparent);filter:blur(10px)}
 .h-txt .lead,.h-txt .eyebrow,.h-proof{text-shadow:0 0 18px #fff,0 0 2px color-mix(in srgb,#fff 80%,transparent)}
 .h-txt .eyebrow{margin-bottom:30px}
-.hero h1{font-size:clamp(48px,5.5vw,96px);line-height:.98;letter-spacing:-.025em;margin-bottom:30px}
+.hero h1{font-size:var(--h1,clamp(48px,5.5vw,96px));line-height:.98;letter-spacing:-.025em;margin-bottom:30px}
 .hero h1 em{display:block;background:linear-gradient(100deg,var(--acc-d),var(--acc) 50%,color-mix(in srgb,var(--champ) 80%,var(--acc-d)));-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:.08em}
 .hero .lead{margin-bottom:40px}
 .h-cta{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:46px}
@@ -155,15 +170,25 @@ h2{font-size:clamp(38px,4.6vw,68px)}
 .sig-q{font:italic 400 22px/1.45 var(--fh);color:var(--ink);max-width:24em;margin-bottom:36px}
 .sig-q .stars{display:flex;margin-bottom:12px}
 
-/* ---------- Video-Band (eigenes Video der Firma, weich verschwommen) ---------- */
-.vband{position:relative;height:min(78svh,720px);overflow:hidden;isolation:isolate;display:grid;place-items:center;text-align:center}
-.vband video{position:absolute;inset:-6%;width:112%;height:112%;object-fit:cover;z-index:-2;filter:blur(14px) saturate(.92) brightness(1.04);transform:scale(1.06)}
-.vband::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,var(--bg) 0%,color-mix(in srgb,var(--bg) 25%,transparent) 22%,color-mix(in srgb,var(--blush) 30%,transparent) 50%,color-mix(in srgb,var(--bg) 25%,transparent) 78%,var(--bg) 100%)}
-.vband p{font:400 clamp(30px,3.6vw,56px)/1.2 var(--fh);letter-spacing:-.01em;max-width:18em;padding:0 24px;text-shadow:0 0 30px #fff,0 0 12px color-mix(in srgb,#fff 80%,transparent)}
-.vband p em{color:var(--acc-d)}
-.vband .km{position:absolute;inset:-8%;z-index:-2;background-size:cover;filter:blur(12px) saturate(.95) brightness(1.05);animation:kb 24s ease-in-out infinite alternate}
-@keyframes kb{0%{transform:scale(1.05) translate3d(-2%,-1%,0)}50%{transform:scale(1.14) translate3d(2%,1.5%,0)}100%{transform:scale(1.08) translate3d(1%,-2%,0)}}
-@media (prefers-reduced-motion:reduce){.vband video{display:none}.vband{background:var(--grad-soft)}}
+/* ---------- Bildband: scharfe eigene Fotos, Text auf ruhiger Karte (nie Schrift auf Foto) ---------- */
+.mband{position:relative;padding:30px 0 70px}
+.mb-in{display:grid;gap:clamp(12px,1.6vw,22px);grid-template-columns:repeat(var(--n,1),minmax(0,1fr))}
+.mb-n1{--n:1}.mb-n2{--n:2}.mb-n3{--n:3}
+.mb-f{position:relative;height:var(--mbh,clamp(300px,36vw,520px));border-radius:var(--r);overflow:hidden;box-shadow:0 50px 80px -60px color-mix(in srgb,var(--ink) 60%,transparent)}
+.mb-n3 .mb-f:nth-child(2){transform:translateY(-34px)}
+.mb-f img,.mb-f video{width:100%;height:100%;object-fit:cover;display:block}
+.mb-card{position:relative;z-index:2;width:min(760px,calc(100% - 40px));margin:-74px auto 0;padding:34px clamp(26px,4vw,56px) 36px;text-align:center;border-radius:calc(var(--r) * .8);background:var(--bg);box-shadow:0 40px 70px -40px color-mix(in srgb,var(--acc-d) 45%,transparent),inset 0 0 0 1px color-mix(in srgb,var(--acc) 16%,transparent)}
+.mb-card p{font:var(--hw) clamp(26px,2.8vw,42px)/1.22 var(--fh);letter-spacing:var(--hls);{% if B.get('hcase') %}text-transform:{{ B.hcase }};{% endif %}}
+.mb-card p em{font-family:var(--fa);font-style:{{ B.get('es','italic') }};color:var(--acc-d)}
+.mb-orn{display:block;width:120px;height:14px;margin:0 auto 16px;background:var(--pat) center/var(--pat-s);opacity:.8;-webkit-mask:linear-gradient(90deg,transparent,#000 30%,#000 70%,transparent);mask:linear-gradient(90deg,transparent,#000 30%,#000 70%,transparent)}
+
+/* ---------- Muster-Übergänge ---------- */
+.pdiv{position:relative;height:64px;margin:0 auto;width:min(1240px,calc(100% - 64px));display:grid;place-items:center}
+.pdiv::before{content:"";position:absolute;inset:0;background:var(--pat) center/var(--pat-s);opacity:var(--pat-o);-webkit-mask:linear-gradient(90deg,transparent,#000 22%,#000 78%,transparent);mask:linear-gradient(90deg,transparent,#000 22%,#000 78%,transparent)}
+.pdiv span{position:relative;width:16px;height:16px;transform:rotate(45deg);background:var(--bg);box-shadow:0 0 0 7px var(--bg),inset 0 0 0 1.5px var(--acc)}
+.hero-pat{position:absolute;inset:0;z-index:-2;background:var(--pat) 0 0/var(--pat-s),linear-gradient(160deg,var(--pearl),var(--bg) 60%);opacity:1}
+.hero-pat::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,color-mix(in srgb,var(--bg) 88%,transparent) 40%,color-mix(in srgb,var(--bg) 55%,transparent) 100%)}
+.sig-sec::after,.ct::before{content:"";position:absolute;inset:0;z-index:-1;background:var(--pat) 0 0/var(--pat-s);opacity:calc(var(--pat-o) * .45);pointer-events:none}
 
 /* ---------- Bewertungen ---------- */
 .rev{padding:150px 0 140px;text-align:center;position:relative}
@@ -325,7 +350,8 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
 .h-center .chip{left:50%;transform:translateX(-50%);bottom:8%;animation:none}
 .h-center .h-por .halo{width:min(520px,100%)}
 /* Hero Vollbild: echtes Foto, Text auf weichem Verlauf */
-.h-full .hero-bg{filter:none;inset:0;animation:breathe 30s ease-in-out infinite alternate}
+.h-full .hero-bg{filter:none;inset:0;animation:none;transform:none}
+.h-full .hero-bg.part{-webkit-mask-image:linear-gradient(90deg,transparent,#000 22%);mask-image:linear-gradient(90deg,transparent,#000 22%)}
 .h-full .hero-wash{background:linear-gradient(90deg,var(--bg) 0%,color-mix(in srgb,var(--bg) 92%,transparent) 30%,color-mix(in srgb,var(--bg) 40%,transparent) 55%,transparent 75%),linear-gradient(180deg,transparent 70%,var(--bg) 100%)}
 .h-full .liquid{display:none}
 .h-full .top{background:color-mix(in srgb,var(--bg) 72%,transparent);backdrop-filter:blur(16px) saturate(1.2);-webkit-backdrop-filter:blur(16px) saturate(1.2)}
@@ -434,8 +460,73 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
 .dark .ft-logo{background:transparent;padding:0}
 .dark footer{background:color-mix(in srgb,var(--bg) 70%,#000)}
 .dark .flow li .dot{background:var(--pearl)}
-.dark .vband p{text-shadow:0 0 30px var(--bg),0 0 12px var(--bg)}
-.dark .vband .km,.dark .vband video{filter:blur(12px) brightness(.55) saturate(.9)}
+
+/* Hero geteilt: echtes, scharfes Foto (optional Slider), Text auf ruhigem Grund mit Muster */
+.h-split .hero .wrap{grid-template-columns:minmax(0,1fr) minmax(0,1.05fr);gap:clamp(30px,5vw,80px);align-items:center}
+.h-split .h-txt{padding-bottom:4vh}
+.h-split .h-txt::before{display:none}
+.h-split .h-txt .lead,.h-split .h-txt .eyebrow,.h-split .h-proof{text-shadow:none}
+.h-split .top{background:color-mix(in srgb,var(--bg) 80%,transparent);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px)}
+.h-media{position:relative;align-self:center}
+.hm-main{position:relative;overflow:hidden}
+.hm-main img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity 1.4s var(--ease),transform 7s linear}
+.hm-main img.on{opacity:1}
+.hm-dots{position:absolute;left:50%;bottom:18px;transform:translateX(-50%);display:flex;gap:8px;z-index:3}
+.hm-dots i{width:26px;height:4px;border-radius:4px;background:color-mix(in srgb,#fff 60%,transparent);transition:background .5s,width .5s}
+.hm-dots i.on{background:#fff;width:42px}
+.hm-inset{position:absolute;z-index:2;overflow:hidden;box-shadow:0 30px 60px -30px color-mix(in srgb,var(--ink) 70%,transparent);border:6px solid var(--bg)}
+.hm-inset img{width:100%;height:100%;object-fit:cover}
+.hm-badge{position:absolute;z-index:3;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;border-radius:50%;background:var(--grad);color:#fff;box-shadow:0 24px 50px -20px color-mix(in srgb,var(--acc-d) 80%,transparent);animation:float 7s ease-in-out infinite}
+.hm-badge b{font:var(--hw) 30px/1 var(--fh)}.hm-badge span{font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin-top:4px;max-width:8em;line-height:1.25}
+/* Form: Rahmen (hochkant, versetzte Goldlinie) */
+.sh-frame .hm-main{aspect-ratio:4/5;width:min(100%,calc(74svh * .8));margin-left:auto;border-radius:calc(var(--r) * .5)}
+.sh-frame::before{content:"";position:absolute;inset:-22px 22px 22px auto;width:min(100%,calc(74svh * .8));border:1px solid var(--acc);border-radius:calc(var(--r) * .5 + 6px);pointer-events:none}
+.sh-frame .hm-inset{width:34%;aspect-ratio:1;border-radius:50%;left:-12%;bottom:8%}
+/* Form: Bogen */
+.sh-arch .hm-main{aspect-ratio:4/5;width:min(100%,calc(76svh * .8));margin-left:auto;border-radius:999px 999px var(--r) var(--r)}
+.sh-arch .hm-inset{width:36%;aspect-ratio:1;border-radius:50%;left:-10%;bottom:6%}
+/* Form: quer (Gruppenfotos, Studio-Slider) */
+.sh-wide .hm-main{aspect-ratio:3/2;border-radius:var(--r)}
+.sh-wide .hm-inset{width:44%;aspect-ratio:3/2;border-radius:calc(var(--r) * .7);left:-14%;bottom:-16%}
+.sh-wide .hm-badge{width:136px;height:136px;right:-24px;top:-40px}
+/* Form: schräg gekippt mit Farbblock (sportlich) */
+.sh-tilt::before{content:"";position:absolute;inset:-26px -26px 26px 26px;border-radius:var(--r);background:var(--pat) 0 0/var(--pat-s),var(--acc);transform:rotate(4deg)}
+.sh-tilt .hm-main{aspect-ratio:3/2;border-radius:var(--r);transform:rotate(-2.2deg);box-shadow:0 50px 80px -40px color-mix(in srgb,var(--ink) 60%,transparent)}
+.sh-tilt .hm-inset{width:48%;aspect-ratio:3/2;border-radius:calc(var(--r) * .7);left:-16%;bottom:-24%;transform:rotate(3deg)}
+.sh-tilt .hm-badge{width:140px;height:140px;right:-30px;top:-50px;background:var(--ink)}
+/* Form: randlos bis an den Bildschirmrand */
+.sh-bleed{position:absolute!important;top:0;bottom:0;width:47vw;align-self:stretch!important;justify-self:stretch}
+.side-right .sh-bleed{right:0}.side-left .sh-bleed{left:0;top:96px;bottom:36px}
+.sh-bleed .hm-main{position:absolute;inset:0}
+.side-left .sh-bleed .hm-main{border-radius:0 calc(var(--r) * 2) calc(var(--r) * 2) 0}
+.side-right .sh-bleed .hm-main{border-radius:0 0 0 calc(var(--r) * 2)}
+.sh-bleed .hm-inset{width:min(230px,16vw);aspect-ratio:3/4;border-radius:999px 999px 999px 999px;bottom:10%}
+.side-left .sh-bleed .hm-inset{right:-8%}.side-right .sh-bleed .hm-inset{left:-8%}
+.side-left.h-split .hero .wrap{grid-template-columns:minmax(0,1fr) minmax(0,1fr)}
+.side-left.h-split .h-txt{grid-column:2;padding-left:clamp(10px,3vw,50px)}
+.side-left .h-media:not(.sh-bleed){order:-1}
+.h-split:has(.sh-bleed) .top:not(.solid){background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none}
+/* Bühne: Inhaberin groß und mittig vor einem Bogen */
+.h-stage .hero .wrap{grid-template-columns:minmax(0,.95fr) minmax(0,1.25fr) minmax(0,.55fr);gap:clamp(16px,2vw,36px)}
+.h-stage .h-por{height:min(94svh,980px)}
+.h-stage .h-por .halo{top:14%;width:min(560px,94%);aspect-ratio:4/5;border-radius:999px 999px 0 0;background:linear-gradient(180deg,color-mix(in srgb,var(--blush) 78%,transparent),color-mix(in srgb,var(--blush) 55%,transparent)),var(--pat) 0 0/var(--pat-s),var(--bg);transform:translateX(-50%)}
+.h-stage .h-por .ring{top:11%;width:min(600px,100%);aspect-ratio:4/5;border-radius:999px 999px 0 0;border:1.5px solid var(--champ)}
+.h-stage .h-por>img{-webkit-mask-image:linear-gradient(180deg,#000 88%,transparent 100%);mask-image:linear-gradient(180deg,#000 88%,transparent 100%);filter:drop-shadow(0 30px 40px color-mix(in srgb,var(--acc-d) 25%,transparent))}
+.h-stage .h-txt::before{display:none}
+.h-stage .h-side .hs-x{font-size:15.5px;display:flex;align-items:center;gap:12px}
+/* Vollbild-Slider: scharfe Studio-Fotos, Text auf ruhiger Karte */
+.h-slides .hero-bg{inset:0;opacity:0;transition:opacity 1.6s var(--ease);animation:none;transform:none}
+.h-slides .hero-bg.on{opacity:1;animation:slz 9s ease-out both}
+@keyframes slz{from{transform:scale(1.04)}to{transform:scale(1)}}
+.h-slides .hero-wash{background:linear-gradient(180deg,color-mix(in srgb,var(--ink) 28%,transparent),transparent 26%,transparent 75%,color-mix(in srgb,var(--bg) 70%,transparent))}
+.h-slides .hero .wrap{grid-template-columns:minmax(0,.62fr) minmax(0,.38fr);align-items:end;padding-bottom:110px}
+.h-slides .h-txt{padding:clamp(30px,3.4vw,52px);border-radius:calc(var(--r) * .9);background:color-mix(in srgb,var(--bg) 94%,transparent);box-shadow:0 50px 90px -40px color-mix(in srgb,var(--ink) 55%,transparent);align-self:end}
+.h-slides .h-txt::before{inset:auto 0 0 0;height:10px;filter:none;border-radius:0 0 calc(var(--r) * .9) calc(var(--r) * .9);background:var(--pat) 0 0/var(--pat-s);opacity:.6;top:auto}
+.h-slides .h-txt .lead,.h-slides .h-txt .eyebrow,.h-slides .h-proof{text-shadow:none}
+.h-slides .hero h1{font-size:clamp(44px,4.6vw,78px)}
+.h-slides .top:not(.solid){background:transparent;backdrop-filter:none;-webkit-backdrop-filter:none}
+.h-slides .top:not(.solid) .nav a{color:#fff;text-shadow:0 1px 8px rgba(0,0,0,.35)}
+.hs-dots{display:flex;gap:8px;margin-top:26px}
 
 /* ---------- Tablet / Handy ---------- */
 @media (max-width:1080px){
@@ -521,6 +612,33 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
  .zz{grid-template-columns:1fr;gap:22px}.zz:nth-child(even) .zz-img{order:0}.zz-img{aspect-ratio:4/3}
  .svc-menu{padding:30px 20px}.svc-menu ul{grid-template-columns:1fr;gap:28px}.svc-menu li{grid-template-columns:68px 1fr;gap:16px}.mn-img{width:68px;height:68px}
  .rv-split{grid-template-columns:1fr;gap:30px}.rs-l{position:static}
+ /* neue Hero-Formen am Handy */
+ .h-split .hero .wrap,.side-left.h-split .hero .wrap,.h-stage .hero .wrap,.h-slides .hero .wrap{grid-template-columns:1fr}
+ .side-left.h-split .h-txt{grid-column:auto;padding-left:0}
+ .h-split .h-media{order:-1;margin:6px 0 34px}
+ .sh-bleed{position:relative!important;width:auto;height:62svh;margin:0 -22px 34px!important;top:auto!important;bottom:auto!important}
+ .sh-bleed .hm-main{border-radius:0 0 calc(var(--r) * 1.4) calc(var(--r) * 1.4)!important}
+ .sh-bleed .hm-inset{display:none}
+ .h-split:has(.sh-bleed) .hero .wrap{padding-top:0}
+ .h-split:has(.sh-bleed) .hero{padding-top:78px}
+ .sh-frame::before{inset:-12px 12px 12px -12px;width:auto}.sh-frame .hm-main{width:100%}.sh-frame .hm-inset{width:30%;left:-4%}
+ .sh-arch .hm-inset{left:-2%}
+ .sh-wide .hm-inset,.sh-tilt .hm-inset{left:-4%;bottom:-14%;width:42%}
+ .sh-tilt::before{inset:-12px -8px 12px 14px}
+ .sh-wide .hm-badge,.sh-tilt .hm-badge{width:100px;height:100px;right:-6px;top:-30px}.hm-badge b{font-size:22px}.hm-badge span{font-size:10.5px}
+ .h-split .h-media:has(.hm-inset) {margin-bottom:60px}
+ .h-stage .h-por{height:auto;order:-1;margin-top:0}
+ .h-stage .h-por>img{width:min(86vw,420px)}
+ .h-stage .h-por .halo{top:8%;width:84%}.h-stage .h-por .ring{top:5%;width:92%}
+ .h-slides .hero{min-height:0}
+ .h-slides .hero-bg{bottom:auto;height:60svh}
+ .h-slides .hero-wash{bottom:auto;height:60svh;background:linear-gradient(180deg,color-mix(in srgb,var(--ink) 30%,transparent),transparent 30%)}
+ .h-full .hero-bg.part{left:0!important;-webkit-mask-image:none;mask-image:none}
+ .h-slides .hero .wrap{padding-top:52svh;padding-bottom:70px}
+ .h-slides .h-txt{padding:26px 22px}
+ .mb-in{grid-template-columns:1fr!important}.mb-f{height:260px}.mb-n3 .mb-f:nth-child(2){transform:none}.mb-n3 .mb-f:nth-child(3){display:none}
+ .mb-card{margin-top:-50px;padding:26px 20px 28px}
+ .pdiv{width:calc(100% - 44px);height:48px}
  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:55;background:var(--ink);padding-bottom:env(safe-area-inset-bottom)}
  .callbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:10px;padding:18px 10px;color:#fff;text-decoration:none;font:500 16.5px var(--fb);letter-spacing:.04em}
  .callbar a+a{background:var(--grad)}
@@ -528,39 +646,49 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
 }
 </style>
 </head>
-<body class="h-{{ B.get('hero','right') }} s-{{ B.get('svc_layout','arch') }} r-{{ B.get('rev_layout','single') }}{% if B.get('dark') %} dark{% endif %}">
+<body class="h-{{ HERO }}{% if HERO == 'stage' %} h-center{% endif %}{% if HS %} side-{{ HS.get('side','right') }}{% endif %}{% if B.get('slides') %} h-slides{% endif %} pat-{{ B.get('pattern','petals') }} s-{{ B.get('svc_layout','arch') }} r-{{ B.get('rev_layout','single') }}{% if B.get('dark') %} dark{% endif %}">
 {%- set star = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.4l-5.9 3.3 1.3-6.6L2.5 9.5l6.6-.8z"/></svg>' -%}
 {%- set check = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>' -%}
-{%- set wave = '<svg viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 52C180 18 360 6 560 30s380 58 560 46 260-38 320-48V90H0z"/></svg>' -%}
+{%- set EP = {'wave':'M0 52C180 18 360 6 560 30s380 58 560 46 260-38 320-48V90H0z','arc':'M0 90C360 6 1080 6 1440 90z','slant':'M0 90L1440 14V90z','scallop':'M0 90V58' ~ ('a30 30 0 0 1 60 0' * 24) ~ 'V90z','double':'M0 60C240 30 480 30 720 60s480 30 720 0V90H0z'} -%}
+{%- set wave = '<svg viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="' ~ EP.get(EDGE, EP.wave) ~ '"/></svg>' -%}
 
 <header class="top" id="top"><div class="wrap">
  {% if f.logo %}<a class="wm wm-logo" href="#"><img src="{{ f.logo }}" alt="{{ f.kurzname }}"></a>{% else %}<a class="wm" href="#"><b>{{ B.wm[0] }} <i>{{ B.wm[1] }}</i></b><small>{{ B.wm_sub }}</small></a>{% endif %}
- <nav class="nav"><a href="#leistungen">Behandlungen</a><a href="#geschichte">Geschichte</a><a href="#ueber">Team</a><a href="#kontakt">Kontakt</a></nav>
+ <nav class="nav">{% for n in B.get("nav", [["leistungen","Behandlungen"],["bewertungen","Bewertungen"],["ueber","Team"],["kontakt","Kontakt"]]) %}<a href="#{{ n[0] }}">{{ n[1] }}</a>{% endfor %}</nav>
  <a class="btn btn-p" href="#kontakt">{{ B.cta_btn }}</a>
 </div></header>
 
 <section class="hero" aria-label="Willkommen">
- <div class="hero-bg" role="img" aria-label="{{ B.hero_bg_alt }}"{% if B.get('hero') == 'full' %} style="background-image:url('{{ I[B.full_img] }}');background-position:{{ B.get('full_pos','50% 50%') }}"{% endif %}></div><div class="hero-wash"></div><div class="liquid a"></div><div class="liquid b"></div>
+ {% if HERO in ('split','stage') %}<div class="hero-pat" aria-hidden="true"></div>
+ {% elif HERO == 'full' and B.get('slides') %}{% for k in B.slides %}<div class="hero-bg hs-s{% if loop.first %} on{% endif %}" role="img" aria-label="{{ B.hero_bg_alt }}" style="background-image:url('{{ I[k] }}');background-position:{{ B.pos.get(k, '50% 50%') }}"></div>{% endfor %}<div class="hero-wash"></div>
+ {% else %}<div class="hero-bg{% if B.get('full_left') %} part{% endif %}" role="img" aria-label="{{ B.hero_bg_alt }}"{% if HERO == 'full' %} style="background-image:url('{{ I[B.full_img] }}');background-position:{{ B.get('full_pos','50% 50%') }}{% if B.get('full_left') %};left:{{ B.full_left }}{% endif %}"{% endif %}></div><div class="hero-wash"></div><div class="liquid a"></div><div class="liquid b"></div>{% endif %}
  <div class="wrap">
   <div class="h-txt">
    <span class="eyebrow h-load">{{ B.eyebrow }}</span>
    <h1 class="h-load d1">{{ B.h1 | safe }}</h1>
    <p class="lead h-load d2">{{ B.sub }}</p>
    <div class="h-cta h-load d3"><a class="btn btn-p" href="#kontakt">{{ B.cta_btn }}</a><a class="btn btn-g" href="#leistungen">{{ B.cta2 }}</a></div>
-   {% if B.get('hero') != 'center' %}<div class="h-proof h-load d4">
+   {% if HERO not in ('center','stage') %}<div class="h-proof h-load d4">
     {% if f.google %}<div class="g"><b>{{ f.google[0] }} <span class="stars">{% for _ in range(5) %}{{ star | safe }}{% endfor %}</span></b>{{ f.google[1] }} Google-Bewertungen</div><span class="sep"></span>{% endif %}
     <span class="sg">{{ B.proof_txt }}</span>
    </div>{% endif %}
   </div>
-  {% if not (B.get('hero') == 'full' and not f.cutout) %}<div class="h-por h-load">
+  {% if HERO == 'split' %}<div class="h-media h-load sh-{{ HS.get('shape','frame') }}">
+   <div class="hm-main">{% for k in HS.imgs %}<img class="hm-s{% if loop.first %} on{% endif %}" src="{{ I[k] }}" alt="{{ HS.get('alt', f.kurzname) }}"{% if B.pos.get(k) %} style="object-position:{{ B.pos.get(k) }}"{% endif %}{% if not loop.first %} loading="lazy"{% else %} fetchpriority="high"{% endif %} decoding="async">{% endfor %}</div>
+   {% if HS.get('inset') %}<div class="hm-inset">{{ im(HS.inset, HS.get('inset_alt', f.kurzname), eager=True) }}</div>{% endif %}
+   {% if HS.get('badge') %}<div class="hm-badge"><b>{{ HS.badge[0] }}</b><span>{{ HS.badge[1] }}</span></div>{% endif %}
+   {% if HS.imgs | length > 1 %}<div class="hm-dots" aria-hidden="true">{% for k in HS.imgs %}<i{% if loop.first %} class="on"{% endif %}></i>{% endfor %}</div>{% endif %}
+  </div>
+  {% elif not (HERO == 'full' and not f.cutout) %}<div class="h-por h-load">
    <span class="halo"{% if B.get('halo_top') %} style="top:{{ B.halo_top }}"{% endif %}></span><span class="ring"{% if B.get('halo_top') %} style="top:calc({{ B.halo_top }} - 3%)"{% endif %}></span>
-   {% if f.cutout and B.get('hero') != 'full-nocut' %}<img src="{{ f.cutout }}" alt="{{ B.cut_alt }}" width="{{ f.cut_w }}" height="{{ f.cut_h }}" fetchpriority="high">{% else %}<div class="h-arch">{{ im(B.hero_img, B.get('hero_img_alt', f.kurzname), eager=True) }}</div>{% endif %}
+   {% if f.cutout and HERO != 'full-nocut' %}<img src="{{ f.cutout }}" alt="{{ B.cut_alt }}" width="{{ f.cut_w }}" height="{{ f.cut_h }}" fetchpriority="high">{% else %}<div class="h-arch">{{ im(B.hero_img, B.get('hero_img_alt', f.kurzname), eager=True) }}</div>{% endif %}
    {% if B.get('chip') %}<div class="chip"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M12 3c3 4 6 7.2 6 10.5a6 6 0 0 1-12 0C6 10.2 9 7 12 3z"/></svg></i><div><b>{{ B.chip[0] }}</b><span>{{ B.chip[1] }}</span></div></div>{% endif %}
-   <div class="seal{% if B.get("seal_pos") == "br" %} br{% endif %}" aria-label="{{ B.seal }}"><svg viewBox="0 0 128 128" aria-hidden="true"><defs><path id="sc" d="M64 64m-49 0a49 49 0 1 1 98 0a49 49 0 1 1-98 0"/></defs><text><textPath href="#sc">{{ B.seal }}</textPath></text></svg><b>{{ B.seal_mono }}</b></div>
+   {% if B.get('seal') %}<div class="seal{% if B.get("seal_pos") == "br" %} br{% endif %}" aria-label="{{ B.seal }}"><svg viewBox="0 0 128 128" aria-hidden="true"><defs><path id="sc" d="M64 64m-49 0a49 49 0 1 1 98 0a49 49 0 1 1-98 0"/></defs><text><textPath href="#sc">{{ B.seal }}</textPath></text></svg><b>{{ B.seal_mono }}</b></div>{% endif %}
   </div>{% endif %}
-  {% if B.get('hero') == 'center' %}<div class="h-side h-load d3">
+  {% if HERO in ('center','stage') %}<div class="h-side h-load d3">
    {% if f.google %}<div class="hs-score"><b>{{ f.google[0] }}</b><span class="stars">{% for _ in range(5) %}{{ star | safe }}{% endfor %}</span><small>{{ f.google[1] }} Google-Bewertungen</small></div>{% endif %}
    <p>{{ B.proof_txt }}</p>
+   {% if B.get('side_extra') %}<p class="hs-x">{{ B.side_extra | safe }}</p>{% endif %}
   </div>{% endif %}
  </div>
  <div class="h-wave">{{ wave | safe }}</div>
@@ -576,9 +704,10 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
  <div class="sig rv d1">{{ B.intro_sig }}</div>
 </div></section>{% endif %}
 
+<div class="pdiv" aria-hidden="true"><span></span></div>
 <section class="svc" id="leistungen"><div class="wrap">
  <div class="svc-head">
-  <div><span class="eyebrow rv">Behandlungen</span><h2 class="rv d1">{{ B.svc_h2 | safe }}</h2></div>
+  <div><span class="eyebrow rv">{{ B.get("svc_eyebrow", "Behandlungen") }}</span><h2 class="rv d1">{{ B.svc_h2 | safe }}</h2></div>
   <p class="lead rv d2">{{ B.svc_intro }}</p>
  </div>
  {% set L = B.get('svc_layout','arch') %}
@@ -612,13 +741,14 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
 </section>
 {% endif %}
 
-{% if B.get('video') %}<section class="vband">
- <video autoplay muted loop playsinline preload="metadata"{% if B.video.get('poster') %} poster="{{ I[B.video.poster] }}"{% endif %} aria-hidden="true"><source src="{{ B.video.src }}" type="{{ B.video.get('type', 'video/mp4') }}"></video>
- <p class="rv">{{ B.video.text | safe }}</p>
-</section>{% elif B.get('moment') %}<section class="vband vimg">
- <div class="km" style="background-image:url('{{ I[B.moment.img] }}');background-position:{{ B.moment.get('pos', '50% 50%') }}" aria-hidden="true"></div>
- <p class="rv">{{ B.moment.text | safe }}</p>
-</section>{% endif %}
+{% if B.get('video') or B.get('moment') %}{% set M = B.get('moment') or {} %}{% set MI = M.get('imgs') or ([M.img] if M.get('img') else []) %}
+<section class="mband"><div class="wrap">
+ <div class="mb-in mb-n{{ (1 if B.get('video') else MI | length) }}"{% if M.get('cols') or M.get('h') %} style="{% if M.get('cols') %}grid-template-columns:{{ M.cols }};{% endif %}{% if M.get('h') %}--mbh:{{ M.h }}{% endif %}"{% endif %}>
+  {% if B.get('video') %}<figure class="mb-f"><video autoplay muted loop playsinline preload="metadata"{% if B.video.get('poster') %} poster="{{ I[B.video.poster] }}"{% endif %} aria-hidden="true"><source src="{{ B.video.src }}" type="{{ B.video.get('type', 'video/mp4') }}"></video></figure>
+  {% else %}{% for k in MI %}<figure class="mb-f rv d{{ loop.index }}">{{ im(k, M.get('alt', f.kurzname)) }}</figure>{% endfor %}{% endif %}
+ </div>
+ <div class="mb-card rv d2"><span class="mb-orn" aria-hidden="true"></span><p>{{ (B.video.text if B.get('video') else M.text) | safe }}</p></div>
+</div></section>{% endif %}
 <section class="rev" id="bewertungen"><div class="wrap">
  {% set RL = B.get('rev_layout','single') %}
  {% if RL == 'split' %}<div class="rv-split"><div class="rs-l rv"><span class="eyebrow">{{ B.rev_eyebrow }}</span><b class="rs-n">{{ f.google[0] }}</b><span class="stars">{% for _ in range(5) %}{{ star | safe }}{% endfor %}</span><small>{{ f.google[1] }} Bewertungen bei Google</small></div>
@@ -632,6 +762,7 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
  <div class="qdots" id="qdots">{% for r in f.reviews %}<button type="button" aria-label="Bewertung {{ loop.index }}"{% if loop.first %} class="on"{% endif %}></button>{% endfor %}</div>{% endif %}
 </div></section>
 
+<div class="pdiv" aria-hidden="true"><span></span></div>
 {% if B.get('story') %}{% set St = B.story %}
 <section class="story" id="geschichte"><div class="wrap story-in">
  <div class="story-txt">
@@ -656,6 +787,7 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
  </div>
 </div></section>{% endif %}
 
+<div class="pdiv" aria-hidden="true"><span></span></div>
 <section class="flow"><div class="wrap">
  <span class="eyebrow rv">Ablauf</span>
  <h2 class="rv d1">{{ B.steps_h2 | safe }}</h2>
@@ -719,6 +851,10 @@ var li=document.querySelectorAll('.svc-list li'),mi=document.querySelectorAll('#
 function act(i){li.forEach(function(l,k){l.classList.toggle('on',k==i)});mi.forEach(function(m,k){m.classList.toggle('on',k==i)})}
 li.forEach(function(l){l.addEventListener('mouseenter',function(){act(+l.dataset.i)})});
 if('IntersectionObserver' in window){var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)act(+e.target.dataset.i)})},{rootMargin:'-48% 0px -48% 0px'});li.forEach(function(l){io2.observe(l)})}
+/* Hero-Slider (scharfe Fotos, weich überblendet) */
+var sl=document.querySelectorAll('.hm-main img,.hs-s'),sd=document.querySelectorAll('.hm-dots i'),sk=0;
+window.__slide=function(i){sk=i;sl.forEach(function(e,k){e.classList.toggle('on',k==i)});sd.forEach(function(e,k){e.classList.toggle('on',k==i)})};
+if(!QA&&sl.length>1&&!matchMedia('(prefers-reduced-motion: reduce)').matches)setInterval(function(){__slide((sk+1)%sl.length)},5200);
 /* Bewertungen */
 var qs=document.querySelectorAll('#quotes blockquote'),qd=document.querySelectorAll('#qdots button'),qk=0,qt;
 function q(i){qk=i;qs.forEach(function(b,k){b.classList.toggle('on',k==i)});qd.forEach(function(b,k){b.classList.toggle('on',k==i)})}
