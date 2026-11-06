@@ -418,7 +418,13 @@
       "Probetraining"
      ]
     ],
-    "svc_eyebrow": "Training"
+    "svc_eyebrow": "Training",
+    "social": [
+     [
+      "facebook",
+      "https://www.facebook.com/FitnessstudioBramsche/"
+     ]
+    ]
    }
   },
   {
@@ -489,7 +495,19 @@
     "https://cdn.prod.website-files.com/697e29b6b38eb68fe8855b79/69fe187fa922bcdff7382a4a_3.avif",
     "https://cdn.prod.website-files.com/697e29b6b38eb68fe8855b79/69fcf262d4124b5866601435_002.avif",
     "https://cdn.prod.website-files.com/697e29b6b38eb68fe8855b79/69fe12361bc4b4982362f7f0_Mani%20(2).avif",
-    "https://cdn.prod.website-files.com/697e29b6b38eb68fe8855b79/6a1c0f6cb53fa6287768abbd_LucoROSE%20(6).avif"
+    "https://cdn.prod.website-files.com/697e29b6b38eb68fe8855b79/6a1c0f6cb53fa6287768abbd_LucoROSE%20(6).avif",
+    "lucorose-asset-13",
+    "lucorose-asset-14",
+    "lucorose-asset-15",
+    "lucorose-asset-16",
+    "lucorose-asset-17",
+    "lucorose-asset-18",
+    "lucorose-asset-19",
+    "lucorose-asset-20",
+    "lucorose-asset-21",
+    "lucorose-asset-22",
+    "lucorose-asset-23",
+    "lucorose-asset-24"
    ],
    "reviews": [
     [
@@ -657,17 +675,17 @@
    "template": "beauty",
    "beauty": {
     "c": {
-     "bg": "#FFF6F9",
-     "pearl": "#FCEBF1",
-     "blush": "#F8D7E3",
-     "acc": "#D6336C",
-     "acc_d": "#A82153",
-     "champ": "#D9B86A",
-     "ink": "#3B2430",
-     "mute": "#6A4E5A",
+     "bg": "#FFFBFC",
+     "pearl": "#FBF2F6",
+     "blush": "#F6E3EB",
+     "acc": "#C83E78",
+     "acc_d": "#9C2457",
+     "champ": "#C9A45A",
+     "ink": "#2E1F27",
+     "mute": "#6A5560",
      "star": "#FFA41C"
     },
-    "cta_btn": "Termin anfragen",
+    "cta_btn": "Sofort Termin sichern",
     "mb_btn": "Termin anfragen",
     "pos": {},
     "du": false,
@@ -678,91 +696,80 @@
     "wm_sub": "Kosmetikstudio · Quakenbrück",
     "hero_bg_src": "b2",
     "hero_bg_alt": "Studio von LucoROSE",
-    "cut_src": "b1",
     "cut_alt": "Aleksandra Jędrzejczyk-Świtek, Gründerin von LucoROSE",
-    "eyebrow": "Kosmetikstudio in Quakenbrück",
-    "h1": "Schönheit, die <em>sich gut anfühlt.</em>",
+    "eyebrow": "Willkommen bei LucoROSE",
+    "h1": "Ihr Kosmetikstudio <em>in Quakenbrück.</em>",
     "sub": "Nagelstyling, Gesichtsbehandlungen, Wimpern und Augenbrauen, Haarentfernung und mechanische Lymphdrainage – abgestimmt auf Ihre Wünsche und Ihren Hauttyp.",
-    "cta2": "Behandlungen ansehen",
+    "cta2": "Leistungen ansehen",
     "proof_txt": "Mitglied der Handwerkskammer Osnabrück-Emsland-Grafschaft Bentheim.",
-    "chip": [
-     "Beauty-Pakete",
-     "Nägel, Gesicht und Wimpern"
-    ],
-    "seal": "LucoROSE · Kosmetikstudio · Quakenbrück · ",
+    "chip": null,
+    "seal": null,
     "seal_mono": "L",
     "intro": "Qualität, Präzision und Entspannung – damit Sie unser Studio <em>mit einem guten Gefühl</em> verlassen.",
     "intro_sig": "LucoROSE · Kleine Mühlenstraße 10 · Quakenbrück",
-    "svc_h2": "Unsere <em>Behandlungen.</em>",
+    "svc_h2": "Unsere <em>Leistungen.</em>",
     "svc_intro": "Abgestimmt auf Ihre Wünsche und Ihren Hauttyp – in femininer Wohlfühlatmosphäre.",
     "svc": [
      [
-      "b8",
+      "b16",
+      "Maniküre",
+      "Gepflegte Hände und Nageldesign in Ihrer Lieblingsfarbe.",
+      []
+     ],
+     [
+      "b17",
+      "Pediküre",
+      "Gepflegte Füße – sauber und langlebig.",
+      []
+     ],
+     [
+      "b18",
       "Gesichtsbehandlungen",
-      "Reinigung, Pflege und moderne Technologien – individuell auf Ihr Hautbild abgestimmt.",
-      [
-       "Reinigung",
-       "Pflege"
-      ]
+      "Reinigung, Pflege und moderne Technologien – abgestimmt auf Ihr Hautbild.",
+      []
      ],
      [
-      "b3",
-      "Maniküre und Pediküre",
-      "Maniküre, Pediküre und Nageldesign – sauber, langlebig und in Ihrer Lieblingsfarbe.",
-      [
-       "Maniküre",
-       "Pediküre",
-       "Nageldesign"
-      ]
+      "b19",
+      "Wimpernverlängerung",
+      "Für einen klaren, wachen Blick.",
+      []
      ],
      [
-      "b5",
-      "Wimpern und Augenbrauen",
-      "Wimpern- und Augenbrauenstyling für einen klaren, wachen Blick.",
-      [
-       "Wimpern",
-       "Brauen"
-      ]
+      "b20",
+      "Augenbrauen und Wimpern",
+      "Styling für Brauen und Wimpern.",
+      []
      ],
      [
-      "b12",
+      "b21",
+      "Mechanische Lymphdrainage",
+      "Wohltuend und entlastend.",
+      []
+     ],
+     [
+      "b22",
       "Haarentfernung",
       "Sanft und gründlich – für glatte, gepflegte Haut.",
       []
      ],
      [
-      "b6",
-      "Mechanische Lymphdrainage",
-      "Wohltuend und entlastend – ergänzend zu Ihrer Behandlung.",
+      "b23",
+      "Zusatzleistungen",
+      "Die passende Ergänzung zu Ihrer Behandlung.",
+      []
+     ],
+     [
+      "b24",
+      "Pakete",
+      "Mehrere Behandlungen, ein entspannter Besuch.",
       []
      ]
     ],
-    "signature": {
-     "img": "b11",
-     "alt": "Maniküre bei LucoROSE",
-     "tag": "Beauty-<br>Pakete",
-     "eyebrow": "Alles in einem Termin",
-     "h2": "Nägel, Gesicht, Wimpern. <em>Ein Termin.</em>",
-     "p": "Fragen Sie nach unseren Beauty-Paketen – mehrere Behandlungen, ein entspannter Besuch.",
-     "btn": "Nach Paketen fragen"
-    },
+    "signature": null,
     "rev_eyebrow": "Das sagen unsere Kundinnen",
-    "story": {
-     "eyebrow": "Ihr Wohlfühlort",
-     "h2": "Feminin, ruhig, <em>mit Liebe zum Detail.</em>",
-     "p": [
-      "LucoROSE ist ein modernes Kosmetikstudio in Quakenbrück, das seit 2024 für hochwertige Beauty-Behandlungen und eine feminine Wohlfühlatmosphäre steht."
-     ],
-     "img1": "b6",
-     "lab1": "Empfang",
-     "cap1": "Kleine Mühlenstraße 10",
-     "img2": "b12",
-     "lab2": "Lounge",
-     "cap2": "Ankommen und durchatmen",
-     "bw": false
-    },
-    "team_img": "b7",
-    "team_ratio": "1365/2048",
+    "story": null,
+    "team_img": "b12",
+    "team_ratio": "4/3",
     "team_alt": "Aleksandra Jędrzejczyk-Świtek",
     "team_eyebrow": "Über mich",
     "team_h2": "Willkommen bei <em>LucoROSE.</em>",
@@ -785,24 +792,91 @@
     "tour_r": "42 Kundinnen geben uns 5 von 5 Sternen.",
     "tour_u": "Hier lernen Sie Aleksandra kennen.",
     "tour_k": "Und hier vereinbaren Sie Ihren Termin: 0172 4028181.",
-    "moment": {
-     "imgs": [
-      "b2"
-     ],
-     "text": "Ihr Wohlfühlort <em>in Quakenbrück.</em>"
-    },
+    "moment": null,
     "font_set": "lucorose",
     "fh": "'DM Serif Display',Georgia,serif",
     "fb": "'Outfit',system-ui,sans-serif",
     "hls": "-.01em",
     "r": "28px",
-    "hero": "stage",
-    "svc_layout": "mosaic",
+    "hero": "split",
+    "svc_layout": "cards",
     "rev_layout": "marquee",
     "sig_shape": "blob",
     "pattern": "petals",
-    "edge": "scallop",
-    "pat_o": 0.55
+    "edge": "wave",
+    "pat_o": 0.55,
+    "split": {
+     "imgs": [
+      "b7"
+     ],
+     "shape": "frame",
+     "side": "right",
+     "alt": "Aleksandra Jędrzejczyk-Świtek im LucoROSE Studio"
+    },
+    "btn_bg": "linear-gradient(110deg,#B88A3A,#E6CD86 50%,#B88A3A)",
+    "btn_fg": "#2E1F27",
+    "svc_eyebrow": "Leistungen",
+    "card_more": "Termin sichern",
+    "team3": {
+     "eyebrow": "Unser Team",
+     "h2": "Die Frauen <em>hinter LucoROSE.</em>",
+     "people": [
+      [
+       "b13",
+       "Aleksandra Jędrzejczyk-Świtek",
+       "Inhaberin"
+      ],
+      [
+       "b14",
+       "Lee-Ann Wysozki"
+      ],
+      [
+       "b15",
+       "Iryna Sitnikova"
+      ]
+     ]
+    },
+    "studio_video": {
+     "src": "img/studio.mp4",
+     "poster": "img/studio-poster.jpg",
+     "alt": "Rundgang durch das LucoROSE Studio",
+     "eyebrow": "Unser Studio",
+     "h2": "Ein Blick <em>in unser Studio.</em>",
+     "p": "Kleine Mühlenstraße 10 in Quakenbrück – schauen Sie sich vorab ganz in Ruhe bei uns um."
+    },
+    "social": [
+     [
+      "instagram",
+      "https://www.instagram.com/lucorose_aj/"
+     ],
+     [
+      "facebook",
+      "https://www.facebook.com/lucorosen/"
+     ],
+     [
+      "tiktok",
+      "https://www.tiktok.com/@lucorose.kosmetikstudio"
+     ]
+    ],
+    "logo_badge": "img/logo-badge.jpg",
+    "nav": [
+     [
+      "leistungen",
+      "Leistungen"
+     ],
+     [
+      "team",
+      "Team"
+     ],
+     [
+      "studio",
+      "Studio"
+     ],
+     [
+      "kontakt",
+      "Kontakt"
+     ]
+    ]
    }
   },
   {
@@ -1230,7 +1304,17 @@
     "font_set": "kraemer",
     "pattern": "petals",
     "edge": "wave",
-    "pat_o": 0.45
+    "pat_o": 0.45,
+    "social": [
+     [
+      "instagram",
+      "https://www.instagram.com/kosmetik_kraemer/"
+     ],
+     [
+      "facebook",
+      "https://www.facebook.com/KosmetikKramer/"
+     ]
+    ]
    }
   },
   {
@@ -2394,7 +2478,40 @@
     ],
     "pattern": "leaves",
     "edge": "double",
-    "pat_o": 0.4
+    "pat_o": 0.4,
+    "social": [
+     [
+      "instagram",
+      "https://instagram.com/dayspawarkentin"
+     ]
+    ],
+    "studio_video": {
+     "src": "img/studio.mp4",
+     "poster": "img/studio-poster.jpg",
+     "wide": true,
+     "alt": "Rundgang durch das DAY-SPA",
+     "eyebrow": "Eindrücke aus unserem DAY-SPA",
+     "h2": "Ein Blick <em>in unser Spa.</em>",
+     "p": "Empfang, Pflegeprodukte und Behandlungsräume – schauen Sie sich vorab in Ruhe bei uns um."
+    },
+    "nav": [
+     [
+      "leistungen",
+      "Angebot"
+     ],
+     [
+      "studio",
+      "Einblick"
+     ],
+     [
+      "ueber",
+      "Team"
+     ],
+     [
+      "kontakt",
+      "Kontakt"
+     ]
+    ]
    }
   },
   {
@@ -3155,7 +3272,13 @@
     "pat_o": 0.4,
     "hw": 600,
     "es": "italic",
-    "h1_size": "clamp(42px,4.3vw,70px)"
+    "h1_size": "clamp(42px,4.3vw,70px)",
+    "social": [
+     [
+      "instagram",
+      "https://instagram.com/kosmetikinstitut_lilligeibel"
+     ]
+    ]
    }
   },
   {
@@ -3398,7 +3521,13 @@
     "pattern": "leaves",
     "edge": "wave",
     "pat_o": 0.5,
-    "chip": null
+    "chip": null,
+    "social": [
+     [
+      "facebook",
+      "https://www.facebook.com/Chillout-cosmetic-Kosmetik-Permanent-Make-up-301669743277402/"
+     ]
+    ]
    }
   },
   {
@@ -3644,7 +3773,13 @@
     ],
     "pattern": "dots",
     "edge": "double",
-    "pat_o": 0.3
+    "pat_o": 0.3,
+    "social": [
+     [
+      "instagram",
+      "https://www.instagram.com/auszeit_kosmetik_lingen/"
+     ]
+    ]
    }
   }
  ]

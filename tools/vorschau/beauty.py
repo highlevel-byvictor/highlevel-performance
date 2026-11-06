@@ -44,6 +44,9 @@ def prepare(f, d: Path, allimg: dict):
     if B.get("cut_src"):
         cut, (w, h) = freisteller(src(B["cut_src"]), img / "inhaberin.webp", keep=B.get("cut_keep", 1.0))
         out.update(cutout="img/" + cut, cut_w=w, cut_h=h)
+    if not B.get("no_map") and f.get("adresse"):
+        k = karte(f["adresse"], d)
+        if k: out.update(karte=k[0])
     return out
 
 def auto_pos(B, d: Path, allimg: dict):
@@ -59,3 +62,37 @@ def auto_pos(B, d: Path, allimg: dict):
         px = x0 / (x0 + (1 - x1)) if (x0 + 1 - x1) > 0 else .5
         py = y0 / (y0 + (1 - y1)) if (y0 + 1 - y1) > 0 else .5
         B["pos"][k] = f"{px*100:.0f}% {py*100:.0f}%"
+
+def karte(adresse: str, d: Path):
+    """Standort-Karte als eigenes Bild (OpenStreetMap-Kacheln, lokal gespeichert -> kein Google-Aufruf beim Besucher).
+    Gibt (pfad, lat, lon) zurück oder None."""
+    import json, math, urllib.request, urllib.parse, io
+    dest = d / "img" / "karte.webp"; meta = d / "img" / "karte.json"
+    if dest.exists() and meta.exists():
+        m = json.loads(meta.read_text())
+        if m.get("adresse") == adresse: return "img/karte.webp", m["lat"], m["lon"]
+    UA = {"User-Agent": "HLP-Vorschau/1.0 (Website-Entwurf, einmalige Kartenerstellung)"}
+    q = urllib.parse.urlencode({"q": adresse, "format": "json", "limit": 1, "countrycodes": "de"})
+    try:
+        r = json.loads(urllib.request.urlopen(urllib.request.Request("https://nominatim.openstreetmap.org/search?" + q, headers=UA), timeout=20).read())
+        if not r:  # ohne Hausnummer erneut
+            q = urllib.parse.urlencode({"q": adresse.split(",")[-1].strip(), "format": "json", "limit": 1, "countrycodes": "de"})
+            r = json.loads(urllib.request.urlopen(urllib.request.Request("https://nominatim.openstreetmap.org/search?" + q, headers=UA), timeout=20).read())
+        lat, lon = float(r[0]["lat"]), float(r[0]["lon"])
+        z = 16; n = 2 ** z
+        px = (lon + 180) / 360 * n * 256
+        py = (1 - math.log(math.tan(math.radians(lat)) + 1 / math.cos(math.radians(lat))) / math.pi) / 2 * n * 256
+        W, H = 1600, 720
+        x0, y0 = px - W / 2, py - H / 2
+        canvas = Image.new("RGB", (W, H), "white")
+        for tx in range(int(x0 // 256), int((x0 + W) // 256) + 1):
+            for ty in range(int(y0 // 256), int((y0 + H) // 256) + 1):
+                u = f"https://tile.openstreetmap.org/{z}/{tx}/{ty}.png"
+                t = Image.open(io.BytesIO(urllib.request.urlopen(urllib.request.Request(u, headers=UA), timeout=20).read())).convert("RGB")
+                canvas.paste(t, (int(tx * 256 - x0), int(ty * 256 - y0)))
+        canvas.save(dest, "WEBP", quality=88)
+        meta.write_text(json.dumps({"adresse": adresse, "lat": lat, "lon": lon}))
+        return "img/karte.webp", lat, lon
+    except Exception as e:
+        print("  Karte nicht möglich:", e)
+        return None
