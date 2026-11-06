@@ -501,6 +501,21 @@
 .bz-ab-row span{color:var(--b-muted);font-size:15px}
 .bz-disc{flex-basis:100%;font-size:12px;opacity:.7;margin:8px 0 0}
 @media (max-width:900px){.bz-ew-grid,.bz-fw-grid,.bz-ab-row,.bz-ck-box{grid-template-columns:1fr}}
+
+/* HLP 11/2026: weiche Farbübergänge + große Kundenstimme */
+.nx-stats{position:relative}
+.nx-stats::before,.nx-stats::after{content:"";position:absolute;left:0;right:0;height:180px;pointer-events:none;z-index:2}
+.nx-stats::before{bottom:100%;background:linear-gradient(to bottom,rgba(246,248,252,0),rgba(10,42,102,.55) 60%,rgb(10,42,102))}
+.nx-stats::after{top:100%;background:linear-gradient(to bottom,rgb(10,42,102),rgba(10,42,102,.5) 40%,rgba(246,248,252,0))}
+#b-geschichten,#b-system,#b-aktion{-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 120px,#000 calc(100% - 120px),transparent 100%);mask-image:linear-gradient(to bottom,transparent 0,#000 120px,#000 calc(100% - 120px),transparent 100%)}
+.hlp-quote{padding:120px max(20px,5vw) 110px;background:linear-gradient(to bottom,#F6F8FC,#EAF2FF 55%,#F6F8FC)}
+.hlp-quote figure{max-width:1080px;margin:0 auto}
+.hlp-quote .st{display:flex;gap:6px;color:#E8A317;margin-bottom:26px}
+.hlp-quote .st svg{width:22px;height:22px}
+.hlp-quote blockquote{margin:0;font-family:Poppins,system-ui,sans-serif;font-weight:700;font-size:clamp(30px,3.9vw,58px);line-height:1.12;letter-spacing:-.032em;color:#0B1630;text-wrap:balance}
+.hlp-quote blockquote em{font-style:normal;color:#1877F2}
+.hlp-quote figcaption{margin-top:26px;font-family:Manrope,system-ui,sans-serif;font-size:16px;color:#4A5873}
+.hlp-quote figcaption b{color:#0B1630}
 </style>
 <link rel="stylesheet" href="../assets/levi/levi.css">
 <style>
@@ -1620,6 +1635,10 @@ form .btn{justify-content:center;margin-top:6px}
     <div class="refs-rail" tabindex="0" aria-label="Referenzen, zum Blättern wischen">
       <div class="refs-track"><article class="ref"><div class="ref-logo"><img src="../assets/ref-vmeier.webp" alt="Logo V. Meier Zimmerei &amp; Holzbau" loading="lazy"></div><span class="ref-meta">Zimmerei · Werlte</span><h3>V. Meier Zimmerei &amp; Holzbau</h3><a class="ref-link" href="https://vmeier.de/" target="_blank" rel="noopener">Website ansehen <span aria-hidden="true">↗</span></a></article><article class="ref"><div class="ref-logo"><img src="../assets/ref-zilm.webp" alt="Logo Autohaus Zilm" loading="lazy"></div><span class="ref-meta">Autohaus · Neuruppin</span><h3>Autohaus Zilm</h3><a class="ref-link" href="https://www.autohauszilm.de/" target="_blank" rel="noopener">Website ansehen <span aria-hidden="true">↗</span></a></article><article class="ref"><div class="ref-logo"><img src="../assets/ref-winderholler.webp" alt="Logo Winderholler Energieberatung" loading="lazy"></div><span class="ref-meta">Energieberatung · Quakenbrück</span><h3>Winderholler Energieberatung</h3><a class="ref-link" href="https://www.winderholler-energieberatung.de/" target="_blank" rel="noopener">Website ansehen <span aria-hidden="true">↗</span></a></article><article class="ref"><div class="ref-logo"><img src="../assets/ref-fwk.webp" alt="Logo Fehl &amp; Kollegen" loading="lazy"></div><span class="ref-meta">Finanz- &amp; Wirtschaftskanzlei · Bersenbrück</span><h3>Fehl &amp; Kollegen</h3><a class="ref-link" href="https://www.fwk-fehl.de/" target="_blank" rel="noopener">Website ansehen <span aria-hidden="true">↗</span></a></article><article class="ref"><div class="ref-logo"><img src="../assets/ref-skin.webp" alt="Logo SKIN einfach schön" loading="lazy"></div><span class="ref-meta">Kosmetik &amp; Ästhetik · Osnabrück</span><h3>SKIN einfach schön</h3><a class="ref-link" href="https://www.skin-einfachschoen.de/" target="_blank" rel="noopener">Website ansehen <span aria-hidden="true">↗</span></a></article><article class="ref"><div class="ref-logo dark"><img src="../assets/ref-smp.webp" alt="Logo Saved Music Productions" loading="lazy"></div><span class="ref-meta">Tonstudio · Bersenbrück · eigene Firma</span><h3>Saved Music Productions</h3><a class="ref-link" href="https://saved-music-productions.de/" target="_blank" rel="noopener">Website ansehen <span aria-hidden="true">↗</span></a></article><article class="ref"><div class="ref-logo"><img src="../assets/ref-tsf.webp" alt="Logo Tonstudio Fulda" loading="lazy"></div><span class="ref-meta">Tonstudio · Fulda</span><h3>Tonstudio Fulda</h3><a class="ref-link" href="https://www.tonstudiofulda.de/" target="_blank" rel="noopener">Website ansehen <span aria-hidden="true">↗</span></a></article><article class="ref ref-more"><span class="ref-meta">Und viele mehr</span><h3>Viele weitere Betriebe aus Handwerk, Handel und Dienstleistung.</h3><p class="ref-did">Wir zeigen Ihnen im Gespräch gern Beispiele aus Ihrer Branche.</p><a class="btn btn-blue" href="#b-kontakt" data-scroll>Kostenlose Sichtbarkeits-Analyse</a></article></div>
     </div>
+  </section>
+
+  <section class="hlp-quote" aria-label="Kundenstimme">
+    <figure><div class="st" role="img" aria-label="5 von 5 Sternen"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg></div><blockquote>„Durch eure Strategien und eure Kampagnen gewinnen wir jede Woche <em>14 Anfragen</em> und daraus im Schnitt <em>7 neue Kunden</em>!“</blockquote><figcaption><b>Beaty_By_Laura</b>, Kosmetikstudio</figcaption></figure>
   </section>
 
   <section class="sec nx-vn" id="b-vorher">

@@ -410,6 +410,21 @@
 @media (max-width:440px){.lang button span{display:none}.lang button{padding:4px}.a-nav .btn{white-space:nowrap;padding:9px 11px;font-size:12px}}
 .vk-qr{display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:inherit}.vk-qr img{width:64px;height:64px;background:#fff;padding:5px;border-radius:10px;border:1px solid rgba(10,42,102,.15);transition:transform .2s}.vk-qr:hover img{transform:scale(1.06)}.vk-qr b{display:block;font-size:13.5px}.vk-qr small{display:block;font-size:12px;opacity:.75}
 #a-aktion .ak-pk-head{max-width:760px;margin:0 0 34px}#a-aktion .ak-pk-head h2{margin:14px 0 12px}#a-aktion .ak-pk-head p{opacity:.85}
+
+/* HLP 11/2026: weiche Farbübergänge + große Kundenstimme */
+.nx-stats{position:relative}
+.nx-stats::before,.nx-stats::after{content:"";position:absolute;left:0;right:0;height:180px;pointer-events:none;z-index:2}
+.nx-stats::before{bottom:100%;background:linear-gradient(to bottom,rgba(246,248,252,0),rgba(10,42,102,.55) 60%,rgb(10,42,102))}
+.nx-stats::after{top:100%;background:linear-gradient(to bottom,rgb(10,42,102),rgba(10,42,102,.5) 40%,rgba(246,248,252,0))}
+#b-geschichten,#b-system,#b-aktion{-webkit-mask-image:linear-gradient(to bottom,transparent 0,#000 120px,#000 calc(100% - 120px),transparent 100%);mask-image:linear-gradient(to bottom,transparent 0,#000 120px,#000 calc(100% - 120px),transparent 100%)}
+.hlp-quote{padding:120px max(20px,5vw) 110px;background:linear-gradient(to bottom,#F6F8FC,#EAF2FF 55%,#F6F8FC)}
+.hlp-quote figure{max-width:1080px;margin:0 auto}
+.hlp-quote .st{display:flex;gap:6px;color:#E8A317;margin-bottom:26px}
+.hlp-quote .st svg{width:22px;height:22px}
+.hlp-quote blockquote{margin:0;font-family:Poppins,system-ui,sans-serif;font-weight:700;font-size:clamp(30px,3.9vw,58px);line-height:1.12;letter-spacing:-.032em;color:#0B1630;text-wrap:balance}
+.hlp-quote blockquote em{font-style:normal;color:#1877F2}
+.hlp-quote figcaption{margin-top:26px;font-family:Manrope,system-ui,sans-serif;font-size:16px;color:#4A5873}
+.hlp-quote figcaption b{color:#0B1630}
 </style>
 <link rel="stylesheet" href="assets/levi/levi.css">
 <script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "ProfessionalService", "@id": "https://www.highlevel-performance.de/#organisation", "name": "High Level Performance", "alternateName": "High Level Performance by Victor", "url": "https://www.highlevel-performance.de/business/", "logo": "https://www.highlevel-performance.de/assets/team-2f12b1-v2.jpg", "image": "https://www.highlevel-performance.de/assets/team-2f12b1-v2.jpg", "telephone": "+49 15561 068899", "email": "info@highlevel-performance.de", "priceRange": "€€", "address": {"@type": "PostalAddress", "streetAddress": "Koppelstraße 28", "postalCode": "49593", "addressLocality": "Bersenbrück", "addressRegion": "Niedersachsen", "addressCountry": "DE"}, "geo": {"@type": "GeoCoordinates", "latitude": 52.5537, "longitude": 7.9435}, "areaServed": ["Osnabrück", "Bersenbrück", "Quakenbrück", "Bramsche", "Melle", "Vechta", "Cloppenburg", "Lingen", "Münster", "Bremen", "Oldenburg", "Deutschland"], "founder": {"@type": "Person", "name": "Viktor Fehl"}, "sameAs": ["https://www.instagram.com/highlevel.byvictor/", "https://www.facebook.com/highlevel.byvictor", "https://www.linkedin.com/company/highlevel-performance/"]}, {"@type": "WebSite", "@id": "https://www.highlevel-performance.de/#website", "url": "https://www.highlevel-performance.de/", "name": "High Level Performance", "inLanguage": "de-DE"}]}</script>
@@ -1579,6 +1594,10 @@ form .btn{justify-content:center;margin-top:6px}
     </div>
   </section>
 
+
+  <section class="hlp-quote" aria-label="Kundenstimme">
+    <figure><div class="st" role="img" aria-label="5 von 5 Sternen"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="m12 2.8 2.8 5.8 6.3.9-4.6 4.4 1.1 6.3L12 17.2l-5.6 3 1.1-6.3L2.9 9.5l6.3-.9z"/></svg></div><blockquote>„Durch eure Strategien und eure Kampagnen gewinnen wir jede Woche <em>14 Anfragen</em> und daraus im Schnitt <em>7 neue Kunden</em>!“</blockquote><figcaption><b>Beaty_By_Laura</b>, Kosmetikstudio</figcaption></figure>
+  </section>
 
   <section class="sec nx-vn" id="b-vorher">
     <div class="wrap">
