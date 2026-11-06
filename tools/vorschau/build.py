@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """Website-statt-Kaltmail: baut Vorschau-Seiten + Druck-Briefe.
-Aufruf: python3 tools/vorschau/build.py tools/vorschau/runden/<runde>.json
+Aufruf: python3 tools/vorschau/build.py tools/vorschau/runden/<runde>.json [--nur <slug>]
 """
 import json, sys, os, io, re, urllib.request, ssl, hashlib, datetime
 from pathlib import Path
@@ -109,9 +109,10 @@ def tel_link(t):
     if t.startswith("0"): t = "+49" + t[1:]
     return t
 
-def build(runde_file):
+def build(runde_file, nur=None):
     data = json.loads(Path(runde_file).read_text())
-    briefe = []
+    if nur: data["firmen"] = [f for f in data["firmen"] if f["slug"] == nur or f.get("slug_exact") == nur]
+    briefe = []; qa_fehler = {}
     OUT_PDF.mkdir(exist_ok=True)
     with sync_playwright() as p:
         br = p.chromium.launch()
@@ -122,6 +123,7 @@ def build(runde_file):
             imgs = []; allimg = {}
             for i, u in enumerate(f.get("bild_urls", [])):
                 try:
+                    if os.environ.get("OFFLINE") == "1": raise RuntimeError("offline")
                     n, sz = fetch_img(u, d / "img" / f"b{i+1}", trim=f.get("trim", 0))
                     allimg[f"b{i+1}"] = "img/" + n
                     if sz[0] >= f.get("min_w", 700 if data.get("template") == "v2" else 500): imgs.append("img/" + n)
@@ -145,7 +147,11 @@ def build(runde_file):
                      galerie=rest[1:6] if len(rest) >= 3 else rest[:5], imgs=imgs,
                      tel_link=tel_link(f.get("telefon")),
                      website_kurz=re.sub(r"^https?://(www\.)?|/$", "", f["website"]))
-            if data.get("template") == "v5":
+            if f.get("template") == "beauty":
+                import beauty
+                v.update(allimg=allimg, **beauty.prepare(f, d, allimg))
+                html = env.get_template("beauty.html.j2").render(f=v, icon_phone=Markup(PHONE_SVG), fonts_css=(TPL / "beauty-fonts.css").read_text(), steps=f.get("steps") or STEPS["beauty"])
+            elif data.get("template") == "v5":
                 v5 = dict(f["v5"]); v5.setdefault("pos", {})
                 v.update(v5=v5, allimg=allimg, inhaber_k=(f"b{f['inhaber_idx']+1}" if f.get("inhaber_idx") is not None else None))
                 if v5.get("logo") is False: v["logo"] = None
@@ -165,6 +171,14 @@ def build(runde_file):
             else:
                 html = env.get_template("vorschau.html.j2").render(f=v, icon_phone=Markup(PHONE_SVG))
             (d / "index.html").write_text(html)
+            if f.get("template") == "beauty" or os.environ.get("QA") == "1":
+                import qa
+                fe = qa.check_page(br, d)
+                if fe:
+                    qa_fehler[f["firma"]] = fe
+                    print("  QA-FEHLER", f["firma"], *fe, sep="\n    ")
+                    if os.environ.get("QA_IGNORE") != "1": continue  # kein Brief für fehlerhafte Seiten
+                else: print("  QA OK")
             # Screenshots für den Brief
             sd, sm = OUT_PDF / f"{slug}-desk.jpg", OUT_PDF / f"{slug}-mob.jpg"
             pg = br.new_page(viewport={"width": 1280, "height": 860}, device_scale_factor=1.5)
@@ -199,10 +213,13 @@ def build(runde_file):
         html = env.get_template("brief.html.j2").render(briefe=briefe, root=str(ROOT), datum=datum, julian_tel=jt, julian_qr=str(jq))
         bf = OUT_PDF / "briefe.html"; bf.write_text(html)
         pg = br.new_page(); pg.goto(bf.as_uri()); pg.wait_for_timeout(1500)
-        pdf = OUT_PDF / f"HLP-Briefe-{data['runde']}.pdf"
+        pdf = OUT_PDF / (f"HLP-Briefe-{data['runde']}-{nur}.pdf" if nur else f"HLP-Briefe-{data['runde']}.pdf")
         pg.pdf(path=str(pdf), format="A4", print_background=True, prefer_css_page_size=True)
         br.close()
     print("PDF:", pdf)
+    if qa_fehler: print("ACHTUNG – Seiten mit QA-Fehlern (ohne Brief):", ", ".join(qa_fehler))
 
 if __name__ == "__main__":
-    build(sys.argv[1])
+    a = sys.argv[1:]
+    nur = a[a.index("--nur") + 1] if "--nur" in a else None
+    build(a[0], nur)

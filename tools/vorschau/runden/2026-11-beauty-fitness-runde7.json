@@ -745,7 +745,165 @@
      "Wohlfühlen",
      "Und wiederkommen."
     ]
-   ]
+   ],
+   "template": "beauty",
+   "beauty": {
+    "c": {
+     "bg": "#FBF7F4",
+     "pearl": "#F5ECE8",
+     "blush": "#EFDCDD",
+     "acc": "#B07A8A",
+     "acc_d": "#8A5466",
+     "champ": "#D6B99C",
+     "ink": "#3A2E30",
+     "mute": "#7B6B6D",
+     "star": "#C9A24B"
+    },
+    "wm": [
+     "Kosmetik",
+     "Krämer"
+    ],
+    "wm_sub": "Duft & Kosmetik · Bohmte",
+    "hero_bg_src": "b8",
+    "hero_bg_alt": "Behandlungsraum von Kosmetik Krämer",
+    "cut_src": "b7",
+    "cut_alt": "Kosmetik Krämer, Bohmte",
+    "eyebrow": "Kosmetikstudio & Parfümerie in Bohmte",
+    "h1": "Zeit für dich. <em>Seit Generationen.</em>",
+    "sub": "Gesichtsbehandlungen, Head Spa, Plasma, Mikrodermabrasion, Maniküre und Pediküre – kompetent, natürlich, achtsam und herzlich.",
+    "cta_btn": "Termin anfragen",
+    "cta2": "Behandlungen entdecken",
+    "proof_txt": "Alles rund um Duft und Kosmetik unter einem Dach.",
+    "chip": [
+     "Head Spa",
+     "Auszeit für Kopf und Seele"
+    ],
+    "seal": "Alles rund um Duft und Kosmetik · ",
+    "seal_mono": "K",
+    "intro": "Bei uns nimmst du dir Zeit für dich. <em>Kompetent, natürlich, achtsam</em> – und mit ganz viel Herz.",
+    "intro_sig": "Kosmetik Krämer · Alter Postweg 28 · Bohmte",
+    "svc_h2": "Gönn dir eine <em>Auszeit.</em>",
+    "svc_intro": "Gönne dir eine Auszeit für deine Seele und buche die Behandlung, die zu dir passt.",
+    "svc": [
+     [
+      "b4",
+      "Gesichtsbehandlungen",
+      "Tiefenreinigung, Peeling, Aromadampf, Massage und Abschlusspflege – abgestimmt auf deine Haut.",
+      [
+       "Reinigung",
+       "Peeling",
+       "Pflege"
+      ]
+     ],
+     [
+      "b12",
+      "Head Spa",
+      "Bürstenmassage, Kopfhaut-Tiefenreinigung, Haarmaske mit Kopfdampfsauna und Wasserfall-Ritual.",
+      [
+       "Massage",
+       "Kopfdampfsauna",
+       "Wasserfall-Ritual"
+      ]
+     ],
+     [
+      "b8",
+      "Plasma-Behandlung",
+      "Moderne Plasma-Technik ohne direkten Hautkontakt – präzise und schonend.",
+      [
+       "Plasma",
+       "Apparative Kosmetik"
+      ]
+     ],
+     [
+      "b6",
+      "Mikrodermabrasion",
+      "Intensive Hauterneuerung, auf Wunsch kombiniert mit Hyaluron.",
+      [
+       "Mikrodermabrasion",
+       "Hyaluron"
+      ]
+     ],
+     [
+      "b10",
+      "Maniküre und Pediküre",
+      "Gepflegte Hände und Füße, dazu Wimpern und Brauen – in Ruhe und mit Liebe zum Detail.",
+      [
+       "Hände",
+       "Füße",
+       "Wimpern & Brauen"
+      ]
+     ],
+     [
+      "b5",
+      "Haarentfernung",
+      "Sanft und gründlich – mit Warmwachs oder Zuckerpaste.",
+      [
+       "Warmwachs",
+       "Zuckerpaste"
+      ]
+     ]
+    ],
+    "signature": {
+     "img": "b12",
+     "alt": "Head-Spa-Platz bei Kosmetik Krämer",
+     "tag": "Neu<br>bei uns",
+     "eyebrow": "Signatur-Behandlung",
+     "h2": "Head Spa. <em>Für Kopf und Seele.</em>",
+     "p": "Ein Ritual, das dich komplett abschalten lässt – vier Schritte, ganz in Ruhe.",
+     "ritual": [
+      "Bürstenmassage",
+      "Kopfhaut-Tiefenreinigung",
+      "Haarmaske mit Kopfdampfsauna",
+      "Wasserfall-Ritual"
+     ],
+     "quote": "Nach dem Head Spa war ich erholt wie nach drei Wochen Urlaub.",
+     "btn": "Head Spa anfragen"
+    },
+    "rev_eyebrow": "Das sagen unsere Kundinnen",
+    "story": {
+     "eyebrow": "Unsere Geschichte",
+     "h2": "Gewachsen <em>als Familie.</em>",
+     "p": [
+      "Vom Fachgeschäft für Duft und Kosmetik zum Studio von heute – in Bohmte zuhause.",
+      "Parfümerie und Kosmetikstudio unter einem Dach: Hier findest du deinen Duft und gönnst dir gleich die passende Behandlung."
+     ],
+     "img1": "b9",
+     "lab1": "Damals",
+     "cap1": "Wo alles begann",
+     "img2": "b1",
+     "lab2": "Heute",
+     "cap2": "Parfümerie am Alter Postweg"
+    },
+    "team_img": "b2",
+    "team_alt": "Das Team von Kosmetik Krämer",
+    "team_eyebrow": "Unser Team",
+    "team_h2": "Kompetent, natürlich, <em>achtsam.</em>",
+    "steps_h2": "So läuft dein <em>Besuch</em> ab.",
+    "cta_h2": "Buche deine <em>Auszeit.</em>",
+    "cta_p": "Ruf an oder schreib uns – wir melden uns schnell zurück.",
+    "info": [
+     "<b>Behandlungen</b> · Montag bis Samstag nach Termin",
+     "<b>Gutscheine</b> · auch per Versand",
+     "<b>Bezahlen</b> · Kartenzahlung möglich"
+    ],
+    "form_h3": "Rückruf anfordern",
+    "form_p": "Wir melden uns und finden gemeinsam deinen Termin.",
+    "form_q": "Welche Behandlung?",
+    "mb_btn": "Termin anfragen",
+    "bot_name": "Flora",
+    "robot_tag": "Dein Studio-Guide",
+    "robot_hello": "Hallo! Ich bin Flora von Kosmetik Krämer. Soll ich dir kurz zeigen, was dich bei uns erwartet?",
+    "bot_hi": "Hallo! Ich bin Flora. Wobei kann ich dir helfen?",
+    "tour_l": "Hier findest du alle Behandlungen – vom Gesicht bis zur Pediküre.",
+    "tour_s": "Unser Highlight: das Head Spa. Eine Auszeit für Kopf und Seele.",
+    "tour_r": "74 Kundinnen geben uns 5 von 5 Sternen.",
+    "tour_u": "Hier lernst du unser Team kennen.",
+    "tour_k": "Und hier buchst du deinen Termin: 05471 334.",
+    "pos": {
+     "b9": "50% 30%",
+     "b1": "100% 50%"
+    }
+   }
   },
   {
    "slug": "melenberg-beauty",
