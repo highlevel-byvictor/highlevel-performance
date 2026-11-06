@@ -49,7 +49,8 @@ JS_TEXT = """() => { const out=[]; const sel='h1,h2,h3,p,li,a.btn,button,blockqu
  document.querySelectorAll(sel).forEach(el=>{ if(!vis(el)||el.closest('.pv,.robo,.bot,.callbar,[aria-hidden=true]')) return;
   if(el.closest('blockquote')&&!el.closest('blockquote.on')&&el.closest('.quotes')) return;
   const r=el.getBoundingClientRect(); if(r.width<4||r.height<4) return;
-  out.push({top:r.top+scrollY, left:r.left, w:r.width, h:r.height, t:(el.innerText||'').trim().slice(0,50), tag:el.tagName}); }); return out; }"""
+  let over=false; if(/^H[1-3]$/.test(el.tagName)){const rg=document.createRange();rg.selectNodeContents(el);for(const cr of rg.getClientRects()){if(cr.right>innerWidth+1||cr.left<-1)over=true}}
+  out.push({top:r.top+scrollY, left:r.left, w:r.width, h:r.height, t:(el.innerText||'').trim().slice(0,50), tag:el.tagName, over}); }); return out; }"""
 
 JS_TPROBE = """([b]) => { const res=[]; const xs=[.12,.5,.88], ys=[.3,.7];
  for(const fx of xs) for(const fy of ys){ const x=b.left+b.w*fx, y=b.top-scrollY+b.h*fy; if(y<0||y>=innerHeight||x<0||x>=innerWidth) continue;
@@ -105,7 +106,7 @@ def check_page(br, page_dir: Path, shots=None):
                 if Wf < 14: continue  # winzig (z. B. Gesicht auf Werbeplakat im Hintergrund)
                 if not all(np.isfinite([X, Y, Wf, Hf])): errs.append(f"[{name}] {p.name}: Zuschnitt nicht berechenbar ({o['fit']} {o['pos']})"); continue
                 face = [(X + Wf * a, Y + Hf * b) for a in (.2, .5, .8) for b in (.2, .5, .85)]
-                head = [(X + Wf * a, Y - Hf * .45) for a in (.2, .5, .8)] + [(X - Wf * .12, Y + Hf * .4), (X + Wf * 1.12, Y + Hf * .4), (X + Wf * .5, Y + Hf * 1.12)]
+                head = [(X + Wf * a, Y - Hf * .3) for a in (.25, .5, .75)] + [(X - Wf * .12, Y + Hf * .4), (X + Wf * 1.12, Y + Hf * .4), (X + Wf * .5, Y + Hf * 1.12)]
                 rf = pg.evaluate(JS_PROBE, [o["i"], face]); rh = pg.evaluate(JS_PROBE, [o["i"], head])
                 if "ok" not in rf:
                     if "ok" in rh: errs.append(f"[{name}] {p.name}: Person angeschnitten, Gesicht fehlt im Zuschnitt")
@@ -116,6 +117,7 @@ def check_page(br, page_dir: Path, shots=None):
                     errs.append(f"[{name}] {p.name}: Kopf/Gesicht abgeschnitten (Zuschnitt {o['w']:.0f}x{o['h']:.0f}px)")
         # Texte
         for b in pg.evaluate(JS_TEXT):
+            if b.get("over"): errs.append(f"[{name}] Überschrift \"{b['t'][:40]}\" läuft aus dem Bildschirm")
             pg.evaluate(f"scrollTo(0,{max(0, b['top'] + b['h']/2 - vh/2)})")
             hit = pg.evaluate(JS_TPROBE, [b])
             if hit: errs.append(f"[{name}] Text \"{b['t'][:40]}\" ({b['tag']}) wird verdeckt von {hit[0]}")

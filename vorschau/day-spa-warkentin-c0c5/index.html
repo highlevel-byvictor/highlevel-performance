@@ -2,758 +2,572 @@
 <html lang="de">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="robots" content="noindex,nofollow">
 <title>Day-Spa Warkentin – Entwurf</title>
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Marcellus&amp;family=Nunito+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="img/hero-bg.webp"><link rel="preload" as="image" href="img/inhaberin.webp">
 <style>
-:root{--bg:#FBF7F2;--ink:#2B2622;--acc:#D9741A;--acc2:#B9A58A;--soft:#F4EADF;--paper:#FFFFFF;--hbg:#FBF7F2;--hink:#2B2622;--fh:'Marcellus',Georgia,serif;--fb:'Nunito Sans',system-ui,sans-serif;--hw:400;--hls:0.005em;--htt:none;--hlh:1.02;--hst:100%}
+@font-face {
+  font-family: 'Bodoni Moda';
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url(../../assets/fonts/aFTB7PxzY382XsXX63LUYJSPUqb0qojSAq1rZLktbNxSXgM.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Bodoni Moda';
+  font-style: normal;
+  font-weight: 400 500;
+  font-display: swap;
+  src: url(../../assets/fonts/aFTQ7PxzY382XsXX63LUYJSKSKg.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: 'Jost';
+  font-style: normal;
+  font-weight: 300 500;
+  font-display: swap;
+  src: url(../../assets/fonts/92zatBhPNqw73oTd4g.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root{
+ --bg:#FBF7F2;--pearl:#F5ECE2;--blush:#F1E2D2;--acc:#D9741A;--acc-d:#A7530D;--champ:#C9B497;--ink:#2B2622;--mute:#5F554D;--star:#FFA41C;
+ --grad:linear-gradient(120deg,var(--acc) 0%,color-mix(in srgb,var(--acc) 55%,var(--champ)) 55%,var(--champ) 100%);
+ --grad-soft:linear-gradient(160deg,var(--pearl) 0%,var(--blush) 55%,color-mix(in srgb,var(--champ) 45%,var(--pearl)) 100%);
+ --fh:'Bodoni Moda',Didot,'Times New Roman',serif;--fb:'Jost','Helvetica Neue',system-ui,sans-serif;
+ --ease:cubic-bezier(.22,.8,.24,1);--r:36px;
+}
 *{box-sizing:border-box;margin:0;padding:0}
-html,body{overflow-x:clip}
-html.lenis,html.lenis body{height:auto}.lenis.lenis-smooth{scroll-behavior:auto!important}
-body{background:var(--bg);color:var(--ink);font-family:var(--fb);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased}
-img{display:block;width:100%;height:100%;object-fit:cover}
+html{-webkit-text-size-adjust:100%;scroll-behavior:auto}
+body{background:var(--bg);color:var(--ink);font:400 18.5px/1.72 var(--fb);letter-spacing:.005em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img{display:block;max-width:100%}
 a{color:inherit}
-h1,h2,h3{font-family:var(--fh);font-weight:var(--hw);letter-spacing:var(--hls);line-height:var(--hlh);text-transform:var(--htt);font-stretch:var(--hst);font-style:normal}
-h1 span{display:block}
-h1,h2,h3,.facts,.hn-num,.big,.tel,.ptel{font-variant-numeric:lining-nums}
-h2{font-size:clamp(2.2rem,5vw,4.4rem);margin-bottom:.5em;max-width:16ch}
-.wrap{width:min(1240px,100% - 48px);margin:0 auto}
-:focus-visible{outline:3px solid var(--acc2);outline-offset:3px}
-/* Kopf */
-.top{position:fixed;inset:0 0 auto;z-index:50;display:flex;align-items:center;gap:32px;padding:14px 32px;color:var(--hink);transition:background .3s,box-shadow .3s}
-.top:not(.solid)::before{content:"";position:absolute;inset:0 0 -40px;z-index:-1;background:linear-gradient(to bottom,color-mix(in srgb,var(--hbg) 82%,transparent),transparent);pointer-events:none}
-.top:not(.solid) nav a,.top:not(.solid) .ptel{text-shadow:0 1px 10px color-mix(in srgb,var(--hbg) 90%,transparent)}
-.glassbg{position:absolute;inset:0;background:linear-gradient(160deg,#cfe3f3 0%,#7fb0d8 38%,#2c5f8e 62%,#9cc6e6 63%,#e4f0f8 100%);overflow:hidden}
-.glassbg::before{content:"";position:absolute;inset:-20%;background:repeating-linear-gradient(115deg,rgba(255,255,255,.0) 0 90px,rgba(255,255,255,.28) 90px 120px,rgba(255,255,255,0) 120px 260px)}
-.glassbg::after{content:"";position:absolute;inset:0;background:linear-gradient(to right,transparent calc(25% - 4px),#B9C2CA calc(25% - 4px) calc(25% + 4px),transparent 0,transparent calc(50% - 4px),#B9C2CA 0 calc(50% + 4px),transparent 0,transparent calc(75% - 4px),#B9C2CA 0 calc(75% + 4px),transparent 0),linear-gradient(to bottom,transparent calc(50% - 4px),#B9C2CA 0 calc(50% + 4px),transparent 0)}
-.ab-img .glassbg,.cta-img .glassbg{position:absolute}
-.top.solid{background:color-mix(in srgb,var(--hbg) 94%,transparent);backdrop-filter:blur(10px);box-shadow:0 1px 0 color-mix(in srgb,var(--hink) 12%,transparent)}
-.top .logo{height:44px;width:auto;object-fit:contain}
-.top .wm{font-family:var(--fh);font-weight:var(--hw);font-size:22px;letter-spacing:var(--hls);text-decoration:none;text-transform:var(--htt)}
-.top nav{margin-left:auto;display:flex;gap:28px;font-size:15px}
-.top nav a{text-decoration:none;opacity:.8}.top nav a:hover{opacity:1}
-.top .ptel{display:flex;align-items:center;gap:8px;font-weight:600;text-decoration:none;font-size:15px}
-.top .ptel svg,.tel svg{width:18px;height:18px}
-/* Hero Text */
-.ht{position:relative;z-index:2}
-.kicker{font-size:15px;opacity:.75;margin-bottom:18px}
-.ht h1{font-size:clamp(2.8rem,5.4vw,6.2rem);margin-bottom:24px}
-.sub{font-size:clamp(1.05rem,1.35vw,1.25rem);max-width:44ch;opacity:.85}
-.acts{display:flex;flex-wrap:wrap;align-items:center;gap:14px 26px;margin:30px 0 26px}
-.btn{display:inline-block;background:var(--acc);color:#FFFFFF;padding:16px 28px;font-weight:600;text-decoration:none;border-radius:999px;transition:transform .2s,background .2s}
-.btn:hover{transform:translateY(-2px)}
-.tel{display:flex;align-items:center;gap:10px;font-weight:600;text-decoration:none;font-size:18px}
-.proof{display:flex;flex-wrap:wrap;gap:10px 26px;font-size:14.5px}
-.proof p{display:flex;align-items:center;gap:8px}
-.stars{display:flex;gap:2px}.stars svg{width:17px;height:17px;fill:#D9741A}
-.seal svg{width:22px;height:22px;color:var(--acc2)}
-.facts{font-size:clamp(1.3rem,2.3vw,2.1rem);line-height:1.45;max-width:46ch}
-.facts b{font-family:var(--fh);font-weight:var(--hw);font-size:1.5em;letter-spacing:var(--hls);color:var(--acc)}
-/* ===== Hero: Maske ===== */
-.h-mask{position:relative;height:210vh;background:var(--hbg);color:var(--hink)}
-.hm-stick{position:sticky;top:0;height:100vh;overflow:hidden}
-.hm-stick .ht{position:absolute;left:max(32px,4vw);bottom:15vh;width:min(46vw,640px)}
-.hm-img{position:absolute;inset:0;will-change:clip-path}
-.hm-in{position:absolute;inset:0;will-change:transform}
-.sl{position:absolute;inset:0;opacity:0;transition:opacity 1.6s ease}
-.sl.on{opacity:1;animation:kb 10s linear both}
-video.sl{width:100%;height:100%;object-fit:cover}.sl.hv{animation:none}
-@keyframes kb{from{transform:scale(1.0)}to{transform:scale(1.07)}}
-.dots{position:absolute;right:5vw;bottom:5vh;z-index:4;display:flex;gap:8px}
-.dots i{width:28px;height:3px;background:rgba(255,255,255,.5);transition:.4s}
-.dots i.on{background:#fff;width:48px}
-@keyframes glide{from{transform:translateX(-8%)}to{transform:translateX(8%)}}
-.glassbg::before{animation:glide 9s ease-in-out infinite alternate}
-.hm-cap{position:absolute;right:4vw;bottom:4vh;z-index:3;color:#fff;font-size:15px;opacity:0;background:color-mix(in srgb,var(--ink) 70%,transparent);padding:8px 14px}
-@media (min-width:901px){
- .h-mask[data-shape=arch] .hm-img{clip-path:inset(15% 4% 0% 50% round 23vw 23vw 0 0)}
- .h-mask[data-shape=arch] .hm-in{transform:translateX(23%) scale(1.12)}
- .h-mask[data-shape=gable] .hm-img{clip-path:polygon(50% 34%, 72.5% 12%, 95% 34%, 95% 100%, 50% 100%)}
- .h-mask[data-shape=gable] .hm-in{transform:translateX(22.5%) scale(1.12)}
- .h-mask[data-shape=blob] .hm-img{clip-path:inset(13% 4% 9% 49% round 46% 54% 48% 52% / 56% 44% 56% 44%)}
- .h-mask[data-shape=blob] .hm-in{transform:translateX(22.5%) scale(1.12)}
- .h-mask[data-shape=coin] .hm-img{inset:auto;left:51%;top:14vh;width:44vw;height:44vw;max-height:76vh;max-width:76vh;clip-path:circle(50% at 50% 50%)}
- .h-mask[data-shape=coin] .hm-in{transform:none}
- .h-mask[data-shape=coin] .sl{object-position:var(--vpos,65% 40%)}
- .h-mask[data-shape=diag] .hm-img{clip-path:polygon(62% 0%, 100% 0%, 100% 100%, 46% 100%)}
- .h-mask[data-shape=diag] .hm-in{transform:translateX(27%) scale(1.12)}
- .h-mask[data-shape=full] .hm-img{clip-path:none}
- .h-mask[data-shape=full] .hm-in{transform:none}
- .h-mask[data-shape=full] .hm-img::after{content:'';position:absolute;inset:0;background:linear-gradient(90deg,color-mix(in srgb,var(--hbg) 92%,transparent) 0%,color-mix(in srgb,var(--hbg) 70%,transparent) 34%,transparent 60%),linear-gradient(0deg,color-mix(in srgb,var(--hbg) 70%,transparent),transparent 35%)}
- .h-mask[data-shape=full] .ht{z-index:3}
- .h-mask[data-shape=full] .sl{object-position:var(--vpos,70% 50%)}
-}
-@media (min-width:901px) and (prefers-reduced-motion:reduce){.h-mask,.h-win{height:100vh}.pin-track{width:auto;overflow-x:auto}}
-/* ===== Hero: Fenster / Scheiben ===== */
-.h-panes{background:var(--hbg);color:var(--hink);padding-top:72px}
-.hp-img{position:relative;height:60vh;overflow:hidden}
-.hp-img .mull{position:absolute;background:#A7B1BA;z-index:2;box-shadow:0 0 0 1px rgba(0,0,0,.08)}
-.hp-band{padding:56px 0 64px}
-.hp-band .wrap{display:grid;grid-template-columns:1.3fr 1fr;gap:56px;align-items:end}
-.hp-band .ht h1{margin-bottom:0}
-/* LS Fenster */
-.h-win{position:relative;height:220vh;background:var(--hbg);color:var(--hink)}
-.hw-stick{position:sticky;top:0;height:100vh;overflow:hidden;display:grid;grid-template-columns:1fr 1.05fr;align-items:center;gap:4vw;padding:80px 4vw 40px}
-.win{position:relative;aspect-ratio:4/4.6;max-height:78vh;justify-self:center;width:100%;max-width:560px;border:26px solid #383E42;box-shadow:inset 0 0 0 4px rgba(255,255,255,.06),0 30px 60px -20px rgba(0,0,0,.35);border-radius:3px;transform-origin:50% 50%;will-change:transform}
-.win::before,.win::after{content:"";position:absolute;background:#383E42;z-index:2}
-.win::before{left:50%;top:0;bottom:0;width:18px;transform:translateX(-50%)}
-.win::after{top:46%;left:0;right:0;height:18px}
-.win .glass{position:absolute;inset:0;overflow:hidden}
-.win .glare{position:absolute;inset:0;z-index:3;background:linear-gradient(115deg,rgba(255,255,255,.22) 0 18%,transparent 18% 40%,rgba(255,255,255,.1) 40% 46%,transparent 46%);pointer-events:none}
-/* ===== Hero: Zahl ===== */
-.h-num{background:var(--hbg);color:var(--hink);padding:120px 0 0;overflow:hidden}
-.hn-top{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:end}
-.hn-top .ht h1{font-size:clamp(2.4rem,4.6vw,4.6rem);margin:0}
-.hn-num{font-family:var(--fh);font-weight:900;font-size:min(36vw,560px);line-height:.78;letter-spacing:-.06em;text-align:center;margin:3vw 0 0;color:transparent;background-image:url("");background-size:cover;background-position:30% 50%;-webkit-background-clip:text;background-clip:text;will-change:background-position}
-.hn-strip{height:56vh;position:relative}
-/* ===== Hero: Portrait ===== */
-.h-por{background:var(--hbg);color:var(--hink);min-height:100vh;display:grid;grid-template-columns:1.25fr 1fr;padding-top:72px}
-.hpo-t{display:flex;flex-direction:column;justify-content:center;padding:6vh 4vw 6vh max(32px,5vw)}
-.hpo-t .ht h1{font-size:clamp(3rem,9.4vw,10.5rem)}
-.hpo-p{position:relative;overflow:hidden}
-.hpo-p figcaption{position:absolute;left:0;bottom:0;background:var(--acc);color:#FFFFFF;padding:16px 22px;font-size:15px;line-height:1.35}
-.hpo-p figcaption b{display:block;font-family:var(--fh);font-size:22px;font-weight:var(--hw);letter-spacing:var(--hls)}
-/* ===== Hero: Collage ===== */
-.h-col{background:var(--hbg);color:var(--hink);min-height:100vh;padding:120px 0 80px;overflow:hidden}
-.h-col .wrap{display:grid;grid-template-columns:1fr 1.05fr;gap:40px;align-items:center}
-.prints{position:relative;height:min(74vh,680px)}
-.print{position:absolute;background:#fff;padding:12px 12px 44px;box-shadow:0 22px 44px -18px rgba(0,0,0,.4);will-change:transform}
-.print img{object-fit:cover;background:#fff}
-.print figcaption{position:absolute;left:14px;bottom:12px;font-size:14px;color:#333;font-family:var(--fh)}
-.print:nth-child(1){width:58%;height:60%;left:0;top:4%;transform:rotate(-5deg)}
-.print:nth-child(2){width:56%;height:58%;right:0;top:0;transform:rotate(4deg)}
-.print:nth-child(3){width:60%;height:56%;left:20%;bottom:0;transform:rotate(-1.5deg)}
-/* ===== Hero: Leitung ===== */
-.h-cir{background:var(--hbg);color:var(--hink);padding:130px 0 0;position:relative;overflow:hidden}
-.hc-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
-.hc-img{position:relative;margin-top:60px;height:62vh}
-.hc-img::before{content:"";position:absolute;inset:-18px 18px 18px -18px;border:2px solid var(--acc2);z-index:0}
-.hc-img .sl{z-index:1}.hc-img .sl.on{animation:none}
-.cable{position:absolute;inset:0;pointer-events:none;z-index:1}
-.cable path{fill:none;stroke:var(--acc2);stroke-width:2.5}
-.wire{position:fixed;left:18px;top:0;bottom:0;width:3px;z-index:40;background:color-mix(in srgb,var(--acc2) 18%,transparent)}
-.wire i{position:absolute;inset:0;background:var(--acc2);transform-origin:top;transform:scaleY(0)}
-/* ===== Leistungen ===== */
-.sec{padding:clamp(80px,11vw,150px) 0}
-.svc-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:48px}
-.svc-head p{max-width:40ch;opacity:.8}
-/* index */
-.idx-wrap{display:grid;grid-template-columns:1fr minmax(0,.85fr);gap:5vw;align-items:start}
-.idx-media{position:sticky;top:96px;height:min(74vh,700px);overflow:hidden}
-.idx-media img{position:absolute;inset:0;opacity:0;transform:scale(1.06);transition:opacity .5s,transform .9s}
-.idx-media img.on{opacity:1;transform:none}
-.idx{list-style:none;position:relative}
-.idx li.on .n{color:var(--acc);transform:translateX(14px)}
-.idx li{display:grid;grid-template-columns:1fr auto;align-items:center;gap:24px;padding:14px 0;cursor:default}
-.idx li .n{font-family:var(--fh);font-weight:var(--hw);letter-spacing:var(--hls);font-size:clamp(1.9rem,4.4vw,4rem);line-height:1.05;transition:color .25s,transform .35s;text-transform:var(--htt)}
-.idx li .th{display:none;width:84px;height:62px;overflow:hidden}
-.idx li:hover .n{color:var(--acc);transform:translateX(14px)}
-.idx.noimg{columns:2;column-gap:64px}
-.idx.noimg li{break-inside:avoid;grid-template-columns:auto 1fr;gap:18px;padding:12px 0}
-.idx.noimg li svg{width:34px;height:34px;color:var(--acc)}
-.idx.noimg li .n{font-size:clamp(1.5rem,2.6vw,2.3rem)}
-/* pin */
-.pin{overflow:hidden}
-.pin-track{display:flex;gap:28px;padding:0 4vw;width:max-content}
-.pin-it{width:min(58vw,760px);flex:none}
-.pin-it .ph{height:62vh;overflow:hidden}
-.pin-it h3{font-size:clamp(1.6rem,2.8vw,2.6rem);margin-top:18px}
-.pin-intro{flex:none;width:min(34vw,440px);display:flex;flex-direction:column;justify-content:center}
-.pin-intro h2{font-size:clamp(2.4rem,4.4vw,4.4rem)}
-/* stack */
-.stk{position:relative}
-.stk-it{position:sticky;top:72px;height:calc(100vh - 110px);margin-bottom:24px;overflow:hidden}
-.stk-it .lbl{position:absolute;left:0;bottom:0;background:var(--paper);color:var(--ink);padding:22px 30px 20px;max-width:min(92%,640px)}
-.stk-it .lbl h3{font-size:clamp(1.8rem,3.6vw,3.4rem)}
-.more{display:flex;flex-wrap:wrap;gap:12px 40px;margin-top:40px;font-family:var(--fh);font-size:clamp(1.3rem,2.2vw,1.9rem);font-weight:var(--hw);letter-spacing:var(--hls)}
-/* Über uns */
-.ab{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(40px,6vw,96px);align-items:center}
-.ab.flip .ab-img{order:2}
-.ab-img{position:relative;height:min(84vh,760px)}
-.ab-img .small{position:absolute;width:42%;height:38%;right:-6%;bottom:-8%;border:10px solid var(--bg)}
-.ab-img figcaption{position:absolute;left:0;top:100%;margin-top:12px;font-size:14.5px;opacity:.75}
-.ab-t p{margin-bottom:1em;max-width:52ch}
-.checks{list-style:none;margin-top:28px}
-.checks li{display:flex;gap:14px;align-items:flex-start;padding:7px 0;font-weight:500}
-.checks svg{flex:none;width:22px;height:22px;margin-top:3px;color:var(--acc)}
-.ab-t .facts{margin-top:30px}
-/* Ablauf */
-.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:clamp(20px,3vw,44px);counter-reset:s}
-.steps li{list-style:none;position:relative;padding-top:24px}
-.steps li::before{counter-increment:s;content:counter(s);display:block;font-family:var(--fh);font-weight:var(--hw);font-size:clamp(3rem,5vw,4.6rem);line-height:1;color:var(--acc);margin-bottom:16px;letter-spacing:var(--hls)}
-.steps h3{font-size:1.35rem;margin-bottom:8px;letter-spacing:0;line-height:1.2;text-transform:none}
-.steps p{opacity:.8;font-size:16px}
-.tone{background:var(--soft)}
-.dark{background:var(--ink);color:var(--paper)}
-/* Galerie */
-.rail-wrap{position:relative}
-.rail{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 4vw 8px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
-.rail::-webkit-scrollbar{display:none}
-.rail figure{flex:none;scroll-snap-align:start;height:min(70vh,620px);overflow:hidden}
-.rail figure:nth-child(3n+1){width:min(70vw,860px)}
-.rail figure:nth-child(3n+2){width:min(44vw,520px)}
-.rail figure:nth-child(3n){width:min(56vw,680px)}
-.rail-nav{display:flex;gap:10px;justify-content:flex-end;margin-top:22px}
-.rail-nav button{width:52px;height:52px;border:1.5px solid currentColor;background:none;color:inherit;cursor:pointer;display:grid;place-items:center;border-radius:999px}
-.rail-nav button svg{width:20px;height:20px}
-.rail-nav button:hover{background:var(--acc);border-color:var(--acc);color:#fff}
-/* Kontakt */
-.cta{display:grid;grid-template-columns:1.1fr 1fr;min-height:80vh;background:var(--acc);color:#FFFFFF}
-.cta-t{padding:clamp(56px,8vw,120px) max(32px,5vw);display:flex;flex-direction:column;justify-content:center}
-.cta-t h2{max-width:13ch}
-.cta-t p{max-width:46ch;opacity:.9;margin-bottom:34px}
-.cta-t .big{font-variant-numeric:lining-nums;font-family:var(--fh);font-weight:var(--hw);font-size:clamp(2.2rem,5vw,4.6rem);letter-spacing:var(--hls);text-decoration:none;line-height:1}
-.cta-t .mail{margin-top:18px;opacity:.85}
-.cta-t .btn{background:#2B2622;color:#F4EADF;margin-top:34px;align-self:flex-start}
-.cta-img{position:relative;overflow:hidden;min-height:50vh}
-/* Fuß */
-footer{background:var(--ink);color:var(--paper);padding:64px 0 120px;font-size:15px}
-footer .wrap{display:grid;grid-template-columns:2fr 1fr 1fr;gap:40px}
-footer h4{font-family:var(--fh);font-size:24px;font-weight:var(--hw);letter-spacing:var(--hls);margin-bottom:10px;text-transform:var(--htt)}
-footer a{text-decoration:none;opacity:.85}
-footer .note{grid-column:1/-1;margin-top:28px;padding-top:22px;border-top:1px solid color-mix(in srgb,var(--paper) 18%,transparent);opacity:.6;font-size:13.5px}
-/* Entwurfshinweis */
-.pv{position:fixed;left:0;right:0;bottom:0;z-index:60;background:rgba(18,18,20,.92);backdrop-filter:blur(8px);color:#fff;padding:9px 48px 9px 20px;font-size:13px;line-height:1.4;text-align:center}
-.pv b{margin-right:8px}
+.wrap{width:min(1240px,calc(100% - 64px));margin:0 auto}
+.eyebrow{display:inline-flex;align-items:center;gap:14px;font:500 13.5px/1.2 var(--fb);letter-spacing:.2em;text-transform:uppercase;color:var(--acc-d)}
+.eyebrow::before{content:"";width:34px;height:1px;background:currentColor;opacity:.6}
+h1,h2,h3{font-family:var(--fh);font-weight:400;line-height:1.04;letter-spacing:-.015em;color:var(--ink)}
+h1 em,h2 em,h3 em{font-style:italic;color:var(--acc-d)}
+h2{font-size:clamp(38px,4.6vw,68px)}
+.lead{font-size:clamp(18.5px,1.45vw,21px);color:color-mix(in srgb,var(--ink) 82%,var(--mute));max-width:34em}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:58px;padding:0 32px;border-radius:999px;text-decoration:none;font:500 16.5px/1 var(--fb);letter-spacing:.06em;transition:transform .5s var(--ease),box-shadow .5s var(--ease),background-position .8s var(--ease)}
+.btn-p{color:#fff;background:linear-gradient(110deg,var(--acc-d),var(--acc) 45%,var(--champ) 100%);background-size:180% 100%;box-shadow:0 18px 40px -18px color-mix(in srgb,var(--acc-d) 75%,transparent)}
+.btn-p:hover{background-position:100% 0;transform:translateY(-2px);box-shadow:0 24px 46px -18px color-mix(in srgb,var(--acc-d) 85%,transparent)}
+.btn-g{color:var(--ink);background:color-mix(in srgb,#fff 55%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--ink) 14%,transparent)}
+.btn-g:hover{transform:translateY(-2px);background:#fff}
+.btn svg{width:17px;height:17px}
+
+/* ---------- Kopfzeile ---------- */
+.top{position:fixed;inset:0 0 auto;z-index:50;transition:background .6s var(--ease),box-shadow .6s var(--ease),padding .6s var(--ease);padding:26px 0}
+.top.solid{background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(18px) saturate(1.3);-webkit-backdrop-filter:blur(18px) saturate(1.3);box-shadow:0 1px 0 color-mix(in srgb,var(--ink) 8%,transparent);padding:14px 0}
+.top .wrap{display:flex;align-items:center;gap:40px}
+.wm{display:flex;flex-direction:column;text-decoration:none;line-height:1}
+.wm b{font:400 27px/1 var(--fh);letter-spacing:-.01em}.wm b i{color:var(--acc-d)}
+.wm small{font:500 11px/1 var(--fb);letter-spacing:.26em;text-transform:uppercase;color:var(--mute);margin-top:8px}
+.wm-logo img{height:52px;width:auto}
+.top.solid .wm-logo img{height:42px}
+.ft-logo{display:inline-block;padding:14px 22px;border-radius:999px;background:#fff}.ft-logo img{height:44px;width:auto}
+.nav{display:flex;gap:34px;margin-left:auto}
+.nav a{text-decoration:none;font-size:16px;font-weight:500;letter-spacing:.04em;position:relative;padding:6px 0}
+.nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--acc);transform:scaleX(0);transform-origin:right;transition:transform .6s var(--ease)}
+.nav a:hover::after{transform:scaleX(1);transform-origin:left}
+.top .btn{min-height:46px;padding:0 24px;font-size:14px}
+
+/* ---------- Hero ---------- */
+.hero{position:relative;min-height:100svh;display:flex;align-items:stretch;overflow:hidden;isolation:isolate}
+.hero-bg{position:absolute;inset:-4%;z-index:-3;background:url("img/hero-bg.webp") center/cover no-repeat;transform:scale(1.04);animation:breathe 26s ease-in-out infinite alternate}
+.hero-wash{position:absolute;inset:0;z-index:-2;background:
+  radial-gradient(70% 90% at 0% 40%,color-mix(in srgb,var(--bg) 96%,transparent) 0%,color-mix(in srgb,var(--bg) 78%,transparent) 48%,transparent 80%),
+  linear-gradient(180deg,color-mix(in srgb,var(--bg) 40%,transparent) 0%,transparent 30%,transparent 70%,var(--bg) 100%),
+  linear-gradient(110deg,color-mix(in srgb,var(--blush) 55%,transparent),color-mix(in srgb,var(--champ) 22%,transparent))}
+.liquid{position:absolute;z-index:-1;border-radius:50%;filter:blur(60px);opacity:.55;mix-blend-mode:multiply;pointer-events:none}
+.liquid.a{width:46vw;height:46vw;left:-14vw;top:8vh;background:radial-gradient(circle,color-mix(in srgb,var(--acc) 55%,transparent),transparent 68%);animation:drift1 22s ease-in-out infinite alternate}
+.liquid.b{width:38vw;height:38vw;right:4vw;top:-10vh;background:radial-gradient(circle,color-mix(in srgb,var(--champ) 70%,transparent),transparent 68%);animation:drift2 26s ease-in-out infinite alternate}
+@keyframes breathe{to{transform:scale(1.11) translate3d(-1%,-1%,0)}}
+@keyframes drift1{to{transform:translate3d(9vw,7vh,0) scale(1.15)}}
+@keyframes drift2{to{transform:translate3d(-7vw,9vh,0) scale(.9)}}
+.hero .wrap{display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);gap:24px;align-items:end;min-height:100svh;padding-top:120px}
+.h-txt{align-self:center;padding-bottom:9vh;position:relative}
+.h-txt::before{content:"";position:absolute;inset:-14% -18% -6% -30%;z-index:-1;pointer-events:none;background:radial-gradient(closest-side,color-mix(in srgb,#fff 82%,transparent),color-mix(in srgb,#fff 55%,transparent) 55%,transparent);filter:blur(10px)}
+.h-txt .lead,.h-txt .eyebrow,.h-proof{text-shadow:0 0 18px #fff,0 0 2px color-mix(in srgb,#fff 80%,transparent)}
+.h-txt .eyebrow{margin-bottom:30px}
+.hero h1{font-size:clamp(48px,5.5vw,96px);line-height:.98;letter-spacing:-.025em;margin-bottom:30px}
+.hero h1 em{display:block;background:linear-gradient(100deg,var(--acc-d),var(--acc) 50%,color-mix(in srgb,var(--champ) 80%,var(--acc-d)));-webkit-background-clip:text;background-clip:text;color:transparent;padding-bottom:.08em}
+.hero .lead{margin-bottom:40px}
+.h-cta{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:46px}
+.h-proof{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
+.stars{display:inline-flex;gap:3px;color:var(--star)!important;filter:drop-shadow(0 1px 1px color-mix(in srgb,#B36A00 35%,transparent))}.stars svg{width:16px;height:16px}
+.h-proof .g{display:flex;flex-direction:column;gap:5px;font-size:16px;color:var(--ink)}
+.h-proof .g b{font:400 30px/1 var(--fh);color:var(--ink);display:flex;align-items:center;gap:12px}
+.h-proof .sep{width:1px;height:44px;background:color-mix(in srgb,var(--ink) 15%,transparent)}
+.h-proof .sg{font-size:16px;color:var(--ink);line-height:1.5;max-width:16em}
+.h-por{position:relative;align-self:end;height:min(88svh,920px);display:flex;justify-content:center;align-items:flex-end}
+.h-por .halo{position:absolute;left:50%;top:6%;width:min(560px,92%);aspect-ratio:1;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle at 50% 45%,color-mix(in srgb,#fff 85%,transparent) 0%,color-mix(in srgb,var(--blush) 80%,transparent) 42%,transparent 70%)}
+.h-por .ring{position:absolute;left:50%;top:3%;width:min(600px,98%);aspect-ratio:1;transform:translateX(-50%);border-radius:50%;border:1px solid color-mix(in srgb,var(--acc) 35%,transparent)}
+.h-por>img{position:relative;height:auto;max-height:100%;width:auto;max-width:100%;object-fit:contain;object-position:bottom;-webkit-mask-image:linear-gradient(180deg,#000 82%,transparent 100%);mask-image:linear-gradient(180deg,#000 82%,transparent 100%);filter:drop-shadow(0 30px 40px color-mix(in srgb,var(--acc-d) 22%,transparent))}
+.h-arch{position:relative;align-self:center;width:min(500px,92%);aspect-ratio:4/5;margin-bottom:9vh;border-radius:999px 999px 40px 40px;overflow:hidden;box-shadow:0 60px 90px -50px color-mix(in srgb,var(--acc-d) 70%,transparent)}
+.h-arch img{width:100%;height:100%;object-fit:cover}
+.h-por:has(.h-arch){align-items:center}
+.chip{position:absolute;left:-4%;bottom:15%;z-index:2;display:flex;align-items:center;gap:14px;padding:12px 24px 12px 12px;border-radius:999px;background:color-mix(in srgb,#fff 86%,transparent);font-size:15.5px!important;backdrop-filter:blur(16px) saturate(1.3);-webkit-backdrop-filter:blur(16px) saturate(1.3);box-shadow:0 20px 40px -22px color-mix(in srgb,var(--ink) 50%,transparent);font-size:14px;line-height:1.35;animation:float 7s ease-in-out infinite}
+.chip i{width:46px;height:46px;border-radius:50%;background:var(--grad);display:grid;place-items:center;color:#fff;flex:none}
+.chip i svg{width:20px;height:20px}
+.chip b{display:block;font:400 18px/1.15 var(--fh)}
+.chip span{color:color-mix(in srgb,var(--ink) 80%,var(--mute))}
+@keyframes float{50%{transform:translateY(-10px)}}
+.seal{position:absolute;left:0;top:13%;z-index:2;width:128px;height:128px;border-radius:50%;display:grid;place-items:center;background:color-mix(in srgb,#fff 55%,transparent);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px)}
+.seal svg{position:absolute;inset:0;width:100%;height:100%;animation:spin 40s linear infinite}
+.seal text{font:500 10.4px var(--fb);letter-spacing:.28em;text-transform:uppercase;fill:var(--acc-d)}
+.seal b{font:italic 400 34px/1 var(--fh);color:var(--acc-d)}
+@keyframes spin{to{transform:rotate(360deg)}}
+.seal.br{top:auto;left:auto;right:0;bottom:22%}
+.h-wave{position:absolute;left:0;right:0;bottom:-1px;height:90px;z-index:1;pointer-events:none}
+.h-wave path{fill:var(--bg)}
+.h-wave svg,.wtop svg,.wbot svg{display:block;width:100%;height:100%}
+
+/* ---------- Intro ---------- */
+.intro{padding:130px 0 120px;text-align:center;position:relative}
+.intro p{font:400 clamp(28px,3.1vw,46px)/1.28 var(--fh);letter-spacing:-.01em;max-width:22em;margin:0 auto}
+.intro p em{color:var(--acc-d)}
+.intro .orn{display:block;width:1px;height:70px;margin:0 auto 46px;background:linear-gradient(var(--acc),transparent)}
+.intro .sig{margin-top:40px;font-size:14.5px;letter-spacing:.24em;text-transform:uppercase;color:var(--mute)}
+
+/* ---------- Behandlungen ---------- */
+.svc{padding:40px 0 150px}
+.svc-head{display:flex;justify-content:space-between;align-items:flex-end;gap:40px;margin-bottom:80px}
+.svc-head h2{max-width:9em;margin-top:22px}
+.svc-head .lead{max-width:26em}
+.svc-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(40px,7vw,110px);align-items:start}
+.svc-media{position:sticky;top:110px;aspect-ratio:4/5;border-radius:999px 999px var(--r) var(--r);overflow:hidden;background:var(--pearl);box-shadow:0 50px 80px -50px color-mix(in srgb,var(--acc-d) 60%,transparent)}
+.svc-media img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transform:scale(1.08);transition:opacity 1.1s var(--ease),transform 1.6s var(--ease)}
+.svc-media img.on{opacity:1;transform:scale(1)}
+.svc-media::after{content:"";position:absolute;inset:0;border-radius:inherit;box-shadow:inset 0 0 0 1px color-mix(in srgb,#fff 40%,transparent);pointer-events:none}
+.svc-list{list-style:none;counter-reset:s}
+.svc-list li{position:relative;padding:38px 0 40px 84px;cursor:default}
+.svc-list li+li{border-top:1px solid color-mix(in srgb,var(--ink) 10%,transparent)}
+.svc-list li::before{counter-increment:s;content:"0" counter(s);position:absolute;left:0;top:44px;font:italic 400 17px/1 var(--fh);color:var(--acc)}
+.svc-list li::after{content:"";position:absolute;left:0;top:44px;width:0;height:1px}
+.svc-list h3{font-size:clamp(28px,2.6vw,40px);transition:color .6s var(--ease),transform .7s var(--ease)}
+.svc-list p{color:color-mix(in srgb,var(--ink) 82%,var(--mute));margin-top:12px;max-width:30em;font-size:18.5px}
+.svc-list .tg{margin-top:16px;font-size:14px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--acc-d)}
+.svc-list li.on h3{color:var(--acc-d);transform:translateX(8px)}
+.svc-list .mi{display:none}
+
+/* ---------- Signatur (Head Spa) ---------- */
+.sig-sec{position:relative;padding:150px 0;background:var(--grad-soft);overflow:hidden;isolation:isolate}
+.sig-sec::before{content:"";position:absolute;width:70vw;height:70vw;right:-20vw;top:-30vw;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,#fff 70%,transparent),transparent 65%);z-index:-1}
+.sig-sec .wtop,.sig-sec .wbot{position:absolute;left:0;right:0;height:80px;pointer-events:none}
+.sig-sec .wtop{top:-1px;transform:scaleY(-1)}.sig-sec .wbot{bottom:-1px}
+.sig-sec .wtop path,.sig-sec .wbot path{fill:var(--bg)}
+.sig-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,7vw,110px);align-items:center}
+.oval{position:relative;aspect-ratio:3/4;border-radius:50%;overflow:hidden;box-shadow:0 60px 90px -50px color-mix(in srgb,var(--acc-d) 70%,transparent)}
+.oval img{width:100%;height:100%;object-fit:cover}
+.oval-w{position:relative;max-width:500px;justify-self:center;width:100%}
+.oval-w .tag{position:absolute;right:-6%;top:12%;width:116px;height:116px;border-radius:50%;background:var(--grad);color:#fff;display:grid;place-items:center;text-align:center;font:italic 400 19px/1.15 var(--fh);box-shadow:0 20px 40px -18px color-mix(in srgb,var(--acc-d) 80%,transparent);animation:float 8s ease-in-out infinite}
+.sig-in h2{margin:24px 0 26px}
+.ritual{list-style:none;margin:40px 0 44px;position:relative;padding-left:34px}
+.ritual::before{content:"";position:absolute;left:6px;top:10px;bottom:10px;width:1px;background:linear-gradient(var(--acc),color-mix(in srgb,var(--champ) 60%,transparent))}
+.ritual li{position:relative;padding:9px 0;font-size:19px}
+.ritual li::before{content:"";position:absolute;left:-34px;top:17px;width:13px;height:13px;border-radius:50%;background:var(--bg);box-shadow:inset 0 0 0 1px var(--acc)}
+.ritual li::after{content:"";position:absolute;left:-30px;top:21px;width:5px;height:5px;border-radius:50%;background:var(--acc)}
+.sig-q{font:italic 400 22px/1.45 var(--fh);color:var(--ink);max-width:24em;margin-bottom:36px}
+.sig-q .stars{display:flex;margin-bottom:12px}
+
+/* ---------- Video-Band (eigenes Video der Firma, weich verschwommen) ---------- */
+.vband{position:relative;height:min(78svh,720px);overflow:hidden;isolation:isolate;display:grid;place-items:center;text-align:center}
+.vband video{position:absolute;inset:-6%;width:112%;height:112%;object-fit:cover;z-index:-2;filter:blur(14px) saturate(.92) brightness(1.04);transform:scale(1.06)}
+.vband::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,var(--bg) 0%,color-mix(in srgb,var(--bg) 25%,transparent) 22%,color-mix(in srgb,var(--blush) 30%,transparent) 50%,color-mix(in srgb,var(--bg) 25%,transparent) 78%,var(--bg) 100%)}
+.vband p{font:400 clamp(30px,3.6vw,56px)/1.2 var(--fh);letter-spacing:-.01em;max-width:18em;padding:0 24px;text-shadow:0 0 30px #fff,0 0 12px color-mix(in srgb,#fff 80%,transparent)}
+.vband p em{color:var(--acc-d)}
+@media (prefers-reduced-motion:reduce){.vband video{display:none}.vband{background:var(--grad-soft)}}
+
+/* ---------- Bewertungen ---------- */
+.rev{padding:150px 0 140px;text-align:center;position:relative}
+.rev .eyebrow{display:flex;justify-content:center}
+.rev .score{display:inline-flex;align-items:center;gap:26px;margin:44px 0 18px}
+.rev .score b{font:400 clamp(84px,9vw,140px)/1.05 var(--fh);background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.rev .score span{text-align:left;color:var(--ink);font-size:17px;line-height:1.5}
+.rev .score .stars svg{width:20px;height:20px}
+.quotes{position:relative;max-width:900px;margin:50px auto 0;min-height:210px}
+.quotes blockquote{position:absolute;inset:0;opacity:0;transform:translateY(16px);transition:opacity 1.2s var(--ease),transform 1.4s var(--ease);pointer-events:none}
+.quotes blockquote.on{opacity:1;transform:none;pointer-events:auto}
+.quotes p{font:400 clamp(24px,2.5vw,34px)/1.38 var(--fh);letter-spacing:-.005em}
+.quotes p::before{content:"\201E"}.quotes p::after{content:"\201C"}
+.quotes cite{display:block;margin-top:26px;font:500 14px/1 var(--fb);font-style:normal;letter-spacing:.22em;text-transform:uppercase;color:var(--mute)}
+.qdots{display:flex;justify-content:center;gap:12px;margin-top:20px}
+.qdots button{width:34px;height:20px;border:0;background:none;cursor:pointer;position:relative}
+.qdots button::after{content:"";position:absolute;left:0;right:0;top:9px;height:2px;border-radius:2px;background:color-mix(in srgb,var(--ink) 15%,transparent);transition:background .5s}
+.qdots button.on::after{background:var(--acc)}
+
+/* ---------- Geschichte ---------- */
+.story{padding:60px 0 90px}
+.story-in{display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:clamp(40px,7vw,110px);align-items:center}
+.story-txt h2{margin:24px 0 28px}
+.story-txt p+p{margin-top:18px}
+.story-img{display:grid;grid-template-columns:minmax(0,.78fr) minmax(0,1fr);gap:28px;align-items:end}
+.story-img figure{position:relative}
+.story-img .arch{aspect-ratio:3/4.1;border-radius:999px 999px 28px 28px;overflow:hidden;filter:grayscale(1) contrast(1.02)}
+.story-img .arch.col{filter:none}
+.story-img .soft{aspect-ratio:4/5;border-radius:28px 28px 999px 999px;overflow:hidden}
+.story-img img{width:100%;height:100%;object-fit:cover}
+.story-img figcaption{margin-top:16px;font-size:14px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
+.story-img figcaption em{font:italic 400 18px/1 var(--fh);letter-spacing:0;text-transform:none;color:var(--acc-d);margin-right:8px}
+.story-img figure:first-child{margin-bottom:80px}
+
+/* ---------- Team ---------- */
+.team{position:relative;padding:150px 0;background:linear-gradient(180deg,var(--bg),var(--pearl) 30%,var(--pearl) 70%,var(--bg))}
+.team-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,7vw,110px);align-items:center}
+.team-pic{position:relative;max-width:540px;width:100%;justify-self:center}
+.team-pic .ph{aspect-ratio:1100/734;border-radius:var(--r);overflow:hidden;box-shadow:0 60px 90px -55px color-mix(in srgb,var(--ink) 55%,transparent)}
+.team-pic .ph img{width:100%;height:100%;object-fit:cover}
+.team-pic .deco{position:absolute;inset:-26px 26px 26px -26px;border-radius:calc(var(--r) + 12px);border:1px solid color-mix(in srgb,var(--acc) 40%,transparent);z-index:-1}
+.team-txt h2{margin:24px 0 28px}
+.team-txt p+p{margin-top:18px}
+.checks{list-style:none;margin-top:38px;display:grid;gap:14px}
+.checks li{display:flex;align-items:center;gap:16px}
+.checks li i{width:30px;height:30px;border-radius:50%;background:color-mix(in srgb,var(--acc) 14%,transparent);display:grid;place-items:center;color:var(--acc-d);flex:none}
+.checks svg{width:14px;height:14px}
+
+/* ---------- Ablauf ---------- */
+.flow{padding:150px 0 140px;text-align:center}
+.flow h2{margin:24px 0 90px}
+.flow-in{position:relative}
+.flow-line{position:absolute;left:0;right:0;top:20px;width:100%;height:60px;overflow:visible}
+.flow-line path{fill:none;stroke:url(#fg);stroke-width:1.4;stroke-dasharray:var(--len,2000);stroke-dashoffset:var(--len,2000);transition:stroke-dashoffset 2.4s var(--ease)}
+.flow-in.in .flow-line path{stroke-dashoffset:0}
+.flow ol{list-style:none;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:30px;position:relative}
+.flow li{display:flex;flex-direction:column;align-items:center}
+.flow li .dot{width:84px;height:84px;border-radius:50%;display:grid;place-items:center;background:var(--bg);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--acc) 40%,transparent),0 18px 40px -24px color-mix(in srgb,var(--acc-d) 70%,transparent);font:italic 400 28px/1 var(--fh);color:var(--acc-d);margin-bottom:28px}
+.flow li:nth-child(even){margin-top:46px}
+.flow li div{display:flex;flex-direction:column;align-items:center}
+.flow li b{font:400 26px/1.1 var(--fh);margin-bottom:10px}
+.flow li span{color:color-mix(in srgb,var(--ink) 82%,var(--mute));max-width:15em;font-size:18px}
+
+/* ---------- Kontakt ---------- */
+.ct{position:relative;padding:160px 0;background:var(--grad-soft);overflow:hidden;isolation:isolate}
+.ct .wtop{position:absolute;left:0;right:0;top:-1px;height:80px;pointer-events:none;transform:scaleY(-1)}.ct .wtop path{fill:var(--bg)}
+.ct::after{content:"";position:absolute;width:60vw;height:60vw;left:-25vw;bottom:-30vw;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--acc) 30%,transparent),transparent 65%);z-index:-1}
+.ct-in{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(40px,6vw,90px);align-items:center}
+.ct h2{margin:24px 0 24px}
+.ct .tel{display:inline-block;margin:34px 0 10px;font:400 clamp(36px,3.6vw,54px)/1 var(--fh);text-decoration:none;background:linear-gradient(100deg,var(--acc-d),var(--acc));-webkit-background-clip:text;background-clip:text;color:transparent}
+.ct .info{list-style:none;margin-top:30px;display:grid;gap:10px;color:color-mix(in srgb,var(--ink) 82%,var(--mute));font-size:18px}
+.ct .info b{font-weight:500;color:var(--ink)}
+.form{position:relative;padding:44px 40px 36px;border-radius:40px;background:color-mix(in srgb,#fff 66%,transparent);backdrop-filter:blur(24px) saturate(1.3);-webkit-backdrop-filter:blur(24px) saturate(1.3);box-shadow:0 50px 90px -50px color-mix(in srgb,var(--acc-d) 65%,transparent),inset 0 0 0 1px color-mix(in srgb,#fff 70%,transparent)}
+.form h3{font-size:32px;margin-bottom:8px}
+.form>p{color:color-mix(in srgb,var(--ink) 82%,var(--mute));font-size:17px;margin-bottom:26px}
+.form label{display:block;margin-bottom:14px}
+.form input,.form select{width:100%;height:60px;padding:0 24px;border-radius:999px;border:0;background:#fff;box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--ink) 16%,transparent);font:400 17px var(--fb);color:var(--ink);appearance:none;-webkit-appearance:none;transition:box-shadow .4s}
+.form input:focus,.form select:focus{outline:0;box-shadow:inset 0 0 0 1.5px var(--acc)}
+.form .btn{width:100%;border:0;cursor:pointer;margin-top:8px}
+.form small{display:block;margin-top:16px;font-size:14px;color:var(--mute);text-align:center;line-height:1.5}
+
+/* ---------- Fuß ---------- */
+footer{padding:90px 0 120px;background:var(--ink);color:color-mix(in srgb,#fff 88%,transparent);font-size:16.5px}
+footer .wrap{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px}
+footer .wm b{color:#fff}footer .wm b i{color:var(--champ)}footer .wm small{color:color-mix(in srgb,#fff 55%,transparent)}
+footer a{text-decoration:none}footer a:hover{color:#fff}
+footer .note{grid-column:1/-1;margin-top:30px;padding-top:30px;border-top:1px solid color-mix(in srgb,#fff 12%,transparent);font-size:14.5px;color:color-mix(in srgb,#fff 72%,transparent)}
+
+/* ---------- Einblendungen ---------- */
+.rv{opacity:0;transform:translateY(34px);transition:opacity 1.3s var(--ease),transform 1.5s var(--ease)}
+.rv.in{opacity:1;transform:none}
+.rv.d1{transition-delay:.12s}.rv.d2{transition-delay:.24s}.rv.d3{transition-delay:.36s}
+.h-load{opacity:0;transform:translateY(24px);animation:hin 1.4s var(--ease) forwards}
+.h-load.d1{animation-delay:.15s}.h-load.d2{animation-delay:.3s}.h-load.d3{animation-delay:.45s}.h-load.d4{animation-delay:.6s}
+.h-por.h-load{transform:translateY(40px);animation-duration:1.8s;animation-delay:.2s}
+@keyframes hin{to{opacity:1;transform:none}}
+.tour-hl{animation:hlp 2.2s var(--ease)}
+@keyframes hlp{30%{box-shadow:inset 0 0 0 2px color-mix(in srgb,var(--acc) 50%,transparent)}}
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}.rv,.h-load{opacity:1;transform:none}}
+html.qa *,html.qa *::before,html.qa *::after{animation:none!important;transition:none!important}
+html.qa .rv,html.qa .h-load{opacity:1!important;transform:none!important}
+html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
+
+/* ---------- Entwurf, Guide, Chat ---------- */
+.pv{position:fixed;left:0;right:0;bottom:0;z-index:60;background:color-mix(in srgb,var(--ink) 94%,transparent);backdrop-filter:blur(8px);color:#fff;padding:10px 48px 10px 20px;font-size:14.5px;line-height:1.4;text-align:center}
+.pv b{margin-right:8px;font-weight:500}
 .pv button{position:absolute;right:12px;top:50%;margin-top:-13px;width:26px;height:26px;border:0;background:none;cursor:pointer;font-size:0}
-.pv button::before,.pv button::after{content:"";position:absolute;left:6px;top:12px;width:14px;height:2px;background:#ddd;transform:rotate(45deg)}
+.pv button::before,.pv button::after{content:"";position:absolute;left:6px;top:12px;width:14px;height:1.5px;background:#ddd;transform:rotate(45deg)}
 .pv button::after{transform:rotate(-45deg)}
-.callbar{display:none}
-.hp-img .glassbg::after{display:none}
-/* Glas-Badge im Über-uns-Bild */
-.ab-badge{position:absolute;left:-28px;top:32px;z-index:3;padding:16px 20px;background:color-mix(in srgb,var(--paper) 72%,transparent);backdrop-filter:blur(14px) saturate(1.3);-webkit-backdrop-filter:blur(14px) saturate(1.3);color:var(--ink);box-shadow:0 18px 40px -18px rgba(0,0,0,.45);border-radius:28px;max-width:250px;font-size:14px;line-height:1.35}
-.ab-badge b{display:block;font-family:var(--fh);font-weight:var(--hw);font-size:30px;letter-spacing:var(--hls);line-height:1}
-/* Anfrage */
-.lead{margin-top:34px;display:grid;grid-template-columns:1fr 1fr;gap:10px;max-width:520px;background:color-mix(in srgb,#000 14%,transparent);padding:18px;border-radius:28px;backdrop-filter:blur(6px)}
-.lead input,.lead select{width:100%;padding:13px 14px;border:0;font:inherit;font-size:15px;background:rgba(255,255,255,.94);color:#111;border-radius:999px}
-.lead select,.lead button,.lead small{grid-column:1/-1}
-.lead button{padding:15px;border:0;font:inherit;font-weight:600;cursor:pointer;background:#2B2622;color:#F4EADF;border-radius:999px}
-.lead small{font-size:12.5px;opacity:.85}
-/* Assistent */
-.bot-btn{position:fixed;right:20px;bottom:54px;z-index:58;display:flex;align-items:center;gap:10px;padding:12px 18px 12px 12px;border:0;cursor:pointer;background:var(--ink);color:var(--paper);font:inherit;font-weight:600;font-size:14.5px;border-radius:40px;box-shadow:0 14px 30px -10px rgba(0,0,0,.5)}
-.bot-btn i{width:34px;height:34px;border-radius:50%;background:var(--acc);display:grid;place-items:center;color:#FFFFFF}
-.bot-btn svg{width:18px;height:18px}
-.bot{position:fixed;right:20px;bottom:116px;z-index:59;width:min(360px,calc(100vw - 24px));max-height:70vh;display:none;flex-direction:column;background:color-mix(in srgb,var(--paper) 86%,transparent);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);color:var(--ink);border-radius:18px;box-shadow:0 30px 60px -20px rgba(0,0,0,.5);overflow:hidden}
-.bot.open{display:flex}
-.bot header{display:flex;align-items:center;gap:10px;padding:14px 16px;background:var(--ink);color:var(--paper);font-weight:600;font-size:15px}
-.bot header small{display:block;font-weight:400;opacity:.7;font-size:12px}
-.bot header button{margin-left:auto;background:none;border:0;color:inherit;font-size:22px;cursor:pointer;line-height:1}
-.bot .msgs{padding:14px;overflow-y:auto;display:flex;flex-direction:column;gap:8px;font-size:14.5px;line-height:1.45}
-.bot .m{max-width:86%;padding:10px 13px;border-radius:14px;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.08)}
-.bot .m.u{align-self:flex-end;background:var(--acc);color:#FFFFFF}
-.bot .chips{display:flex;flex-wrap:wrap;gap:6px;padding:0 14px 14px}
-.bot .chips button{border:1.5px solid var(--acc);background:transparent;color:var(--ink);padding:7px 11px;border-radius:20px;font:inherit;font-size:13px;cursor:pointer}
-.bot .demo{font-size:11.5px;opacity:.6;padding:0 14px 12px}
-/* Aktions-Hinweis */
-.promo{position:fixed;right:20px;bottom:116px;z-index:57;width:min(330px,calc(100vw - 24px));display:grid;grid-template-columns:96px 1fr;background:var(--paper);color:var(--ink);box-shadow:0 24px 50px -18px rgba(0,0,0,.5);border-radius:28px;overflow:hidden;transform:translateY(30px);opacity:0;pointer-events:none;transition:.5s cubic-bezier(.2,.8,.2,1)}
-.promo.show{transform:none;opacity:1;pointer-events:auto}
-.promo .pi{position:relative;min-height:120px}
-.promo div.pt{padding:14px 34px 14px 14px;font-size:14px;line-height:1.4}
-.promo b{display:block;font-family:var(--fh);font-weight:var(--hw);font-size:18px;letter-spacing:var(--hls);margin:2px 0 8px;line-height:1.1}
-.promo a{font-weight:600;color:var(--acc)}
-.promo small{font-size:11.5px;opacity:.6}
-.promo .x{position:absolute;right:6px;top:6px;border:0;background:none;font-size:20px;cursor:pointer;color:inherit}
-/* ===== Hero: Mauer ===== */
-.h-wall{position:relative;height:100vh;min-height:660px;background:var(--hbg);color:var(--hink);overflow:hidden}
-.hw-media{position:absolute;inset:0}
-.hw-media .hm-in{position:absolute;inset:0}
-.bricks{position:absolute;inset:0;z-index:2;pointer-events:none}
-.bricks i{position:absolute;background:var(--hbg);box-shadow:inset 0 0 0 1px rgba(255,255,255,.04)}
-.hw-panel{position:absolute;z-index:3;left:0;top:0;bottom:0;width:min(640px,47vw);padding:120px 70px 64px max(32px,4vw);display:flex;flex-direction:column;justify-content:flex-end;background:color-mix(in srgb,var(--hbg) 90%,transparent);backdrop-filter:blur(6px);
- clip-path:polygon(0 0,100% 0,100% 10%,92% 10%,92% 20%,100% 20%,100% 30%,92% 30%,92% 40%,100% 40%,100% 50%,92% 50%,92% 60%,100% 60%,100% 70%,92% 70%,92% 80%,100% 80%,100% 90%,92% 90%,92% 100%,0 100%)}
-.hw-panel .ht h1{font-size:clamp(2.4rem,4.4vw,4.6rem)}
-.hw-panel .kicker{color:var(--acc2);opacity:1}
-.hw-media .dots{right:4vw;bottom:5vh}
-.brickbg{background-color:var(--ink);color:#fff;background-image:linear-gradient(rgba(255,255,255,.05) 2px,transparent 2px),linear-gradient(90deg,rgba(255,255,255,.05) 2px,transparent 2px),linear-gradient(90deg,rgba(255,255,255,.05) 2px,transparent 2px);background-size:100% 46px,120px 92px,120px 92px;background-position:0 0,0 0,60px 46px}
-.brickbg .facts b{color:var(--acc2)}
-/* Stimmen */
-.stim{position:relative;color:#fff;overflow:hidden}
-.stim-bg{position:absolute;inset:0}
-.stim-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(100deg,color-mix(in srgb,var(--ink) 92%,transparent) 0 40%,color-mix(in srgb,var(--ink) 55%,transparent))}
-.stim .wrap{position:relative;z-index:2}
-.stim-row{position:relative;z-index:2;display:flex;gap:22px;overflow-x:auto;scroll-snap-type:x mandatory;padding:20px 4vw 40px;scrollbar-width:none}
-.stim-row::-webkit-scrollbar{display:none}
-.q{flex:none;width:min(420px,80vw);scroll-snap-align:start;padding:30px 28px 26px;border-radius:22px;background:rgba(255,255,255,.12);backdrop-filter:blur(16px) saturate(1.3);-webkit-backdrop-filter:blur(16px) saturate(1.3);border:1px solid rgba(255,255,255,.22);box-shadow:0 30px 60px -30px rgba(0,0,0,.6)}
-.q:nth-child(even){margin-top:46px}
-.q svg{width:34px;height:34px;color:var(--acc2);margin-bottom:12px}
-.q p{font-size:17px;line-height:1.55;margin-bottom:18px}
-.q b{display:block;font-family:var(--fh);font-weight:var(--hw);font-size:17px}
-.q small{opacity:.75}
-.q .stars{margin-bottom:12px}
-/* Film */
-.film{display:grid;grid-template-columns:1.5fr 1fr;gap:clamp(32px,5vw,80px);align-items:center}
-.film-v{position:relative;aspect-ratio:16/9;background:#000;overflow:hidden;border-radius:28px;box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}
-.film-v video{width:100%;height:100%;object-fit:cover;display:block}
-.film-v button{position:absolute;inset:0;border:0;cursor:pointer;background:linear-gradient(to top,rgba(0,0,0,.45),transparent 60%);display:flex;align-items:flex-end;gap:14px;padding:26px;color:#fff;font:inherit;font-weight:600;font-size:17px}
-.film-v button i{width:68px;height:68px;border-radius:50%;background:var(--acc);display:grid;place-items:center}
-.film-v button svg{width:26px;height:26px;margin-left:4px}
-.strokes{display:flex;gap:7px;margin:-4px 0 20px}
-.strokes i{display:block;width:54px;height:10px;border-radius:10px 3px 10px 3px;transform:skew(-14deg)}
-.badges .bd-row{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,4vw,60px);text-align:center}
-.badges figure img{width:clamp(110px,12vw,170px);height:auto;aspect-ratio:1;border-radius:50%;margin:0 auto 18px;object-fit:contain;box-shadow:0 18px 40px -18px rgba(0,0,0,.35)}
-.badges figcaption{font-family:var(--fh);font-weight:var(--hw);font-size:clamp(1.3rem,2vw,1.8rem);letter-spacing:var(--hls)}
-.badges figcaption small{display:block;font-family:var(--fb);font-weight:400;font-size:15px;opacity:.75;margin-top:6px;letter-spacing:0}
-/* ===== Mobil ===== */
-@media (max-width:900px){
-  body{font-size:16px}
-  .top{padding:12px 18px;gap:12px}
-  .top nav{display:none}
-  .top .ptel{margin-left:auto}.top .ptel span{display:none}
-  .top .ptel{width:44px;height:44px;justify-content:center;background:var(--acc);color:#FFFFFF;border-radius:999px}
-  .top .logo{height:35px;max-width:58vw}
-  .wrap{width:calc(100% - 36px)}
-  .h-mask{height:auto}
-  .hm-stick{position:relative;height:auto;display:flex;flex-direction:column;overflow:visible;padding-top:96px}
-  .hm-stick .ht{position:relative;left:auto;bottom:auto;width:auto;padding:0 18px 32px;order:1}
-  .hm-img{position:relative;order:2;height:64vh;margin:0 0 0;clip-path:var(--mclip)!important}
-  .hm-in{transform:none!important}
-  .hm-cap{display:none}
-  .hp-band .wrap,.hn-top,.hc-grid,.h-col .wrap,.ab,.cta,footer .wrap{grid-template-columns:1fr}
-  .h-wall{height:auto;min-height:0;display:flex;flex-direction:column}
-  .hw-media{position:relative;height:58vh;order:1;margin-top:64px}
-  .hw-panel{position:relative;order:2;width:auto;clip-path:none;padding:34px 18px 40px;backdrop-filter:none;background:var(--hbg)}
-  .film{grid-template-columns:1fr}
-  .q:nth-child(even){margin-top:0}
-  .hp-img{height:46vh}
-  .hp-band{padding:34px 0 44px}
-  .h-win{height:auto}
-  .hw-stick{position:relative;height:auto;grid-template-columns:1fr;padding:96px 18px 48px;gap:36px}
-  .win{max-width:84vw;transform:none!important}
-  .h-num{padding-top:100px}
-  .hn-num{font-size:40vw;margin-top:28px}
-  .hn-strip{height:40vh}
-  .h-por{grid-template-columns:1fr;min-height:0}
-  .hpo-t{padding:36px 18px 40px;order:1}
-  .hpo-p{order:2;height:78vh}
-  .h-col{padding:100px 0 56px}
-  .prints{height:94vw;margin-top:12px}
-  .h-cir{padding-top:100px}
-  .hc-img{height:44vh;margin:20px 0 0 18px}
-  .wire{left:6px;width:2px}
-  .svc-head{flex-direction:column;align-items:flex-start;gap:8px}
-  .idx-wrap{grid-template-columns:1fr}.idx-media{display:none}
-  .idx li .th{display:block}
-  .idx li.on .n{transform:none}
-  .idx li:hover .n{transform:none}
-  .idx.noimg{columns:1}
-  .pin-track{width:auto;overflow-x:auto;scroll-snap-type:x mandatory;padding:0 18px;transform:none!important;scrollbar-width:none}
-  .pin-track::-webkit-scrollbar{display:none}
-  .pin-it{width:82vw;scroll-snap-align:start}
-  .pin-it .ph{height:56vh}
-  .pin-intro{display:none}
-  .svc-mob{display:block!important;margin-bottom:28px}
-  .stk-it{height:70vh;top:64px}
-  .ab.flip .ab-img{order:0}
-  .ab-img{height:62vh}
-  .ab-img .small{right:-2%}
-  .steps{grid-template-columns:1fr 1fr;gap:30px 22px}
-  .rail figure{height:52vh}
-  .rail figure:nth-child(n){width:80vw}
-  .cta{min-height:0}
-  .cta-img{order:-1;height:46vh;min-height:0}
-  .pv{bottom:56px;padding:8px 44px 8px 14px;font-size:12px;text-align:left}
-  .bot-btn{bottom:112px;right:12px;padding:8px;}.bot-btn span{display:none}.bot,.promo{bottom:166px;right:12px}
-  .ab-badge{left:12px;top:12px}
-  .lead{grid-template-columns:1fr}
-  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:55;background:var(--ink)}
-  .callbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:10px;padding:17px 10px;color:var(--paper);text-decoration:none;font-weight:600;font-size:15px}
-  .callbar a+a{background:var(--acc);color:#FFFFFF}
-  .callbar svg{width:18px;height:18px}
-  footer{padding-bottom:150px}
-}
-/* Runde 5: Leistungs-Reihen */
-.rows-head{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:clamp(40px,6vw,80px)}
-.rows-head p{max-width:38ch;opacity:.8}
-.rw{display:grid;grid-template-columns:1.15fr 1fr;gap:clamp(28px,5vw,80px);align-items:center;margin-bottom:clamp(56px,8vw,120px)}
-.rw:nth-child(even){grid-template-columns:1fr 1.15fr}
-.rw:nth-child(even) .rw-ph{order:2}
-.rw-ph{position:relative;aspect-ratio:4/3;overflow:hidden;border-radius:28px 28px 28px 0;box-shadow:0 40px 70px -40px rgba(0,0,0,.45)}
-.rw:nth-child(even) .rw-ph{border-radius:28px 28px 0 28px}
-.rw-ph img{transition:transform 1.2s cubic-bezier(.2,.8,.2,1)}
-.rw:hover .rw-ph img{transform:scale(1.04)}
-.rw-ph .nr{position:absolute;left:18px;bottom:16px;padding:8px 14px;background:color-mix(in srgb,var(--paper) 72%,transparent);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);font-size:13px;font-weight:600;border-radius:999px;color:var(--ink)}
-.rw-t h3{font-size:clamp(1.8rem,3.4vw,3rem);margin-bottom:.45em}
-.rw-t p{font-size:18px;max-width:42ch;opacity:.86;margin-bottom:22px}
-.rw-t ul{list-style:none;display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px}
-.rw-t li{font-size:14px;padding:7px 14px;border:1px solid color-mix(in srgb,var(--ink) 18%,transparent);border-radius:999px}
-.rw-t a{font-weight:600;text-decoration:none;border-bottom:2px solid var(--acc);padding-bottom:3px}
-/* Runde 5: Bewertungen */
-.rv{position:relative;overflow:hidden;background:var(--soft)}
-.rv-grid{display:grid;grid-template-columns:minmax(260px,.8fr) 2fr;gap:clamp(32px,5vw,72px);align-items:center}
-.rv-score{position:relative;padding:clamp(28px,4vw,44px);background:var(--ink);color:#fff;border-radius:28px 28px 28px 0;box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}
-.rv-score .big{white-space:nowrap;font-family:var(--fh);font-weight:var(--hw);font-size:clamp(4rem,7vw,6.4rem);line-height:.85;letter-spacing:-.04em}
-.rv-score .big small{font-size:.32em;opacity:.55;letter-spacing:0;margin-left:6px}
-.rv-score .stars{display:flex;gap:4px;margin:16px 0 14px}
-.rv-score .stars svg{width:28px;height:28px;fill:#D9741A}
-.rv-score p{opacity:.8;font-size:15px}
-.rv-score .gl{display:flex;align-items:center;gap:10px;margin-top:22px;padding-top:18px;border-top:1px solid rgba(255,255,255,.18);font-size:14px}
-.rv-score .gl i{display:grid;place-items:center;width:30px;height:30px;border-radius:50%;background:#fff;color:#4285F4;font-style:normal;font-weight:700;font-family:Arial,sans-serif}
-.rv-h{margin-bottom:28px}
-.rv-h h2{margin-bottom:.25em}
-.rv-h p{opacity:.75;max-width:46ch}
-.rv-lane{display:flex;gap:20px;width:max-content;animation:rvm var(--rvt,60s) linear infinite}
-.rv-mask{overflow:hidden;-webkit-mask:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);padding:10px 0 26px}
-.rv-mask:hover .rv-lane{animation-play-state:paused}
-@keyframes rvm{to{transform:translateX(-50%)}}
-.rc{width:340px;flex:none;padding:24px 24px 20px;background:var(--paper);border-radius:4px 28px 28px 28px;box-shadow:0 22px 40px -26px rgba(0,0,0,.35);display:flex;flex-direction:column}
-.rc .stars{display:flex;gap:2px;margin-bottom:12px}
-.rc .stars svg{width:17px;height:17px;fill:#D9741A}
-.rc p{font-size:15.5px;line-height:1.55;flex:1}
-.rc .rcf{display:flex;align-items:center;gap:10px;margin-top:16px;font-size:13px;opacity:.7}
-.rc .rcf i{display:grid;place-items:center;width:32px;height:32px;border-radius:50%;background:var(--acc);color:#FFFFFF;font-style:normal;font-weight:700;font-size:13px}
-.rv-note{font-size:12px;opacity:.55;margin-top:6px}
-/* Runde 5: Aktions-Popup */
-.promo2{position:fixed;left:24px;bottom:64px;z-index:58;width:min(500px,calc(100vw - 24px));display:grid;grid-template-columns:170px 1fr;background:var(--paper);color:var(--ink);border-radius:28px;overflow:hidden;box-shadow:0 40px 90px -30px rgba(0,0,0,.6);transform:translateY(160%);transition:transform .7s cubic-bezier(.2,.9,.2,1)}
-.promo2.show{transform:none}
-.promo2 .pi{position:relative;min-height:190px}
-.promo2 .pi .tg{position:absolute;left:12px;top:12px;padding:6px 12px;border-radius:999px;background:var(--acc);color:#FFFFFF;font-size:12px;font-weight:700}
-.promo2 .pt{padding:20px 44px 20px 22px}
-.promo2 small{font-size:11.5px;opacity:.55;display:block}
-.promo2 b{display:block;font-family:var(--fh);font-weight:var(--hw);font-size:24px;line-height:1.08;letter-spacing:var(--hls);margin:6px 0 8px}
-.promo2 p{font-size:14.5px;line-height:1.45;opacity:.85;margin-bottom:14px}
-.promo2 .pb{display:inline-block;background:#2B2622;color:#F4EADF;padding:11px 18px;font-weight:600;font-size:14.5px;text-decoration:none;border-radius:999px}
-.promo2 .x{position:absolute;right:10px;top:8px;border:0;background:none;font-size:24px;cursor:pointer;color:inherit;opacity:.6}
-@media (max-width:900px){
-.rows-head{display:block}.rw,.rw:nth-child(even){grid-template-columns:1fr;gap:22px;margin-bottom:64px}.rw:nth-child(even) .rw-ph{order:0}
-.rv-grid{grid-template-columns:1fr}.rc{width:280px}
-.promo2{grid-template-columns:96px 1fr;left:12px;bottom:210px;width:calc(100vw - 24px)}.promo2 .pi{min-height:118px}.promo2 .pt{padding:12px 36px 12px 14px}.promo2 b{font-size:17px;margin:4px 0 8px}.promo2 p{display:none}.promo2 .pb{padding:9px 14px;font-size:13.5px}
-}
-/* Runde 6: weiche Gestaltung */
-
-.sec{position:relative;overflow:clip}
-.sec>.wrap{position:relative;z-index:1}
-.sec.orb::before,.sec.orb::after{content:"";position:absolute;border-radius:50%;pointer-events:none;z-index:0;filter:blur(30px)}
-.sec.orb::before{width:min(620px,70vw);aspect-ratio:1;right:-12%;top:-14%;background:radial-gradient(circle,color-mix(in srgb,var(--acc) 26%,transparent),transparent 68%)}
-.sec.orb::after{width:min(520px,60vw);aspect-ratio:1;left:-14%;bottom:-18%;background:radial-gradient(circle,color-mix(in srgb,var(--acc2) 24%,transparent),transparent 68%)}
-.rw-m{position:relative}
-.rw-ph{box-shadow:none;border-radius:28px;-webkit-mask-image:radial-gradient(130% 120% at 38% 42%,#000 58%,transparent 100%);mask-image:radial-gradient(130% 120% at 38% 42%,#000 58%,transparent 100%)}
-.rw:nth-child(even) .rw-ph{-webkit-mask-image:radial-gradient(130% 120% at 62% 42%,#000 58%,transparent 100%);mask-image:radial-gradient(130% 120% at 62% 42%,#000 58%,transparent 100%)}
-.rw-ph .nr{bottom:auto;top:16px}
-.rw-ph2{position:absolute;width:38%;aspect-ratio:1;right:-6%;bottom:-10%;border-radius:50%;overflow:hidden;border:6px solid var(--bg);box-shadow:0 30px 50px -24px rgba(0,0,0,.45);z-index:2}
-.rw:nth-child(even) .rw-ph2{right:auto;left:-6%}
-.rw-ph2 img{width:100%;height:100%;object-fit:cover}
-.blend{position:relative;height:clamp(420px,72vh,760px);overflow:hidden;background:var(--ink)}
-.blend .b{position:absolute;top:0;bottom:0;overflow:hidden}
-.blend .b img{width:100%;height:100%;object-fit:cover}
-.blend .b1{left:0;width:62%;-webkit-mask-image:linear-gradient(90deg,#000 55%,transparent);mask-image:linear-gradient(90deg,#000 55%,transparent);z-index:2}
-.blend .b2{right:0;width:62%;z-index:1}
-.blend .b3{left:30%;width:40%;z-index:3;-webkit-mask-image:radial-gradient(closest-side,#000 40%,transparent);mask-image:radial-gradient(closest-side,#000 40%,transparent);opacity:.95}
-.blend .bt{position:absolute;z-index:4;left:50%;bottom:clamp(28px,7vh,70px);transform:translateX(-50%);width:min(680px,calc(100% - 32px));text-align:center;padding:28px 32px;border-radius:24px;background:color-mix(in srgb,var(--paper) 70%,transparent);backdrop-filter:blur(16px) saturate(1.3);-webkit-backdrop-filter:blur(16px) saturate(1.3);color:var(--ink);box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}
-/* Finish: Farbe fließt, unscharfe Hintergründe, Text-Halo */
-
-
-body{background:linear-gradient(170deg,var(--bg) 0%,color-mix(in srgb,var(--soft) 55%,var(--bg)) 48%,var(--bg) 100%)}
-.sec.tone{background:linear-gradient(164deg,color-mix(in srgb,var(--soft) 90%,var(--bg)) 0%,var(--bg) 48%,color-mix(in srgb,var(--acc2) 16%,var(--bg)) 100%)}
-.rv{background:linear-gradient(180deg,var(--bg) 0%,color-mix(in srgb,var(--soft) 80%,var(--bg)) 35%,color-mix(in srgb,var(--acc) 9%,var(--soft)) 100%)}
-.cta{background:linear-gradient(135deg,var(--acc) 0%,color-mix(in srgb,var(--acc) 72%,var(--acc2)) 55%,color-mix(in srgb,var(--acc) 55%,var(--ink)) 100%);position:relative;overflow:clip}
-.cta>*{position:relative;z-index:1}
-.cta .cta-t h2,.cta .cta-t p,.cta .cta-t .big{text-shadow:0 1px 2px color-mix(in srgb,var(--acc) 60%,transparent),0 12px 36px color-mix(in srgb,var(--acc) 70%,transparent)}
-.bgi{position:absolute;inset:-12%;z-index:0;pointer-events:none;opacity:var(--bgo,.2);filter:blur(46px) saturate(1.25);transform:scale(1.06);-webkit-mask-image:linear-gradient(180deg,transparent 0%,#000 22%,#000 78%,transparent 100%);mask-image:linear-gradient(180deg,transparent 0%,#000 22%,#000 78%,transparent 100%)}
-.bgi img,.bgi picture{width:100%;height:100%;object-fit:cover;display:block}
-.bgi.l{-webkit-mask-image:radial-gradient(70% 90% at 15% 50%,#000 20%,transparent 75%);mask-image:radial-gradient(70% 90% at 15% 50%,#000 20%,transparent 75%)}
-.bgi.r{-webkit-mask-image:radial-gradient(70% 90% at 88% 40%,#000 20%,transparent 75%);mask-image:radial-gradient(70% 90% at 88% 40%,#000 20%,transparent 75%)}
-.cta .bgi{--bgo:.28;mix-blend-mode:soft-light;filter:blur(30px) saturate(1.2);z-index:0}
-.h-mask .ht,.hpo-t .ht,.hw-panel .ht,.h-col .ht{text-shadow:0 1px 2px color-mix(in srgb,var(--hbg) 55%,transparent),0 10px 34px color-mix(in srgb,var(--hbg) 85%,transparent),0 24px 60px color-mix(in srgb,var(--hbg) 60%,transparent)}
-.h-mask[data-shape=full] .ht{position:relative}
-.h-mask[data-shape=full] .ht::before{content:"";position:absolute;inset:-18% -14% -22% -22%;z-index:-1;border-radius:40%;background:radial-gradient(closest-side,color-mix(in srgb,var(--hbg) 78%,transparent),transparent);filter:blur(10px)}
-.rw-ph img,.ab-img img,.blend .b img,.cta-img img,.rw-ph2 img{filter:saturate(1.07) contrast(1.03)}
-.rw-ph::after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(185deg,transparent 55%,color-mix(in srgb,var(--ink) 26%,transparent) 100%),radial-gradient(120% 80% at 20% 0%,color-mix(in srgb,#fff 14%,transparent),transparent 60%)}
-.ab-img::after{content:"";position:absolute;inset:0;pointer-events:none;border-radius:inherit;background:linear-gradient(180deg,transparent 60%,color-mix(in srgb,var(--ink) 22%,transparent))}
-.rw:nth-child(3n+1) .rw-ph{-webkit-mask-image:radial-gradient(135% 115% at 36% 46%,#000 56%,transparent 100%);mask-image:radial-gradient(135% 115% at 36% 46%,#000 56%,transparent 100%)}
-.rw:nth-child(3n) .rw-ph{-webkit-mask-image:radial-gradient(125% 125% at 50% 40%,#000 60%,transparent 100%);mask-image:radial-gradient(125% 125% at 50% 40%,#000 60%,transparent 100%)}
-.rw:nth-child(odd) .rw-m{transform:translateY(clamp(8px,2vw,28px))}
-.rw:nth-child(even) .rw-m{transform:translateY(calc(-1*clamp(8px,2vw,28px)))}
-.steps li{position:relative}.steps li::before{content:"";position:absolute;left:-14px;top:-10px;width:72px;height:72px;border-radius:50%;background:radial-gradient(circle,color-mix(in srgb,var(--acc) 14%,transparent),transparent 70%);z-index:-1}
-.rv-score{background:linear-gradient(150deg,var(--ink) 0%,color-mix(in srgb,var(--ink) 78%,var(--acc)) 100%);box-shadow:0 30px 60px -28px color-mix(in srgb,var(--ink) 55%,transparent)}
-footer{background:linear-gradient(180deg,color-mix(in srgb,var(--ink) 92%,var(--acc)) 0%,var(--ink) 100%)}
-@media (max-width:900px){.bgi{filter:blur(34px) saturate(1.2)}.rw:nth-child(odd) .rw-m,.rw:nth-child(even) .rw-m{transform:none}}
-
-
-.blend .bt h2{margin:0 auto .3em;max-width:none;font-size:clamp(1.9rem,3.6vw,3rem)}
-.blend .bt p{opacity:.85}
-.fadeb{position:relative}
-.fadeb::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:min(26vh,220px);background:linear-gradient(to bottom,transparent,var(--bg));pointer-events:none;z-index:5}
-.rc{border-radius:20px}
-.rv-score{border-radius:28px}
-@media (max-width:900px){.rw-ph2{width:34%;right:-2%;bottom:-8%}.rw:nth-child(even) .rw-ph2{left:-2%}.blend .b1,.blend .b2{width:80%}.blend .b3{display:none}}
-
-/* Runde 6: KI-Roboter-Guide */
-.robo{position:fixed;right:18px;bottom:60px;z-index:61;display:flex;align-items:flex-end;gap:10px;pointer-events:none}
+.robo{position:fixed;right:20px;bottom:58px;z-index:61;display:flex;align-items:flex-end;gap:10px;pointer-events:none}
 .robo>*{pointer-events:auto}
-.robo-av{width:84px;height:96px;border:0;background:none;cursor:pointer;padding:0;filter:drop-shadow(0 16px 20px rgba(0,0,0,.32));animation:rbob 3.4s ease-in-out infinite}
-@keyframes rbob{50%{transform:translateY(-7px)}}
-.robo-av .eye{animation:rblink 4.6s infinite;transform-origin:center;transform-box:fill-box}
+.robo-av{width:78px;height:92px;border:0;background:none;cursor:pointer;padding:0;filter:drop-shadow(0 18px 22px color-mix(in srgb,var(--acc-d) 40%,transparent));animation:rbob 4s ease-in-out infinite}
+@keyframes rbob{50%{transform:translateY(-6px)}}
+.robo-av .eye{animation:rblink 5s infinite;transform-origin:center;transform-box:fill-box}
 @keyframes rblink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
-.robo-av .ant{animation:rglow 1.8s ease-in-out infinite}
-@keyframes rglow{50%{opacity:.35}}
-.robo-av .arm{transform-origin:20% 90%;transform-box:fill-box;animation:rwave 2.6s ease-in-out 1}
+.robo-av .ant{animation:rglow 2.2s ease-in-out infinite}
+@keyframes rglow{50%{opacity:.45}}
+.robo-av .arm{transform-origin:20% 90%;transform-box:fill-box}
 .robo.wave .robo-av .arm{animation:rwave 1.3s ease-in-out 2}
-@keyframes rwave{0%,100%{transform:rotate(0)}25%{transform:rotate(-24deg)}75%{transform:rotate(14deg)}}
-.robo-say{position:relative;width:min(330px,calc(100vw - 120px));padding:16px 18px 14px;border-radius:20px 20px 4px 20px;background:color-mix(in srgb,var(--paper) 88%,transparent);backdrop-filter:blur(16px) saturate(1.4);-webkit-backdrop-filter:blur(16px) saturate(1.4);color:var(--ink);box-shadow:0 26px 50px -22px rgba(0,0,0,.5);font-size:15px;line-height:1.45;opacity:0;transform:translateY(10px) scale(.96);transform-origin:bottom right;transition:opacity .35s,transform .45s cubic-bezier(.2,.9,.2,1);margin-bottom:46px}
+@keyframes rwave{30%{transform:rotate(-38deg)}60%{transform:rotate(-14deg)}80%{transform:rotate(-32deg)}}
+.robo-say{position:relative;width:min(350px,calc(100vw - 120px));padding:18px 20px 16px;border-radius:26px 26px 6px 26px;background:color-mix(in srgb,#fff 95%,transparent);backdrop-filter:blur(18px) saturate(1.4);-webkit-backdrop-filter:blur(18px) saturate(1.4);color:var(--ink);box-shadow:0 30px 60px -26px color-mix(in srgb,var(--acc-d) 60%,transparent);font-size:16.5px;line-height:1.5;opacity:0;transform:translateY(10px) scale(.96);transform-origin:bottom right;transition:opacity .5s,transform .6s var(--ease);margin-bottom:46px}
 .robo-say.on{opacity:1;transform:none}
-.robo-say b{display:block;font-size:13px;opacity:.6;font-weight:600;margin-bottom:4px}
-.robo-say .rb{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
-.robo-say .rb button{border:0;cursor:pointer;font:inherit;font-size:13.5px;font-weight:600;padding:9px 14px;border-radius:999px;background:var(--acc);color:#FFFFFF}
-.robo-say .rb button.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px color-mix(in srgb,var(--ink) 30%,transparent)}
-.robo-say .rx{position:absolute;right:8px;top:6px;border:0;background:none;font-size:20px;cursor:pointer;color:inherit;opacity:.5}
-.robo-say .st{font-size:12px;opacity:.55;margin-left:auto;align-self:center}
-.tour-hl{outline:3px solid color-mix(in srgb,var(--acc) 70%,transparent);outline-offset:-10px;transition:outline-color .4s}
-.bot{bottom:170px}
-@media (max-width:900px){.promo2{display:none!important}}
-@media (max-width:900px){.robo-say{background:var(--paper)!important}.robo{right:8px;bottom:118px}.robo-av{width:62px;height:72px}.robo-say{width:calc(100vw - 92px);font-size:14px;margin-bottom:30px}.bot{bottom:200px}}
-@media (max-width:520px){.steps{grid-template-columns:1fr}}
-@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+.robo-say b{display:block;font:500 11.5px/1.3 var(--fb);letter-spacing:.18em;text-transform:uppercase;color:var(--acc-d);margin-bottom:6px}
+.robo-say .rb{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-top:14px}
+.robo-say .rb button{border:0;cursor:pointer;font:500 13.5px var(--fb);padding:10px 16px;border-radius:999px;background:var(--grad);color:#fff}
+.robo-say .rb button.ghost{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--ink) 25%,transparent)}
+.robo-say .st{font-size:12.5px;color:var(--mute);margin-left:4px}
+.robo-say .rx{position:absolute;right:10px;top:8px;border:0;background:none;font-size:20px;cursor:pointer;color:inherit;opacity:.45}
+.bot{position:fixed;right:20px;bottom:160px;z-index:62;width:min(370px,calc(100vw - 24px));max-height:70vh;display:none;flex-direction:column;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:blur(20px) saturate(1.4);-webkit-backdrop-filter:blur(20px) saturate(1.4);border-radius:30px;box-shadow:0 40px 80px -30px color-mix(in srgb,var(--ink) 55%,transparent);overflow:hidden}
+.bot.open{display:flex}
+.bot header{display:flex;align-items:center;gap:10px;padding:18px 20px;background:var(--grad);color:#fff;font:400 22px/1.1 var(--fh)}
+.bot header small{display:block;font:300 12.5px/1.4 var(--fb);opacity:.9;margin-top:4px}
+.bot header button{margin-left:auto;background:none;border:0;color:inherit;font-size:24px;cursor:pointer;line-height:1}
+.bot .msgs{padding:16px;overflow-y:auto;display:flex;flex-direction:column;gap:9px;font-size:16.5px;line-height:1.5}
+.bot .m{max-width:86%;padding:11px 15px;border-radius:20px 20px 20px 6px;background:#fff;box-shadow:0 1px 2px rgba(0,0,0,.06)}
+.bot .m.u{align-self:flex-end;border-radius:20px 20px 6px 20px;background:var(--acc);color:#fff}
+.bot .chips{display:flex;flex-wrap:wrap;gap:7px;padding:0 16px 14px}
+.bot .chips button{border:0;box-shadow:inset 0 0 0 1px var(--acc);background:transparent;color:var(--ink);padding:9px 14px;border-radius:999px;font:400 15px var(--fb);cursor:pointer}
+.bot .demo{font-size:13px;color:var(--mute);padding:0 16px 14px}
+.callbar{display:none}
+
+/* ---------- Tablet / Handy ---------- */
+@media (max-width:1080px){
+ .nav{display:none}
+ .seal{width:104px;height:104px}.seal b{font-size:28px}
+}
+@media (max-width:900px){
+ body{font-size:17.5px}
+ .wrap{width:calc(100% - 44px)}
+ .top{padding:16px 0}.top.solid{padding:12px 0}
+ .top .btn{display:none}
+ .wm b{font-size:23px}
+ .hero{min-height:0}
+ .hero .wrap{grid-template-columns:1fr;gap:0;min-height:0;padding-top:116px}
+ .h-txt{padding-bottom:20px}
+ .h-txt .eyebrow{margin-bottom:22px;font-size:12.5px}
+ .h-txt::before{inset:-6% -14% -4% -14%}
+ .hero h1{font-size:clamp(36px,10.4vw,60px);margin-bottom:22px}
+ h1,h2,h3{overflow-wrap:break-word;hyphens:manual}
+ .hero .lead{margin-bottom:30px}
+ .h-cta{margin-bottom:34px}.h-cta .btn{flex:1 1 100%}
+ .h-proof .sep,.h-proof .sg{display:none}
+ .h-por{height:auto;margin-top:14px}
+ .h-por>img{width:min(88vw,430px);height:auto}
+ .h-arch{width:100%;margin:10px 0 40px}
+ .h-por .halo{top:2%;width:96%}.h-por .ring{top:0;width:100%}
+ .chip{display:none}
+ .seal{top:auto;left:auto;bottom:12%;right:-4px;width:92px;height:92px}.seal b{font-size:24px}.seal text{font-size:9.6px}
+ .liquid.a{width:110vw;height:110vw;left:-50vw}.liquid.b{width:90vw;height:90vw}
+ .h-wave{height:50px}
+ .intro{padding:90px 0 80px}
+ .svc{padding:20px 0 100px}
+ .svc-head{flex-direction:column;align-items:flex-start;gap:22px;margin-bottom:40px}
+ .svc-grid{grid-template-columns:1fr}
+ .svc-media{display:none}
+ .svc-list li{padding:28px 0 34px 0}
+ .svc-list li::before{position:static;display:block;margin-bottom:12px}
+ .svc-list .mi{display:block;aspect-ratio:16/11;border-radius:28px;overflow:hidden;margin-bottom:22px}
+ .svc-list .mi img{width:100%;height:100%;object-fit:cover}
+ .svc-list li.on h3{transform:none}
+ .sig-sec,.team,.ct{padding:110px 0}
+ .sig-in,.story-in,.team-in,.ct-in{grid-template-columns:1fr}
+ .oval-w{max-width:330px}.oval-w .tag{right:-4%;width:96px;height:96px;font-size:16px}
+ .rev{padding:110px 0 100px}
+ .quotes{min-height:330px}
+ .story{padding:40px 0 110px}
+ .story-img{gap:16px}.story-img figure:first-child{margin-bottom:50px}
+ .story-img figcaption{font-size:12.5px;letter-spacing:.1em}.story-img figcaption em{display:block;margin-bottom:6px}
+ .team-pic{max-width:400px}.team-pic .deco{inset:-14px 14px 14px -14px}
+ .flow{padding:100px 0}
+ .flow h2{margin-bottom:50px}
+ .flow-line{display:none}
+ .flow ol{grid-template-columns:1fr;gap:34px;text-align:left}
+ .flow li{flex-direction:row;align-items:flex-start;gap:22px}
+ .flow li:nth-child(even){margin-top:0}
+ .flow li .dot{width:64px;height:64px;font-size:22px;margin:0;flex:none}
+ .flow li div{align-items:flex-start}
+ .form{padding:34px 24px 28px;border-radius:32px}
+ footer{padding:70px 0 150px}
+ footer .wrap{grid-template-columns:1fr}
+ .pv{bottom:60px;padding:8px 44px 8px 14px;font-size:13.5px;text-align:left}
+ .robo{bottom:112px;right:10px}.robo-av{width:62px;height:74px}
+ .robo-say{margin-bottom:40px}
+ .bot{bottom:190px;right:12px}
+ .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:55;background:var(--ink);padding-bottom:env(safe-area-inset-bottom)}
+ .callbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:10px;padding:18px 10px;color:#fff;text-decoration:none;font:500 16.5px var(--fb);letter-spacing:.04em}
+ .callbar a+a{background:var(--grad)}
+ .callbar svg{width:18px;height:18px}
+}
 </style>
 </head>
-<body data-hero="collage">
-<header class="top" id="top">
-  <a href="#" style="display:flex;align-items:center;gap:12px;text-decoration:none"><img class="logo" src="img/logo.png" alt="Day-Spa Warkentin"></a>
-  <nav><a href="#leistungen">Leistungen</a><a href="#ueber">Über uns</a><a href="#kontakt">Kontakt</a></nav>
-  <a class="ptel" href="tel:+4954393810"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span>05439 3810</span></a>
-</header>
+<body><header class="top" id="top"><div class="wrap">
+ <a class="wm" href="#"><b>DAY-SPA <i>Tatiana Warkentin</i></b><small>Beauty · Wellness · Gesundheit</small></a>
+ <nav class="nav"><a href="#leistungen">Behandlungen</a><a href="#geschichte">Geschichte</a><a href="#ueber">Team</a><a href="#kontakt">Kontakt</a></nav>
+ <a class="btn btn-p" href="#kontakt">Termin anfragen</a>
+</div></header>
 
-
-
-
-<section class="h-col">
-  <div class="wrap">
-    <div class="ht ">
-  <p class="kicker">Beauty, Wellness und Gesundheit in Bersenbrück</p>
-  <span class="strokes" aria-hidden="true"><i style="background:#D9741A"></i><i style="background:#B9A58A"></i></span>
-  <h1>Innere Ruhe. <span>Äußere Ausgeglichenheit.</span></h1>
-  <p class="sub">Gesichts- und Körperbehandlungen, Massagen, Sauna und Wellnesspakete – Ihr Kurzurlaub in Bersenbrück, mit 25 Jahren Erfahrung und der Methode Brigitte Kettner.</p>
-  <div class="acts">
-    <a class="btn" href="tel:+4954393810">Jetzt Termin anfragen</a>
-    <a class="tel" href="tel:+4954393810"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg><span>05439 3810</span></a>
+<section class="hero" aria-label="Willkommen">
+ <div class="hero-bg" role="img" aria-label="Ruheraum im DAY-SPA"></div><div class="hero-wash"></div><div class="liquid a"></div><div class="liquid b"></div>
+ <div class="wrap">
+  <div class="h-txt">
+   <span class="eyebrow h-load">Beauty, Wellness und Gesundheit in Bersenbrück</span>
+   <h1 class="h-load d1">Innere Ruhe. <em>Äußere Ausgeglichenheit.</em></h1>
+   <p class="lead h-load d2">Gesichts- und Körperbehandlungen, Massagen, Sauna und Wellnesspakete – Ihr Kurzurlaub in Bersenbrück, mit 25 Jahren Erfahrung und der Methode Brigitte Kettner.</p>
+   <div class="h-cta h-load d3"><a class="btn btn-p" href="#kontakt">Termin anfragen</a><a class="btn btn-g" href="#leistungen">Angebot ansehen</a></div>
+   <div class="h-proof h-load d4">
+    <div class="g"><b>4,5 <span class="stars"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.4l-5.9 3.3 1.3-6.6L2.5 9.5l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.4l-5.9 3.3 1.3-6.6L2.5 9.5l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.4l-5.9 3.3 1.3-6.6L2.5 9.5l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.4l-5.9 3.3 1.3-6.6L2.5 9.5l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.4l-5.9 3.3 1.3-6.6L2.5 9.5l6.6-.8z"/></svg></span></b>39 Google-Bewertungen</div><span class="sep"></span>
+    <span class="sg">25 Jahre Erfahrung in der Kosmetik – nach der Methode Brigitte Kettner.</span>
+   </div>
   </div>
-  <div class="proof"><p class="g"><span class="stars" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg></span><span><b>4,5</b> von 5 bei Google, 39 Bewertungen</span></p><p class="seal"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l2.4 2.1 3.2-.3.8 3.1 2.8 1.6-1.2 3 1.2 3-2.8 1.6-.8 3.1-3.2-.3L12 22l-2.4-2.1-3.2.3-.8-3.1-2.8-1.6 1.2-3-1.2-3 2.8-1.6.8-3.1 3.2.3z" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M8.5 12.2l2.3 2.2 4.7-4.8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>25 Jahre Erfahrung in der Kosmetik</p>
-</div>
-</div>
-    <div class="prints"><figure class="print"><img src="img/b2.webp" alt="Day-Spa Warkentin" class="eager" style="object-position:50% 50%" loading="eager"><figcaption>Unser Haus in Priggenhagen</figcaption></figure><figure class="print"><img src="img/b1.webp" alt="Day-Spa Warkentin" class="eager" style="object-position:50% 40%" loading="eager"><figcaption>Tatiana Warkentin und Team</figcaption></figure><figure class="print"><img src="img/b3.webp" alt="Day-Spa Warkentin" class="eager" style="object-position:50% 50%" loading="eager"><figcaption>Pool und Sauna</figcaption></figure></div>
+  <div class="h-por h-load">
+   <span class="halo"></span><span class="ring"></span>
+   <img src="img/inhaberin.webp" alt="Tatiana Warkentin und Team vom DAY-SPA" width="593" height="507" fetchpriority="high">
+   
+   <div class="seal br" aria-label="25 Jahre Erfahrung · DAY-SPA · "><svg viewBox="0 0 128 128" aria-hidden="true"><defs><path id="sc" d="M64 64m-49 0a49 49 0 1 1 98 0a49 49 0 1 1-98 0"/></defs><text><textPath href="#sc">25 Jahre Erfahrung · DAY-SPA · </textPath></text></svg><b>DS</b></div>
   </div>
+ </div>
+ <div class="h-wave"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 52C180 18 360 6 560 30s380 58 560 46 260-38 320-48V90H0z"/></svg></div>
+</section>
+
+<section class="intro"><div class="wrap">
+ <span class="orn rv"></span>
+ <p class="rv">Spa ist unsere Passion – es bereitet uns Freude, <em>Ihnen etwas Gutes zu tun.</em></p>
+ <div class="sig rv d1">DAY-SPA · Dorf Priggenhagen 30 · Bersenbrück</div>
+</div></section>
+
+<section class="svc" id="leistungen"><div class="wrap">
+ <div class="svc-head">
+  <div><span class="eyebrow rv">Behandlungen</span><h2 class="rv d1">Unser Wellness&shy;angebot <em>für Sie.</em></h2></div>
+  <p class="lead rv d2">Jeder Mensch ist einzigartig, jede Haut hat individuelle Bedürfnisse.</p>
+ </div>
+ <div class="svc-grid">
+  <div class="svc-media rv" id="svcm"><img src="img/b11.webp" alt="Gesichtsbehandlungen" data-i="0" class="on" loading="lazy" decoding="async"><img src="img/b6.webp" alt="Körperbehandlungen und Massagen" data-i="1" loading="lazy" decoding="async"><img src="img/b3.webp" alt="Sauna und Wellnesspakete" data-i="2" loading="lazy" decoding="async"><img src="img/b4.webp" alt="Hochzeits-Behandlungen" data-i="3" loading="lazy" decoding="async"><img src="img/b8.webp" alt="Junggesellinnen-Abschied" data-i="4" style="object-position:27% 12%" loading="lazy" decoding="async"></div>
+  <ol class="svc-list">
+   <li class="rv on" data-i="0"><div class="mi"><img src="img/b11.webp" alt="Gesichtsbehandlungen" loading="lazy" decoding="async"></div><h3>Gesichtsbehandlungen</h3><p>Nach ganzheitlicher Analyse Ihres Hautzustands – denn nur die Behandlung der Ursache wirkt.</p><div class="tg">Methode Brigitte Kettner</div></li>
+   <li class="rv" data-i="1"><div class="mi"><img src="img/b6.webp" alt="Körperbehandlungen und Massagen" loading="lazy" decoding="async"></div><h3>Körperbehandlungen und Massagen</h3><p>Massagen und Körperbehandlungen in ruhigen Räumen – für neue Kraft und tiefe Entspannung.</p></li>
+   <li class="rv" data-i="2"><div class="mi"><img src="img/b3.webp" alt="Sauna und Wellnesspakete" loading="lazy" decoding="async"></div><h3>Sauna und Wellnesspakete</h3><p>Sauna, Pool und Behandlungen kombiniert – Ihr Kurzurlaub vor der Haustür.</p><div class="tg">Sauna · Pool</div></li>
+   <li class="rv" data-i="3"><div class="mi"><img src="img/b4.webp" alt="Hochzeits-Behandlungen" loading="lazy" decoding="async"></div><h3>Hochzeits-Behandlungen</h3><p>Schön und entspannt in den großen Tag.</p></li>
+   <li class="rv" data-i="4"><div class="mi"><img src="img/b8.webp" alt="Junggesellinnen-Abschied" style="object-position:27% 12%" loading="lazy" decoding="async"></div><h3>Junggesellinnen-Abschied</h3><p>Ein besonderer Tag für die Braut und ihre Freundinnen.</p></li>
+  </ol>
+ </div>
+</div></section>
+
+
+<section class="sig-sec" id="signatur">
+ <div class="wtop"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 52C180 18 360 6 560 30s380 58 560 46 260-38 320-48V90H0z"/></svg></div>
+ <div class="wrap sig-in">
+  <div class="oval-w rv"><div class="oval"><img src="img/b3.webp" alt="Pool am DAY-SPA" loading="lazy" decoding="async"></div><span class="tag">Ihr<br>Kurzurlaub</span></div>
+  <div>
+   <span class="eyebrow rv">Spa-Tag</span>
+   <h2 class="rv d1">Kurzurlaub <em>vor der Haustür.</em></h2>
+   <p class="lead rv d2">Sauna, Pool und Behandlungsräume – mitten im Grünen bei Bersenbrück. Auch als Paket für Paare, Bräute und Gruppen.</p>
+   <ul class="ritual rv d2"><li>Sauna</li><li>Pool im Grünen</li><li>Behandlung Ihrer Wahl</li></ul>
+   
+   <a class="btn btn-p rv d3" href="#kontakt">Wellnesspaket anfragen</a>
+  </div>
+ </div>
+ <div class="wbot"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 52C180 18 360 6 560 30s380 58 560 46 260-38 320-48V90H0z"/></svg></div>
 </section>
 
 
 
-
-
-
-
-<section class="sec orb" id="leistungen"><div class="bgi l"><img src="img/b1.webp" alt="Day-Spa Warkentin" class="" style="object-position:50% 40%" loading="eager"></div><div class="wrap">
-  <div class="rows-head"><h2>Unser Wellnessangebot für Sie.</h2><p>Schalten Sie vom Alltag ab – bei Gesichtsbehandlung, Körperbehandlung, Massage oder in der Sauna.</p></div>
-  <article class="rw"><div class="rw-m"><div class="rw-ph"><img src="img/b4.webp" alt="Day-Spa Warkentin" class="" style="object-position:50% 50%" loading="eager"><span class="nr">Beauty</span></div><div class="rw-ph2"><img src="img/b8.webp" alt="Day-Spa Warkentin" class="" style="object-position:50% 50%" loading="eager"></div></div>
-  <div class="rw-t"><h3>Gesichtsbehandlungen</h3><p>Nach ganzheitlicher Analyse Ihres Hautzustands – denn nur die Behandlung der Ursache wirkt nachhaltig.</p><ul><li>Analyse</li><li>Methode Kettner</li><li>Pflege</li></ul><a href="#kontakt">Termin anfragen</a></div></article><article class="rw"><div class="rw-m"><div class="rw-ph"><img src="img/b6.webp" alt="Day-Spa Warkentin" class="" style="object-position:50% 50%" loading="eager"><span class="nr">Wellness</span></div><div class="rw-ph2"><img src="img/b10.webp" alt="Day-Spa Warkentin" class="" style="object-position:50% 50%" loading="eager"></div></div>
-  <div class="rw-t"><h3>Körper und Massagen</h3><p>Massagen und Körperbehandlungen in ruhigen Räumen – für neue Kraft und tiefe Entspannung.</p><ul><li>Massage</li><li>Körper</li><li>Ruhe</li></ul><a href="#kontakt">Termin anfragen</a></div></article><article class="rw"><div class="rw-m"><div class="rw-ph"><img src="img/b3.webp" alt="Day-Spa Warkentin" class="" style="object-position:50% 50%" loading="eager"><span class="nr">Kurzurlaub</span></div><div class="rw-ph2"><img src="img/b5.webp" alt="Day-Spa Warkentin" class="" style="object-position:50% 50%" loading="eager"></div></div>
-  <div class="rw-t"><h3>Sauna und Wellnesspakete</h3><p>Ihr Kurzurlaub: Sauna, Pool und Behandlungen kombiniert – auch für Paare, Bräute und Junggesellinnen-Abschiede.</p><ul><li>Sauna</li><li>Pool</li><li>Pakete</li></ul><a href="#kontakt">Termin anfragen</a></div></article>
-  
+<section class="rev" id="bewertungen"><div class="wrap">
+ <span class="eyebrow rv">Das sagen unsere Gäste</span>
+ <div class="score rv d1"><b>4,5</b><span><span class="stars"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.4l-5.9 3.3 1.3-6.6L2.5 9.5l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.4l-5.9 3.3 1.3-6.6L2.5 9.5l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.4l-5.9 3.3 1.3-6.6L2.5 9.5l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.4l-5.9 3.3 1.3-6.6L2.5 9.5l6.6-.8z"/></svg><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.4l-5.9 3.3 1.3-6.6L2.5 9.5l6.6-.8z"/></svg></span><br>39 Bewertungen<br>bei Google</span></div>
+ <div class="quotes rv d2" id="quotes"><blockquote class="on"><p>Ich habe mich schon ewig nicht mehr so gut gefühlt. Tatjana ist eine wunderbar herzliche, ruhige Person – und die Behandlung war einfach herrlich.</p><cite>Google-Bewertung</cite></blockquote><blockquote><p>Tatjana und ihr Team machen einen fantastischen Job – herzlich, freundlich und ehrlich. Nach jahrelangen Hautproblemen ist meine Haut heute makellos.</p><cite>Google-Bewertung</cite></blockquote><blockquote><p>Wunderschöne, gepflegte Räume und ein ausgezeichneter Service. Perfekt zum Abschalten.</p><cite>Google-Bewertung</cite></blockquote><blockquote><p>Ich bin immer entspannt und genieße meine Behandlungen. Das Team ist großartig.</p><cite>Google-Bewertung</cite></blockquote></div>
+ <div class="qdots" id="qdots"><button type="button" aria-label="Bewertung 1" class="on"></button><button type="button" aria-label="Bewertung 2"></button><button type="button" aria-label="Bewertung 3"></button><button type="button" aria-label="Bewertung 4"></button></div>
 </div></section>
 
 
 
-
-
-<section class="blend"><div class="b b1"><img src="img/b2.webp" alt="Day-Spa Warkentin" class="" style="object-position:50% 50%" loading="eager"></div><div class="b b2"><img src="img/b9.webp" alt="Day-Spa Warkentin" class="" style="object-position:50% 50%" loading="eager"></div><div class="b b3"><img src="img/b7.webp" alt="Day-Spa Warkentin" class="" style="object-position:50% 50%" loading="eager"></div><div class="bt"><h2>Ihr Kurzurlaub vor der Haustür.</h2><p>Sauna, Pool und Behandlungsräume – mitten im Grünen bei Bersenbrück.</p></div></section>
-
-
-
-
-<section class="sec rv" id="bewertungen"><div class="bgi "><img src="img/b12.webp" alt="Day-Spa Warkentin" class="" style="object-position:50% 50%" loading="eager"></div><div class="wrap rv-grid">
-  <div class="rv-score"><div class="big">4,5<small>/ 5</small></div><span class="stars" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg></span><p>39 Bewertungen von echten Kunden aus der Region.</p><div class="gl"><i>G</i>Google-Bewertungen</div></div>
-  <div style="min-width:0"><div class="rv-h"><h2>Was Gäste über das DAY-SPA sagen.</h2><p>Stimmen unserer Gäste.</p></div>
-  <div class="rv-mask"><div class="rv-lane" style="--rvt:56s"><article class="rc"><span class="stars"><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg></span><p>„Ich habe mich schon ewig nicht mehr so gut gefühlt. Tatjana ist eine wunderbar herzliche, ruhige Person – und die Behandlung war einfach herrlich.“</p><div class="rcf"><i>“</i>Google-Rezension</div></article><article class="rc"><span class="stars"><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg></span><p>„Tatjana und ihr Team machen einen fantastischen Job – herzlich, freundlich und ehrlich. Nach jahrelangen Hautproblemen ist meine Haut heute makellos.“</p><div class="rcf"><i>“</i>Google-Rezension</div></article><article class="rc"><span class="stars"><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg></span><p>„Wunderschöne, gepflegte Räume und ein ausgezeichneter Service. Perfekt zum Abschalten.“</p><div class="rcf"><i>“</i>Google-Rezension</div></article><article class="rc"><span class="stars"><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg></span><p>„Ich bin immer entspannt und genieße meine Behandlungen. Das Team ist großartig.“</p><div class="rcf"><i>“</i>Google-Rezension</div></article><article class="rc" aria-hidden="true"><span class="stars"><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg></span><p>„Ich habe mich schon ewig nicht mehr so gut gefühlt. Tatjana ist eine wunderbar herzliche, ruhige Person – und die Behandlung war einfach herrlich.“</p><div class="rcf"><i>“</i>Google-Rezension</div></article><article class="rc" aria-hidden="true"><span class="stars"><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg></span><p>„Tatjana und ihr Team machen einen fantastischen Job – herzlich, freundlich und ehrlich. Nach jahrelangen Hautproblemen ist meine Haut heute makellos.“</p><div class="rcf"><i>“</i>Google-Rezension</div></article><article class="rc" aria-hidden="true"><span class="stars"><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg></span><p>„Wunderschöne, gepflegte Räume und ein ausgezeichneter Service. Perfekt zum Abschalten.“</p><div class="rcf"><i>“</i>Google-Rezension</div></article><article class="rc" aria-hidden="true"><span class="stars"><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg></span><p>„Ich bin immer entspannt und genieße meine Behandlungen. Das Team ist großartig.“</p><div class="rcf"><i>“</i>Google-Rezension</div></article></div></div>
-  <p class="rv-note">Auszüge aus öffentlichen Google-Rezensionen, gekürzt und sinngemäß wiedergegeben.</p></div>
+<section class="team" id="ueber"><div class="wrap team-in">
+ <div class="team-pic rv"><div class="ph"><img src="img/b9.webp" alt="Behandlung im DAY-SPA" style="object-position:51% 18%" loading="lazy" decoding="async"></div><span class="deco"></span></div>
+ <div class="team-txt">
+  <span class="eyebrow rv">Unser Team</span>
+  <h2 class="rv d1">Schön, dass <em>Sie da sind.</em></h2>
+  <p class="lead rv d2">Wir sind das Team von DAY-SPA Tatiana Warkentin aus dem beschaulichen Bersenbrück im Osnabrücker Nordkreis. Spa ist unsere Passion – es bereitet uns Freude, Ihnen etwas Gutes zu tun.</p><p class="lead rv d2">Wir greifen auf 25 Jahre Erfahrung in der Kosmetik zurück und arbeiten nach der Methode Brigitte Kettner: Jeder Mensch ist einzigartig, jede Haut hat individuelle Bedürfnisse.</p>
+  <ul class="checks rv d3"><li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>Ganzheitliche Analyse Ihres Hautzustands</li><li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>Sauna, Pool und Behandlungsräume unter einem Dach</li><li><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg></i>Pakete für Paare, Bräute und Gruppen</li></ul>
+ </div>
 </div></section>
 
+<section class="flow"><div class="wrap">
+ <span class="eyebrow rv">Ablauf</span>
+ <h2 class="rv d1">So läuft Ihr <em>Besuch</em> ab.</h2>
+ <div class="flow-in rv" id="flow">
+  <svg class="flow-line" viewBox="0 0 1200 60" preserveAspectRatio="none" aria-hidden="true"><defs><linearGradient id="fg" x1="0" x2="1"><stop offset="0" stop-color="#D9741A"/><stop offset="1" stop-color="#C9B497"/></linearGradient></defs><path d="M150 22C300 22 300 68 450 68S600 22 750 22s150 46 300 46"/></svg>
+  <ol><li><span class="dot">1</span><div><b>Termin</b><span>Rufen Sie an oder schreiben Sie uns.</span></div></li><li><span class="dot">2</span><div><b>Beratung</b><span>Wir schauen uns Ihre Haut genau an.</span></div></li><li><span class="dot">3</span><div><b>Behandlung</b><span>Abgestimmt auf Sie, in Ruhe.</span></div></li><li><span class="dot">4</span><div><b>Wohlfühlen</b><span>Und wiederkommen.</span></div></li></ol>
+ </div>
+</div></section>
 
-
-
-<section class="sec " id="ueber"><div class="wrap ab ">
-  <figure class="ab-img">
-    <img src="img/b1.webp" alt="Tatiana Warkentin und Team" class="" style="object-position:50% 40%" loading="eager"><figcaption>Tatiana Warkentin und Team, DAY-SPA Bersenbrück</figcaption>
-    
-    <div class="ab-badge"><b>4,5</b><span class="stars" aria-hidden="true"><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg><svg viewBox="0 0 20 20"><path d="M10 1.6l2.6 5.5 6 .8-4.4 4.2 1.1 6-5.3-2.9-5.3 2.9 1.1-6L1.4 7.9l6-.8z"/></svg></span>39 Bewertungen bei Google</div>
-  </figure>
-  <div class="ab-t">
-    <h2>Schön, dass Sie da sind.</h2>
-    <p>Wir sind das Team von DAY-SPA Tatiana Warkentin aus dem beschaulichen Bersenbrück im Osnabrücker Nordkreis. Spa ist unsere Passion – es bereitet uns Freude, Ihnen etwas Gutes zu tun.</p><p>Wir greifen auf 25 Jahre Erfahrung in der Kosmetik zurück und arbeiten nach der Methode Brigitte Kettner: Jeder Mensch ist einzigartig, jede Haut hat individuelle Bedürfnisse.</p>
-    <ul class="checks"><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Ganzheitliche Analyse Ihres Hautzustands</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Sauna, Pool und Behandlungsräume unter einem Dach</li><li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 12.5l5 5L20 6.5"/></svg>Pakete für Paare, Bräute und Gruppen</li></ul>
-    <p class="facts"><span><b>25</b> Jahre Erfahrung.</span> <span><b>Sauna</b> Massagen, Wellness.</span> <span><b>Pakete</b> für Paare und Gruppen.</span> </p>
+<section class="ct" id="kontakt">
+ <div class="wtop"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 52C180 18 360 6 560 30s380 58 560 46 260-38 320-48V90H0z"/></svg></div>
+ <div class="wrap ct-in">
+  <div>
+   <span class="eyebrow rv">Kontakt</span>
+   <h2 class="rv d1">Gönnen Sie sich <em>eine Auszeit.</em></h2>
+   <p class="lead rv d2">Rufen Sie uns direkt an oder hinterlassen Sie Ihre Nummer – wir beraten Sie gern zu Behandlungen und Paketen.</p>
+   <a class="tel rv d2" href="tel:+4954393810">05439 3810</a>
+   <ul class="info rv d3"><li><b>Adresse</b> · Dorf Priggenhagen 30, 49593 Bersenbrück</li><li><b>Pakete</b> · für Paare, Bräute und Gruppen</li><li><b>Gutscheine</b> · Massage, Behandlung oder Spa-Tag</li></ul>
   </div>
-</div></section>
-
-
-
-
-<section class="sec tone orb"><div class="bgi r"><img src="img/b2.webp" alt="Day-Spa Warkentin" class="" style="object-position:50% 50%" loading="eager"></div><div class="wrap">
-  <h2>So läuft Ihr Besuch ab.</h2>
-  <ol class="steps"><li><h3>Termin</h3><p>Rufen Sie an oder schreiben Sie uns.</p></li><li><h3>Beratung</h3><p>Wir schauen uns Ihre Haut genau an.</p></li><li><h3>Behandlung</h3><p>Abgestimmt auf Sie, in Ruhe.</p></li><li><h3>Wohlfühlen</h3><p>Und wiederkommen.</p></li></ol>
-</div></section>
-
-
-
-
-<section class="cta" id="kontakt"><div class="bgi "><img src="img/b2.webp" alt="Day-Spa Warkentin" class="" style="object-position:50% 50%" loading="eager"></div>
-  <div class="cta-t">
-    <h2>Gönnen Sie sich eine Auszeit.</h2>
-    <p>Rufen Sie uns direkt an oder hinterlassen Sie Ihre Nummer – wir beraten Sie gern zu Behandlungen und Paketen.</p>
-    <a class="big" href="tel:+4954393810">05439 3810</a>
-    
-    <form class="lead" onsubmit="event.preventDefault();this.querySelector('small').textContent='Danke! Im fertigen System landet Ihre Anfrage sofort im CRM und Sie bekommen eine Bestätigung. Im Entwurf ist das Formular noch nicht aktiv.'">
-      <input aria-label="Ihr Name" placeholder="Ihr Name"><input aria-label="Telefon" placeholder="Telefon" inputmode="tel">
-      <select aria-label="Anliegen"><option>Was wünschen Sie sich?</option><option>Gesichtsbehandlungen</option><option>Körperbehandlungen und Massagen</option><option>Sauna und Wellnesspakete</option><option>Hochzeits-Behandlungen</option><option>Junggesellinnen-Abschied</option></select>
-      <button type="submit">Rückruf anfordern</button>
-      <small>Beispiel-Funktion: Anfragen landen direkt im CRM, mit automatischer Bestätigung.</small>
-    </form>
-  </div>
-  <div class="cta-img"><img src="img/b2.webp" alt="Day-Spa Warkentin" class="" style="object-position:50% 50%" loading="eager"></div>
+  <form class="form rv d1" onsubmit="event.preventDefault();this.querySelector('small').textContent='Danke! Im fertigen System landet Ihre Anfrage sofort im CRM, mit automatischer Bestätigung. Im Entwurf ist das Formular noch nicht aktiv.'">
+   <h3>Rückruf anfordern</h3><p>Wir beraten Sie gern zu Behandlungen und Paketen.</p>
+   <label><input aria-label="Name" placeholder="Ihr Name" autocomplete="name"></label>
+   <label><input aria-label="Telefon" placeholder="Telefon" inputmode="tel" autocomplete="tel"></label>
+   <label><select aria-label="Behandlung"><option>Was interessiert Sie?</option><option>Gesichtsbehandlungen</option><option>Körperbehandlungen und Massagen</option><option>Sauna und Wellnesspakete</option><option>Hochzeits-Behandlungen</option><option>Junggesellinnen-Abschied</option><option>Gutschein</option></select></label>
+   <button class="btn btn-p" type="submit">Rückruf anfordern</button>
+   <small>Beispiel-Funktion: Anfragen landen direkt im CRM, mit automatischer Bestätigung.</small>
+  </form>
+ </div>
 </section>
-
-
 
 <footer><div class="wrap">
-  <div><h4>Day-Spa Warkentin</h4><p>DAY-SPA Tatiana Warkentin<br>Dorf Priggenhagen 30, 49593 Bersenbrück</p></div>
-  <div><p><a href="tel:+4954393810">05439 3810</a><br></p></div>
-  <div><p><a href="#">Impressum</a><br><a href="#">Datenschutz</a></p></div>
-  <p class="note">Grober Entwurf von High Level Performance mit Bildern und Texten von day-spa-warkentin.de. Bei einer Zusammenarbeit wird alles viel intensiver ausgearbeitet.</p>
+ <div><a class="wm" href="#"><b>DAY-SPA <i>Tatiana Warkentin</i></b><small>Beauty · Wellness · Gesundheit</small></a><p style="margin-top:22px">Dorf Priggenhagen 30, 49593 Bersenbrück</p></div>
+ <div><p><a href="tel:+4954393810">05439 3810</a></p></div>
+ <div><p><a href="#">Impressum</a><br><a href="#">Datenschutz</a></p></div>
+ <p class="note">Grober Entwurf von High Level Performance mit Bildern und Texten von day-spa-warkentin.de. Bei einer Zusammenarbeit wird alles viel intensiver ausgearbeitet.</p>
 </div></footer>
 
 <aside class="pv" id="pv"><b>Grober Entwurf</b>Erstellt von High Level Performance. Bei einer Zusammenarbeit arbeiten wir jede Seite viel intensiver aus.<button type="button" aria-label="Hinweis schließen" onclick="this.parentNode.remove()">x</button></aside>
-<div class="robo" id="robo"><div class="robo-say" id="rsay" role="status" aria-live="polite"></div><button class="robo-av" type="button" id="botbtn" aria-label="Digitalen Guide öffnen"><svg viewBox="0 0 84 96" aria-hidden="true"><line x1="42" y1="6" x2="42" y2="18" stroke="#2B2622" stroke-width="3"/><circle class="ant" cx="42" cy="6" r="5" fill="#B9A58A"/><rect x="10" y="18" width="64" height="50" rx="20" fill="#D9741A"/><rect x="18" y="28" width="48" height="28" rx="14" fill="#2B2622"/><ellipse class="eye" cx="32" cy="42" rx="5" ry="6" fill="#fff"/><ellipse class="eye" cx="52" cy="42" rx="5" ry="6" fill="#fff"/><path d="M34 51q8 5 16 0" stroke="#fff" stroke-width="2.5" fill="none" stroke-linecap="round"/><rect x="4" y="36" width="6" height="14" rx="3" fill="#2B2622"/><rect x="74" y="36" width="6" height="14" rx="3" fill="#2B2622"/><rect x="24" y="68" width="36" height="22" rx="10" fill="#D9741A"/><circle cx="42" cy="79" r="4" fill="#B9A58A"/><rect class="arm" x="60" y="60" width="9" height="22" rx="4.5" fill="#2B2622"/></svg></button></div>
-
+<div class="robo" id="robo"><div class="robo-say" id="rsay" role="status" aria-live="polite"></div><button class="robo-av" type="button" id="botbtn" aria-label="Digitalen Guide öffnen"><svg viewBox="0 0 84 100" aria-hidden="true"><defs><linearGradient id="rg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D9741A"/><stop offset="1" stop-color="#C9B497"/></linearGradient><linearGradient id="rb" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#F5ECE2"/></linearGradient></defs><line x1="42" y1="8" x2="42" y2="20" stroke="#A7530D" stroke-width="2.4" stroke-linecap="round"/><circle class="ant" cx="42" cy="7" r="5" fill="url(#rg)"/><rect x="9" y="20" width="66" height="52" rx="26" fill="url(#rb)" stroke="#F1E2D2" stroke-width="1.5"/><rect x="17" y="30" width="50" height="30" rx="15" fill="#2B2622"/><ellipse class="eye" cx="32" cy="45" rx="4.6" ry="5.6" fill="url(#rg)"/><ellipse class="eye" cx="52" cy="45" rx="4.6" ry="5.6" fill="url(#rg)"/><path d="M35 53q7 4.5 14 0" stroke="#C9B497" stroke-width="2.2" fill="none" stroke-linecap="round"/><circle cx="8" cy="46" r="5" fill="url(#rg)"/><circle cx="76" cy="46" r="5" fill="url(#rg)"/><rect x="25" y="72" width="34" height="22" rx="11" fill="url(#rb)" stroke="#F1E2D2" stroke-width="1.5"/><circle cx="42" cy="83" r="4" fill="url(#rg)"/><rect class="arm" x="61" y="64" width="9" height="22" rx="4.5" fill="url(#rg)"/></svg></button></div>
 <div class="bot" id="bot" role="dialog" aria-label="Assistent">
-  <header><div>Lea<small>Digitaler Assistent von Day-Spa Warkentin, rund um die Uhr</small></div><button type="button" aria-label="Schließen" id="botx">&times;</button></header>
-  <div class="msgs" id="msgs"><div class="m">Guten Tag! Ich bin Lea, der digitale Assistent von Day-Spa Warkentin. Wobei kann ich helfen?</div></div>
-  <div class="chips" id="chips"><button type="button" data-a="0">Welche Leistungen bieten Sie an?</button><button type="button" data-a="1">Wo finde ich Sie?</button><button type="button" data-a="2">Kostenlose Beratung</button></div>
-  <p class="demo">Beispiel-Funktion im Entwurf. Im fertigen System beantwortet der KI-Assistent Fragen mit Ihren eigenen Infos und trägt Anfragen ins CRM ein.</p>
+ <header><div>Lea<small>Digitaler Guide von Day-Spa Warkentin, rund um die Uhr</small></div><button type="button" aria-label="Schließen" id="botx">&times;</button></header>
+ <div class="msgs" id="msgs"><div class="m">Hallo! Ich bin Lea. Wobei darf ich Ihnen helfen?</div></div>
+ <div class="chips" id="chips"><button type="button" data-a="0">Welche Behandlungen gibt es?</button><button type="button" data-a="1">Wo finde ich Sie?</button><button type="button" data-a="2">Termin anfragen</button></div>
+ <p class="demo">Beispiel-Funktion im Entwurf. Im fertigen System beantwortet der KI-Guide Fragen mit den eigenen Infos des Studios und trägt Anfragen ins CRM ein.</p>
 </div>
-<aside class="promo2" id="promo"><div class="pi"><img src="img/b3.webp" alt="Day-Spa Warkentin" class="" style="object-position:50% 50%" loading="eager"><span class="tg">Gutschein</span></div><div class="pt"><small>Beispiel: Aktions-Hinweis im Entwurf</small><b>Wellnesspaket verschenken</b><p>Massage, Gesichtsbehandlung oder ein ganzer Spa-Tag – als Gutschein für Ihre Liebsten.</p><a class="pb" href="tel:+4954393810">Jetzt anfragen</a></div><button class="x" type="button" aria-label="Schließen" onclick="this.parentNode.classList.remove('show');this.parentNode.dataset.closed=1">&times;</button></aside>
+<div class="callbar"><a href="tel:+4954393810"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Anrufen</a><a href="#kontakt">Termin anfragen</a></div>
 
-<div class="callbar"><a href="tel:+4954393810"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>Anrufen</a><a href="tel:+4954393810">Termin anfragen</a></div>
-
-<script src="../../assets/vendor/gsap.min.js"></script>
-<script src="../../assets/vendor/ScrollTrigger.min.js"></script>
 <script src="../../assets/vendor/lenis.min.js"></script>
 <script>
 (function(){
-var top=document.getElementById('top');
-function hd(){top.classList.toggle('solid',scrollY>40)}hd();addEventListener('scroll',hd,{passive:true});
-var rail=document.getElementById('rail');
-document.querySelectorAll('.rail-nav button').forEach(function(b){b.onclick=function(){rail.scrollBy({left:rail.clientWidth*.6*b.dataset.d,behavior:'smooth'})}});
-var lis=document.querySelectorAll('.idx li'),mi=document.querySelectorAll('.idx-media img');
-function act(i){lis.forEach(function(l,k){l.classList.toggle('on',k==i)});mi.forEach(function(m,k){m.classList.toggle('on',k==i)})}
-lis.forEach(function(l){l.addEventListener('mouseenter',function(){act(+l.dataset.i)})});
-if('IntersectionObserver' in window&&mi.length){var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)act(+e.target.dataset.i)})},{rootMargin:'-45% 0px -45% 0px'});lis.forEach(function(l){io.observe(l)})}
-var A=["Wir bieten unter anderem: Gesichtsbehandlungen, K\u00f6rperbehandlungen und Massagen, Sauna und Wellnesspakete, Hochzeits-Behandlungen, Junggesellinnen-Abschied.","Sie finden uns hier: Dorf Priggenhagen 30, 49593 Bersenbr\u00fcck. Telefon: 05439 3810.","Sehr gern! Rufen Sie einfach an unter 05439 3810 oder nutzen Sie das Formular unten. Die Beratung ist kostenlos und unverbindlich."];
-var bot=document.getElementById('bot'),msgs=document.getElementById('msgs'),pr=document.getElementById('promo');
-
-var robo=document.getElementById('robo');
-if(robo){var say=document.getElementById('rsay'),BN="Lea";
-var T={leistungen:"Hier sehen Sie, was wir f\u00fcr Sie tun: Gesichtsbehandlungen, K\u00f6rperbehandlungen und Massagen, Sauna und Wellnesspakete und mehr.",bewertungen:"Unsere Kunden geben uns 4,5 von 5 Sternen bei Google. Lesen Sie selbst.",ueber:"Hier lernen Sie uns kennen \u2013 die Menschen hinter Day-Spa Warkentin.",kontakt:"Und hier erreichen Sie uns direkt. Rufen Sie an unter 05439 3810 \u2013 die Beratung ist kostenlos."};
-var steps=['leistungen','bewertungen','ueber','kontakt'].filter(function(id){return document.getElementById(id)}),si=-1,hl=null,closed=false;
-function go(el){var y=el.getBoundingClientRect().top+scrollY-70;if(window.__lenis)window.__lenis.scrollTo(y,{duration:1.4});else scrollTo({top:y,behavior:'smooth'})}
-function show(html){say.innerHTML=html;say.classList.add('on');var x=say.querySelector('.rx');x&&(x.onclick=function(){say.classList.remove('on');closed=true;hl&&hl.classList.remove('tour-hl')})}
-function hello(){if(closed)return;robo.classList.add('wave');show('<button class="rx" aria-label="Schließen">&times;</button><b>'+BN+' · '+"Ihr digitaler Guide"+'</b>'+"Herzlich willkommen im DAY-SPA! Ich bin Lea. Soll ich Ihnen kurz zeigen, was Sie bei uns erwartet?"+'<div class="rb"><button type="button" id="rt1">Ja, gern</button><button type="button" class="ghost" id="rt2">Ich habe eine Frage</button></div>');document.getElementById('rt1').onclick=next;document.getElementById('rt2').onclick=chat}
-function chat(){say.classList.remove('on');bot.classList.add('open');pr&&pr.classList.remove('show')}
-function next(){si++;hl&&hl.classList.remove('tour-hl');if(si>=steps.length){show('<button class="rx" aria-label="Schließen">&times;</button><b>'+BN+'</b>'+"Das war die kurze Tour. Haben Sie noch eine Frage? Ich helfe gern weiter."+'<div class="rb"><button type="button" id="rt3">Frage stellen</button><button type="button" class="ghost" id="rt4">Nochmal von vorn</button></div>');document.getElementById('rt3').onclick=chat;document.getElementById('rt4').onclick=function(){si=-1;next()};return}
-var id=steps[si],el=document.getElementById(id);hl=el;el.classList.add('tour-hl');go(el);
-show('<button class="rx" aria-label="Schließen">&times;</button><b>'+BN+' · Tour</b>'+T[id]+'<div class="rb"><button type="button" id="rtn">'+(si<steps.length-1?'Weiter':'Fertig')+'</button><span class="st">'+(si+1)+' / '+steps.length+'</span></div>');document.getElementById('rtn').onclick=next}
-if(innerWidth<900){var hs=false;var hm=function(){if(!hs&&scrollY>innerHeight*.6){hs=true;removeEventListener('scroll',hm);setTimeout(hello,600)}};addEventListener('scroll',hm,{passive:true});setTimeout(function(){if(!hs){hs=true;hello()}},14000)}else setTimeout(hello,2600);
-document.getElementById('botbtn').onclick=function(){if(say.classList.contains('on')){chat()}else{closed=false;si=-1;hello()}};}
-else{document.getElementById('botbtn').onclick=function(){bot.classList.toggle('open');pr&&pr.classList.remove('show')}}
-
+var QA=/[?&]qa/.test(location.search);if(QA)document.documentElement.classList.add('qa');
+var top=document.getElementById('top');function hd(){top.classList.toggle('solid',scrollY>40)}hd();addEventListener('scroll',hd,{passive:true});
+/* Einblenden */
+var rv=document.querySelectorAll('.rv');
+if(QA||!('IntersectionObserver' in window)){rv.forEach(function(e){e.classList.add('in')})}
+else{var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{rootMargin:'0px 0px -8% 0px'});rv.forEach(function(e){io.observe(e)})}
+/* Ablauf-Linie */
+var fp=document.querySelector('.flow-line path');if(fp){fp.style.setProperty('--len',Math.ceil(fp.getTotalLength()))}
+/* Behandlungen: Bild wechselt weich */
+var li=document.querySelectorAll('.svc-list li'),mi=document.querySelectorAll('#svcm img');
+function act(i){li.forEach(function(l,k){l.classList.toggle('on',k==i)});mi.forEach(function(m,k){m.classList.toggle('on',k==i)})}
+li.forEach(function(l){l.addEventListener('mouseenter',function(){act(+l.dataset.i)})});
+if('IntersectionObserver' in window){var io2=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting)act(+e.target.dataset.i)})},{rootMargin:'-48% 0px -48% 0px'});li.forEach(function(l){io2.observe(l)})}
+/* Bewertungen */
+var qs=document.querySelectorAll('#quotes blockquote'),qd=document.querySelectorAll('#qdots button'),qk=0,qt;
+function q(i){qk=i;qs.forEach(function(b,k){b.classList.toggle('on',k==i)});qd.forEach(function(b,k){b.classList.toggle('on',k==i)})}
+function qa(){clearInterval(qt);qt=setInterval(function(){q((qk+1)%qs.length)},7000)}
+qd.forEach(function(b,k){b.onclick=function(){q(k);qa()}});if(!QA&&qs.length>1)qa();
+/* Weiches Scrollen */
+if(!QA&&window.Lenis&&!matchMedia('(prefers-reduced-motion: reduce)').matches){var L=new Lenis({lerp:.085});window.__lenis=L;(function r(t){L.raf(t);requestAnimationFrame(r)})(0);
+ document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var id=a.getAttribute('href');if(id.length>1){e.preventDefault();L.scrollTo(id,{offset:-70,duration:1.6})}})})}
+/* Guide + Chat */
+var bot=document.getElementById('bot'),msgs=document.getElementById('msgs'),robo=document.getElementById('robo'),say=document.getElementById('rsay'),BN="Lea";
+var A=["Wir bieten Ihnen: Gesichtsbehandlungen, K\u00f6rperbehandlungen und Massagen, Sauna und Wellnesspakete, Hochzeits-Behandlungen, Junggesellinnen-Abschied.","Sie finden uns hier: Dorf Priggenhagen 30, 49593 Bersenbr\u00fcck. Telefon: 05439 3810.","Sehr gern! Rufen Sie einfach an unter 05439 3810 oder nutzen Sie das Formular unten. Wir melden uns schnell zur\u00fcck."];
+var T={leistungen:"Hier finden Sie unser ganzes Angebot \u2013 von der Gesichtsbehandlung bis zum Spa-Tag.",signatur:"Sauna, Pool und Behandlung: Ihr Kurzurlaub vor der Haust\u00fcr.",bewertungen:"Hier lesen Sie, was unsere G\u00e4ste sagen.",ueber:"Hier lernen Sie unser Team kennen.",kontakt:"Und hier vereinbaren Sie Ihren Termin: 05439 3810."};
+var steps=['leistungen','signatur','bewertungen','ueber','kontakt'].filter(function(id){return T[id]&&document.getElementById(id)}),si=-1,hl=null,closed=false;
+function go(el){var y=el.getBoundingClientRect().top+scrollY-70;if(window.__lenis)window.__lenis.scrollTo(y,{duration:1.6});else scrollTo({top:y,behavior:'smooth'})}
+function show(h){say.innerHTML=h;say.classList.add('on');var x=say.querySelector('.rx');x&&(x.onclick=function(){say.classList.remove('on');closed=true;hl&&hl.classList.remove('tour-hl')})}
+function hello(){if(closed)return;robo.classList.add('wave');show('<button class="rx" aria-label="Schließen">&times;</button><b>'+BN+' · '+"Ihr Spa-Guide"+'</b>'+"Herzlich willkommen im DAY-SPA! Ich bin Lea. Soll ich Ihnen kurz zeigen, was Sie bei uns erwartet?"+'<div class="rb"><button type="button" id="rt1">Ja, gern</button><button type="button" class="ghost" id="rt2">Ich habe eine Frage</button></div>');document.getElementById('rt1').onclick=next;document.getElementById('rt2').onclick=chat}
+function chat(){say.classList.remove('on');bot.classList.add('open')}
+function next(){si++;hl&&hl.classList.remove('tour-hl');if(si>=steps.length){show('<button class="rx" aria-label="Schließen">&times;</button><b>'+BN+'</b>'+"Das war die kleine Tour. Haben Sie noch eine Frage? Ich helfe Ihnen gern."+'<div class="rb"><button type="button" id="rt3">Frage stellen</button><button type="button" class="ghost" id="rt4">Nochmal von vorn</button></div>');document.getElementById('rt3').onclick=chat;document.getElementById('rt4').onclick=function(){si=-1;next()};return}
+ var id=steps[si],el=document.getElementById(id);hl=el;el.classList.add('tour-hl');go(el);
+ show('<button class="rx" aria-label="Schließen">&times;</button><b>'+BN+' · Tour</b>'+T[id]+'<div class="rb"><button type="button" id="rtn">'+(si<steps.length-1?'Weiter':'Fertig')+'</button><span class="st">'+(si+1)+' / '+steps.length+'</span></div>');document.getElementById('rtn').onclick=next}
+if(!QA){if(innerWidth<900){var hs=false,hm=function(){if(!hs&&scrollY>innerHeight*.6){hs=true;removeEventListener('scroll',hm);setTimeout(hello,600)}};addEventListener('scroll',hm,{passive:true});setTimeout(function(){if(!hs){hs=true;hello()}},14000)}else setTimeout(hello,3200)}
+document.getElementById('botbtn').onclick=function(){if(say.classList.contains('on')){chat()}else{closed=false;si=-1;hello()}};
 document.getElementById('botx').onclick=function(){bot.classList.remove('open')};
 document.querySelectorAll('#chips button').forEach(function(b){b.onclick=function(){var u=document.createElement('div');u.className='m u';u.textContent=b.textContent;msgs.appendChild(u);setTimeout(function(){var m=document.createElement('div');m.className='m';m.textContent=A[b.dataset.a];msgs.appendChild(m);msgs.scrollTop=1e6},450)}});
-var shown=false;function sp(force){if(shown||!pr||bot.classList.contains('open'))return;if(force===true||scrollY>innerHeight*1.4){shown=true;pr.classList.add('show')}}addEventListener('scroll',sp,{passive:true});if(pr&&pr.classList.contains('promo2')){setTimeout(function(){var rs=document.getElementById('rsay');if(!(rs&&rs.classList.contains('on')))sp(true)},document.getElementById('robo')?20000:9000);var ph=function(){setTimeout(function(){if(!pr.matches(':hover'))pr.classList.remove('show')},14000)};pr.addEventListener('transitionend',function(e){if(pr.classList.contains('show')&&e.propertyName==='transform')ph()})}
-document.querySelectorAll('.hm-in,.glass,.hc-img,.hp-img').forEach(function(w){var sl=w.querySelectorAll('.sl'),dt=w.querySelectorAll('.dots i');if(sl.length<2)return;var k=0;setInterval(function(){sl[k].classList.remove('on');dt[k]&&dt[k].classList.remove('on');k=(k+1)%sl.length;sl[k].classList.add('on');dt[k]&&dt[k].classList.add('on')},5200)});
-var fb=document.getElementById('filmbtn');if(fb){fb.onclick=function(){var v=document.getElementById('film');v.controls=true;v.play();fb.remove()}}
-var bw=document.querySelector('.h-wall .bricks');
-var RM=matchMedia('(prefers-reduced-motion: reduce)').matches;
-if(RM||!window.gsap)return;
-gsap.registerPlugin(ScrollTrigger);
-var lenis=new Lenis({lerp:.1});window.__lenis=lenis;
-lenis.on('scroll',ScrollTrigger.update);
-gsap.ticker.add(function(t){lenis.raf(t*1000)});gsap.ticker.lagSmoothing(0);
-document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var id=a.getAttribute('href');if(id.length>1){e.preventDefault();lenis.scrollTo(id,{offset:-70})}})});
-var hero=document.body.dataset.hero, mm=gsap.matchMedia();
-var SH={
- arch:['inset(15% 4% 0% 50% round 23vw 23vw 0 0)','inset(0% 0% 0% 0% round 0vw 0vw 0 0)',23],
- gable:['polygon(50% 34%, 72.5% 12%, 95% 34%, 95% 100%, 50% 100%)','polygon(0% 0%, 50% 0%, 100% 0%, 100% 100%, 0% 100%)',22.5],
- blob:['inset(13% 4% 9% 49% round 46% 54% 48% 52% / 56% 44% 56% 44%)','inset(0% 0% 0% 0% round 0% 0% 0% 0% / 0% 0% 0% 0%)',22.5],
- coin:['circle(27% at 73% 52%)','circle(80% at 50% 50%)',23,0],
- diag:['polygon(62% 0%, 100% 0%, 100% 100%, 46% 100%)','polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)',27],
- full:['inset(0% 0% 0% 0% round 0)','inset(0% 0% 0% 0% round 0)',0,0]
-};
-if(hero==='mask'&&document.querySelector('.h-mask').dataset.shape==='coin'){
- var csec=document.querySelector('.h-mask'),cb=csec.querySelector('.hm-img'),cht=csec.querySelector('.ht');
- mm.add('(min-width:901px)',function(){
-  gsap.from(cb,{scale:.85,opacity:0,duration:1.1,ease:'expo.out'});
-  var ct=gsap.timeline({scrollTrigger:{trigger:csec,start:'top top',end:'bottom bottom',scrub:.6}});
-  ct.to(cht,{y:-80,opacity:0,duration:.35,ease:'none'},0).to(cb,{left:0,top:0,width:'100vw',height:'100vh',maxWidth:'100vw',maxHeight:'100vh',clipPath:'circle(75% at 50% 50%)',duration:1,ease:'power2.inOut'},0);
- });
-}
-else if(hero==='mask'){
- var sec=document.querySelector('.h-mask'),sh=SH[sec.dataset.shape],box=sec.querySelector('.hm-img'),im=box.querySelector('.hm-in'),ht=sec.querySelector('.ht');
- mm.add('(min-width:901px)',function(){
-  gsap.set(box,{clipPath:sh[0]});gsap.set(im,{xPercent:sh[2],yPercent:sh[3]||0,scale:1.03});
-  gsap.from(im,{scale:1.12,duration:1.1,ease:'expo.out'});
-  var tl=gsap.timeline({scrollTrigger:{trigger:sec,start:'top top',end:'bottom bottom',scrub:.6}});
-  tl.to(ht,{y:-80,opacity:0,duration:.35,ease:'none'},0).to(box,{clipPath:sh[1],duration:1,ease:'power2.inOut'},0).to(im,{xPercent:0,yPercent:0,scale:1,duration:1,ease:'power2.inOut'},0);
- });
-}
-if(hero==='panes'){
- var hp=document.querySelector('.hp-img'),C=+hp.dataset.cols,R=+hp.dataset.rows,ms=[];
- for(var i=1;i<C;i++){var d=document.createElement('i');d.className='mull';d.style.cssText='left:'+(i*100/C)+'%;top:0;bottom:0;width:9px;margin-left:-4.5px';hp.appendChild(d);ms.push(d)}
- for(var j=1;j<R;j++){var e=document.createElement('i');e.className='mull';e.style.cssText='top:'+(j*100/R)+'%;left:0;right:0;height:9px;margin-top:-4.5px';hp.appendChild(e);ms.push(e)}
- var hi=hp.querySelector('.sl,.glassbg');
- gsap.from(hi,{scale:1.25,duration:1.2,ease:'expo.out'});
- gsap.from(ms,{scaleX:function(i,el){return el.style.width?1:0},scaleY:function(i,el){return el.style.width?0:1},transformOrigin:'0 0',duration:.7,stagger:.07,ease:'power3.out',delay:.1});
- gsap.to(hi,{yPercent:12,ease:'none',scrollTrigger:{trigger:hp,start:'top top',end:'bottom top',scrub:true}});
-}
-if(hero==='window'){
- mm.add('(min-width:901px)',function(){
-  var w=document.querySelector('.win'),ht=document.querySelector('.h-win .ht'),wi=w.querySelector('.glass');
-  gsap.from(w,{y:60,rotate:-2,duration:.9,ease:'expo.out'});
-  var tl=gsap.timeline({scrollTrigger:{trigger:'.h-win',start:'top top',end:'bottom bottom',scrub:.6}});
-  tl.to(ht,{x:-120,opacity:0,duration:.3},0).to(w,{scale:3.4,xPercent:-38,duration:1,ease:'power2.in'},0).to(wi,{scale:.9,duration:1},0);
- });
-}
-if(hero==='numerals'){
- var n=document.querySelector('.hn-num');
- gsap.from(n,{letterSpacing:'0.08em',opacity:0,duration:1,ease:'expo.out'});
- gsap.to(n,{backgroundPosition:'80% 50%',ease:'none',scrollTrigger:{trigger:n,start:'top bottom',end:'bottom top',scrub:true}});
-}
-if(hero==='portrait'){
- var p=document.querySelector('.hpo-p img'),cap=document.querySelector('.hpo-p figcaption');
- gsap.from('.hpo-p',{clipPath:'inset(100% 0 0 0)',duration:1,ease:'expo.out'});
- gsap.from(p,{scale:1.3,duration:1.3,ease:'expo.out'});
- gsap.from(cap,{yPercent:100,duration:.6,delay:.5,ease:'power3.out'});
- gsap.to(p,{yPercent:10,ease:'none',scrollTrigger:{trigger:'.h-por',start:'top top',end:'bottom top',scrub:true}});
-}
-if(hero==='collage'){
- var pr=document.querySelectorAll('.print');
- gsap.from(pr,{y:-120,opacity:0,rotate:function(i){return [-18,16,-10][i]},duration:.75,stagger:.09,ease:'back.out(1.4)'});
- pr.forEach(function(el,i){gsap.to(el,{y:[-60,40,-20][i],ease:'none',scrollTrigger:{trigger:'.h-col',start:'top top',end:'bottom top',scrub:true}})});
-}
-if(hero==='circuit'){
- var pa=document.querySelector('.cable path'),L=pa.getTotalLength();
- gsap.fromTo(pa,{strokeDasharray:L,strokeDashoffset:L},{strokeDashoffset:0,duration:1,ease:'power2.inOut'});
- gsap.from('.hc-img',{clipPath:'inset(0 100% 0 0)',duration:.9,ease:'expo.out',delay:.1});
- gsap.to('.wire i',{scaleY:1,ease:'none',scrollTrigger:{trigger:document.body,start:'top top',end:'bottom bottom',scrub:true}});
-}
-if(hero==='wall'&&bw){
- var W=bw.clientWidth,H=bw.clientHeight,bh=Math.max(48,Math.round(H/12)),bwid=bh*2.1,g=3,br=[];
- for(var r=0;r*bh<H;r++){for(var x=(r%2?-bwid/2:0);x<W;x+=bwid){var e=document.createElement('i');e.style.cssText='left:'+x+'px;top:'+(r*bh)+'px;width:'+(bwid-g)+'px;height:'+(bh-g)+'px';bw.appendChild(e);br.push(e)}}
- gsap.to(br,{opacity:0,y:function(){return 30+Math.random()*60},rotate:function(){return (Math.random()-.5)*18},duration:.55,ease:'power2.in',stagger:{each:.0045,from:'random'},delay:.15,onComplete:function(){bw.remove()}});
- gsap.from('.hw-panel',{xPercent:-12,opacity:0,duration:.9,ease:'expo.out',delay:.2});
-}
-var pt=document.querySelector('.pin-track');
-if(pt){mm.add('(min-width:901px)',function(){
-  var dist=function(){return pt.scrollWidth-innerWidth};
-  gsap.to(pt,{x:function(){return -dist()},ease:'none',scrollTrigger:{trigger:pt.parentNode,start:'top top',end:function(){return '+='+dist()},pin:true,scrub:.6,invalidateOnRefresh:true}});
-});}
-addEventListener('load',function(){ScrollTrigger.refresh()});
 })();
 </script>
 </body>

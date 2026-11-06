@@ -46,6 +46,9 @@ h2{font-size:clamp(38px,4.6vw,68px)}
 .wm{display:flex;flex-direction:column;text-decoration:none;line-height:1}
 .wm b{font:400 27px/1 var(--fh);letter-spacing:-.01em}.wm b i{color:var(--acc-d)}
 .wm small{font:500 11px/1 var(--fb);letter-spacing:.26em;text-transform:uppercase;color:var(--mute);margin-top:8px}
+.wm-logo img{height:{{ B.get("logo_h", 52) }}px;width:auto}
+.top.solid .wm-logo img{height:{{ (B.get("logo_h", 52) * 0.8) | round | int }}px}
+.ft-logo{display:inline-block;padding:14px 22px;border-radius:999px;background:#fff}.ft-logo img{height:44px;width:auto}
 .nav{display:flex;gap:34px;margin-left:auto}
 .nav a{text-decoration:none;font-size:16px;font-weight:500;letter-spacing:.04em;position:relative;padding:6px 0}
 .nav a::after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:var(--acc);transform:scaleX(0);transform-origin:right;transition:transform .6s var(--ease)}
@@ -83,7 +86,10 @@ h2{font-size:clamp(38px,4.6vw,68px)}
 .h-por{position:relative;align-self:end;height:min(88svh,920px);display:flex;justify-content:center;align-items:flex-end}
 .h-por .halo{position:absolute;left:50%;top:6%;width:min(560px,92%);aspect-ratio:1;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle at 50% 45%,color-mix(in srgb,#fff 85%,transparent) 0%,color-mix(in srgb,var(--blush) 80%,transparent) 42%,transparent 70%)}
 .h-por .ring{position:absolute;left:50%;top:3%;width:min(600px,98%);aspect-ratio:1;transform:translateX(-50%);border-radius:50%;border:1px solid color-mix(in srgb,var(--acc) 35%,transparent)}
-.h-por img{position:relative;height:100%;width:auto;max-width:none;object-fit:contain;object-position:bottom;-webkit-mask-image:linear-gradient(180deg,#000 82%,transparent 100%);mask-image:linear-gradient(180deg,#000 82%,transparent 100%);filter:drop-shadow(0 30px 40px color-mix(in srgb,var(--acc-d) 22%,transparent))}
+.h-por>img{position:relative;height:auto;max-height:100%;width:auto;max-width:100%;object-fit:contain;object-position:bottom;-webkit-mask-image:linear-gradient(180deg,#000 82%,transparent 100%);mask-image:linear-gradient(180deg,#000 82%,transparent 100%);filter:drop-shadow(0 30px 40px color-mix(in srgb,var(--acc-d) 22%,transparent))}
+.h-arch{position:relative;align-self:center;width:min(500px,92%);aspect-ratio:4/5;margin-bottom:9vh;border-radius:999px 999px 40px 40px;overflow:hidden;box-shadow:0 60px 90px -50px color-mix(in srgb,var(--acc-d) 70%,transparent)}
+.h-arch img{width:100%;height:100%;object-fit:cover}
+.h-por:has(.h-arch){align-items:center}
 .chip{position:absolute;left:-4%;bottom:15%;z-index:2;display:flex;align-items:center;gap:14px;padding:12px 24px 12px 12px;border-radius:999px;background:color-mix(in srgb,#fff 86%,transparent);font-size:15.5px!important;backdrop-filter:blur(16px) saturate(1.3);-webkit-backdrop-filter:blur(16px) saturate(1.3);box-shadow:0 20px 40px -22px color-mix(in srgb,var(--ink) 50%,transparent);font-size:14px;line-height:1.35;animation:float 7s ease-in-out infinite}
 .chip i{width:46px;height:46px;border-radius:50%;background:var(--grad);display:grid;place-items:center;color:#fff;flex:none}
 .chip i svg{width:20px;height:20px}
@@ -95,6 +101,7 @@ h2{font-size:clamp(38px,4.6vw,68px)}
 .seal text{font:500 10.4px var(--fb);letter-spacing:.28em;text-transform:uppercase;fill:var(--acc-d)}
 .seal b{font:italic 400 34px/1 var(--fh);color:var(--acc-d)}
 @keyframes spin{to{transform:rotate(360deg)}}
+.seal.br{top:auto;left:auto;right:0;bottom:22%}
 .h-wave{position:absolute;left:0;right:0;bottom:-1px;height:90px;z-index:1;pointer-events:none}
 .h-wave path{fill:var(--bg)}
 .h-wave svg,.wtop svg,.wbot svg{display:block;width:100%;height:100%}
@@ -181,6 +188,7 @@ h2{font-size:clamp(38px,4.6vw,68px)}
 .story-img{display:grid;grid-template-columns:minmax(0,.78fr) minmax(0,1fr);gap:28px;align-items:end}
 .story-img figure{position:relative}
 .story-img .arch{aspect-ratio:3/4.1;border-radius:999px 999px 28px 28px;overflow:hidden;filter:grayscale(1) contrast(1.02)}
+.story-img .arch.col{filter:none}
 .story-img .soft{aspect-ratio:4/5;border-radius:28px 28px 999px 999px;overflow:hidden}
 .story-img img{width:100%;height:100%;object-fit:cover}
 .story-img figcaption{margin-top:16px;font-size:14px;font-weight:500;letter-spacing:.14em;text-transform:uppercase;color:var(--mute)}
@@ -191,7 +199,7 @@ h2{font-size:clamp(38px,4.6vw,68px)}
 .team{position:relative;padding:150px 0;background:linear-gradient(180deg,var(--bg),var(--pearl) 30%,var(--pearl) 70%,var(--bg))}
 .team-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,7vw,110px);align-items:center}
 .team-pic{position:relative;max-width:540px;width:100%;justify-self:center}
-.team-pic .ph{aspect-ratio:2/3;border-radius:var(--r);overflow:hidden;box-shadow:0 60px 90px -55px color-mix(in srgb,var(--ink) 55%,transparent)}
+.team-pic .ph{aspect-ratio:{{ B.get("team_ratio", "2/3") }};border-radius:var(--r);overflow:hidden;box-shadow:0 60px 90px -55px color-mix(in srgb,var(--ink) 55%,transparent)}
 .team-pic .ph img{width:100%;height:100%;object-fit:cover}
 .team-pic .deco{position:absolute;inset:-26px 26px 26px -26px;border-radius:calc(var(--r) + 12px);border:1px solid color-mix(in srgb,var(--acc) 40%,transparent);z-index:-1}
 .team-txt h2{margin:24px 0 28px}
@@ -310,12 +318,14 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
  .h-txt{padding-bottom:20px}
  .h-txt .eyebrow{margin-bottom:22px;font-size:12.5px}
  .h-txt::before{inset:-6% -14% -4% -14%}
- .hero h1{font-size:clamp(44px,12.4vw,64px);margin-bottom:22px}
+ .hero h1{font-size:clamp(36px,10.4vw,60px);margin-bottom:22px}
+ h1,h2,h3{overflow-wrap:break-word;hyphens:manual}
  .hero .lead{margin-bottom:30px}
  .h-cta{margin-bottom:34px}.h-cta .btn{flex:1 1 100%}
  .h-proof .sep,.h-proof .sg{display:none}
  .h-por{height:auto;margin-top:14px}
- .h-por img{width:min(88vw,430px);height:auto}
+ .h-por>img{width:min(88vw,430px);height:auto}
+ .h-arch{width:100%;margin:10px 0 40px}
  .h-por .halo{top:2%;width:96%}.h-por .ring{top:0;width:100%}
  .chip{display:none}
  .seal{top:auto;left:auto;bottom:12%;right:-4px;width:92px;height:92px}.seal b{font-size:24px}.seal text{font-size:9.6px}
@@ -368,7 +378,7 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
 {%- set wave = '<svg viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 52C180 18 360 6 560 30s380 58 560 46 260-38 320-48V90H0z"/></svg>' -%}
 
 <header class="top" id="top"><div class="wrap">
- <a class="wm" href="#"><b>{{ B.wm[0] }} <i>{{ B.wm[1] }}</i></b><small>{{ B.wm_sub }}</small></a>
+ {% if f.logo %}<a class="wm wm-logo" href="#"><img src="{{ f.logo }}" alt="{{ f.kurzname }}"></a>{% else %}<a class="wm" href="#"><b>{{ B.wm[0] }} <i>{{ B.wm[1] }}</i></b><small>{{ B.wm_sub }}</small></a>{% endif %}
  <nav class="nav"><a href="#leistungen">Behandlungen</a><a href="#geschichte">Geschichte</a><a href="#ueber">Team</a><a href="#kontakt">Kontakt</a></nav>
  <a class="btn btn-p" href="#kontakt">{{ B.cta_btn }}</a>
 </div></header>
@@ -388,9 +398,9 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
   </div>
   <div class="h-por h-load">
    <span class="halo"></span><span class="ring"></span>
-   <img src="{{ f.cutout }}" alt="{{ B.cut_alt }}" width="{{ f.cut_w }}" height="{{ f.cut_h }}" fetchpriority="high">
+   {% if f.cutout %}<img src="{{ f.cutout }}" alt="{{ B.cut_alt }}" width="{{ f.cut_w }}" height="{{ f.cut_h }}" fetchpriority="high">{% else %}<div class="h-arch">{{ im(B.hero_img, B.get('hero_img_alt', f.kurzname), eager=True) }}</div>{% endif %}
    {% if B.get('chip') %}<div class="chip"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M12 3c3 4 6 7.2 6 10.5a6 6 0 0 1-12 0C6 10.2 9 7 12 3z"/></svg></i><div><b>{{ B.chip[0] }}</b><span>{{ B.chip[1] }}</span></div></div>{% endif %}
-   <div class="seal" aria-label="{{ B.seal }}"><svg viewBox="0 0 128 128" aria-hidden="true"><defs><path id="sc" d="M64 64m-49 0a49 49 0 1 1 98 0a49 49 0 1 1-98 0"/></defs><text><textPath href="#sc">{{ B.seal }}</textPath></text></svg><b>{{ B.seal_mono }}</b></div>
+   <div class="seal{% if B.get("seal_pos") == "br" %} br{% endif %}" aria-label="{{ B.seal }}"><svg viewBox="0 0 128 128" aria-hidden="true"><defs><path id="sc" d="M64 64m-49 0a49 49 0 1 1 98 0a49 49 0 1 1-98 0"/></defs><text><textPath href="#sc">{{ B.seal }}</textPath></text></svg><b>{{ B.seal_mono }}</b></div>
   </div>
  </div>
  <div class="h-wave">{{ wave | safe }}</div>
@@ -410,7 +420,7 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
  <div class="svc-grid">
   <div class="svc-media rv" id="svcm">{% for s in B.svc %}<img src="{{ I[s[0]] }}" alt="{{ s[1] }}" data-i="{{ loop.index0 }}"{% if loop.first %} class="on"{% endif %}{% if B.pos.get(s[0]) %} style="object-position:{{ B.pos.get(s[0]) }}"{% endif %} loading="lazy" decoding="async">{% endfor %}</div>
   <ol class="svc-list">{% for s in B.svc %}
-   <li class="rv{% if loop.first %} on{% endif %}" data-i="{{ loop.index0 }}"><div class="mi">{{ im(s[0], s[1]) }}</div><h3>{{ s[1] }}</h3><p>{{ s[2] }}</p>{% if s[3] %}<div class="tg">{{ s[3] | join(' · ') }}</div>{% endif %}</li>{% endfor %}
+   <li class="rv{% if loop.first %} on{% endif %}" data-i="{{ loop.index0 }}"><div class="mi">{{ im(s[0], s[1]) }}</div><h3>{{ s[1] }}</h3><p>{{ s[2] }}</p>{% if s|length > 3 and s[3] %}<div class="tg">{{ s[3] | join(' · ') }}</div>{% endif %}</li>{% endfor %}
   </ol>
  </div>
 </div></section>
@@ -424,7 +434,7 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
    <span class="eyebrow rv">{{ S.eyebrow }}</span>
    <h2 class="rv d1">{{ S.h2 | safe }}</h2>
    <p class="lead rv d2">{{ S.p }}</p>
-   <ul class="ritual rv d2">{% for r in S.ritual %}<li>{{ r }}</li>{% endfor %}</ul>
+   {% if S.get('ritual') %}<ul class="ritual rv d2">{% for r in S.ritual %}<li>{{ r }}</li>{% endfor %}</ul>{% else %}<div style="height:34px"></div>{% endif %}
    {% if S.get('quote') %}<blockquote class="sig-q rv d3"><span class="stars">{% for _ in range(5) %}{{ star | safe }}{% endfor %}</span>„{{ S.quote }}“</blockquote>{% endif %}
    <a class="btn btn-p rv d3" href="#kontakt">{{ S.btn }}</a>
   </div>
@@ -452,13 +462,13 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
   {% for p in St.p %}<p class="lead rv d2">{{ p }}</p>{% endfor %}
  </div>
  <div class="story-img">
-  <figure class="rv"><div class="arch">{{ im(St.img1, St.cap1) }}</div><figcaption><em>{{ St.lab1 }}</em>{{ St.cap1 }}</figcaption></figure>
+  <figure class="rv"><div class="arch{% if not St.get('bw', True) %} col{% endif %}">{{ im(St.img1, St.cap1) }}</div><figcaption><em>{{ St.lab1 }}</em>{{ St.cap1 }}</figcaption></figure>
   <figure class="rv d2"><div class="soft">{{ im(St.img2, St.cap2) }}</div><figcaption><em>{{ St.lab2 }}</em>{{ St.cap2 }}</figcaption></figure>
  </div>
 </div></section>
 {% endif %}
 
-<section class="team" id="ueber"><div class="wrap team-in">
+{% if B.get("team_img") %}<section class="team" id="ueber"><div class="wrap team-in">
  <div class="team-pic rv"><div class="ph">{{ im(B.team_img, B.team_alt) }}</div><span class="deco"></span></div>
  <div class="team-txt">
   <span class="eyebrow rv">{{ B.team_eyebrow }}</span>
@@ -466,7 +476,7 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
   {% for p in f.ueber %}<p class="lead rv d2">{{ p }}</p>{% endfor %}
   <ul class="checks rv d3">{% for ch in f.checks %}<li><i>{{ check | safe }}</i>{{ ch }}</li>{% endfor %}</ul>
  </div>
-</div></section>
+</div></section>{% endif %}
 
 <section class="flow"><div class="wrap">
  <span class="eyebrow rv">Ablauf</span>
@@ -499,7 +509,7 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
 </section>
 
 <footer><div class="wrap">
- <div><a class="wm" href="#"><b>{{ B.wm[0] }} <i>{{ B.wm[1] }}</i></b><small>{{ B.wm_sub }}</small></a><p style="margin-top:22px">{{ f.adresse }}</p></div>
+ <div>{% if f.logo %}<span class="ft-logo"><img src="{{ f.logo }}" alt="{{ f.kurzname }}"></span>{% else %}<a class="wm" href="#"><b>{{ B.wm[0] }} <i>{{ B.wm[1] }}</i></b><small>{{ B.wm_sub }}</small></a>{% endif %}<p style="margin-top:22px">{{ f.adresse }}</p></div>
  <div><p><a href="tel:{{ f.tel_link }}">{{ f.telefon }}</a>{% if f.email %}<br><a href="mailto:{{ f.email }}">{{ f.email }}</a>{% endif %}</p></div>
  <div><p><a href="#">Impressum</a><br><a href="#">Datenschutz</a></p></div>
  <p class="note">Grober Entwurf von High Level Performance mit Bildern und Texten von {{ f.website_kurz }}. Bei einer Zusammenarbeit wird alles viel intensiver ausgearbeitet.</p>
@@ -510,8 +520,8 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
 <div class="bot" id="bot" role="dialog" aria-label="Assistent">
  <header><div>{{ B.bot_name }}<small>Digitaler Guide von {{ f.kurzname }}, rund um die Uhr</small></div><button type="button" aria-label="Schließen" id="botx">&times;</button></header>
  <div class="msgs" id="msgs"><div class="m">{{ B.bot_hi }}</div></div>
- <div class="chips" id="chips"><button type="button" data-a="0">Welche Behandlungen gibt es?</button><button type="button" data-a="1">Wo finde ich euch?</button><button type="button" data-a="2">Termin anfragen</button></div>
- <p class="demo">Beispiel-Funktion im Entwurf. Im fertigen System beantwortet der KI-Guide Fragen mit euren eigenen Infos und trägt Anfragen ins CRM ein.</p>
+ <div class="chips" id="chips"><button type="button" data-a="0">Welche Behandlungen gibt es?</button><button type="button" data-a="1">{{ 'Wo finde ich euch?' if du else 'Wo finde ich Sie?' }}</button><button type="button" data-a="2">Termin anfragen</button></div>
+ <p class="demo">Beispiel-Funktion im Entwurf. Im fertigen System beantwortet der KI-Guide Fragen mit den eigenen Infos des Studios und trägt Anfragen ins CRM ein.</p>
 </div>
 <div class="callbar"><a href="tel:{{ f.tel_link }}">{{ icon_phone }}Anrufen</a><a href="#kontakt">{{ B.mb_btn }}</a></div>
 
@@ -541,14 +551,15 @@ if(!QA&&window.Lenis&&!matchMedia('(prefers-reduced-motion: reduce)').matches){v
  document.querySelectorAll('a[href^="#"]').forEach(function(a){a.addEventListener('click',function(e){var id=a.getAttribute('href');if(id.length>1){e.preventDefault();L.scrollTo(id,{offset:-70,duration:1.6})}})})}
 /* Guide + Chat */
 var bot=document.getElementById('bot'),msgs=document.getElementById('msgs'),robo=document.getElementById('robo'),say=document.getElementById('rsay'),BN={{ B.bot_name | tojson }};
-var A=[{{ ('Bei uns bekommst du: ' ~ (B.svc | map(attribute=1) | join(', ')) ~ '. Gutscheine gibt es auch per Versand.') | tojson }},{{ ('Du findest uns hier: ' ~ f.adresse ~ '. Telefon: ' ~ f.telefon ~ '.') | tojson }},{{ ('Sehr gern! Ruf einfach an unter ' ~ f.telefon ~ ' oder nutze das Formular unten. Wir melden uns schnell zurück.') | tojson }}];
-var T={leistungen:{{ B.tour_l | tojson }},signatur:{{ B.get('tour_s', '') | tojson }},bewertungen:{{ B.tour_r | tojson }},ueber:{{ B.tour_u | tojson }},kontakt:{{ B.tour_k | tojson }}};
+{% if du %}var A=[{{ ('Bei uns bekommst du: ' ~ (B.svc | map(attribute=1) | join(', ')) ~ '.' ~ B.get('a_extra', '')) | tojson }},{{ ('Du findest uns hier: ' ~ f.adresse ~ '. Telefon: ' ~ f.telefon ~ '.') | tojson }},{{ ('Sehr gern! Ruf einfach an unter ' ~ f.telefon ~ ' oder nutze das Formular unten. Wir melden uns schnell zurück.') | tojson }}];
+{% else %}var A=[{{ ('Wir bieten Ihnen: ' ~ (B.svc | map(attribute=1) | join(', ')) ~ '.' ~ B.get('a_extra', '')) | tojson }},{{ ('Sie finden uns hier: ' ~ f.adresse ~ '. Telefon: ' ~ f.telefon ~ '.') | tojson }},{{ ('Sehr gern! Rufen Sie einfach an unter ' ~ f.telefon ~ ' oder nutzen Sie das Formular unten. Wir melden uns schnell zurück.') | tojson }}];{% endif %}
+var T={leistungen:{{ B.get('tour_l', '') | tojson }},signatur:{{ B.get('tour_s', '') | tojson }},bewertungen:{{ B.get('tour_r', '') | tojson }},ueber:{{ B.get('tour_u', '') | tojson }},kontakt:{{ B.get('tour_k', '') | tojson }}};
 var steps=['leistungen','signatur','bewertungen','ueber','kontakt'].filter(function(id){return T[id]&&document.getElementById(id)}),si=-1,hl=null,closed=false;
 function go(el){var y=el.getBoundingClientRect().top+scrollY-70;if(window.__lenis)window.__lenis.scrollTo(y,{duration:1.6});else scrollTo({top:y,behavior:'smooth'})}
 function show(h){say.innerHTML=h;say.classList.add('on');var x=say.querySelector('.rx');x&&(x.onclick=function(){say.classList.remove('on');closed=true;hl&&hl.classList.remove('tour-hl')})}
 function hello(){if(closed)return;robo.classList.add('wave');show('<button class="rx" aria-label="Schließen">&times;</button><b>'+BN+' · '+{{ B.robot_tag | tojson }}+'</b>'+{{ B.robot_hello | tojson }}+'<div class="rb"><button type="button" id="rt1">Ja, gern</button><button type="button" class="ghost" id="rt2">Ich habe eine Frage</button></div>');document.getElementById('rt1').onclick=next;document.getElementById('rt2').onclick=chat}
 function chat(){say.classList.remove('on');bot.classList.add('open')}
-function next(){si++;hl&&hl.classList.remove('tour-hl');if(si>=steps.length){show('<button class="rx" aria-label="Schließen">&times;</button><b>'+BN+'</b>'+{{ B.get('robot_end', 'Das war die kleine Tour. Hast du noch eine Frage? Ich helfe dir gern.') | tojson }}+'<div class="rb"><button type="button" id="rt3">Frage stellen</button><button type="button" class="ghost" id="rt4">Nochmal von vorn</button></div>');document.getElementById('rt3').onclick=chat;document.getElementById('rt4').onclick=function(){si=-1;next()};return}
+function next(){si++;hl&&hl.classList.remove('tour-hl');if(si>=steps.length){show('<button class="rx" aria-label="Schließen">&times;</button><b>'+BN+'</b>'+{{ B.get('robot_end', 'Das war die kleine Tour. Hast du noch eine Frage? Ich helfe dir gern.' if du else 'Das war die kleine Tour. Haben Sie noch eine Frage? Ich helfe Ihnen gern.') | tojson }}+'<div class="rb"><button type="button" id="rt3">Frage stellen</button><button type="button" class="ghost" id="rt4">Nochmal von vorn</button></div>');document.getElementById('rt3').onclick=chat;document.getElementById('rt4').onclick=function(){si=-1;next()};return}
  var id=steps[si],el=document.getElementById(id);hl=el;el.classList.add('tour-hl');go(el);
  show('<button class="rx" aria-label="Schließen">&times;</button><b>'+BN+' · Tour</b>'+T[id]+'<div class="rb"><button type="button" id="rtn">'+(si<steps.length-1?'Weiter':'Fertig')+'</button><span class="st">'+(si+1)+' / '+steps.length+'</span></div>');document.getElementById('rtn').onclick=next}
 if(!QA){if(innerWidth<900){var hs=false,hm=function(){if(!hs&&scrollY>innerHeight*.6){hs=true;removeEventListener('scroll',hm);setTimeout(hello,600)}};addEventListener('scroll',hm,{passive:true});setTimeout(function(){if(!hs){hs=true;hello()}},14000)}else setTimeout(hello,3200)}
