@@ -18,7 +18,7 @@
  --grad:linear-gradient(120deg,var(--acc) 0%,color-mix(in srgb,var(--acc) 55%,var(--champ)) 55%,var(--champ) 100%);
  --grad-soft:linear-gradient(160deg,var(--pearl) 0%,var(--blush) 55%,color-mix(in srgb,var(--champ) 45%,var(--pearl)) 100%);
  --fh:{{ B.get('fh', "'Bodoni Moda',Didot,'Times New Roman',serif") | safe }};--fb:{{ B.get('fb', "'Jost','Helvetica Neue',system-ui,sans-serif") | safe }};
- --ease:cubic-bezier(.22,.8,.24,1);--r:36px;
+ --ease:cubic-bezier(.22,.8,.24,1);--r:{{ B.get('r','36px') }};--fa:{{ (B.get('fa') or 'var(--fh)') | safe }};--hw:{{ B.get('hw',400) }};--hls:{{ B.get('hls','-.015em') }};
 }
 *{box-sizing:border-box;margin:0;padding:0}
 html{-webkit-text-size-adjust:100%;scroll-behavior:auto}
@@ -28,8 +28,8 @@ a{color:inherit}
 .wrap{width:min(1240px,calc(100% - 64px));margin:0 auto}
 .eyebrow{display:inline-flex;align-items:center;gap:14px;font:500 13.5px/1.2 var(--fb);letter-spacing:.2em;text-transform:uppercase;color:var(--acc-d)}
 .eyebrow::before{content:"";width:34px;height:1px;background:currentColor;opacity:.6}
-h1,h2,h3{font-family:var(--fh);font-weight:400;line-height:1.04;letter-spacing:-.015em;color:var(--ink)}
-h1 em,h2 em,h3 em{font-style:italic;color:var(--acc-d)}
+h1,h2,h3{font-family:var(--fh);font-weight:var(--hw);line-height:1.04;letter-spacing:var(--hls);color:var(--ink){% if B.get('hcase') %};text-transform:{{ B.hcase }}{% endif %}}
+h1 em,h2 em,h3 em{font-family:var(--fa);font-style:{{ B.get('es','italic') }};font-weight:{{ B.get('ew',400) }};color:var(--acc-d);{% if B.get('ecase') %}text-transform:{{ B.ecase }};{% endif %}{% if B.get('esize') %}font-size:{{ B.esize }};{% endif %}}
 h2{font-size:clamp(38px,4.6vw,68px)}
 .lead{font-size:clamp(18.5px,1.45vw,21px);color:color-mix(in srgb,var(--ink) 82%,var(--mute));max-width:34em}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;min-height:58px;padding:0 32px;border-radius:999px;text-decoration:none;font:500 16.5px/1 var(--fb);letter-spacing:.06em;transition:transform .5s var(--ease),box-shadow .5s var(--ease),background-position .8s var(--ease)}
@@ -84,6 +84,7 @@ h2{font-size:clamp(38px,4.6vw,68px)}
 .h-proof .sep{width:1px;height:44px;background:color-mix(in srgb,var(--ink) 15%,transparent)}
 .h-proof .sg{font-size:16px;color:var(--ink);line-height:1.5;max-width:16em}
 .h-por{position:relative;align-self:end;height:min(88svh,920px);display:flex;justify-content:center;align-items:flex-end}
+.h-por .halo,.h-por .ring{pointer-events:none}
 .h-por .halo{position:absolute;left:50%;top:6%;width:min(560px,92%);aspect-ratio:1;transform:translateX(-50%);border-radius:50%;background:radial-gradient(circle at 50% 45%,color-mix(in srgb,#fff 85%,transparent) 0%,color-mix(in srgb,var(--blush) 80%,transparent) 42%,transparent 70%)}
 .h-por .ring{position:absolute;left:50%;top:3%;width:min(600px,98%);aspect-ratio:1;transform:translateX(-50%);border-radius:50%;border:1px solid color-mix(in srgb,var(--acc) 35%,transparent)}
 .h-por>img{position:relative;height:auto;max-height:100%;width:auto;max-width:100%;object-fit:contain;object-position:bottom;-webkit-mask-image:linear-gradient(180deg,#000 82%,transparent 100%);mask-image:linear-gradient(180deg,#000 82%,transparent 100%);filter:drop-shadow(0 30px 40px color-mix(in srgb,var(--acc-d) 22%,transparent))}
@@ -304,6 +305,138 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
 .bot .demo{font-size:13px;color:var(--mute);padding:0 16px 14px}
 .callbar{display:none}
 
+
+/* ================= VARIANTEN ================= */
+/* Hero links: Person links, Text rechts */
+.h-left .hero .wrap{grid-template-columns:minmax(0,.92fr) minmax(0,1.08fr)}
+.h-left .h-por{order:-1}
+.h-left .h-txt{padding-left:clamp(0px,2vw,30px)}
+.h-left .chip{left:auto;right:-6%}
+.h-left .seal{left:auto;right:4%}
+.h-left .hero-wash{background:radial-gradient(70% 90% at 100% 40%,color-mix(in srgb,var(--bg) 96%,transparent) 0%,color-mix(in srgb,var(--bg) 78%,transparent) 48%,transparent 80%),linear-gradient(180deg,color-mix(in srgb,var(--bg) 40%,transparent) 0%,transparent 30%,transparent 70%,var(--bg) 100%),linear-gradient(250deg,color-mix(in srgb,var(--blush) 55%,transparent),color-mix(in srgb,var(--champ) 22%,transparent))}
+/* Hero mittig: Text | Person | Bewertung */
+.h-center .hero .wrap{grid-template-columns:minmax(0,1fr) minmax(0,.95fr) minmax(0,.5fr);gap:clamp(20px,3vw,48px)}
+.h-center .hero h1{font-size:clamp(46px,4.6vw,78px)}
+.h-center .h-side{align-self:center;padding-bottom:6vh;display:flex;flex-direction:column;gap:22px;text-shadow:0 0 18px #fff}
+.h-center .hs-score{display:flex;flex-direction:column;gap:8px}
+.h-center .hs-score b{font:var(--hw) clamp(64px,6vw,96px)/.9 var(--fh);background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;text-shadow:none}
+.h-center .hs-score small{font-size:15.5px;color:var(--ink)}
+.h-center .h-side p{font-size:16.5px;line-height:1.5;padding-top:20px;border-top:1px solid color-mix(in srgb,var(--ink) 15%,transparent)}
+.h-center .chip{left:50%;transform:translateX(-50%);bottom:8%;animation:none}
+.h-center .h-por .halo{width:min(520px,100%)}
+/* Hero Vollbild: echtes Foto, Text auf weichem Verlauf */
+.h-full .hero-bg{filter:none;inset:0;animation:breathe 30s ease-in-out infinite alternate}
+.h-full .hero-wash{background:linear-gradient(90deg,var(--bg) 0%,color-mix(in srgb,var(--bg) 92%,transparent) 30%,color-mix(in srgb,var(--bg) 40%,transparent) 55%,transparent 75%),linear-gradient(180deg,transparent 70%,var(--bg) 100%)}
+.h-full .liquid{display:none}
+.h-full .top{background:color-mix(in srgb,var(--bg) 72%,transparent);backdrop-filter:blur(16px) saturate(1.2);-webkit-backdrop-filter:blur(16px) saturate(1.2)}
+.h-full .h-por .halo,.h-full .h-por .ring{display:none}
+.h-full .h-por{height:min(80svh,840px)}
+.h-full .h-por>img{filter:drop-shadow(0 30px 60px rgba(0,0,0,.35))}
+.h-full.dark .hero-wash{background:linear-gradient(90deg,var(--bg) 0%,color-mix(in srgb,var(--bg) 88%,transparent) 32%,color-mix(in srgb,var(--bg) 30%,transparent) 60%,transparent 80%),linear-gradient(180deg,transparent 65%,var(--bg) 100%)}
+/* Laufband */
+.rb-w{overflow:hidden;padding:34px 0 10px;margin:-40px 0 0;position:relative;z-index:3}
+.ribbon{position:relative;z-index:3;background:var(--grad);color:#fff;overflow:hidden;transform:rotate(-2deg);margin:0 -3%;box-shadow:0 20px 40px -20px color-mix(in srgb,var(--acc-d) 70%,transparent)}
+.rb-in{display:flex;gap:38px;align-items:center;white-space:nowrap;padding:18px 0;animation:mq 26s linear infinite;width:max-content}
+.rb-in span{font:var(--hw) clamp(20px,2vw,30px)/1 var(--fh);letter-spacing:.02em;{% if B.get('hcase') %}text-transform:{{ B.hcase }};{% endif %}}
+.rb-in i{font-style:normal;opacity:.7}
+@keyframes mq{to{transform:translateX(-50%)}}
+/* Zahlen-Band */
+.counters{padding:120px 0 110px;text-align:center}
+.ct-intro{font:400 clamp(26px,2.6vw,40px)/1.3 var(--fh);max-width:24em;margin:0 auto 70px}
+.ct-intro em{font-family:var(--fa);color:var(--acc-d)}
+.cn-row{display:grid;grid-template-columns:repeat({{ (B.get('counters') or [1]) | length }},minmax(0,1fr));gap:30px}
+.cn{display:flex;flex-direction:column;align-items:center;gap:12px;padding:10px 20px}
+.cn+.cn{border-left:1px solid color-mix(in srgb,var(--ink) 12%,transparent)}
+.cn b{font:var(--hw) clamp(56px,6vw,96px)/1 var(--fh);background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent}
+.cn span{font-size:16.5px;max-width:14em}
+/* Behandlungen: Mosaik */
+.svc-mosaic{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:clamp(18px,2.4vw,34px)}
+.tile{grid-column:span 2;display:flex;flex-direction:column;gap:18px}
+.tile:nth-child(1){grid-column:span 4;grid-row:span 2}
+.tile .ti{border-radius:var(--r);overflow:hidden;aspect-ratio:4/5;box-shadow:0 40px 70px -45px color-mix(in srgb,var(--acc-d) 60%,transparent)}
+.tile:nth-child(1) .ti{aspect-ratio:auto;flex:1;min-height:420px}
+.tile:nth-child(4),.tile:nth-child(5){grid-column:span 3}.tile:nth-child(4) .ti,.tile:nth-child(5) .ti{aspect-ratio:16/10}
+.tile .ti img{width:100%;height:100%;object-fit:cover;transition:transform 1.4s var(--ease)}
+.tile:hover .ti img{transform:scale(1.05)}
+.tile .no,.svc-cols .no,.zz .no{font:italic 400 17px/1 var(--fa);color:var(--acc)}
+.tile h3{font-size:clamp(24px,2vw,32px);margin:8px 0 6px}
+.tile p{color:color-mix(in srgb,var(--ink) 82%,var(--mute));font-size:17px}
+/* Behandlungen: Spalten mit Nummern */
+.svc-banner{border-radius:var(--r);overflow:hidden;aspect-ratio:{{ B.get("banner_ratio","21/8") }};margin-bottom:70px}
+.svc-banner img{width:100%;height:100%;object-fit:cover}
+.svc-cols{list-style:none;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:56px 48px}
+.svc-cols li{padding-top:26px;border-top:1px solid color-mix(in srgb,var(--ink) 14%,transparent)}
+.svc-cols .no{display:block;font:var(--hw) clamp(46px,4vw,64px)/1 var(--fh);font-style:normal;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;margin-bottom:18px}
+.svc-cols h3{font-size:clamp(23px,1.8vw,28px);margin-bottom:12px}
+.svc-cols p{color:color-mix(in srgb,var(--ink) 82%,var(--mute));font-size:17.5px}
+.svc-cols .tg{margin-top:14px;font-size:13.5px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;color:var(--acc-d)}
+/* Behandlungen: Zickzack */
+.svc-zz{display:flex;flex-direction:column;gap:clamp(70px,9vw,130px)}
+.zz{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:clamp(40px,6vw,96px);align-items:center}
+.zz:nth-child(even) .zz-img{order:2}
+.zz-img{border-radius:var(--r);overflow:hidden;aspect-ratio:5/4;box-shadow:0 50px 80px -55px color-mix(in srgb,var(--acc-d) 65%,transparent)}
+.zz-img img{width:100%;height:100%;object-fit:cover}
+.zz h3{font-size:clamp(32px,3.2vw,50px);margin:16px 0 18px}
+.zz p{font-size:18.5px;color:color-mix(in srgb,var(--ink) 82%,var(--mute));max-width:28em}
+.zz .tg{margin-top:18px;font-size:13.5px;font-weight:500;letter-spacing:.12em;text-transform:uppercase;color:var(--acc-d)}
+.zz-link{display:inline-flex;align-items:center;gap:10px;margin-top:28px;text-decoration:none;font-weight:500;color:var(--acc-d);border-bottom:1px solid currentColor;padding-bottom:4px}
+.zz-link::after{content:"";width:22px;height:1px;background:currentColor}
+/* Behandlungen: Spa-Karte */
+.svc-menu{max-width:1060px;margin:0 auto;padding:clamp(40px,5vw,70px);border-radius:calc(var(--r) * 1.4);background:color-mix(in srgb,#fff 60%,var(--pearl));box-shadow:0 60px 100px -70px color-mix(in srgb,var(--acc-d) 70%,transparent),inset 0 0 0 1px color-mix(in srgb,var(--acc) 22%,transparent)}
+.mn-head{display:flex;align-items:center;justify-content:center;gap:18px;margin-bottom:46px;font:400 clamp(24px,2.2vw,34px)/1 var(--fh);color:var(--acc-d)}
+.mn-head b{font-weight:var(--hw)}
+.mn-orn{font-size:14px;opacity:.7}
+.svc-menu ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:34px 56px}
+.svc-menu li{display:grid;grid-template-columns:92px 1fr;gap:22px;align-items:start}
+.mn-img{width:92px;height:92px;border-radius:50%;overflow:hidden;box-shadow:0 0 0 5px #fff,0 0 0 6px color-mix(in srgb,var(--acc) 30%,transparent)}
+.mn-img img{width:100%;height:100%;object-fit:cover}
+.svc-menu h3{display:flex;align-items:baseline;gap:12px;font-size:clamp(21px,1.7vw,26px)}
+.svc-menu h3 i{flex:1;border-bottom:1px dotted color-mix(in srgb,var(--ink) 35%,transparent);transform:translateY(-6px)}
+.svc-menu h3 small{font:500 12.5px var(--fb);letter-spacing:.12em;text-transform:uppercase;color:var(--acc-d)}
+.svc-menu p{margin-top:8px;color:color-mix(in srgb,var(--ink) 82%,var(--mute));font-size:17px}
+/* Signatur-Formen */
+.sh-circle .oval{aspect-ratio:1;border-radius:50%}
+.sh-arch .oval{border-radius:999px 999px var(--r) var(--r);aspect-ratio:4/5}
+.sh-rect .oval{border-radius:var(--r);aspect-ratio:4/5}
+.sh-blob .oval{border-radius:58% 42% 52% 48% / 46% 54% 46% 54%;aspect-ratio:1}
+/* Bewertungen: geteilt */
+.rv-split{display:grid;grid-template-columns:minmax(0,.7fr) minmax(0,1.3fr);gap:clamp(40px,7vw,110px);text-align:left;align-items:start}
+.rs-l{position:sticky;top:120px;display:flex;flex-direction:column;gap:14px}
+.rs-n{font:var(--hw) clamp(96px,10vw,160px)/.9 var(--fh);background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;margin-top:18px}
+.rs-l small{font-size:16px}
+.rs-l .stars svg{width:22px;height:22px}
+.rs-r{display:flex;flex-direction:column}
+.rs-r blockquote{padding:34px 0;border-top:1px solid color-mix(in srgb,var(--ink) 12%,transparent)}
+.rs-r blockquote:first-child{border-top:0;padding-top:0}
+.rs-r p{font:400 clamp(22px,2vw,30px)/1.4 var(--fh)}
+.rs-r p::before{content:"\201E"}.rs-r p::after{content:"\201C"}
+.rs-r cite{display:block;margin-top:14px;font:500 13.5px var(--fb);font-style:normal;letter-spacing:.18em;text-transform:uppercase;color:var(--mute)}
+/* Bewertungen: Laufband */
+.rv-mq{overflow:hidden;margin-top:56px;padding:10px 0 20px;-webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent)}
+.mq-in{display:flex;gap:28px;width:max-content;animation:mq 60s linear infinite}
+.rv-mq:hover .mq-in{animation-play-state:paused}
+.rv-mq blockquote{width:min(420px,78vw);padding:30px 32px;border-radius:calc(var(--r) * .8);background:color-mix(in srgb,#fff 75%,var(--pearl));text-align:left;box-shadow:0 30px 60px -45px color-mix(in srgb,var(--acc-d) 70%,transparent)}
+.rv-mq p{margin-top:14px;font:400 20px/1.45 var(--fh)}
+/* Nachtmodus */
+.dark{--bg:{{ c.get('bg') }};color-scheme:dark}
+.dark .btn-g{background:color-mix(in srgb,#fff 10%,transparent);color:var(--ink);box-shadow:inset 0 0 0 1px color-mix(in srgb,#fff 25%,transparent)}
+.dark .btn-g:hover{background:color-mix(in srgb,#fff 18%,transparent)}
+.dark .h-txt .lead,.dark .h-txt .eyebrow,.dark .h-proof,.dark .h-side{text-shadow:none}
+.dark .h-txt::before{background:radial-gradient(closest-side,color-mix(in srgb,var(--bg) 85%,transparent),color-mix(in srgb,var(--bg) 50%,transparent) 55%,transparent)}
+.dark .hero-wash{background:radial-gradient(70% 90% at 0% 40%,color-mix(in srgb,var(--bg) 96%,transparent) 0%,color-mix(in srgb,var(--bg) 80%,transparent) 50%,color-mix(in srgb,var(--bg) 30%,transparent) 85%),linear-gradient(180deg,color-mix(in srgb,var(--bg) 50%,transparent),transparent 30%,transparent 70%,var(--bg))}
+.dark .liquid{mix-blend-mode:screen;opacity:.35}
+.dark .h-por .halo{background:radial-gradient(circle at 50% 45%,color-mix(in srgb,var(--champ) 40%,transparent) 0%,color-mix(in srgb,var(--acc) 18%,transparent) 42%,transparent 70%)}
+.dark .chip,.dark .seal,.dark .form,.dark .robo-say,.dark .rv-mq blockquote,.dark .svc-menu{background:color-mix(in srgb,var(--pearl) 85%,transparent);color:var(--ink)}
+.dark .form input,.dark .form select{background:color-mix(in srgb,#fff 8%,transparent);color:var(--ink);box-shadow:inset 0 0 0 1px color-mix(in srgb,#fff 18%,transparent)}
+.dark .bot{background:color-mix(in srgb,var(--pearl) 95%,transparent)}.dark .bot .m{background:color-mix(in srgb,#fff 10%,transparent)}
+.dark .top.solid{background:color-mix(in srgb,var(--bg) 85%,transparent)}
+.dark .wm-logo img,.dark .ft-logo img{filter:brightness(0) invert(1) sepia(.35) saturate(1.4)}
+.dark .ft-logo{background:transparent;padding:0}
+.dark footer{background:color-mix(in srgb,var(--bg) 70%,#000)}
+.dark .flow li .dot{background:var(--pearl)}
+.dark .vband p{text-shadow:0 0 30px var(--bg),0 0 12px var(--bg)}
+.dark .vband .km,.dark .vband video{filter:blur(12px) brightness(.55) saturate(.9)}
+
 /* ---------- Tablet / Handy ---------- */
 @media (max-width:1080px){
  .nav{display:none}
@@ -367,6 +500,27 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
  .robo{bottom:112px;right:10px}.robo-av{width:62px;height:74px}
  .robo-say{margin-bottom:40px}
  .bot{bottom:190px;right:12px}
+
+ /* Varianten am Handy */
+ .h-left .h-por{order:0}
+ .h-left .hero .wrap,.h-center .hero .wrap,.h-full .hero .wrap{grid-template-columns:1fr}
+ .h-center .hero h1{font-size:clamp(36px,10.4vw,60px)}
+ .seal{display:none}
+ .h-por{overflow:hidden}
+ .h-center .h-side{padding:6px 0 30px;text-align:left}
+ .h-center .hs-score b{font-size:56px}
+ .h-full .hero-wash{background:linear-gradient(180deg,color-mix(in srgb,var(--bg) 92%,transparent) 0%,color-mix(in srgb,var(--bg) 80%,transparent) 50%,color-mix(in srgb,var(--bg) 40%,transparent) 75%,var(--bg) 100%)}
+ .h-full .h-por{height:auto}
+ .h-full .h-txt:last-child{padding-bottom:90px}
+ .rb-w{margin:-10px 0 0}
+ .counters{padding:80px 0}.ct-intro{margin-bottom:40px}
+ .cn-row{grid-template-columns:1fr 1fr;gap:26px 10px}.cn+.cn{border-left:0}
+ .svc-mosaic{grid-template-columns:1fr}.tile,.tile:nth-child(n){grid-column:auto;grid-row:auto}.tile .ti,.tile:nth-child(n) .ti{aspect-ratio:4/3;min-height:0}
+ .svc-banner{aspect-ratio:4/3;margin-bottom:40px}
+ .svc-cols{grid-template-columns:1fr;gap:36px}
+ .zz{grid-template-columns:1fr;gap:22px}.zz:nth-child(even) .zz-img{order:0}.zz-img{aspect-ratio:4/3}
+ .svc-menu{padding:30px 20px}.svc-menu ul{grid-template-columns:1fr;gap:28px}.svc-menu li{grid-template-columns:68px 1fr;gap:16px}.mn-img{width:68px;height:68px}
+ .rv-split{grid-template-columns:1fr;gap:30px}.rs-l{position:static}
  .callbar{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:55;background:var(--ink);padding-bottom:env(safe-area-inset-bottom)}
  .callbar a{flex:1;display:flex;align-items:center;justify-content:center;gap:10px;padding:18px 10px;color:#fff;text-decoration:none;font:500 16.5px var(--fb);letter-spacing:.04em}
  .callbar a+a{background:var(--grad)}
@@ -374,7 +528,7 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
 }
 </style>
 </head>
-<body>
+<body class="h-{{ B.get('hero','right') }} s-{{ B.get('svc_layout','arch') }} r-{{ B.get('rev_layout','single') }}{% if B.get('dark') %} dark{% endif %}">
 {%- set star = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2.6l2.9 6.1 6.6.8-4.9 4.6 1.3 6.6L12 17.4l-5.9 3.3 1.3-6.6L2.5 9.5l6.6-.8z"/></svg>' -%}
 {%- set check = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>' -%}
 {%- set wave = '<svg viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 52C180 18 360 6 560 30s380 58 560 46 260-38 320-48V90H0z"/></svg>' -%}
@@ -386,52 +540,65 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
 </div></header>
 
 <section class="hero" aria-label="Willkommen">
- <div class="hero-bg" role="img" aria-label="{{ B.hero_bg_alt }}"></div><div class="hero-wash"></div><div class="liquid a"></div><div class="liquid b"></div>
+ <div class="hero-bg" role="img" aria-label="{{ B.hero_bg_alt }}"{% if B.get('hero') == 'full' %} style="background-image:url('{{ I[B.full_img] }}');background-position:{{ B.get('full_pos','50% 50%') }}"{% endif %}></div><div class="hero-wash"></div><div class="liquid a"></div><div class="liquid b"></div>
  <div class="wrap">
   <div class="h-txt">
    <span class="eyebrow h-load">{{ B.eyebrow }}</span>
    <h1 class="h-load d1">{{ B.h1 | safe }}</h1>
    <p class="lead h-load d2">{{ B.sub }}</p>
    <div class="h-cta h-load d3"><a class="btn btn-p" href="#kontakt">{{ B.cta_btn }}</a><a class="btn btn-g" href="#leistungen">{{ B.cta2 }}</a></div>
-   <div class="h-proof h-load d4">
+   {% if B.get('hero') != 'center' %}<div class="h-proof h-load d4">
     {% if f.google %}<div class="g"><b>{{ f.google[0] }} <span class="stars">{% for _ in range(5) %}{{ star | safe }}{% endfor %}</span></b>{{ f.google[1] }} Google-Bewertungen</div><span class="sep"></span>{% endif %}
     <span class="sg">{{ B.proof_txt }}</span>
-   </div>
+   </div>{% endif %}
   </div>
-  <div class="h-por h-load">
+  {% if not (B.get('hero') == 'full' and not f.cutout) %}<div class="h-por h-load">
    <span class="halo"{% if B.get('halo_top') %} style="top:{{ B.halo_top }}"{% endif %}></span><span class="ring"{% if B.get('halo_top') %} style="top:calc({{ B.halo_top }} - 3%)"{% endif %}></span>
-   {% if f.cutout %}<img src="{{ f.cutout }}" alt="{{ B.cut_alt }}" width="{{ f.cut_w }}" height="{{ f.cut_h }}" fetchpriority="high">{% else %}<div class="h-arch">{{ im(B.hero_img, B.get('hero_img_alt', f.kurzname), eager=True) }}</div>{% endif %}
+   {% if f.cutout and B.get('hero') != 'full-nocut' %}<img src="{{ f.cutout }}" alt="{{ B.cut_alt }}" width="{{ f.cut_w }}" height="{{ f.cut_h }}" fetchpriority="high">{% else %}<div class="h-arch">{{ im(B.hero_img, B.get('hero_img_alt', f.kurzname), eager=True) }}</div>{% endif %}
    {% if B.get('chip') %}<div class="chip"><i><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M12 3c3 4 6 7.2 6 10.5a6 6 0 0 1-12 0C6 10.2 9 7 12 3z"/></svg></i><div><b>{{ B.chip[0] }}</b><span>{{ B.chip[1] }}</span></div></div>{% endif %}
    <div class="seal{% if B.get("seal_pos") == "br" %} br{% endif %}" aria-label="{{ B.seal }}"><svg viewBox="0 0 128 128" aria-hidden="true"><defs><path id="sc" d="M64 64m-49 0a49 49 0 1 1 98 0a49 49 0 1 1-98 0"/></defs><text><textPath href="#sc">{{ B.seal }}</textPath></text></svg><b>{{ B.seal_mono }}</b></div>
-  </div>
+  </div>{% endif %}
+  {% if B.get('hero') == 'center' %}<div class="h-side h-load d3">
+   {% if f.google %}<div class="hs-score"><b>{{ f.google[0] }}</b><span class="stars">{% for _ in range(5) %}{{ star | safe }}{% endfor %}</span><small>{{ f.google[1] }} Google-Bewertungen</small></div>{% endif %}
+   <p>{{ B.proof_txt }}</p>
+  </div>{% endif %}
  </div>
  <div class="h-wave">{{ wave | safe }}</div>
 </section>
 
-<section class="intro"><div class="wrap">
+{% if B.get('ribbon') %}<div class="rb-w"><div class="ribbon" aria-hidden="true"><div class="rb-in">{% for _ in range(4) %}{% for t in B.ribbon %}<span>{{ t }}</span><i>✦</i>{% endfor %}{% endfor %}</div></div></div>{% endif %}
+{% if B.get('counters') %}<section class="counters"><div class="wrap">
+ <p class="ct-intro rv">{{ B.intro | safe }}</p>
+ <div class="cn-row">{% for n in B.counters %}<div class="cn rv d{{ loop.index0 % 3 + 1 }}"><b>{{ n[0] }}</b><span>{{ n[1] }}</span></div>{% endfor %}</div>
+</div></section>{% else %}<section class="intro"><div class="wrap">
  <span class="orn rv"></span>
  <p class="rv">{{ B.intro | safe }}</p>
  <div class="sig rv d1">{{ B.intro_sig }}</div>
-</div></section>
+</div></section>{% endif %}
 
 <section class="svc" id="leistungen"><div class="wrap">
  <div class="svc-head">
   <div><span class="eyebrow rv">Behandlungen</span><h2 class="rv d1">{{ B.svc_h2 | safe }}</h2></div>
   <p class="lead rv d2">{{ B.svc_intro }}</p>
  </div>
- <div class="svc-grid">
+ {% set L = B.get('svc_layout','arch') %}
+ {% if L == 'mosaic' %}<div class="svc-mosaic">{% for s in B.svc %}<figure class="tile rv d{{ loop.index0 % 3 + 1 }}"><div class="ti">{{ im(s[0], s[1]) }}</div><figcaption><span class="no">{{ '%02d' % loop.index }}</span><h3>{{ s[1] }}</h3><p>{{ s[2] }}</p></figcaption></figure>{% endfor %}</div>
+ {% elif L == 'cols' %}<div class="svc-banner rv">{{ im(B.get('svc_banner', B.svc[0][0]), B.svc[0][1]) }}</div><ol class="svc-cols">{% for s in B.svc %}<li class="rv d{{ loop.index0 % 3 + 1 }}"><span class="no">{{ '%02d' % loop.index }}</span><h3>{{ s[1] }}</h3><p>{{ s[2] }}</p>{% if s|length > 3 and s[3] %}<div class="tg">{{ s[3] | join(' · ') }}</div>{% endif %}</li>{% endfor %}</ol>
+ {% elif L == 'zigzag' %}<div class="svc-zz">{% for s in B.svc %}<article class="zz rv"><div class="zz-img">{{ im(s[0], s[1]) }}</div><div class="zz-txt"><span class="no">{{ '%02d' % loop.index }}</span><h3>{{ s[1] }}</h3><p>{{ s[2] }}</p>{% if s|length > 3 and s[3] %}<div class="tg">{{ s[3] | join(' · ') }}</div>{% endif %}<a class="zz-link" href="#kontakt">{{ B.cta_btn }}</a></div></article>{% endfor %}</div>
+ {% elif L == 'menu' %}<div class="svc-menu rv"><div class="mn-head"><span class="mn-orn">✦</span><b>{{ B.get('menu_title', 'Behandlungskarte') }}</b><span class="mn-orn">✦</span></div><ul>{% for s in B.svc %}<li><div class="mn-img">{{ im(s[0], s[1]) }}</div><div><h3><span>{{ s[1] }}</span><i></i>{% if s|length > 3 and s[3] %}<small>{{ s[3][0] }}</small>{% endif %}</h3><p>{{ s[2] }}</p></div></li>{% endfor %}</ul></div>
+ {% else %}<div class="svc-grid">
   <div class="svc-media rv" id="svcm">{% for s in B.svc %}<img src="{{ I[s[0]] }}" alt="{{ s[1] }}" data-i="{{ loop.index0 }}"{% if loop.first %} class="on"{% endif %}{% if B.pos.get(s[0]) %} style="object-position:{{ B.pos.get(s[0]) }}"{% endif %} loading="lazy" decoding="async">{% endfor %}</div>
   <ol class="svc-list">{% for s in B.svc %}
    <li class="rv{% if loop.first %} on{% endif %}" data-i="{{ loop.index0 }}"><div class="mi">{{ im(s[0], s[1]) }}</div><h3>{{ s[1] }}</h3><p>{{ s[2] }}</p>{% if s|length > 3 and s[3] %}<div class="tg">{{ s[3] | join(' · ') }}</div>{% endif %}</li>{% endfor %}
   </ol>
- </div>
+ </div>{% endif %}
 </div></section>
 
 {% if B.get('signature') %}{% set S = B.signature %}
 <section class="sig-sec" id="signatur">
  <div class="wtop">{{ wave | safe }}</div>
  <div class="wrap sig-in">
-  <div class="oval-w rv"><div class="oval">{{ im(S.img, S.alt) }}</div>{% if S.get('tag') %}<span class="tag">{{ S.tag | safe }}</span>{% endif %}</div>
+  <div class="oval-w rv sh-{{ S.get('shape', B.get('sig_shape','oval')) }}"><div class="oval">{{ im(S.img, S.alt) }}</div>{% if S.get('tag') %}<span class="tag">{{ S.tag | safe }}</span>{% endif %}</div>
   <div>
    <span class="eyebrow rv">{{ S.eyebrow }}</span>
    <h2 class="rv d1">{{ S.h2 | safe }}</h2>
@@ -453,10 +620,16 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
  <p class="rv">{{ B.moment.text | safe }}</p>
 </section>{% endif %}
 <section class="rev" id="bewertungen"><div class="wrap">
- <span class="eyebrow rv">{{ B.rev_eyebrow }}</span>
+ {% set RL = B.get('rev_layout','single') %}
+ {% if RL == 'split' %}<div class="rv-split"><div class="rs-l rv"><span class="eyebrow">{{ B.rev_eyebrow }}</span><b class="rs-n">{{ f.google[0] }}</b><span class="stars">{% for _ in range(5) %}{{ star | safe }}{% endfor %}</span><small>{{ f.google[1] }} Bewertungen bei Google</small></div>
+  <div class="rs-r">{% for r in f.reviews[:3] %}<blockquote class="rv d{{ loop.index }}"><p>{{ r[0] }}</p><cite>Google-Bewertung</cite></blockquote>{% endfor %}</div></div>
+ {% elif RL == 'marquee' %}<span class="eyebrow rv">{{ B.rev_eyebrow }}</span>
+  <div class="score rv d1"><b>{{ f.google[0] }}</b><span><span class="stars">{% for _ in range(5) %}{{ star | safe }}{% endfor %}</span><br>{{ f.google[1] }} Bewertungen<br>bei Google</span></div>
+ </div><div class="rv-mq rv"><div class="mq-in">{% for k in range(2) %}{% for r in f.reviews %}<blockquote{% if k %} aria-hidden="true"{% endif %}><span class="stars">{% for _ in range(5) %}{{ star | safe }}{% endfor %}</span><p>{{ r[0] }}</p></blockquote>{% endfor %}{% endfor %}</div></div><div class="wrap">
+ {% else %}<span class="eyebrow rv">{{ B.rev_eyebrow }}</span>
  <div class="score rv d1"><b>{{ f.google[0] }}</b><span><span class="stars">{% for _ in range(5) %}{{ star | safe }}{% endfor %}</span><br>{{ f.google[1] }} Bewertungen<br>bei Google</span></div>
  <div class="quotes rv d2" id="quotes">{% for r in f.reviews %}<blockquote{% if loop.first %} class="on"{% endif %}><p>{{ r[0] }}</p><cite>Google-Bewertung</cite></blockquote>{% endfor %}</div>
- <div class="qdots" id="qdots">{% for r in f.reviews %}<button type="button" aria-label="Bewertung {{ loop.index }}"{% if loop.first %} class="on"{% endif %}></button>{% endfor %}</div>
+ <div class="qdots" id="qdots">{% for r in f.reviews %}<button type="button" aria-label="Bewertung {{ loop.index }}"{% if loop.first %} class="on"{% endif %}></button>{% endfor %}</div>{% endif %}
 </div></section>
 
 {% if B.get('story') %}{% set St = B.story %}

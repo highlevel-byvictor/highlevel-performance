@@ -369,7 +369,26 @@
     "tour_r": "19 Mitglieder geben uns 4,8 von 5 Sternen.",
     "tour_u": "Hier lernst du die Gemeinschaft kennen.",
     "tour_k": "Und hier sicherst du dir dein Probetraining: 05461 706567.",
-    "pos": {}
+    "pos": {},
+    "font_set": "newlife",
+    "fh": "'Archivo',system-ui,sans-serif",
+    "fb": "'Archivo',system-ui,sans-serif",
+    "hw": 900,
+    "hls": "-.035em",
+    "hcase": "uppercase",
+    "ew": 900,
+    "r": "18px",
+    "hero": "left",
+    "svc_layout": "cols",
+    "svc_banner": "b4",
+    "rev_layout": "marquee",
+    "sig_shape": "rect",
+    "ribbon": [
+     "4 Wochen kostenlos",
+     "Nur für Frauen",
+     "Immer mit Trainerin",
+     "30 bis 45 Minuten"
+    ]
    }
   },
   {
@@ -648,6 +667,15 @@
     "svc_intro": "Abgestimmt auf Ihre Wünsche und Ihren Hauttyp – in femininer Wohlfühlatmosphäre.",
     "svc": [
      [
+      "b8",
+      "Gesichtsbehandlungen",
+      "Reinigung, Pflege und moderne Technologien – individuell auf Ihr Hautbild abgestimmt.",
+      [
+       "Reinigung",
+       "Pflege"
+      ]
+     ],
+     [
       "b3",
       "Maniküre und Pediküre",
       "Maniküre, Pediküre und Nageldesign – sauber, langlebig und in Ihrer Lieblingsfarbe.",
@@ -655,15 +683,6 @@
        "Maniküre",
        "Pediküre",
        "Nageldesign"
-      ]
-     ],
-     [
-      "b8",
-      "Gesichtsbehandlungen",
-      "Reinigung, Pflege und moderne Technologien – individuell auf Ihr Hautbild abgestimmt.",
-      [
-       "Reinigung",
-       "Pflege"
       ]
      ],
      [
@@ -739,7 +758,16 @@
     "moment": {
      "img": "b2",
      "text": "Ihr Wohlfühlort <em>in Quakenbrück.</em>"
-    }
+    },
+    "font_set": "lucorose",
+    "fh": "'DM Serif Display',Georgia,serif",
+    "fb": "'Outfit',system-ui,sans-serif",
+    "hls": "-.01em",
+    "r": "28px",
+    "hero": "center",
+    "svc_layout": "mosaic",
+    "rev_layout": "marquee",
+    "sig_shape": "blob"
    }
   },
   {
@@ -1161,7 +1189,8 @@
     "moment": {
      "img": "b8",
      "text": "Gönne dir eine Auszeit <em>für deine Seele.</em>"
-    }
+    },
+    "font_set": "kraemer"
    }
   },
   {
@@ -1479,9 +1508,9 @@
      "btn": "Hautanalyse anfragen"
     },
     "rev_eyebrow": "Das sagen meine Kundinnen",
-    "team_img": "b3",
-    "team_ratio": "1600/1080",
-    "team_alt": "Katharina Melenberg im Studio",
+    "team_img": "b8",
+    "team_ratio": "1131/800",
+    "team_alt": "Katharina Melenberg bei der Behandlung",
     "team_eyebrow": "Über mich",
     "team_h2": "Ihre Hautexpertin <em>in Ankum.</em>",
     "steps_h2": "So läuft Ihr <em>Besuch</em> ab.",
@@ -1505,7 +1534,34 @@
     "moment": {
      "img": "b8",
      "text": "Ruhige Räume, Zeit und <em>ehrliche Beratung.</em>"
-    }
+    },
+    "font_set": "melenberg",
+    "fh": "'Manrope',system-ui,sans-serif",
+    "fb": "'Manrope',system-ui,sans-serif",
+    "fa": "'Instrument Serif',Georgia,serif",
+    "hw": 600,
+    "hls": "-.04em",
+    "r": "14px",
+    "hero": "left",
+    "svc_layout": "cols",
+    "svc_banner": "b3",
+    "rev_layout": "split",
+    "sig_shape": "rect",
+    "counters": [
+     [
+      "2018",
+      "Hautexpertin seit"
+     ],
+     [
+      "5,0",
+      "Sterne bei Google"
+     ],
+     [
+      "54",
+      "Google-Bewertungen"
+     ]
+    ],
+    "banner_ratio": "16/8"
    }
   },
   {
@@ -1856,7 +1912,20 @@
     "moment": {
      "img": "b4",
      "text": "Ganz ohne Hektik. <em>Nur Sie und Ihre Haut.</em>"
-    }
+    },
+    "font_set": "meeners",
+    "fh": "'Gilda Display',Georgia,serif",
+    "fb": "'Karla',system-ui,sans-serif",
+    "fa": "'Cormorant',Georgia,serif",
+    "ew": 500,
+    "r": "24px",
+    "hero": "full",
+    "full_img": "b1",
+    "full_pos": "70% 50%",
+    "svc_layout": "menu",
+    "menu_title": "Behandlungskarte",
+    "rev_layout": "single",
+    "sig_shape": "arch"
    }
   },
   {
@@ -2225,7 +2294,34 @@
     "moment": {
      "img": "b3",
      "text": "Ihr Kurzurlaub <em>vor der Haustür.</em>"
-    }
+    },
+    "font_set": "warkentin",
+    "fh": "'Marcellus',Georgia,serif",
+    "fb": "'Lato',system-ui,sans-serif",
+    "fa": "'Cormorant',Georgia,serif",
+    "ew": 500,
+    "hls": "0",
+    "r": "20px",
+    "hero": "full",
+    "full_img": "b3",
+    "full_pos": "50% 60%",
+    "svc_layout": "mosaic",
+    "rev_layout": "single",
+    "sig_shape": "circle",
+    "counters": [
+     [
+      "25",
+      "Jahre Erfahrung in der Kosmetik"
+     ],
+     [
+      "4,5",
+      "Sterne bei Google"
+     ],
+     [
+      "39",
+      "Google-Bewertungen"
+     ]
+    ]
    }
   },
   {
@@ -2578,7 +2674,20 @@
     "moment": {
      "img": "b2",
      "text": "Ruhig, vorbereitet, <em>mit Blick fürs Detail.</em>"
-    }
+    },
+    "font_set": "tinas",
+    "fh": "'Playfair Display',Georgia,serif",
+    "fb": "'Work Sans',system-ui,sans-serif",
+    "fa": "'Great Vibes',cursive",
+    "hw": 500,
+    "hls": "-.02em",
+    "es": "normal",
+    "esize": "1.18em",
+    "r": "6px",
+    "hero": "right",
+    "svc_layout": "zigzag",
+    "rev_layout": "single",
+    "sig_shape": "arch"
    }
   },
   {
@@ -2816,14 +2925,14 @@
    "template": "beauty",
    "beauty": {
     "c": {
-     "bg": "#FAF7F1",
-     "pearl": "#F2EBDC",
-     "blush": "#ECE2CC",
-     "acc": "#B8962E",
-     "acc_d": "#87701C",
-     "champ": "#D9C690",
-     "ink": "#1F1B16",
-     "mute": "#5B544A",
+     "bg": "#121014",
+     "pearl": "#1D1A1F",
+     "blush": "#2A2320",
+     "acc": "#C9A54A",
+     "acc_d": "#E2C47A",
+     "champ": "#8E7748",
+     "ink": "#F2ECE1",
+     "mute": "#B3AA9C",
      "star": "#FFA41C"
     },
     "cta_btn": "Termin anfragen",
@@ -2934,7 +3043,19 @@
     "moment": {
      "img": "b6",
      "text": "Helle Räume, moderne Technik <em>und Zeit für Sie.</em>"
-    }
+    },
+    "font_set": "lilli",
+    "fh": "'Italiana',Georgia,serif",
+    "fb": "'Inter',system-ui,sans-serif",
+    "fa": "'Cormorant',Georgia,serif",
+    "ew": 500,
+    "hls": ".005em",
+    "r": "2px",
+    "hero": "right",
+    "dark": true,
+    "svc_layout": "arch",
+    "rev_layout": "split",
+    "sig_shape": "circle"
    }
   },
   {
@@ -3175,7 +3296,17 @@
     "tour_k": "Und hier fragst Du Deinen Termin an: 0176 63048527.",
     "pos": {},
     "halo_top": "34%",
-    "seal_pos": "br"
+    "font_set": "chillout",
+    "fh": "'Fraunces',Georgia,serif",
+    "fb": "'Nunito Sans',system-ui,sans-serif",
+    "hls": "-.02em",
+    "ew": 300,
+    "r": "40px",
+    "hero": "center",
+    "svc_layout": "menu",
+    "menu_title": "Unsere Behandlungen",
+    "rev_layout": "marquee",
+    "sig_shape": "circle"
    }
   },
   {
@@ -3392,7 +3523,30 @@
     "tour_r": "Hier lesen Sie, was Kundinnen sagen.",
     "tour_u": "Hier lernen Sie Maria Schomaker kennen.",
     "tour_k": "Und hier vereinbaren Sie Ihren Termin: 0151 15797594.",
-    "pos": {}
+    "pos": {},
+    "font_set": "auszeit",
+    "fh": "'Libre Caslon Text',Georgia,serif",
+    "fb": "'DM Sans',system-ui,sans-serif",
+    "hls": "-.02em",
+    "r": "10px",
+    "hero": "left",
+    "svc_layout": "zigzag",
+    "rev_layout": "split",
+    "sig_shape": "circle",
+    "counters": [
+     [
+      "30+",
+      "Jahre rund um das Thema Haut"
+     ],
+     [
+      "17",
+      "Jahre Pharmaindustrie, Fachbereich Dermatologie"
+     ],
+     [
+      "4,6",
+      "Sterne bei Google"
+     ]
+    ]
    }
   }
  ]

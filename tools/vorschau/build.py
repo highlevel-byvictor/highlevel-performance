@@ -151,7 +151,7 @@ def build(runde_file, nur=None):
                 import beauty
                 v.update(allimg=allimg, **beauty.prepare(f, d, allimg))
                 if f["beauty"].get("no_logo") or not f.get("logo_url"): v["logo"] = None
-                html = env.get_template("beauty.html.j2").render(f=v, icon_phone=Markup(PHONE_SVG), fonts_css=(TPL / "beauty-fonts.css").read_text(), steps=f.get("steps") or STEPS["beauty"])
+                html = env.get_template("beauty.html.j2").render(f=v, icon_phone=Markup(PHONE_SVG), fonts_css=(TPL / "fonts" / (f["beauty"].get("font_set", "kraemer") + ".css")).read_text(), steps=f.get("steps") or STEPS["beauty"])
             elif data.get("template") == "v5":
                 v5 = dict(f["v5"]); v5.setdefault("pos", {})
                 v.update(v5=v5, allimg=allimg, inhaber_k=(f"b{f['inhaber_idx']+1}" if f.get("inhaber_idx") is not None else None))
