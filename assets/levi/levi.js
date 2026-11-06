@@ -291,6 +291,27 @@
       log.appendChild(c); scroll();
       return 'Ein Button zur Seite „' + pg[0] + '“ wird im Chat angezeigt. Bitte den Besucher, ihn anzutippen.';
     },
+    rueckruf_anfragen: function (p) {
+      p = p || {};
+      var v = function (k) { return String(p[k] || '').trim(); };
+      if (!v('name') || !v('telefon') || !v('rueckruf_zeit')) return 'Es fehlen noch Name, Telefonnummer oder Rückrufzeit.';
+      var fd = new FormData();
+      fd.set('name', v('name')); fd.set('firma', v('firma') || '-'); fd.set('tel', v('telefon'));
+      fd.set('email', v('email') || MAIL); fd.set('quelle', 'levi-rueckruf');
+      fd.set('branche', v('branche') || '-');
+      fd.set('ziel', ['RÜCKRUF ÜBER LEVI: ' + v('rueckruf_zeit'), 'Branche: ' + (v('branche') || '-'), 'Ort: ' + (v('ort') || '-'),
+        'Mitarbeiter: ' + (v('mitarbeiter') || '-'), 'Werbung: ' + (v('werbung') || '-'), 'Ziel: ' + (v('ziel') || '-'),
+        'Budget: ' + (v('budget') || '-'), 'E-Mail Kunde: ' + (v('email') || 'keine')].join(' | '));
+      fd.set('nachricht', 'Gespräch mit Levi (' + area() + '): ' + v('zusammenfassung') + '\nGewünschter Rückruf: ' + v('rueckruf_zeit') + ' unter ' + v('telefon'));
+      return fetch('https://formular.highlevel-performance.de/kontakt.php', { method: 'POST', body: fd })
+        .then(function (r) { return r.json(); })
+        .then(function (j) {
+          if (!j || !j.ok) throw 0;
+          try { if (window.HLP_ADS) HLP_ADS.conv('lead'); if (window.fbq) fbq('track', 'Lead', { content_name: 'Rückruf über Levi' }); } catch (e) {}
+          return 'Erfolgreich gesendet. Victors Team hat die Anfrage per E-Mail bekommen und ruft zur gewünschten Zeit an.';
+        })
+        .catch(function () { return 'Senden hat nicht geklappt. Bitte Telefon ' + TEL + ' oder E-Mail ' + MAIL + ' nennen.'; });
+    },
     musik_einreichen: function () {
       return goArea('artists').then(function () {
         var a = document.querySelector('[data-upload]'); if (a) a.click();
