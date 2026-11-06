@@ -1,0 +1,1931 @@
+{
+ "runde": "2026-11-Beauty-Fitness-Runde7",
+ "template": "v5",
+ "firmen": [
+  {
+   "slug": "newlife-bramsche",
+   "theme": "fitness",
+   "firma": "new life – Fitness für Frauen",
+   "kurzname": "new life",
+   "website": "https://www.newlife-bramsche.de",
+   "telefon": "05461 706567",
+   "email": "mail@newlife-bramsche.de",
+   "adresse": "Lindenstraße 60, 49565 Bramsche",
+   "google": [
+    "4,8",
+    19
+   ],
+   "siegel": [
+    "4 Wochen kostenlos Probetraining"
+   ],
+   "tag": "Fitnessstudio für Frauen in Bramsche",
+   "h1": "Fitness, die sich <span>nach dir richtet.</span>",
+   "sub": "Training nur für Frauen, immer mit Trainerin, 30 bis 45 Minuten pro Einheit – persönlich, ohne Schnickschnack und ohne lange Verträge.",
+   "trust": [
+    [
+     "4 Wochen",
+     "kostenlos testen"
+    ],
+    [
+     "Nur",
+     "für Frauen"
+    ],
+    [
+     "Immer",
+     "mit Trainerin"
+    ]
+   ],
+   "leist_h2": "So trainierst du bei uns.",
+   "leistungen": [
+    "Gerätezirkel",
+    "Kurse",
+    "Figurtraining",
+    "Rückentraining",
+    "Training mit Studioschlüssel"
+   ],
+   "about_h2": "Dein Studio in Bramsche.",
+   "ueber": [
+    "new life gilt in Bramsche seit vielen Jahren als Experte für Frauenfitness – um Gewicht zu reduzieren und Körper und Geist jung zu halten.",
+    "Wir sind dein Ansprechpartner, wenn du Wert auf eine persönliche Atmosphäre und vorbildliche Betreuung legst. Hier gibt es keine Fitness-Prinzessinnen, sondern Frauen wie dich."
+   ],
+   "checks": [
+    "Kurze Vertragslaufzeiten, keine versteckten Kosten",
+    "Training für jedes Alter",
+    "Gute Parkplätze direkt vor der Tür"
+   ],
+   "inhaber_name": "Dein new-life-Team",
+   "inhaber_rolle": "Bramsche",
+   "inhaber_idx": 0,
+   "logo_url": "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/s8003f6bfae808930/image/i0100b54dcbe9911f/version/1530072595/image.jpg",
+   "min_w": 600,
+   "bild_urls": [
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/s8003f6bfae808930/image/i7700168c0d360cc1/version/1530072577/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/s8003f6bfae808930/image/i896d1820776dced5/version/1530072590/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/s8003f6bfae808930/image/i20ffdd789306bef7/version/1631370219/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/s8003f6bfae808930/image/i3e10fc4831eb7ec4/version/1631370219/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/none/path/s8003f6bfae808930/image/i9a4ac4e69bc0fe62/version/1631370219/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/s8003f6bfae808930/image/i252040cbc9b450da/version/1631370219/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/s8003f6bfae808930/image/icadb4ec776e8862b/version/1636208099/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/none/path/s8003f6bfae808930/image/i20ffdd789306bef7/version/1631370219/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/s8003f6bfae808930/image/i0ff08be6caeea7b8/version/1631370219/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/none/path/s8003f6bfae808930/image/i664698ae1f2b720b/version/1631370219/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/none/path/s8003f6bfae808930/image/ic1617add5c88c6a7/version/1631370219/image.jpg"
+   ],
+   "reviews": [
+    [
+     "Ein tolles Studio nur für Frauen – man fühlt sich sofort wohl und wird super betreut.",
+     "“"
+    ],
+    [
+     "Persönliche Atmosphäre, nette Trainerinnen und keine überfüllten Geräte. Genau das, was ich gesucht habe.",
+     "“"
+    ],
+    [
+     "Hier trainiere ich gern, weil immer jemand da ist, der hilft und motiviert.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "new life – Fitness für Frauen",
+     "Lindenstraße 60",
+     "49565 Bramsche"
+    ],
+    "anrede": "Sehr geehrte Damen und Herren,",
+    "problem": "dass Interessentinnen dort zuerst eine große Cookie-Box und viele Öffnungszeiten sehen – aber nicht, wie persönlich es bei Ihnen zugeht",
+    "suche": "Fitnessstudio für Frauen"
+   },
+   "v5": {
+    "soft": true,
+    "r": "999px",
+    "r2": "28px",
+    "svc_cls": "orb",
+    "steps_cls": "tone orb",
+    "facts_cls": "dark",
+    "fonts": "family=DM+Serif+Display:ital@0;1&family=Nunito+Sans:wght@400;600;700",
+    "fh": "'DM Serif Display',Georgia,serif",
+    "fb": "'Nunito Sans',system-ui,sans-serif",
+    "hw": 400,
+    "hfs": "italic",
+    "hls": "-0.01em",
+    "hlh": 1.0,
+    "h1vw": 5.8,
+    "h1max": 6.6,
+    "c": {
+     "bg": "#FFF6F8",
+     "ink": "#3A1F27",
+     "acc": "#C4123A",
+     "acc2": "#F2A6B8",
+     "soft": "#FDE4EA",
+     "paper": "#FFFFFF",
+     "hbg": "#FFF6F8",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#3A1F27",
+     "onctabtn": "#FFFFFF",
+     "star": "#E0A21B"
+    },
+    "hero": "collage",
+    "prints": [
+     [
+      "b2",
+      "Kurs im Studio"
+     ],
+     [
+      "b3",
+      "Unser Team"
+     ],
+     [
+      "b4",
+      "Lindenstraße 60"
+     ]
+    ],
+    "logo_h": 52,
+    "strokes": [
+     "#C4123A",
+     "#F2A6B8"
+    ],
+    "print_fit": "cover",
+    "svc": "rows",
+    "svc_imgs": [
+     "b5",
+     "b6",
+     "b7"
+    ],
+    "rows_intro": "30 bis 45 Minuten pro Einheit, immer mit Trainerin – für Kraft, Ausdauer und Beweglichkeit.",
+    "rws": [
+     [
+      "b5",
+      "Gerätezirkel",
+      "Dein Training im Zirkel: kurz, effektiv und mit Trainerin an deiner Seite – auf Wunsch auch mit eigenem Studioschlüssel.",
+      [
+       "Zirkel",
+       "Kraft",
+       "Ausdauer"
+      ],
+      "Training",
+      "b11"
+     ],
+     [
+      "b6",
+      "Kurse und Figurtraining",
+      "Mit dem „Zauberstab“ trainierst du Rücken, Bauch und Beckenboden – für bessere Haltung und festeres Bindegewebe.",
+      [
+       "Zauberstab",
+       "Rücken",
+       "Beckenboden"
+      ],
+      "Kurse"
+     ],
+     [
+      "b10",
+      "Dein Start: 4 Wochen kostenlos",
+      "Lerne Studio, Trainerinnen und Kurse kennen – ohne langen Vertrag zu unterschreiben.",
+      [
+       "Probetraining",
+       "Schnupperkurs",
+       "Ohne Vertrag"
+      ],
+      "Einstieg",
+      "b9"
+     ]
+    ],
+    "blend": [
+     "b2",
+     "b8",
+     "b3",
+     "Frauen wie du.",
+     "Keine Fitness-Prinzessinnen, sondern eine Gemeinschaft, die sich gegenseitig motiviert."
+    ],
+    "about_img": "b1",
+    "about_img2": "b9",
+    "cta_img": "b4",
+    "promo": "4 Wochen kostenlos",
+    "promo_tag": "Probetraining",
+    "promo_sub": "Teste Studio und Kurse vier Wochen lang – ohne Vertrag, ohne versteckte Kosten.",
+    "promo_img": "b2",
+    "promo_btn": "Probetraining sichern",
+    "du": true,
+    "bot_name": "Vita",
+    "robot_tag": "Dein Studio-Guide",
+    "robot_hello": "Hallo! Ich bin Vita von new life. Soll ich dir kurz zeigen, wie das Training bei uns läuft?",
+    "bot_hi": "Hallo! Ich bin Vita. Wobei kann ich dir helfen?",
+    "tour_l": "Hier siehst du, wie du bei uns trainierst – Zirkel, Kurse, Figurtraining.",
+    "tour_r": "19 Frauen geben uns 4,8 Sterne bei Google.",
+    "tour_u": "Hier lernst du unser Studio kennen.",
+    "tour_k": "Und hier sicherst du dir deine 4 Wochen kostenlos: 05461 706567.",
+    "cta_btn": "Probetraining sichern",
+    "cta_h2": "Starte mit 4 Wochen kostenlos.",
+    "cta_p": "Ruf an oder hinterlass deine Nummer – wir vereinbaren dein persönliches Probetraining.",
+    "row_link": "Probetraining sichern",
+    "rev_sub": "Das sagen Frauen aus Bramsche.",
+    "form_q": "Was ist dein Ziel?",
+    "steps_h2": "So startest du bei uns.",
+    "rev_h2": "4,8 Sterne. Von Frauen für Frauen.",
+    "order": [
+     "svc",
+     "blend",
+     "reviews",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "pos": {
+     "b1": "50% 20%",
+     "b3": "50% 40%"
+    },
+    "mb_btn": "Probetraining sichern"
+   },
+   "steps": [
+    [
+     "Anrufen",
+     "Oder das Formular ausfüllen."
+    ],
+    [
+     "Kennenlernen",
+     "Studio, Trainerinnen, Kurse."
+    ],
+    [
+     "4 Wochen testen",
+     "Kostenlos und ohne Vertrag."
+    ],
+    [
+     "Dranbleiben",
+     "Mit kurzen Laufzeiten."
+    ]
+   ]
+  },
+  {
+   "slug": "lucorose-quakenbrueck",
+   "theme": "beauty",
+   "firma": "LucoROSE Kosmetikstudio",
+   "kurzname": "LucoROSE",
+   "website": "https://www.lucorose.de",
+   "telefon": "0172 4028181",
+   "email": "lucorosen@gmail.com",
+   "adresse": "Kleine Mühlenstraße 10, 49610 Quakenbrück",
+   "google": [
+    "5,0",
+    42
+   ],
+   "siegel": [
+    "Handwerkskammer Osnabrück-Emsland-Grafschaft Bentheim"
+   ],
+   "tag": "Kosmetikstudio in Quakenbrück",
+   "h1": "Schönheit, die <span>sich gut anfühlt.</span>",
+   "sub": "Nagelstyling, Gesichtsbehandlungen, Wimpern und Augenbrauen, Haarentfernung und mechanische Lymphdrainage – abgestimmt auf Ihre Wünsche und Ihren Hauttyp.",
+   "trust": [
+    [
+     "5,0",
+     "Sterne bei Google"
+    ],
+    [
+     "Nägel",
+     "Gesicht, Wimpern, Körper"
+    ],
+    [
+     "Mo–Fr",
+     "9 bis 18 Uhr"
+    ]
+   ],
+   "leist_h2": "Unsere Behandlungen.",
+   "leistungen": [
+    "Maniküre und Pediküre",
+    "Gesichtsbehandlungen",
+    "Wimpern und Augenbrauen",
+    "Haarentfernung",
+    "Mechanische Lymphdrainage",
+    "Beauty-Pakete"
+   ],
+   "about_h2": "Willkommen bei LucoROSE.",
+   "ueber": [
+    "LucoROSE ist ein modernes Kosmetikstudio in Quakenbrück, das seit 2024 für hochwertige Beauty-Behandlungen und eine feminine Wohlfühlatmosphäre steht.",
+    "Mein Name ist Aleksandra Jędrzejczyk-Świtek. Ich verbinde Qualität, Präzision und Entspannung – damit Sie unser Studio nicht nur mit einem schönen Ergebnis, sondern auch mit einem guten Gefühl verlassen."
+   ],
+   "checks": [
+    "Individuell auf Ihren Hauttyp abgestimmt",
+    "Moderne Pflege-Technologien",
+    "Attraktive Beauty-Pakete"
+   ],
+   "inhaber_name": "Aleksandra Jędrzejczyk-Świtek",
+   "inhaber_rolle": "Gründerin von LucoROSE",
+   "inhaber_idx": 0,
+   "min_w": 600,
+   "bild_urls": [
+    "https://cdn.prod.website-files.com/697e29b6b38eb68fe8855b79/69ed19e241e967840e0ea1ef_Ola%20Portret%20upscal.avif",
+    "https://cdn.prod.website-files.com/697e29b6b38eb68fe8855b79/6a1c0f6b850dcc5431c73ffe_LucoROSE%20(5).avif",
+    "https://cdn.prod.website-files.com/697e29b6b38eb68fe8855b79/69fe1237910e69bbb94ab9f0_Mani%20(4).avif",
+    "https://cdn.prod.website-files.com/697e29b6b38eb68fe8855b79/69f9f71e2dbfa6edea6ecb89_Gesichtsbehandlungen.avif",
+    "https://cdn.prod.website-files.com/697e29b6b38eb68fe8855b79/69fcf261ff7f9b8d8c7f877f_Olcia%20Augenbrauenlifting%20%20(2).avif",
+    "https://cdn.prod.website-files.com/697e29b6b38eb68fe8855b79/69ff576a4513904b57396109_LucoROSE%20Salon%20(6).avif",
+    "https://cdn.prod.website-files.com/697e29b6b38eb68fe8855b79/698ce611dff9be7d99f979ca_4MB%20(2).avif",
+    "https://cdn.prod.website-files.com/697e29b6b38eb68fe8855b79/69ff5769139b3f66b5995bb1_LucoROSE%20Salon%20(10).avif",
+    "https://cdn.prod.website-files.com/697e29b6b38eb68fe8855b79/69fe187fa922bcdff7382a4a_3.avif",
+    "https://cdn.prod.website-files.com/697e29b6b38eb68fe8855b79/69fcf262d4124b5866601435_002.avif",
+    "https://cdn.prod.website-files.com/697e29b6b38eb68fe8855b79/69fe12361bc4b4982362f7f0_Mani%20(2).avif",
+    "https://cdn.prod.website-files.com/697e29b6b38eb68fe8855b79/6a1c0f6cb53fa6287768abbd_LucoROSE%20(6).avif"
+   ],
+   "reviews": [
+    [
+     "Ein wunderschönes Studio, sehr sauber und liebevoll eingerichtet. Aleksandra arbeitet präzise und nimmt sich Zeit.",
+     "“"
+    ],
+    [
+     "Meine Nägel sehen jedes Mal perfekt aus und halten lange. Absolute Empfehlung!",
+     "“"
+    ],
+    [
+     "Sehr freundlich, professionell und entspannend – ich komme gerne wieder.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "LucoROSE Kosmetikstudio",
+     "Frau Aleksandra Jędrzejczyk-Świtek",
+     "Kleine Mühlenstraße 10",
+     "49610 Quakenbrück"
+    ],
+    "anrede": "Sehr geehrte Frau Jędrzejczyk-Świtek,",
+    "problem": "dass Ihre schönen Studiofotos und Ihre 5-Sterne-Bewertungen dort hinter viel Rosa und einem Cookie-Banner zurücktreten",
+    "suche": "Kosmetikstudio"
+   },
+   "v5": {
+    "soft": true,
+    "r": "999px",
+    "r2": "28px",
+    "svc_cls": "orb",
+    "steps_cls": "tone orb",
+    "facts_cls": "dark",
+    "fonts": "family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Pinyon+Script&family=Jost:wght@300;400;500",
+    "fh": "'Cormorant Garamond',Georgia,serif",
+    "hfs": "italic",
+    "wmf": "'Pinyon Script',cursive",
+    "wmw": 400,
+    "wms": "32px",
+    "fb": "'Jost',system-ui,sans-serif",
+    "hw": 500,
+    "hls": "-0.01em",
+    "hlh": 1.0,
+    "h1vw": 6,
+    "h1max": 7,
+    "c": {
+     "bg": "#FFF5F8",
+     "ink": "#3B2430",
+     "acc": "#D6336C",
+     "acc2": "#C9A24B",
+     "soft": "#FBE3EB",
+     "paper": "#FFFFFF",
+     "hbg": "#FFF5F8",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#3B2430",
+     "onctabtn": "#FBE3EB",
+     "star": "#C9A24B"
+    },
+    "hero": "portrait",
+    "wordmark": "LucoROSE",
+    "logo": false,
+    "por_vw": 7.5,
+    "por_max": 8.4,
+    "svc": "rows",
+    "svc_imgs": [
+     "b3",
+     "b4",
+     "b5"
+    ],
+    "rows_intro": "Von professioneller Maniküre bis zur Lymphdrainage – alles in einem Studio.",
+    "rws": [
+     [
+      "b3",
+      "Nagelstyling",
+      "Maniküre, Pediküre und Nageldesign – sauber, langlebig und in Ihrer Lieblingsfarbe.",
+      [
+       "Maniküre",
+       "Pediküre",
+       "Gel"
+      ],
+      "Nägel",
+      "b11"
+     ],
+     [
+      "b4",
+      "Gesichtsbehandlungen",
+      "Reinigung, Pflege und moderne Technologien – individuell auf Ihr Hautbild abgestimmt.",
+      [
+       "Reinigung",
+       "Pflege",
+       "Anti-Aging"
+      ],
+      "Gesicht",
+      "b9"
+     ],
+     [
+      "b5",
+      "Wimpern, Brauen und Körper",
+      "Wimpern- und Augenbrauenstyling, Haarentfernung und mechanische Lymphdrainage.",
+      [
+       "Wimpern",
+       "Brauen",
+       "Lymphdrainage"
+      ],
+      "Körper",
+      "b10"
+     ]
+    ],
+    "blend": [
+     "b2",
+     "b6",
+     "b8",
+     "Ihr Wohlfühlort in Quakenbrück.",
+     "Feminin, ruhig und mit Liebe zum Detail eingerichtet."
+    ],
+    "about_img": "b7",
+    "about_img2": "b12",
+    "cta_img": "b2",
+    "promo": "Beauty-Pakete",
+    "promo_tag": "Kombinieren und sparen",
+    "promo_sub": "Nägel, Gesicht und Wimpern in einem Termin – fragen Sie nach unseren Paketen.",
+    "promo_img": "b3",
+    "promo_btn": "Jetzt Termin anfragen",
+    "bot_name": "Rosie",
+    "robot_hello": "Hallo! Ich bin Rosie von LucoROSE. Soll ich Ihnen kurz unsere Behandlungen zeigen?",
+    "cta_btn": "Jetzt Termin anfragen",
+    "cta_h2": "Vereinbaren Sie Ihren Termin.",
+    "cta_p": "Rufen Sie an oder hinterlassen Sie Ihre Nummer – wir melden uns schnellstmöglich persönlich bei Ihnen.",
+    "row_link": "Termin anfragen",
+    "rev_sub": "Stimmen unserer Kundinnen.",
+    "form_q": "Welche Behandlung?",
+    "rev_h2": "42 Bewertungen. Alle mit 5 Sternen.",
+    "order": [
+     "svc",
+     "reviews",
+     "blend",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "pos": {
+     "b1": "50% 20%"
+    },
+    "mb_btn": "Termin anfragen",
+    "steps_h2": "So läuft Ihr Besuch ab."
+   },
+   "steps": [
+    [
+     "Termin",
+     "Rufen Sie an oder schreiben Sie uns."
+    ],
+    [
+     "Beratung",
+     "Wir schauen uns Ihre Haut genau an."
+    ],
+    [
+     "Behandlung",
+     "Abgestimmt auf Sie, in Ruhe."
+    ],
+    [
+     "Wohlfühlen",
+     "Und wiederkommen."
+    ]
+   ]
+  },
+  {
+   "slug": "kosmetik-kraemer",
+   "theme": "beauty",
+   "firma": "Kosmetik Krämer",
+   "kurzname": "Kosmetik Krämer",
+   "website": "https://www.kosmetik-kraemer.de",
+   "telefon": "05471 334",
+   "email": "",
+   "adresse": "Alter Postweg 28, 49163 Bohmte",
+   "google": [
+    "5,0",
+    74
+   ],
+   "siegel": [
+    "Alles rund um Duft und Kosmetik"
+   ],
+   "tag": "Kosmetikstudio und Parfümerie in Bohmte",
+   "h1": "Zeit für dich. <span>Seit Generationen.</span>",
+   "sub": "Gesichtsbehandlungen, Head Spa, Plasma, Mikrodermabrasion, Maniküre und Pediküre – kompetent, natürlich, achtsam und herzlich.",
+   "trust": [
+    [
+     "5,0",
+     "Sterne, 74 Bewertungen"
+    ],
+    [
+     "Head Spa",
+     "Auszeit für Kopf und Seele"
+    ],
+    [
+     "Duft",
+     "und Kosmetik unter einem Dach"
+    ]
+   ],
+   "leist_h2": "Gönn dir eine Auszeit.",
+   "leistungen": [
+    "Gesichtsbehandlungen",
+    "Head Spa",
+    "Plasma-Behandlung",
+    "Mikrodermabrasion",
+    "Maniküre und Pediküre",
+    "Haarentfernung"
+   ],
+   "about_h2": "Kompetent, natürlich, achtsam.",
+   "ueber": [
+    "Kosmetik Krämer in Bohmte steht für alles rund um Duft und Kosmetik – mit einem Team, das sich Zeit nimmt und zuhört.",
+    "Ob klassische Gesichtsbehandlung, innovatives Head Spa oder apparative Kosmetik: Wir arbeiten wirksam, herzlich und mit Liebe zum Detail. Behandlungen nach Terminvereinbarung, Mo bis Sa."
+   ],
+   "checks": [
+    "Behandlungen Montag bis Samstag",
+    "Gutscheine, auch per Versand",
+    "Kartenzahlung möglich"
+   ],
+   "inhaber_name": "Das Team von Kosmetik Krämer",
+   "inhaber_rolle": "Bohmte",
+   "inhaber_idx": 1,
+   "min_w": 600,
+   "bild_urls": [
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sc1eb24c76e541eb5/image/i8122467c5ba7b078/version/1781151246/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sc1eb24c76e541eb5/image/i5302ed8eef3523f3/version/1781151246/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sc1eb24c76e541eb5/image/ifcd03768b94a128c/version/1602147417/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sc1eb24c76e541eb5/image/i5af42f81296176e4/version/1781151246/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sc1eb24c76e541eb5/image/i013a9b76d161b093/version/1781151246/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sc1eb24c76e541eb5/image/ia696d51127a53217/version/1781151246/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sc1eb24c76e541eb5/image/ic4fd1cd2c8a8a3a9/version/1724300235/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sc1eb24c76e541eb5/image/i693308bb4b2548b6/version/1781151246/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sc1eb24c76e541eb5/image/i6720ecad2e18d183/version/1603801013/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sc1eb24c76e541eb5/image/i9b28b818b28debbc/version/1781151246/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sc1eb24c76e541eb5/image/i69577e6d999b71b0/version/1602147417/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sc1eb24c76e541eb5/image/i3291ec527788daab/version/1739194935/image.jpg",
+    "https://image.jimcdn.com/app/cms/image/transf/dimension=2000x10000:format=jpg/path/sc1eb24c76e541eb5/image/ibf31969d5df95afb/version/1781151123/image.jpg"
+   ],
+   "reviews": [
+    [
+     "Einfach der beste Ort für jede Beauty-Behandlung. Kathrin ist unglaublich talentiert und herzlich – das überträgt sich auf das ganze Team.",
+     "“"
+    ],
+    [
+     "Head Spa und Tiefenreinigung waren beide hervorragend. Das Team ist unglaublich freundlich und zuvorkommend.",
+     "“"
+    ],
+    [
+     "Mit ihrer ruhigen, einfühlsamen Art schafft sie eine unglaublich entspannende Atmosphäre. Nach dem Head Spa war ich erholt wie nach drei Wochen Urlaub.",
+     "“"
+    ],
+    [
+     "Das Team ist unglaublich freundlich und sehr kompetent. Die Räume sind wunderschön eingerichtet.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Kosmetik Krämer",
+     "Alter Postweg 28",
+     "49163 Bohmte"
+    ],
+    "anrede": "Sehr geehrte Damen und Herren,",
+    "problem": "dass Ihre wunderschönen Studio- und Teamfotos dort hinter einer großen Cookie-Box verschwinden und die Seite noch „1588856989s Webseite“ heißt",
+    "suche": "Kosmetikstudio"
+   },
+   "v5": {
+    "soft": true,
+    "r": "999px",
+    "r2": "28px",
+    "svc_cls": "orb",
+    "steps_cls": "tone orb",
+    "facts_cls": "dark",
+    "fonts": "family=Cormorant+Garamond:wght@500;600&family=Pinyon+Script&family=Figtree:wght@300;400;500;600",
+    "fh": "'Cormorant Garamond',Georgia,serif",
+    "fb": "'Figtree',system-ui,sans-serif",
+    "hw": 500,
+    "hls": "-0.01em",
+    "hlh": 1.0,
+    "h1vw": 6,
+    "h1max": 7,
+    "c": {
+     "bg": "#F9F5F3",
+     "ink": "#3A2E30",
+     "acc": "#B07A8A",
+     "acc2": "#8FA08A",
+     "soft": "#F1E6E6",
+     "paper": "#FFFFFF",
+     "hbg": "#F9F5F3",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#3A2E30",
+     "onctabtn": "#F1E6E6",
+     "star": "#C9A24B"
+    },
+    "hero": "collage",
+    "prints": [
+     [
+      "b2",
+      "Unser Team"
+     ],
+     [
+      "b1",
+      "Empfang"
+     ],
+     [
+      "b3",
+      "Alter Postweg 28"
+     ]
+    ],
+    "wordmark": "Kosmetik Krämer",
+    "logo": false,
+    "wmf": "'Pinyon Script',cursive",
+    "wmw": 400,
+    "wms": "30px",
+    "strokes": [
+     "#B07A8A",
+     "#8FA08A"
+    ],
+    "svc": "rows",
+    "svc_imgs": [
+     "b4",
+     "b5",
+     "b8"
+    ],
+    "rows_intro": "Gönne dir eine Auszeit für deine Seele und buche deine passende Behandlung.",
+    "rws": [
+     [
+      "b4",
+      "Gesichtsbehandlungen",
+      "Tiefenreinigung, Peeling, Aromadampf, Massage und Abschlusspflege – oder intensiv mit Mikrodermabrasion und Hyaluron.",
+      [
+       "Reinigung",
+       "Mikrodermabrasion",
+       "Hyaluron"
+      ],
+      "Gesicht",
+      "b10"
+     ],
+     [
+      "b5",
+      "Head Spa",
+      "Bürstenmassage, Kopfhaut-Tiefenreinigung, Haarmaske mit Kopfdampfsauna und Wasserfall-Ritual – eine Behandlung für Kopf und Seele.",
+      [
+       "Massage",
+       "Kopfdampfsauna",
+       "Wasserfall-Ritual"
+      ],
+      "Head Spa"
+     ],
+     [
+      "b8",
+      "Plasma, Hände und Füße",
+      "Plasma-Behandlung ohne Hautkontakt, Maniküre, Pediküre, Wimpern und Brauen, Haarentfernung mit Warmwachs oder Zuckerpaste.",
+      [
+       "Plasma",
+       "Maniküre",
+       "Pediküre"
+      ],
+      "Mehr",
+      "b12"
+     ]
+    ],
+    "blend": [
+     "b9",
+     "b11",
+     "b3",
+     "Eine Familiengeschichte.",
+     "Vom Fachgeschäft für Duft und Kosmetik zum Studio von heute – in Bohmte zuhause."
+    ],
+    "about_img": "b2",
+    "about_img2": "b6",
+    "cta_img": "b4",
+    "promo": "Head Spa erleben",
+    "promo_tag": "Neu bei uns",
+    "promo_sub": "Die Auszeit für Kopfhaut und Seele – jetzt Termin sichern.",
+    "promo_img": "b5",
+    "promo_btn": "Jetzt Termin anfragen",
+    "du": true,
+    "bot_name": "Flora",
+    "robot_tag": "Dein Studio-Guide",
+    "robot_hello": "Hallo! Ich bin Flora von Kosmetik Krämer. Soll ich dir kurz zeigen, was dich bei uns erwartet?",
+    "bot_hi": "Hallo! Ich bin Flora. Wobei kann ich dir helfen?",
+    "tour_l": "Hier findest du alle Behandlungen – vom Head Spa bis zur Pediküre.",
+    "tour_r": "74 Kundinnen geben uns 5 von 5 Sternen.",
+    "tour_u": "Hier lernst du unser Team kennen.",
+    "tour_k": "Und hier buchst du deinen Termin: 05471 334.",
+    "cta_btn": "Jetzt Termin anfragen",
+    "cta_h2": "Buche deine Auszeit.",
+    "cta_p": "Ruf an oder schreib uns – wir sind täglich vor Ort und melden uns schnell zurück.",
+    "row_link": "Termin anfragen",
+    "rev_sub": "Das sagen unsere Kundinnen.",
+    "form_q": "Welche Behandlung?",
+    "rev_h2": "74 Bewertungen. Alle mit 5 Sternen.",
+    "order": [
+     "svc",
+     "reviews",
+     "blend",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "pos": {
+     "b2": "50% 30%"
+    },
+    "mb_btn": "Termin anfragen",
+    "steps_h2": "So läuft dein Besuch ab."
+   },
+   "steps": [
+    [
+     "Termin",
+     "Ruf an oder schreib uns."
+    ],
+    [
+     "Beratung",
+     "Wir hören zu und schauen genau hin."
+    ],
+    [
+     "Behandlung",
+     "Abgestimmt auf dich, in Ruhe."
+    ],
+    [
+     "Wohlfühlen",
+     "Und wiederkommen."
+    ]
+   ]
+  },
+  {
+   "slug": "melenberg-beauty",
+   "theme": "beauty",
+   "firma": "Kosmetikstudio Katharina Melenberg",
+   "kurzname": "Melenberg Beauty",
+   "website": "https://katharina-melenberg.de",
+   "telefon": "0176 72924308",
+   "email": "",
+   "adresse": "Hauptstraße 55, 49577 Ankum",
+   "google": [
+    "5,0",
+    54
+   ],
+   "siegel": [
+    "Hautexpertin seit 2018"
+   ],
+   "tag": "Kosmetikstudio in Ankum",
+   "h1": "Schönheit <span>mit Leidenschaft.</span>",
+   "sub": "Moderne Hautbehandlungen und individuelle Hautkonzepte: Microneedling, AquaFacial, Hautanalyse und Pflege, die wirkt – seit 2018 in Ankum.",
+   "trust": [
+    [
+     "5,0",
+     "Sterne, 54 Bewertungen"
+    ],
+    [
+     "Seit 2018",
+     "Hautexpertin"
+    ],
+    [
+     "Individuell",
+     "auf Ihr Hautbild"
+    ]
+   ],
+   "leist_h2": "Behandlungen für Ihre Haut.",
+   "leistungen": [
+    "Hautanalyse und Beratung",
+    "Microneedling",
+    "AquaFacial",
+    "Gesichtsbehandlungen",
+    "Wirkstoffkonzepte"
+   ],
+   "about_h2": "Ihre Hautexpertin in Ankum.",
+   "ueber": [
+    "Mein Name ist Katharina Melenberg. Seit 2018 bin ich auf moderne Hautbehandlungen und individuelle Hautkonzepte spezialisiert.",
+    "Mein Ziel ist eine gesunde, ausgeglichene und strahlende Haut. Jede Behandlung wird individuell auf Ihr Hautbild abgestimmt und mit hochwertigen Wirkstoffkonzepten durchgeführt."
+   ],
+   "checks": [
+    "Ausführliche Hautanalyse zum Start",
+    "Microneedling und AquaFacial",
+    "Ruhige Atmosphäre, saubere Räume"
+   ],
+   "inhaber_name": "Katharina Melenberg",
+   "inhaber_rolle": "Inhaberin und Hautexpertin",
+   "inhaber_idx": 0,
+   "min_w": 600,
+   "bild_urls": [
+    "https://calendar.api.coprog.org/api/v3.0.6/api/image_public.php?file=service_media%2F20261005165921_5cf30261.jpg&customer=32",
+    "https://calendar.api.coprog.org/api/v3.0.6/api/image_public.php?file=service_media%2F20261005165950_4714e3ca.jpg&customer=32",
+    "https://calendar.api.coprog.org/api/v3.0.6/api/image_public.php?file=service_media%2F20261005170026_bf4f250a.jpg&customer=32",
+    "https://calendar.api.coprog.org/api/v3.0.6/api/image_public.php?file=service_media%2F20261005165925_d8432708.jpg&customer=32",
+    "https://calendar.api.coprog.org/api/v3.0.6/api/image_public.php?file=service_media%2F20261005165942_91771648.jpg&customer=32",
+    "https://calendar.api.coprog.org/api/v3.0.6/api/image_public.php?file=service_media%2F20261005165917_bea795a8.jpg&customer=32",
+    "https://calendar.api.coprog.org/api/v3.0.6/api/image_public.php?file=service_media%2F20261005165930_cb31f8be.jpg&customer=32",
+    "https://calendar.api.coprog.org/api/v3.0.6/api/image_public.php?file=20250908130028_5.jpg&customer=32",
+    "https://calendar.api.coprog.org/api/v3.0.6/api/image_public.php?file=20240805114342_9.png&customer=32"
+   ],
+   "reviews": [
+    [
+     "Fachkundige Beratung, empathisch, tolle Produkte – durchweg professionell. Ich komme immer wieder gern.",
+     "“"
+    ],
+    [
+     "Ich bin absolut begeistert von meiner Hautberatung. Alles wurde verständlich erklärt, dabei unglaublich freundlich und professionell.",
+     "“"
+    ],
+    [
+     "Microneedling und AquaFacial – ich fühle mich bei Katharina und ihrer Kompetenz rundum gut aufgehoben.",
+     "“"
+    ],
+    [
+     "Das Studio ist blitzsauber und gemütlich, man fühlt sich sofort wohl. Die Haut fühlte sich danach unglaublich frisch an.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Kosmetikstudio Katharina Melenberg",
+     "Frau Katharina Melenberg",
+     "Hauptstraße 55",
+     "49577 Ankum"
+    ],
+    "anrede": "Sehr geehrte Frau Melenberg,",
+    "problem": "dass unter Ihrer Adresse nur eine Buchungsseite erscheint – mit dem Hinweis „Online-Buchung derzeit nicht verfügbar“ – und keine echte Website, die Ihre Arbeit zeigt",
+    "suche": "Kosmetikstudio"
+   },
+   "v5": {
+    "soft": true,
+    "r": "999px",
+    "r2": "28px",
+    "svc_cls": "orb",
+    "steps_cls": "tone orb",
+    "facts_cls": "dark",
+    "fonts": "family=Prata&family=Jost:wght@300;400;500",
+    "fh": "'Prata',Georgia,serif",
+    "fb": "'Jost',system-ui,sans-serif",
+    "hw": 400,
+    "hls": "0",
+    "hlh": 1.05,
+    "h1vw": 5.2,
+    "h1max": 6,
+    "c": {
+     "bg": "#F8F4F0",
+     "ink": "#1E1A17",
+     "acc": "#8C7A6B",
+     "acc2": "#CDBBAA",
+     "soft": "#EFE6DE",
+     "paper": "#FFFFFF",
+     "hbg": "#F8F4F0",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#1E1A17",
+     "onctabtn": "#F8F4F0",
+     "star": "#C9A24B"
+    },
+    "hero": "portrait",
+    "wordmark": "Melenberg Beauty",
+    "logo": false,
+    "por_vw": 7.2,
+    "por_max": 8,
+    "svc": "rows",
+    "svc_imgs": [
+     "b2",
+     "b4",
+     "b5"
+    ],
+    "rows_intro": "Jede Behandlung beginnt mit dem Blick auf Ihre Haut – und endet mit einem Plan, der zu Ihnen passt.",
+    "rws": [
+     [
+      "b2",
+      "Hautanalyse und Beratung",
+      "Wir schauen genau hin, erklären jeden Schritt und stimmen die Behandlung auf Ihr Hautbild ab.",
+      [
+       "Analyse",
+       "Beratung",
+       "Pflegeplan"
+      ],
+      "Start",
+      "b8"
+     ],
+     [
+      "b4",
+      "Microneedling und AquaFacial",
+      "Moderne Behandlungen für ein feineres, klareres und strahlenderes Hautbild.",
+      [
+       "Microneedling",
+       "AquaFacial",
+       "Glow"
+      ],
+      "Apparativ"
+     ],
+     [
+      "b5",
+      "Pflege mit Wirkstoffkonzepten",
+      "Hochwertige Wirkstoffe für zuhause – damit das Ergebnis bleibt.",
+      [
+       "Wirkstoffe",
+       "Pflege",
+       "Zuhause"
+      ],
+      "Pflege",
+      "b9"
+     ]
+    ],
+    "blend": [
+     "b3",
+     "b7",
+     "b6",
+     "Ihr Moment in Ankum.",
+     "Ruhige Räume, Zeit und ehrliche Beratung – Hauptstraße 55."
+    ],
+    "about_img": "b6",
+    "about_img2": "b3",
+    "cta_img": "b2",
+    "promo": "Hautanalyse zum Kennenlernen",
+    "promo_tag": "Neu bei uns",
+    "promo_sub": "Lernen Sie Ihre Haut kennen – mit Analyse, Beratung und Pflegeplan.",
+    "promo_img": "b4",
+    "promo_btn": "Jetzt Termin anfragen",
+    "bot_name": "Mila",
+    "robot_hello": "Hallo! Ich bin Mila von Melenberg Beauty. Soll ich Ihnen kurz zeigen, wie Katharina mit Ihrer Haut arbeitet?",
+    "cta_btn": "Jetzt Termin anfragen",
+    "cta_h2": "Vereinbaren Sie Ihren Termin.",
+    "cta_p": "Rufen Sie an oder hinterlassen Sie Ihre Nummer – Katharina meldet sich persönlich bei Ihnen.",
+    "row_link": "Termin anfragen",
+    "rev_sub": "Stimmen unserer Kundinnen.",
+    "form_q": "Welche Behandlung?",
+    "rev_h2": "54 Bewertungen. Alle mit 5 Sternen.",
+    "order": [
+     "svc",
+     "reviews",
+     "blend",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "pos": {
+     "b1": "50% 20%",
+     "b3": "60% 40%"
+    },
+    "mb_btn": "Termin anfragen",
+    "steps_h2": "So läuft Ihr Besuch ab."
+   },
+   "steps": [
+    [
+     "Termin",
+     "Rufen Sie an oder schreiben Sie uns."
+    ],
+    [
+     "Beratung",
+     "Wir schauen uns Ihre Haut genau an."
+    ],
+    [
+     "Behandlung",
+     "Abgestimmt auf Sie, in Ruhe."
+    ],
+    [
+     "Wohlfühlen",
+     "Und wiederkommen."
+    ]
+   ]
+  },
+  {
+   "slug": "kosmetik-meeners-menn",
+   "theme": "beauty",
+   "firma": "Kosmetikstudio Michaela Meeners-Menn",
+   "kurzname": "Michaela Meeners-Menn",
+   "website": "https://www.kosmetik-dinklage.de",
+   "telefon": "04443 513430",
+   "email": "",
+   "adresse": "Höveler Ring 43, 49413 Dinklage",
+   "google": [
+    "4,9",
+    8
+   ],
+   "siegel": [
+    "Skin Balance Aqua Facial von Monteil"
+   ],
+   "tag": "Kosmetikstudio in Dinklage",
+   "h1": "Strahlender Teint. <span>Makelloses Hautbild.</span>",
+   "sub": "Aqua Facial, Mikrodermabrasion, Speedbronzer und klassische Kosmetik – in Ruhe und nach Terminvereinbarung, im Studio am Höveler Ring.",
+   "trust": [
+    [
+     "4,9",
+     "Sterne bei Google"
+    ],
+    [
+     "Aqua Facial",
+     "von Monteil"
+    ],
+    [
+     "Nur",
+     "nach Terminvereinbarung"
+    ]
+   ],
+   "leist_h2": "Was Sie bei mir bekommen.",
+   "leistungen": [
+    "Aqua Facial",
+    "Mikrodermabrasion",
+    "Gesichtsbehandlungen",
+    "Speedbronzer Spray Tan",
+    "Wellness"
+   ],
+   "about_h2": "Das Studio am Höveler Ring.",
+   "ueber": [
+    "Seit März 2023 empfange ich Sie in meinem Studio am Höveler Ring 43 in Dinklage – in ruhiger Atmosphäre und ganz ohne Hektik.",
+    "Mit dem Skin Balance Aqua Facial 2.0 von Monteil und schonender Mikrodermabrasion gehören Unreinheiten, vergrößerte Poren und Altersflecken der Vergangenheit an. Ihre Haut wirkt schon ab der ersten Anwendung strahlender."
+   ],
+   "checks": [
+    "Termine nur nach Vereinbarung – volle Aufmerksamkeit",
+    "Schonende Behandlungen ohne Ausfallzeit",
+    "UV-freie Bräune in 4 Minuten"
+   ],
+   "inhaber_name": "Michaela Meeners-Menn",
+   "inhaber_rolle": "Kosmetikerin",
+   "min_w": 500,
+   "bild_urls": [
+    "http://www.kosmetik-dinklage.de/images/dsc_8949meeners%20menn.jpg?crc=483124443",
+    "http://www.kosmetik-dinklage.de/images/dsc_8948meeners%20menn-crop-u979.jpg",
+    "http://www.kosmetik-dinklage.de/images/dsc_0195_web-crop-u5714.jpg",
+    "http://www.kosmetik-dinklage.de/images/dsc_8966meeners%20menn583x389.jpg",
+    "http://www.kosmetik-dinklage.de/images/dsc_0194_web-crop-u5586.jpg",
+    "http://www.kosmetik-dinklage.de/images/dsc_8966meeners%20menn-crop-u1915.jpg"
+   ],
+   "reviews": [
+    [
+     "Frau Meeners-Menn versteht ihr Handwerk und nimmt sich Zeit für ihre Kundinnen.",
+     "“"
+    ],
+    [
+     "Professionell und zuverlässig – immer wieder ein Vergnügen.",
+     "“"
+    ],
+    [
+     "Angenehme Atmosphäre, gutes Preis-Leistungs-Verhältnis.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Kosmetikstudio Michaela Meeners-Menn",
+     "Frau Michaela Meeners-Menn",
+     "Höveler Ring 43",
+     "49413 Dinklage"
+    ],
+    "anrede": "Sehr geehrte Frau Meeners-Menn,",
+    "problem": "dass sie auf dem Handy nicht richtig angepasst ist und oben noch der Hinweis „Ab 30.03.23 bin ich wieder am Höveler Ring“ steht",
+    "suche": "Kosmetikstudio"
+   },
+   "v5": {
+    "soft": true,
+    "r": "999px",
+    "r2": "28px",
+    "svc_cls": "orb",
+    "steps_cls": "tone orb",
+    "facts_cls": "dark",
+    "fonts": "family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Pinyon+Script&family=Jost:wght@300;400;500",
+    "fh": "'Cormorant Garamond',Georgia,serif",
+    "hfs": "italic",
+    "wmf": "'Pinyon Script',cursive",
+    "wmw": 400,
+    "wms": "30px",
+    "fb": "'Jost',system-ui,sans-serif",
+    "hw": 500,
+    "hls": "-0.01em",
+    "hlh": 1.0,
+    "h1vw": 5.6,
+    "h1max": 6.6,
+    "c": {
+     "bg": "#FFF8F9",
+     "ink": "#3A2A2E",
+     "acc": "#D9607A",
+     "acc2": "#F3C6CF",
+     "soft": "#FBE6EA",
+     "paper": "#FFFFFF",
+     "hbg": "#FFF8F9",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#3A2A2E",
+     "onctabtn": "#FBE6EA",
+     "star": "#C9A24B"
+    },
+    "hero": "collage",
+    "prints": [
+     [
+      "b1",
+      "Im Studio"
+     ],
+     [
+      "b2",
+      "Zur Ruhe kommen"
+     ],
+     [
+      "b3",
+      "Draußen entspannen"
+     ]
+    ],
+    "wordmark": "Michaela Meeners-Menn",
+    "logo": false,
+    "strokes": [
+     "#D9607A",
+     "#F3C6CF"
+    ],
+    "svc": "rows",
+    "svc_imgs": [
+     "b5",
+     "b4",
+     "b6"
+    ],
+    "rows_intro": "Für einen strahlenden Teint und ein makelloses Hautbild – schonend und wirksam.",
+    "rws": [
+     [
+      "b5",
+      "Aqua Facial 2.0",
+      "Ein sanfter Strahl aus Wasser und Wirkstoff klärt die Haut intensiv und trägt abgestorbene Hautschüppchen ab – völlig schmerzfrei.",
+      [
+       "Monteil",
+       "Klärung",
+       "Glow"
+      ],
+      "Aqua Facial"
+     ],
+     [
+      "b4",
+      "Mikrodermabrasion",
+      "Einzeln oder kombiniert mit dem Aqua Facial – für eine langfristige Verbesserung des Hautbildes.",
+      [
+       "Poren",
+       "Unreinheiten",
+       "Altersflecken"
+      ],
+      "Apparativ"
+     ],
+     [
+      "b6",
+      "Speedbronzer und Wellness",
+      "Braun in 4 Minuten, ganz ohne UV – und klassische Behandlungen zum Abschalten.",
+      [
+       "Spray Tan",
+       "UV-frei",
+       "Entspannung"
+      ],
+      "Wellness"
+     ]
+    ],
+    "about_img": "b2",
+    "about_img2": "b1",
+    "cta_img": "b3",
+    "promo": "Aqua Facial kennenlernen",
+    "promo_tag": "Termin",
+    "promo_sub": "Schon nach der ersten Anwendung wirkt Ihre Haut strahlender – rufen Sie an.",
+    "promo_img": "b1",
+    "promo_btn": "Jetzt Termin anfragen",
+    "bot_name": "Mia",
+    "robot_hello": "Hallo! Ich bin Mia aus dem Kosmetikstudio Meeners-Menn. Soll ich Ihnen kurz die Behandlungen zeigen?",
+    "cta_btn": "Jetzt Termin anfragen",
+    "cta_h2": "Termine nach Vereinbarung.",
+    "cta_p": "Rufen Sie an oder hinterlassen Sie Ihre Nummer – ich melde mich persönlich bei Ihnen.",
+    "row_link": "Termin anfragen",
+    "rev_sub": "Stimmen meiner Kundinnen.",
+    "form_q": "Welche Behandlung?",
+    "rev_h2": "Was Kundinnen sagen.",
+    "order": [
+     "svc",
+     "reviews",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "pos": {},
+    "mb_btn": "Termin anfragen",
+    "steps_h2": "So läuft Ihr Besuch ab."
+   },
+   "steps": [
+    [
+     "Termin",
+     "Rufen Sie an oder schreiben Sie uns."
+    ],
+    [
+     "Beratung",
+     "Wir schauen uns Ihre Haut genau an."
+    ],
+    [
+     "Behandlung",
+     "Abgestimmt auf Sie, in Ruhe."
+    ],
+    [
+     "Wohlfühlen",
+     "Und wiederkommen."
+    ]
+   ]
+  },
+  {
+   "slug": "day-spa-warkentin",
+   "theme": "beauty",
+   "firma": "DAY-SPA Tatiana Warkentin",
+   "kurzname": "Day-Spa Warkentin",
+   "website": "https://day-spa-warkentin.de",
+   "telefon": "05439 3810",
+   "email": "",
+   "adresse": "Dorf Priggenhagen 30, 49593 Bersenbrück",
+   "google": [
+    "4,5",
+    39
+   ],
+   "siegel": [
+    "25 Jahre Erfahrung in der Kosmetik"
+   ],
+   "tag": "Beauty, Wellness und Gesundheit in Bersenbrück",
+   "h1": "Innere Ruhe. <span>Äußere Ausgeglichenheit.</span>",
+   "sub": "Gesichts- und Körperbehandlungen, Massagen, Sauna und Wellnesspakete – Ihr Kurzurlaub in Bersenbrück, mit 25 Jahren Erfahrung und der Methode Brigitte Kettner.",
+   "trust": [
+    [
+     "25",
+     "Jahre Erfahrung"
+    ],
+    [
+     "Sauna",
+     "Massagen, Wellness"
+    ],
+    [
+     "Pakete",
+     "für Paare und Gruppen"
+    ]
+   ],
+   "leist_h2": "Unser Wellnessangebot für Sie.",
+   "leistungen": [
+    "Gesichtsbehandlungen",
+    "Körperbehandlungen und Massagen",
+    "Sauna und Wellnesspakete",
+    "Hochzeits-Behandlungen",
+    "Junggesellinnen-Abschied"
+   ],
+   "about_h2": "Schön, dass Sie da sind.",
+   "ueber": [
+    "Wir sind das Team von DAY-SPA Tatiana Warkentin aus dem beschaulichen Bersenbrück im Osnabrücker Nordkreis. Spa ist unsere Passion – es bereitet uns Freude, Ihnen etwas Gutes zu tun.",
+    "Wir greifen auf 25 Jahre Erfahrung in der Kosmetik zurück und arbeiten nach der Methode Brigitte Kettner: Jeder Mensch ist einzigartig, jede Haut hat individuelle Bedürfnisse."
+   ],
+   "checks": [
+    "Ganzheitliche Analyse Ihres Hautzustands",
+    "Sauna, Pool und Behandlungsräume unter einem Dach",
+    "Pakete für Paare, Bräute und Gruppen"
+   ],
+   "inhaber_name": "Tatiana Warkentin und Team",
+   "inhaber_rolle": "DAY-SPA Bersenbrück",
+   "inhaber_idx": 0,
+   "logo_url": "https://day-spa-warkentin.de/wp-content/uploads/2019/12/cropped-DAY-SPA-Logo-small.png",
+   "min_w": 500,
+   "bild_urls": [
+    "https://day-spa-warkentin.de/wp-content/uploads/2020/07/DAY-SPA-WARKENTIN-Team.jpg",
+    "https://day-spa-warkentin.de/wp-content/uploads/2020/01/Gebäudefront.jpg",
+    "https://day-spa-warkentin.de/wp-content/uploads/2023/07/IMG_0803-Kopie.jpeg",
+    "https://day-spa-warkentin.de/wp-content/uploads/2020/02/IMG_5453.jpg",
+    "https://day-spa-warkentin.de/wp-content/uploads/2020/02/IMG_5264.jpg",
+    "https://day-spa-warkentin.de/wp-content/uploads/2020/02/IMG_20200111_111615.jpg",
+    "https://day-spa-warkentin.de/wp-content/uploads/2020/02/IMG_20200111_105849.jpg",
+    "https://day-spa-warkentin.de/wp-content/uploads/2020/02/IMG_0208.jpg",
+    "https://day-spa-warkentin.de/wp-content/uploads/2020/01/DAY-SPA-Tatiana-Warkentin-Beauty-und-Kosmetik-komp-1024x683.jpg",
+    "https://day-spa-warkentin.de/wp-content/uploads/2020/02/IMG_20200111_112339.jpg",
+    "https://day-spa-warkentin.de/wp-content/uploads/2020/02/IMG_20200111_105225.jpg",
+    "https://day-spa-warkentin.de/wp-content/uploads/2020/02/IMG_0214.jpg"
+   ],
+   "reviews": [
+    [
+     "Ich habe mich schon ewig nicht mehr so gut gefühlt. Tatjana ist eine wunderbar herzliche, ruhige Person – und die Behandlung war einfach herrlich.",
+     "“"
+    ],
+    [
+     "Tatjana und ihr Team machen einen fantastischen Job – herzlich, freundlich und ehrlich. Nach jahrelangen Hautproblemen ist meine Haut heute makellos.",
+     "“"
+    ],
+    [
+     "Wunderschöne, gepflegte Räume und ein ausgezeichneter Service. Perfekt zum Abschalten.",
+     "“"
+    ],
+    [
+     "Ich bin immer entspannt und genieße meine Behandlungen. Das Team ist großartig.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "DAY-SPA Tatiana Warkentin",
+     "Frau Tatiana Warkentin",
+     "Dorf Priggenhagen 30",
+     "49593 Bersenbrück"
+    ],
+    "anrede": "Sehr geehrte Frau Warkentin,",
+    "problem": "dass dort orangefarbene Textkästen direkt über dem Gesicht Ihrer Kundin liegen und oben noch ein Rabatt „bis zum 29.02.“ beworben wird",
+    "suche": "Day-Spa"
+   },
+   "v5": {
+    "soft": true,
+    "r": "999px",
+    "r2": "28px",
+    "svc_cls": "orb",
+    "steps_cls": "tone orb",
+    "facts_cls": "dark",
+    "fonts": "family=Marcellus&family=Nunito+Sans:wght@300;400;600;700",
+    "fh": "'Marcellus',Georgia,serif",
+    "fb": "'Nunito Sans',system-ui,sans-serif",
+    "hw": 400,
+    "hls": "0.005em",
+    "hlh": 1.02,
+    "h1vw": 5.4,
+    "h1max": 6.2,
+    "c": {
+     "bg": "#FBF7F2",
+     "ink": "#2B2622",
+     "acc": "#D9741A",
+     "acc2": "#B9A58A",
+     "soft": "#F4EADF",
+     "paper": "#FFFFFF",
+     "hbg": "#FBF7F2",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#2B2622",
+     "onctabtn": "#F4EADF",
+     "star": "#D9741A"
+    },
+    "hero": "collage",
+    "prints": [
+     [
+      "b2",
+      "Unser Haus in Priggenhagen"
+     ],
+     [
+      "b1",
+      "Tatiana Warkentin und Team"
+     ],
+     [
+      "b3",
+      "Pool und Sauna"
+     ]
+    ],
+    "logo_h": 44,
+    "strokes": [
+     "#D9741A",
+     "#B9A58A"
+    ],
+    "svc": "rows",
+    "svc_imgs": [
+     "b4",
+     "b6",
+     "b3"
+    ],
+    "rows_intro": "Schalten Sie vom Alltag ab – bei Gesichtsbehandlung, Körperbehandlung, Massage oder in der Sauna.",
+    "rws": [
+     [
+      "b4",
+      "Gesichtsbehandlungen",
+      "Nach ganzheitlicher Analyse Ihres Hautzustands – denn nur die Behandlung der Ursache wirkt nachhaltig.",
+      [
+       "Analyse",
+       "Methode Kettner",
+       "Pflege"
+      ],
+      "Beauty",
+      "b8"
+     ],
+     [
+      "b6",
+      "Körper und Massagen",
+      "Massagen und Körperbehandlungen in ruhigen Räumen – für neue Kraft und tiefe Entspannung.",
+      [
+       "Massage",
+       "Körper",
+       "Ruhe"
+      ],
+      "Wellness",
+      "b10"
+     ],
+     [
+      "b3",
+      "Sauna und Wellnesspakete",
+      "Ihr Kurzurlaub: Sauna, Pool und Behandlungen kombiniert – auch für Paare, Bräute und Junggesellinnen-Abschiede.",
+      [
+       "Sauna",
+       "Pool",
+       "Pakete"
+      ],
+      "Kurzurlaub",
+      "b5"
+     ]
+    ],
+    "blend": [
+     "b2",
+     "b9",
+     "b7",
+     "Ihr Kurzurlaub vor der Haustür.",
+     "Sauna, Pool und Behandlungsräume – mitten im Grünen bei Bersenbrück."
+    ],
+    "about_img": "b1",
+    "about_img2": "b12",
+    "cta_img": "b2",
+    "promo": "Wellnesspaket verschenken",
+    "promo_tag": "Gutschein",
+    "promo_sub": "Massage, Gesichtsbehandlung oder ein ganzer Spa-Tag – als Gutschein für Ihre Liebsten.",
+    "promo_img": "b3",
+    "promo_btn": "Jetzt anfragen",
+    "bot_name": "Lea",
+    "robot_hello": "Herzlich willkommen im DAY-SPA! Ich bin Lea. Soll ich Ihnen kurz zeigen, was Sie bei uns erwartet?",
+    "cta_btn": "Jetzt Termin anfragen",
+    "cta_h2": "Gönnen Sie sich eine Auszeit.",
+    "cta_p": "Rufen Sie uns direkt an oder hinterlassen Sie Ihre Nummer – wir beraten Sie gern zu Behandlungen und Paketen.",
+    "row_link": "Termin anfragen",
+    "rev_sub": "Stimmen unserer Gäste.",
+    "form_q": "Was wünschen Sie sich?",
+    "rev_h2": "Was Gäste über das DAY-SPA sagen.",
+    "order": [
+     "svc",
+     "blend",
+     "reviews",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "pos": {
+     "b1": "50% 40%"
+    },
+    "mb_btn": "Termin anfragen",
+    "steps_h2": "So läuft Ihr Besuch ab."
+   },
+   "steps": [
+    [
+     "Termin",
+     "Rufen Sie an oder schreiben Sie uns."
+    ],
+    [
+     "Beratung",
+     "Wir schauen uns Ihre Haut genau an."
+    ],
+    [
+     "Behandlung",
+     "Abgestimmt auf Sie, in Ruhe."
+    ],
+    [
+     "Wohlfühlen",
+     "Und wiederkommen."
+    ]
+   ]
+  },
+  {
+   "slug": "tinas-beauty-manufaktur",
+   "theme": "beauty",
+   "firma": "Tinas Beauty Manufaktur",
+   "kurzname": "Tinas Beauty Manufaktur",
+   "website": "https://www.tinasbeautymanufaktur.com",
+   "telefon": "01573 1103006",
+   "email": "tinasbeautymanufaktur@web.de",
+   "adresse": "Ringstraße 12, 49401 Damme",
+   "google": [
+    "5,0",
+    32
+   ],
+   "siegel": [
+    "Braut- und Eventstyling seit 2020"
+   ],
+   "tag": "Brautstyling und Kosmetik in Damme",
+   "h1": "Dein schönster Tag. <span>Dein schönstes Ich.</span>",
+   "sub": "Brautstyling, Eventstyling, Lashlifting, Brow-Styling und kosmetisches Zahnbleaching – im Homestudio in Damme, mit Zeit und Ruhe für dich.",
+   "trust": [
+    [
+     "5,0",
+     "Sterne, 32 Bewertungen"
+    ],
+    [
+     "Braut",
+     "und Eventstyling"
+    ],
+    [
+     "Probe",
+     "styling vorab"
+    ]
+   ],
+   "leist_h2": "Meine Dienstleistungen.",
+   "leistungen": [
+    "Brautstyling",
+    "Eventstyling",
+    "Lashlifting",
+    "Brow-Styling",
+    "Kosmetisches Zahnbleaching"
+   ],
+   "about_h2": "Schön, dass du hier bist.",
+   "ueber": [
+    "Ich bin Tina (Christina) Runnebaum und Gründerin von Tinas Beauty Manufaktur. Im Oktober 2020 habe ich mein Homestudio eröffnet und mir damit einen großen Herzenstraum erfüllt.",
+    "In meinem Studio biete ich Braut- und Eventstylings sowie verschiedene Kosmetik- und Beautybehandlungen an. Ich freue mich, dich bald persönlich kennenzulernen!"
+   ],
+   "checks": [
+    "Probestyling vor deiner Hochzeit",
+    "Styling bei dir vor Ort möglich",
+    "Ruhige Atmosphäre im Homestudio"
+   ],
+   "inhaber_name": "Tina Runnebaum",
+   "inhaber_rolle": "Gründerin, Tinas Beauty Manufaktur",
+   "inhaber_idx": 0,
+   "min_w": 600,
+   "bild_urls": [
+    "https://static.wixstatic.com/media/653620_60d7c72cd8ed44f4a5236ded0d26430b~mv2.jpg",
+    "https://static.wixstatic.com/media/653620_0847c53a41064ab981fd86200ef5ca1a~mv2.jpeg",
+    "https://static.wixstatic.com/media/653620_3c3ff06a2ddf419cb3dfdebc65ec1b11~mv2.jpg",
+    "https://static.wixstatic.com/media/653620_de3ea4602c154ab6b996a5342d81aa55~mv2.jpg",
+    "https://static.wixstatic.com/media/653620_2eacfdf132a84d8c9f3ccd5aefae76eb~mv2.jpg",
+    "https://static.wixstatic.com/media/653620_48a1b2b89bfa40ae9d60bdb80324864b~mv2.png",
+    "https://static.wixstatic.com/media/653620_1b458fa15b4b4a659a98784e09368f9b~mv2.jpg",
+    "https://static.wixstatic.com/media/11062b_494205749861476ea4b3be63f318f5ba~mv2.jpg"
+   ],
+   "reviews": [
+    [
+     "Tina hat mein Haar und Make-up zur kirchlichen Trauung gemacht – besser hätte es nicht sein können. Beim Probestyling haben wir verschiedene Looks ausprobiert, am Tag selbst war alles ganz entspannt.",
+     "“"
+    ],
+    [
+     "Sie hat all meine Wünsche gehört und mir ehrlich gesagt, was zu mir passt. Mein Look hat den ganzen Tag und die ganze Nacht gehalten.",
+     "“"
+    ],
+    [
+     "Tina strahlt eine unglaubliche Ruhe aus, die sich sofort überträgt. Ich konnte meinen Hochzeitstag einfach genießen.",
+     "“"
+    ],
+    [
+     "Ein absolutes Must-have für jede Braut – sehr zuverlässig, extrem präzise und unglaublich lieb.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Tinas Beauty Manufaktur",
+     "Frau Tina Runnebaum",
+     "Ringstraße 12",
+     "49401 Damme"
+    ],
+    "anrede": "Sehr geehrte Frau Runnebaum,",
+    "problem": "dass sie auf dem Handy nicht richtig angepasst ist – Bräute scrollen seitlich und sehen Ihre schönen Stylings nur klein",
+    "suche": "Brautstyling"
+   },
+   "v5": {
+    "soft": true,
+    "r": "999px",
+    "r2": "28px",
+    "svc_cls": "orb",
+    "steps_cls": "tone orb",
+    "facts_cls": "dark",
+    "fonts": "family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Pinyon+Script&family=Jost:wght@300;400;500",
+    "fh": "'Cormorant Garamond',Georgia,serif",
+    "hfs": "italic",
+    "wmf": "'Pinyon Script',cursive",
+    "wmw": 400,
+    "wms": "30px",
+    "fb": "'Jost',system-ui,sans-serif",
+    "hw": 500,
+    "hls": "-0.01em",
+    "hlh": 1.0,
+    "h1vw": 5.6,
+    "h1max": 6.6,
+    "c": {
+     "bg": "#FBF8F2",
+     "ink": "#1C1917",
+     "acc": "#B8902E",
+     "acc2": "#E7D3A3",
+     "soft": "#F3EAD8",
+     "paper": "#FFFFFF",
+     "hbg": "#FBF8F2",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#1C1917",
+     "onctabtn": "#F3EAD8",
+     "star": "#B8902E"
+    },
+    "hero": "portrait",
+    "wordmark": "Tinas Beauty Manufaktur",
+    "logo": false,
+    "por_vw": 6.4,
+    "por_max": 7.2,
+    "svc": "rows",
+    "svc_imgs": [
+     "b4",
+     "b3",
+     "b5"
+    ],
+    "rows_intro": "Klicke dich durch meine Dienstleistungen – und frag mich einfach, wenn du etwas wissen möchtest.",
+    "rws": [
+     [
+      "b4",
+      "Brautstyling",
+      "Haare und Make-up für deinen großen Tag – mit Probestyling vorab und viel Zeit am Hochzeitsmorgen.",
+      [
+       "Probestyling",
+       "Haare",
+       "Make-up"
+      ],
+      "Braut",
+      "b3"
+     ],
+     [
+      "b2",
+      "Eventstyling",
+      "Für Abibälle, Hochzeitsgäste, Shootings und besondere Abende – professionell gestylt, damit du dich rundum wohlfühlst.",
+      [
+       "Event",
+       "Shooting",
+       "Gast"
+      ],
+      "Event"
+     ],
+     [
+      "b5",
+      "Lashlifting, Brows und Bleaching",
+      "Geschwungene Wimpern, definierte Brauen und ein strahlendes Lächeln – kosmetisch und schonend.",
+      [
+       "Lashlifting",
+       "Brow-Styling",
+       "Bleaching"
+      ],
+      "Beauty",
+      "b6"
+     ]
+    ],
+    "blend": [
+     "b3",
+     "b4",
+     "b7",
+     "Von der Probe bis zum Ja-Wort.",
+     "Ich bin an deinem Tag ganz bei dir – ruhig, vorbereitet und mit Blick fürs Detail."
+    ],
+    "about_img": "b1",
+    "about_img2": "b2",
+    "cta_img": "b4",
+    "promo": "Hochzeit 2027?",
+    "promo_tag": "Jetzt Termin sichern",
+    "promo_sub": "Beliebte Termine sind früh weg – sichere dir dein Probestyling.",
+    "promo_img": "b3",
+    "promo_btn": "Jetzt anfragen",
+    "du": true,
+    "bot_name": "Bella",
+    "robot_tag": "Dein Beauty-Guide",
+    "robot_hello": "Hallo! Ich bin Bella aus Tinas Beauty Manufaktur. Soll ich dir kurz zeigen, was Tina für dich tun kann?",
+    "bot_hi": "Hallo! Ich bin Bella. Wobei kann ich dir helfen?",
+    "tour_l": "Hier siehst du alle Dienstleistungen – vom Brautstyling bis zum Lashlifting.",
+    "tour_r": "32 Bräute und Kundinnen geben Tina 5 Sterne.",
+    "tour_u": "Hier lernst du Tina kennen.",
+    "tour_k": "Und hier fragst du deinen Termin an – mit Datum und Ort der Trauung.",
+    "cta_btn": "Jetzt Termin anfragen",
+    "cta_h2": "Schreib mir für deinen Termin.",
+    "cta_p": "Bei Brautstyling bitte Datum und Uhrzeit der Trauung sowie den Ort des Stylings angeben – ich melde mich schnellstmöglich bei dir.",
+    "row_link": "Termin anfragen",
+    "rev_sub": "Das sagen meine Bräute.",
+    "form_q": "Was planst du?",
+    "rev_h2": "32 Bewertungen. Alle mit 5 Sternen.",
+    "order": [
+     "svc",
+     "blend",
+     "reviews",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "pos": {
+     "b1": "50% 20%"
+    },
+    "mb_btn": "Termin anfragen",
+    "steps_h2": "So läuft dein Besuch ab."
+   },
+   "steps": [
+    [
+     "Termin",
+     "Ruf an oder schreib uns."
+    ],
+    [
+     "Beratung",
+     "Wir hören zu und schauen genau hin."
+    ],
+    [
+     "Behandlung",
+     "Abgestimmt auf dich, in Ruhe."
+    ],
+    [
+     "Wohlfühlen",
+     "Und wiederkommen."
+    ]
+   ]
+  },
+  {
+   "slug": "lilli-geibel",
+   "theme": "beauty",
+   "firma": "Kosmetikinstitut Lilli Geibel",
+   "kurzname": "Lilli Geibel",
+   "website": "https://www.kosmetikinstitutlilligeibel.de",
+   "telefon": "05436 7229889",
+   "email": "kosmetikinstitutlilligeibel@gmail.com",
+   "adresse": "Am Alten Sportplatz 20, 49638 Nortrup",
+   "google": [
+    "5,0",
+    37
+   ],
+   "siegel": [
+    "Modernste Beauty-Technologie"
+   ],
+   "tag": "Kosmetikinstitut in Nortrup",
+   "h1": "Individuelle Lösungen <span>für anspruchsvolle Haut.</span>",
+   "sub": "Spezialisierte Aknebehandlungen, Gesichtsbehandlungen, dauerhafte Haarentfernung, Bodyforming und kosmetische Zahnaufhellung – mit modernster Technik in entspannter Atmosphäre.",
+   "trust": [
+    [
+     "5,0",
+     "Sterne, 37 Bewertungen"
+    ],
+    [
+     "Akne",
+     "spezialisierte Behandlungen"
+    ],
+    [
+     "Laser",
+     "dauerhafte Haarentfernung"
+    ]
+   ],
+   "leist_h2": "Für jede Haut die passende Pflege.",
+   "leistungen": [
+    "Aknebehandlungen",
+    "Gesichtsbehandlungen",
+    "Dauerhafte Haarentfernung",
+    "Bodyforming",
+    "Kosmetische Zahnaufhellung",
+    "Kosmetische Fußpflege"
+   ],
+   "about_h2": "Leidenschaft für Schönheit – meine Berufung.",
+   "ueber": [
+    "Kosmetik ist für mich mehr als ein Beruf – sie ist meine Leidenschaft. Mit viel Herz, Wissen und Erfahrung widme ich mich der Hautpflege, um für jede Kundin und jeden Kunden das Beste zu erreichen.",
+    "Unser Studio steht für modernste Technik und professionelle Expertise. Besuchen Sie uns und erleben Sie Beauty-Technologie in entspannter Atmosphäre."
+   ],
+   "checks": [
+    "Spezialisiert auf unreine Haut und Akne",
+    "Modernste Laser- und Bodyforming-Technik",
+    "Termine flexibel, auch kurzfristig"
+   ],
+   "inhaber_name": "Lilli Geibel",
+   "inhaber_rolle": "Inhaberin",
+   "inhaber_idx": 0,
+   "logo_url": "https://lirp.cdn-website.com/4db41821/dms3rep/multi/opt/LilliGeibel_Logo_RZ_Pfade-1920w.png",
+   "min_w": 600,
+   "bild_urls": [
+    "https://irp.cdn-website.com/4db41821/dms3rep/multi/opt/12---Lilli-Geibel-58-bea0390f-e6ffa65f-2880w.png",
+    "https://irp.cdn-website.com/4db41821/dms3rep/multi/MMF08067+%281%29.jpg",
+    "https://irp.cdn-website.com/4db41821/dms3rep/multi/opt/MMF08248-1920w.jpg",
+    "https://irp.cdn-website.com/4db41821/dms3rep/multi/opt/4+-+Lilli+Geibel-11-1920w.jpg",
+    "https://irp.cdn-website.com/4db41821/dms3rep/multi/opt/7+-+Lilli+Geibel-28-1920w.jpg",
+    "https://irp.cdn-website.com/4db41821/dms3rep/multi/opt/WhatsApp+Bild+2025-11-08+um+08.46.03_7e4263f2-1920w.jpg",
+    "https://irp.cdn-website.com/4db41821/dms3rep/multi/opt/MMF07553-2880w.jpg",
+    "https://irp.cdn-website.com/4db41821/dms3rep/multi/opt/MMF08941-1920w.jpg",
+    "https://irp.cdn-website.com/4db41821/dms3rep/multi/opt/B76A5264_bearb-2048x1365-8d8d81c9-2880w.jpg?jxl&v=jxl",
+    "https://irp.cdn-website.com/4db41821/dms3rep/multi/opt/Depositphotos_282136742_XL-18fb4cd8-2880w.jpg"
+   ],
+   "reviews": [
+    [
+     "Ein wirklich schönes, sauberes Studio. Bei Lilli fühlt man sich bestens aufgehoben – sie strahlt Kompetenz und Freundlichkeit aus.",
+     "“"
+    ],
+    [
+     "Ich mache das Bodyforming-Programm und sehe schon Ergebnisse. Lilli und Marion sind unglaublich lieb und zuvorkommend.",
+     "“"
+    ],
+    [
+     "Lash Lift zum Geburtstag geschenkt bekommen – ich war mehr als begeistert. Terminbuchung schnell und unkompliziert.",
+     "“"
+    ],
+    [
+     "Trotz meines vollen Terminplans findet Lilli immer einen Termin, auch kurzfristig. Man merkt die Erfahrung und fühlt sich sicher.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Kosmetikinstitut Lilli Geibel",
+     "Frau Lilli Geibel",
+     "Am Alten Sportplatz 20",
+     "49638 Nortrup"
+    ],
+    "anrede": "Sehr geehrte Frau Geibel,",
+    "problem": "dass dort noch Platzhalter wie „Untertitel hier einfügen“ stehen und Besucher zuerst eine große Cookie-Box statt Ihrer schönen Studiofotos sehen",
+    "suche": "Kosmetikstudio"
+   },
+   "v5": {
+    "soft": true,
+    "r": "999px",
+    "r2": "28px",
+    "svc_cls": "orb",
+    "steps_cls": "tone orb",
+    "facts_cls": "dark",
+    "fonts": "family=Cormorant+Garamond:ital,wght@0,500;0,600;1,400;1,500&family=Pinyon+Script&family=Jost:wght@300;400;500",
+    "fh": "'Cormorant Garamond',Georgia,serif",
+    "hfs": "italic",
+    "fb": "'Jost',system-ui,sans-serif",
+    "hw": 500,
+    "hls": "-0.01em",
+    "hlh": 1.0,
+    "h1vw": 5.2,
+    "h1max": 6,
+    "c": {
+     "bg": "#FAF7F1",
+     "ink": "#1F1B16",
+     "acc": "#B8962E",
+     "acc2": "#2B2B2B",
+     "soft": "#F1EAD9",
+     "paper": "#FFFFFF",
+     "hbg": "#FAF7F1",
+     "onacc": "#FFFFFF",
+     "ctabtn": "#1F1B16",
+     "onctabtn": "#F1EAD9",
+     "star": "#B8962E"
+    },
+    "hero": "portrait",
+    "logo_h": 76,
+    "por_vw": 6.2,
+    "por_max": 7,
+    "svc": "rows",
+    "svc_imgs": [
+     "b3",
+     "b7",
+     "b9"
+    ],
+    "rows_intro": "Modernste Technologie und professionelle Pflege – für ein sichtbar klares, strahlendes Hautbild.",
+    "rws": [
+     [
+      "b3",
+      "Gesichts- und Aknebehandlungen",
+      "Ob unreine Haut, erste Fältchen oder müder Teint: Wir bieten maßgeschneiderte Behandlungen für ein klares Hautbild.",
+      [
+       "Akne",
+       "Anti-Aging",
+       "Glow"
+      ],
+      "Haut",
+      "b5"
+     ],
+     [
+      "b7",
+      "Dauerhafte Haarentfernung",
+      "Glatte Haut ohne Rasieren oder Waxing – mit modernster Lasertechnologie, effektiv und schonend.",
+      [
+       "Laser",
+       "Schonend",
+       "Dauerhaft"
+      ],
+      "Laser"
+     ],
+     [
+      "b9",
+      "Bodyforming und Zahnaufhellung",
+      "Hartnäckige Problemzonen sanft reduzieren und ein strahlendes Lächeln – ohne OP.",
+      [
+       "Bodyforming",
+       "Bleaching",
+       "Ohne OP"
+      ],
+      "Mehr",
+      "b8"
+     ]
+    ],
+    "blend": [
+     "b4",
+     "b6",
+     "b2",
+     "Ihr Studio in Nortrup.",
+     "Helle Räume, moderne Technik und Zeit für Sie – Am Alten Sportplatz 20."
+    ],
+    "about_img": "b2",
+    "about_img2": "b4",
+    "cta_img": "b3",
+    "promo": "Aquafacial kennenlernen",
+    "promo_tag": "Termin",
+    "promo_sub": "Tiefenreinigung mit sofort sichtbarem Glow – jetzt Termin sichern.",
+    "promo_img": "b3",
+    "promo_btn": "Jetzt Termin anfragen",
+    "bot_name": "Lumi",
+    "robot_hello": "Hallo! Ich bin Lumi vom Kosmetikinstitut Lilli Geibel. Soll ich Ihnen kurz unsere Behandlungen zeigen?",
+    "cta_btn": "Jetzt Termin anfragen",
+    "cta_h2": "Vereinbaren Sie Ihren Termin.",
+    "cta_p": "Rufen Sie an oder hinterlassen Sie Ihre Nummer – wir finden auch kurzfristig einen Termin für Sie.",
+    "row_link": "Termin anfragen",
+    "rev_sub": "Stimmen unserer Kundinnen.",
+    "form_q": "Welche Behandlung?",
+    "rev_h2": "37 Bewertungen. Alle mit 5 Sternen.",
+    "order": [
+     "svc",
+     "reviews",
+     "blend",
+     "about",
+     "steps",
+     "cta"
+    ],
+    "pos": {
+     "b1": "50% 15%",
+     "b2": "50% 20%"
+    },
+    "mb_btn": "Termin anfragen",
+    "steps_h2": "So läuft Ihr Besuch ab."
+   },
+   "steps": [
+    [
+     "Termin",
+     "Rufen Sie an oder schreiben Sie uns."
+    ],
+    [
+     "Beratung",
+     "Wir schauen uns Ihre Haut genau an."
+    ],
+    [
+     "Behandlung",
+     "Abgestimmt auf Sie, in Ruhe."
+    ],
+    [
+     "Wohlfühlen",
+     "Und wiederkommen."
+    ]
+   ]
+  }
+ ]
+}

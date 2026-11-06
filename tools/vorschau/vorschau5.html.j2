@@ -734,7 +734,7 @@ footer{background:linear-gradient(180deg,color-mix(in srgb,var(--ink) 92%,var(--
 </div>
 {% if not V.get('no_promo') %}{% if V.get('promo_sub') %}<aside class="promo2" id="promo"><div class="pi">{{ img(V.get('promo_img') or (V.svc_imgs[0] if V.svc_imgs else V.hero_img)) }}{% if V.get('promo_tag') %}<span class="tg">{{ V.promo_tag }}</span>{% endif %}</div><div class="pt"><small>Beispiel: Aktions-Hinweis im Entwurf</small><b>{{ V.promo }}</b><p>{{ V.promo_sub }}</p><a class="pb" href="tel:{{ f.tel_link }}">{{ V.get('promo_btn', 'Jetzt kostenlos beraten lassen') }}</a></div><button class="x" type="button" aria-label="Schließen" onclick="this.parentNode.classList.remove('show');this.parentNode.dataset.closed=1">&times;</button></aside>
 {% else %}<aside class="promo" id="promo"><div class="pi">{{ img(V.get('promo_img') or (V.svc_imgs[0] if V.svc_imgs else V.hero_img)) }}</div><div class="pt"><small>Beispiel: Aktions-Hinweis</small><b>{{ V.get('promo', f.leistungen[0]) }}</b>Jetzt gefragt. Lassen Sie sich kostenlos beraten.<br><a href="tel:{{ f.tel_link }}">{{ f.telefon }}</a></div><button class="x" type="button" aria-label="Schließen" onclick="this.parentNode.remove()">&times;</button></aside>{% endif %}{% endif %}
-<div class="callbar"><a href="tel:{{ f.tel_link }}">{{ icon_phone }}Anrufen</a><a href="tel:{{ f.tel_link }}">Kostenlose Beratung</a></div>
+<div class="callbar"><a href="tel:{{ f.tel_link }}">{{ icon_phone }}Anrufen</a><a href="tel:{{ f.tel_link }}">{{ V.get('mb_btn', 'Kostenlose Beratung') }}</a></div>
 
 <script src="../../assets/vendor/gsap.min.js"></script>
 <script src="../../assets/vendor/ScrollTrigger.min.js"></script>
