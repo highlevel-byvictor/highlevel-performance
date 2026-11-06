@@ -75,7 +75,7 @@ h2{font-size:clamp(38px,4.6vw,68px)}
 .hero .lead{margin-bottom:40px}
 .h-cta{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:46px}
 .h-proof{display:flex;align-items:center;gap:22px;flex-wrap:wrap}
-.stars{display:inline-flex;gap:3px;color:var(--star)}.stars svg{width:16px;height:16px}
+.stars{display:inline-flex;gap:3px;color:var(--star)!important;filter:drop-shadow(0 1px 1px color-mix(in srgb,#B36A00 35%,transparent))}.stars svg{width:16px;height:16px}
 .h-proof .g{display:flex;flex-direction:column;gap:5px;font-size:16px;color:var(--ink)}
 .h-proof .g b{font:400 30px/1 var(--fh);color:var(--ink);display:flex;align-items:center;gap:12px}
 .h-proof .sep{width:1px;height:44px;background:color-mix(in srgb,var(--ink) 15%,transparent)}
@@ -146,6 +146,14 @@ h2{font-size:clamp(38px,4.6vw,68px)}
 .ritual li::after{content:"";position:absolute;left:-30px;top:21px;width:5px;height:5px;border-radius:50%;background:var(--acc)}
 .sig-q{font:italic 400 22px/1.45 var(--fh);color:var(--ink);max-width:24em;margin-bottom:36px}
 .sig-q .stars{display:flex;margin-bottom:12px}
+
+/* ---------- Video-Band (eigenes Video der Firma, weich verschwommen) ---------- */
+.vband{position:relative;height:min(78svh,720px);overflow:hidden;isolation:isolate;display:grid;place-items:center;text-align:center}
+.vband video{position:absolute;inset:-6%;width:112%;height:112%;object-fit:cover;z-index:-2;filter:blur(14px) saturate(.92) brightness(1.04);transform:scale(1.06)}
+.vband::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(180deg,var(--bg) 0%,color-mix(in srgb,var(--bg) 25%,transparent) 22%,color-mix(in srgb,var(--blush) 30%,transparent) 50%,color-mix(in srgb,var(--bg) 25%,transparent) 78%,var(--bg) 100%)}
+.vband p{font:400 clamp(30px,3.6vw,56px)/1.2 var(--fh);letter-spacing:-.01em;max-width:18em;padding:0 24px;text-shadow:0 0 30px #fff,0 0 12px color-mix(in srgb,#fff 80%,transparent)}
+.vband p em{color:var(--acc-d)}
+@media (prefers-reduced-motion:reduce){.vband video{display:none}.vband{background:var(--grad-soft)}}
 
 /* ---------- Bewertungen ---------- */
 .rev{padding:150px 0 140px;text-align:center;position:relative}
@@ -425,6 +433,10 @@ html.qa .pv,html.qa .robo,html.qa .callbar,html.qa .bot{display:none!important}
 </section>
 {% endif %}
 
+{% if B.get('video') %}<section class="vband">
+ <video autoplay muted loop playsinline preload="metadata"{% if B.video.get('poster') %} poster="{{ I[B.video.poster] }}"{% endif %} aria-hidden="true"><source src="{{ B.video.src }}" type="{{ B.video.get('type', 'video/mp4') }}"></video>
+ <p class="rv">{{ B.video.text | safe }}</p>
+</section>{% endif %}
 <section class="rev" id="bewertungen"><div class="wrap">
  <span class="eyebrow rv">{{ B.rev_eyebrow }}</span>
  <div class="score rv d1"><b>{{ f.google[0] }}</b><span><span class="stars">{% for _ in range(5) %}{{ star | safe }}{% endfor %}</span><br>{{ f.google[1] }} Bewertungen<br>bei Google</span></div>
