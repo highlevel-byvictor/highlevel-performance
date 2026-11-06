@@ -763,7 +763,7 @@ body.has-sbar .hero .wrap{padding-top:150px}
  <div class="h-wave">{{ wave | safe }}</div>
 </section>
 
-{% if B.get('studio_video') and B.studio_video.get('top') %}{{ svid_html }}{% endif %}
+{% if B.get('studio_video') and B.studio_video.get('top', True) %}{{ svid_html }}{% endif %}
 {% if B.get('ribbon') %}<div class="rb-w"><div class="ribbon" aria-hidden="true"><div class="rb-in">{% for _ in range(4) %}{% for t in B.ribbon %}<span>{{ t }}</span><i>✦</i>{% endfor %}{% endfor %}</div></div></div>{% endif %}
 {% if B.get('counters') %}<section class="counters"><div class="wrap">
  <p class="ct-intro rv">{{ B.intro | safe }}</p>
@@ -862,7 +862,7 @@ body.has-sbar .hero .wrap{padding-top:150px}
  <span class="eyebrow rv">{{ T3.eyebrow }}</span><h2 class="rv d1">{{ T3.h2 | safe }}</h2>
  <div class="t3" style="--tn:{{ T3.people | length }}">{% for pp in T3.people %}<figure class="rv d{{ loop.index }}"><div class="ph">{{ im(pp[0], pp[1]) }}</div><figcaption>{{ pp[1] }}{% if pp|length > 2 and pp[2] %}<small>{{ pp[2] }}</small>{% endif %}</figcaption></figure>{% endfor %}</div>
 </div></section>{% endif %}
-{% if B.get('studio_video') and not B.studio_video.get('top') %}{{ svid_html }}{% endif %}
+{% if B.get('studio_video') and not B.studio_video.get('top', True) %}{{ svid_html }}{% endif %}
 <div class="pdiv" aria-hidden="true"><span></span></div>
 <section class="flow"><div class="wrap">
  <span class="eyebrow rv">Ablauf</span>
