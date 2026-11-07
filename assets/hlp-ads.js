@@ -19,6 +19,7 @@
   function gt(){ window.dataLayer = window.dataLayer || []; if(!window.gtag){ window.gtag = function(){ dataLayer.push(arguments); }; } return window.gtag; }
 
   function load(c){
+    if(c && c.mkt && !CFG.ADS_ID) meta(c);
     if(!c || !c.mkt || !CFG.ADS_ID || loaded) return;
     loaded = true;
     var g = gt();
@@ -31,9 +32,21 @@
       g('js', new Date());
     }
     g('config', CFG.ADS_ID);
+    meta(c);
+  }
+
+  /* Meta-Pixel nur auf Seiten, die window.HLP_META setzen (z. B. /website-business/), und nur mit Marketing-Einwilligung */
+  var metaOn = false;
+  function meta(c){
+    var id = window.HLP_META; if(!id || !c || !c.mkt || metaOn) return; metaOn = true;
+    if(!window.fbq){
+      !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    }
+    window.fbq('init', id); window.fbq('track', 'PageView');
   }
 
   function conv(name){
+    if(metaOn && window.fbq && name === 'entwurf') window.fbq('track', 'Lead', { content_name: 'Website-Entwurf' });
     var label = CFG.CONV[name];
     if(!loaded || !label || !window.gtag) return;
     window.gtag('event', 'conversion', { send_to: CFG.ADS_ID + '/' + label });
@@ -76,16 +89,19 @@
   }
 
   /* Newsletter nur per Double-Opt-in: Bestätigungsmail, Eintrag in Brevo erst nach Klick */
+  /* Brevo-Listen: business = 13 (Sichtbarkeit), website = Website-Leads von /website-business/ */
+  var DOI_LISTS = { business: { l: 'business', id: '13' }, website: { l: 'website', id: '23' } };
   var DOI_HOOK = 'https://connect.pabbly.com/webhook-listener/webhook/IjU3NjAwNTZmMDYzZTA0MzE1MjY4NTUzNyI_3D_pc/IjU3NjcwNTY4MDYzZjA0MzI1MjY0NTUzMTUxM2Ii_pc';
-  function doi(email, name){
+  function doi(email, name, liste){
+    var L = DOI_LISTS[liste] || DOI_LISTS.business;
     try{
       email = String(email || '').trim(); if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(email)) return;
       var vn = String(name || '').trim().split(' ')[0], iso = new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Berlin' });
-      var tk = btoa(unescape(encodeURIComponent(JSON.stringify({ e: email, n: vn, l: 'business', d: iso })))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
+      var tk = btoa(unescape(encodeURIComponent(JSON.stringify({ e: email, n: vn, l: L.l, d: iso })))).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
       var o = new URLSearchParams();
-      o.append('email', email); o.append('vorname', vn); o.append('liste', 'business'); o.append('list_id', '13'); o.append('datum', iso); o.append('token', tk);
+      o.append('email', email); o.append('vorname', vn); o.append('liste', L.l); o.append('list_id', L.id); o.append('datum', iso); o.append('token', tk);
       o.append('betreff', 'Bitte bestätigen Sie Ihre Anmeldung'); o.append('headline', 'Fast geschafft' + (vn ? ', ' + vn : '') + '!');
-      o.append('text', 'Bitte bestätigen Sie mit einem Klick, dass Sie den Newsletter von High Level Performance erhalten möchten. Danach bekommen Sie alle paar Tage eine kurze E-Mail mit Strategien, die Ihrem Betrieb neue Kunden bringen.');
+      o.append('text', 'Bitte bestätigen Sie mit einem Klick, dass Sie den Newsletter von High Level Performance erhalten möchten. Danach bekommen Sie alle paar Tage eine kurze E-Mail ' + (L.l === 'website' ? 'mit Tipps, wie Ihre Website Anfragen bringt statt nur gut auszusehen.' : 'mit Strategien, die Ihrem Betrieb neue Kunden bringen.'));
       o.append('button', 'Anmeldung bestätigen'); o.append('hinweis', 'Sie haben sich nicht angemeldet? Dann ignorieren Sie diese E-Mail einfach. Ohne Bestätigung tragen wir Sie nicht ein.');
       o.append('bild', 'https://www.highlevel-performance.de/assets/mail/img/b01.jpg');
       fetch(DOI_HOOK, { method: 'POST', mode: 'no-cors', body: o, keepalive: true });
@@ -99,7 +115,7 @@
       var o = new URLSearchParams();
       fd.forEach(function(v, k){ if(typeof v === 'string' && k !== 'website' && k !== 'ok') o.append(k, v); });
       if(!o.get('newsletter')) o.set('newsletter', 'nein');
-      if(o.get('newsletter') === 'ja'){ doi(o.get('email'), o.get('vorname') || o.get('name')); o.set('newsletter', 'doi'); }
+      if(o.get('newsletter') === 'ja'){ doi(o.get('email'), o.get('vorname') || o.get('name'), formular === 'website-entwurf' ? 'website' : 'business'); o.set('newsletter', 'doi'); }
       if(!o.get('quelle')) o.set('quelle', quelle() || 'direkt');
       o.set('formular', formular); o.set('seite', location.href.split('#')[0]); o.set('zeit', new Date().toLocaleString('de-DE', { timeZone: 'Europe/Berlin' })); o.set('datum', new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Berlin' }));
       fetch(CFG.WEBHOOK, { method: 'POST', mode: 'no-cors', body: o, keepalive: true });
