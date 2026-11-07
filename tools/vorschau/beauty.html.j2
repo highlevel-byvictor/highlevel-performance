@@ -844,10 +844,10 @@ html.qa .steam{display:none}
  {% if RL == 'split' %}<div class="rv-split"><div class="rs-l rv"><span class="eyebrow">{{ B.rev_eyebrow }}</span><b class="rs-n">{{ f.google[0] }}</b><span class="stars">{% for _ in range(5) %}{{ star | safe }}{% endfor %}</span><small>{{ f.google[1] }} Bewertungen bei Google</small></div>
   <div class="rs-r">{% for r in f.reviews[:3] %}<blockquote class="rv d{{ loop.index }}"><p>{{ r[0] }}</p><cite>Google-Bewertung</cite></blockquote>{% endfor %}</div></div>
  {% elif RL == 'marquee' %}<span class="eyebrow rv">{{ B.rev_eyebrow }}</span>
-  <div class="score rv d1"><b>{{ f.google[0] }}</b><span><span class="stars">{% for _ in range(5) %}{{ star | safe }}{% endfor %}</span><br>{{ f.google[1] }} Bewertungen<br>bei Google</span></div>
+  {% if f.google %}<div class="score rv d1"><b>{{ f.google[0] }}</b><span><span class="stars">{% for _ in range(5) %}{{ star | safe }}{% endfor %}</span><br>{{ f.google[1] }} Bewertungen<br>bei Google</span></div>{% endif %}
  </div><div class="rv-mq rv"><div class="mq-in">{% for k in range(2) %}{% for r in f.reviews %}<blockquote{% if k %} aria-hidden="true"{% endif %}><span class="stars">{% for _ in range(5) %}{{ star | safe }}{% endfor %}</span><p>{{ r[0] }}</p></blockquote>{% endfor %}{% endfor %}</div></div><div class="wrap">
  {% else %}<span class="eyebrow rv">{{ B.rev_eyebrow }}</span>
- <div class="score rv d1"><b>{{ f.google[0] }}</b><span><span class="stars">{% for _ in range(5) %}{{ star | safe }}{% endfor %}</span><br>{{ f.google[1] }} Bewertungen<br>bei Google</span></div>
+ {% if f.google %}<div class="score rv d1"><b>{{ f.google[0] }}</b><span><span class="stars">{% for _ in range(5) %}{{ star | safe }}{% endfor %}</span><br>{{ f.google[1] }} Bewertungen<br>bei Google</span></div>{% endif %}
  <div class="quotes rv d2" id="quotes">{% for r in f.reviews %}<blockquote{% if loop.first %} class="on"{% endif %}><p>{{ r[0] }}</p><cite>Google-Bewertung</cite></blockquote>{% endfor %}</div>
  <div class="qdots" id="qdots">{% for r in f.reviews %}<button type="button" aria-label="Bewertung {{ loop.index }}"{% if loop.first %} class="on"{% endif %}></button>{% endfor %}</div>{% endif %}
 </div></section>
