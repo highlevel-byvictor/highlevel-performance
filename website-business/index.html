@@ -94,7 +94,7 @@ footer .wrap{display:flex;gap:20px;flex-wrap:wrap;justify-content:space-between}
 .vik .chip{position:absolute;z-index:3;display:flex;align-items:center;gap:10px;padding:12px 16px;border-radius:14px;background:rgba(8,32,84,.78);border:1px solid rgba(255,255,255,.28);backdrop-filter:blur(12px);font:700 14px Poppins;color:#fff;box-shadow:0 20px 40px -20px rgba(0,0,0,.6);animation:fl 5s ease-in-out infinite}
 .vik .chip small{display:block;font:500 12px Manrope;color:#CFE0FF}
 .vik .chip i{width:30px;height:30px;border-radius:50%;display:grid;place-items:center;font-style:normal;background:#22c55e;font-size:13px}
-.vik .c1{left:0;top:90px}.vik .c2{right:0;top:150px;animation-delay:1.2s}.vik .c3{left:10px;bottom:120px;animation-delay:2.4s}
+.vik .c1{left:0;top:auto;bottom:230px}.vik .c2{right:0;top:150px;animation-delay:1.2s}.vik .c3{left:10px;bottom:120px;animation-delay:2.4s}
 .vik .c2 i{background:#1877F2}.vik .c3 i{background:#E90E0E}
 .vik .ph{position:absolute;z-index:4;right:10px;bottom:40px;width:150px;border-radius:20px;overflow:hidden;border:5px solid #0b0b0b;box-shadow:0 30px 60px -20px rgba(0,0,0,.7);transform:rotate(4deg)}
 @keyframes fl{50%{transform:translateY(-8px)}}
@@ -124,8 +124,8 @@ footer .wrap{display:flex;gap:20px;flex-wrap:wrap;justify-content:space-between}
 .fq{position:relative;color:#fff;background:linear-gradient(90deg,rgba(7,29,77,.94) 0%,rgba(10,42,102,.86) 55%,rgba(10,42,102,.55) 100%),url(../assets/biz-hero-real-v1.jpg) center/cover}
 .fq h2{color:#fff}.fq details{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(10px)}
 .fq summary::after{color:#38C8FF}.fq details p{color:#D3DFF6}
-@media(max-width:980px){.vid{grid-template-columns:1fr}.pics{grid-template-columns:1fr}.hero .txt{padding-bottom:20px}.vik{min-height:440px}.vik .me{height:460px}.vik .glow{width:380px;height:380px}.vik .ph{width:110px}.vik .c2{top:170px}.blue .plan.top{transform:none}}
-@media(max-width:560px){.vik .chip{font-size:12.5px;padding:9px 12px}.vik .c1{top:40px}.vik .c3{bottom:90px}}
+@media(max-width:980px){.vid{grid-template-columns:1fr}.pics{grid-template-columns:1fr}.hero .txt{padding-bottom:20px}.vik{min-height:440px}.vik .me{height:460px}.vik .glow{width:380px;height:380px}.vik .ph{width:110px}.vik .c2{display:none}.blue .plan.top{transform:none}}
+@media(max-width:560px){.vik .chip{font-size:12.5px;padding:9px 12px}.vik .c1{top:auto;bottom:190px}.vik .c3{bottom:90px}}
 @media (max-width:1180px){.plans{grid-template-columns:1fr 1fr}}
 @media (max-width:860px){
  .hero{padding:56px 0}.hero .wrap{grid-template-columns:1fr;gap:40px}
@@ -135,7 +135,7 @@ footer .wrap{display:flex;gap:20px;flex-wrap:wrap;justify-content:space-between}
 }
 @media(max-width:760px){
 .vik .ph,.vik .c2{display:none}.vik{min-height:430px}.vik .me{height:440px}.vik .glow{width:340px;height:340px}
-.vik .c1{left:0;top:30px}.vik .c3{left:auto;right:0;bottom:70px}
+.vik .c1{left:0;top:auto;bottom:150px}.vik .c3{left:auto;right:0;bottom:70px}
 .plans,.whys{display:flex!important;overflow-x:auto;scroll-snap-type:x mandatory;gap:14px;margin-left:-20px;margin-right:-20px;padding:6px 20px 18px;scrollbar-width:none;-webkit-overflow-scrolling:touch}
 .plans::-webkit-scrollbar,.whys::-webkit-scrollbar{display:none}
 .plans>.plan,.whys>.why{flex:0 0 84%;scroll-snap-align:center;margin:0}
@@ -153,19 +153,19 @@ footer .wrap{display:flex;gap:20px;flex-wrap:wrap;justify-content:space-between}
 <div class="note"><span>Entwurf in 24 Stunden</span><span>Erst sehen, dann zahlen</span><span>Live in 7 Tagen</span></div></div>
 <div class="vik"><span class="glow"></span><img class="me" src="../assets/victor-hemd-v1.webp" width="900" height="1374" alt="Viktor Fehl, Gründer von High Level Performance"><div class="chip c1"><i>KI</i><div>22:14 Uhr<small>KI-Assistent hat geantwortet</small></div></div><div class="chip c2"><i>+1</i><div>Neue Anfrage<small>direkt in Ihrem CRM</small></div></div><div class="chip c3"><i>●</i><div>Angebot live<small>auf Instagram und Facebook</small></div></div><div class="ph"><img src="../assets/ref_business_m.jpg" alt="Beispiel-Website auf dem Handy"></div></div>
 </div></div>
+<section><div class="wrap vid"><div><span class="kick">WILLKOMMEN BEI HIGH LEVEL PERFORMANCE</span><h2 style="margin-top:14px">Ihre Website arbeitet, <em>während Sie arbeiten.</em></h2><p class="sub">Anfragen sammeln, Besucher führen, Anrufe annehmen. Sehen Sie es in 35 Sekunden, bevor Sie sich entscheiden.</p><div class="sig"><img src="../assets/team-viktor-b.jpg" alt="Viktor Fehl"><div><b>Viktor Fehl</b><span>Gründer, High Level Performance</span></div></div></div>
+<div class="frame"><video controls playsinline preload="metadata" poster="../assets/lp-willkommen-poster.jpg"><source src="../assets/lp-willkommen.mp4" type="video/mp4"></video></div></div></section>
 <section class="alt"><div class="wrap"><span class="kick">KENNEN SIE DAS?</span><h2 style="margin-top:14px">Das Problem ist nicht Ihr Design. <em>Es ist, was nach dem Klick passiert.</em></h2><p class="sub">Ein Kunde findet Sie, schaut ein paar Sekunden und ruft den Nächsten an. Kein Angebot auf den ersten Blick, keine Antwort am Abend, kein Rückruf. Die meisten Websites sind Visitenkarten. Unsere arbeiten wie ein Verkäufer.</p><div class="steps">
 <div class="step"><span class="n">HANDWERK</span><h3>Sie stehen auf der Baustelle. Das Telefon klingelt.</h3><p>Auf Wunsch nimmt der KI-Telefon-Agent an und fragt, was gebraucht wird. Die Anfrage liegt in Ihrem CRM. Sie rufen zurück, wenn Sie Zeit haben.</p></div>
 <div class="step"><span class="n">DIENSTLEISTER</span><h3>Ihr Kalender lebt von Terminen, nicht von Besuchern.</h3><p>Der KI-Assistent beantwortet Fragen und führt Besucher bis zur Anfrage, auch am Wochenende. Sie bekommen jede Anfrage per SMS und E-Mail.</p></div>
 <div class="step"><span class="n">DIGITALE PRODUKTE</span><h3>Viele schauen. Zu wenige kaufen.</h3><p>Ihr Angebot steht ganz vorne und läuft live auf Social Media. Automatisches E-Mail-Marketing holt Interessenten zurück, die noch nicht gekauft haben.</p></div>
 </div><div class="ctas" style="margin-top:34px"><a class="btn btn-acc" href="#fragebogen">Kostenlosen Entwurf anfordern</a></div></div></section>
-<section ><div class="wrap"><h2>So einfach geht's.</h2><p class="sub">Drei Schritte. Ihr Aufwand: 5 Minuten.</p><div class="pics">
+<section><div class="wrap"><h2>So einfach geht's.</h2><p class="sub">Drei Schritte. Ihr Aufwand: 5 Minuten.</p><div class="pics">
 <div class="pic"><span class="n">01</span><img src="../assets/biz-ablauf-anfrage-v1.jpg" style="object-position:40% 30%" alt="Unternehmerin füllt lächelnd den Fragebogen am Tablet aus" loading="lazy"><div class="in"><h3>Fragebogen ausfüllen</h3><p>5 Minuten: Firma, Leistungen, Region und vorhandene Bilder.</p></div></div>
 <div class="pic"><span class="n">02</span><img src="../assets/ref_business_d.jpg" style="object-position:50% 0" alt="Vorschau einer fertigen Website" loading="lazy"><div class="in"><h3>Entwurf in 24 Stunden</h3><p>Sie bekommen einen Vorschau-Link zu Ihrer neuen Startseite.</p></div></div>
 <div class="pic"><span class="n">03</span><img src="../assets/biz-sys-auftrag-v2.jpg" alt="Handschlag nach der Zusage" loading="lazy"><div class="in"><h3>Live in 7 Tagen</h3><p>Gefällt sie Ihnen, stellen wir sie fertig und schalten sie online.</p></div></div>
 </div></div></section>
-<section><div class="wrap vid"><div><span class="kick">WILLKOMMEN BEI HIGH LEVEL PERFORMANCE</span><h2 style="margin-top:14px">Ihre Website arbeitet, <em>während Sie arbeiten.</em></h2><p class="sub">Anfragen sammeln, Besucher führen, Anrufe annehmen. Sehen Sie es in 35 Sekunden, bevor Sie sich entscheiden.</p><div class="sig"><img src="../assets/team-viktor-b.jpg" alt="Viktor Fehl"><div><b>Viktor Fehl</b><span>Gründer, High Level Performance</span></div></div></div>
-<div class="frame"><video controls playsinline preload="metadata" poster="../assets/lp-willkommen-poster.jpg"><source src="../assets/lp-willkommen.mp4" type="video/mp4"></video></div></div></section>
-<section><div class="wrap"><h2>Was Ihre Website <em>für Sie erledigt.</em></h2><p class="sub">Ein Verkäufer, der nie Feierabend macht. Welche Bausteine Sie brauchen, sehen Sie unten in den Paketen.</p><div class="swipe">Wischen für mehr</div><div class="whys">
+<section class="alt"><div class="wrap"><h2>Was Ihre Website <em>für Sie erledigt.</em></h2><p class="sub">Ein Verkäufer, der nie Feierabend macht. Welche Bausteine Sie brauchen, sehen Sie unten in den Paketen.</p><div class="swipe">Wischen für mehr</div><div class="whys">
 <div class="why"><img src="../assets/biz-ablauf-plan-v2.jpg" style="object-position:50% 30%" alt="" loading="lazy"><div class="in"><h3>CRM: volle Übersicht</h3><p>Jede Anfrage landet mit Name, Telefonnummer und Stand in Ihrem eigenen CRM. Sie sehen, woher der Kunde kommt und wen Sie zurückrufen müssen.</p></div></div>
 <div class="why"><img src="../assets/ki-roboter-auto-v1.jpg" style="object-position:80% 55%" alt="" loading="lazy"><div class="in"><h3>KI-Assistent auf der Website</h3><p>Begrüßt Besucher, beantwortet Fragen und führt sie Schritt für Schritt zur Anfrage. Auch nachts und am Wochenende.</p></div></div>
 <div class="why"><img src="../assets/ki-telefon-roboter-card.jpg" style="object-position:50% 15%" alt="" loading="lazy"><div class="in"><h3>KI-Telefon-Agent</h3><p>Auf Wunsch nimmt er Anrufe an, wenn Sie beim Kunden sind, fragt nach, was gebraucht wird, und trägt Termine ein.</p></div></div>
