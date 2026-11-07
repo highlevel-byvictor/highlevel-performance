@@ -9,7 +9,8 @@
       entwurf: 'p3DtCMK2spodEIfV3_lE',         // Label "Website-Entwurf angefordert" (Fragebogen /website-business/)
       anruf: ''            // Label "Klick auf Telefonnummer"
     },
-    WEBHOOK: 'https://connect.pabbly.com/webhook-listener/webhook/IjU3NjAwNTZmMDYzZTA0MzE1MjY4NTUzNyI_3D_pc/IjU3NjcwNTY4MDYzZjA0MzY1MjY4NTUzMjUxMzEi_pc' // Pabbly "HLP Business – Google Leads"
+    WEBHOOK: 'https://connect.pabbly.com/webhook-listener/webhook/IjU3NjAwNTZmMDYzZTA0MzE1MjY4NTUzNyI_3D_pc/IjU3NjcwNTY4MDYzZjA0MzY1MjY4NTUzMjUxMzEi_pc', // Pabbly "HLP Business – Google Leads"
+    WEBHOOK_WEBSITE: 'https://connect.pabbly.com/webhook-listener/webhook/IjU3NjAwNTZmMDYzZTA0MzE1MjY4NTUzNyI_3D_pc/IjU3NjcwNTZiMDYzNDA0MzM1MjZmNTUzMjUxMzAi_pc' // Pabbly "HLP Website – Landingpage Leads (Entwurf 24 h)"
   };
   var K = 'hlp_consent_v1', loaded = false;
 
@@ -118,7 +119,8 @@
       if(o.get('newsletter') === 'ja'){ doi(o.get('email'), o.get('vorname') || o.get('name'), formular === 'website-entwurf' ? 'website' : 'business'); o.set('newsletter', 'doi'); }
       if(!o.get('quelle')) o.set('quelle', quelle() || 'direkt');
       o.set('formular', formular); o.set('seite', location.href.split('#')[0]); o.set('zeit', new Date().toLocaleString('de-DE', { timeZone: 'Europe/Berlin' })); o.set('datum', new Date().toLocaleDateString('sv-SE', { timeZone: 'Europe/Berlin' }));
-      fetch(CFG.WEBHOOK, { method: 'POST', mode: 'no-cors', body: o, keepalive: true });
+      var hook = formular === 'website-entwurf' ? CFG.WEBHOOK_WEBSITE : CFG.WEBHOOK; // Website-Leads eigener Workflow
+      fetch(hook, { method: 'POST', mode: 'no-cors', body: o, keepalive: true });
     }catch(e){}
   }
 
