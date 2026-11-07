@@ -1,0 +1,301 @@
+{
+ "runde": "2026-11-Gastro-Runde8",
+ "template": "beauty",
+ "firmen": [
+  {
+   "slug": "lucchese-ankum",
+   "firma": "Ristorante Lucchese",
+   "kurzname": "Lucchese",
+   "website": "https://lucchese-ankum.de",
+   "telefon": "05462 887557",
+   "email": "",
+   "adresse": "Hauptstraße 29, 49577 Ankum",
+   "google": [
+    "4,7",
+    394
+   ],
+   "ueber": [
+    "Unsere Küche verbindet die traditionelle mit der modernen italienischen Küche – geprägt von frischen Zutaten, bestem toskanischen Olivenöl und frischen Kräutern, passend zur Jahreszeit.",
+    "Dazu servieren wir Weine aus dem familieneigenen Weingut Lucchese in Venetien. Genuss in all seiner Fülle zu vermitteln, das ist unser Anliegen."
+   ],
+   "checks": [
+    "Glutenfreie Pizza und Pasta, veganer Käse",
+    "Alle Gerichte und Weine auch außer Haus",
+    "Menüs für Gruppen ab sechs Personen"
+   ],
+   "reviews": [
+    [
+     "Ein authentisch italienisches Restaurant mitten im Ort. Das Essen ist köstlich, der Service herzlich – und der Chef schaut selbst, ob alles schmeckt.",
+     "“"
+    ],
+    [
+     "Trotz vollem Haus am Freitagabend haben sie alles möglich gemacht. Die Pizzen waren riesig und herrlich dünn.",
+     "“"
+    ],
+    [
+     "Gutes Essen, faire Preise, schöne Weine und ein freundlicher Service.",
+     "“"
+    ],
+    [
+     "Tolles Team, tolles Essen, eine wunderschöne Location.",
+     "“"
+    ]
+   ],
+   "brief": {
+    "anschrift": [
+     "Ristorante Lucchese",
+     "Herrn Stefano Lucchese",
+     "Hauptstraße 29",
+     "49577 Ankum"
+    ],
+    "anrede": "Sehr geehrter Herr Lucchese,",
+    "problem": "dass Ihre wunderbaren Fotos von Pasta, Antipasti und Ihren eigenen Weinen dort kaum zu sehen sind und Gäste am Handy zuerst ein Cookie-Banner und viel Text bekommen",
+    "suche": "italienischen Restaurant"
+   },
+   "beauty": {
+    "c": {
+     "bg": "#FBF6EC",
+     "pearl": "#F5ECDB",
+     "blush": "#EEDFC4",
+     "acc": "#A3191B",
+     "acc_d": "#7C1012",
+     "champ": "#E2A33A",
+     "ink": "#2A1A12",
+     "mute": "#6E5A4A",
+     "star": "#F2A51B"
+    },
+    "du": false,
+    "wm": [
+     "Ristorante",
+     "Lucchese"
+    ],
+    "wm_sub": "Italienische Küche · Ankum",
+    "logo_badge": "img/logo-badge.jpg",
+    "cta_btn": "Tisch reservieren",
+    "mb_btn": "Tisch reservieren",
+    "hero": "split",
+    "hero_bg_src": "b1",
+    "hero_bg_alt": "Bar im Ristorante Lucchese",
+    "cut_alt": "Ristorante Lucchese",
+    "split": {
+     "imgs": [
+      "b2",
+      "b3",
+      "b4"
+     ],
+     "shape": "frame",
+     "side": "right",
+     "alt": "Gerichte aus dem Ristorante Lucchese",
+     "caps": [
+      [
+       "Unsere Empfehlung",
+       "Pasta, frisch gemacht"
+      ],
+      [
+       "Zum Start",
+       "Antipasti misti"
+      ],
+      [
+       "Für den ganzen Tisch",
+       "Pasta zum Teilen"
+      ]
+     ]
+    },
+    "steam_on": {
+     "b2": "50% 58%",
+     "b4": "38% 55%",
+     "b16": "50% 55%"
+    },
+    "pos": {
+     "b3": "50% 55%"
+    },
+    "eyebrow": "Ristorante Lucchese · Hauptstraße 29 · Ankum",
+    "h1": "Italien, mitten <em>in Ankum.</em>",
+    "sub": "Frische Pasta, Antipasti und Pizza – auch glutenfrei – dazu Weine vom eigenen Familienweingut in Venetien. Lehnen Sie sich zurück, wir kümmern uns um den Rest.",
+    "cta2": "Unsere Küche ansehen",
+    "proof_txt": "Mo, Di, Fr–So ab 17:30 Uhr · Mittwoch und Donnerstag Ruhetag.",
+    "chip": null,
+    "seal": null,
+    "seal_mono": "L",
+    "intro": "Gutes Essen, ein Glas Wein, die Menschen, die man liebt – <em>mehr braucht ein schöner Abend nicht.</em>",
+    "intro_sig": "Familie Lucchese & Team · Ankum",
+    "svc_eyebrow": "Unsere Küche",
+    "svc_h2": "Was Sie bei uns <em>erwartet.</em>",
+    "svc_intro": "Traditionell und modern italienisch – frisch zubereitet und der Jahreszeit angepasst.",
+    "svc": [
+     [
+      "b16",
+      "Pasta",
+      "Hausgemacht, mit bestem toskanischem Olivenöl und frischen Kräutern.",
+      []
+     ],
+     [
+      "b3",
+      "Antipasti misti",
+      "Der perfekte Start in den Abend – zum Teilen am ganzen Tisch.",
+      []
+     ],
+     [
+      "b5",
+      "Dolci",
+      "Tiramisu und hausgemachte Desserts zum krönenden Abschluss.",
+      []
+     ],
+     [
+      "b11",
+      "Hauswein",
+      "Merlot, Carmenère und mehr vom Weingut Lucchese aus Venetien.",
+      []
+     ],
+     [
+      "b15",
+      "Catering",
+      "Italienisches Catering für Ihre Feier – ganz nach Ihren Wünschen.",
+      []
+     ],
+     [
+      "b4",
+      "Außer Haus",
+      "Alle Gerichte und Weine auch zum Mitnehmen.",
+      []
+     ]
+    ],
+    "svc_layout": "cards",
+    "card_more": "Tisch reservieren",
+    "signature": {
+     "img": "b6",
+     "alt": "Familie Lucchese vor der Weinwand",
+     "eyebrow": "Vom eigenen Weingut",
+     "h2": "Unser Wein. <em>Unsere Familie.</em>",
+     "p": "Wir verwöhnen Sie mit Weinen vom familieneigenen Weingut Lucchese in Venetien, im Nordosten Italiens – vom Merlot bis zum CapoEst.",
+     "ritual": [
+      "Merlot, halbtrocken",
+      "Carmenère, trocken",
+      "Prosecco vom Weingut"
+     ],
+     "btn": "Tisch reservieren",
+     "shape": "rect"
+    },
+    "sig_shape": "rect",
+    "moment": {
+     "imgs": [
+      "b12",
+      "b13",
+      "b9"
+     ],
+     "text": "Ein Abend bei uns ist <em>ein kleiner Urlaub</em> – mitten in Ankum.",
+     "alt": "Abendstimmung im Ristorante Lucchese"
+    },
+    "rev_eyebrow": "Das sagen unsere Gäste",
+    "rev_layout": "marquee",
+    "team_img": "b8",
+    "team_ratio": "4/3",
+    "team_alt": "Das Team vom Ristorante Lucchese",
+    "team_eyebrow": "Über uns",
+    "team_h2": "Familie Lucchese <em>und Team.</em>",
+    "steps_h2": "So wird Ihr Abend <em>bei uns.</em>",
+    "cta_h2": "Reservieren Sie <em>Ihren Tisch.</em>",
+    "cta_p": "Rufen Sie uns an oder hinterlassen Sie Ihren Wunschtermin – wir melden uns persönlich zur Bestätigung.",
+    "info": [
+     "<b>Mo, Di, Fr, Sa, So</b> · 17:30 – 22:00 Uhr",
+     "<b>Küche</b> bis 21:00 · <b>Pizza</b> bis 21:30 Uhr",
+     "<b>Mi und Do</b> · Ruhetag"
+    ],
+    "form_kind": "reserve",
+    "form_h3": "Tisch anfragen",
+    "form_p": "Wir rufen Sie zurück und bestätigen Ihre Reservierung.",
+    "form_q": "Anlass (optional)",
+    "form_btn": "Reservierung anfragen",
+    "chips": [
+     "Wann haben Sie geöffnet?",
+     "Gibt es glutenfreie Pizza?",
+     "Tisch reservieren"
+    ],
+    "biz_gen": "des Ristorante",
+    "bot_name": "Sofia",
+    "robot_tag": "Ihre Gastgeberin",
+    "robot_hello": "Buonasera! Ich bin Sofia vom Ristorante Lucchese. Soll ich Ihnen kurz unsere Küche zeigen?",
+    "bot_hi": "Buonasera! Ich bin Sofia. Wobei darf ich helfen?",
+    "tour_l": "Hier sehen Sie unsere Küche – Pasta, Antipasti, Dolci und unseren Hauswein.",
+    "tour_s": "Unsere Weine kommen vom eigenen Familienweingut in Venetien.",
+    "tour_r": "394 Gäste geben uns 4,7 Sterne bei Google.",
+    "tour_u": "Hier lernen Sie Familie Lucchese und das Team kennen.",
+    "tour_k": "Und hier reservieren Sie Ihren Tisch: 05462 887557.",
+    "font_set": "lucchese",
+    "fh": "'Cormorant Garamond',Georgia,serif",
+    "fb": "'Jost',system-ui,sans-serif",
+    "hw": 600,
+    "hls": "-.005em",
+    "r": "18px",
+    "pattern": "none",
+    "edge": "wave",
+    "social": [
+     [
+      "facebook",
+      "https://www.facebook.com/Ristorante-Lucchese-118073174915732/"
+     ]
+    ],
+    "nav": [
+     [
+      "leistungen",
+      "Küche"
+     ],
+     [
+      "signatur",
+      "Wein"
+     ],
+     [
+      "ueber",
+      "Über uns"
+     ],
+     [
+      "kontakt",
+      "Reservieren"
+     ]
+    ]
+   },
+   "bild_urls": [
+    "local://lucchese/05.jpg",
+    "local://lucchese/04.jpg",
+    "local://lucchese/15.jpg",
+    "local://lucchese/14.jpg",
+    "local://lucchese/17.jpg",
+    "local://lucchese/06.jpg",
+    "local://lucchese/12.jpg",
+    "local://lucchese/13.jpg",
+    "local://lucchese/08.jpg",
+    "local://lucchese/10.jpg",
+    "local://lucchese/26.jpg",
+    "local://lucchese/19.jpg",
+    "local://lucchese/27.jpg",
+    "local://lucchese/28.jpg",
+    "local://lucchese/11.jpg",
+    "local://lucchese/16.jpg",
+    "local://lucchese/20.jpg",
+    "local://lucchese/25.jpg",
+    "local://lucchese/22.jpg"
+   ],
+   "steps": [
+    [
+     "Tisch reservieren",
+     "Rufen Sie an – wir halten Ihren Platz frei."
+    ],
+    [
+     "Ankommen",
+     "Wir empfangen Sie herzlich und nehmen uns Zeit."
+    ],
+    [
+     "Genießen",
+     "Frisch zubereitet, mit Liebe angerichtet."
+    ],
+    [
+     "Wiederkommen",
+     "Wir freuen uns schon auf Ihren nächsten Besuch."
+    ]
+   ],
+   "template": "beauty",
+   "theme": "gastro",
+   "min_w": 300
+  }
+ ]
+}
