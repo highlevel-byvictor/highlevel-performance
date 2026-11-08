@@ -77,7 +77,7 @@
       hi: 'Willkommen! Ich bin Levi, Ihr KI-Assistent. Ich beantworte Ihre Fragen und zeige Ihnen gern die Seite. Womit fangen wir an?',
       tease: 'Willkommen! Soll ich Ihnen in 30 Sekunden zeigen, wie wir Ihnen neue Kunden bringen?',
       voice: 'Willkommen bei High Level Performance! Ich bin Levi, Ihr KI-Assistent. Wie kann ich Ihnen helfen?',
-      chips: ['Was macht High Level Performance?', 'Erklär mir eure Leistungen', 'Was kostet eine Website?', 'Was ist die Oktober-Aktion?']
+      chips: ['Was macht High Level Performance?', 'Erklär mir eure Leistungen', 'Was kostet eine Website?', 'Ist meine Region noch frei?']
     },
     artists: {
       hi: 'Yo, willkommen bei High Level! Ich bin Levi, dein KI-Assistent. Frag mich alles zu Studio, Website oder Release – ich zeig dir den Weg.',
@@ -257,7 +257,7 @@
     guideT = setTimeout(function () { guide.classList.remove('on'); guide.querySelector('.lv-bot').classList.remove('point'); }, 4200);
   }
   function highlight(el) { el.classList.remove('lv-hl'); void el.offsetWidth; el.classList.add('lv-hl'); setTimeout(function () { el.classList.remove('lv-hl'); }, 2700); }
-  var NAMES = { 'b-aktion': 'Oktober-Aktion', 'b-spot': 'Werbespot', 'b-system': 'So geht’s', 'b-leistungen': 'Leistungen', 'b-pakete': 'Pakete', 'b-faq': 'FAQ', 'b-kontakt': 'Potenzialanalyse',
+  var NAMES = { 'b-aktion': 'Ihr Ergebnis', 'b-spot': 'Werbespot', 'b-system': 'So geht’s', 'b-leistungen': 'Leistungen', 'b-pakete': 'Pakete', 'b-faq': 'FAQ', 'b-kontakt': 'Potenzialanalyse',
     'a-spot': 'Spot', 'a-studio': 'Studio', 'a-leistungen': 'Leistungen', 'a-victor': 'Viktor', 'a-team': 'Team', 'a-kontakt': 'Musik einreichen' };
   var PAGES = { 'website-business': ['Website für Ihren Betrieb', 'website-business/'], 'website-artists': ['Website für Artists', 'website-artists/'] };
 

@@ -72,7 +72,7 @@
 .b-crew .crew-holo .ios{position:static!important;transform:scale(.82)!important;transform-origin:left bottom!important;animation:none!important}
 }
 
-/* ---------- Oktober-Aktion & 4 Pakete ---------- */
+/* ---------- Ergebnis-/Paket-Section ---------- */
 .aktion{position:relative;padding-block:clamp(48px,7vw,84px);background:radial-gradient(120% 140% at 85% 0%,#1877F2 0%,#0A2A66 55%,#071a44 100%);color:#fff;overflow:hidden}
 .aktion::before{content:"";position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 400' preserveAspectRatio='none'%3E%3Cpath d='M1180 20 L1080 110 L1110 118 L990 220' stroke='%2338C8FF' stroke-opacity='.35' stroke-width='2' fill='none'/%3E%3Cpath d='M20 380 L120 320 L100 312 L220 250' stroke='%2338C8FF' stroke-opacity='.25' stroke-width='2' fill='none'/%3E%3C/svg%3E") center/100% 100% no-repeat;pointer-events:none}
 .ak-grid{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,64px);align-items:center}
@@ -2482,32 +2482,10 @@ chs.forEach(function(ch){ch.addEventListener('click',function(e){var b=e.target.
 document.addEventListener('keydown',function(e){if(document.getElementById('start').hidden)return;if(e.key==='ArrowRight')set('biz');else if(e.key==='ArrowLeft')set('art');else if(e.key==='Escape')set('none')});
 })();
 </script>
-<script>
-/* Oktober-Aktion: Countdown, Plätze, automatisches Ende am 31.10.2026 */
-(function(){
-  var end=new Date('2026-10-31T23:59:59+01:00');
-  function over(){
-    document.querySelectorAll('[data-intro]').forEach(function(el){el.textContent=el.dataset.after;});
-    document.querySelectorAll('[data-intro-hide]').forEach(function(el){el.remove();});
-  }
-  if(new Date()>end){over();return;}
-  document.querySelectorAll('.ak-spots').forEach(function(sp){
-    var f=+sp.dataset.frei,g=+sp.dataset.gesamt;sp.querySelector('b').textContent=f;sp.querySelector('.ak-bar i').style.width=Math.max(4,f/g*100)+'%';
-    if(f<=0){var sec=sp.closest('.aktion');if(sec)sec.remove();}
-  });
-  var cds=[].slice.call(document.querySelectorAll('.ak-cd'));
-  function pad(n){return n<10?'0'+n:''+n;}
-  function tick(){var t=end-new Date();if(t<=0){over();return;}
-    var v={d:Math.floor(t/864e5),h:pad(Math.floor(t/36e5)%24),m:pad(Math.floor(t/6e4)%60),s:pad(Math.floor(t/1e3)%60)};
-    cds.forEach(function(c){['d','h','m','s'].forEach(function(k){var e=c.querySelector('[data-cd="'+k+'"]');if(e)e.textContent=v[k];});});
-    setTimeout(tick,1000);}
-  if(cds.length)tick();
-})();
-</script>
 <script src="../assets/hlp-ads.js?v=20261026"></script>
 <script src="../assets/i18n.js?v=20261014b"></script>
 <script>window.LEVI_VOICE=true;</script>
-<script src="../assets/levi/levi.js" defer></script>
+<script src="../assets/levi/levi.js?v=20261108" defer></script>
 <script>
 (function(){
   document.querySelectorAll('form[data-nl]').forEach(function(f){

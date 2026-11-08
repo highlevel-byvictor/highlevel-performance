@@ -70,7 +70,7 @@
 .b-crew .crew-holo .ios{position:static!important;transform:scale(.82)!important;transform-origin:left bottom!important;animation:none!important}
 }
 
-/* ---------- Oktober-Aktion & 4 Pakete ---------- */
+/* ---------- Ergebnis-/Paket-Section ---------- */
 .aktion{position:relative;padding-block:clamp(48px,7vw,84px);background:radial-gradient(120% 140% at 85% 0%,#1877F2 0%,#0A2A66 55%,#071a44 100%);color:#fff;overflow:hidden}
 .aktion::before{content:"";position:absolute;inset:0;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1200 400' preserveAspectRatio='none'%3E%3Cpath d='M1180 20 L1080 110 L1110 118 L990 220' stroke='%2338C8FF' stroke-opacity='.35' stroke-width='2' fill='none'/%3E%3Cpath d='M20 380 L120 320 L100 312 L220 250' stroke='%2338C8FF' stroke-opacity='.25' stroke-width='2' fill='none'/%3E%3C/svg%3E") center/100% 100% no-repeat;pointer-events:none}
 .ak-grid{position:relative;display:grid;grid-template-columns:1.15fr .85fr;gap:clamp(28px,5vw,64px);align-items:center}
@@ -409,7 +409,7 @@
 @media (max-width:640px){.lang button{padding:4px 7px 4px 4px;font-size:12px}.lang button svg{width:18px;height:18px}.nav-r{gap:8px}.a-nav .btn{padding:9px 12px;font-size:12.5px}}
 @media (max-width:440px){.lang button span{display:none}.lang button{padding:4px}.a-nav .btn{white-space:nowrap;padding:9px 11px;font-size:12px}}
 .vk-qr{display:inline-flex;align-items:center;gap:12px;text-decoration:none;color:inherit}.vk-qr img{width:64px;height:64px;background:#fff;padding:5px;border-radius:10px;border:1px solid rgba(10,42,102,.15);transition:transform .2s}.vk-qr:hover img{transform:scale(1.06)}.vk-qr b{display:block;font-size:13.5px}.vk-qr small{display:block;font-size:12px;opacity:.75}
-#a-aktion .ak-pk-head{max-width:760px;margin:0 0 34px}#a-aktion .ak-pk-head h2{margin:14px 0 12px}#a-aktion .ak-pk-head p{opacity:.85}
+#a-aktion .ak-pk{grid-template-columns:repeat(4,1fr)}@media (max-width:1180px){#a-aktion .ak-pk{grid-template-columns:repeat(2,1fr)}}@media (max-width:640px){#a-aktion .ak-pk{grid-template-columns:1fr}}#a-aktion .ak-pk-head{max-width:760px;margin:0 0 34px}#a-aktion .ak-pk-head h2{margin:14px 0 12px}#a-aktion .ak-pk-head p{opacity:.85}
 
 /* HLP 11/2026: weiche Farbübergänge + große Kundenstimme */
 .nx-stats{position:relative}
@@ -1877,56 +1877,36 @@ form .btn{justify-content:center;margin-top:6px}
 <section class="aktion art" id="a-aktion" aria-label="Website-Pakete für Artists">
     <svg class="ak-bolts" viewBox="0 0 1200 600" preserveAspectRatio="none" aria-hidden="true"><path class="b1" d="M1150 -10 L1060 120 L1092 128 L980 270 L1012 278 L900 420"/><path class="b2" d="M60 610 L150 500 L124 492 L240 380 L214 372 L320 270"/><path class="b3" d="M640 -10 L590 80 L612 86 L548 190"/></svg>
     <span class="ak-spark s1"></span><span class="ak-spark s2"></span><span class="ak-spark s3"></span><span class="ak-spark s4"></span>
-    <div class="wrap ak-grid" data-intro-hide>
-      <div class="ak-copy">
-        <span class="ak-live"><i></i>Live · Oktober-Aktion</span>
-        <h2>Deine Artist-Website mit <em>Fan-Assistent</em> und Social-Autopilot.</h2>
-        <p>Das neue Paket <b>Artist Smart</b> zum Einführungspreis – nur bis 31. Oktober.</p>
-        <div class="ak-visual" aria-hidden="true">
-          <img class="ak-wow" src="assets/aktion-artist-v1.webp" alt="" loading="lazy" width="608" height="760">
-          <div class="ak-float ak-chart"><span>Deine Reichweite</span><div class="ak-bars"><i></i><i></i><i></i><i></i><i></i><i></i></div><svg viewBox="0 0 120 50"><path d="M4 44 L40 34 L64 38 L116 6" fill="none" stroke="#ff6b6b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/><path d="M104 6 L116 6 L114 18" fill="none" stroke="#ff6b6b" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-          <div class="ak-float ak-ping"><b>+1</b>Neue Booking-Anfrage</div>
-          <div class="ak-float ak-post"><i></i>Release läuft auf 5 Kanälen</div>
-        </div>
-        <ul class="ak-feat">
-          <li><b>Fan-Assistent</b>beantwortet Booking- und Fan-Fragen</li>
-          <li><b>Social-Autopilot</b>einmal posten, überall gehört</li>
-          <li><b>Release-Banner</b>dein neuer Song ganz oben</li>
-        </ul>
-      </div>
-      <div class="ak-card">
-        <span class="ak-k">Einführungspreis</span>
-        <div class="ak-price">995 €<small>einmalig</small></div>
-        <div class="ak-was">danach 1.990 € · + 149 € / Monat</div>
-        <div class="ak-cd" aria-label="Verbleibende Zeit"><div><b data-cd="d">--</b><span>Tage</span></div><div><b data-cd="h">--</b><span>Std</span></div><div><b data-cd="m">--</b><span>Min</span></div><div><b data-cd="s">--</b><span>Sek</span></div></div>
-        <div class="ak-gs"><b>Handarbeit statt Baukasten</b>Jede Website bauen wir persönlich mit dir. Deshalb starten wir pro Woche nur so viele Projekte, wie wir sauber umsetzen können.</div>
-        <a class="btn btn-red ak-btn" href="website-artists/#fragebogen">Einführungspreis sichern</a>
-        <small class="ak-fine">Gilt nur für das Paket Artist Smart. Endpreis, keine Umsatzsteuer nach § 19 UStG.</small>
-      </div>
-    </div>
     <div class="wrap">
-      <div class="ak-pk-head" data-intro-show style="display:none"><span class="ak-live"><i></i>Website-Pakete für Artists</span><h2>Deine Artist-Website. <em>Drei Pakete.</em></h2><p>Von der professionellen Website bis zum kompletten System für mehr Hörer und Bookings. Festpreis, ohne versteckte Kosten.</p></div>
+      <div class="ak-pk-head"><span class="ak-live"><i></i>Website-Pakete für Artists</span><h2>Deine Artist-Website. <em>Vier Pakete.</em></h2><p>Von der professionellen Website bis zum kompletten System für mehr Hörer und Bookings. Festpreis, ohne versteckte Kosten.</p></div>
       <div class="ak-pk">
         <div class="pk">
           <span class="pk-tag">Website</span><h3>Artist Start</h3>
-          <p class="pk-for">Deine professionelle Artist-Website, die dich buchbar macht.</p>
-          <div class="pk-price">1.290 €<small>einmalig · + 59 € / Monat</small></div>
-          <ul><li>Artist-Website mit Booking-Formular</li><li>Musik, Videos und Pressekit (EPK)</li><li>Links zu Spotify, YouTube und Socials</li><li>Hosting und Pflege</li></ul>
+          <p class="pk-for">Deine professionelle Website im High-Level-Stil.</p>
+          <div class="pk-price">790 €<small>einmalig · + 39 € / Monat</small></div>
+          <ul><li>One-Page-Website</li><li>Links zu Spotify, YouTube und Socials</li><li>Kontaktformular, Impressum und Datenschutz</li><li>Domain-Einrichtung</li></ul>
+          <a class="btn pk-ghost" href="website-artists/#fragebogen">Entwurf anfordern</a>
+        </div>
+        <div class="pk">
+          <span class="pk-tag">Neu</span><h3>Artist Smart</h3>
+          <p class="pk-for">Website plus Fan-Assistent und Social-Autopilot.</p>
+          <div class="pk-price">1.190 €<small>einmalig · + 89 € / Monat</small></div>
+          <ul><li>Alles aus Start</li><li>Fan-Assistent beantwortet Booking- und Fan-Fragen</li><li>Social-Autopilot für alle Kanäle</li><li>Release-Banner für neue Songs und Konzerte</li></ul>
           <a class="btn pk-ghost" href="website-artists/#fragebogen">Entwurf anfordern</a>
         </div>
         <div class="pk hot">
-          <span class="pk-badge" data-intro-hide>Oktober-Aktion</span><span class="pk-badge" data-intro-show style="display:none">Beliebt</span>
-          <span class="pk-tag">Neu</span><h3>Artist Smart</h3>
-          <p class="pk-for">Website plus Fan-Assistent und Social-Autopilot.</p>
-          <div class="pk-price" data-intro-hide>995 €<s>1.990 €</s><small>Einführungspreis bis 31.10. · + 149 € / Monat</small></div><div class="pk-price" data-intro-show style="display:none">1.990 €<small>einmalig · + 149 € / Monat</small></div>
-          <ul><li>Alles aus Start</li><li>Fan-Assistent beantwortet Booking- und Fan-Fragen</li><li>Social-Autopilot für alle Kanäle</li><li>Release-Banner: dein neuer Song ganz oben</li></ul>
+          <span class="pk-badge">Empfohlen</span>
+          <span class="pk-tag">Pro</span><h3>Artist Pro</h3>
+          <p class="pk-for">Alles, was Booker und Fans von dir sehen wollen.</p>
+          <div class="pk-price">1.490 €<small>einmalig · + 129 € / Monat</small></div>
+          <ul><li>Alles aus Smart</li><li>Digitale Künstlermappe (EPK) für Booker</li><li>Musikvideo- und Release-Bereich</li><li>Booking-Formular und 2 Änderungen pro Monat</li></ul>
           <a class="btn btn-red ak-btn" style="margin-top:0" href="website-artists/#fragebogen">Entwurf anfordern</a>
         </div>
         <div class="pk">
-          <span class="pk-tag">Premium</span><h3>Artist Wachstum</h3>
+          <span class="pk-tag">Premium</span><h3>Artist Komplett</h3>
           <p class="pk-for">Das komplette System für mehr Hörer und Bookings.</p>
-          <div class="pk-price">2.490 €<small>einmalig · + ab 790 € / Monat</small></div>
-          <ul><li>Alles aus Smart</li><li>Release-Kampagnen auf Meta mit Betreuung</li><li>Foto- und Reel-Dreh im Studio</li><li>Booking-Anfragen werden für dich vorqualifiziert</li></ul>
+          <div class="pk-price">1.490 €<small>einmalig · + ab 349 € / Monat</small></div>
+          <ul><li>Alles aus Pro</li><li>Reels und Content</li><li>Werbung auf Meta und TikTok</li><li>Release-Strategie</li></ul>
           <a class="btn pk-ghost" href="#a-kontakt" data-scroll>Erstgespräch</a>
         </div>
       </div>
@@ -2464,33 +2444,10 @@ chs.forEach(function(ch){ch.addEventListener('click',function(e){var b=e.target.
 document.addEventListener('keydown',function(e){if(document.getElementById('start').hidden)return;if(e.key==='ArrowRight')set('biz');else if(e.key==='ArrowLeft')set('art');else if(e.key==='Escape')set('none')});
 })();
 </script>
-<script>
-/* Oktober-Aktion: Countdown, Plätze, automatisches Ende am 31.10.2026 */
-(function(){
-  var end=new Date('2026-10-31T23:59:59+01:00');
-  function over(){
-    document.querySelectorAll('[data-intro]').forEach(function(el){el.textContent=el.dataset.after;});
-    document.querySelectorAll('[data-intro-hide]').forEach(function(el){el.remove();});
-    document.querySelectorAll('[data-intro-show]').forEach(function(el){el.style.display='';});
-  }
-  if(new Date()>end){over();return;}
-  document.querySelectorAll('.ak-spots').forEach(function(sp){
-    var f=+sp.dataset.frei,g=+sp.dataset.gesamt;sp.querySelector('b').textContent=f;sp.querySelector('.ak-bar i').style.width=Math.max(4,f/g*100)+'%';
-    if(f<=0){var sec=sp.closest('.aktion');if(sec)sec.remove();}
-  });
-  var cds=[].slice.call(document.querySelectorAll('.ak-cd'));
-  function pad(n){return n<10?'0'+n:''+n;}
-  function tick(){var t=end-new Date();if(t<=0){over();return;}
-    var v={d:Math.floor(t/864e5),h:pad(Math.floor(t/36e5)%24),m:pad(Math.floor(t/6e4)%60),s:pad(Math.floor(t/1e3)%60)};
-    cds.forEach(function(c){['d','h','m','s'].forEach(function(k){var e=c.querySelector('[data-cd="'+k+'"]');if(e)e.textContent=v[k];});});
-    setTimeout(tick,1000);}
-  if(cds.length)tick();
-})();
-</script>
 <script src="assets/hlp-ads.js?v=20261026"></script>
 <script src="assets/i18n.js?v=20261014b"></script>
 <script>window.LEVI_VOICE=true;</script>
-<script src="assets/levi/levi.js" defer></script>
+<script src="assets/levi/levi.js?v=20261108" defer></script>
 <script>
 (function(){
   document.querySelectorAll('form[data-nl]').forEach(function(f){
