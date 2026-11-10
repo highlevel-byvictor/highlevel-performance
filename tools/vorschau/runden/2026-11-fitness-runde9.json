@@ -2394,19 +2394,14 @@
       "eyebrow": "Rundflug",
       "h2": "Willkommen <em>im mPower.</em>",
       "p": "Flieg einmal durch unser Studio: viel Platz, moderne Geräte und alles, was du für dein Training brauchst."
-     },
-     {
-      "at": "ueber",
-      "form": "wide",
-      "src": "img/mp_wer.mp4",
-      "poster": "img/mp_wer.jpg",
-      "ton": true,
-      "alt": "Video: Wer sind wir und was machen wir",
-      "eyebrow": "Wer wir sind",
-      "h2": "Was wir <em>für dich machen.</em>",
-      "p": "In zwei Minuten erklären wir dir, wer hinter dem mPower steht und wie wir dich zu deinem Ziel bringen."
      }
     ],
+    "hero_video": {
+     "src": "img/mp_wer.mp4",
+     "poster": "img/mp_wer.jpg",
+     "title": "Deine Beratung – direkt online!",
+     "alt": "Video: Wer sind wir und was machen wir"
+    },
     "hero_bg_alt": "Training bei mPower",
     "cut_alt": "Athletin bei mPower",
     "pos": {

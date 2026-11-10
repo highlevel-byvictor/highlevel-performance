@@ -590,7 +590,7 @@ body.has-sbar .hero .wrap{padding-top:150px}
 .svid-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,7vw,110px);align-items:center}
 .svid-f{justify-self:center;width:min(380px,100%);aspect-ratio:406/720;border-radius:calc(var(--r) * 1.1);overflow:hidden;padding:10px;background:linear-gradient(140deg,var(--champ),color-mix(in srgb,var(--champ) 40%,#fff),var(--champ));box-shadow:0 60px 100px -55px color-mix(in srgb,var(--acc-d) 80%,transparent)}
 .svid-f video{width:100%;height:100%;object-fit:cover;border-radius:var(--r);display:block;background:var(--pearl)}
-.svid h2{margin:22px 0 24px}.svid.sq .svid-f{width:min(520px,100%);aspect-ratio:1;padding:8px}.svid.flip .svid-f{order:2}.svid.wide.flip .svid-in{grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr)}@media (max-width:900px){.svid.flip .svid-f{order:0}}
+.svid h2{margin:22px 0 24px}.h-vid{position:relative;z-index:2;align-self:center;justify-self:end;width:min(560px,100%);padding:14px 14px 16px;border-radius:calc(var(--r) * .7);background:color-mix(in srgb,var(--bg) 94%,transparent);box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}.h-vid .hv-t{margin:4px 6px 12px;font:var(--hw) clamp(18px,1.6vw,24px)/1.1 var(--fh);text-transform:var(--hcase,none);letter-spacing:.02em;color:var(--ink);text-align:center}.h-vid video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:calc(var(--r) * .45);background:#000}@media (max-width:900px){.h-vid{justify-self:stretch;width:100%;margin-top:22px}}.svid.sq .svid-f{width:min(520px,100%);aspect-ratio:1;padding:8px}.svid.flip .svid-f{order:2}.svid.wide.flip .svid-in{grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr)}@media (max-width:900px){.svid.flip .svid-f{order:0}}
 .svid.wide .svid-in{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr)}.svid.wide .svid-f{width:100%;aspect-ratio:16/9;padding:8px}
 
 /* ---------- Gastro: leichter Dampf über warmen Gerichten ---------- */
@@ -784,6 +784,7 @@ html.qa .steam{display:none}
    <p>{{ B.proof_txt }}</p>
    {% if B.get('side_extra') %}<p class="hs-x">{{ B.side_extra | safe }}</p>{% endif %}
   </div>{% endif %}
+  {% if B.get('hero_video') %}{% set HV = B.hero_video %}<div class="h-vid h-load d3"><p class="hv-t">{{ HV.title }}</p><video controls playsinline preload="metadata" poster="{{ HV.poster }}" aria-label="{{ HV.get('alt','Video') }}"><source src="{{ HV.src }}" type="video/mp4"></video></div>{% endif %}
  </div>
  <div class="h-wave">{{ wave | safe }}</div>
 </section>
