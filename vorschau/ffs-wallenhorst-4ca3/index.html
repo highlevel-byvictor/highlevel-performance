@@ -222,6 +222,7 @@ h2{font-size:clamp(38px,4.6vw,68px)}
 .pdiv span{width:9px;height:9px;transform:rotate(45deg);background:var(--champ);box-shadow:0 0 0 5px var(--bg),0 0 0 6px color-mix(in srgb,var(--champ) 60%,transparent)}
 .hero-pat{position:absolute;inset:0;z-index:-2;background:radial-gradient(60% 70% at 85% 30%,color-mix(in srgb,var(--blush) 70%,transparent),transparent 70%),linear-gradient(160deg,var(--pearl),var(--bg) 60%)}
 .pat-stripes .hero-pat{background:var(--pat) 0 0/var(--pat-s),linear-gradient(160deg,var(--pearl),var(--bg) 60%)}
+.hero-bg.sbg{inset:-3%;animation:none;transform:none}.hero-bg.vid{width:106%;height:106%;object-fit:cover;filter:blur(4px) saturate(.9)}@media (prefers-reduced-motion:reduce){.hero-bg.vid{display:none}}.hero-pat.over{background:none}.hero-pat.over::after{background:linear-gradient(90deg,color-mix(in srgb,var(--bg) 82%,transparent) 0%,color-mix(in srgb,var(--bg) 62%,transparent) 40%,color-mix(in srgb,var(--bg) 12%,transparent) 100%),linear-gradient(180deg,transparent 75%,var(--bg) 100%)}.side-left .hero-pat.over::after{background:linear-gradient(270deg,color-mix(in srgb,var(--bg) 82%,transparent) 0%,color-mix(in srgb,var(--bg) 62%,transparent) 40%,color-mix(in srgb,var(--bg) 12%,transparent) 100%),linear-gradient(180deg,transparent 75%,var(--bg) 100%)}@media (max-width:900px){.hero-pat.over::after{background:linear-gradient(180deg,color-mix(in srgb,var(--bg) 70%,transparent),color-mix(in srgb,var(--bg) 86%,transparent) 60%,var(--bg))}}
 .hero-pat::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,color-mix(in srgb,var(--bg) 88%,transparent) 40%,color-mix(in srgb,var(--bg) 55%,transparent) 100%)}
 
 
@@ -619,7 +620,7 @@ body.has-sbar .hero .wrap{padding-top:150px}
 .svid-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,7vw,110px);align-items:center}
 .svid-f{justify-self:center;width:min(380px,100%);aspect-ratio:406/720;border-radius:calc(var(--r) * 1.1);overflow:hidden;padding:10px;background:linear-gradient(140deg,var(--champ),color-mix(in srgb,var(--champ) 40%,#fff),var(--champ));box-shadow:0 60px 100px -55px color-mix(in srgb,var(--acc-d) 80%,transparent)}
 .svid-f video{width:100%;height:100%;object-fit:cover;border-radius:var(--r);display:block;background:var(--pearl)}
-.svid h2{margin:22px 0 24px}
+.svid h2{margin:22px 0 24px}.svid.sq .svid-f{width:min(520px,100%);aspect-ratio:1;padding:8px}.svid.flip .svid-f{order:2}.svid.wide.flip .svid-in{grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr)}@media (max-width:900px){.svid.flip .svid-f{order:0}}
 .svid.wide .svid-in{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr)}.svid.wide .svid-f{width:100%;aspect-ratio:16/9;padding:8px}
 
 /* ---------- Gastro: leichter Dampf über warmen Gerichten ---------- */
@@ -761,6 +762,7 @@ html.qa .steam{display:none}
 </head>
 <body class="h-full h-slides pat-none has-sbar s-cards r-marquee"><div class="sbar" id="sbar"><div class="wrap"><a href="tel:+49540759511"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>05407 59511</a><span class="ad">Marie-Curie-Straße 5, 49134 Wallenhorst</span><span class="so"><a href="https://www.instagram.com/ffs_wallenhorst/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a><a href="https://www.facebook.com/ffs.wallenhorst/" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V6.8c0-.8.5-1 1-1h2V2.5h-2.8C11.3 2.5 10.6 4.6 10.6 6v2.5H8.5V12h2.1v9.5H14V12h2.7l.4-3.5z"/></svg></a><a href="https://www.youtube.com/channel/UChgpxylvMetwdgafgvOFCcg" target="_blank" rel="noopener" aria-label="Youtube"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M21.6 7.2a2.6 2.6 0 0 0-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4A2.6 2.6 0 0 0 2.4 7.2 27 27 0 0 0 2 12a27 27 0 0 0 .4 4.8 2.6 2.6 0 0 0 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4a2.6 2.6 0 0 0 1.8-1.8A27 27 0 0 0 22 12a27 27 0 0 0-.4-4.8zM10 15V9l5.2 3z"/></svg></a></span></div></div>
 
+
 <header class="top" id="top"><div class="wrap">
  <a class="wm" href="#"><span><b>FFS <i></i></b><small>Sport- und Wellnesspark Wallenhorst · seit 1992</small></span></a>
  <nav class="nav"><a href="#leistungen">Erleben</a><a href="#bewertungen">Stimmen</a><a href="#ueber">Über uns</a><a href="#kontakt">Termin</a></nav>
@@ -788,6 +790,7 @@ html.qa .steam{display:none}
 </section>
 
 
+
 <div class="rb-w"><div class="ribbon" aria-hidden="true"><div class="rb-in"><span>Fitness</span><i>✦</i><span>30+ Kurse</span><i>✦</i><span>Saunalandschaft</span><i>✦</i><span>Rehasport &amp; Herzsport</span><i>✦</i><span>Sauna-Bistro</span><i>✦</i><span>Fitness</span><i>✦</i><span>30+ Kurse</span><i>✦</i><span>Saunalandschaft</span><i>✦</i><span>Rehasport &amp; Herzsport</span><i>✦</i><span>Sauna-Bistro</span><i>✦</i><span>Fitness</span><i>✦</i><span>30+ Kurse</span><i>✦</i><span>Saunalandschaft</span><i>✦</i><span>Rehasport &amp; Herzsport</span><i>✦</i><span>Sauna-Bistro</span><i>✦</i><span>Fitness</span><i>✦</i><span>30+ Kurse</span><i>✦</i><span>Saunalandschaft</span><i>✦</i><span>Rehasport &amp; Herzsport</span><i>✦</i><span>Sauna-Bistro</span><i>✦</i></div></div></div>
 <section class="counters"><div class="wrap">
  <p class="ct-intro rv">Fitness, Wellness und Gesundheit – <em>unter einem Dach.</em></p>
@@ -805,6 +808,13 @@ html.qa .steam{display:none}
  
 </div></section>
 
+<section class="svid wide" id="video-leistungen-1"><div class="wrap svid-in">
+ <div class="svid-f rv"><video controls preload="metadata" poster="img/ffs2.jpg" aria-label="Video: Trainingswelt im FFS"><source src="img/ffs2.mp4" type="video/mp4"></video></div>
+ <div><span class="eyebrow rv">Trainingswelt</span><h2 class="rv d1">Trainieren <em>im FFS.</em></h2><p class="lead rv d2">Ein Rundgang durch unsere Trainingswelt: Geräte, Kursräume und Betreuung für jedes Ziel.</p><a class="btn btn-p rv d3" href="#kontakt" style="margin-top:34px">Kennenlern-Termin buchen</a></div>
+</div></section><section class="svid wide flip" id="video-leistungen-2"><div class="wrap svid-in">
+ <div class="svid-f rv"><video controls preload="metadata" poster="img/ffs1.jpg" aria-label="Video: Wellnesswelt im FFS"><source src="img/ffs1.mp4" type="video/mp4"></video></div>
+ <div><span class="eyebrow rv">Wellnesswelt</span><h2 class="rv d1">Abschalten <em>nach dem Training.</em></h2><p class="lead rv d2">Holzgefeuerte Erdsauna, Ruheräume und Wärme: So sieht Erholung bei uns aus.</p><a class="btn btn-p rv d3" href="#kontakt" style="margin-top:34px">Kennenlern-Termin buchen</a></div>
+</div></section>
 
 <section class="sig-sec" id="signatur">
  <div class="wtop"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 90V58a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0V90z"/></svg></div>
@@ -824,12 +834,14 @@ html.qa .steam{display:none}
 
 
 
+
 <section class="mband"><div class="wrap">
  <div class="mb-in mb-n3">
   <figure class="mb-f rv d1"><img src="img/b2.jpg" alt="Wellness im FFS Wallenhorst" loading="lazy" decoding="async"></figure><figure class="mb-f rv d2"><img src="img/b6.jpg" alt="Wellness im FFS Wallenhorst" loading="lazy" decoding="async"></figure><figure class="mb-f rv d3"><img src="img/b3.jpg" alt="Wellness im FFS Wallenhorst" loading="lazy" decoding="async"></figure>
  </div>
  <div class="mb-card rv d2"><span class="mb-orn" aria-hidden="true"></span><p>Ein Tag im FFS fühlt sich an <em>wie ein kleiner Urlaub.</em></p></div>
 </div></section>
+
 <section class="rev" id="bewertungen"><div class="wrap">
  
  <span class="eyebrow rv">Das sagen unsere Mitglieder</span>
@@ -839,6 +851,8 @@ html.qa .steam{display:none}
 </div></section>
 
 <div class="pdiv" aria-hidden="true"><span></span></div>
+
+
 
 
 <section class="team" id="ueber"><div class="wrap team-in">
@@ -853,6 +867,7 @@ html.qa .steam{display:none}
 
 
 
+
 <div class="pdiv" aria-hidden="true"><span></span></div>
 <section class="flow"><div class="wrap">
  <span class="eyebrow rv">Ablauf</span>
@@ -862,6 +877,7 @@ html.qa .steam{display:none}
   <ol><li><span class="dot">1</span><div><b>Probetraining sichern</b><span>Anrufen oder Formular ausfüllen.</span></div></li><li><span class="dot">2</span><div><b>Kennenlernen</b><span>Studio, Trainer und deine Ziele.</span></div></li><li><span class="dot">3</span><div><b>Dein Plan</b><span>Ein Trainingsplan, der zu dir passt.</span></div></li><li><span class="dot">4</span><div><b>Dranbleiben</b><span>Mit Betreuung Schritt für Schritt zum Ziel.</span></div></li></ol>
  </div>
 </div></section>
+
 
 <section class="ct" id="kontakt">
  <div class="wtop"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 90V58a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0a30 30 0 0 1 60 0V90z"/></svg></div>

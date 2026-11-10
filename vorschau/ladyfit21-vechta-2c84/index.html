@@ -187,6 +187,7 @@ h2{font-size:clamp(38px,4.6vw,68px)}
 .pdiv span{width:9px;height:9px;transform:rotate(45deg);background:var(--champ);box-shadow:0 0 0 5px var(--bg),0 0 0 6px color-mix(in srgb,var(--champ) 60%,transparent)}
 .hero-pat{position:absolute;inset:0;z-index:-2;background:radial-gradient(60% 70% at 85% 30%,color-mix(in srgb,var(--blush) 70%,transparent),transparent 70%),linear-gradient(160deg,var(--pearl),var(--bg) 60%)}
 .pat-stripes .hero-pat{background:var(--pat) 0 0/var(--pat-s),linear-gradient(160deg,var(--pearl),var(--bg) 60%)}
+.hero-bg.sbg{inset:-3%;animation:none;transform:none}.hero-bg.vid{width:106%;height:106%;object-fit:cover;filter:blur(4px) saturate(.9)}@media (prefers-reduced-motion:reduce){.hero-bg.vid{display:none}}.hero-pat.over{background:none}.hero-pat.over::after{background:linear-gradient(90deg,color-mix(in srgb,var(--bg) 82%,transparent) 0%,color-mix(in srgb,var(--bg) 62%,transparent) 40%,color-mix(in srgb,var(--bg) 12%,transparent) 100%),linear-gradient(180deg,transparent 75%,var(--bg) 100%)}.side-left .hero-pat.over::after{background:linear-gradient(270deg,color-mix(in srgb,var(--bg) 82%,transparent) 0%,color-mix(in srgb,var(--bg) 62%,transparent) 40%,color-mix(in srgb,var(--bg) 12%,transparent) 100%),linear-gradient(180deg,transparent 75%,var(--bg) 100%)}@media (max-width:900px){.hero-pat.over::after{background:linear-gradient(180deg,color-mix(in srgb,var(--bg) 70%,transparent),color-mix(in srgb,var(--bg) 86%,transparent) 60%,var(--bg))}}
 .hero-pat::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,color-mix(in srgb,var(--bg) 88%,transparent) 40%,color-mix(in srgb,var(--bg) 55%,transparent) 100%)}
 
 
@@ -584,7 +585,7 @@ body.has-sbar .hero .wrap{padding-top:150px}
 .svid-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,7vw,110px);align-items:center}
 .svid-f{justify-self:center;width:min(380px,100%);aspect-ratio:406/720;border-radius:calc(var(--r) * 1.1);overflow:hidden;padding:10px;background:linear-gradient(140deg,var(--champ),color-mix(in srgb,var(--champ) 40%,#fff),var(--champ));box-shadow:0 60px 100px -55px color-mix(in srgb,var(--acc-d) 80%,transparent)}
 .svid-f video{width:100%;height:100%;object-fit:cover;border-radius:var(--r);display:block;background:var(--pearl)}
-.svid h2{margin:22px 0 24px}
+.svid h2{margin:22px 0 24px}.svid.sq .svid-f{width:min(520px,100%);aspect-ratio:1;padding:8px}.svid.flip .svid-f{order:2}.svid.wide.flip .svid-in{grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr)}@media (max-width:900px){.svid.flip .svid-f{order:0}}
 .svid.wide .svid-in{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr)}.svid.wide .svid-f{width:100%;aspect-ratio:16/9;padding:8px}
 
 /* ---------- Gastro: leichter Dampf über warmen Gerichten ---------- */
@@ -726,6 +727,7 @@ html.qa .steam{display:none}
 </head>
 <body class="h-split side-right pat-none has-sbar s-cards r-marquee"><div class="sbar" id="sbar"><div class="wrap"><a href="tel:+4944411597900"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8 9.9a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2z"/></svg>04441 1597900</a><span class="ad">Lohner Straße 34, 49377 Vechta</span><span class="so"><a href="https://www.instagram.com/ladyfit21/" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a><a href="https://www.facebook.com/LadyFit21" target="_blank" rel="noopener" aria-label="Facebook"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M14 8.5V6.8c0-.8.5-1 1-1h2V2.5h-2.8C11.3 2.5 10.6 4.6 10.6 6v2.5H8.5V12h2.1v9.5H14V12h2.7l.4-3.5z"/></svg></a></span></div></div>
 
+
 <header class="top" id="top"><div class="wrap">
  <a class="wm" href="#"><span><b>LadyFit <i>21</i></b><small>Fitness &amp; Gesundheit · nur für Frauen</small></span></a>
  <nav class="nav"><a href="#leistungen">Angebot</a><a href="#bewertungen">Stimmen</a><a href="#ueber">Team</a><a href="#kontakt">Probewoche</a></nav>
@@ -733,7 +735,7 @@ html.qa .steam{display:none}
 </div></header>
 
 <section class="hero" aria-label="Willkommen">
- <div class="hero-pat" aria-hidden="true"></div>
+ <div class="hero-bg sbg" role="img" aria-label="Studio von LadyFit21"></div><div class="hero-pat over" aria-hidden="true"></div>
  
  <div class="wrap">
   <div class="h-txt">
@@ -760,6 +762,7 @@ html.qa .steam{display:none}
 </section>
 
 
+
 <div class="rb-w"><div class="ribbon" aria-hidden="true"><div class="rb-in"><span>Nur für Frauen</span><i>✦</i><span>Reformer Pilates</span><i>✦</i><span>Aerial Yoga</span><i>✦</i><span>EGYM</span><i>✦</i><span>30+ Kurse</span><i>✦</i><span>Rehasport</span><i>✦</i><span>Nur für Frauen</span><i>✦</i><span>Reformer Pilates</span><i>✦</i><span>Aerial Yoga</span><i>✦</i><span>EGYM</span><i>✦</i><span>30+ Kurse</span><i>✦</i><span>Rehasport</span><i>✦</i><span>Nur für Frauen</span><i>✦</i><span>Reformer Pilates</span><i>✦</i><span>Aerial Yoga</span><i>✦</i><span>EGYM</span><i>✦</i><span>30+ Kurse</span><i>✦</i><span>Rehasport</span><i>✦</i><span>Nur für Frauen</span><i>✦</i><span>Reformer Pilates</span><i>✦</i><span>Aerial Yoga</span><i>✦</i><span>EGYM</span><i>✦</i><span>30+ Kurse</span><i>✦</i><span>Rehasport</span><i>✦</i></div></div></div>
 <section class="counters"><div class="wrap">
  <p class="ct-intro rv">Deine Zeit. Dein Training. Dein Erfolg. <em>Erlebe den Unterschied.</em></p>
@@ -776,6 +779,7 @@ html.qa .steam{display:none}
  <div class="svc-cards"><a class="card rv d1" href="#kontakt"><div class="ci"><img src="img/b2.jpg" alt="Gerätetraining" loading="lazy" decoding="async"></div><div><h3>Gerätetraining</h3><p>Neue Geräte, nie überfüllt – mit Trainerin an deiner Seite.</p><span class="more">Probewoche sichern</span></div></a><a class="card rv d2" href="#kontakt"><div class="ci"><img src="img/b5.jpg" alt="EGYM-Training" loading="lazy" decoding="async"></div><div><h3>EGYM-Training</h3><p>Smart, geführt und effektiv – perfekt für deinen Einstieg.</p><span class="more">Probewoche sichern</span></div></a><a class="card rv d3" href="#kontakt"><div class="ci"><img src="img/b6.jpg" alt="Kurse" loading="lazy" decoding="async"></div><div><h3>Kurse</h3><p>Über 30 Kurse pro Woche – Pilates, Aerial Yoga, Reformer Pilates und mehr.</p><span class="more">Probewoche sichern</span></div></a><a class="card rv d1" href="#kontakt"><div class="ci"><img src="img/b8.jpg" alt="Sauna &amp; Hydrojet" loading="lazy" decoding="async"></div><div><h3>Sauna &amp; Hydrojet</h3><p>Bio-Sauna, Hydrojet-Massage und Collarium-Lichttherapie für deine Auszeit.</p><span class="more">Probewoche sichern</span></div></a><a class="card rv d2" href="#kontakt"><div class="ci"><img src="img/b9.jpg" alt="Freihantelbereich" loading="lazy" decoding="async"></div><div><h3>Freihantelbereich</h3><p>Hanteln und Bänke – in einem Raum, in dem du dich wohlfühlst.</p><span class="more">Probewoche sichern</span></div></a><a class="card rv d3" href="#kontakt"><div class="ci"><img src="img/b16.jpg" alt="Rehasport" loading="lazy" decoding="async"></div><div><h3>Rehasport</h3><p>Für Kinder und Erwachsene – mit Verordnung zu 100 % von der Kasse übernommen.</p><span class="more">Probewoche sichern</span></div></a></div>
  
 </div></section>
+
 
 
 <section class="sig-sec" id="signatur">
@@ -796,12 +800,14 @@ html.qa .steam{display:none}
 
 
 
+
 <section class="mband"><div class="wrap">
  <div class="mb-in mb-n3">
   <figure class="mb-f rv d1"><img src="img/b10.jpg" alt="Einrichtung bei LadyFit21" loading="lazy" decoding="async"></figure><figure class="mb-f rv d2"><img src="img/b3.jpg" alt="Einrichtung bei LadyFit21" loading="lazy" decoding="async"></figure><figure class="mb-f rv d3"><img src="img/b7.jpg" alt="Einrichtung bei LadyFit21" loading="lazy" decoding="async"></figure>
  </div>
  <div class="mb-card rv d2"><span class="mb-orn" aria-hidden="true"></span><p>Ein Studio, in dem <em>du dich sofort wohlfühlst.</em></p></div>
 </div></section>
+
 <section class="rev" id="bewertungen"><div class="wrap">
  
  <span class="eyebrow rv">Das sagen unsere Mitglieder</span>
@@ -811,6 +817,8 @@ html.qa .steam{display:none}
 </div></section>
 
 <div class="pdiv" aria-hidden="true"><span></span></div>
+
+
 
 
 <section class="team" id="ueber"><div class="wrap team-in">
@@ -828,6 +836,7 @@ html.qa .steam{display:none}
  <div class="t3" style="--tn:3"><figure class="rv d1"><div class="ph"><img src="img/b11.jpg" alt="" style="object-position:43% 0%" loading="lazy" decoding="async"></div><figcaption></figcaption></figure><figure class="rv d2"><div class="ph"><img src="img/b12.jpg" alt="" style="object-position:40% 0%" loading="lazy" decoding="async"></div><figcaption></figcaption></figure><figure class="rv d3"><div class="ph"><img src="img/b13.jpg" alt="" style="object-position:46% 0%" loading="lazy" decoding="async"></div><figcaption></figcaption></figure></div>
 </div></section>
 
+
 <div class="pdiv" aria-hidden="true"><span></span></div>
 <section class="flow"><div class="wrap">
  <span class="eyebrow rv">Ablauf</span>
@@ -837,6 +846,7 @@ html.qa .steam{display:none}
   <ol><li><span class="dot">1</span><div><b>Probetraining sichern</b><span>Anrufen oder Formular ausfüllen.</span></div></li><li><span class="dot">2</span><div><b>Kennenlernen</b><span>Studio, Trainer und deine Ziele.</span></div></li><li><span class="dot">3</span><div><b>Dein Plan</b><span>Ein Trainingsplan, der zu dir passt.</span></div></li><li><span class="dot">4</span><div><b>Dranbleiben</b><span>Mit Betreuung Schritt für Schritt zum Ziel.</span></div></li></ol>
  </div>
 </div></section>
+
 
 <section class="ct" id="kontakt">
  <div class="wtop"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 52C180 18 360 6 560 30s380 58 560 46 260-38 320-48V90H0z"/></svg></div>
