@@ -203,6 +203,7 @@ h2{font-size:clamp(38px,4.6vw,68px)}
 .pdiv span{width:9px;height:9px;transform:rotate(45deg);background:var(--champ);box-shadow:0 0 0 5px var(--bg),0 0 0 6px color-mix(in srgb,var(--champ) 60%,transparent)}
 .hero-pat{position:absolute;inset:0;z-index:-2;background:radial-gradient(60% 70% at 85% 30%,color-mix(in srgb,var(--blush) 70%,transparent),transparent 70%),linear-gradient(160deg,var(--pearl),var(--bg) 60%)}
 .pat-stripes .hero-pat{background:var(--pat) 0 0/var(--pat-s),linear-gradient(160deg,var(--pearl),var(--bg) 60%)}
+.hero-bg.sbg{inset:-3%;animation:none;transform:none}.hero-bg.vid{width:106%;height:106%;object-fit:cover;filter:blur(4px) saturate(.9)}@media (prefers-reduced-motion:reduce){.hero-bg.vid{display:none}}.hero-pat.over{background:none}.hero-pat.over::after{background:linear-gradient(90deg,color-mix(in srgb,var(--bg) 82%,transparent) 0%,color-mix(in srgb,var(--bg) 62%,transparent) 40%,color-mix(in srgb,var(--bg) 12%,transparent) 100%),linear-gradient(180deg,transparent 75%,var(--bg) 100%)}.side-left .hero-pat.over::after{background:linear-gradient(270deg,color-mix(in srgb,var(--bg) 82%,transparent) 0%,color-mix(in srgb,var(--bg) 62%,transparent) 40%,color-mix(in srgb,var(--bg) 12%,transparent) 100%),linear-gradient(180deg,transparent 75%,var(--bg) 100%)}@media (max-width:900px){.hero-pat.over::after{background:linear-gradient(180deg,color-mix(in srgb,var(--bg) 70%,transparent),color-mix(in srgb,var(--bg) 86%,transparent) 60%,var(--bg))}}
 .hero-pat::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,color-mix(in srgb,var(--bg) 88%,transparent) 40%,color-mix(in srgb,var(--bg) 55%,transparent) 100%)}
 
 
@@ -600,7 +601,7 @@ body.has-sbar .hero .wrap{padding-top:150px}
 .svid-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,7vw,110px);align-items:center}
 .svid-f{justify-self:center;width:min(380px,100%);aspect-ratio:406/720;border-radius:calc(var(--r) * 1.1);overflow:hidden;padding:10px;background:linear-gradient(140deg,var(--champ),color-mix(in srgb,var(--champ) 40%,#fff),var(--champ));box-shadow:0 60px 100px -55px color-mix(in srgb,var(--acc-d) 80%,transparent)}
 .svid-f video{width:100%;height:100%;object-fit:cover;border-radius:var(--r);display:block;background:var(--pearl)}
-.svid h2{margin:22px 0 24px}
+.svid h2{margin:22px 0 24px}.svid.sq .svid-f{width:min(520px,100%);aspect-ratio:1;padding:8px}.svid.flip .svid-f{order:2}.svid.wide.flip .svid-in{grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr)}@media (max-width:900px){.svid.flip .svid-f{order:0}}
 .svid.wide .svid-in{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr)}.svid.wide .svid-f{width:100%;aspect-ratio:16/9;padding:8px}
 
 /* ---------- Gastro: leichter Dampf über warmen Gerichten ---------- */
@@ -742,6 +743,7 @@ html.qa .steam{display:none}
 </head>
 <body class="h-split side-left pat-none s-zigzag r-marquee">
 
+
 <header class="top" id="top"><div class="wrap">
  <a class="wm" href="#"><span><b>Aktiv &amp; <i>Gesund</i></b><small>Gesundheitszentrum Karl-Georg Beckmann · Bramsche</small></span></a>
  <nav class="nav"><a href="#leistungen">Angebot</a><a href="#bewertungen">Stimmen</a><a href="#ueber">Über uns</a><a href="#kontakt">Termin</a></nav>
@@ -749,7 +751,7 @@ html.qa .steam{display:none}
 </div></header>
 
 <section class="hero" aria-label="Willkommen">
- <div class="hero-pat" aria-hidden="true"></div>
+ <div class="hero-bg sbg" role="img" aria-label="Trainingsfläche im Gesundheitszentrum"></div><div class="hero-pat over" aria-hidden="true"></div>
  
  <div class="wrap">
   <div class="h-txt">
@@ -776,6 +778,7 @@ html.qa .steam{display:none}
 </section>
 
 
+
 <div class="rb-w"><div class="ribbon" aria-hidden="true"><div class="rb-in"><span>Physiotherapie</span><i>✦</i><span>Gesundheitstraining</span><i>✦</i><span>Sportphysiotherapie</span><i>✦</i><span>Beauty &amp; Wellness</span><i>✦</i><span>Physiotherapie</span><i>✦</i><span>Gesundheitstraining</span><i>✦</i><span>Sportphysiotherapie</span><i>✦</i><span>Beauty &amp; Wellness</span><i>✦</i><span>Physiotherapie</span><i>✦</i><span>Gesundheitstraining</span><i>✦</i><span>Sportphysiotherapie</span><i>✦</i><span>Beauty &amp; Wellness</span><i>✦</i><span>Physiotherapie</span><i>✦</i><span>Gesundheitstraining</span><i>✦</i><span>Sportphysiotherapie</span><i>✦</i><span>Beauty &amp; Wellness</span><i>✦</i></div></div></div>
 <section class="counters"><div class="wrap">
  <p class="ct-intro rv">Nicht nur Ihre Genesung steht im Mittelpunkt – <em>sondern Ihr Wohlbefinden.</em></p>
@@ -792,6 +795,7 @@ html.qa .steam{display:none}
  <div class="svc-zz"><article class="zz rv"><div class="zz-img"><img src="img/b6.jpg" alt="Gesundheitstraining" style="object-position:28% 0%" loading="lazy" decoding="async"></div><div class="zz-txt"><span class="no">01</span><h3>Gesundheitstraining</h3><p>Betreutes Gerätetraining – für Kraft, Haltung und Beweglichkeit in jedem Alter.</p><div class="tg">Training</div><a class="zz-link" href="#kontakt">Probetraining vereinbaren</a></div></article><article class="zz rv"><div class="zz-img"><img src="img/b5.jpg" alt="Physiotherapie" style="object-position:46% 14%" loading="lazy" decoding="async"></div><div class="zz-txt"><span class="no">02</span><h3>Physiotherapie</h3><p>Untersuchung, Behandlung und Sportphysiotherapie von erfahrenen Therapeuten.</p><div class="tg">Therapie</div><a class="zz-link" href="#kontakt">Probetraining vereinbaren</a></div></article><article class="zz rv"><div class="zz-img"><img src="img/b3.jpg" alt="Kurse &amp; Gymnastik" style="object-position:62% 32%" loading="lazy" decoding="async"></div><div class="zz-txt"><span class="no">03</span><h3>Kurse &amp; Gymnastik</h3><p>In hellen Räumen mit Ball und Matte – sanft und wirksam.</p><div class="tg">Gruppe</div><a class="zz-link" href="#kontakt">Probetraining vereinbaren</a></div></article><article class="zz rv"><div class="zz-img"><img src="img/b7.jpg" alt="Beauty &amp; Wellness" style="object-position:97% 47%" loading="lazy" decoding="async"></div><div class="zz-txt"><span class="no">04</span><h3>Beauty &amp; Wellness</h3><p>Entspannung und Pflege in unserer Essence-Lounge.</p><div class="tg">Wohlfühlen</div><a class="zz-link" href="#kontakt">Probetraining vereinbaren</a></div></article></div>
  
 </div></section>
+
 
 
 <section class="sig-sec" id="signatur">
@@ -812,12 +816,14 @@ html.qa .steam{display:none}
 
 
 
+
 <section class="mband"><div class="wrap">
  <div class="mb-in mb-n3">
   <figure class="mb-f rv d1"><img src="img/b7.jpg" alt="Gesundheitszentrum Beckmann" style="object-position:97% 47%" loading="lazy" decoding="async"></figure><figure class="mb-f rv d2"><img src="img/b8.jpg" alt="Gesundheitszentrum Beckmann" loading="lazy" decoding="async"></figure><figure class="mb-f rv d3"><img src="img/b5.jpg" alt="Gesundheitszentrum Beckmann" style="object-position:46% 14%" loading="lazy" decoding="async"></figure>
  </div>
  <div class="mb-card rv d2"><span class="mb-orn" aria-hidden="true"></span><p>Gesund werden. <em>Gesund bleiben.</em></p></div>
 </div></section>
+
 <section class="rev" id="bewertungen"><div class="wrap">
  
  <span class="eyebrow rv">Das sagen unsere Mitglieder</span>
@@ -827,6 +833,8 @@ html.qa .steam{display:none}
 </div></section>
 
 <div class="pdiv" aria-hidden="true"><span></span></div>
+
+
 
 
 <section class="team" id="ueber"><div class="wrap team-in">
@@ -841,6 +849,7 @@ html.qa .steam{display:none}
 
 
 
+
 <div class="pdiv" aria-hidden="true"><span></span></div>
 <section class="flow"><div class="wrap">
  <span class="eyebrow rv">Ablauf</span>
@@ -850,6 +859,7 @@ html.qa .steam{display:none}
   <ol><li><span class="dot">1</span><div><b>Probetraining vereinbaren</b><span>Rufen Sie an oder nutzen Sie das Formular.</span></div></li><li><span class="dot">2</span><div><b>Kennenlernen</b><span>Studio, Trainer und Ihre Ziele.</span></div></li><li><span class="dot">3</span><div><b>Ihr Plan</b><span>Ein Trainingsplan, der zu Ihnen passt.</span></div></li><li><span class="dot">4</span><div><b>Dranbleiben</b><span>Mit Betreuung Schritt für Schritt zum Ziel.</span></div></li></ol>
  </div>
 </div></section>
+
 
 <section class="ct" id="kontakt">
  <div class="wtop"><svg viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="M0 90C360 6 1080 6 1440 90z"/></svg></div>

@@ -97,8 +97,9 @@
      "b14": "50% 20%"
     },
     "hero": "split",
-    "hero_bg_src": "b1",
-    "hero_bg_alt": "Trainingsfläche von Fitness & Gesundheit",
+    "hero_bg_src": "b16",
+    "split_bg": true,
+    "hero_bg_alt": "Trainer und Mitglied an der Trainingsfläche von Fitness & Gesundheit",
     "cut_alt": "Trainer von Fitness & Gesundheit",
     "split": {
      "imgs": [
@@ -303,7 +304,8 @@
     "local://fug/i079.jpg",
     "local://fug/i047.jpg",
     "local://fug/i004.jpg",
-    "local://fug/i006.jpg"
+    "local://fug/i006.jpg",
+    "local://fug/i900.jpg"
    ],
    "steps": [
     [
@@ -416,7 +418,9 @@
     ],
     "wm_sub": "TV Dinklage · aktive Gesundheit mit Spaß",
     "hero": "split",
-    "hero_bg_src": "b7",
+    "hero_bg_src": "b16",
+    "split_bg": true,
+    "split_video": "img/hero-bg.mp4",
     "hero_bg_alt": "Trainingsfläche im TVD aktivcenter",
     "cut_alt": "Trainerinnen im TVD aktivcenter",
     "split": {
@@ -607,7 +611,8 @@
     "local://tvd/i025.jpg",
     "local://tvd/i021.jpg",
     "local://tvd/i014.jpg",
-    "local://tvd/i003.jpg"
+    "local://tvd/i003.jpg",
+    "local://tvd/i901.jpg"
    ],
    "steps": [
     [
@@ -1029,7 +1034,20 @@
     ],
     "wm_sub": "Dinklage · Gesundheit ist Balance",
     "hero": "split",
-    "hero_bg_src": "b4",
+    "hero_bg_src": "b17",
+    "split_bg": true,
+    "videos": [
+     {
+      "at": "leistungen",
+      "form": "wide",
+      "src": "img/med_koch.mp4",
+      "poster": "img/med_koch.jpg",
+      "alt": "Kochvideo zum Ernährungscoaching im Medifit",
+      "eyebrow": "Ernährungscoaching",
+      "h2": "Abnehmen beginnt <em>in der Küche.</em>",
+      "p": "Training ist die eine Hälfte, Ernährung die andere. Im Ernährungscoaching zeigen wir dir, wie gesunde Küche im Alltag schmeckt und satt macht, ohne Verzicht und ohne Diät-Frust."
+     }
+    ],
     "hero_bg_alt": "Trainingsfläche im Medifit",
     "cut_alt": "Trainer im Medifit",
     "split": {
@@ -1256,7 +1274,8 @@
     "local://medifit/i012.jpg",
     "local://medifit/i015.jpg",
     "local://medifit/i018.jpg",
-    "local://medifit/i031.jpg"
+    "local://medifit/i031.jpg",
+    "local://medifit/i900.jpg"
    ],
    "steps": [
     [
@@ -1689,6 +1708,41 @@
     "wm_sub": "fitness & more · Vechta",
     "hero": "split",
     "hero_bg_src": "b3",
+    "split_bg": true,
+    "videos": [
+     {
+      "at": "top",
+      "src": "img/gl_story.mp4",
+      "poster": "img/gl_story.jpg",
+      "ton": true,
+      "alt": "Imagevideo vom goodlife Vechta",
+      "eyebrow": "Entdecke dein Potenzial",
+      "h2": "Werde fitter <em>denn je.</em>",
+      "p": "Schau dir an, wie es bei uns zugeht: ehrliche Betreuung, echte Menschen und ein Studio, in dem du dich vom ersten Tag an wohlfühlst."
+     },
+     {
+      "at": "leistungen",
+      "form": "sq",
+      "src": "img/gl_4w.mp4",
+      "poster": "img/gl_4w.jpg",
+      "ton": true,
+      "alt": "Video: In 4 Wochen zum Ziel",
+      "eyebrow": "In 4 Wochen",
+      "h2": "Dein Start <em>mit Plan.</em>",
+      "p": "In vier Wochen zu spürbaren Ergebnissen: Wir zeigen dir, wie unser Programm funktioniert und was du in der kurzen Zeit erreichen kannst."
+     },
+     {
+      "at": "leistungen",
+      "form": "sq",
+      "src": "img/gl_analyse.mp4",
+      "poster": "img/gl_analyse.jpg",
+      "ton": true,
+      "alt": "Video: Analysegerät für das Fitnessalter",
+      "eyebrow": "Körperanalyse",
+      "h2": "Wie alt ist <em>dein Körper wirklich?</em>",
+      "p": "Unser Analysegerät misst dein Fitnessalter. So weißt du genau, wo du stehst, und wir können dein Training gezielt darauf abstimmen."
+     }
+    ],
     "hero_bg_alt": "Trainingsfläche im goodlife",
     "cut_alt": "Trainerin im goodlife",
     "split": {
@@ -1868,7 +1922,8 @@
     "local://goodlife/i049.jpg",
     "local://goodlife/i017.jpg",
     "local://goodlife/i022.jpg",
-    "local://goodlife/i008.jpg"
+    "local://goodlife/i008.jpg",
+    "local://goodlife/i901.jpg"
    ],
    "steps": [
     [
@@ -1977,7 +2032,8 @@
     ],
     "wm_sub": "Fitness & Gesundheit · nur für Frauen",
     "hero": "split",
-    "hero_bg_src": "b4",
+    "hero_bg_src": "b17",
+    "split_bg": true,
     "hero_bg_alt": "Studio von LadyFit21",
     "cut_alt": "Studio von LadyFit21",
     "split": {
@@ -2204,7 +2260,8 @@
     "local://ladyfit/i035.jpg",
     "local://ladyfit/i036.jpg",
     "local://ladyfit/i037.jpg",
-    "local://ladyfit/i009.jpg"
+    "local://ladyfit/i009.jpg",
+    "local://ladyfit/i900.jpg"
    ],
    "steps": [
     [
@@ -2327,6 +2384,29 @@
     ],
     "full_img": "b1",
     "hero_bg_src": "b1",
+    "videos": [
+     {
+      "at": "top",
+      "form": "wide",
+      "src": "img/mp_drone.mp4",
+      "poster": "img/mp_drone.jpg",
+      "alt": "Kameraflug durch das mPower Lohne",
+      "eyebrow": "Rundflug",
+      "h2": "Willkommen <em>im mPower.</em>",
+      "p": "Flieg einmal durch unser Studio: viel Platz, moderne Geräte und alles, was du für dein Training brauchst."
+     },
+     {
+      "at": "ueber",
+      "form": "wide",
+      "src": "img/mp_wer.mp4",
+      "poster": "img/mp_wer.jpg",
+      "ton": true,
+      "alt": "Video: Wer sind wir und was machen wir",
+      "eyebrow": "Wer wir sind",
+      "h2": "Was wir <em>für dich machen.</em>",
+      "p": "In zwei Minuten erklären wir dir, wer hinter dem mPower steht und wie wir dich zu deinem Ziel bringen."
+     }
+    ],
     "hero_bg_alt": "Training bei mPower",
     "cut_alt": "Athletin bei mPower",
     "pos": {
@@ -2625,7 +2705,8 @@
     ],
     "wm_sub": "Gesundheitszentrum Karl-Georg Beckmann · Bramsche",
     "hero": "split",
-    "hero_bg_src": "b1",
+    "hero_bg_src": "b11",
+    "split_bg": true,
     "hero_bg_alt": "Trainingsfläche im Gesundheitszentrum",
     "cut_alt": "Therapeut im Gesundheitszentrum",
     "split": {
@@ -2794,7 +2875,8 @@
     "local://beckmann/i010.jpg",
     "local://beckmann/i011.jpg",
     "local://beckmann/i006.jpg",
-    "local://beckmann/i042.jpg"
+    "local://beckmann/i042.jpg",
+    "local://beckmann/i900.jpg"
    ],
    "steps": [
     [
@@ -2913,6 +2995,30 @@
     ],
     "full_img": "b1",
     "hero_bg_src": "b1",
+    "videos": [
+     {
+      "at": "leistungen",
+      "form": "wide",
+      "src": "img/ffs2.mp4",
+      "poster": "img/ffs2.jpg",
+      "ton": true,
+      "alt": "Video: Trainingswelt im FFS",
+      "eyebrow": "Trainingswelt",
+      "h2": "Trainieren <em>im FFS.</em>",
+      "p": "Ein Rundgang durch unsere Trainingswelt: Geräte, Kursräume und Betreuung für jedes Ziel."
+     },
+     {
+      "at": "leistungen",
+      "form": "wide",
+      "src": "img/ffs1.mp4",
+      "poster": "img/ffs1.jpg",
+      "ton": true,
+      "alt": "Video: Wellnesswelt im FFS",
+      "eyebrow": "Wellnesswelt",
+      "h2": "Abschalten <em>nach dem Training.</em>",
+      "p": "Holzgefeuerte Erdsauna, Ruheräume und Wärme: So sieht Erholung bei uns aus."
+     }
+    ],
     "hero_bg_alt": "Holzgefeuerte Erdsauna im FFS",
     "cut_alt": "FFS Wallenhorst",
     "pos": {

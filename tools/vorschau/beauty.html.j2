@@ -192,6 +192,7 @@ h2{font-size:clamp(38px,4.6vw,68px)}
 .pdiv span{width:9px;height:9px;transform:rotate(45deg);background:var(--champ);box-shadow:0 0 0 5px var(--bg),0 0 0 6px color-mix(in srgb,var(--champ) 60%,transparent)}
 .hero-pat{position:absolute;inset:0;z-index:-2;background:radial-gradient(60% 70% at 85% 30%,color-mix(in srgb,var(--blush) 70%,transparent),transparent 70%),linear-gradient(160deg,var(--pearl),var(--bg) 60%)}
 .pat-stripes .hero-pat{background:var(--pat) 0 0/var(--pat-s),linear-gradient(160deg,var(--pearl),var(--bg) 60%)}
+.hero-bg.sbg{inset:-3%;animation:none;transform:none}.hero-bg.vid{width:106%;height:106%;object-fit:cover;filter:blur(4px) saturate(.9)}@media (prefers-reduced-motion:reduce){.hero-bg.vid{display:none}}.hero-pat.over{background:none}.hero-pat.over::after{background:linear-gradient(90deg,color-mix(in srgb,var(--bg) 82%,transparent) 0%,color-mix(in srgb,var(--bg) 62%,transparent) 40%,color-mix(in srgb,var(--bg) 12%,transparent) 100%),linear-gradient(180deg,transparent 75%,var(--bg) 100%)}.side-left .hero-pat.over::after{background:linear-gradient(270deg,color-mix(in srgb,var(--bg) 82%,transparent) 0%,color-mix(in srgb,var(--bg) 62%,transparent) 40%,color-mix(in srgb,var(--bg) 12%,transparent) 100%),linear-gradient(180deg,transparent 75%,var(--bg) 100%)}@media (max-width:900px){.hero-pat.over::after{background:linear-gradient(180deg,color-mix(in srgb,var(--bg) 70%,transparent),color-mix(in srgb,var(--bg) 86%,transparent) 60%,var(--bg))}}
 .hero-pat::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,var(--bg) 0%,color-mix(in srgb,var(--bg) 88%,transparent) 40%,color-mix(in srgb,var(--bg) 55%,transparent) 100%)}
 
 
@@ -589,7 +590,7 @@ body.has-sbar .hero .wrap{padding-top:150px}
 .svid-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,7vw,110px);align-items:center}
 .svid-f{justify-self:center;width:min(380px,100%);aspect-ratio:406/720;border-radius:calc(var(--r) * 1.1);overflow:hidden;padding:10px;background:linear-gradient(140deg,var(--champ),color-mix(in srgb,var(--champ) 40%,#fff),var(--champ));box-shadow:0 60px 100px -55px color-mix(in srgb,var(--acc-d) 80%,transparent)}
 .svid-f video{width:100%;height:100%;object-fit:cover;border-radius:var(--r);display:block;background:var(--pearl)}
-.svid h2{margin:22px 0 24px}
+.svid h2{margin:22px 0 24px}.svid.sq .svid-f{width:min(520px,100%);aspect-ratio:1;padding:8px}.svid.flip .svid-f{order:2}.svid.wide.flip .svid-in{grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr)}@media (max-width:900px){.svid.flip .svid-f{order:0}}
 .svid.wide .svid-in{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr)}.svid.wide .svid-f{width:100%;aspect-ratio:16/9;padding:8px}
 
 /* ---------- Gastro: leichter Dampf über warmen Gerichten ---------- */
@@ -736,6 +737,10 @@ html.qa .steam{display:none}
 {%- set wave = '<svg viewBox="0 0 1440 90" preserveAspectRatio="none" aria-hidden="true"><path d="' ~ EP.get(EDGE, EP.wave) ~ '"/></svg>' -%}
 
 {% if B.get('social') %}<div class="sbar" id="sbar"><div class="wrap"><a href="tel:{{ f.tel_link }}">{{ icon_phone }}{{ f.telefon }}</a><span class="ad">{{ f.adresse }}</span><span class="so">{% for n,u in B.social %}<a href="{{ u }}" target="_blank" rel="noopener" aria-label="{{ n|capitalize }}">{{ SOC_IC[n] | safe }}</a>{% endfor %}</span></div></div>{% endif %}
+{% macro vids(at) %}{% for V in B.get('videos', []) if V.at == at %}<section class="svid{% if V.get('form') %} {{ V.form }}{% endif %}{% if loop.index is even or V.get('flip') %} flip{% endif %}" id="video-{{ at }}-{{ loop.index }}"><div class="wrap svid-in">
+ <div class="svid-f rv"><video{% if V.get('ton') %} controls preload="metadata"{% else %} autoplay muted loop playsinline preload="metadata"{% endif %} poster="{{ V.poster }}" aria-label="{{ V.get('alt','Video') }}"><source src="{{ V.src }}" type="video/mp4"></video></div>
+ <div><span class="eyebrow rv">{{ V.eyebrow }}</span><h2 class="rv d1">{{ V.h2 | safe }}</h2><p class="lead rv d2">{{ V.p }}</p><a class="btn btn-p rv d3" href="#kontakt" style="margin-top:34px">{{ V.get('btn', B.cta_btn) }}</a></div>
+</div></section>{% endfor %}{% endmacro %}
 {% set svid_html %}{% set SV = B.get('studio_video') or {} %}<section class="svid{% if SV.get('wide') %} wide{% endif %}" id="studio"><div class="wrap svid-in">
  <div class="svid-f rv"><video autoplay muted loop playsinline preload="metadata"{% if SV.get('poster') %} poster="{{ SV.poster }}"{% endif %} aria-label="{{ SV.get('alt','Imagevideo') }}"><source src="{{ SV.src }}" type="video/mp4"></video></div>
  <div><span class="eyebrow rv">{{ SV.eyebrow }}</span><h2 class="rv d1">{{ SV.h2 | safe }}</h2><p class="lead rv d2">{{ SV.p }}</p><a class="btn btn-p rv d3" href="#kontakt" style="margin-top:34px">{{ B.cta_btn }}</a></div>
@@ -747,7 +752,7 @@ html.qa .steam{display:none}
 </div></header>
 
 <section class="hero" aria-label="Willkommen">
- {% if HERO in ('split','stage') %}<div class="hero-pat" aria-hidden="true"></div>
+ {% if HERO in ('split','stage') %}{% if B.get('split_video') %}<video class="hero-bg sbg vid" autoplay muted loop playsinline preload="metadata" poster="{{ f.hero_bg }}" aria-hidden="true"><source src="{{ B.split_video }}" type="video/mp4"></video>{% elif B.get('split_bg') %}<div class="hero-bg sbg" role="img" aria-label="{{ B.hero_bg_alt }}"></div>{% endif %}<div class="hero-pat{% if B.get('split_bg') %} over{% endif %}" aria-hidden="true"></div>
  {% elif HERO == 'full' and B.get('slides') %}{% for k in B.slides %}<div class="hero-bg hs-s{% if loop.first %} on{% endif %}" role="img" aria-label="{{ B.hero_bg_alt }}" style="background-image:url('{{ I[k] }}');background-position:{{ B.pos.get(k, '50% 50%') }}"></div>{% endfor %}<div class="hero-wash"></div>
  {% else %}<div class="hero-bg{% if B.get('full_left') %} part{% endif %}" role="img" aria-label="{{ B.hero_bg_alt }}"{% if HERO == 'full' %} style="background-image:url('{{ I[B.full_img] }}');background-position:{{ B.get('full_pos','50% 50%') }}{% if B.get('full_left') %};left:{{ B.full_left }}{% endif %}"{% endif %}></div><div class="hero-wash"></div><div class="liquid a"></div><div class="liquid b"></div>{% endif %}
  <div class="wrap">
@@ -784,6 +789,7 @@ html.qa .steam{display:none}
 </section>
 
 {% if B.get('studio_video') and B.studio_video.get('top', True) %}{{ svid_html }}{% endif %}
+{{ vids('top') }}
 {% if B.get('ribbon') %}<div class="rb-w"><div class="ribbon" aria-hidden="true"><div class="rb-in">{% for _ in range(4) %}{% for t in B.ribbon %}<span>{{ t }}</span><i>✦</i>{% endfor %}{% endfor %}</div></div></div>{% endif %}
 {% if B.get('counters') %}<section class="counters"><div class="wrap">
  <p class="ct-intro rv">{{ B.intro | safe }}</p>
@@ -814,6 +820,7 @@ html.qa .steam{display:none}
  </div>{% endif %}
 </div></section>
 
+{{ vids('leistungen') }}
 {% if B.get('signature') %}{% set S = B.signature %}
 <section class="sig-sec" id="signatur">
  <div class="wtop">{{ wave | safe }}</div>
@@ -832,6 +839,7 @@ html.qa .steam{display:none}
 </section>
 {% endif %}
 
+{{ vids('signatur') }}
 {% if B.get('video') or B.get('moment') %}{% set M = B.get('moment') or {} %}{% set MI = M.get('imgs') or ([M.img] if M.get('img') else []) %}
 <section class="mband"><div class="wrap">
  <div class="mb-in mb-n{{ (1 if B.get('video') else MI | length) }}"{% if M.get('cols') or M.get('h') %} style="{% if M.get('cols') %}grid-template-columns:{{ M.cols }};{% endif %}{% if M.get('h') %}--mbh:{{ M.h }}{% endif %}"{% endif %}>
@@ -840,6 +848,7 @@ html.qa .steam{display:none}
  </div>
  <div class="mb-card rv d2"><span class="mb-orn" aria-hidden="true"></span><p>{{ (B.video.text if B.get('video') else M.text) | safe }}</p></div>
 </div></section>{% endif %}
+{{ vids('moment') }}
 <section class="rev" id="bewertungen"><div class="wrap">
  {% set RL = B.get('rev_layout','single') %}
  {% if RL == 'split' %}<div class="rv-split"><div class="rs-l rv"><span class="eyebrow">{{ B.rev_eyebrow }}</span><b class="rs-n">{{ f.google[0] }}</b><span class="stars">{% for _ in range(5) %}{{ star | safe }}{% endfor %}</span><small>{{ f.google[1] }} Bewertungen bei Google</small></div>
@@ -854,6 +863,7 @@ html.qa .steam{display:none}
 </div></section>
 
 <div class="pdiv" aria-hidden="true"><span></span></div>
+{{ vids('bewertungen') }}
 {% if B.get('story') %}{% set St = B.story %}
 <section class="story" id="geschichte"><div class="wrap story-in">
  <div class="story-txt">
@@ -868,6 +878,7 @@ html.qa .steam{display:none}
 </div></section>
 {% endif %}
 
+{{ vids('geschichte') }}
 {% if B.get("team_img") %}<section class="team" id="ueber"><div class="wrap team-in">
  <div class="team-pic rv"><div class="ph">{{ im(B.team_img, B.team_alt) }}</div><span class="deco"></span></div>
  <div class="team-txt">
@@ -882,6 +893,7 @@ html.qa .steam{display:none}
  <span class="eyebrow rv">{{ T3.eyebrow }}</span><h2 class="rv d1">{{ T3.h2 | safe }}</h2>
  <div class="t3" style="--tn:{{ T3.people | length }}">{% for pp in T3.people %}<figure class="rv d{{ loop.index }}"><div class="ph">{{ im(pp[0], pp[1]) }}</div><figcaption>{{ pp[1] }}{% if pp|length > 2 and pp[2] %}<small>{{ pp[2] }}</small>{% endif %}</figcaption></figure>{% endfor %}</div>
 </div></section>{% endif %}
+{{ vids('ueber') }}
 {% if B.get('studio_video') and not B.studio_video.get('top', True) %}{{ svid_html }}{% endif %}
 <div class="pdiv" aria-hidden="true"><span></span></div>
 <section class="flow"><div class="wrap">
@@ -893,6 +905,7 @@ html.qa .steam{display:none}
  </div>
 </div></section>
 
+{{ vids('team') }}
 <section class="ct" id="kontakt">
  <div class="wtop">{{ wave | safe }}</div>
  <div class="wrap ct-in">

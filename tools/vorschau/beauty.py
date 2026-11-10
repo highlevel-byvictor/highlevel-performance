@@ -37,7 +37,7 @@ def blur_bg(src: Path, dest: Path, radius=22):
 def prepare(f, d: Path, allimg: dict):
     B = f["beauty"]; img = d / "img"
     src = lambda k: d / allimg[k]
-    bg = blur_bg(src(B["hero_bg_src"]), img / "hero-bg.webp")
+    bg = blur_bg(src(B["hero_bg_src"]), img / "hero-bg.webp", radius=7 if B.get("split_bg") else 22)
     B.setdefault("pos", {})
     auto_pos(B, d, allimg)
     out = dict(cutout=None, hero_bg="img/" + bg)

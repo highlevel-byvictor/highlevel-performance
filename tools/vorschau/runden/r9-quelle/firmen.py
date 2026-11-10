@@ -40,7 +40,7 @@ firma({
   "wm": ["Fitness &","Gesundheit"], "wm_sub": "Bersenbrück · Hier macht Gesundheit Spaß!",
   "btn_bg": "linear-gradient(110deg,#C9A640,#EBD48A 50%,#C9A640)", "btn_fg": "#161616",
   "pos": {"b2": "68% 22%", "b13": "45% 25%", "b14": "50% 20%"},
-  "hero": "split", "hero_bg_src": "b1", "hero_bg_alt": "Trainingsfläche von Fitness & Gesundheit", "cut_alt": "Trainer von Fitness & Gesundheit",
+  "hero": "split", "hero_bg_src": "b16", "split_bg": True, "hero_bg_alt": "Trainer und Mitglied an der Trainingsfläche von Fitness & Gesundheit", "cut_alt": "Trainer von Fitness & Gesundheit",
   "split": {"imgs": ["b4","b12"], "shape": "wide", "side": "right", "alt": "Training mit Betreuung bei Fitness & Gesundheit",
             "caps": [["Fitnesscheck","Wie fit sind Sie wirklich?"],["Muskeltraining","Mit Trainer an Ihrer Seite"]],
             "badge": ["4,9 ★","389 Bewertungen"]},
@@ -80,7 +80,7 @@ firma({
   "social": [["instagram","https://www.instagram.com/fitnessundgesundheitpremium/"],["facebook","https://www.facebook.com/fitnessundgesundheit/"],["youtube","https://www.youtube.com/channel/UCgUqLlxrZ9dAM7OP8jZT_-g"]],
   "nav": [["leistungen","Angebote"],["bewertungen","Stimmen"],["ueber","Über uns"],["kontakt","Probetraining"]]
  }, "Ella", "05439 6039953", 389, "4,9", sie=True)}, 'fug',
- ['i040.jpg','i005.jpg','i044.jpg','i030.jpg','i046.jpg','i031.jpg','i032.jpg','i054.jpg','i063.jpg','i008.jpg','i038.jpg','i079.jpg','i047.jpg','i004.jpg','i006.jpg'])
+ ['i040.jpg','i005.jpg','i044.jpg','i030.jpg','i046.jpg','i031.jpg','i032.jpg','i054.jpg','i063.jpg','i008.jpg','i038.jpg','i079.jpg','i047.jpg','i004.jpg','i006.jpg','i900.jpg'])
 
 # ---------- 2 TVD aktivcenter, Dinklage ----------
 firma({
@@ -101,7 +101,7 @@ firma({
  "beauty": ft({
   "c": {"bg":"#F7F8FB","pearl":"#ECEFF6","blush":"#DCE2EF","acc":"#D3241B","acc_d":"#A01811","champ":"#1E3F8F","ink":"#121A2C","mute":"#47506A","star":"#FFA41C"},
   "wm": ["aktiv","center"], "wm_sub": "TV Dinklage · aktive Gesundheit mit Spaß",
-  "hero": "split", "hero_bg_src": "b7", "hero_bg_alt": "Trainingsfläche im TVD aktivcenter", "cut_alt": "Trainerinnen im TVD aktivcenter",
+  "hero": "split", "hero_bg_src": "b16", "split_bg": True, "split_video": "img/hero-bg.mp4", "hero_bg_alt": "Trainingsfläche im TVD aktivcenter", "cut_alt": "Trainerinnen im TVD aktivcenter",
   "split": {"imgs": ["b1"], "shape": "tilt", "side": "right", "inset": "b2", "inset_alt": "Trainerin im TVD aktivcenter",
             "alt": "Trainerinnen des TVD aktivcenters"},
   "eyebrow": "Fitness im Verein · Dinklage",
@@ -141,7 +141,7 @@ firma({
   "social": [["instagram","https://www.instagram.com/tvdaktivcenter/"],["facebook","https://www.facebook.com/aktivcenter"]],
   "nav": [["leistungen","Training"],["bewertungen","Stimmen"],["ueber","Über uns"],["kontakt","Probetraining"]]
  }, "Toni", "04443 50705030", None, None)}, 'tvd',
- ['i019.jpg','i002.jpg','i007.jpg','i008.jpg','i010.jpg','i011.jpg','i005.jpg','i006.jpg','i018.jpg','i020.jpg','i022.jpg','i025.jpg','i021.jpg','i014.jpg','i003.jpg'])
+ ['i019.jpg','i002.jpg','i007.jpg','i008.jpg','i010.jpg','i011.jpg','i005.jpg','i006.jpg','i018.jpg','i020.jpg','i022.jpg','i025.jpg','i021.jpg','i014.jpg','i003.jpg','i901.jpg'])
 
 # ---------- 3 Fitness World, Holdorf ----------
 firma({
@@ -223,7 +223,7 @@ firma({
  "beauty": ft({
   "c": {"bg":"#FBF8F6","pearl":"#F4ECE8","blush":"#E9D8D2","acc":"#8D1724","acc_d":"#6A0F1A","champ":"#C9A27A","ink":"#1C1415","mute":"#5A4B4C","star":"#FFA41C"},
   "wm": ["Medifit",""], "wm_sub": "Dinklage · Gesundheit ist Balance",
-  "hero": "split", "hero_bg_src": "b4", "hero_bg_alt": "Trainingsfläche im Medifit", "cut_alt": "Trainer im Medifit",
+  "hero": "split", "hero_bg_src": "b17", "split_bg": True, "videos": [{'at': 'leistungen', 'form': 'wide', 'src': 'img/med_koch.mp4', 'poster': 'img/med_koch.jpg', 'alt': 'Kochvideo zum Ernährungscoaching im Medifit', 'eyebrow': 'Ernährungscoaching', 'h2': 'Abnehmen beginnt <em>in der Küche.</em>', 'p': 'Training ist die eine Hälfte, Ernährung die andere. Im Ernährungscoaching zeigen wir dir, wie gesunde Küche im Alltag schmeckt und satt macht, ohne Verzicht und ohne Diät-Frust.'}], "hero_bg_alt": "Trainingsfläche im Medifit", "cut_alt": "Trainer im Medifit",
   "split": {"imgs": ["b1","b2","b5"], "shape": "frame", "side": "right", "alt": "Training mit Trainer im Medifit Dinklage",
             "caps": [["Immer mit Trainer","Persönlich betreut"],["Kraft & Ausdauer","Für jedes Alter"],["five Rücken & Gelenke","Gezielt gegen Beschwerden"]]},
   "pos": {"b1": "62% 50%", "b2": "50% 50%"},
@@ -265,7 +265,7 @@ firma({
   "social": [["instagram","https://www.instagram.com/medifitdinklage/"],["facebook","https://www.facebook.com/people/Medifit-Dinklage-Gesundheit-ist-Balance/100063915799721/"]],
   "nav": [["leistungen","Leistungen"],["bewertungen","Stimmen"],["ueber","Team"],["kontakt","Probetraining"]]
  }, "Bea", "04443 509950", 93, "4,6")}, 'medifit',
- ['i045.jpg','i002.jpg','i004.jpg','i001.jpg','i013.jpg','i016.jpg','i009.jpg','i011.jpg','i047.jpg','i054.jpg','i053.jpg','i007.jpg','i012.jpg','i015.jpg','i018.jpg','i031.jpg'])
+ ['i045.jpg','i002.jpg','i004.jpg','i001.jpg','i013.jpg','i016.jpg','i009.jpg','i011.jpg','i047.jpg','i054.jpg','i053.jpg','i007.jpg','i012.jpg','i015.jpg','i018.jpg','i031.jpg','i900.jpg'])
 
 # ---------- 5 INJOY Vechta ----------
 firma({
@@ -344,7 +344,7 @@ firma({
  "beauty": ft({
   "c": {"bg":"#FCF8F7","pearl":"#F7EDEC","blush":"#F0D9D9","acc":"#DC2B45","acc_d":"#A81D33","champ":"#F2A33A","ink":"#1E1E1E","mute":"#5A5050","star":"#FFA41C"},
   "wm": ["good","life"], "wm_sub": "fitness & more · Vechta",
-  "hero": "split", "hero_bg_src": "b3", "hero_bg_alt": "Trainingsfläche im goodlife", "cut_alt": "Trainerin im goodlife",
+  "hero": "split", "hero_bg_src": "b3", "split_bg": True, "videos": [{'at': 'top', 'src': 'img/gl_story.mp4', 'poster': 'img/gl_story.jpg', 'ton': True, 'alt': 'Imagevideo vom goodlife Vechta', 'eyebrow': 'Entdecke dein Potenzial', 'h2': 'Werde fitter <em>denn je.</em>', 'p': 'Schau dir an, wie es bei uns zugeht: ehrliche Betreuung, echte Menschen und ein Studio, in dem du dich vom ersten Tag an wohlfühlst.'}, {'at': 'leistungen', 'form': 'sq', 'src': 'img/gl_4w.mp4', 'poster': 'img/gl_4w.jpg', 'ton': True, 'alt': 'Video: In 4 Wochen zum Ziel', 'eyebrow': 'In 4 Wochen', 'h2': 'Dein Start <em>mit Plan.</em>', 'p': 'In vier Wochen zu spürbaren Ergebnissen: Wir zeigen dir, wie unser Programm funktioniert und was du in der kurzen Zeit erreichen kannst.'}, {'at': 'leistungen', 'form': 'sq', 'src': 'img/gl_analyse.mp4', 'poster': 'img/gl_analyse.jpg', 'ton': True, 'alt': 'Video: Analysegerät für das Fitnessalter', 'eyebrow': 'Körperanalyse', 'h2': 'Wie alt ist <em>dein Körper wirklich?</em>', 'p': 'Unser Analysegerät misst dein Fitnessalter. So weißt du genau, wo du stehst, und wir können dein Training gezielt darauf abstimmen.'}], "hero_bg_alt": "Trainingsfläche im goodlife", "cut_alt": "Trainerin im goodlife",
   "split": {"imgs": ["b1"], "shape": "bleed", "side": "right", "alt": "Training mit Trainerin im goodlife Vechta"},
   "pos": {"b1": "55% 50%"},
   "eyebrow": "Fitnessstudio in Vechta",
@@ -382,7 +382,7 @@ firma({
   "edge": "arc", "r": "22px",
   "nav": [["leistungen","Dein Ziel"],["bewertungen","Stimmen"],["ueber","Team"],["kontakt","Probetraining"]]
  }, "Lia", "04441 887570", 116, "4,7")}, 'goodlife',
- ['i004.jpg','i068.jpg','i007.jpg','i005.jpg','i002.jpg','i003.jpg','i016.jpg','i023.jpg','i024.jpg','i014.jpg','i044.jpg','i066.jpg','i049.jpg','i017.jpg','i022.jpg','i008.jpg'])
+ ['i004.jpg','i068.jpg','i007.jpg','i005.jpg','i002.jpg','i003.jpg','i016.jpg','i023.jpg','i024.jpg','i014.jpg','i044.jpg','i066.jpg','i049.jpg','i017.jpg','i022.jpg','i008.jpg','i901.jpg'])
 
 # ---------- 7 LadyFit21, Vechta ----------
 firma({
@@ -402,7 +402,7 @@ firma({
  "beauty": ft({
   "c": {"bg":"#FFF7FA","pearl":"#FCEBF2","blush":"#F6D3E2","acc":"#B5206D","acc_d":"#861651","champ":"#E9B44C","ink":"#24161D","mute":"#5E4C55","star":"#FFA41C"},
   "wm": ["LadyFit","21"], "wm_sub": "Fitness & Gesundheit · nur für Frauen",
-  "hero": "split", "hero_bg_src": "b4", "hero_bg_alt": "Studio von LadyFit21", "cut_alt": "Studio von LadyFit21",
+  "hero": "split", "hero_bg_src": "b17", "split_bg": True, "hero_bg_alt": "Studio von LadyFit21", "cut_alt": "Studio von LadyFit21",
   "split": {"imgs": ["b1","b2","b3"], "shape": "frame", "side": "right", "alt": "Das Studio von LadyFit21 in Vechta",
             "caps": [["Willkommen","Dein Frauensportclub"],["Gerätetraining","Neue Geräte, nie überfüllt"],["Functional","Raum für dich"]]},
   "eyebrow": "Fitness- und Gesundheitsstudio in Vechta · nur für Frauen",
@@ -444,7 +444,7 @@ firma({
   "social": [["instagram","https://www.instagram.com/ladyfit21/"],["facebook","https://www.facebook.com/LadyFit21"]],
   "nav": [["leistungen","Angebot"],["bewertungen","Stimmen"],["ueber","Team"],["kontakt","Probewoche"]]
  }, "Mia", "04441 1597900", None, None)}, 'ladyfit',
- ['i010.jpg','i007.jpg','i012.jpg','i015.jpg','i008.jpg','i011.jpg','i016.jpg','i019.jpg','i025.jpg','i018.jpg','i033.jpg','i034.jpg','i035.jpg','i036.jpg','i037.jpg','i009.jpg'])
+ ['i010.jpg','i007.jpg','i012.jpg','i015.jpg','i008.jpg','i011.jpg','i016.jpg','i019.jpg','i025.jpg','i018.jpg','i033.jpg','i034.jpg','i035.jpg','i036.jpg','i037.jpg','i009.jpg','i900.jpg'])
 
 # ---------- 8 mPower, Lohne ----------
 firma({
@@ -465,7 +465,7 @@ firma({
  "beauty": ft({
   "c": {"bg":"#F6F6F7","pearl":"#EAEAEE","blush":"#D9D9E1","acc":"#78193E","acc_d":"#58112D","champ":"#1A466B","ink":"#121216","mute":"#4A4A55","star":"#FFA41C"},
   "wm": ["mPower",""], "wm_sub": "Sport & Gesundheit · Lohne",
-  "hero": "full", "slides": ["b1","b2","b3"], "full_img": "b1", "hero_bg_src": "b1", "hero_bg_alt": "Training bei mPower", "cut_alt": "Athletin bei mPower",
+  "hero": "full", "slides": ["b1","b2","b3"], "full_img": "b1", "hero_bg_src": "b1", "videos": [{'at': 'top', 'form': 'wide', 'src': 'img/mp_drone.mp4', 'poster': 'img/mp_drone.jpg', 'alt': 'Kameraflug durch das mPower Lohne', 'eyebrow': 'Rundflug', 'h2': 'Willkommen <em>im mPower.</em>', 'p': 'Flieg einmal durch unser Studio: viel Platz, moderne Geräte und alles, was du für dein Training brauchst.'}, {'at': 'ueber', 'form': 'wide', 'src': 'img/mp_wer.mp4', 'poster': 'img/mp_wer.jpg', 'ton': True, 'alt': 'Video: Wer sind wir und was machen wir', 'eyebrow': 'Wer wir sind', 'h2': 'Was wir <em>für dich machen.</em>', 'p': 'In zwei Minuten erklären wir dir, wer hinter dem mPower steht und wie wir dich zu deinem Ziel bringen.'}], "hero_bg_alt": "Training bei mPower", "cut_alt": "Athletin bei mPower",
   "pos": {"b1": "45% 40%", "b2": "60% 35%"},
   "eyebrow": "Training, Coaching & Physio in Lohne",
   "h1": "Stärker als <em>gestern.</em>",
@@ -527,7 +527,7 @@ firma({
  "beauty": ft({
   "c": {"bg":"#F8F7FC","pearl":"#EEECF8","blush":"#DDD9F1","acc":"#342B90","acc_d":"#241E6A","champ":"#E1B25A","ink":"#16142A","mute":"#4D4A63","star":"#FFA41C"},
   "wm": ["Aktiv &","Gesund"], "wm_sub": "Gesundheitszentrum Karl-Georg Beckmann · Bramsche",
-  "hero": "split", "hero_bg_src": "b1", "hero_bg_alt": "Trainingsfläche im Gesundheitszentrum", "cut_alt": "Therapeut im Gesundheitszentrum",
+  "hero": "split", "hero_bg_src": "b11", "split_bg": True, "hero_bg_alt": "Trainingsfläche im Gesundheitszentrum", "cut_alt": "Therapeut im Gesundheitszentrum",
   "split": {"imgs": ["b1","b3","b9"], "shape": "wide", "side": "left", "alt": "Gesundheitstraining im Gesundheitszentrum Beckmann",
             "caps": [["Gesundheitstraining","Betreut an jedem Gerät"],["Kurse & Gymnastik","In hellen Räumen"],["Trainingsraum","Hell und ruhig"]]},
   "eyebrow": "Physiotherapie · Gesundheitstraining · Wellness in Bramsche",
@@ -563,7 +563,7 @@ firma({
   "edge": "arc", "r": "16px",
   "nav": [["leistungen","Angebot"],["bewertungen","Stimmen"],["ueber","Über uns"],["kontakt","Termin"]]
  }, "Vita", "05461 3303", 27, "4,5", sie=True)}, 'beckmann',
- ['i001.jpg','i012.jpg','i005.jpg','i018.jpg','i008.jpg','i007.jpg','i010.jpg','i011.jpg','i006.jpg','i042.jpg'])
+ ['i001.jpg','i012.jpg','i005.jpg','i018.jpg','i008.jpg','i007.jpg','i010.jpg','i011.jpg','i006.jpg','i042.jpg','i900.jpg'])
 
 # ---------- 10 FFS Sport- und Wellnesspark, Wallenhorst ----------
 firma({
@@ -583,7 +583,7 @@ firma({
  "beauty": ft({
   "c": {"bg":"#FBF8F5","pearl":"#F4EEE8","blush":"#E9DCD0","acc":"#C8414F","acc_d":"#972E3A","champ":"#6B4FB8","ink":"#1B1720","mute":"#544C58","star":"#FFA41C"},
   "wm": ["FFS",""], "wm_sub": "Sport- und Wellnesspark Wallenhorst · seit 1992",
-  "hero": "full", "slides": ["b1","b2","b3"], "full_img": "b1", "hero_bg_src": "b1", "hero_bg_alt": "Holzgefeuerte Erdsauna im FFS", "cut_alt": "FFS Wallenhorst",
+  "hero": "full", "slides": ["b1","b2","b3"], "full_img": "b1", "hero_bg_src": "b1", "videos": [{'at': 'leistungen', 'form': 'wide', 'src': 'img/ffs2.mp4', 'poster': 'img/ffs2.jpg', 'ton': True, 'alt': 'Video: Trainingswelt im FFS', 'eyebrow': 'Trainingswelt', 'h2': 'Trainieren <em>im FFS.</em>', 'p': 'Ein Rundgang durch unsere Trainingswelt: Geräte, Kursräume und Betreuung für jedes Ziel.'}, {'at': 'leistungen', 'form': 'wide', 'src': 'img/ffs1.mp4', 'poster': 'img/ffs1.jpg', 'ton': True, 'alt': 'Video: Wellnesswelt im FFS', 'eyebrow': 'Wellnesswelt', 'h2': 'Abschalten <em>nach dem Training.</em>', 'p': 'Holzgefeuerte Erdsauna, Ruheräume und Wärme: So sieht Erholung bei uns aus.'}], "hero_bg_alt": "Holzgefeuerte Erdsauna im FFS", "cut_alt": "FFS Wallenhorst",
   "pos": {"b1": "50% 55%"},
   "eyebrow": "Fitness & Wellness in Wallenhorst · seit 1992",
   "h1": "Erst trainieren. <em>Dann abtauchen.</em>",
