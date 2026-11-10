@@ -421,6 +421,10 @@
     "hero_bg_src": "b16",
     "split_bg": true,
     "split_video": "img/hero-bg.mp4",
+    "sidetab": {
+     "label": "Beitrittserklärung",
+     "href": "#kontakt"
+    },
     "hero_bg_alt": "Trainingsfläche im TVD aktivcenter",
     "cut_alt": "Trainerinnen im TVD aktivcenter",
     "split": {
@@ -1389,6 +1393,16 @@
     "hero": "full",
     "full_img": "b1",
     "hero_bg_src": "b1",
+    "sidetab": {
+     "label": "Ziele erreichen?",
+     "href": "#kontakt"
+    },
+    "hero_note": {
+     "eyebrow": "Deutsches Institut für Service-Qualität",
+     "title": "Komm zum Testsieger!",
+     "text": "Seit 12 Jahren ausgezeichnet. Fit werden und bleiben beim Testsieger – wir laden Sie zum kostenlosen Beratungstermin ein.",
+     "btn": "Beratungstermin sichern"
+    },
     "hero_bg_alt": "Mitglieder des INJOY Vechta",
     "cut_alt": "Mitglieder des INJOY Vechta",
     "full_left": "38%",
@@ -2034,6 +2048,25 @@
     "hero": "split",
     "hero_bg_src": "b17",
     "split_bg": true,
+    "popup": {
+     "img": "img/lady_deal.jpg",
+     "img_alt": "Christmas Deal von LadyFit21",
+     "eyebrow": "Nur für kurze Zeit",
+     "title": "Christmas <em>Deal</em>",
+     "sub": "Alles drin, was du für dein Training brauchst – und obendrauf gibt es 79,90 € geschenkt*.",
+     "items": [
+      "Gerätetraining und EGYM-Training",
+      "Groupfitness-Kurse",
+      "Mineralgetränke- und Hydrojet-Massage-Flat",
+      "Collarium-Flat und Bio-Sauna"
+     ],
+     "price": [
+      "49,90 €",
+      "im Monat · Laufzeit 14 Monate"
+     ],
+     "btn": "Deal sichern",
+     "note": "* Alle Details zum Angebot bekommst du im Studio."
+    },
     "hero_bg_alt": "Studio von LadyFit21",
     "cut_alt": "Studio von LadyFit21",
     "split": {
@@ -2400,7 +2433,39 @@
      "src": "img/mp_wer.mp4",
      "poster": "img/mp_wer.jpg",
      "title": "Deine Beratung – direkt online!",
-     "alt": "Video: Wer sind wir und was machen wir"
+     "alt": "Video: Wer sind wir und was machen wir",
+     "faq": [
+      [
+       "Ist der Sport auch für mich geeignet?",
+       "img/q1.mp4",
+       "img/q1.jpg"
+      ],
+      [
+       "Welche Kosten kommen auf mich zu?",
+       "img/q2.mp4",
+       "img/q2.jpg"
+      ],
+      [
+       "Kann ich trotz körperlicher Einschränkungen kommen?",
+       "img/q3.mp4",
+       "img/q3.jpg"
+      ],
+      [
+       "Was sagen eure Athleten über euch?",
+       "img/q4.mp4",
+       "img/q4.jpg"
+      ],
+      [
+       "Kann ich das Ganze mal austesten?",
+       "img/q5.mp4",
+       "img/q5.jpg"
+      ],
+      [
+       "Wie sieht der Ablauf aus?",
+       "img/q6.mp4",
+       "img/q6.jpg"
+      ]
+     ]
     },
     "hero_bg_alt": "Training bei mPower",
     "cut_alt": "Athletin bei mPower",
@@ -2702,6 +2767,12 @@
     "hero": "split",
     "hero_bg_src": "b11",
     "split_bg": true,
+    "hero_note": {
+     "eyebrow": "Wir suchen dich",
+     "title": "Physiotherapeut:in & Praxisnachfolge",
+     "text": "Du suchst einen Physiotherapie-Job mit klaren Strukturen, verlässlichen Abläufen und echter Perspektive? Wir bieten dir eine einmalige Chance.",
+     "btn": "Jetzt melden"
+    },
     "hero_bg_alt": "Trainingsfläche im Gesundheitszentrum",
     "cut_alt": "Therapeut im Gesundheitszentrum",
     "split": {
@@ -3014,6 +3085,18 @@
       "p": "Holzgefeuerte Erdsauna, Ruheräume und Wärme: So sieht Erholung bei uns aus."
      }
     ],
+    "popup": {
+     "eyebrow": "Gültig ab 31.08.26",
+     "title": "Unser neuer <em>Kursplan</em> ist da",
+     "sub": "Mehr Energie, mehr Abwechslung, mehr Stärke.",
+     "items": [
+      "Über 30 Kursstunden pro Woche",
+      "Tabata, Yoga, Fullbody-Workout, Stretch, Indoor Cycling und mehr",
+      "Regelmäßige Event-Workouts und Musikspecials",
+      "Passende Kurse für jedes Fitnesslevel, auch mit Vorteilskarte"
+     ],
+     "btn": "Jetzt Ersttermin buchen"
+    },
     "hero_bg_alt": "Holzgefeuerte Erdsauna im FFS",
     "cut_alt": "FFS Wallenhorst",
     "pos": {

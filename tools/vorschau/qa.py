@@ -37,14 +37,14 @@ JS_IMGS = """() => [...document.images].map((im,i)=>{const r=im.getBoundingClien
  return {i, src:im.currentSrc||im.src, w:r.width, h:r.height, top:r.top+scrollY, nw:im.naturalWidth, nh:im.naturalHeight,
  fit:cs.objectFit, pos:cs.objectPosition, vis:cs.visibility!=='hidden'&&cs.display!=='none'&&r.width>30&&r.height>30&&parseFloat(cs.opacity)>0.05}})"""
 
-JS_PROBE = """([i, pts]) => { const im=document.images[i]; const r=im.getBoundingClientRect(); return pts.map(([x,y])=>{
+JS_PROBE = """([i, pts]) => { document.querySelectorAll('#pop,.stab').forEach(e=>e.style.display='none'); const im=document.images[i]; const r=im.getBoundingClientRect(); return pts.map(([x,y])=>{
  if(x<0||y<0||x>=innerWidth||y>=innerHeight) return 'off';
  if(x<r.left-1||x>r.right+1||y<r.top-1||y>r.bottom+1) return 'out';
  const e=document.elementFromPoint(x,y); if(!e) return 'out'; if(e===im) return 'ok';
  if(e.contains(im)) return 'clip';
  return 'cover:'+e.tagName.toLowerCase()+(typeof e.className==='string'&&e.className?'.'+e.className.split(' ')[0]:'')+' "'+(e.textContent||'').trim().slice(0,40)+'"';});}"""
 
-JS_TEXT = """() => { const out=[]; const sel='h1,h2,h3,p,li,a.btn,button,blockquote,figcaption,.eyebrow,small,label';
+JS_TEXT = """() => { document.querySelectorAll('#pop,.stab').forEach(e=>e.style.display='none'); const out=[]; const sel='h1,h2,h3,p,li,a.btn,button,blockquote,figcaption,.eyebrow,small,label';
  const vis=e=>{const cs=getComputedStyle(e);return cs.visibility!=='hidden'&&cs.display!=='none'&&parseFloat(cs.opacity)>0.05};
  document.querySelectorAll(sel).forEach(el=>{ if(!vis(el)||el.closest('.pv,.robo,.bot,.callbar,[aria-hidden=true]')) return;
   if(el.closest('blockquote')&&!el.closest('blockquote.on')&&el.closest('.quotes')) return;

@@ -101,7 +101,7 @@ firma({
  "beauty": ft({
   "c": {"bg":"#F7F8FB","pearl":"#ECEFF6","blush":"#DCE2EF","acc":"#D3241B","acc_d":"#A01811","champ":"#1E3F8F","ink":"#121A2C","mute":"#47506A","star":"#FFA41C"},
   "wm": ["aktiv","center"], "wm_sub": "TV Dinklage · aktive Gesundheit mit Spaß",
-  "hero": "split", "hero_bg_src": "b16", "split_bg": True, "split_video": "img/hero-bg.mp4", "hero_bg_alt": "Trainingsfläche im TVD aktivcenter", "cut_alt": "Trainerinnen im TVD aktivcenter",
+  "hero": "split", "hero_bg_src": "b16", "split_bg": True, "split_video": "img/hero-bg.mp4", "sidetab": {"label": "Beitrittserklärung", "href": "#kontakt"}, "hero_bg_alt": "Trainingsfläche im TVD aktivcenter", "cut_alt": "Trainerinnen im TVD aktivcenter",
   "split": {"imgs": ["b1"], "shape": "tilt", "side": "right", "inset": "b2", "inset_alt": "Trainerin im TVD aktivcenter",
             "alt": "Trainerinnen des TVD aktivcenters"},
   "eyebrow": "Fitness im Verein · Dinklage",
@@ -283,7 +283,7 @@ firma({
  "beauty": ft({
   "c": {"bg":"#F5F9FC","pearl":"#E8F2F9","blush":"#D2E6F3","acc":"#0081C9","acc_d":"#005E93","champ":"#E6007E","ink":"#0E1A24","mute":"#46586A","star":"#FFA41C"},
   "wm": ["INJOY","Vechta"], "wm_sub": "Fitness · Gesundheit · Wellness",
-  "hero": "full", "full_img": "b1", "hero_bg_src": "b1", "hero_bg_alt": "Mitglieder des INJOY Vechta", "cut_alt": "Mitglieder des INJOY Vechta",
+  "hero": "full", "full_img": "b1", "hero_bg_src": "b1", "sidetab": {"label": "Ziele erreichen?", "href": "#kontakt"}, "hero_note": {"eyebrow": "Deutsches Institut für Service-Qualität", "title": "Komm zum Testsieger!", "text": "Seit 12 Jahren ausgezeichnet. Fit werden und bleiben beim Testsieger – wir laden Sie zum kostenlosen Beratungstermin ein.", "btn": "Beratungstermin sichern"}, "hero_bg_alt": "Mitglieder des INJOY Vechta", "cut_alt": "Mitglieder des INJOY Vechta",
   "full_left": "38%", "pos": {"b1": "62% 40%"},
   "eyebrow": "Fitnessstudio in Vechta · Robert-Bosch-Straße",
   "h1": "Fühl dich <em>neu.</em>",
@@ -402,7 +402,7 @@ firma({
  "beauty": ft({
   "c": {"bg":"#FFF7FA","pearl":"#FCEBF2","blush":"#F6D3E2","acc":"#B5206D","acc_d":"#861651","champ":"#E9B44C","ink":"#24161D","mute":"#5E4C55","star":"#FFA41C"},
   "wm": ["LadyFit","21"], "wm_sub": "Fitness & Gesundheit · nur für Frauen",
-  "hero": "split", "hero_bg_src": "b17", "split_bg": True, "hero_bg_alt": "Studio von LadyFit21", "cut_alt": "Studio von LadyFit21",
+  "hero": "split", "hero_bg_src": "b17", "split_bg": True, "popup": {"img": "img/lady_deal.jpg", "img_alt": "Christmas Deal von LadyFit21", "eyebrow": "Nur für kurze Zeit", "title": "Christmas <em>Deal</em>", "sub": "Alles drin, was du für dein Training brauchst – und obendrauf gibt es 79,90 € geschenkt*.", "items": ["Gerätetraining und EGYM-Training", "Groupfitness-Kurse", "Mineralgetränke- und Hydrojet-Massage-Flat", "Collarium-Flat und Bio-Sauna"], "price": ["49,90 €", "im Monat · Laufzeit 14 Monate"], "btn": "Deal sichern", "note": "* Alle Details zum Angebot bekommst du im Studio."}, "hero_bg_alt": "Studio von LadyFit21", "cut_alt": "Studio von LadyFit21",
   "split": {"imgs": ["b1","b2","b3"], "shape": "frame", "side": "right", "alt": "Das Studio von LadyFit21 in Vechta",
             "caps": [["Willkommen","Dein Frauensportclub"],["Gerätetraining","Neue Geräte, nie überfüllt"],["Functional","Raum für dich"]]},
   "eyebrow": "Fitness- und Gesundheitsstudio in Vechta · nur für Frauen",
@@ -465,7 +465,7 @@ firma({
  "beauty": ft({
   "c": {"bg":"#F6F6F7","pearl":"#EAEAEE","blush":"#D9D9E1","acc":"#78193E","acc_d":"#58112D","champ":"#1A466B","ink":"#121216","mute":"#4A4A55","star":"#FFA41C"},
   "wm": ["mPower",""], "wm_sub": "Sport & Gesundheit · Lohne",
-  "hero": "full", "slides": ["b1","b2","b3"], "full_img": "b1", "hero_bg_src": "b1", "videos": [{'at': 'top', 'form': 'wide', 'src': 'img/mp_drone.mp4', 'poster': 'img/mp_drone.jpg', 'alt': 'Kameraflug durch das mPower Lohne', 'eyebrow': 'Rundflug', 'h2': 'Willkommen <em>im mPower.</em>', 'p': 'Flieg einmal durch unser Studio: viel Platz, moderne Geräte und alles, was du für dein Training brauchst.'}], "hero_video": {"src": "img/mp_wer.mp4", "poster": "img/mp_wer.jpg", "title": "Deine Beratung – direkt online!", "alt": "Video: Wer sind wir und was machen wir"}, "hero_bg_alt": "Training bei mPower", "cut_alt": "Athletin bei mPower",
+  "hero": "full", "slides": ["b1","b2","b3"], "full_img": "b1", "hero_bg_src": "b1", "videos": [{'at': 'top', 'form': 'wide', 'src': 'img/mp_drone.mp4', 'poster': 'img/mp_drone.jpg', 'alt': 'Kameraflug durch das mPower Lohne', 'eyebrow': 'Rundflug', 'h2': 'Willkommen <em>im mPower.</em>', 'p': 'Flieg einmal durch unser Studio: viel Platz, moderne Geräte und alles, was du für dein Training brauchst.'}], "hero_video": {"src": "img/mp_wer.mp4", "poster": "img/mp_wer.jpg", "title": "Deine Beratung – direkt online!", "alt": "Video: Wer sind wir und was machen wir", "faq": [['Ist der Sport auch für mich geeignet?', 'img/q1.mp4', 'img/q1.jpg'], ['Welche Kosten kommen auf mich zu?', 'img/q2.mp4', 'img/q2.jpg'], ['Kann ich trotz körperlicher Einschränkungen kommen?', 'img/q3.mp4', 'img/q3.jpg'], ['Was sagen eure Athleten über euch?', 'img/q4.mp4', 'img/q4.jpg'], ['Kann ich das Ganze mal austesten?', 'img/q5.mp4', 'img/q5.jpg'], ['Wie sieht der Ablauf aus?', 'img/q6.mp4', 'img/q6.jpg']]}, "hero_bg_alt": "Training bei mPower", "cut_alt": "Athletin bei mPower",
   "pos": {"b1": "45% 40%", "b2": "60% 35%"},
   "eyebrow": "Training, Coaching & Physio in Lohne",
   "h1": "Stärker als <em>gestern.</em>",
@@ -527,7 +527,7 @@ firma({
  "beauty": ft({
   "c": {"bg":"#F8F7FC","pearl":"#EEECF8","blush":"#DDD9F1","acc":"#342B90","acc_d":"#241E6A","champ":"#E1B25A","ink":"#16142A","mute":"#4D4A63","star":"#FFA41C"},
   "wm": ["Aktiv &","Gesund"], "wm_sub": "Gesundheitszentrum Karl-Georg Beckmann · Bramsche",
-  "hero": "split", "hero_bg_src": "b11", "split_bg": True, "hero_bg_alt": "Trainingsfläche im Gesundheitszentrum", "cut_alt": "Therapeut im Gesundheitszentrum",
+  "hero": "split", "hero_bg_src": "b11", "split_bg": True, "hero_note": {"eyebrow": "Wir suchen dich", "title": "Physiotherapeut:in & Praxisnachfolge", "text": "Du suchst einen Physiotherapie-Job mit klaren Strukturen, verlässlichen Abläufen und echter Perspektive? Wir bieten dir eine einmalige Chance.", "btn": "Jetzt melden"}, "hero_bg_alt": "Trainingsfläche im Gesundheitszentrum", "cut_alt": "Therapeut im Gesundheitszentrum",
   "split": {"imgs": ["b1","b3","b9"], "shape": "wide", "side": "left", "alt": "Gesundheitstraining im Gesundheitszentrum Beckmann",
             "caps": [["Gesundheitstraining","Betreut an jedem Gerät"],["Kurse & Gymnastik","In hellen Räumen"],["Trainingsraum","Hell und ruhig"]]},
   "eyebrow": "Physiotherapie · Gesundheitstraining · Wellness in Bramsche",
@@ -583,7 +583,7 @@ firma({
  "beauty": ft({
   "c": {"bg":"#FBF8F5","pearl":"#F4EEE8","blush":"#E9DCD0","acc":"#C8414F","acc_d":"#972E3A","champ":"#6B4FB8","ink":"#1B1720","mute":"#544C58","star":"#FFA41C"},
   "wm": ["FFS",""], "wm_sub": "Sport- und Wellnesspark Wallenhorst · seit 1992",
-  "hero": "full", "slides": ["b1","b2","b3"], "full_img": "b1", "hero_bg_src": "b1", "videos": [{'at': 'leistungen', 'form': 'wide', 'src': 'img/ffs2.mp4', 'poster': 'img/ffs2.jpg', 'ton': True, 'alt': 'Video: Trainingswelt im FFS', 'eyebrow': 'Trainingswelt', 'h2': 'Trainieren <em>im FFS.</em>', 'p': 'Ein Rundgang durch unsere Trainingswelt: Geräte, Kursräume und Betreuung für jedes Ziel.'}, {'at': 'leistungen', 'form': 'wide', 'src': 'img/ffs1.mp4', 'poster': 'img/ffs1.jpg', 'ton': True, 'alt': 'Video: Wellnesswelt im FFS', 'eyebrow': 'Wellnesswelt', 'h2': 'Abschalten <em>nach dem Training.</em>', 'p': 'Holzgefeuerte Erdsauna, Ruheräume und Wärme: So sieht Erholung bei uns aus.'}], "hero_bg_alt": "Holzgefeuerte Erdsauna im FFS", "cut_alt": "FFS Wallenhorst",
+  "hero": "full", "slides": ["b1","b2","b3"], "full_img": "b1", "hero_bg_src": "b1", "videos": [{'at': 'leistungen', 'form': 'wide', 'src': 'img/ffs2.mp4', 'poster': 'img/ffs2.jpg', 'ton': True, 'alt': 'Video: Trainingswelt im FFS', 'eyebrow': 'Trainingswelt', 'h2': 'Trainieren <em>im FFS.</em>', 'p': 'Ein Rundgang durch unsere Trainingswelt: Geräte, Kursräume und Betreuung für jedes Ziel.'}, {'at': 'leistungen', 'form': 'wide', 'src': 'img/ffs1.mp4', 'poster': 'img/ffs1.jpg', 'ton': True, 'alt': 'Video: Wellnesswelt im FFS', 'eyebrow': 'Wellnesswelt', 'h2': 'Abschalten <em>nach dem Training.</em>', 'p': 'Holzgefeuerte Erdsauna, Ruheräume und Wärme: So sieht Erholung bei uns aus.'}], "popup": {"eyebrow": "Gültig ab 31.08.26", "title": "Unser neuer <em>Kursplan</em> ist da", "sub": "Mehr Energie, mehr Abwechslung, mehr Stärke.", "items": ["Über 30 Kursstunden pro Woche", "Tabata, Yoga, Fullbody-Workout, Stretch, Indoor Cycling und mehr", "Regelmäßige Event-Workouts und Musikspecials", "Passende Kurse für jedes Fitnesslevel, auch mit Vorteilskarte"], "btn": "Jetzt Ersttermin buchen"}, "hero_bg_alt": "Holzgefeuerte Erdsauna im FFS", "cut_alt": "FFS Wallenhorst",
   "pos": {"b1": "50% 55%"},
   "eyebrow": "Fitness & Wellness in Wallenhorst · seit 1992",
   "h1": "Erst trainieren. <em>Dann abtauchen.</em>",
