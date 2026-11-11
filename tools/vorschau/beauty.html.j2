@@ -585,6 +585,8 @@ body.has-sbar .hero .wrap{padding-top:150px}
 .t3 .ph img{width:100%;height:100%;object-fit:cover}
 .t3 figcaption{margin-top:22px;font:var(--hw) 24px/1.2 var(--fh)}
 .t3 figcaption small{display:block;margin-top:6px;font:500 13.5px var(--fb);letter-spacing:.14em;text-transform:uppercase;color:var(--acc-d)}
+.t3.many{grid-template-columns:repeat(auto-fill,minmax(200px,1fr))!important;gap:34px 22px}.t3.many figcaption{font-size:18px;text-align:center;overflow-wrap:anywhere}.t3.many figcaption small{font-size:11px;letter-spacing:.06em;line-height:1.35}
+@media (max-width:640px){.t3.many{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:26px 14px}.t3.many .ph{max-width:none}.t3.many figcaption{font-size:15.5px}.t3.many figcaption small{font-size:10px}}
 /* ---------- Studio-Video (Hochformat) ---------- */
 .svid{padding:120px 0}
 .svid-in{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(40px,7vw,110px);align-items:center}
@@ -599,8 +601,8 @@ body.has-sbar .hero .wrap{padding-top:150px}
 .pop-i img{width:100%;height:100%;object-fit:cover;display:block}.pop-t{position:relative;padding:clamp(28px,4vw,46px);display:flex;flex-direction:column;justify-content:center}.pop-t h2{font-size:clamp(28px,3vw,40px);margin:10px 0 12px;line-height:1.05}.pop-s{color:color-mix(in srgb,var(--ink) 75%,transparent);margin-bottom:14px}.pop-t ul{margin:4px 0 18px;padding:0;list-style:none;display:grid;gap:8px}.pop-t li{padding-left:28px;position:relative}.pop-t li::before{content:"\2713";position:absolute;left:2px;top:0;color:var(--acc);font-weight:700}
 .pop-p{margin:0 0 18px}.pop-p b{font:var(--hw) clamp(30px,3vw,40px)/1 var(--fh);color:var(--acc)}.pop-n{display:block;margin-top:12px;font-size:12.5px;opacity:.6}.pop-x{position:absolute;right:12px;top:10px;border:0;background:none;font-size:30px;line-height:1;cursor:pointer;color:inherit}
 @keyframes popin{from{opacity:0;transform:translateY(24px) scale(.97)}to{opacity:1;transform:none}}
-@media (max-width:900px){.h-note{position:relative;right:auto;left:auto!important;bottom:auto;width:auto;margin:18px 0 0}.pop.has-img .pop-c{grid-template-columns:1fr}.pop-i{max-height:38svh;overflow:hidden}.stab{padding:14px 8px;font-size:12.5px}}.h-vid{position:relative;z-index:2;align-self:center;justify-self:end;width:min(560px,100%);padding:14px 14px 16px;border-radius:calc(var(--r) * .7);background:color-mix(in srgb,var(--bg) 94%,transparent);box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}.h-vid .hv-t{margin:4px 6px 12px;font:var(--hw) clamp(18px,1.6vw,24px)/1.1 var(--fh);text-transform:var(--hcase,none);letter-spacing:.02em;color:var(--ink);text-align:center}.h-vid video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:calc(var(--r) * .45);background:#000}@media (max-width:900px){.h-vid{justify-self:stretch;width:100%;margin-top:22px}}.svid.sq .svid-f{width:min(520px,100%);aspect-ratio:1;padding:8px}.svid.flip .svid-f{order:2}.svid.wide.flip .svid-in{grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr)}@media (max-width:900px){.svid.flip .svid-f{order:0}}
-.svid.wide .svid-in{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr)}.svid.wide .svid-f{width:100%;aspect-ratio:16/9;padding:8px}
+@media (max-width:900px){.h-note{position:relative;right:auto;left:auto!important;bottom:auto;width:auto;margin:18px 0 0}.pop.has-img .pop-c{grid-template-columns:1fr}.pop-i{max-height:38svh;overflow:hidden}.stab{padding:14px 8px;font-size:12.5px}}.h-vid{position:relative;z-index:2;align-self:center;justify-self:end;width:min(560px,100%);padding:14px 14px 16px;border-radius:calc(var(--r) * .7);background:color-mix(in srgb,var(--bg) 94%,transparent);box-shadow:0 40px 80px -40px rgba(0,0,0,.6)}.h-vid .hv-t{margin:4px 6px 12px;font:var(--hw) clamp(18px,1.6vw,24px)/1.1 var(--fh);text-transform:var(--hcase,none);letter-spacing:.02em;color:var(--ink);text-align:center}.h-vid video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;border-radius:calc(var(--r) * .45);background:#000}@media (max-width:900px){.h-vid{justify-self:stretch;width:100%;margin-top:22px}}.svid.sq .svid-f{width:min(520px,100%);aspect-ratio:1;padding:8px}.svid.flip .svid-f{order:2}.svid.wide.flip .svid-in{grid-template-columns:minmax(0,.75fr) minmax(0,1.25fr)}@media (max-width:900px){.svid.flip .svid-f{order:0}.svid.wide.flip .svid-in,.svid.wide .svid-in{grid-template-columns:1fr}.jobs .svid-f{width:100%}}
+.svid.wide .svid-in{grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr)}.svid-f>img{width:100%;height:100%;object-fit:cover;border-radius:var(--r);display:block}.jobs .svid-f{aspect-ratio:4/3}.svid.wide .svid-f{width:100%;aspect-ratio:16/9;padding:8px}
 
 /* ---------- Gastro: leichter Dampf über warmen Gerichten ---------- */
 .ci,.hm-main{position:relative}
@@ -902,7 +904,13 @@ html.qa .steam{display:none}
 
 {% if B.get('team3') %}{% set T3 = B.team3 %}<section class="team3" id="team"><div class="wrap">
  <span class="eyebrow rv">{{ T3.eyebrow }}</span><h2 class="rv d1">{{ T3.h2 | safe }}</h2>
- <div class="t3" style="--tn:{{ T3.people | length }}">{% for pp in T3.people %}<figure class="rv d{{ loop.index }}"><div class="ph">{{ im(pp[0], pp[1]) }}</div><figcaption>{{ pp[1] }}{% if pp|length > 2 and pp[2] %}<small>{{ pp[2] }}</small>{% endif %}</figcaption></figure>{% endfor %}</div>
+ <div class="t3{% if T3.people | length > 5 %} many{% endif %}" style="--tn:{{ T3.people | length }}">{% for pp in T3.people %}<figure class="rv d{{ loop.index }}"><div class="ph">{{ im(pp[0], pp[1]) }}</div><figcaption>{{ pp[1] }}{% if pp|length > 2 and pp[2] %}<small>{{ pp[2] }}</small>{% endif %}</figcaption></figure>{% endfor %}</div>
+</div></section>{% endif %}
+{% if B.get('jobs') %}{% set J = B.jobs %}<section class="svid wide flip jobs" id="karriere"><div class="wrap svid-in">
+ <div class="svid-f rv">{{ im(J.img, J.alt) }}</div>
+ <div><span class="eyebrow rv">{{ J.get('eyebrow','Karriere') }}</span><h2 class="rv d1">{{ J.h2 | safe }}</h2><p class="lead rv d2">{{ J.p }}</p>
+ {% if J.get('list') %}<ul class="checks rv d3">{% for x in J.list %}<li><i>{{ check | safe }}</i>{{ x }}</li>{% endfor %}</ul>{% endif %}
+ <a class="btn btn-p rv d3" href="{{ J.get('href', '#kontakt') }}" style="margin-top:30px">{{ J.get('btn', 'Jetzt bewerben') }}</a></div>
 </div></section>{% endif %}
 {{ vids('ueber') }}
 {% if B.get('studio_video') and not B.studio_video.get('top', True) %}{{ svid_html }}{% endif %}
