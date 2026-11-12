@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>H. Siefker Haustechnik GmbH – seit 1904 in Bad Essen | Entwurf</title>
+<meta name="description" content="Heizung, Elektro, Bäder, Lüftung und Kommunikation aus einer Hand – Familienbetrieb seit 1904 in Bad Essen. Kostenlos beraten lassen: 05472 94270.">
+<link rel="preload" as="image" href="img/hero.jpg">
+<style>
+@font-face {
+  font-family: 'Archivo';
+  font-style: normal;
+  font-weight: 400 800;
+  font-stretch: 100%;
+  font-display: swap;
+  src: url(../../assets/fonts/k3kPo8UDI-1M0wlSV9XAw6lQkqWY8Q82sLydOxI.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;font-family:var(--fb);color:var(--ink);background:var(--bg,#fff);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:var(--fh);margin:0;line-height:1.08}
+p{margin:0}
+button{font:inherit;cursor:pointer}
+.w{width:min(1240px,100% - 48px);margin-inline:auto}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+[data-r]{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+[data-r].in{opacity:1;transform:none}
+[data-r="2"]{transition-delay:.12s}[data-r="3"]{transition-delay:.24s}[data-r="4"]{transition-delay:.36s}
+@media (prefers-reduced-motion:reduce){[data-r]{opacity:1;transform:none;transition:none}*{animation:none!important}}
+
+/* Entwurf-Hinweis */
+.hlp-note{position:fixed;left:0;right:0;bottom:0;z-index:60;background:#0b0f19;color:#e9edf5;font:500 12.5px/1.4 system-ui,sans-serif;padding:9px 46px 9px 16px;text-align:center}
+.hlp-note b{color:#fff}
+.hlp-note button{position:absolute;right:10px;top:50%;transform:translateY(-50%);background:none;border:0;color:#fff;font-size:20px;line-height:1}
+body.note-x .hlp-note{display:none}
+
+/* Mobile Anrufleiste */
+.mcall{display:none}
+@media (max-width:820px){
+ .mcall{display:grid;grid-template-columns:1fr 1.4fr;position:fixed;left:0;right:0;bottom:0;z-index:55;box-shadow:0 -8px 30px rgba(0,0,0,.18)}
+ .mcall a{display:flex;align-items:center;justify-content:center;gap:8px;padding:15px 10px;font:700 15px var(--fb);color:#fff;background:var(--p)}
+ .mcall a+a{background:var(--a);color:var(--a-ink,#fff)}
+ .mcall svg{width:18px;height:18px}
+ .hlp-note{bottom:52px;font-size:11.5px}
+ body{padding-bottom:52px}
+}
+
+/* KI-Assistent */
+.bot{position:fixed;right:22px;bottom:64px;z-index:58;font-family:var(--fb)}
+.bot-b{width:64px;height:64px;border-radius:50%;border:0;background:var(--p);color:#fff;box-shadow:0 14px 34px rgba(0,0,0,.28);display:grid;place-items:center;position:relative;transition:transform .3s}
+.bot-b:hover{transform:scale(1.06)}
+.bot-b svg{width:38px;height:38px}
+.bot-b::after{content:"";position:absolute;right:4px;top:4px;width:13px;height:13px;border-radius:50%;background:#2fd36b;border:2px solid #fff}
+.bot-t{position:absolute;right:0;bottom:78px;width:290px;background:#fff;color:#1a2030;border-radius:16px;padding:16px 18px;box-shadow:0 18px 50px rgba(10,20,40,.22);font-size:14.5px;line-height:1.45;transition:opacity .35s,transform .35s}
+.bot-t small{display:block;font:700 11px var(--fb);letter-spacing:.12em;text-transform:uppercase;color:var(--p);margin-bottom:6px}
+.bot-t .bx{position:absolute;right:10px;top:8px;border:0;background:none;font-size:18px;color:#8a93a6}
+.bot-t .bb{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.bot-t .bb button{border:0;border-radius:999px;padding:8px 14px;font:600 13px var(--fb);background:var(--p);color:#fff}
+.bot-t .bb button+button{background:#eef1f6;color:#1a2030}
+.bot.hide-t .bot-t{opacity:0;transform:translateY(10px);pointer-events:none}
+.bot-p{position:absolute;right:0;bottom:78px;width:min(360px,calc(100vw - 32px));height:470px;background:#fff;border-radius:18px;box-shadow:0 24px 60px rgba(10,20,40,.3);display:none;flex-direction:column;overflow:hidden;color:#1a2030}
+.bot.open .bot-p{display:flex}.bot.open .bot-t{display:none}
+.bot-h{background:var(--p);color:#fff;padding:14px 16px;display:flex;align-items:center;gap:10px}
+.bot-h b{display:block;font-size:15px}.bot-h span{font-size:12px;opacity:.8}
+.bot-h button{margin-left:auto;border:0;background:none;color:#fff;font-size:22px}
+.bot-m{flex:1;overflow:auto;padding:14px;display:flex;flex-direction:column;gap:8px;background:#f5f7fa}
+.bot-m div{max-width:85%;padding:9px 12px;border-radius:14px;font-size:14px;line-height:1.45;background:#fff;box-shadow:0 2px 6px rgba(0,0,0,.05)}
+.bot-m div.u{align-self:flex-end;background:var(--p);color:#fff}
+.bot-c{display:flex;gap:6px;flex-wrap:wrap;padding:10px 12px;border-top:1px solid #e7eaf0}
+.bot-c button{border:1px solid #d8dde7;background:#fff;border-radius:999px;padding:7px 12px;font:500 12.5px var(--fb);color:#1a2030}
+@media (max-width:820px){.bot{right:14px;bottom:112px}.bot-b{width:56px;height:56px}.bot-t{width:250px;font-size:13.5px}}
+
+/* Formular-Basis */
+.fm{display:grid;gap:12px}
+.fm input,.fm select,.fm textarea{width:100%;font:500 15px var(--fb);padding:14px 16px;border-radius:var(--fr,8px);border:1px solid rgba(0,0,0,.14);background:#fff;color:#1a2030}
+.fm textarea{min-height:96px;resize:vertical}
+.fm .ok{display:none;padding:14px;border-radius:8px;background:#e8f7ee;color:#14532d;font-weight:600}
+.fm.sent .ok{display:block}.fm.sent>*:not(.ok){display:none}
+.fm small{font-size:12px;opacity:.7}
+
+/* Karte */
+.map{position:relative;overflow:hidden}
+.map img{width:100%;height:100%;object-fit:cover}
+
+:root{--p:#22379A;--pd:#16236A;--a:#D7262E;--ink:#181D2C;--mute:#5B6276;--bg:#E9EDF4;--soft:#F5F7FB;--line:#E2E6EE;--fh:'Archivo',system-ui,sans-serif;--fb:'Archivo',system-ui,sans-serif;--fr:10px}
+body{background:var(--bg) radial-gradient(1200px 600px at 80% -10%,#dfe6f5,transparent 70%) fixed}
+.sheet{width:min(1340px,100% - 40px);margin:20px auto 0;background:#fff;border-radius:28px;box-shadow:0 40px 90px rgba(22,35,106,.14),0 2px 0 rgba(255,255,255,.8) inset;overflow:hidden}
+.w{width:min(1180px,100% - 64px)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:16px 26px;border-radius:12px;font:700 15px/1 var(--fh);transition:transform .25s,box-shadow .25s,background .25s}
+.btn svg{width:18px;height:18px}
+.btn-a{background:var(--a);color:#fff;box-shadow:0 12px 26px rgba(215,38,46,.3)}.btn-a:hover{transform:translateY(-2px);box-shadow:0 18px 34px rgba(215,38,46,.4)}
+.btn-p{background:var(--p);color:#fff}.btn-p:hover{background:var(--pd)}
+.btn-l{background:#fff;color:var(--p);box-shadow:inset 0 0 0 1.5px var(--line)}
+.ey{display:inline-block;font:700 12.5px var(--fh);letter-spacing:.2em;text-transform:uppercase;color:var(--a);margin-bottom:14px}
+.h2{font:800 clamp(32px,3.8vw,52px)/1.04 var(--fh);color:var(--ink);letter-spacing:-.025em}
+.h2 span{background:linear-gradient(180deg,#3a52c4,var(--pd));-webkit-background-clip:text;background-clip:text;color:transparent}
+
+/* Header: Logo links, graue Großbuchstaben-Navigation wie im Original */
+.hd{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.92);backdrop-filter:blur(12px);transition:box-shadow .3s}
+.hd.scr{box-shadow:0 10px 30px rgba(22,35,106,.1)}
+.hd .w{display:flex;align-items:center;gap:30px;height:100px}
+.logo img{height:64px;width:auto}
+.nav{display:flex;gap:24px;margin-left:auto}
+.nav a{font:500 14px var(--fh);letter-spacing:.06em;text-transform:uppercase;color:#6b7080;transition:color .25s}
+.nav a:hover{color:var(--a)}
+.hd .btn{padding:13px 18px;font-size:14px}
+.nav-tgl{display:none;border:0;background:var(--p);width:46px;height:46px;border-radius:12px}
+
+/* Hero: großes Bild im Rahmen, darunter vier Kacheln mit Balken (Original-Idee) */
+.hero{padding:0 0 0}
+.hero .w{position:relative}
+.stage{position:relative;border-radius:22px;overflow:hidden;min-height:540px;display:flex;align-items:flex-end;color:#fff}
+.stage>img{position:absolute;inset:0;z-index:0;width:100%;height:100%;object-fit:cover;object-position:50% 60%}
+.stage::before{content:"";position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(16,24,70,.88) 0%,rgba(16,24,70,.62) 45%,rgba(16,24,70,.1) 80%)}
+.stage .tx{position:relative;z-index:2;padding:60px 56px 150px;max-width:720px}
+.since{display:inline-flex;align-items:center;gap:12px;background:rgba(255,255,255,.12);backdrop-filter:blur(10px);border:1px solid rgba(255,255,255,.25);border-radius:999px;padding:7px 16px 7px 8px;font:600 13.5px var(--fb)}
+.since b{background:var(--a);border-radius:999px;padding:4px 10px;font:800 13px var(--fh)}
+.stage h1{font:800 clamp(42px,5.4vw,78px)/1 var(--fh);letter-spacing:-.03em;margin:22px 0 18px}
+.stage h1 i{font-style:normal;color:#ffd0d2}
+.stage p{font-size:clamp(16px,1.3vw,19px);color:#dfe4f4;max-width:520px;margin-bottom:28px}
+.stage .cta{display:flex;flex-wrap:wrap;gap:12px}
+.stage .cta .btn-l{background:rgba(255,255,255,.14);color:#fff;box-shadow:inset 0 0 0 1.5px rgba(255,255,255,.4);backdrop-filter:blur(8px)}
+.tiles{position:relative;z-index:2;display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin:-110px 32px 0}
+.tile{position:relative;border-radius:16px;overflow:hidden;aspect-ratio:16/10;box-shadow:0 20px 40px rgba(16,24,70,.25);color:#fff;isolation:isolate}
+.tile img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:-1;transition:transform .8s}
+.tile:hover img{transform:scale(1.07)}
+.tile span{position:absolute;left:0;right:0;bottom:0;padding:12px 18px;background:rgba(30,34,48,.55);backdrop-filter:blur(8px);font:800 16px var(--fh);letter-spacing:.08em;text-transform:uppercase;display:flex;justify-content:space-between;align-items:center;transition:background .3s}
+.tile:hover span{background:rgba(215,38,46,.9)}
+
+/* Vertrauensleiste */
+.trust{padding:70px 0 40px}
+.trust .w{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.trust div{background:var(--soft);border-radius:16px;padding:24px 22px}
+.trust b{display:block;font:800 clamp(28px,2.8vw,40px)/1 var(--fh);color:var(--p)}
+.trust span{color:var(--mute);font-size:14.5px}
+
+/* Unternehmen */
+.unt{padding:80px 0}
+.unt .w{display:grid;grid-template-columns:1.05fr .95fr;gap:70px;align-items:center}
+.unt p{color:var(--mute);font-size:16.5px;margin:20px 0 14px}
+.unt .q{margin-top:26px;padding:22px 24px;border-radius:16px;background:linear-gradient(135deg,var(--p),var(--pd));color:#fff;font:700 20px/1.35 var(--fh)}
+.unt .q small{display:block;font:500 13px var(--fb);color:#c6cdf0;margin-top:8px}
+.unt .pic{position:relative}
+.unt .pic img{width:100%;border-radius:20px;aspect-ratio:4/3;object-fit:cover}
+.unt .pic .yr{position:absolute;right:-18px;top:-22px;width:130px;height:130px;border-radius:50%;background:var(--a);color:#fff;display:grid;place-items:center;text-align:center;box-shadow:0 18px 36px rgba(215,38,46,.4);font:800 14px/1.1 var(--fh)}
+.unt .pic .yr b{display:block;font-size:34px}
+.gen{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.gen span{padding:8px 14px;border-radius:999px;background:var(--soft);font:600 13.5px var(--fb);color:var(--p)}
+
+/* Gewerke */
+.gw{padding:90px 0;background:var(--soft)}
+.gw .top2{display:flex;justify-content:space-between;align-items:end;gap:40px;margin-bottom:44px;flex-wrap:wrap}
+.gw .top2 p{max-width:420px;color:var(--mute)}
+.gwl{display:grid;gap:18px}
+.g{display:grid;grid-template-columns:.9fr 1.1fr;background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 14px 34px rgba(22,35,106,.06)}
+.g:nth-child(even){grid-template-columns:1.1fr .9fr}
+.g:nth-child(even) .im{order:2}
+.g .im{position:relative;min-height:320px}
+.g .im img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.g .tx{padding:44px 46px}
+.g .nr{font:800 13px var(--fh);letter-spacing:.2em;color:var(--a)}
+.g h3{font:800 30px/1.1 var(--fh);color:var(--ink);margin:8px 0 12px;letter-spacing:-.02em}
+.g p{color:var(--mute);font-size:15.5px}
+.g ul{list-style:none;padding:0;margin:18px 0 0;display:flex;flex-wrap:wrap;gap:8px}
+.g li{padding:7px 12px;border-radius:999px;background:var(--soft);font:600 13px var(--fb);color:var(--p)}
+.g .big{display:inline-flex;align-items:baseline;gap:8px;margin-top:18px;padding:12px 16px;border-radius:12px;background:#fdecec;color:var(--a);font:800 15px var(--fh)}
+.g .big b{font-size:28px}
+
+/* Komplettservice */
+.ks{padding:90px 0}
+.ks .w{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}
+.flow{display:grid;grid-template-columns:repeat(5,1fr);gap:10px;counter-reset:f}
+.flow div{position:relative;background:var(--soft);border-radius:16px;padding:22px 16px;counter-increment:f}
+.flow div::before{content:counter(f);display:grid;place-items:center;width:34px;height:34px;border-radius:50%;background:var(--p);color:#fff;font:800 15px var(--fh);margin-bottom:12px}
+.flow div:last-child::before{background:var(--a)}
+.flow b{display:block;font:800 15.5px/1.25 var(--fh);color:var(--ink)}
+.ks p{color:var(--mute);font-size:16.5px;margin:18px 0 26px}
+.extra{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:22px}
+.extra span{background:#fff;border:1.5px solid var(--line);border-radius:12px;padding:14px;font:600 14px var(--fb);color:var(--ink);text-align:center}
+
+/* Bewertungen */
+.rev{padding:90px 0;background:linear-gradient(135deg,var(--p),var(--pd));color:#fff;position:relative;overflow:hidden}
+.rev::after{content:"1904";position:absolute;right:-20px;bottom:-60px;font:800 260px/1 var(--fh);color:rgba(255,255,255,.05);letter-spacing:-.05em}
+.rev .w{position:relative;z-index:1;display:grid;grid-template-columns:.75fr 1.25fr;gap:60px;align-items:center}
+.rev .h2{color:#fff}
+.rev .sc{display:flex;align-items:center;gap:16px;margin-top:24px}
+.rev .sc b{font:800 60px/1 var(--fh)}
+.rev .sc .st{color:#FFC233;font-size:20px;letter-spacing:2px}
+.rev .sc span{display:block;font-size:14px;color:#c6cdf0}
+.rcs{display:grid;gap:14px}
+.rc{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.14);border-radius:18px;padding:22px 24px}
+.rc .st{color:#FFC233;letter-spacing:2px;font-size:14px}
+.rc p{font-size:16px;margin:6px 0 6px}
+.rc small{color:#c6cdf0;font-size:12.5px}
+
+/* Karriere */
+.kar{padding:90px 0}
+.kar .w{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
+.kar img{width:100%;border-radius:20px;aspect-ratio:4/3;object-fit:cover}
+.kar p{color:var(--mute);font-size:16.5px;margin:18px 0 24px}
+
+/* Kontakt */
+.kon{padding:90px 0;background:var(--soft)}
+.kon .w{display:grid;grid-template-columns:1fr 1fr;gap:30px}
+.kon .l{background:#fff;border-radius:22px;padding:44px}
+.kon .tel{display:block;font:800 clamp(34px,3.6vw,48px)/1 var(--fh);color:var(--p);margin:16px 0 8px;letter-spacing:-.02em}
+.kon .l p{color:var(--mute)}
+.kon .ad{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}
+.kon .ad b{display:block;font:700 12.5px var(--fh);letter-spacing:.16em;text-transform:uppercase;color:var(--a);margin-bottom:6px}
+.kon .ad span{color:var(--ink);font-size:15px}
+.kon .map{height:200px;border-radius:16px}
+.kon .map .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);width:30px;height:40px;background:var(--a);clip-path:path('M15 0C6.7 0 0 6.7 0 15c0 11.3 15 25 15 25s15-13.7 15-25C30 6.7 23.3 0 15 0z')}
+.kon .map a{position:absolute;left:12px;bottom:12px;padding:10px 14px;font-size:13px}
+.kon .f{background:var(--pd);color:#fff;border-radius:22px;padding:44px}
+.kon .f h3{font:800 28px/1.1 var(--fh)}
+.kon .f p{color:#c6cdf0;margin:8px 0 22px}
+.kon .f .fm input,.kon .f .fm select,.kon .f .fm textarea{border:0}
+.kon .f .btn{border:0}
+
+/* Footer wie Original: eine Zeile mit Firma | Adresse | Kontakt/Impressum */
+.ft{padding:30px 0 34px;font-size:14px;color:var(--mute)}
+.ft .w{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;align-items:center}
+.ft b{color:var(--ink)}
+.ft .cp{flex-basis:100%;font-size:12.5px;border-top:1px solid var(--line);padding-top:16px}
+.below{height:90px}
+
+@media (max-width:1150px){
+ .nav{display:none}.nav-tgl{display:grid;place-items:center;margin-left:auto}.hd .btn{display:none}
+ body.nav-open .nav{display:flex;position:fixed;top:100px;left:20px;right:20px;flex-direction:column;background:#fff;border-radius:18px;padding:20px 24px 26px;gap:6px;box-shadow:0 20px 40px rgba(0,0,0,.15)}
+ body.nav-open .nav a{font-size:18px;padding:8px 0}
+ .tiles{grid-template-columns:repeat(2,1fr)}
+ .flow{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:820px){
+ .sheet{width:100%;margin:0;border-radius:0}
+ .w{width:calc(100% - 36px)}
+ .hd .w{height:76px}.logo img{height:46px}
+ body.nav-open .nav{top:80px}
+ .stage{min-height:0;border-radius:18px}
+ .stage::before{background:linear-gradient(0deg,rgba(16,24,70,.95),rgba(16,24,70,.6) 70%,rgba(16,24,70,.35))}
+ .stage .tx{padding:110px 22px 120px}
+ .stage .cta .btn{width:100%}
+ .tiles{margin:-90px 10px 0;gap:10px}.tile span{font-size:12.5px;padding:9px 12px}
+ .trust{padding:46px 0 10px}.trust .w{grid-template-columns:1fr 1fr;gap:10px}
+ .unt,.gw,.ks,.rev,.kar,.kon{padding:64px 0}
+ .unt .w,.ks .w,.kar .w,.rev .w,.kon .w{grid-template-columns:1fr;gap:40px}
+ .unt .pic .yr{right:10px;width:100px;height:100px;font-size:12px}.unt .pic .yr b{font-size:26px}
+ .g,.g:nth-child(even){grid-template-columns:1fr}.g:nth-child(even) .im{order:0}.g .im{min-height:220px}.g .tx{padding:28px 22px}
+ .flow{grid-template-columns:1fr 1fr}.extra{grid-template-columns:1fr 1fr}
+ .kon .l,.kon .f{padding:28px 20px}.kon .ad{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<div class="sheet">
+<header class="hd" data-hd><div class="w">
+ <a class="logo" href="#top"><img src="img/logo.png" alt="H. Siefker Haustechnik GmbH – seit 1904" width="270" height="68"></a>
+ <nav class="nav" aria-label="Hauptmenü"><a href="#unternehmen">Unternehmen</a><a href="#gewerke">Leistungen</a><a href="#heizung">Heizung</a><a href="#elektro">Elektro</a><a href="#baeder">Bäder</a><a href="#lueftung">Lüftung</a><a href="#kommunikation">Kommunikation</a></nav>
+ <a class="btn btn-a" href="#kontakt">Kostenlos beraten lassen</a>
+ <button class="nav-tgl" data-nav aria-label="Menü"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2.4"><path d="M3 6h18M3 12h18M3 18h18"/></svg></button>
+</div></header>
+
+<main id="top">
+<section class="hero"><div class="w">
+ <div class="stage">
+  <img src="img/hero.jpg" alt="Moderne Küche – Haustechnik von Siefker" fetchpriority="high">
+  <div class="tx">
+   <span class="since"><b>1904</b>Familienbetrieb in 4. Generation · Bad Essen</span>
+   <h1>Wärme, Wasser, Strom. <i>Seit 1904 in guten Händen.</i></h1>
+   <p>Heizung, Bad, Elektro, Lüftung und Kommunikation aus einer Hand – mit einem Team, das schnell vor Ort ist und Ihr Haus von Grund auf kennt.</p>
+   <div class="cta"><a class="btn btn-a" href="#kontakt">Kostenlos beraten lassen</a><a class="btn btn-l" href="tel:+49547294270">05472 94270</a></div>
+  </div>
+ </div>
+ <div class="tiles">
+  <a class="tile" href="#heizung" data-r><img src="img/oel.jpg" alt="Siefker-Monteur bei der Heizungswartung" loading="lazy"><span>Heizung <i>→</i></span></a>
+  <a class="tile" href="#elektro" data-r="2"><img src="img/elektro.jpg" alt="Siefker-Elektriker am Zählerschrank" loading="lazy" style="object-position:50% 30%"><span>Elektro <i>→</i></span></a>
+  <a class="tile" href="#kommunikation" data-r="3"><img src="img/bus.jpg" alt="Bus-Schalter für Licht" loading="lazy"><span>Kommunikation <i>→</i></span></a>
+  <a class="tile" href="#baeder" data-r="4"><img src="img/bad.jpg" alt="Siefker-Monteur bei der Badinstallation" loading="lazy" style="object-position:50% 25%"><span>Bäder <i>→</i></span></a>
+ </div>
+</div></section>
+
+<section class="trust"><div class="w">
+ <div data-r><b>1904</b><span>gegründet in Bad Essen</span></div>
+ <div data-r="2"><b>4.</b><span>Generation – Heiner Siefker</span></div>
+ <div data-r="3"><b>5</b><span>Gewerke aus einer Hand</span></div>
+ <div data-r="4"><b>4,5 ★</b><span>bei Google · 15 Bewertungen</span></div>
+</div></section>
+
+<section class="unt" id="unternehmen"><div class="w">
+ <div>
+  <span class="ey" data-r>Unternehmen</span>
+  <h2 class="h2" data-r>Ein Familienbetrieb <span>mit Tradition.</span></h2>
+  <p data-r>1904 als Handelsunternehmen für Fahrräder und Nähmaschinen gegründet, wird der Betrieb in der Schledehausener Straße 3 heute in vierter Generation von Heiner Siefker geführt.</p>
+  <p data-r>Handwerkliche Fachkompetenz, Zuverlässigkeit und die Nähe zu unseren Kunden sind seit über 120 Jahren unser Markenzeichen – fest verwurzelt in Bad Essen und im Altkreis Wittlage. Für Privatkunden und Gewerbe, mit kontinuierlicher Servicebereitschaft.</p>
+  <div class="gen" data-r><span>Fahrräder &amp; Nähmaschinen</span><span>→</span><span>Haustechnik</span><span>→</span><span>Heizung · Bad · Elektro · Lüftung</span></div>
+  <div class="q" data-r>„Verlässlichkeit und Kontinuität sind kein Luxus.“<small>Ihr Siefker-Team</small></div>
+ </div>
+ <div class="pic" data-r="2"><img src="img/team.jpg" alt="Das Team von H. Siefker Haustechnik vor den Firmenwagen" loading="lazy"></div>
+</div></section>
+
+<section class="gw" id="gewerke"><div class="w">
+ <div class="top2"><div><span class="ey" data-r>Leistungen</span><h2 class="h2" data-r>Fünf Gewerke. <span>Ein Ansprechpartner.</span></h2></div><p data-r>Sie rufen einmal an – wir koordinieren Heizung, Sanitär und Elektro. Das spart Ihnen Abstimmung, Zeit und Geld.</p></div>
+ <div class="gwl">
+  <article class="g" id="heizung" data-r><div class="im"><img src="img/oel.jpg" alt="Wartung einer Ölheizung durch Siefker" loading="lazy"></div><div class="tx"><span class="nr">01 · HEIZUNG</span><h3>Heizungssysteme, die rechnen können.</h3><p>Brennwert-Technik für Öl und Gas, Wärmepumpe, Solartechnik, Festbrennstoffe und Blockheizkraftwerk. Wir warten zuverlässig – und stehen Ihnen bei der staatlichen Förderung zur Seite.</p><ul><li>Wärmepumpe</li><li>Brennwert Öl &amp; Gas</li><li>Solartechnik</li><li>Blockheizkraftwerk</li><li>Förderung</li></ul></div></article>
+  <article class="g" id="elektro" data-r><div class="im"><img src="img/elektro.jpg" alt="Siefker-Elektriker am Zählerschrank" loading="lazy" style="object-position:50% 25%"></div><div class="tx"><span class="nr">02 · ELEKTRO</span><h3>Elektromeisterbetrieb – geplant statt nachgebessert.</h3><p>Planung, Installation und Instandhaltung für Wohnhaus und Gewerbe. Wir planen im Vorfeld sorgfältig mit Ihnen, damit Sie später keine Zeit und kein Geld mit Umbauten verlieren.</p><ul><li>Hausinstallation</li><li>Photovoltaik</li><li>Lichttechnik</li><li>Miele-Partner</li><li>Zähler-Service</li></ul></div></article>
+  <article class="g" id="baeder" data-r><div class="im"><img src="img/bad.jpg" alt="Siefker-Monteur bei der Badinstallation" loading="lazy" style="object-position:50% 25%"></div><div class="tx"><span class="nr">03 · BÄDER</span><h3>Ein Bad, in dem Sie sich auch in Jahren noch wohlfühlen.</h3><p>Neubau oder Sanierung: Nutzbarkeit, Hygiene und Wohlgefühl stehen an oberster Stelle. In den Ausstellungen unserer Lieferanten zeigen wir Ihnen die Lösungen live.</p><ul><li>Neubau &amp; Sanierung</li><li>Whirlpools</li><li>Bädergalerie</li></ul></div></article>
+  <article class="g" id="lueftung" data-r><div class="im"><img src="img/lueftung.jpg" alt="Kontrollierte Wohnraumlüftung im Haus" loading="lazy"></div><div class="tx"><span class="nr">04 · LÜFTUNG</span><h3>Frische Luft – rund um die Uhr, ohne Fenster auf.</h3><p>Kontrollierte Wohnraumlüftung beugt Schimmel vor, senkt Pollen und Feinstaub auf ein Minimum und holt die Wärme aus der Abluft zurück. Im Sommer kühlt sie sogar angenehm.</p><div class="big"><b>90 %</b>Wärmerückgewinnung</div></div></article>
+  <article class="g" id="kommunikation" data-r><div class="im"><img src="img/bus.jpg" alt="Bus-Schalter für Licht im Wintergarten" loading="lazy"></div><div class="tx"><span class="nr">05 · KOMMUNIKATION</span><h3>Ihr Haus, auf Knopfdruck gesteuert.</h3><p>Bustechnik für Licht, Jalousien und Markise – per Schalter, Tablet oder Smartphone. Dazu Sprech- und Meldesysteme sowie Telefonanlagen für Privathaus, Büro und Betrieb.</p><ul><li>Bustechnik / Smart Home</li><li>Sprechsysteme</li><li>Meldesysteme</li><li>Telefonanlagen</li></ul></div></article>
+ </div>
+</div></section>
+
+<section class="ks"><div class="w">
+ <div>
+  <span class="ey" data-r>Komplettservice</span>
+  <h2 class="h2" data-r>Von der ersten Idee <span>bis zur Wartung.</span></h2>
+  <p data-r>Kein Hin und Her zwischen Handwerkern: Wir beraten ausgiebig, planen, koordinieren die Bauphase – und bleiben danach an Ihrer Seite.</p>
+  <a class="btn btn-a" href="#kontakt" data-r>Kostenlos beraten lassen</a>
+ </div>
+ <div>
+  <div class="flow"><div data-r><b>Individuelle Beratung</b></div><div data-r><b>Angebot &amp; Planung</b></div><div data-r="2"><b>Durchführung aller Arbeiten</b></div><div data-r="2"><b>Koordination der Bauphase</b></div><div data-r="3"><b>Wartung &amp; Service</b></div></div>
+  <div class="extra" data-r><span>Abflussreinigung</span><span>Leckortung</span><span>Bautrocknung</span><span>Bereitschaft</span></div>
+ </div>
+</div></section>
+
+<section class="rev"><div class="w">
+ <div><span class="ey" data-r style="color:#ffb3b6">Stimmen</span><h2 class="h2" data-r>„Seit Ewigkeiten Kunde.“</h2><div class="sc" data-r><b>4,5</b><div><div class="st">★★★★★</div><span>15 Bewertungen bei Google</span></div></div></div>
+ <div class="rcs">
+  <div class="rc" data-r><span class="st">★★★★★</span><p>„Neue Heizung eingebaut – alles wie vorher besprochen. Schnelle, saubere Arbeit, gute Mitarbeiter und eine hervorragende Beratung.“</p><small>Google-Bewertung · sinngemäß</small></div>
+  <div class="rc" data-r="2"><span class="st">★★★★★</span><p>„Wir sind seit Ewigkeiten Kunde: pünktlich, gute Arbeit – und auch im Notfall für uns da.“</p><small>Google-Bewertung · sinngemäß</small></div>
+  <div class="rc" data-r="3"><span class="st">★★★★★</span><p>„Super Service – schnell und pünktlich vor Ort, der Mitarbeiter hat sehr gute Arbeit geleistet.“</p><small>Google-Bewertung · sinngemäß</small></div>
+ </div>
+</div></section>
+
+<section class="kar" id="karriere"><div class="w">
+ <div><span class="ey" data-r>Karriere</span><h2 class="h2" data-r>Handwerk mit Zukunft – <span>in Bad Essen.</span></h2><p data-r>Heizung, Sanitär und Elektro unter einem Dach: Bei uns lernen und arbeiten Sie in einem Traditionsbetrieb, der seit 1904 zu seinen Leuten steht. Sprechen Sie uns einfach an.</p><a class="btn btn-p" href="#kontakt" data-r>Jetzt bewerben</a></div>
+ <img src="img/team.jpg" alt="Das Siefker-Team in roter Arbeitskleidung" loading="lazy" data-r="2">
+</div></section>
+
+<section class="kon" id="kontakt"><div class="w">
+ <div class="l" data-r>
+  <span class="ey">Kontakt</span>
+  <h2 class="h2" style="font-size:clamp(28px,3vw,40px)">Ein Anruf – <span>wir kümmern uns.</span></h2>
+  <a class="tel" href="tel:+49547294270">05472 94270</a>
+  <p>info@siefker-haustechnik.de</p>
+  <div class="ad"><div><b>Adresse</b><span>Schledehauser Straße 3<br>49152 Bad Essen</span></div><div><b>Erreichbar</b><span>Mo – Do 7:00 – 17:00 Uhr<br>Fr 7:00 – 13:00 Uhr</span></div></div>
+  <div class="map"><img src="img/karte.webp" alt="Karte: Schledehauser Straße 3, Bad Essen" loading="lazy"><span class="pin"></span><a class="btn btn-p" href="https://www.google.com/maps/dir/?api=1&amp;destination=Schledehauser+Stra%C3%9Fe+3+49152+Bad+Essen" target="_blank" rel="noopener">Route planen</a></div>
+ </div>
+ <div class="f" data-r="2">
+  <h3>Kostenlose Beratung anfragen</h3>
+  <p>Wir rufen Sie zurück – persönlich und unverbindlich.</p>
+  <form class="fm">
+   <input placeholder="Ihr Name" aria-label="Ihr Name" required>
+   <input type="tel" placeholder="Telefon" aria-label="Telefon" required>
+   <select aria-label="Worum geht es?"><option>Worum geht es?</option><option>Heizung / Wärmepumpe</option><option>Elektro / Photovoltaik</option><option>Neues Bad</option><option>Lüftung</option><option>Bustechnik / Kommunikation</option><option>Notfall / Bereitschaft</option><option>Bewerbung</option></select>
+   <textarea placeholder="Ihre Nachricht (optional)" aria-label="Nachricht"></textarea>
+   <button class="btn btn-a">Rückruf anfordern</button>
+   <small>Beispiel-Funktion: Anfragen landen direkt im CRM, mit automatischer Bestätigung.</small>
+   <div class="ok">Danke! Wir melden uns schnellstmöglich bei Ihnen.</div>
+  </form>
+ </div>
+</div></section>
+</main>
+
+<footer class="ft"><div class="w">
+ <b>H. Siefker Haustechnik GmbH</b>
+ <span>Schledehauser Straße 3, 49152 Bad Essen · 05472 94270 · info@siefker-haustechnik.de</span>
+ <span><b>Kontakt</b> | <b>Impressum</b></span>
+ <div class="cp">Grober Entwurf von High Level Performance mit Bildern und Texten von siefker-haustechnik.de. Bei einer Zusammenarbeit wird alles viel intensiver ausgearbeitet.</div>
+</div></footer>
+</div>
+<div class="below"></div>
+
+<div class="mcall"><a href="tel:+49547294270"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.6 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1z"/></svg>Anrufen</a><a href="#kontakt">Kostenlos beraten lassen</a></div>
+<div class="hlp-note"><b>Grober Entwurf</b> · Erstellt von High Level Performance. Bei einer Zusammenarbeit arbeiten wir jede Seite viel intensiver aus.<button aria-label="Hinweis schließen">×</button></div>
+<script>
+window.BOT={name:'Hanna',tag:'Ihre Siefker-Assistentin',hello:'Hallo! Ich bin Hanna. Soll ich Ihnen zeigen, was 120 Jahre Haustechnik für Sie bedeuten?',hi:'Hallo! Ich bin Hanna von H. Siefker. Wobei darf ich helfen?',
+ qa:[['Machen Sie auch Elektro?','Ja – wir sind Elektromeisterbetrieb: Hausinstallation, Photovoltaik, Licht und Smart Home. Alles mit Heizung und Bad aus einer Hand.'],
+     ['Gibt es Förderung für die Heizung?','Für viele moderne Heizungen ja. Wir prüfen Ihre Möglichkeiten und helfen beim Antrag. Rufen Sie an: <a href="tel:+49547294270"><b>05472 94270</b></a>.'],
+     ['Notfall – was tun?','Rufen Sie direkt an: <a href="tel:+49547294270"><b>05472 94270</b></a>. Wir sind auch im Notfall für Sie da.'],
+     ['Kostenlos beraten lassen','Gern! Hinterlassen Sie <a href="#kontakt"><b>hier Ihre Nummer</b></a> – wir melden uns.']],
+ tour:[['#unternehmen'],['#gewerke'],['.rev'],['#kontakt']]};
+</script>
+<script>
+(function(){
+ // Einblenden beim Scrollen
+ var io=('IntersectionObserver' in window)?new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}})},{threshold:.12,rootMargin:'0px 0px -6% 0px'}):null;
+ document.querySelectorAll('[data-r]').forEach(function(el){io?io.observe(el):el.classList.add('in')});
+ // Navigation mobil
+ document.querySelectorAll('[data-nav]').forEach(function(b){b.addEventListener('click',function(){document.body.classList.toggle('nav-open')})});
+ document.querySelectorAll('.nav a').forEach(function(a){a.addEventListener('click',function(){document.body.classList.remove('nav-open')})});
+ // Header beim Scrollen
+ var hd=document.querySelector('[data-hd]');
+ if(hd){var f=function(){hd.classList.toggle('scr',scrollY>40)};f();addEventListener('scroll',f,{passive:true})}
+ // Hinweis schließen
+ var nx=document.querySelector('.hlp-note button');if(nx)nx.addEventListener('click',function(){document.body.classList.add('note-x')});
+ // Formulare (Demo)
+ document.querySelectorAll('form.fm').forEach(function(f){f.addEventListener('submit',function(e){e.preventDefault();f.classList.add('sent')})});
+ // Slider
+ document.querySelectorAll('[data-slider]').forEach(function(s){
+  var sl=s.querySelectorAll('[data-slide]'),dots=s.querySelectorAll('[data-dot]'),i=0,t;
+  function go(n){sl[i].classList.remove('on');dots[i]&&dots[i].classList.remove('on');i=(n+sl.length)%sl.length;sl[i].classList.add('on');dots[i]&&dots[i].classList.add('on')}
+  function auto(){clearInterval(t);t=setInterval(function(){go(i+1)},+(s.dataset.slider||6500))}
+  dots.forEach(function(d,k){d.addEventListener('click',function(){go(k);auto()})});
+  s.querySelectorAll('[data-prev]').forEach(function(b){b.addEventListener('click',function(){go(i-1);auto()})});
+  s.querySelectorAll('[data-next]').forEach(function(b){b.addEventListener('click',function(){go(i+1);auto()})});
+  if(sl.length>1)auto();
+ });
+ // Akkordeon
+ document.querySelectorAll('[data-acc]').forEach(function(b){b.addEventListener('click',function(){b.parentElement.classList.toggle('open')})});
+ // KI-Assistent
+ var B=window.BOT;if(!B)return;
+ var R='<svg viewBox="0 0 48 48" fill="none"><rect x="9" y="14" width="30" height="24" rx="9" fill="#fff"/><circle cx="19" cy="26" r="3.6" fill="currentColor"/><circle cx="29" cy="26" r="3.6" fill="currentColor"/><path d="M19 33c3 2 7 2 10 0" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"/><path d="M24 14V8" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/><circle cx="24" cy="6.5" r="2.6" fill="#fff"/><rect x="4" y="22" width="4" height="9" rx="2" fill="#fff"/><rect x="40" y="22" width="4" height="9" rx="2" fill="#fff"/></svg>';
+ var w=document.createElement('div');w.className='bot hide-t';
+ w.innerHTML='<div class="bot-t"><button class="bx" aria-label="Schließen">×</button><small>'+B.name+' · '+B.tag+'</small>'+B.hello+'<div class="bb"><button data-y>Ja, gern</button><button data-q>Ich habe eine Frage</button></div></div>'+
+ '<div class="bot-p" role="dialog" aria-label="Chat mit '+B.name+'"><div class="bot-h"><span style="width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:rgba(255,255,255,.18)">'+R.replace('viewBox','width="26" height="26" viewBox')+'</span><div><b>'+B.name+'</b><span>'+B.tag+' · online</span></div><button aria-label="Schließen">×</button></div><div class="bot-m"></div><div class="bot-c"></div></div>'+
+ '<button class="bot-b" aria-label="Chat mit '+B.name+' öffnen">'+R+'</button>';
+ document.body.appendChild(w);
+ var m=w.querySelector('.bot-m'),c=w.querySelector('.bot-c');
+ function say(t,u){var d=document.createElement('div');if(u)d.className='u';d.innerHTML=t;m.appendChild(d);m.scrollTop=1e5}
+ function chips(){c.innerHTML='';B.qa.forEach(function(x){var b=document.createElement('button');b.textContent=x[0];b.onclick=function(){say(x[0],1);setTimeout(function(){say(x[1])},450)};c.appendChild(b)})}
+ function open(){w.classList.add('open');if(!m.children.length){say(B.hi);chips()}}
+ setTimeout(function(){w.classList.remove('hide-t')},2600);
+ w.querySelector('.bx').onclick=function(){w.classList.add('hide-t')};
+ w.querySelector('.bot-b').onclick=function(){w.classList.contains('open')?w.classList.remove('open'):open()};
+ w.querySelector('.bot-h button').onclick=function(){w.classList.remove('open')};
+ w.querySelector('[data-q]').onclick=open;
+ w.querySelector('[data-y]').onclick=function(){w.classList.add('hide-t');var s=B.tour||[];var k=0;(function nx(){if(k>=s.length)return;var el=document.querySelector(s[k][0]);if(el){el.scrollIntoView({behavior:'smooth',block:'start'})}k++;setTimeout(nx,3200)})()};
+})();
+
+</script>
+</body>
+</html>

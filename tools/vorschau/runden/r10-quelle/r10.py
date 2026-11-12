@@ -30,6 +30,8 @@ def firma(cfg, raw, imgs):
         urls.append(f'local://{raw}/{fn}')
     cfg['bild_urls'] = urls; cfg.setdefault('steps', steps(not cfg['beauty'].get('du')))
     cfg['template'] = 'beauty'; cfg.setdefault('theme', 'shk'); cfg.setdefault('min_w', 300)
+    hk = {'pinke':'pinke','kicker':'kicker','siefker':'siefker','vagtshaustechn':'vagts','liekamhaustech':'liekam'}.get(raw)
+    if hk and (HERE / 'hand' / f'{hk}.built.html').exists(): cfg['handgebaut'] = str(HERE / 'hand' / f'{hk}.built.html')
     FIRMEN.append(cfg); return slug
 
 exec(open(HERE / 'firmen.py').read())

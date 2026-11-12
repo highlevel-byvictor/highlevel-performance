@@ -171,8 +171,10 @@ def build(runde_file, nur=None):
                 html = env.get_template({"v3": "vorschau3.html.j2", "v4": "vorschau4.html.j2"}.get(data.get("template"), "vorschau2.html.j2")).render(f=v, t=THEMES[f.get("theme", "shk")], icon_phone=Markup(PHONE_SVG), steps=STEPS.get(f.get("theme","shk"), STEPS["shk"]))
             else:
                 html = env.get_template("vorschau.html.j2").render(f=v, icon_phone=Markup(PHONE_SVG))
+            if f.get("handgebaut"):
+                html = Path(f["handgebaut"]).read_text()
             (d / "index.html").write_text(html)
-            if f.get("template") == "beauty" or os.environ.get("QA") == "1":
+            if f.get("template") == "beauty" or f.get("handgebaut") or os.environ.get("QA") == "1":
                 import qa
                 fe = qa.check_page(br, d)
                 if fe:
@@ -184,11 +186,11 @@ def build(runde_file, nur=None):
             sd, sm = OUT_PDF / f"{slug}-desk.jpg", OUT_PDF / f"{slug}-mob.jpg"
             pg = br.new_page(viewport={"width": 1280, "height": 860}, device_scale_factor=1.5)
             pg.goto((d / "index.html").as_uri()); pg.evaluate("document.fonts.ready"); pg.wait_for_timeout(1800 if data.get("template") == "v5" else 900)
-            pg.evaluate("document.querySelector('.pv').style.display='none';document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'));var cb=document.querySelector('.callbar');cb&&(cb.style.display='none');document.querySelectorAll('.bot-btn,.promo,.promo2').forEach(e=>e.style.display='none')")
+            pg.evaluate("document.querySelectorAll('.pv,.hlp-note,.bot,.mcall,.side').forEach(e=>e.style.display='none');document.querySelectorAll('[data-r]').forEach(e=>e.classList.add('in'));document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'));var cb=document.querySelector('.callbar');cb&&(cb.style.display='none');document.querySelectorAll('.bot-btn,.promo,.promo2').forEach(e=>e.style.display='none')")
             pg.screenshot(path=str(sd), type="jpeg", quality=85); pg.close()
             pg = br.new_page(viewport={"width": 390, "height": 800}, device_scale_factor=2, is_mobile=True)
             pg.goto((d / "index.html").as_uri()); pg.evaluate("document.fonts.ready"); pg.wait_for_timeout(1800 if data.get("template") == "v5" else 900)
-            pg.evaluate("document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'));var cb=document.querySelector('.callbar');cb&&(cb.style.display='none');document.querySelector('.pv').style.display='none';document.querySelector('.callbar')&&(document.querySelector('.callbar').style.display='none')")
+            pg.evaluate("document.querySelectorAll('.rv').forEach(e=>e.classList.add('in'));var cb=document.querySelector('.callbar');cb&&(cb.style.display='none');document.querySelectorAll('.pv,.hlp-note,.bot,.mcall,.side').forEach(e=>e.style.display='none');document.querySelectorAll('[data-r]').forEach(e=>e.classList.add('in'));document.querySelector('.callbar')&&(document.querySelector('.callbar').style.display='none')")
             pg.screenshot(path=str(sm), type="jpeg", quality=85); pg.close()
             url = BASE + slug + "/"
             qr = OUT_PDF / f"{slug}-qr.svg"

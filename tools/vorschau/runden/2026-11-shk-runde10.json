@@ -418,7 +418,8 @@
    ],
    "template": "beauty",
    "theme": "shk",
-   "min_w": 300
+   "min_w": 300,
+   "handgebaut": "/home/claude/highlevel-performance/tools/vorschau/runden/r10-quelle/hand/pinke.built.html"
   },
   {
    "slug": "peter-kicker-wallenhorst",
@@ -755,7 +756,8 @@
    ],
    "template": "beauty",
    "theme": "shk",
-   "min_w": 300
+   "min_w": 300,
+   "handgebaut": "/home/claude/highlevel-performance/tools/vorschau/runden/r10-quelle/hand/kicker.built.html"
   },
   {
    "slug": "siefker-bad-essen",
@@ -1064,7 +1066,8 @@
    ],
    "template": "beauty",
    "theme": "shk",
-   "min_w": 300
+   "min_w": 300,
+   "handgebaut": "/home/claude/highlevel-performance/tools/vorschau/runden/r10-quelle/hand/siefker.built.html"
   },
   {
    "slug": "vagts-haustechnik-ahlhorn",
@@ -1478,7 +1481,8 @@
    ],
    "template": "beauty",
    "theme": "shk",
-   "min_w": 300
+   "min_w": 300,
+   "handgebaut": "/home/claude/highlevel-performance/tools/vorschau/runden/r10-quelle/hand/vagts.built.html"
   },
   {
    "slug": "liekam-osnabrueck",
@@ -1928,7 +1932,8 @@
    ],
    "template": "beauty",
    "theme": "shk",
-   "min_w": 300
+   "min_w": 300,
+   "handgebaut": "/home/claude/highlevel-performance/tools/vorschau/runden/r10-quelle/hand/liekam.built.html"
   }
  ]
 }
