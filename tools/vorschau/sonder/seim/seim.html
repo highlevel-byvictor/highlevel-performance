@@ -307,52 +307,82 @@ body{font-size:16.5px;color:var(--ink)}
 .ft a{display:block;line-height:1.9}
 .ft .cp{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.08);padding-top:20px;font-size:12.5px}
 
-/* KI-Assistent Nova */
-.nova{position:fixed;right:24px;bottom:64px;z-index:58;font-family:var(--fb)}
-.nova-b{display:flex;align-items:center;gap:12px;padding:8px 18px 8px 8px;border:0;border-radius:999px;background:linear-gradient(135deg,#0B2A6B,#1A47B8);color:#fff;box-shadow:0 20px 44px rgba(5,15,43,.45),0 0 0 1px rgba(63,208,255,.35);transition:transform .3s}
-.nova-b:hover{transform:translateY(-3px)}
-.nova-b .orb{position:relative;width:48px;height:48px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#bff0ff,#3FD0FF 35%,#2F6BFF 70%,#0B2A6B);box-shadow:0 0 24px rgba(63,208,255,.7);animation:orb 4s ease-in-out infinite}
-.nova-b .orb::after{content:"";position:absolute;right:0;top:0;width:13px;height:13px;border-radius:50%;background:#2ee08a;border:2px solid #0B2A6B}
-@keyframes orb{50%{box-shadow:0 0 38px rgba(63,208,255,.95)}}
-.nova-b b{display:block;font:800 15px var(--fh);text-align:left}
-.nova-b small{display:block;font:500 11.5px var(--mono);color:#AFC0E2;text-align:left}
-.nova-t{position:absolute;right:0;bottom:78px;width:310px;padding:18px;border-radius:18px;background:#fff;color:var(--ink);box-shadow:0 30px 60px rgba(5,15,43,.3);font-size:14.5px;line-height:1.45;transition:opacity .35s,transform .35s}
-.nova-t small{display:block;font:600 11px var(--mono);letter-spacing:.1em;color:#2F6BFF;text-transform:uppercase;margin-bottom:6px}
-.nova-t .x{position:absolute;right:10px;top:8px;border:0;background:none;font-size:18px;color:#8a93a6}
-.nova-t .bb{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
-.nova-t .bb button{border:0;border-radius:999px;padding:9px 14px;font:700 13px var(--fh);background:var(--p);color:#fff}
-.nova-t .bb button+button{background:#EEF3FF;color:var(--p)}
-.nova.hide-t .nova-t,.nova.open .nova-t{opacity:0;transform:translateY(10px);pointer-events:none}
-.nova-p{position:absolute;right:0;bottom:78px;width:min(400px,calc(100vw - 28px));height:min(600px,calc(100vh - 160px));display:none;flex-direction:column;border-radius:22px;overflow:hidden;background:#F5F8FD;box-shadow:0 40px 90px rgba(5,15,43,.45);border:1px solid rgba(11,42,107,.12)}
-.nova.open .nova-p{display:flex}
-.nova-h{padding:16px 18px;display:flex;gap:12px;align-items:center;background:linear-gradient(135deg,#050F2B,#0B2A6B 60%,#1A47B8);color:#fff}
-.nova-h .orb{width:40px;height:40px;border-radius:50%;background:radial-gradient(circle at 35% 30%,#bff0ff,#3FD0FF 35%,#2F6BFF 70%,#0B2A6B);box-shadow:0 0 18px rgba(63,208,255,.7)}
-.nova-h b{display:block;font:800 16px var(--fh)}
-.nova-h span{font:500 11.5px var(--mono);color:#AFC0E2}
-.nova-h button{margin-left:auto;border:0;background:rgba(255,255,255,.1);color:#fff;width:34px;height:34px;border-radius:50%;font-size:18px}
-.nova-steps{display:flex;gap:4px;padding:10px 18px;background:#fff;border-bottom:1px solid var(--line)}
-.nova-steps i{flex:1;height:4px;border-radius:2px;background:#E3E9F4;transition:background .3s}
-.nova-steps i.on{background:linear-gradient(90deg,#2F6BFF,var(--cy))}
-.nova-m{flex:1;overflow:auto;padding:16px;display:flex;flex-direction:column;gap:10px}
-.nova-m .msg{max-width:86%;padding:11px 14px;border-radius:16px 16px 16px 4px;background:#fff;font-size:14.5px;line-height:1.45;box-shadow:0 2px 8px rgba(11,42,107,.06);animation:pop .35s ease}
-.nova-m .msg.u{align-self:flex-end;border-radius:16px 16px 4px 16px;background:var(--p);color:#fff}
-.nova-m .msg b{color:var(--p)}.nova-m .msg.u b{color:#fff}
-.nova-m .card2{background:linear-gradient(135deg,#0B2A6B,#1A47B8);color:#fff;border-radius:16px;padding:16px;font-size:14px;animation:pop .35s ease}
-.nova-m .card2 b{display:block;font:800 16px var(--fh);margin-bottom:6px}
-.nova-m .card2 ul{margin:8px 0 12px;padding-left:18px;color:#d7e4ff}
-.nova-m .card2 a{display:inline-block;background:var(--a);color:#1b1000;font-weight:800;padding:10px 14px;border-radius:10px}
-.nova-m .typing{display:flex;gap:4px;padding:12px 14px;background:#fff;border-radius:16px;width:58px}
-.nova-m .typing i{width:7px;height:7px;border-radius:50%;background:#9fb0d6;animation:ty 1s infinite}
-.nova-m .typing i:nth-child(2){animation-delay:.15s}.nova-m .typing i:nth-child(3){animation-delay:.3s}
+/* Projekt-Lotse Fibo */
+.fibo{position:fixed;right:24px;bottom:64px;z-index:58;font-family:var(--fb)}
+.bot-ico{display:block;width:100%;height:100%;overflow:visible}
+.bot-ico .fl{animation:float 3.6s ease-in-out infinite}
+@keyframes float{50%{transform:translateY(-3px)}}
+.bot-ico .eye{transform-origin:center;transform-box:fill-box;animation:blink 5s infinite}
+@keyframes blink{0%,92%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
+.bot-ico .ant{animation:glow 2.2s ease-in-out infinite}
+@keyframes glow{50%{opacity:.45}}
+.fibo-b{display:flex;align-items:center;gap:12px;padding:7px 18px 7px 7px;border:0;border-radius:999px;background:linear-gradient(135deg,rgba(11,42,107,.92),rgba(26,71,184,.92));backdrop-filter:blur(12px);color:#fff;box-shadow:0 20px 44px rgba(5,15,43,.45),0 0 0 1px rgba(63,208,255,.35),inset 0 1px 0 rgba(255,255,255,.18);transition:transform .3s}
+.fibo-b:hover{transform:translateY(-3px)}
+.fibo-b .dock{position:relative;width:60px;height:60px;border-radius:50%;background:radial-gradient(circle at 50% 30%,#2A58C9,#0B1E5C 70%);box-shadow:inset 0 0 0 1px rgba(63,208,255,.45),0 0 26px rgba(63,208,255,.4);padding:6px 7px 4px}
+.fibo-b .dock::after{content:"";position:absolute;right:1px;top:2px;width:12px;height:12px;border-radius:50%;background:#2ee08a;border:2px solid #0B2A6B}
+.fibo-b b{display:block;font:800 15px var(--fh);text-align:left}
+.fibo-b small{display:block;font:500 11.5px var(--mono);color:#AFC0E2;text-align:left}
+.fibo-t{position:absolute;right:0;bottom:84px;width:320px;padding:18px 18px 16px;border-radius:18px;background:#fff;color:var(--ink);box-shadow:0 30px 60px rgba(5,15,43,.3);font-size:14.5px;line-height:1.45;transition:opacity .35s,transform .35s}
+.fibo-t::after{content:"";position:absolute;right:36px;bottom:-8px;width:16px;height:16px;background:#fff;transform:rotate(45deg)}
+.fibo-t small{display:block;font:600 11px var(--mono);letter-spacing:.1em;color:#2F6BFF;text-transform:uppercase;margin-bottom:6px}
+.fibo-t .x{position:absolute;right:10px;top:8px;border:0;background:none;font-size:18px;color:#8a93a6}
+.fibo-t .bb{display:flex;gap:8px;margin-top:12px;flex-wrap:wrap}
+.fibo-t .bb button{border:0;border-radius:999px;padding:9px 14px;font:700 13px var(--fh);background:var(--p);color:#fff}
+.fibo-t .bb button+button{background:#EEF3FF;color:var(--p)}
+.fibo-t .prog{display:flex;gap:4px;margin-top:12px}.fibo-t .prog i{flex:1;height:3px;border-radius:2px;background:#E3E9F4}.fibo-t .prog i.on{background:linear-gradient(90deg,#2F6BFF,var(--cy))}
+.fibo.hide-t .fibo-t,.fibo.open .fibo-t{opacity:0;transform:translateY(10px);pointer-events:none}
+.spot{position:relative;z-index:1}
+.spot::after{content:"";position:absolute;inset:14px;border-radius:24px;box-shadow:0 0 0 2px var(--cy),0 0 0 8px rgba(63,208,255,.15),0 0 60px rgba(63,208,255,.35);pointer-events:none;animation:spotin .6s ease}
+@keyframes spotin{from{opacity:0;transform:scale(.98)}}
+.fibo-p{position:absolute;right:0;bottom:84px;width:min(400px,calc(100vw - 28px));height:min(600px,calc(100vh - 170px));display:none;flex-direction:column;border-radius:22px;overflow:hidden;background:#F5F8FD;box-shadow:0 40px 90px rgba(5,15,43,.45);border:1px solid rgba(11,42,107,.12)}
+.fibo.open .fibo-p{display:flex}
+.fibo-h{padding:14px 16px;display:flex;gap:12px;align-items:center;background:linear-gradient(135deg,#050F2B,#0B2A6B 60%,#1A47B8);color:#fff;position:relative;overflow:hidden}
+.fibo-h::before{content:"";position:absolute;inset:0;background-image:linear-gradient(rgba(120,160,255,.08) 1px,transparent 1px),linear-gradient(90deg,rgba(120,160,255,.08) 1px,transparent 1px);background-size:18px 18px}
+.fibo-h .face{position:relative;width:46px;height:46px;border-radius:14px;background:radial-gradient(circle at 50% 35%,#16357F,#071436);box-shadow:inset 0 0 0 1px rgba(63,208,255,.4);padding:4px 5px 2px}
+.fibo-h div{position:relative}
+.fibo-h b{display:block;font:800 16px var(--fh)}
+.fibo-h span{font:500 11.5px var(--mono);color:#AFC0E2}
+.fibo-h button{position:relative;margin-left:auto;border:0;background:rgba(255,255,255,.1);color:#fff;width:34px;height:34px;border-radius:50%;font-size:18px}
+.fibo-steps{display:flex;gap:4px;padding:10px 18px;background:#fff;border-bottom:1px solid var(--line)}
+.fibo-steps i{flex:1;height:4px;border-radius:2px;background:#E3E9F4;transition:background .3s}
+.fibo-steps i.on{background:linear-gradient(90deg,#2F6BFF,var(--cy))}
+.fibo-m{flex:1;overflow:auto;padding:16px;display:flex;flex-direction:column;gap:10px}
+.fibo-m .msg{max-width:86%;padding:11px 14px;border-radius:16px 16px 16px 4px;background:#fff;font-size:14.5px;line-height:1.45;box-shadow:0 2px 8px rgba(11,42,107,.06);animation:pop .35s ease}
+.fibo-m .msg.u{align-self:flex-end;border-radius:16px 16px 4px 16px;background:var(--p);color:#fff}
+.fibo-m .msg b{color:var(--p)}.fibo-m .msg.u b{color:#fff}
+.fibo-m .card2{background:linear-gradient(135deg,#0B2A6B,#1A47B8);color:#fff;border-radius:16px;padding:16px;font-size:14px;animation:pop .35s ease}
+.fibo-m .card2 b{display:block;font:800 16px var(--fh);margin-bottom:6px}
+.fibo-m .card2 ul{margin:8px 0 12px;padding-left:18px;color:#d7e4ff}
+.fibo-m .card2 a{display:inline-block;background:var(--a);color:#1b1000;font-weight:800;padding:10px 14px;border-radius:10px}
+.fibo-m .typing{display:flex;gap:4px;padding:12px 14px;background:#fff;border-radius:16px;width:58px}
+.fibo-m .typing i{width:7px;height:7px;border-radius:50%;background:#9fb0d6;animation:ty 1s infinite}
+.fibo-m .typing i:nth-child(2){animation-delay:.15s}.fibo-m .typing i:nth-child(3){animation-delay:.3s}
 @keyframes ty{50%{transform:translateY(-4px);opacity:.5}}
 @keyframes pop{from{opacity:0;transform:translateY(6px)}}
-.nova-c{display:flex;gap:6px;flex-wrap:wrap;padding:12px 14px;background:#fff;border-top:1px solid var(--line)}
-.nova-c button{border:1px solid #D5DEEE;background:#fff;border-radius:999px;padding:9px 13px;font:700 13px var(--fh);color:var(--p);transition:.2s}
-.nova-c button:hover{background:var(--p);color:#fff;border-color:var(--p)}
-.nova-i{display:flex;gap:8px;padding:10px 12px 12px;background:#fff}
-.nova-i input{flex:1;border:1px solid #D5DEEE;border-radius:12px;padding:11px 12px;font:500 14px var(--fb)}
-.nova-i button{border:0;border-radius:12px;background:var(--p);color:#fff;width:44px}
-.nova-f{font:500 10.5px var(--mono);color:#8a93a6;text-align:center;padding:0 0 8px;background:#fff}
+.fibo-c{display:flex;gap:6px;flex-wrap:wrap;padding:12px 14px;background:#fff;border-top:1px solid var(--line)}
+.fibo-c button{border:1px solid #D5DEEE;background:#fff;border-radius:999px;padding:9px 13px;font:700 13px var(--fh);color:var(--p);transition:.2s}
+.fibo-c button:hover{background:var(--p);color:#fff;border-color:var(--p)}
+.fibo-i{display:flex;gap:8px;padding:10px 12px 12px;background:#fff}
+.fibo-i input{flex:1;border:1px solid #D5DEEE;border-radius:12px;padding:11px 12px;font:500 14px var(--fb)}
+.fibo-i button{border:0;border-radius:12px;background:var(--p);color:#fff;width:44px}
+.fibo-f{font:500 10.5px var(--mono);color:#8a93a6;text-align:center;padding:0 0 8px;background:#fff}
+
+/* Angebots-Einblendung von der Seite */
+.promo{position:fixed;left:24px;bottom:70px;z-index:57;width:340px;border-radius:20px;overflow:hidden;color:#fff;background:linear-gradient(150deg,#071436,#0B2A6B 55%,#1A47B8);box-shadow:0 30px 70px rgba(5,15,43,.5),0 0 0 1px rgba(63,208,255,.3);transform:translateX(calc(-100% - 40px));transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.promo.in{transform:none}
+.promo::before{content:"";position:absolute;right:-60px;top:-60px;width:200px;height:200px;border-radius:50%;background:radial-gradient(circle,rgba(247,148,29,.45),transparent 70%)}
+.promo .pi{position:relative;padding:22px 22px 20px}
+.promo .x{position:absolute;right:10px;top:10px;z-index:2;width:30px;height:30px;border-radius:50%;border:0;background:rgba(255,255,255,.12);color:#fff;font-size:17px}
+.promo small{font:600 11px var(--mono);letter-spacing:.14em;text-transform:uppercase;color:var(--a2)}
+.promo b{display:block;font:800 22px/1.15 var(--fh);letter-spacing:-.02em;margin:8px 0 8px}
+.promo b span{color:var(--cy)}
+.promo p{font-size:14px;color:#C3D1EE;line-height:1.5}
+.promo .row{display:flex;align-items:center;gap:14px;margin-top:16px}
+.promo .big{font:800 30px/1 var(--fh);letter-spacing:-.03em}
+.promo .big small{display:block;font:500 11px var(--mono);letter-spacing:0;text-transform:none;color:#AFC0E2;margin-top:4px}
+.promo .btn{margin-left:auto;padding:12px 16px;font-size:13.5px}
+.promo .bar2{height:3px;background:linear-gradient(90deg,var(--a),var(--cy));transform-origin:left;animation:shrink 14s linear forwards}
+@keyframes shrink{to{transform:scaleX(0)}}
 
 @media (max-width:1180px){.nav{display:none}.burger{display:block}.hd .btn{display:none}
  body.nav-open .nav{display:flex;flex-direction:column;position:absolute;top:78px;left:0;right:0;background:#050F2B;padding:14px 24px;border-bottom:1px solid rgba(255,255,255,.1)}}
@@ -370,7 +400,8 @@ body{font-size:16.5px;color:var(--ink)}
  .prob,.sys,.lst,.plans,.ref,.firm,.press,.kon{padding:80px 0}.job{padding:80px 0}
  .trust .pr{margin-left:0}
  .ft .w{grid-template-columns:1fr 1fr}
- .nova{right:14px;bottom:112px}.nova-b{padding:6px}.nova-b div{display:none}.nova-t{width:260px}
+ .fibo{right:14px;bottom:112px}.fibo-b{padding:6px}.fibo-b>div{display:none}.fibo-t{width:270px}
+ .promo{left:12px;right:12px;width:auto;bottom:122px}
 }
 @media (max-width:600px){
  .hero h1{font-size:40px}.seg button{padding:9px 10px;font-size:12.5px}
@@ -617,17 +648,24 @@ body{font-size:16.5px;color:var(--ink)}
 <div class="mcall"><a href="tel:+4961195011900"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.6 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1z"/></svg>Anrufen</a><a href="#kontakt">Kostenloses Erstgespräch</a></div>
 <div class="hlp-note"><b>Grober Entwurf</b> · Erstellt von High Level Performance. Bei einer Zusammenarbeit arbeiten wir jede Seite viel intensiver aus.<button aria-label="Hinweis schließen">×</button></div>
 
-<div class="nova hide-t" id="nova">
- <div class="nova-t"><button class="x" aria-label="Schließen">×</button><small>Nova · KI-Assistentin</small>Guten Tag! Ich bin Nova, die KI-Assistentin von seim &amp; partner. Soll ich in 60 Sekunden prüfen, wie wir Ihr Glasfaserprojekt unterstützen können?<div class="bb"><button data-go>Projekt-Check starten</button><button data-ask>Frage stellen</button></div></div>
- <div class="nova-p" role="dialog" aria-label="KI-Assistentin Nova">
-  <div class="nova-h"><div class="orb"></div><div><b>Nova</b><span>KI-Assistentin · seim &amp; partner</span></div><button aria-label="Schließen" data-close>×</button></div>
-  <div class="nova-steps"><i></i><i></i><i></i><i></i></div>
-  <div class="nova-m" id="nm"></div>
-  <div class="nova-c" id="nc"></div>
-  <form class="nova-i" id="ni"><input placeholder="Ihre Frage …" aria-label="Frage an Nova"><button aria-label="Senden">➤</button></form>
-  <div class="nova-f">KI-Assistentin · Antworten ohne Gewähr · Ihre Planer melden sich persönlich</div>
+<div class="promo" id="promo" role="complementary" aria-label="Angebot">
+ <button class="x" aria-label="Schließen">×</button>
+ <div class="pi"><small>Kostenloser Förder-Check</small><b>Fördergeld für Ihr Gebiet? <span>Wir prüfen es.</span></b><p>Als einer der Marktführer bei Förderverfahren begleiten wir Kommunen vom Antrag bis zum fertigen Netz.</p>
+  <div class="row"><div class="big">250 Mio. €<small>bereits eingeworben</small></div><a class="btn btn-a" href="#kontakt" data-promo>Check anfragen</a></div></div>
+ <div class="bar2"></div>
+</div>
+
+<div class="fibo hide-t" id="fibo">
+ <div class="fibo-t"><button class="x" aria-label="Schließen">×</button><small>Fibo · Ihr Projekt-Lotse</small><div class="tt">Guten Tag! Ich bin Fibo. Darf ich Sie in einer Minute durch unsere Leistungen führen?</div><div class="bb"><button data-tour>Ja, gern</button><button data-go>Projekt-Check</button></div><div class="prog"></div></div>
+ <div class="fibo-p" role="dialog" aria-label="Projekt-Lotse Fibo">
+  <div class="fibo-h"><div class="face"><svg class="bot-ico" viewBox="0 0 64 70" aria-hidden="true"><g class="fl"><line x1="32" y1="4" x2="32" y2="12" stroke="#C9D8F5" stroke-width="2.4" stroke-linecap="round"/><circle class="ant" cx="32" cy="4" r="3.6" fill="#F7941D"/><rect x="6" y="12" width="52" height="38" rx="15" fill="#EAF1FF"/><rect x="2" y="25" width="5" height="12" rx="2.5" fill="#3FD0FF"/><rect x="57" y="25" width="5" height="12" rx="2.5" fill="#3FD0FF"/><rect x="12" y="19" width="40" height="24" rx="11" fill="#071436"/><ellipse class="eye" cx="24" cy="30" rx="4" ry="5" fill="#3FD0FF"/><ellipse class="eye" cx="40" cy="30" rx="4" ry="5" fill="#3FD0FF"/><path d="M27 37.5q5 3.4 10 0" stroke="#3FD0FF" stroke-width="2" fill="none" stroke-linecap="round"/><rect x="20" y="51" width="24" height="12" rx="6" fill="#0B2A6B"/><circle cx="32" cy="57" r="2.6" fill="#F7941D"/></g></svg></div><div><b>Fibo</b><span>Projekt-Lotse · seim &amp; partner</span></div><button aria-label="Schließen" data-close>×</button></div>
+  <div class="fibo-steps"><i></i><i></i><i></i><i></i></div>
+  <div class="fibo-m" id="nm"></div>
+  <div class="fibo-c" id="nc"></div>
+  <form class="fibo-i" id="ni"><input placeholder="Ihre Frage …" aria-label="Frage an Fibo"><button aria-label="Senden">➤</button></form>
+  <div class="fibo-f">Automatischer Projekt-Lotse · Ihre Planer melden sich persönlich</div>
  </div>
- <button class="nova-b" data-open aria-label="KI-Assistentin öffnen"><span class="orb"></span><div><b>Projekt-Check</b><small>KI · 60 Sekunden</small></div></button>
+ <button class="fibo-b" data-open aria-label="Projekt-Lotse öffnen"><span class="dock"><svg class="bot-ico" viewBox="0 0 64 70" aria-hidden="true"><g class="fl"><line x1="32" y1="4" x2="32" y2="12" stroke="#C9D8F5" stroke-width="2.4" stroke-linecap="round"/><circle class="ant" cx="32" cy="4" r="3.6" fill="#F7941D"/><rect x="6" y="12" width="52" height="38" rx="15" fill="#EAF1FF"/><rect x="2" y="25" width="5" height="12" rx="2.5" fill="#3FD0FF"/><rect x="57" y="25" width="5" height="12" rx="2.5" fill="#3FD0FF"/><rect x="12" y="19" width="40" height="24" rx="11" fill="#071436"/><ellipse class="eye" cx="24" cy="30" rx="4" ry="5" fill="#3FD0FF"/><ellipse class="eye" cx="40" cy="30" rx="4" ry="5" fill="#3FD0FF"/><path d="M27 37.5q5 3.4 10 0" stroke="#3FD0FF" stroke-width="2" fill="none" stroke-linecap="round"/><rect x="20" y="51" width="24" height="12" rx="6" fill="#0B2A6B"/><circle cx="32" cy="57" r="2.6" fill="#F7941D"/></g></svg></span><div><b>Projekt-Lotse</b><small>Check in 60 Sekunden</small></div></button>
 </div>
 
 <script>
@@ -688,8 +726,8 @@ body{font-size:16.5px;color:var(--ink)}
  var fsel=document.getElementById('fsel');
  document.querySelectorAll('[data-pre]').forEach(function(a){a.addEventListener('click',function(){fsel.selectedIndex=a.dataset.pre==='report'?6:7})});
 
- // KI-Assistentin Nova
- var nova=document.getElementById('nova'),nm=document.getElementById('nm'),nc=document.getElementById('nc'),bars=nova.querySelectorAll('.nova-steps i'),A={};
+ // Projekt-Lotse Fibo
+ var nova=document.getElementById('fibo'),nm=document.getElementById('nm'),nc=document.getElementById('nc'),bars=nova.querySelectorAll('.fibo-steps i'),A={},tt=nova.querySelector('.tt'),bb=nova.querySelector('.fibo-t .bb'),prog=nova.querySelector('.prog');
  setTimeout(function(){if(!nova.classList.contains('open'))nova.classList.remove('hide-t')},4500);
  function say(h,u){var d=document.createElement('div');d.className='msg'+(u?' u':'');d.innerHTML=h;nm.appendChild(d);nm.scrollTop=nm.scrollHeight}
  function bot(h,cb){var t=document.createElement('div');t.className='typing';t.innerHTML='<i></i><i></i><i></i>';nm.appendChild(t);nm.scrollTop=nm.scrollHeight;setTimeout(function(){t.remove();say(h);cb&&cb()},650+Math.min(900,h.length*6))}
@@ -717,11 +755,24 @@ body{font-size:16.5px;color:var(--ink)}
  function free(){bot('Fragen Sie mich gern – zum Beispiel zu Förderung, Planung, 5G oder Karriere.')}
  document.getElementById('ni').addEventListener('submit',function(e){e.preventDefault();var i=this.querySelector('input'),v=i.value.trim();if(!v)return;say(v.replace(/</g,'&lt;'),1);i.value='';
   var hit=QA.find(function(q){return q[0].test(v)});bot(hit?hit[1]:'Gute Frage! Die beantworten Ihnen unsere Planer am besten persönlich – im <a href="#kontakt"><b>kostenlosen Erstgespräch</b></a> oder unter <a href="tel:+4961195011900"><b>+49 611 95011-900</b></a>.')});
- var started=false;function open(start){nova.classList.add('open');nova.classList.add('hide-t');if(!started){started=true;bot('Guten Tag! Ich bin <b>Nova</b>, die KI-Assistentin von seim &amp; partner. In vier kurzen Fragen finden wir heraus, wie wir Ihr Projekt unterstützen.',start?q1:function(){chips([['Projekt-Check starten',q1],['Ich habe eine Frage',free]])})}}
+ var started=false;function open(start){endTour();nova.classList.add('open');nova.classList.add('hide-t');if(!started){started=true;bot('Guten Tag! Ich bin <b>Fibo</b>, Ihr Projekt-Lotse bei seim &amp; partner. In vier kurzen Fragen finden wir heraus, wie wir Ihr Projekt unterstützen.',start?q1:function(){chips([['Projekt-Check starten',q1],['Ich habe eine Frage',free]])})}}
+ // Geführte Tour durch die Seite
+ var T=[['#system','Unser Vorgehen: fünf Schritte von der Analyse bis zum Betrieb – alles aus einer Hand.'],['#leistungen','Unsere Leistungen. Der Kern: Ingenieurplanung und Bauleitung nach HOAI.'],['#plaene','Echte Pläne aus unserem Team. Klicken Sie sich ruhig durch.'],['#referenzen','Projekte mit Zahlen – filterbar nach Leistung.'],['#kontakt','Und hier geht es zum kostenlosen Erstgespräch. Wir melden uns innerhalb von 24 Stunden.']],ti=-1;
+ function spot(sel){document.querySelectorAll('.spot').forEach(function(x){x.classList.remove('spot')});var el=sel&&document.querySelector(sel);if(el){el.classList.add('spot');el.scrollIntoView({behavior:'smooth',block:'start'})}}
+ function tour(){ti++;if(ti>=T.length){endTour();return}spot(T[ti][0]);tt.textContent=T[ti][1];prog.innerHTML=T.map(function(_,i){return '<i class="'+(i<=ti?'on':'')+'"></i>'}).join('');
+  bb.innerHTML='<button data-n>'+(ti<T.length-1?'Weiter':'Fertig')+'</button><button data-e>Beenden</button>';bb.querySelector('[data-n]').onclick=tour;bb.querySelector('[data-e]').onclick=endTour;nova.classList.remove('hide-t')}
+ function endTour(){if(ti<0)return;ti=-1;spot(null);prog.innerHTML='';tt.textContent='Gern geschehen! Wenn Sie mögen, prüfe ich in 60 Sekunden, wie wir Ihr Projekt unterstützen.';bb.innerHTML='<button data-go2>Projekt-Check</button>';bb.querySelector('[data-go2]').onclick=function(){open(true)}}
  nova.querySelector('[data-open]').onclick=function(){nova.classList.contains('open')?nova.classList.remove('open'):open(false)};
- nova.querySelector('[data-go]').onclick=function(){open(true)};nova.querySelector('[data-ask]').onclick=function(){open(false)};
+ nova.querySelector('[data-go]').onclick=function(){open(true)};nova.querySelector('[data-tour]').onclick=tour;
  nova.querySelector('[data-close]').onclick=function(){nova.classList.remove('open')};
- nova.querySelector('.nova-t .x').onclick=function(){nova.classList.add('hide-t')};
+ nova.querySelector('.fibo-t .x').onclick=function(){endTour();nova.classList.add('hide-t')};
+ // Angebot von der Seite einblenden, wegklickbar, höchstens zweimal
+ var pr=document.getElementById('promo'),shown=0,hideT;
+ function showPromo(){if(shown>=2||nova.classList.contains('open'))return;shown++;pr.classList.add('in');var b=pr.querySelector('.bar2');b.style.animation='none';b.offsetWidth;b.style.animation='';clearTimeout(hideT);hideT=setTimeout(hidePromo,14000)}
+ function hidePromo(){pr.classList.remove('in');if(shown<2)setTimeout(showPromo,60000)}
+ var armed=false;function arm(){if(armed||window.scrollY<window.innerHeight*.8)return;armed=true;setTimeout(showPromo,2500)}window.addEventListener('scroll',arm,{passive:true});setTimeout(function(){armed||(armed=true,showPromo())},25000);
+ pr.querySelector('.x').onclick=function(){clearTimeout(hideT);hidePromo()};
+ pr.querySelector('[data-promo]').onclick=function(){fsel.selectedIndex=0;var r=document.querySelector('.kon .who input[value="kom"]');if(r)r.checked=true;shown=2;pr.classList.remove('in')};
 })();
 </script>
 <script>

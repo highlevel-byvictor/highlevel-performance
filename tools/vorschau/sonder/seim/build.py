@@ -23,6 +23,8 @@ for n,(x,y) in m['pts'].items():
 svg.append('</g></svg>')
 html=(H/'seim.html').read_text()
 html=html.replace('<!--MAP-->',''.join(svg)).replace('<!--KIT_CSS-->',(KIT/'kit.css').read_text()).replace('<!--KIT_JS-->',(KIT/'kit.js').read_text()).replace('<!--FONTS-->',(ROOT/'tools/vorschau/fonts/seim.css').read_text())
+import re
+html=re.sub(r'/\*.*?\*/','',html,flags=re.S)
 (D/'index.html').write_text(html)
 sys.path.insert(0,str(ROOT/'tools/vorschau')); import beauty; print(beauty.karte('Bahnhofstraße 67, 65185 Wiesbaden', D))
 print('OK', len(html))
