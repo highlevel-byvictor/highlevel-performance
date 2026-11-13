@@ -371,3 +371,68 @@ firma({
  }, "Lia", "0541 86841", 219, "4,9")}, 'liekamhaustech',
  ['i042.jpg','i002.jpg','i055.jpg','i036.jpg','i016.jpg','i013.jpg','i007.jpg','i011.jpg','i010.jpg','i059.jpg','i034.jpg','i058.jpg','i057.jpg',
   'i019.jpg','i020.jpg','i021.jpg','i022.jpg','i023.jpg','i024.jpg','i025.jpg','i026.jpg','i027.jpg','i028.jpg','i029.jpg','i030.jpg','i031.jpg','i032.jpg','i033.jpg'])
+
+# ---------- Tischlerei-Bergmann GbR ----------
+firma({
+ "slug": "tischlerei-bergmann-bissendorf", "firma": "Tischlerei-Bergmann GbR", "kurzname": "Tischlerei Bergmann",
+ "website": "https://www.tischlerei-bergmann.de", "telefon": "05402 7773", "email": "Tischlerei-Bergmann@web.de",
+ "adresse": "Wulftener Str. 4, 49143 Bissendorf", "google": None,
+ "logo_url": None,
+ "brief": {"anschrift": ["Tischlerei-Bergmann GbR", "Herrn Andreas Bergmann", "Wulftener Str. 4", "49143 Bissendorf"],
+           "anrede": "Sehr geehrter Herr Bergmann,",
+           "problem": "dass Ihre wunderschönen Massivholzmöbel dort in einer schmalen Spalte zwischen dunkelroten Rändern stehen, am Handy kaum zu erkennen sind und nirgends ein klarer Weg zur Anfrage führt",
+           "suche": "Tischler"},
+ "beauty": {}
+}, 'bergmann', ['i036.jpg'])
+
+# ---------- Tepe & Maßmann Metallbau GmbH ----------
+firma({
+ "slug": "tepe-massmann-wallenhorst", "firma": "Tepe & Maßmann Metallbau GmbH", "kurzname": "Tepe & Maßmann",
+ "website": "https://www.tepe-massmann.de", "telefon": "05407 30826", "email": "info@tepe-massmann.de",
+ "adresse": "Fürstenauer Weg 1a, 49134 Wallenhorst", "google": None,
+ "logo_url": "file:///home/claude/r10/logos2/tepe.png", "logo_keep": True,
+ "brief": {"anschrift": ["Tepe & Maßmann Metallbau GmbH", "Herrn Thomas Tepe und Herrn Bodo Maßmann", "Fürstenauer Weg 1a", "49134 Wallenhorst"],
+           "anrede": "Sehr geehrter Herr Tepe, sehr geehrter Herr Maßmann,",
+           "problem": "dass Ihre starken Referenzen wie Evonik, Airbus oder der VfL Osnabrück dort auf einer Unterseite versteckt sind und die Startseite am Handy nur ein schmales Bild mit drei kleinen Kästen zeigt",
+           "suche": "Metallbauer"},
+ "beauty": {}
+}, 'tepe', ['i002.jpg'])
+
+# ---------- Malerbetrieb Borggreve GbR ----------
+firma({
+ "slug": "borggreve-osnabrueck", "firma": "Malerbetrieb Borggreve GbR", "kurzname": "Borggreve",
+ "website": "https://www.borggreve-osnabrueck.de", "telefon": "0541 77413", "email": "borggreve@osnanet.de",
+ "adresse": "Bremer Str. 52, 49084 Osnabrück", "google": None,
+ "logo_url": "file:///home/claude/r10/logos2/borggreve.png", "logo_keep": True,
+ "brief": {"anschrift": ["Malerbetrieb Borggreve GbR", "Bremer Str. 52 + 52a", "49084 Osnabrück"],
+           "anrede": "Sehr geehrte Damen und Herren,",
+           "problem": "dass Ihre über 135 Jahre Erfahrung und Ihr Service, also die kostenlose Beratung bei Kunden zu Hause und die Gardinenwäsche mit Abholung, dort nur als zentrierter Text unter einem kleinen Ladenfoto stehen",
+           "suche": "Maler"},
+ "beauty": {}
+}, 'borggreve', ['i001.jpg'])
+
+# ---------- Alfred Abeling GmbH ----------
+firma({
+ "slug": "abeling-essen-oldb", "firma": "Alfred Abeling GmbH", "kurzname": "Abeling Stahlbau",
+ "website": "https://www.abeling-stahlbau.de", "telefon": "05438 333", "email": "alfred.abeling@abeling-stahlbau.de",
+ "adresse": "Dinklager Str. 12, 49632 Essen-Addrup", "google": ["4,9", 7],
+ "logo_url": "file:///home/claude/r10/logos2/abeling.png", "logo_keep": True,
+ "brief": {"anschrift": ["Alfred Abeling GmbH", "Dinklager Str. 12", "49632 Essen-Addrup"],
+           "anrede": "Sehr geehrte Damen und Herren,",
+           "problem": "dass Ihre Hallen und Tankstellen dort nur in kleinen Kacheln zu sehen sind, Ihre 4,9 Sterne bei Google nirgends auftauchen und die letzte Neuigkeit aus dem Jahr 2015 stammt",
+           "suche": "Stahlbauer"},
+ "beauty": {}
+}, 'abeling', ['i004.jpg'])
+
+# ---------- Robert Dälken Dachdeckermeister e.K. ----------
+firma({
+ "slug": "dach-daelken-bad-laer", "firma": "Robert Dälken Dachdeckermeister e.K.", "kurzname": "Dach Dälken",
+ "website": "https://www.dachdecker-badlaer.de", "telefon": "05424 70400", "email": "info@dach-daelken.de",
+ "adresse": "Warendorfer Straße 36, 49196 Bad Laer", "google": ["4,8", 24],
+ "logo_url": "file:///home/claude/r10/logos2/daelken.png", "logo_keep": True,
+ "brief": {"anschrift": ["Dach Dälken", "Herrn Robert Dälken", "Warendorfer Straße 36", "49196 Bad Laer-Hardensetten"],
+           "anrede": "Sehr geehrter Herr Dälken,",
+           "problem": "dass Besucher dort zuerst lange scrollen müssen, bevor sie erfahren, was Sie alles können, und Ihre 4,8 Sterne bei Google sowie Ihr Notdienst bei Sturmschäden nicht vorne stehen",
+           "suche": "Dachdecker"},
+ "beauty": {}
+}, 'daelken', ['i003.jpg'])

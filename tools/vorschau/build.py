@@ -147,7 +147,9 @@ def build(runde_file, nur=None):
                      galerie=rest[1:6] if len(rest) >= 3 else rest[:5], imgs=imgs,
                      tel_link=tel_link(f.get("telefon")),
                      website_kurz=re.sub(r"^https?://(www\.)?|/$", "", f["website"]))
-            if f.get("template") == "beauty":
+            if f.get("handgebaut"):
+                html = ""
+            elif f.get("template") == "beauty":
                 import beauty
                 v.update(allimg=allimg, **beauty.prepare(f, d, allimg))
                 if f["beauty"].get("no_logo") or not f.get("logo_url"): v["logo"] = None

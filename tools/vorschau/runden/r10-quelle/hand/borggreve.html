@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>Borggreve – Malermeister &amp; Raumgestaltung in Osnabrück | Entwurf</title>
+<meta name="description" content="Seit über 135 Jahren Malerarbeiten innen und außen, seit über 60 Jahren Raumausstattung: Farben, Tapeten, Böden, Gardinen und Sonnenschutz in Osnabrück-Schinkel. Kostenlos beraten lassen: 0541 77413.">
+<link rel="preload" as="image" href="img/hero.jpg">
+<style>
+<!--FONTS-->
+<!--KIT_CSS-->
+:root{--p:#33429F;--pd:#1F2A72;--v:#7634BA;--a:#7634BA;--ink:#1C1F33;--mute:#5F6380;--bg:#F4F3F8;--line:#E2E0EC;--fh:'Nunito',system-ui,sans-serif;--fb:'Nunito',system-ui,sans-serif;--fr:14px}
+body{background:var(--bg)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:17px 28px;border-radius:999px;font:800 15.5px/1 var(--fh);transition:transform .25s,box-shadow .25s}
+.btn-a{background:linear-gradient(100deg,var(--p),var(--v));color:#fff;box-shadow:0 14px 30px rgba(118,52,186,.32)}.btn-a:hover{transform:translateY(-2px);box-shadow:0 20px 40px rgba(118,52,186,.42)}
+.btn-w{background:#fff;color:var(--p)}.btn-w:hover{transform:translateY(-2px)}
+.btn-g{color:#fff;box-shadow:inset 0 0 0 2px rgba(255,255,255,.55)}.btn-g:hover{background:rgba(255,255,255,.12)}
+.ey{display:inline-block;font:800 13px var(--fh);letter-spacing:.22em;text-transform:uppercase;color:var(--v);margin-bottom:14px}
+.h2{font:900 clamp(34px,4.2vw,58px)/1.02 var(--fh);color:var(--ink);letter-spacing:-.025em}
+.sw{position:relative;white-space:nowrap;color:var(--p)}
+.sw::after{content:"";position:absolute;left:-4%;right:-6%;bottom:-.18em;height:.42em;background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 300 40' preserveAspectRatio='none'%3E%3Cpath d='M4 30C70 18 150 12 296 4c-80 14-160 22-250 34' fill='%237634BA'/%3E%3C/svg%3E") center/100% 100% no-repeat;z-index:-1;opacity:.85}
+.sw{z-index:0;display:inline-block}
+
+.top{background:var(--pd);color:#d6d9f1;font-size:13.5px}
+.top .w{display:flex;gap:28px;align-items:center;height:42px}
+.top b{color:#fff}.top a{margin-left:auto;color:#fff;font-weight:800}
+.hd{position:sticky;top:0;z-index:40;background:rgba(255,255,255,.95);backdrop-filter:blur(14px);transition:box-shadow .3s}
+.hd.scr{box-shadow:0 10px 30px rgba(31,42,114,.1)}
+.hd .w{display:flex;align-items:center;gap:30px;height:92px}
+.hd .logo img{height:58px;width:auto}
+.nav{display:flex;gap:4px;margin-left:auto}
+.nav a{font:700 15.5px var(--fh);padding:10px 14px;border-radius:999px;color:#4a4e6c;transition:background .2s,color .2s}
+.nav a:hover{background:#efedf8;color:var(--v)}
+.hd .btn{padding:14px 22px;font-size:14.5px}
+.burger{display:none;margin-left:auto;width:46px;height:46px;border:0;border-radius:50%;background:var(--p);color:#fff}
+
+/* Hero */
+.hero{position:relative;min-height:min(820px,92vh);display:flex;align-items:center;color:#fff;overflow:hidden;isolation:isolate}
+.hero>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:62% 60%;z-index:-2}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;background:linear-gradient(98deg,rgba(26,33,92,.95) 0%,rgba(40,44,130,.85) 36%,rgba(90,40,150,.25) 70%,transparent),linear-gradient(0deg,rgba(20,20,60,.45),transparent 40%)}
+.hero .w{padding:100px 0 140px}
+.hero h1{font:900 clamp(46px,6vw,88px)/.96 var(--fh);letter-spacing:-.03em;max-width:780px}
+.hero h1 em{font-style:normal;background:linear-gradient(90deg,#c9b2ff,#ffffff);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero p{font-size:20px;line-height:1.6;max-width:560px;margin:24px 0 34px;color:#e2e3f6}
+.hero .cta{display:flex;gap:14px;flex-wrap:wrap}
+.paint{position:absolute;left:0;right:0;bottom:-1px;height:90px;z-index:1}
+.paint svg{width:100%;height:100%;display:block}
+.badge{position:absolute;right:6%;top:18%;width:190px;height:190px;border-radius:50%;background:#fff;color:var(--p);display:grid;place-items:center;text-align:center;box-shadow:0 30px 60px rgba(0,0,0,.3);transform:rotate(-8deg)}
+.badge b{display:block;font:900 64px/1 var(--fh);background:linear-gradient(120deg,var(--p),var(--v));-webkit-background-clip:text;background-clip:text;color:transparent}
+.badge span{font:800 13px/1.25 var(--fh);letter-spacing:.06em;text-transform:uppercase}
+
+.band{background:#fff;padding:20px 0 36px;text-align:center;font:800 clamp(16px,2vw,22px) var(--fh);letter-spacing:.32em;text-transform:uppercase;color:var(--p)}
+
+/* Story */
+.story{padding:90px 0 110px;background:#fff}
+.story .w{display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:center}
+.story p{font-size:18px;color:var(--mute);margin-top:20px}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.duo div{border-radius:20px;padding:30px;background:var(--bg)}
+.duo b{display:block;font:900 58px/1 var(--fh);color:var(--p)}
+.duo div:nth-child(2) b{color:var(--v)}
+.duo span{font-weight:700;color:var(--ink)}
+.duo div:nth-child(3){grid-column:span 2;background:linear-gradient(110deg,var(--p),var(--v));color:#fff}
+.duo div:nth-child(3) b{font-size:26px;color:#fff;margin-bottom:6px}
+
+/* Leistungen */
+.lst{padding:120px 0}
+.lst .hdr{max-width:720px;margin-bottom:50px}
+.lst .grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.card{background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 20px 50px rgba(31,42,114,.08);display:flex;flex-direction:column;transition:transform .35s,box-shadow .35s}
+.card:hover{transform:translateY(-8px);box-shadow:0 30px 60px rgba(31,42,114,.16)}
+.card img{width:100%;aspect-ratio:4/3;object-fit:cover}
+.card div{padding:24px 24px 28px;display:flex;flex-direction:column;flex:1}
+.card h3{font:900 23px var(--fh);color:var(--ink);margin-bottom:8px}
+.card p{color:var(--mute);font-size:15.5px;flex:1}
+.card a{margin-top:18px;font:800 14.5px var(--fh);color:var(--v)}
+
+/* Fassade */
+.fas{background:var(--pd);color:#fff;padding:120px 0;overflow:hidden}
+.fas .w{display:grid;grid-template-columns:.8fr 1.2fr;gap:60px;align-items:center}
+.fas .h2{color:#fff}.fas .h2 em{font-style:normal;color:#ff6a4d}
+.fas p{color:#d1d4ef;font-size:18px;margin:18px 0 30px}
+.mos{display:grid;grid-template-columns:repeat(3,1fr);grid-auto-rows:170px;gap:12px}
+.mos img{width:100%;height:100%;object-fit:cover;border-radius:14px}
+.mos .b{grid-column:span 2;grid-row:span 2}
+
+/* Farben */
+.far{padding:120px 0;background:#fff}
+.far .w{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:center}
+.far .pic{position:relative}
+.far .pic img{border-radius:24px;width:78%;margin-left:auto;box-shadow:0 30px 60px rgba(31,42,114,.18)}
+.far .chip{position:absolute;left:0;bottom:12%;background:#fff;border-radius:18px;padding:22px 26px;box-shadow:0 20px 50px rgba(31,42,114,.2);max-width:260px}
+.far .chip b{display:block;font:900 40px/1 var(--fh);background:linear-gradient(120deg,var(--p),var(--v));-webkit-background-clip:text;background-clip:text;color:transparent}
+.far p{font-size:18px;color:var(--mute);margin:18px 0}
+.dots{display:flex;gap:10px;margin:26px 0 30px}
+.dots i{width:44px;height:44px;border-radius:50%;box-shadow:0 6px 14px rgba(0,0,0,.12)}
+
+/* Tapeten/Böden-Slider */
+.kol{padding:110px 0}
+.kol .hdr{display:flex;justify-content:space-between;align-items:end;gap:30px;margin-bottom:36px}
+.kol .hdr p{color:var(--mute);max-width:520px;font-size:17px}
+.rail{display:flex;gap:18px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 24px 22px;margin:0 calc((100% - min(1240px,100% - 48px))/-2);padding-left:calc((100% - min(1240px,100% - 48px))/2)}
+.rail::-webkit-scrollbar{height:6px}.rail::-webkit-scrollbar-thumb{background:#cfcbe3;border-radius:6px}
+.rail figure{flex:none;width:330px;margin:0;scroll-snap-align:start}
+.rail img{width:100%;aspect-ratio:4/3;object-fit:cover;border-radius:18px}
+.rail figcaption{font:800 15px var(--fh);margin-top:10px;color:var(--ink)}
+.tabs{display:flex;gap:6px;background:#fff;padding:6px;border-radius:999px;box-shadow:0 8px 20px rgba(31,42,114,.08)}
+.tabs button{border:0;background:none;padding:11px 20px;border-radius:999px;font:800 14.5px var(--fh);color:var(--mute)}
+.tabs button.on{background:linear-gradient(100deg,var(--p),var(--v));color:#fff}
+.rail.off{display:none}
+
+/* Service */
+.svc{padding:0 0 120px}
+.svc .w{display:grid;grid-template-columns:1.1fr .9fr;gap:0;border-radius:28px;overflow:hidden;background:#fff;box-shadow:0 30px 70px rgba(31,42,114,.1)}
+.svc img{width:100%;height:100%;object-fit:cover;min-height:420px}
+.svc .t{padding:56px}
+.svc ul{list-style:none;padding:0;margin:22px 0 30px;display:grid;gap:12px}
+.svc li{display:flex;gap:12px;font-weight:700}
+.svc li::before{content:"";flex:none;width:22px;height:22px;border-radius:50%;background:linear-gradient(120deg,var(--p),var(--v)) ;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='12'/%3E%3C/svg%3E")}
+
+/* Beratung zuhause */
+.cta-b{background:linear-gradient(110deg,var(--p),var(--v));color:#fff;padding:90px 0;text-align:center;position:relative;overflow:hidden}
+.cta-b h2{font:900 clamp(34px,4.4vw,60px)/1.05 var(--fh);letter-spacing:-.02em}
+.cta-b p{font-size:19px;color:#e7e2fb;margin:16px auto 30px;max-width:620px}
+.cta-b .cta{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+
+.job{padding:110px 0}
+.job .w{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center}
+.job p{font-size:18px;color:var(--mute);margin:18px 0 26px}
+.job .jc{background:#fff;border-radius:22px;padding:34px;box-shadow:0 20px 50px rgba(31,42,114,.08);display:grid;gap:14px}
+.job .jc div{padding:18px 20px;border-radius:14px;background:var(--bg);font-weight:800}
+.job .jc span{display:block;font-weight:600;color:var(--mute);font-size:14px}
+
+/* Kontakt */
+.kon{padding:110px 0;background:#fff}
+.kon .w{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.kon .tel{display:block;font:900 clamp(36px,4vw,54px) var(--fh);color:var(--p);margin:18px 0 6px}
+.kon .ad{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin:28px 0}
+.kon .ad b{display:block;font:800 12.5px var(--fh);letter-spacing:.18em;text-transform:uppercase;color:var(--v);margin-bottom:6px}
+.kon .map{height:230px;border-radius:20px}
+.kon .map .pin{position:absolute;left:50%;top:50%;transform:translate(-50%,-100%);width:30px;height:40px;background:var(--v);clip-path:path('M15 0C6.7 0 0 6.7 0 15c0 11.3 15 25 15 25s15-13.7 15-25C30 6.7 23.3 0 15 0z')}
+.kon .map a{position:absolute;left:12px;bottom:12px;padding:11px 16px;font-size:13px}
+.kon .f{background:var(--bg);border-radius:24px;padding:44px}
+.kon .f h3{font:900 30px var(--fh);color:var(--ink)}
+.kon .f>p{color:var(--mute);margin:8px 0 24px}
+.kon .fm input,.kon .fm select,.kon .fm textarea{border-color:#dcd9ea;border-radius:12px}
+.ft{background:var(--pd);color:#b9bde0;padding:40px 0 90px;font-size:14px}
+.ft .w{display:flex;gap:24px;flex-wrap:wrap;align-items:center}
+.ft b{color:#fff;font:900 18px var(--fh)}
+.ft .cp{flex-basis:100%;font-size:12.5px;opacity:.7}
+
+@media (max-width:1100px){.nav{display:none}.burger{display:block}.hd .btn{display:none}
+ body.nav-open .nav{display:flex;flex-direction:column;position:absolute;top:92px;left:0;right:0;background:#fff;padding:14px 24px;box-shadow:0 20px 30px rgba(0,0,0,.1)}
+ .lst .grid{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:900px){
+ .sw{white-space:normal}.story .w>*,.far .w>*,.job .w>*,.kon .w>*{min-width:0}
+ .hero::before{background:linear-gradient(180deg,rgba(26,33,92,.88),rgba(60,40,140,.82))}
+ .top .w>span:nth-child(2){display:none}
+ .badge{display:none}.hero .w{padding:70px 0 120px}
+ .story .w,.fas .w,.far .w,.svc .w,.job .w,.kon .w{grid-template-columns:1fr;gap:40px}
+ .story,.lst,.fas,.far,.kol,.job,.kon{padding:80px 0}.svc{padding:0 0 80px}
+ .kol .hdr{flex-direction:column;align-items:flex-start}
+ .svc .t,.kon .f{padding:30px}.svc img{min-height:260px}
+ .rail figure{width:260px}
+ .mos{grid-auto-rows:120px}
+}
+@media (max-width:560px){.hd .logo img{height:44px}.hero h1{font-size:44px}.lst .grid{grid-template-columns:1fr}.top .w{font-size:12px;gap:12px}.top .w>span:first-child{display:none}.band{letter-spacing:.16em}.far .pic img{width:88%}}
+</style>
+</head>
+<body>
+<div class="top"><div class="w"><span><b>Mo – Fr</b> 9:00 – 12:30 &amp; 14:30 – 18:00 Uhr</span><span>Bremer Str. 52 + 52a · Osnabrück-Schinkel</span><a href="tel:+4954177413">☎ 0541 77413</a></div></div>
+<header class="hd" data-hd><div class="w">
+ <a class="logo" href="#"><img src="img/logo.png" alt="borggreve"></a>
+ <nav class="nav"><a href="#waende">Wände</a><a href="#boeden">Böden</a><a href="#fenster">Fenster</a><a href="#arbeiten">Arbeiten</a><a href="#karriere">Karriere</a><a href="#kontakt">Anfahrt &amp; Kontakt</a></nav>
+ <a class="btn btn-a" href="#kontakt">Kostenlos beraten lassen</a>
+ <button class="burger" data-nav aria-label="Menü">☰</button>
+</div></header>
+
+<main>
+<section class="hero">
+ <img src="img/hero.jpg" alt="Ladengeschäft von Borggreve an der Bremer Straße in Osnabrück">
+ <div class="w">
+  <span class="ey" style="color:#cdbaff" data-r>Malermeister · Raumgestaltung · Osnabrück</span>
+  <h1 data-r>Farbe, Stoff, Boden. <em>Alles für Ihr Zuhause.</em></h1>
+  <p data-r="2">Seit über 135 Jahren Ihr Malermeister für innen und außen – und seit mehr als 60 Jahren Ihr Raumausstatter für Tapeten, Böden, Gardinen und Sonnenschutz. Alles aus einer Hand, mitten in Schinkel.</p>
+  <div class="cta" data-r="3"><a class="btn btn-w" href="#kontakt">Kostenlos beraten lassen</a><a class="btn btn-g" href="#waende">Leistungen ansehen</a></div>
+ </div>
+ <div class="badge" data-r="4"><div><b>135+</b><span>Jahre<br>Malermeister</span></div></div>
+ <div class="paint"><svg viewBox="0 0 1440 90" preserveAspectRatio="none"><path d="M0 60C240 20 480 90 760 50S1240 10 1440 40V90H0Z" fill="#fff"/></svg></div>
+</section>
+<div class="band">Malermeister – Raumgestaltung</div>
+
+<section class="story"><div class="w">
+ <div data-r>
+  <span class="ey">Ihr Partner in Osnabrück</span>
+  <h2 class="h2">Wir beraten. Wir planen. <span class="sw">Wir machen's.</span></h2>
+  <p>Wir beraten Sie, übernehmen Planung und Ausführung bei Bodenbelägen, Teppichböden und Design-Belägen, bei Tapeten und Farben. Gardinendekorationen und Sonnenschutz ergänzen unser Sortiment – und Ihre Gardinen waschen wir auch: mit Abhol- und Montageservice.</p>
+ </div>
+ <div class="duo" data-r="2">
+  <div><b>135+</b><span>Jahre Malerarbeiten innen &amp; außen</span></div>
+  <div><b>60+</b><span>Jahre Raumausstattung</span></div>
+  <div><b>Wir beraten Sie kostenlos – auch bei Ihnen zu Hause.</b><span>Rufen Sie einfach an: 0541 77413</span></div>
+ </div>
+</div></section>
+
+<section class="lst" id="waende"><div class="w">
+ <div class="hdr" data-r><span class="ey">Leistungen</span><h2 class="h2">Ein Ansprechpartner <span class="sw">für jeden Raum.</span></h2></div>
+ <div class="grid">
+  <div class="card" data-r><img src="img/l-maler.jpg" alt="Frisch gestrichene Fassade" loading="lazy"><div><h3>Malerarbeiten</h3><p>Wir streichen Wohn- und Geschäftsräume, innen wie außen – sauber und termintreu.</p><a href="#arbeiten">Unsere Arbeiten →</a></div></div>
+  <div class="card" data-r="2"><img src="img/l-tapete.jpg" alt="Wohnzimmer mit Designtapete" loading="lazy"><div><h3>Tapeten</h3><p>Mit der richtigen Tapete bekommen Ihre vier Wände im Handumdrehen einen neuen Ausdruck.</p><a href="#kollektion">Auswahl ansehen →</a></div></div>
+  <div class="card" data-r="3" id="boeden"><img src="img/l-boden.jpg" alt="Designboden in Holzoptik" loading="lazy"><div><h3>Böden</h3><p>Teppichboden, abgepasster Teppich, Designbelag in Holz-, Stein- oder Betonoptik.</p><a href="#kollektion">Böden ansehen →</a></div></div>
+  <div class="card" data-r="4" id="fenster"><img src="img/l-fenster.jpg" alt="Schlafzimmer mit Gardinen" loading="lazy"><div><h3>Gardinen &amp; Sonnenschutz</h3><p>Gardinendekorationen, Sonnenschutz – und Gardinenwäsche mit Abhol- und Montageservice.</p><a href="#service">Zum Service →</a></div></div>
+ </div>
+</div></section>
+
+<section class="fas" id="arbeiten"><div class="w">
+ <div data-r>
+  <span class="ey" style="color:#cdbaff">Von uns ausgeführt</span>
+  <h2 class="h2">Eine Fassade, <em>die man nicht übersieht.</em></h2>
+  <p>Malerarbeiten im Außenbereich gehören seit Generationen zu unserem Handwerk: Untergrund prüfen, sauber vorbereiten, mit Markenqualität streichen. Das Ergebnis hält – und es zeigt sich.</p>
+  <a class="btn btn-w" href="#kontakt">Fassade anfragen</a>
+ </div>
+ <div class="mos" data-r="2">
+  <img class="b" src="img/f1.jpg" alt="Rote Fassade eines Einfamilienhauses, von Borggreve gestrichen" loading="lazy">
+  <img src="img/f2.jpg" alt="Fassade, Seitenansicht" loading="lazy">
+  <img src="img/f3.jpg" alt="Fassade mit Fenstern" loading="lazy">
+  <img src="img/f4.jpg" alt="Fassade, Detail" loading="lazy">
+  <img src="img/f5.jpg" alt="Giebelseite" loading="lazy">
+  <img src="img/f6.jpg" alt="Fassade, Gartenseite" loading="lazy">
+ </div>
+</div></section>
+
+<section class="far"><div class="w">
+ <div class="pic" data-r><img src="img/farbfaecher.jpg" alt="Scala-Farbfächer im Ladengeschäft von Borggreve" loading="lazy"><div class="chip"><b>24 Std.</b>Ihr Wunschfarbton in Malerqualität</div></div>
+ <div data-r="2">
+  <span class="ey">Farben &amp; Farbdesigner</span>
+  <h2 class="h2">Markenqualität <span class="sw">in 24 Stunden.</span></h2>
+  <p>In unserem Ladengeschäft erhalten Sie alle Brillux-Produkte. Ihren Wunschfarbton bekommen Sie innerhalb von 24 Stunden – in echter Malerqualität.</p>
+  <p>Mit dem Online-Farbdesigner sehen Sie vorab, wie Raum oder Fassade wirkt. Danach beraten wir Sie persönlich.</p>
+  <div class="dots"><i style="background:#33429F"></i><i style="background:#7634BA"></i><i style="background:#C83A2C"></i><i style="background:#E7B53B"></i><i style="background:#2F7A6A"></i><i style="background:#D9CBB6"></i></div>
+  <a class="btn btn-a" href="#kontakt">Farbberatung vereinbaren</a>
+ </div>
+</div></section>
+
+<section class="kol" id="kollektion"><div class="w">
+ <div class="hdr" data-r><div><span class="ey">Aus unserer Auswahl</span><h2 class="h2">Inspiration <span class="sw">für Wand &amp; Boden.</span></h2></div>
+  <div class="tabs"><button class="on" data-k="r1">Tapeten</button><button data-k="r2">Böden</button></div></div>
+ <div class="rail" id="r1">
+  <figure><img src="img/t1.jpg" alt="Tapete mit Blattmuster" loading="lazy"><figcaption>Natur &amp; Muster</figcaption></figure>
+  <figure><img src="img/t2.jpg" alt="Fototapete mit Zebras" loading="lazy"><figcaption>Fototapete</figcaption></figure>
+  <figure><img src="img/t3.jpg" alt="Tapete in Betonoptik" loading="lazy"><figcaption>Industrial</figcaption></figure>
+  <figure><img src="img/t4.jpg" alt="Tapete in Petrol" loading="lazy"><figcaption>Tiefe Farben</figcaption></figure>
+  <figure><img src="img/t5.jpg" alt="Wohnzimmer mit Strukturtapete" loading="lazy"><figcaption>Struktur</figcaption></figure>
+  <figure><img src="img/t6.jpg" alt="Farbenfrohe Fototapete" loading="lazy"><figcaption>Statement-Wand</figcaption></figure>
+ </div>
+ <div class="rail off" id="r2">
+  <figure><img src="img/b1.jpg" alt="Designboden in Holzoptik" loading="lazy"><figcaption>Holzoptik</figcaption></figure>
+  <figure><img src="img/b2.jpg" alt="Roter Teppichboden" loading="lazy"><figcaption>Teppichboden</figcaption></figure>
+  <figure><img src="img/b3.jpg" alt="Grüner Teppichboden" loading="lazy"><figcaption>Farbig</figcaption></figure>
+  <figure><img src="img/b4.jpg" alt="Designbelag in Steinoptik" loading="lazy"><figcaption>Steinoptik</figcaption></figure>
+  <figure><img src="img/b5.jpg" alt="Teppich in Petrol" loading="lazy"><figcaption>Samtig weich</figcaption></figure>
+  <figure><img src="img/b6.jpg" alt="Teppichboden in Mint" loading="lazy"><figcaption>Hell &amp; frisch</figcaption></figure>
+ </div>
+</div></section>
+
+<section class="svc" id="service"><div class="w">
+ <img src="img/service.jpg" alt="Schlafzimmer mit Gardinen und Vorhängen" loading="lazy">
+ <div class="t" data-r>
+  <span class="ey">Gardinen-Service</span>
+  <h2 class="h2" style="font-size:clamp(30px,3.2vw,42px)">Wir holen ab. <span class="sw">Wir hängen auf.</span></h2>
+  <ul><li>Gardinenwäsche mit Abhol- und Montageservice</li><li>Gardinendekorationen nach Maß</li><li>Sonnenschutz für jedes Fenster</li><li>Beratung auch bei Ihnen zu Hause</li></ul>
+  <a class="btn btn-a" href="#kontakt">Termin vereinbaren</a>
+ </div>
+</div></section>
+
+<section class="cta-b"><div class="w" data-r>
+ <h2>Wir beraten Sie unverbindlich und kostenlos.</h2>
+ <p>Im Laden an der Bremer Straße – oder bei Ihnen zu Hause, wo Farbe, Stoff und Licht wirklich zusammenkommen.</p>
+ <div class="cta"><a class="btn btn-w" href="#kontakt">Kostenlos beraten lassen</a><a class="btn btn-g" href="tel:+4954177413">0541 77413</a></div>
+</div></section>
+
+<section class="job" id="karriere"><div class="w">
+ <div data-r><span class="ey">Karriere</span><h2 class="h2">Mit Farbe <span class="sw">Zukunft gestalten.</span></h2><p>Ein Traditionsbetrieb mit über 135 Jahren Erfahrung, abwechslungsreiche Aufträge zwischen Fassade und Wohnzimmer: Wenn Sie Maler oder Raumausstatter sind – oder es werden wollen –, freuen wir uns auf Sie.</p><a class="btn btn-a" href="tel:+4954177413">Jetzt anrufen</a></div>
+ <div class="jc" data-r="2"><div>Maler und Lackierer (m/w/d)<span>Initiativbewerbung willkommen</span></div><div>Raumausstatter (m/w/d)<span>Initiativbewerbung willkommen</span></div><div>Ausbildung<span>Sprechen Sie uns einfach an</span></div></div>
+</div></section>
+
+<section class="kon" id="kontakt"><div class="w">
+ <div data-r>
+  <span class="ey">Anfahrt &amp; Kontakt</span>
+  <h2 class="h2" style="font-size:clamp(30px,3.2vw,44px)">Besuchen Sie uns <span class="sw">in Schinkel.</span></h2>
+  <a class="tel" href="tel:+4954177413">0541 77413</a>
+  <p>borggreve@osnanet.de</p>
+  <div class="ad"><div><b>Ladengeschäft</b><span>Malermeister Borggreve<br>Bremer Str. 52 + 52a<br>49084 Osnabrück</span></div><div><b>Öffnungszeiten</b><span>Mo – Fr<br>9:00 – 12:30 Uhr<br>14:30 – 18:00 Uhr</span></div></div>
+  <div class="map"><img src="img/karte.webp" alt="Karte: Bremer Straße 52, Osnabrück" loading="lazy"><span class="pin"></span><a class="btn btn-a" href="https://www.google.com/maps/dir/?api=1&amp;destination=Bremer+Str.+52+49084+Osnabr%C3%BCck" target="_blank" rel="noopener">Route planen</a></div>
+ </div>
+ <div class="f" data-r="2">
+  <h3>Kostenlose Beratung anfragen</h3>
+  <p>Wir rufen Sie zurück – gern kommen wir auch zu Ihnen nach Hause.</p>
+  <form class="fm">
+   <input placeholder="Ihr Name" aria-label="Ihr Name" required>
+   <input type="tel" placeholder="Telefon" aria-label="Telefon" required>
+   <select aria-label="Worum geht es?"><option>Malerarbeiten innen</option><option>Fassade / außen</option><option>Tapeten</option><option>Böden / Teppich</option><option>Gardinen &amp; Sonnenschutz</option><option>Gardinenwäsche (Abholung)</option><option>Bewerbung</option></select>
+   <textarea placeholder="Ihre Nachricht (optional)" aria-label="Nachricht"></textarea>
+   <button class="btn btn-a">Rückruf anfordern</button>
+   <small>Beispiel-Funktion: Anfragen landen direkt im Postfach, mit automatischer Bestätigung.</small>
+   <div class="ok">Danke! Wir melden uns schnellstmöglich bei Ihnen.</div>
+  </form>
+ </div>
+</div></section>
+</main>
+
+<footer class="ft"><div class="w">
+ <b>Malerbetrieb Borggreve</b>
+ <span>Bremer Str. 52 + 52a, 49084 Osnabrück · 0541 77413 · borggreve@osnanet.de</span>
+ <span>Impressum | Datenschutz</span>
+ <div class="cp">Grober Entwurf von High Level Performance mit Bildern und Texten von borggreve-osnabrueck.de. Tapeten- und Bodenbilder zeigen Beispiele aus dem Sortiment. Bei einer Zusammenarbeit wird alles viel intensiver ausgearbeitet.</div>
+</div></footer>
+
+<div class="mcall"><a href="tel:+4954177413"><svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 0 006.6 6.6l2.2-2.2a1 1 0 011-.25 11.4 11.4 0 003.6.6 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1c0 1.25.2 2.45.57 3.57a1 1 0 01-.25 1z"/></svg>Anrufen</a><a href="#kontakt">Kostenlos beraten lassen</a></div>
+<div class="hlp-note"><b>Grober Entwurf</b> · Erstellt von High Level Performance. Bei einer Zusammenarbeit arbeiten wir jede Seite viel intensiver aus.<button aria-label="Hinweis schließen">×</button></div>
+<script>
+window.BOT={name:'Frieda',tag:'Ihre Farb- &amp; Raum-Beraterin',hello:'Hallo! Ich bin Frieda. Soll ich Ihnen zeigen, wie wir Ihre Räume neu gestalten?',hi:'Hallo! Ich bin Frieda von Borggreve. Wobei darf ich helfen?',
+ qa:[['Wann hat der Laden geöffnet?','Montag bis Freitag von 9:00 bis 12:30 und von 14:30 bis 18:00 Uhr – Bremer Str. 52 in Osnabrück.'],
+     ['Kommen Sie auch zu mir nach Hause?','Ja! Wir beraten Sie unverbindlich und kostenlos – auch bei Ihnen zu Hause.'],
+     ['Waschen Sie Gardinen?','Ja – mit Abhol- und Montageservice. Rufen Sie an: <a href="tel:+4954177413"><b>0541 77413</b></a>.'],
+     ['Kostenlos beraten lassen','Gern! Hinterlassen Sie <a href="#kontakt"><b>hier Ihre Nummer</b></a> – wir melden uns.']],
+ tour:[['#waende'],['#arbeiten'],['#service'],['#kontakt']]};
+document.addEventListener('DOMContentLoaded',function(){
+ document.querySelectorAll('.tabs button').forEach(function(b){b.addEventListener('click',function(){document.querySelectorAll('.tabs button').forEach(function(x){x.classList.remove('on')});document.querySelectorAll('.rail').forEach(function(x){x.classList.add('off')});b.classList.add('on');document.getElementById(b.dataset.k).classList.remove('off')})});
+});
+</script>
+<script>
+<!--KIT_JS-->
+</script>
+</body>
+</html>

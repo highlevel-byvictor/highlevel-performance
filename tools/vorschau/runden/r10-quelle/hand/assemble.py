@@ -65,7 +65,59 @@ SITES = {
    'bus.jpg': (RAW/'siefker/img/i020.jpg', 1100), 'team.jpg': (RAW/'siefker/img/i018.jpg', 1100), 'zaehler.jpg': (RAW/'siefker/orig/i017.jpg', 520),
    'telefon.jpg': (RAW/'siefker/img/i005.jpg', 520), 'logo.png': (R10/'logos/siefker.png', 0),
  }),
+ 'bergmann': dict(dir='tischlerei-bergmann-bissendorf', fonts='r10bergmann', img={
+   'hero.jpg': (RAW/'bergmann/img/i036.jpg', 2200), 'kubus.jpg': (RAW/'bergmann/img/i019.jpg', 900), 'kueche.jpg': (RAW/'bergmann/img/i005.jpg', 700),
+   'g-tisch.jpg': (RAW/'bergmann/img/i018.jpg', 1000), 'g-kueche2.jpg': (RAW/'bergmann/img/i007.jpg', 700), 'g-schrank.jpg': (RAW/'bergmann/img/i010.jpg', 700),
+   'g-gebeizt.jpg': (RAW/'bergmann/img/i012.jpg', 1000), 'g-wiege.jpg': (RAW/'bergmann/img/i009.jpg', 700), 'g-zinken.jpg': (RAW/'bergmann/img/i024.jpg', 700),
+   'g-tv.jpg': (RAW/'bergmann/img/i017.jpg', 700), 'g-sideboard.jpg': (RAW/'bergmann/img/i014.jpg', 1000), 'g-staffelei.jpg': (RAW/'bergmann/img/i003.jpg', 700),
+   'g-regal.jpg': (RAW/'bergmann/img/i016.jpg', 1000), 'h-kiefer.jpg': (RAW/'bergmann/img/i020.jpg', 600), 'h-birke.jpg': (RAW/'bergmann/img/i021.jpg', 600),
+   'h-buche.jpg': (RAW/'bergmann/img/i022.jpg', 600), 't-alt.jpg': (RAW/'bergmann/img/i034.jpg', 900), 't-neu.jpg': (RAW/'bergmann/img/i035.jpg', 900),
+   'aussen.jpg': (RAW/'bergmann/img/i030.jpg', 900), 'hobel2.jpg': (RAW/'bergmann/img/i001.jpg', 1100), 'leidenschaft.jpg': (RAW/'bergmann/img/i004.jpg', 1600),
+ }),
+ 'tepe': dict(dir='tepe-massmann-wallenhorst', fonts='r10tepe', img={
+   'hero.jpg': (RAW/'tepe/img/i002.jpg', 2000), 'logo.png': (R10/'logos2/tepe.png', 0), 'zert.png': (RAW/'tepe/img/i012.jpg', 0),
+   'p-wintergarten.jpg': (RAW/'tepe/img/i003.jpg', 900), 'p-terrasse.jpg': (RAW/'tepe/img/i002.jpg', 900), 'p-vordach.jpg': (RAW/'tepe/img/i011.jpg', 900),
+   'p-balkon.jpg': (RAW/'tepe/img/i004.jpg', 900), 'p-fassade.jpg': (RAW/'tepe/img/i006.jpg', 900), 'p-wintergarten2.jpg': (RAW/'tepe/img/i008.jpg', 900),
+   'p-garage.jpg': (RAW/'tepe/img/i001.jpg', 900), 'p-tor.jpg': (RAW/'tepe/img/i010.jpg', 900), 'p-gelaender.jpg': (RAW/'tepe/img/i007.jpg', 900),
+   'p-balkone.jpg': (RAW/'tepe/img/i005.jpg', 900), 's1.jpg': (RAW/'tepe/img/i007.jpg', 700), 's2.jpg': (RAW/'tepe/img/i003.jpg', 700),
+   's3.jpg': (RAW/'tepe/img/i006.jpg', 700), 's4.jpg': (RAW/'tepe/img/i008.jpg', 700), 's5.jpg': (RAW/'tepe/img/i009.jpg', 700),
+   'betrieb.jpg': (RAW/'tepe/img/i016.jpg', 1400),
+ }),
+ 'borggreve': dict(dir='borggreve-osnabrueck', fonts='r10borggreve', img={
+   'hero.jpg': (RAW/'borggreve/img/i001.jpg', 2000), 'logo.png': (R10/'logos2/borggreve.png', 0),
+   'l-maler.jpg': (RAW/'borggreve/img/i029.jpg', 800), 'l-tapete.jpg': (RAW/'borggreve/img/i014.jpg', 800), 'l-boden.jpg': (RAW/'borggreve/img/i035.jpg', 800), 'l-fenster.jpg': (RAW/'borggreve/img/i004.jpg', 800),
+   **{f'f{k}.jpg': (RAW/f'borggreve/img/i{n:03d}.jpg', 900) for k, n in [(1,29),(2,27),(3,28),(4,30),(5,31),(6,26)]},
+   'farbfaecher.jpg': (RAW/'borggreve/img/i005.jpg', 700), 'service.jpg': (RAW/'borggreve/img/i006.jpg', 1100),
+   **{f't{k}.jpg': (RAW/f'borggreve/img/i{n:03d}.jpg', 700) for k, n in [(1,14),(2,16),(3,18),(4,19),(5,21),(6,22)]},
+   **{f'b{k}.jpg': (RAW/f'borggreve/img/i{n:03d}.jpg', 700) for k, n in [(1,35),(2,43),(3,47),(4,36),(5,48),(6,50)]},
+ }),
+ 'abeling': dict(dir='abeling-essen-oldb', fonts='r10abeling', img={
+   'logo.png': (R10/'logos2/abeling.png', 0),
+   's1.jpg': (RAW/'abref/img/tankst_16.jpg', 1800), 's2.jpg': (RAW/'abref/img/landwi_08.jpg', 1800), 's3.jpg': (RAW/'abref/img/gewerb_05.jpg', 1800), 's4.jpg': (RAW/'abref/img/vordae_23.jpg', 1800),
+   't-tank.jpg': (RAW/'abeling/img/i004.jpg', 900), 't-land.jpg': (RAW/'abeling/img/i005.jpg', 900), 't-gewerbe.jpg': (RAW/'abeling/img/i006.jpg', 900),
+   't-vordach.jpg': (RAW/'abeling/img/i007.jpg', 900), 't-sonder.jpg': (RAW/'abeling/img/i008.jpg', 900),
+   'z1.jpg': (RAW/'abref/img/tankst_19.jpg', 1200), 'z2.jpg': (RAW/'abref/img/tankst_17.jpg', 800), 'z3.jpg': (RAW/'abref/img/tankst_20.jpg', 800),
+   'r-tank1.jpg': (RAW/'abref/img/tankst_16.jpg', 700), 'r-tank2.jpg': (RAW/'abref/img/tankst_17.jpg', 700), 'r-tank3.jpg': (RAW/'abref/img/tankst_18.jpg', 700),
+   'r-land1.jpg': (RAW/'abref/img/landwi_13.jpg', 700), 'r-land2.jpg': (RAW/'abref/img/landwi_10.jpg', 700), 'r-land3.jpg': (RAW/'abref/img/landwi_11.jpg', 700),
+   'r-gew1.jpg': (RAW/'abref/img/gewerb_02.jpg', 700), 'r-gew2.jpg': (RAW/'abref/img/gewerb_04.jpg', 700), 'r-gew3.jpg': (RAW/'abref/img/gewerb_06.jpg', 700),
+   'r-vor1.jpg': (RAW/'abref/img/vordae_21.jpg', 700), 'r-vor2.jpg': (RAW/'abref/img/vordae_23.jpg', 700), 'r-vor3.jpg': (RAW/'abref/img/vordae_24.jpg', 700),
+   'team.jpg': (RAW/'abeling/img/i010.jpg', 0),
+ }),
+ 'daelken': dict(dir='dach-daelken-bad-laer', fonts='r10daelken', img={
+   'logo.png': (R10/'logos2/daelken.png', 0), 'zettel.png': (R10/'logos2/daelken-zettel.png', 0),
+   'h1.jpg': (RAW/'daelken/img/i003.jpg', 2200), 'h2.jpg': (RAW/'daelken/img/i000.jpg', 2200), 'h3.jpg': (RAW/'daelken/img/i004.jpg', 2200),
+   'wohnbau.jpg': (RAW/'daelken/img/i005.jpg', 1400), 'w1.jpg': (RAW/'daelken/img/i006.jpg', 0), 'w2.jpg': (RAW/'daelken/img/i007.jpg', 0),
+   'metall.jpg': (RAW/'daelken/img/i008.jpg', 1400), 'm1.jpg': (RAW/'daelken/img/i002.jpg', 900), 'm2.jpg': (RAW/'daelken/img/i013.jpg', 900),
+   'industrie.jpg': (RAW/'daelken/img/i009.jpg', 1400), 'i1.jpg': (RAW/'daelken/img/i012.jpg', 900), 'fassade.jpg': (RAW/'daelken/img/i020.jpg', 0),
+   'k1.jpg': (RAW/'daelken/img/i015.jpg', 0), 'k2.jpg': (RAW/'daelken/img/i016.jpg', 0), 'k3.jpg': (RAW/'daelken/img/i017.jpg', 0), 'k4.jpg': (RAW/'daelken/img/i019.jpg', 900),
+   'd1.jpg': (RAW/'daelken/img/i023.jpg', 0), 'd2.jpg': (RAW/'daelken/img/i024.jpg', 0), 'd3.jpg': (RAW/'daelken/img/i025.jpg', 0), 'd4.jpg': (RAW/'daelken/img/i028.jpg', 0),
+   'pv1.jpg': (RAW/'daelken/img/i031.jpg', 0), 'pv2.jpg': (RAW/'daelken/img/i032.jpg', 0), 'merlo.jpg': (RAW/'daelken/img/i043.jpg', 1400), 'flyer.jpg': (RAW/'daelken/img/i044.jpg', 0),
+ }),
 }
+
+for _k, _a in {'bergmann':'Wulftener Str. 4, 49143 Bissendorf','tepe':'Fürstenauer Weg 1a, 49134 Wallenhorst','borggreve':'Bremer Straße 52, 49084 Osnabrück',
+               'abeling':'Dinklager Straße 12, 49632 Essen (Oldenburg)','daelken':'Warendorfer Straße 36, 49196 Bad Laer'}.items():
+    SITES[_k]['adresse'] = _a
 
 def prep(site):
     d = slugdir(site['dir']) / 'img'
@@ -88,6 +140,8 @@ def prep(site):
 def build(key):
     site = SITES[key]
     d = prep(site)
+    if site.get('adresse'):
+        sys.path.insert(0, str(ROOT/'tools/vorschau')); import beauty; beauty.karte(site['adresse'], d)
     html = (H / f'{key}.html').read_text()
     html = html.replace('<!--KIT_CSS-->', (H/'kit.css').read_text()).replace('<!--KIT_JS-->', (H/'kit.js').read_text())
     html = html.replace('<!--FONTS-->', (FONTS / f"{site['fonts']}.css").read_text())

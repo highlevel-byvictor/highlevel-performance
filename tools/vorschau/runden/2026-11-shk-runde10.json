@@ -1934,6 +1934,254 @@
    "theme": "shk",
    "min_w": 300,
    "handgebaut": "/home/claude/highlevel-performance/tools/vorschau/runden/r10-quelle/hand/liekam.built.html"
+  },
+  {
+   "slug": "tischlerei-bergmann-bissendorf",
+   "firma": "Tischlerei-Bergmann GbR",
+   "kurzname": "Tischlerei Bergmann",
+   "website": "https://www.tischlerei-bergmann.de",
+   "telefon": "05402 7773",
+   "email": "Tischlerei-Bergmann@web.de",
+   "adresse": "Wulftener Str. 4, 49143 Bissendorf",
+   "google": null,
+   "logo_url": null,
+   "brief": {
+    "anschrift": [
+     "Tischlerei-Bergmann GbR",
+     "Herrn Andreas Bergmann",
+     "Wulftener Str. 4",
+     "49143 Bissendorf"
+    ],
+    "anrede": "Sehr geehrter Herr Bergmann,",
+    "problem": "dass Ihre wunderschönen Massivholzmöbel dort in einer schmalen Spalte zwischen dunkelroten Rändern stehen, am Handy kaum zu erkennen sind und nirgends ein klarer Weg zur Anfrage führt",
+    "suche": "Tischler"
+   },
+   "beauty": {},
+   "bild_urls": [
+    "local://bergmann/i036.jpg"
+   ],
+   "steps": [
+    [
+     "Kostenlos beraten lassen",
+     "Anrufen oder Formular ausfüllen – wir melden uns schnell."
+    ],
+    [
+     "Vor-Ort-Termin",
+     "Wir schauen uns alles an und hören zu."
+    ],
+    [
+     "Klares Angebot",
+     "Transparent, mit Fördermittel-Check."
+    ],
+    [
+     "Saubere Umsetzung",
+     "Termintreu montiert – und danach Service aus einer Hand."
+    ]
+   ],
+   "template": "beauty",
+   "theme": "shk",
+   "min_w": 300,
+   "handgebaut": "/home/claude/highlevel-performance/tools/vorschau/runden/r10-quelle/hand/bergmann.built.html"
+  },
+  {
+   "slug": "tepe-massmann-wallenhorst",
+   "firma": "Tepe & Maßmann Metallbau GmbH",
+   "kurzname": "Tepe & Maßmann",
+   "website": "https://www.tepe-massmann.de",
+   "telefon": "05407 30826",
+   "email": "info@tepe-massmann.de",
+   "adresse": "Fürstenauer Weg 1a, 49134 Wallenhorst",
+   "google": null,
+   "logo_url": "file:///home/claude/r10/logos2/tepe.png",
+   "logo_keep": true,
+   "brief": {
+    "anschrift": [
+     "Tepe & Maßmann Metallbau GmbH",
+     "Herrn Thomas Tepe und Herrn Bodo Maßmann",
+     "Fürstenauer Weg 1a",
+     "49134 Wallenhorst"
+    ],
+    "anrede": "Sehr geehrter Herr Tepe, sehr geehrter Herr Maßmann,",
+    "problem": "dass Ihre starken Referenzen wie Evonik, Airbus oder der VfL Osnabrück dort auf einer Unterseite versteckt sind und die Startseite am Handy nur ein schmales Bild mit drei kleinen Kästen zeigt",
+    "suche": "Metallbauer"
+   },
+   "beauty": {},
+   "bild_urls": [
+    "local://tepe/i002.jpg"
+   ],
+   "steps": [
+    [
+     "Kostenlos beraten lassen",
+     "Anrufen oder Formular ausfüllen – wir melden uns schnell."
+    ],
+    [
+     "Vor-Ort-Termin",
+     "Wir schauen uns alles an und hören zu."
+    ],
+    [
+     "Klares Angebot",
+     "Transparent, mit Fördermittel-Check."
+    ],
+    [
+     "Saubere Umsetzung",
+     "Termintreu montiert – und danach Service aus einer Hand."
+    ]
+   ],
+   "template": "beauty",
+   "theme": "shk",
+   "min_w": 300,
+   "handgebaut": "/home/claude/highlevel-performance/tools/vorschau/runden/r10-quelle/hand/tepe.built.html"
+  },
+  {
+   "slug": "borggreve-osnabrueck",
+   "firma": "Malerbetrieb Borggreve GbR",
+   "kurzname": "Borggreve",
+   "website": "https://www.borggreve-osnabrueck.de",
+   "telefon": "0541 77413",
+   "email": "borggreve@osnanet.de",
+   "adresse": "Bremer Str. 52, 49084 Osnabrück",
+   "google": null,
+   "logo_url": "file:///home/claude/r10/logos2/borggreve.png",
+   "logo_keep": true,
+   "brief": {
+    "anschrift": [
+     "Malerbetrieb Borggreve GbR",
+     "Bremer Str. 52 + 52a",
+     "49084 Osnabrück"
+    ],
+    "anrede": "Sehr geehrte Damen und Herren,",
+    "problem": "dass Ihre über 135 Jahre Erfahrung und Ihr Service, also die kostenlose Beratung bei Kunden zu Hause und die Gardinenwäsche mit Abholung, dort nur als zentrierter Text unter einem kleinen Ladenfoto stehen",
+    "suche": "Maler"
+   },
+   "beauty": {},
+   "bild_urls": [
+    "local://borggreve/i001.jpg"
+   ],
+   "steps": [
+    [
+     "Kostenlos beraten lassen",
+     "Anrufen oder Formular ausfüllen – wir melden uns schnell."
+    ],
+    [
+     "Vor-Ort-Termin",
+     "Wir schauen uns alles an und hören zu."
+    ],
+    [
+     "Klares Angebot",
+     "Transparent, mit Fördermittel-Check."
+    ],
+    [
+     "Saubere Umsetzung",
+     "Termintreu montiert – und danach Service aus einer Hand."
+    ]
+   ],
+   "template": "beauty",
+   "theme": "shk",
+   "min_w": 300,
+   "handgebaut": "/home/claude/highlevel-performance/tools/vorschau/runden/r10-quelle/hand/borggreve.built.html"
+  },
+  {
+   "slug": "abeling-essen-oldb",
+   "firma": "Alfred Abeling GmbH",
+   "kurzname": "Abeling Stahlbau",
+   "website": "https://www.abeling-stahlbau.de",
+   "telefon": "05438 333",
+   "email": "alfred.abeling@abeling-stahlbau.de",
+   "adresse": "Dinklager Str. 12, 49632 Essen-Addrup",
+   "google": [
+    "4,9",
+    7
+   ],
+   "logo_url": "file:///home/claude/r10/logos2/abeling.png",
+   "logo_keep": true,
+   "brief": {
+    "anschrift": [
+     "Alfred Abeling GmbH",
+     "Dinklager Str. 12",
+     "49632 Essen-Addrup"
+    ],
+    "anrede": "Sehr geehrte Damen und Herren,",
+    "problem": "dass Ihre Hallen und Tankstellen dort nur in kleinen Kacheln zu sehen sind, Ihre 4,9 Sterne bei Google nirgends auftauchen und die letzte Neuigkeit aus dem Jahr 2015 stammt",
+    "suche": "Stahlbauer"
+   },
+   "beauty": {},
+   "bild_urls": [
+    "local://abeling/i004.jpg"
+   ],
+   "steps": [
+    [
+     "Kostenlos beraten lassen",
+     "Anrufen oder Formular ausfüllen – wir melden uns schnell."
+    ],
+    [
+     "Vor-Ort-Termin",
+     "Wir schauen uns alles an und hören zu."
+    ],
+    [
+     "Klares Angebot",
+     "Transparent, mit Fördermittel-Check."
+    ],
+    [
+     "Saubere Umsetzung",
+     "Termintreu montiert – und danach Service aus einer Hand."
+    ]
+   ],
+   "template": "beauty",
+   "theme": "shk",
+   "min_w": 300,
+   "handgebaut": "/home/claude/highlevel-performance/tools/vorschau/runden/r10-quelle/hand/abeling.built.html"
+  },
+  {
+   "slug": "dach-daelken-bad-laer",
+   "firma": "Robert Dälken Dachdeckermeister e.K.",
+   "kurzname": "Dach Dälken",
+   "website": "https://www.dachdecker-badlaer.de",
+   "telefon": "05424 70400",
+   "email": "info@dach-daelken.de",
+   "adresse": "Warendorfer Straße 36, 49196 Bad Laer",
+   "google": [
+    "4,8",
+    24
+   ],
+   "logo_url": "file:///home/claude/r10/logos2/daelken.png",
+   "logo_keep": true,
+   "brief": {
+    "anschrift": [
+     "Dach Dälken",
+     "Herrn Robert Dälken",
+     "Warendorfer Straße 36",
+     "49196 Bad Laer-Hardensetten"
+    ],
+    "anrede": "Sehr geehrter Herr Dälken,",
+    "problem": "dass Besucher dort zuerst lange scrollen müssen, bevor sie erfahren, was Sie alles können, und Ihre 4,8 Sterne bei Google sowie Ihr Notdienst bei Sturmschäden nicht vorne stehen",
+    "suche": "Dachdecker"
+   },
+   "beauty": {},
+   "bild_urls": [
+    "local://daelken/i003.jpg"
+   ],
+   "steps": [
+    [
+     "Kostenlos beraten lassen",
+     "Anrufen oder Formular ausfüllen – wir melden uns schnell."
+    ],
+    [
+     "Vor-Ort-Termin",
+     "Wir schauen uns alles an und hören zu."
+    ],
+    [
+     "Klares Angebot",
+     "Transparent, mit Fördermittel-Check."
+    ],
+    [
+     "Saubere Umsetzung",
+     "Termintreu montiert – und danach Service aus einer Hand."
+    ]
+   ],
+   "template": "beauty",
+   "theme": "shk",
+   "min_w": 300,
+   "handgebaut": "/home/claude/highlevel-performance/tools/vorschau/runden/r10-quelle/hand/daelken.built.html"
   }
  ]
 }
