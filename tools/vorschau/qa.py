@@ -49,7 +49,7 @@ JS_TEXT = """() => { document.querySelectorAll('#pop,.stab,.bot,.hlp-note,.mcall
  document.querySelectorAll(sel).forEach(el=>{ if(!vis(el)||el.closest('.pv,.robo,.bot,.callbar,[aria-hidden=true]')) return;
   if(el.closest('blockquote')&&!el.closest('blockquote.on')&&el.closest('.quotes')) return;
   const r=el.getBoundingClientRect(); if(r.width<4||r.height<4) return;
-  let over=false; if(/^H[1-3]$/.test(el.tagName)){const rg=document.createRange();rg.selectNodeContents(el);for(const cr of rg.getClientRects()){if(cr.right>innerWidth+1||cr.left<-1)over=true}}
+  let over=false; const scx=(()=>{let a=el.parentElement;while(a&&a!==document.body){const ox=getComputedStyle(a).overflowX;if(ox==='auto'||ox==='scroll')return true;a=a.parentElement}return false})(); if(/^H[1-3]$/.test(el.tagName)&&!scx){const rg=document.createRange();rg.selectNodeContents(el);for(const cr of rg.getClientRects()){if(cr.right>innerWidth+1||cr.left<-1)over=true}}
   out.push({top:r.top+scrollY, left:r.left, w:r.width, h:r.height, t:(el.innerText||'').trim().slice(0,50), tag:el.tagName, over}); }); return out; }"""
 
 JS_TPROBE = """([b]) => { const res=[]; const xs=[.12,.5,.88], ys=[.3,.7];
