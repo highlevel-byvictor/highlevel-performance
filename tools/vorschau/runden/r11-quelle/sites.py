@@ -356,12 +356,12 @@ SITES['happiness'] = dict(
     bot=dict(name='Lotta', tag='Deine Studio-Begleiterin', hello='Hallo! Ich bin Lotta. Soll ich dir zeigen, welcher Kurs zu dir passt?', hi='Hallo! Ich bin Lotta vom Happiness Studio. Was möchtest du wissen?',
              qa=[['Welcher Kurs passt?', 'FemVitalYoga für Kraft und Entspannung, Mamasté nach der Geburt, Sanfte Tiefe zum Entschleunigen, Weekend Yoga als Auszeit.'], ['Vorkenntnisse?', 'Brauchst du nicht – die Kurse sind Level 1 und bauen aufeinander auf.'], ['Mit Baby?', 'Ja, im Mamasté-Kurs darf dein Baby dabei sein.'], ['Kontakt', 'Telefon 01515 3528628 oder info@happiness-studio.de']],
              tour=[['#kurse'], ['#ueber'], ['#studio'], ['#kontakt']]),
-    vars='--bg:#FAF6F1;--ink:#3A2E27;--mute:#7A6A5F;--p:#B0704F;--a:#3A2E27;--a-ink:#FAF6F1;--s:#fff;--s2:#F1E8DE;--fh:"Cormorant",Georgia,serif;--fb:"Mulish",system-ui,sans-serif;--r:24px;--r2:200px 200px 24px 24px;--mq-bg:#EADBCB;--mq-ink:#3A2E27;--logo-h:58px;--ft-bg:#2E241E;--hp-bg:#FAF6F1',
+    vars='--bg:#FAF6F1;--ink:#3A2E27;--mute:#7A6A5F;--p:#B0704F;--a:#3A2E27;--a-ink:#FAF6F1;--s:#fff;--s2:#F1E8DE;--fh:"Cormorant",Georgia,serif;--fb:"Mulish",system-ui,sans-serif;--r:24px;--r2:32px;--mq-bg:#EADBCB;--mq-ink:#3A2E27;--logo-h:58px;--ft-bg:#2E241E;--hp-bg:#FAF6F1',
     css='''.hp h1,.h2{font-weight:500;letter-spacing:-.01em;line-height:1.02}.hp h1{font-size:clamp(54px,6.6vw,104px)}.hp h1 em,.h2 em{font-style:italic;color:var(--p)}
-.comp .c1{inset:0 22% 0 6%;border-radius:999px 999px 30px 30px}.comp .c2{width:40%;height:40%;border-radius:50%;right:0;bottom:4%}.comp .c3{width:30%;height:30%;border-radius:50%;left:-2%;right:auto;top:auto;bottom:10%}
+.comp .c1{inset:0 22% 0 6%;border-radius:40px}.comp .c2{width:40%;height:40%;border-radius:50%;right:0;bottom:4%}.comp .c3{width:30%;height:30%;border-radius:50%;left:-2%;right:auto;top:auto;bottom:10%}
 .comp .badge{left:auto;right:4%;top:4%;bottom:auto}
 .mq{font-family:var(--fh);font-style:italic;font-weight:500;font-size:clamp(22px,2.4vw,32px)}
-.sc .cd{border-radius:24px}.sc .cd figure{aspect-ratio:3/3.6}.st figure{border-radius:300px 300px 30px 30px}
+.sc .cd{border-radius:24px}.sc .cd figure{aspect-ratio:3/3.6}.st figure{border-radius:40px}
 .gl .grid figure{border-radius:24px}.btn{font-weight:600;letter-spacing:.02em}
 .ft img{filter:invert(1)}''',
     img={'logo.png': ('logos/happiness-logo.png', 360), 'jana.jpg': ('happiness/img/i012.webp', 0), 'raum.jpg': ('happiness/img/i015.webp', 900), 'schalen.jpg': ('happiness/img/i008.jpeg', 800),
