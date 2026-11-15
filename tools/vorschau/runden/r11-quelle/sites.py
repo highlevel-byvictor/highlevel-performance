@@ -19,6 +19,7 @@ def b_werlter(s):
             ('Sauna', 'sauna.jpg', 'Nach dem Training einfach abschalten: Die Sauna gehört zu Ihrem Studio dazu.', ['Entspannung', 'Regeneration']),
             ('Solarium', 'solarium.jpg', 'Ein bisschen Sonne für zwischendurch – direkt im Studio.', []),
             ('Firmenfitness', 'gebaeude.jpg', 'Individuelle Firmenfitness-Programme für Betriebe aus Werlte und Umgebung. Dazu von Krankenkassen geförderte Präventionskurse.', ['Firmenprogramme', 'Präventionskurse'])])
+        + ytvideo('video', 'Einblick ins Studio', 'Das Werlter Fitness Studio <em>im Video.</em>', 'Schauen Sie sich in Ruhe um, bevor Sie zum Probetraining kommen.', 'H06u8ol0z0I', 'yt-poster.jpg')
         + scroller('kurse', 'Neue Trends und Altbewährtes', 'Kurse, die <em>Spaß</em> machen.', 'Mit Musik, in der Gruppe, für jedes Level – vom Indoor Cycling bis zum Rückenkurs.', [
             ('Indoor Cycling', 'k-cycling.jpg', 'Ausdauer mit Licht und Musik – Herz-Kreislauf-Training, das richtig Laune macht.', '50% 50%'),
             ('Bauch-Beine-Po', 'k-bbp.jpg', 'Kraftausdauer mit aktueller Musik: Straffung und Kräftigung von Bauch, Beinen und Po.', '50% 40%'),
@@ -61,7 +62,7 @@ SITES['werlter'] = dict(
 .sc .cd{border-radius:8px}.sc .cd h3{text-transform:uppercase;font-weight:400;font-size:26px}
 .rv .sum b,.nb b,.sp .row div::before{font-weight:400}
 .kt .bx{border-top:6px solid var(--p)}''',
-    img={'logo.png': ('werlter/img/i010.jpg', 300, 'trim'), 'h-studio.jpg': ('werlter/img/i003.jpg', 2000), 'h-cycling.jpg': ('werlter/img/i011.jpg', 2000), 'h-kurs.jpg': ('werlter/img/i008.jpg', 2000),
+    img={'yt-poster.jpg': ('/home/claude/r11raw/vid/werlter-yt.jpg', 1280), 'logo.png': ('werlter/img/i010.jpg', 300, 'trim'), 'h-studio.jpg': ('werlter/img/i003.jpg', 2000), 'h-cycling.jpg': ('werlter/img/i011.jpg', 2000), 'h-kurs.jpg': ('werlter/img/i008.jpg', 2000),
          'physio.jpg': ('werlter/img/i019.jpg', 900), 'diagnostik.jpg': ('werlter/img/i018.jpg', 1000), 'egym.jpg': ('werlter/img/i001.jpg', 1100, (0, .1, 1, .85)), 'sauna.jpg': ('werlter/img/i020.jpg', 1000),
          'solarium.jpg': ('werlter/img/i012.jpg', 1000, (0, .2, 1, .8)), 'gebaeude.jpg': ('werlter/img/i002.jpg', 1400), 'team.jpg': ('werlter/img/i019.jpg', 900),
          'k-cycling.jpg': ('werlter/img/i011.jpg', 900), 'k-bbp.jpg': ('werlter/img/i014.jpg', 900), 'k-ruecken.jpg': ('werlter/img/i009.jpg', 900), 'k-pilates.jpg': ('werlter/img/i015.jpg', 900),

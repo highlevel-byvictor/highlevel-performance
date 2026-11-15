@@ -84,6 +84,9 @@ def gallery(id, ey, h2, imgs, cls=''):
 def video(id, ey, h2, lead, src, poster, cls=''):
     return f'<section class="sec vd {cls}" id="{id}"><div class="w"><div data-r>{head(ey,h2,lead)}</div><div class="frame" data-r="2"><video src="img/{src}" poster="img/{poster}" preload="none" playsinline controls></video><button class="play" aria-label="Video abspielen"><span><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span></button></div></div></section>'
 
+def ytvideo(id, ey, h2, lead, yt, poster, cls=''):
+    return f'<section class="sec vd {cls}" id="{id}"><div class="w"><div data-r>{head(ey,h2,lead)}</div><div class="frame yt" data-r="2" data-yt="{yt}"><img src="img/{poster}" alt="" loading="lazy" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover"><button class="play" aria-label="Video abspielen" onclick="var f=this.parentNode;f.innerHTML=\'<iframe src=&quot;https://www.youtube-nocookie.com/embed/\'+f.dataset.yt+\'?autoplay=1&amp;rel=0&quot; allow=&quot;autoplay; encrypted-media; fullscreen&quot; allowfullscreen style=&quot;position:absolute;inset:0;width:100%;height:100%;border:0&quot;></iframe>\'"><span><svg viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></svg></span></button></div><p class="note" style="margin-top:12px">Video von YouTube. Erst beim Klick wird eine Verbindung zu YouTube aufgebaut.</p></div></section>'
+
 def reviews(s, items, cls=''):
     g = s['google']
     c = ''.join(f'<div class="cd"><div class="st">★★★★★</div><p>„{t}“</p><small>Google-Rezension, sinngemäß</small></div>' for t in items) * 2
