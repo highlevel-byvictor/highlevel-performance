@@ -25,6 +25,14 @@ BRIEF = {
                 'dass Ihre besondere Stärke, Küchen von jemandem geplant, der selbst leidenschaftlich kocht, erst auf einer Unterseite steht', 'Küchenstudio', 'die Tischlerei Beckermann'),
  'meyer': (['Meyer Möbelwerkstätten', 'Herrn Carl Meyer', 'Am Cordtskamp 1', '49577 Eggermühlen'], 'Sehr geehrter Herr Meyer,',
            'dass Ihre 1.000 m² Ausstellung, das Holz aus der Region und Ihre fünf Sterne bei Google auf der Startseite kaum auffallen', 'Küchenstudio', 'die Meyer Möbelwerkstätten'),
+ 'imbusch': (['Imbusch Einrichtungen GmbH', 'Herrn Peter Imbusch und Herrn Dennis Hemme', 'Europaring 1b', '49624 Löningen'], 'Sehr geehrter Herr Imbusch, sehr geehrter Herr Hemme,',
+             'dass Ihr Kontaktformular wegen einer technischen Störung gerade nicht funktioniert und Ihre schönen Küchen erst weiter unten auf der Startseite auftauchen', 'Küchenstudio', 'Imbusch Einrichtungen'),
+ 'albers': (['Küchenwelt Albers', 'Frau Andrea Albers und Herrn Frank Albers', 'Ziegelstraße 12–16', '49688 Lastrup'], 'Sehr geehrte Frau Albers, sehr geehrter Herr Albers,',
+            'dass die Startseite mit einem sehr langen Text beginnt und Ihre Kochschule und die reduzierten Ausstellungsküchen erst auf Unterseiten zu finden sind', 'Küchenstudio', 'die Küchenwelt Albers'),
+ 'kwerk': (['Küchenwerk Wallenhorst', 'Herrn Musli Zeqiri', 'Borsigstraße 6', '49134 Wallenhorst'], 'Sehr geehrter Herr Zeqiri,',
+           'dass Besucher zuerst ein großes Cookie-Fenster sehen und Ihre fünf Sterne bei Google auf der Seite gar nicht auftauchen', 'Küchenstudio', 'das Küchenwerk Wallenhorst'),
+ 'kmeyer': (['Küchen Meyer GmbH', 'Frau Britta Meyer', 'Oeseder Feld 20', '49124 Georgsmarienhütte'], 'Sehr geehrte Frau Meyer,',
+            'dass Besucher zuerst ein großes Cookie-Fenster sehen und Ihre Imagefilme, auch der aus Bramsche, erst nach einer Cookie-Freigabe abspielbar sind', 'Küchenstudio', 'Küchen Meyer'),
 }
 
 def slug(s): return s['slug'] + '-' + hashlib.sha1(s['firma'].encode()).hexdigest()[:4]
@@ -59,7 +67,7 @@ def run(keys):
         html = env.get_template('brief.html.j2').render(briefe=briefe, root=str(ROOT), datum=datetime.date.today().strftime('%d.%m.%Y'), julian_tel=JT, julian_qr=str(jq))
         bf = OUT / 'briefe-r12.html'; bf.write_text(html)
         pg = br.new_page(); pg.goto(bf.as_uri()); pg.wait_for_timeout(1500)
-        pdf = OUT / 'HLP-Briefe-Runde12-Kuechenstudios-Bersenbrueck.pdf'
+        pdf = OUT / 'HLP-Briefe-Runde12-Kuechenstudios-10.pdf'
         pg.pdf(path=str(pdf), format='A4', print_background=True, prefer_css_page_size=True); br.close()
     print('PDF', pdf); print('FEHLER', json.dumps(fehler, ensure_ascii=False))
 

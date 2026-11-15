@@ -323,3 +323,208 @@ SITES['meyer'] = dict(
          'r1.jpg': ('meyer/img/i123.jpg', 0), 'r2.jpg': ('meyer/img/i048.jpg', 0), 'r3.jpg': ('meyer/img/i053.jpg', 0), 'r4.jpg': ('meyer/img/i122.jpg', 0),
          's1.jpg': ('meyer/img/i012.jpg', 0), 's2.jpg': ('meyer/img/i021.jpg', 0), 's3.jpg': ('meyer/img/i015.jpg', 0), 's4.jpg': ('meyer/img/i018.jpg', 0), 's5.jpg': ('meyer/img/i023.jpg', 0)},
     body=b_meyer)
+
+# ───────────────────────── 7. Imbusch Einrichtungen (Löningen) ─────────────────────────
+def b_imbusch(s):
+    return (hd(s) + hero_slides(s, dict(
+        slides=['h1.jpg', 'h2.jpg', 'h3.jpg'], big='1949', pos={'h1.jpg': '50% 50%'},
+        ey='Imbusch Einrichtungen · Löningen · seit 1949',
+        h1='Wo Design <em>lebendig wird.</em>',
+        sub='Küchen und Einrichtungen nach Maß aus der eigenen Werkstatt. Geplant von Ihrem persönlichen Berater, gefertigt in Löningen, montiert von unserem eigenen Team.',
+        ubar=[('Seit über 75 Jahren', 'Familienunternehmen in Löningen'), ('120 Mitarbeitende', 'Beratung, Planung, Fertigung, Montage'), ('Alles aus einer Hand', 'Vom ersten Gespräch bis zum letzten Handgriff')]))
+        + story('kuechen', 'Ihre Küche. Ihr Stil. Unser Anspruch.', 'Eine Küche ist weit mehr <em>als ein Raum.</em>', [
+            'Sie ist der Ort, an dem gelacht, gekocht, erzählt und genossen wird. Deshalb planen wir jede Küche individuell nur für Sie: modern und minimalistisch, klar und zeitlos oder mit warmem Charme.',
+            'Für unsere Küchen wählen wir die Materialien sorgfältig aus, von edlen Hölzern über Stein, Marmor und Glas bis zu Messing und Edelstahl.'],
+            'story.jpg', cap='Küche nach Maß von Imbusch', tl=[('1949', 'Gründung durch Tischlermeister Willi Imbusch'), ('2010', 'Neue Produktionshalle am Europaring'), ('Heute', '120 Mitarbeitende in Löningen')])
+        + gallery('galerie', 'Küchendesign', 'Jede Küche <em>ein Unikat.</em>', [
+            ('g1.jpg', 'w2 h2r', '50% 50%'), ('g2.jpg', '', '50% 50%'), ('g3.jpg', '', '50% 50%'), ('g4.jpg', '', '50% 50%'), ('g5.jpg', '', '50% 50%'), ('g6.jpg', 'w2', '50% 50%'), ('g7.jpg', '', '50% 50%'), ('g8.jpg', '', '50% 50%')])
+        + tabs('raeume', 'Private Wohnräume', 'Mehr als Küche: <em>Ihr ganzes Zuhause.</em>', 'Ob maßgeschneiderte Küche oder individuelle Möbel für Wohn- und Schlafbereiche, alles kommt aus einer Hand.', [
+            ('Wohnen', 't-wohnen.jpg', 'Wohnwände, Regale und Einbauten, die zu Ihrem Raum und Ihrem Leben passen.', ['Nach Maß', 'Edle Materialien']),
+            ('Schlafen & Ankleide', 't-schlafen.jpg', 'Kleiderschränke und Ankleiden, die jeden Zentimeter nutzen.', ['Begehbar', 'Gleittüren von Doralux']),
+            ('Bad', 't-bad.jpg', 'Badmöbel aus der eigenen Werkstatt, mit Licht und Stauraum geplant.', ['Wasserfest', 'Mit Licht geplant']),
+            ('Hauswirtschaftsraum', 't-hwr.jpg', 'Clevere Lösungen für Waschen, Trocknen und Vorräte.', ['Ordnung', 'Kurze Wege'])])
+        + steps('So arbeiten wir', 'Vom Gespräch <em>bis zur Montage.</em>', [('Persönliche Beratung', 'Bei Ihnen vor Ort oder in unserem Showroom in Löningen.'), ('Individuelle Planung', 'Zeichnungen, Skizzen und realistische Renderings von unseren Produktdesignern.'), ('Fertigung', 'In der hauseigenen Werkstatt mit moderner Technik und Handwerkskunst.'), ('Montage', 'Unser eigenes Montageteam baut alles passgenau ein, inklusive Geräten und Armaturen.')], 'dk')
+        + story('werkstatt', 'Eigene Fertigung', 'Handwerk mit Herz <em>und Hightech.</em>', [
+            'In unserer Werkstatt in Löningen verbinden wir moderne Fertigungstechnologie mit traditioneller Handwerkskunst. Jedes Bauteil entsteht auf Maß und durchläuft mehrere Arbeitsschritte bis zur Vollendung.',
+            'Neben Privatkunden richten wir auch Praxen, Hotels, Pflegeeinrichtungen und Büros ein.'],
+            'werkstatt.jpg', cap='Fertigung in Löningen', rev=True)
+        + vgrid('tiny', 'Tiny Living', 'Große Gefühle <em>auf kleinem Raum.</em>', 'Auch für Tiny Houses planen und bauen wir die komplette Einrichtung.', [('Imbusch Tiny House', 'mp4', 'tiny.mp4', 'v-tiny.jpg')], 'alt')
+        + reviews(s, ['Küche und Möbel wurden exakt nach unseren Vorgaben gefertigt und überzeugen mit hoher Qualität. Klare Empfehlung.',
+                      'Professionelle, persönliche Beratung, sehr hohe Qualität und ein hervorragendes Preis-Leistungs-Verhältnis.',
+                      'Unsere Küche ist perfekt geworden. Sehr kompetente Beratung, viel Zeit für uns, und von der Planung bis zur Montage lief alles reibungslos.',
+                      'Auch nach zwei Jahren freue ich mich jeden Tag über Küche und Ankleide. Faire Preise und eine tolle Zusammenarbeit.'])
+        + contact(s) + footer(s) + pop(dict(img='g2.jpg', ey='Showroom Löningen', h='Ihre neue Küche beginnt mit einem guten Gespräch.', p='Schicken Sie uns gern Ihre Baupläne oder Beispielfotos.', btn='Termin vereinbaren')))
+
+SITES['imbusch'] = dict(
+    slug='imbusch-einrichtungen-loeningen', firma='Imbusch Einrichtungen', web='imbusch-einrichtungen.de', fonts='r12imbusch',
+    title='Imbusch Einrichtungen – Küchen & Möbel nach Maß in Löningen', desc='Imbusch Einrichtungen in Löningen: Küchen und Einrichtungen nach Maß aus eigener Werkstatt, seit 1949. Beratung, Planung, Fertigung und Montage aus einer Hand.',
+    tel='05432 94840', tel_i='+49543294840', mail='info@imbusch-einrichtungen.de', adresse='Europaring 1b, 49624 Löningen', google=('5,0', 22),
+    cta='Beratungstermin vereinbaren', nav=[('Küchen', 'kuechen'), ('Galerie', 'galerie'), ('Wohnräume', 'raeume'), ('Werkstatt', 'werkstatt'), ('Kontakt', 'kontakt')],
+    hours=[('Mo – Do', '07:30 – 16:30'), ('Fr', '07:30 – 15:00')],
+    form_opts=['Küche nach Maß', 'Wohnen / Schlafen / Bad', 'Objekteinrichtung', 'Tiny House', 'Sonstiges'], form_h3='Beratungstermin anfragen', form_p='Gern bei Ihnen vor Ort oder in unserem Showroom in Löningen.', form_btn='Rückruf anfordern',
+    kt_ey='Kontakt', kt_h2='Jedes Projekt beginnt mit <em>einem guten Gespräch.</em>', kt_p='Rufen Sie an oder schreiben Sie uns, gern mit Bauplänen oder Beispielfotos.',
+    social=[('Instagram', 'https://www.instagram.com/imbusch_einrichtungen/'), ('Facebook', 'https://www.facebook.com/p/Imbusch-Einrichtungen-GmbH-100076081244600/'), ('YouTube', 'https://www.youtube.com/@imbuschsystemmobel6780')], rv_h2='Das sagen unsere <em>Kunden.</em>',
+    bot=dict(name='Ida', tag='Ihre Einrichtungs-Lotsin', hello='Hallo! Ich bin Ida. Soll ich Ihnen zeigen, wie Ihre Küche bei Imbusch entsteht?', hi='Hallo! Ich bin Ida von Imbusch Einrichtungen. Wobei darf ich helfen?',
+             qa=[['Was bieten Sie?', 'Küchen und Einrichtungen nach Maß für Wohnen, Schlafen, Bad und Hauswirtschaftsraum, dazu Objekteinrichtung und Tiny Houses.'], ['Wo werden die Möbel gebaut?', 'In unserer eigenen Werkstatt in Löningen.'], ['Öffnungszeiten', 'Mo–Do 7:30–16:30 Uhr, Fr 7:30–15 Uhr.']],
+             tour=[['#kuechen'], ['#galerie'], ['#raeume'], ['#kontakt']]),
+    vars='--bg:#fff;--ink:#1f1b1c;--mute:#5d5759;--p:#A3283A;--a:#A3283A;--a-ink:#fff;--dk:#1c1a1b;--s:#fff;--s2:#f5f2f0;--fh:"Marcellus",Georgia,serif;--fb:"Manrope",system-ui,sans-serif;--r:6px;--r2:10px;--br:4px;--hero-ov:linear-gradient(95deg,rgba(18,16,17,.86) 0%,rgba(18,16,17,.5) 52%,rgba(18,16,17,.05) 100%);--mq-bg:#1c1a1b;--mq-ink:#fff;--hd-bg:rgba(28,26,27,.95);--hd-ink:#fff;--logo-h:44px;--ft-bg:#141213',
+    css='''.hs h1,.h2{font-weight:400;letter-spacing:.01em;line-height:1.06}.hs h1{font-size:clamp(44px,5.6vw,86px)}.hs h1 em,.h2 em{font-style:normal;color:#e0798a}.h2 em{color:var(--p)}
+.alt{background:var(--s2)}
+@media(max-width:600px){.btn{font-size:14px}}''',
+    img={'logo.png': ('logos/imbusch-w.png', 0), 'logo_ft.png': ('logos/imbusch-w.png', 0), 'h1.jpg': ('imbusch/img/i028.jpg', 2200), 'h2.jpg': ('imbusch/img/i012.jpg', 0), 'h3.jpg': ('imbusch/img/i016.jpg', 0),
+         'story.jpg': ('imbusch/img/i029.jpg', 1400), 'werkstatt.jpg': ('imbusch/img/i089.jpg', 1400),
+         'g1.jpg': ('imbusch/img/i005.jpg', 0), 'g2.jpg': ('imbusch/img/i006.jpg', 0), 'g3.jpg': ('imbusch/img/i007.jpg', 0), 'g4.jpg': ('imbusch/img/i010.jpg', 0), 'g5.jpg': ('imbusch/img/i011.jpg', 0), 'g6.jpg': ('imbusch/img/i013.jpg', 0), 'g7.jpg': ('imbusch/img/i017.jpg', 0), 'g8.jpg': ('imbusch/img/i018.jpg', 0),
+         't-wohnen.jpg': ('imbusch/img/i049.jpg', 0), 't-schlafen.jpg': ('imbusch/img/i055.jpg', 0), 't-bad.jpg': ('imbusch/img/i057.jpg', 0), 't-hwr.jpg': ('imbusch/img/i059.jpg', 1400),
+         'v-tiny.jpg': ('/home/claude/r12raw/vid/imbusch-tiny-poster.jpg', 1280), 'tiny.mp4': ('/home/claude/r12raw/vid/imbusch-tiny-720.mp4', 0)},
+    logo_ft='logo_ft.png', body=b_imbusch)
+
+# ───────────────────────── 8. Küchenwelt Albers (Lastrup-Schnelten) ─────────────────────────
+def b_albers(s):
+    return (hd(s, False) + hero_comp(s, dict(
+        imgs=['h1.jpg', 'h2.jpg', 'h3.jpg'], pos0='50% 55%',
+        ey='Küchenwelt Albers · Lastrup-Schnelten',
+        h1='Kochen Sie noch <em>oder wohnen Sie schon?</em>',
+        sub='Eines der schönsten Küchenstudios der Region: Landhaus-, Design- und Singleküchen, große Planungen mit Kochinsel und eine eigene Kochschule.',
+        badge=('Neue Ausstellung', 'Traumküchen zum Anfassen in Lastrup')))
+        + marquee(['Landhausküchen', 'Designküchen', 'Singleküchen', 'Kochinseln', '3D-Küchenplanung', 'Kochschule', 'Hauseigener Kundendienst'])
+        + panels('leistungen', 'Rundum-Sorglos-Service', 'Alles für <em>Ihre Traumküche.</em>', 'Von der Beratung über die Planung bis zur pünktlichen Lieferung und Montage.', [
+            ('Beratung auch vor Ort', 'l1.jpg', 'Unsere Küchenspezialisten planen in aller Ruhe, auf Wunsch auch bei Ihnen zu Hause. Denn eine Küche sollte passen wie ein Maßanzug.', '50% 50%'),
+            ('3D-Küchenplanung', 'l2.jpg', 'Sie sehen Ihre neue Küche verblüffend real am Computer, bevor sie gebaut wird.', '50% 50%'),
+            ('Lieferung & Montage', 'l3.jpg', 'Ihr Berater begleitet Sie bis zum Schluss und vereinbart einen verbindlichen Montagetermin.', '50% 50%'),
+            ('Lebenslanger Service', 'l4.jpg', 'Hauseigener Kundendienst, Küchenjahresinspektion und Garantie auf Möbel- und Elektroteile.', '50% 50%')], 'dk')
+        + gallery('kuechen', 'Küchenimpressionen', 'Ein Blick in die Küchen <em>unserer Kunden.</em>', [
+            ('g1.jpg', 'w2 h2r', '50% 50%'), ('g2.jpg', '', '50% 50%'), ('g3.jpg', '', '50% 50%'), ('g4.jpg', '', '50% 50%'), ('g5.jpg', '', '50% 50%'), ('g6.jpg', 'w2', '50% 50%'), ('g7.jpg', '', '50% 50%'), ('g8.jpg', '', '50% 50%')])
+        + duo('kochschule', 'Albers Events', 'Kochschule, Tastings <em>und Abende mit Genuss.</em>', 'Bei Albers macht Kochen nicht nur Freude, sondern richtig Spaß.', [
+            ('Kochschule', 'Gemeinsam kochen', 'k-koch.jpg', 'Neue Rezepte von Grund auf zubereiten, mit hochwertigen Zutaten aus unserem Feinkostregal, und danach gemeinsam genießen.', ['Mit Freunden', 'Mit Kollegen', 'Mit der Familie'], 'Termine anfragen'),
+            ('Events', 'Tastings & Veranstaltungen', 'k-event.jpg', 'Wein-, Bier- und Whiskeytastings, Verkostungen und besondere Abende, auf Wunsch auch für Gruppen. Gutscheine gibt es für alle Events.', ['Tastings', 'Gruppen', 'Gutscheine'], 'Events ansehen')], 'alt')
+        + story('team', 'Familie Albers und Team', 'Persönlich <em>für Sie da.</em>', [
+            'Ihre neue Küche ist für uns eine außergewöhnlich persönliche Angelegenheit. Gemeinsam mit Ihnen erarbeiten wir ein detailliertes Konzept für Ihre Wunschküche.',
+            'Geführt wird die Küchenwelt von Andrea und Frank Albers. Unser Verkaufsteam um Verkaufsleiter Ludger Abeln nimmt sich Zeit für Ihre Wünsche.'],
+            'team.jpg', cap='Unser Verkaufsteam', rev=True)
+        + reviews(s, ['Die Beratung durch Ludger Abeln war wirklich hervorragend, von der Planung bis zur Montage. Ich würde jederzeit wieder dort kaufen.',
+                      'Lieferung und Montage liefen perfekt. Das Team hat schnell, präzise und sauber gearbeitet.',
+                      'Gerade bei unserem verwinkelten Altbau waren wir hier genau richtig. Fair, freundlich und alle Termine wurden eingehalten.',
+                      'Ein sehr gutes Preis-Leistungs-Verhältnis. Wir können die Küchenwelt Albers nur empfehlen.'])
+        + contact(s) + footer(s) + pop(dict(img='g2.jpg', ey='Abverkauf', h='Ausstellungsküchen mit bis zu 70 % Rabatt', p='Wir räumen auf und Sie profitieren. Sprechen Sie uns an.', btn='Jetzt anfragen')))
+
+SITES['albers'] = dict(
+    slug='kuechenwelt-albers-lastrup', firma='Küchenwelt Albers', web='kuechenwelt-albers.de', fonts='r12albers',
+    title='Küchenwelt Albers – Küchenstudio & Kochschule in Lastrup', desc='Küchenwelt Albers in Lastrup-Schnelten: eines der schönsten Küchenstudios der Region, mit 3D-Planung, eigenem Kundendienst und Kochschule.',
+    tel='04472 458', tel_i='+494472458', mail='info@kuechenwelt-albers.de', adresse='Ziegelstraße 12–16, 49688 Lastrup', google=('4,8', 41),
+    cta='Beratungstermin vereinbaren', nav=[('Leistungen', 'leistungen'), ('Küchen', 'kuechen'), ('Kochschule', 'kochschule'), ('Team', 'team'), ('Kontakt', 'kontakt')],
+    hours=[('Mo', 'geschlossen (Green Monday)'), ('Di – Fr', '09:00 – 18:00'), ('Sa', '09:00 – 14:00')],
+    form_opts=['Neue Küche', 'Beratung bei mir zu Hause', 'Ausstellungsküche', 'Kochschule / Event', 'Sonstiges'], form_h3='Beratungstermin anfragen', form_p='Wir melden uns persönlich und nehmen uns Zeit für Ihre Wünsche.', form_btn='Rückruf anfordern',
+    kt_ey='Kontakt', kt_h2='Wir freuen uns <em>auf Sie.</em>', kt_p='Besuchen Sie unsere Ausstellung in Lastrup-Schnelten oder rufen Sie uns an.',
+    social=[('Instagram', 'https://www.instagram.com/kuechenwelt_albers/'), ('Facebook', 'https://www.facebook.com/kuechenweltalbers')], rv_h2='Das sagen unsere <em>Kunden.</em>',
+    bot=dict(name='Anni', tag='Ihre Küchen-Lotsin', hello='Hallo! Ich bin Anni. Soll ich Ihnen zeigen, was Sie in der Küchenwelt Albers erwartet?', hi='Hallo! Ich bin Anni von der Küchenwelt Albers. Wobei darf ich helfen?',
+             qa=[['Kommen Sie zu mir?', 'Ja, unsere Küchenspezialisten beraten auf Wunsch auch bei Ihnen zu Hause.'], ['Kochschule?', 'Ja, mit Kochkursen, Tastings und Events. Die Kochschule kann auch gemietet werden.'], ['Öffnungszeiten', 'Di–Fr 9–18 Uhr, Sa 9–14 Uhr, montags geschlossen.']],
+             tour=[['#leistungen'], ['#kuechen'], ['#kochschule'], ['#kontakt']]),
+    vars='--bg:#fff;--ink:#231f20;--mute:#5e585a;--p:#D0102E;--a:#D0102E;--a-ink:#fff;--dk:#231f20;--s:#fff;--s2:#f7f3f1;--fh:"DM Serif Display",Georgia,serif;--fb:"Nunito Sans",system-ui,sans-serif;--r:14px;--r2:22px;--br:999px;--mq-bg:#D0102E;--mq-ink:#fff;--hd-bg:rgba(255,255,255,.96);--hd-ink:#231f20;--logo-h:52px;--ft-bg:#1b1718;--hp-bg:linear-gradient(160deg,#fff 0%,#fbeff1 55%,#f7e3e6 100%)',
+    css='''.hp h1,.h2{font-weight:400;letter-spacing:-.01em;line-height:1.05}.hp h1{font-size:clamp(42px,5.2vw,78px)}.hp h1 em,.h2 em{color:var(--p)}
+.alt{background:var(--s2)}.ft img{background:#fff;padding:8px 12px;border-radius:10px;height:58px}.hp .comp .badge{background:var(--p);color:#fff}''',
+    img={'logo.png': ('logos/albers.png', 520), 'h1.jpg': ('albers/full/7T9A6440-15-scaled.jpg', 1800), 'h2.jpg': ('albers/full/7T9A6321-4-scaled.jpg', 1100), 'h3.jpg': ('albers/full/7T9A7220-5.jpg', 900),
+         'l1.jpg': ('albers/full/7T9A5031-Bearbeitet-HQ-179.jpg', 1400), 'l2.jpg': ('albers/full/IMG_0119-HQ-32.jpg', 1400), 'l3.jpg': ('albers/full/7T9A6464-28-scaled.jpg', 1400), 'l4.jpg': ('albers/full/7T9A6538-71-scaled.jpg', 1400),
+         'g1.jpg': ('albers/full/7T9A6327-8-scaled.jpg', 1400), 'g2.jpg': ('albers/full/7T9A6445-17-scaled.jpg', 1000), 'g3.jpg': ('albers/full/7T9A6507-49-scaled.jpg', 1000), 'g4.jpg': ('albers/full/7T9A6510-51-scaled.jpg', 1000), 'g5.jpg': ('albers/full/7T9A5160-HQ-251.jpg', 1000), 'g6.jpg': ('albers/full/7T9A5184-HQ-267.jpg', 1400), 'g7.jpg': ('albers/full/7T9A7224-6.jpg', 1000), 'g8.jpg': ('albers/full/7T9A6332-10-scaled.jpg', 1000),
+         'k-koch.jpg': ('albers/full/7T9A3635-66.jpg', 0), 'k-event.jpg': ('albers/full/7T9A8001-18.jpg', 0), 'team.jpg': ('albers/full/7T9A4856-HQ-118.jpg', 1600)},
+    body=b_albers)
+
+# ───────────────────────── 9. Küchenwerk Wallenhorst ─────────────────────────
+def b_kwerk(s):
+    return (hd(s) + hero_comp(s, dict(
+        imgs=['h1.jpg', 'h2.jpg', 'h3.jpg'], pos0='50% 50%',
+        ey='Küchenwerk Wallenhorst · Borsigstraße 6',
+        h1='Küchen, <em>die begeistern.</em>',
+        sub='Moderne Designküchen, durchdachte Planung und Montage aus einer Hand. In unserer großen Ausstellung sehen, fühlen und erleben Sie Ihre neue Küche.',
+        badge=('Aufmaß vor Ort', 'Altgeräte entsorgen wir kostenfrei')))
+        + marquee(['nobilia', 'Burger Küchen', 'Siemens', 'Bosch', 'Neff', 'Quooker', 'Blanco', 'Schock', 'Naber', 'Amica', 'Beko'])
+        + vgrid('film', 'Willkommen im Küchenwerk', 'Schauen Sie sich <em>bei uns um.</em>', 'Ein erster Eindruck von unserem Küchenstudio in Wallenhorst.', [('Küchenwerk Wallenhorst', 'mp4', 'werk.mp4', 'v-werk.jpg')])
+        + gallery('ausstellung', 'Unsere Ausstellung', 'Küche sehen, fühlen, <em>erleben.</em>', [
+            ('g1.jpg', 'w2 h2r', '50% 50%'), ('g2.jpg', '', '50% 50%'), ('g3.jpg', '', '50% 50%'), ('g4.jpg', '', '50% 50%'), ('g5.jpg', '', '50% 50%'), ('g6.jpg', '', '50% 50%'), ('g7.jpg', '', '50% 50%'), ('g8.jpg', 'w2', '50% 50%')])
+        + tabs('leistungen', 'Unser Leistungsspektrum', 'Wir machen <em>keine halben Sachen.</em>', 'Unsere Küchenplaner und Küchenmonteure sind speziell ausgebildete Fachleute.', [
+            ('Küchenplanung', 't1.jpg', 'Wir zeigen Ihnen, welche Schritte bei Planung und Umsetzung auf Sie zukommen, und geben Tipps für Ihre Vorbereitung.', ['Persönliche Beratung', 'Stil, Funktion, Geräte']),
+            ('Aufmaßservice', 't2.jpg', 'Ihre neue Küche soll sich perfekt in den Raum einfügen. Deshalb messen wir bei Ihnen vor Ort präzise auf.', ['Vor Ort', 'Präzise']),
+            ('Lieferung & Montage', 't3.jpg', 'Geräte und Möbel kommen sicher verpackt zu Ihnen. Unsere Monteure bauen alles fachgerecht ein.', ['Osnabrück & Umland', 'Altgeräte kostenfrei entsorgt']),
+            ('Modernisierung', 't4.jpg', 'Nicht immer muss es eine neue Küche sein: neue Fronten, Arbeitsplatten, Spülen, Armaturen oder Geräte machen Ihre Küche wieder frisch.', ['Fronten', 'Arbeitsplatten', 'Geräte']),
+            ('Hauswirtschaftsraum', 't5.jpg', 'Clevere Planung für noch mehr Stauraum und kürzere Wege.', ['Stauraum', 'Ordnung'])], 'alt')
+        + story('ueber-uns', 'Beratung, Planung, Realisation', 'Unser Beruf <em>ist Berufung.</em>', [
+            'Seit 2024 steht das Küchenwerk Wallenhorst für Qualität und Zuverlässigkeit. Als Familienunternehmen ist uns die Zufriedenheit unserer Kunden das Wichtigste.',
+            'Sie können sich darauf verlassen, was wir bei der Planung mit Ihnen besprechen. Wir liefern und montieren in Wallenhorst, Osnabrück, Bramsche, Ibbenbüren, Mettingen, Ostercappeln und Westerkappeln.'],
+            'store.jpg', cap='Küchenwerk Wallenhorst, Borsigstraße 6', rev=True)
+        + reviews(s, ['Von der ersten Beratung über die Planung bis zur Montage lief alles perfekt. Wir haben uns vom ersten Moment an gut aufgehoben gefühlt.',
+                      'Top Service bis nach Detmold: kompetente Beratung, genaue Planung und saubere, professionelle Montage.',
+                      'Herr Zeqiri arbeitet lösungsorientiert und hat super Ideen. Vom Aufmaß bis zum Aufbau passt einfach alles.',
+                      'Auf unsere Wünsche wurde eingegangen und alles mit viel Liebe zum Detail umgesetzt.'])
+        + contact(s, 'dk') + footer(s) + pop(dict(img='g2.jpg', ey='Beratungstermin', h='Planen Sie Ihre neue Küche mit uns.', p='Vereinbaren Sie einen Termin in unserer Ausstellung in Wallenhorst.', btn='Termin anfragen')))
+
+SITES['kwerk'] = dict(
+    slug='kuechenwerk-wallenhorst', firma='Küchenwerk Wallenhorst', web='kuechenwerk-wallenhorst.de', fonts='r12kwerk',
+    title='Küchenwerk Wallenhorst – Küchenstudio für Wallenhorst & Osnabrück', desc='Küchenwerk Wallenhorst: moderne Designküchen, Küchenplanung, Aufmaß, Lieferung und Montage aus einer Hand. Große Ausstellung in der Borsigstraße 6.',
+    tel='05407 3480310', tel_i='+4954073480310', mail='info@kuechenwerk-wallenhorst.de', adresse='Borsigstraße 6, 49134 Wallenhorst', google=('5,0', 6),
+    cta='Termin anfragen', nav=[('Ausstellung', 'ausstellung'), ('Leistungen', 'leistungen'), ('Über uns', 'ueber-uns'), ('Kontakt', 'kontakt')],
+    hours=[('Mo – Fr', '10:00 – 18:00'), ('Sa', '10:00 – 15:00')],
+    form_opts=['Neue Küche', 'Küchenmodernisierung', 'Hauswirtschaftsraum', 'Aufmaß vor Ort', 'Sonstiges'], form_h3='Termin anfragen', form_p='Wir melden uns schnell und finden einen Termin, der Ihnen passt.', form_btn='Rückruf anfordern',
+    kt_ey='Kontakt', kt_h2='Ihr Küchenstudio <em>in Wallenhorst.</em>', kt_p='Aus Osnabrück sind Sie in etwa 20 Minuten bei uns.',
+    social=[], rv_h2='Das sagen unsere <em>Kunden.</em>',
+    bot=dict(name='Wanda', tag='Ihre Küchen-Lotsin', hello='Hallo! Ich bin Wanda. Soll ich Ihnen kurz das Küchenwerk zeigen?', hi='Hallo! Ich bin Wanda vom Küchenwerk Wallenhorst. Wobei darf ich helfen?',
+             qa=[['Modernisieren statt neu?', 'Ja, wir erneuern Fronten, Arbeitsplatten, Spülen, Armaturen oder Geräte.'], ['Liefergebiet?', 'Wallenhorst, Osnabrück, Bramsche, Ibbenbüren, Mettingen, Ostercappeln und Westerkappeln.'], ['Öffnungszeiten', 'Mo–Fr 10–18 Uhr, Sa 10–15 Uhr.']],
+             tour=[['#ausstellung'], ['#leistungen'], ['#ueber-uns'], ['#kontakt']]),
+    vars='--bg:#fff;--ink:#202124;--mute:#5c5f66;--p:#E0081A;--a:#E0081A;--a-ink:#fff;--dk:#2b2d31;--s:#fff;--s2:#f3f3f4;--fh:"Archivo",system-ui,sans-serif;--fb:"Archivo",system-ui,sans-serif;--r:4px;--r2:6px;--br:4px;--hero-ov:linear-gradient(95deg,rgba(24,25,28,.88) 0%,rgba(24,25,28,.5) 55%,rgba(24,25,28,.06) 100%);--mq-bg:#2b2d31;--mq-ink:#fff;--hd-bg:rgba(43,45,49,.96);--hd-ink:#fff;--logo-h:58px;--ft-bg:#1d1e21;--hp-bg:linear-gradient(165deg,#fff 0%,#f4f4f5 60%,#ececee 100%)',
+    css='''.hp h1,.h2{font-weight:800;letter-spacing:-.025em;line-height:1.02;text-transform:uppercase}.h2 em{font-style:normal;color:var(--a)}
+.alt{background:var(--s2)}.mq span{font-weight:700}\n.hd{background:var(--hd-bg);color:#fff}.hp h1{font-size:clamp(42px,5vw,78px)}.hp h1 em{font-style:normal;color:var(--a)}.hp .comp .badge{background:var(--dk);color:#fff}''',
+    img={'logo.png': ('logos/kwerk.png', 240), 'h1.jpg': ('kwerk/img/i033.jpg', 0), 'h2.jpg': ('kwerk/img/i034.jpg', 0), 'h3.jpg': ('kwerk/img/i031.jpg', 0),
+         'g1.jpg': ('kwerk/img/i032.jpg', 0), 'g2.jpg': ('kwerk/img/i024.jpg', 0), 'g3.jpg': ('kwerk/img/i025.jpg', 0), 'g4.jpg': ('kwerk/img/i030.jpg', 0), 'g5.jpg': ('kwerk/img/i022.jpg', 0), 'g6.jpg': ('kwerk/img/i026.jpg', 0), 'g7.jpg': ('kwerk/img/i027.jpg', 0), 'g8.jpg': ('kwerk/img/i021.jpg', 0),
+         't1.jpg': ('kwerk/img/i002.jpg', 0), 't2.jpg': ('kwerk/img/i037.jpg', 0), 't3.jpg': ('kwerk/img/i033.jpg', 0), 't4.jpg': ('kwerk/img/i029.jpg', 0), 't5.jpg': ('kwerk/img/i039.jpg', 0),
+         'store.jpg': ('/home/claude/r12raw/vid/kwerk-hero-poster.jpg', 1280), 'v-werk.jpg': ('/home/claude/r12raw/vid/kwerk-hero-poster.jpg', 1280), 'werk.mp4': ('/home/claude/r12raw/vid/kwerk-hero-720.mp4', 0)},
+    body=b_kwerk)
+
+# ───────────────────────── 10. Küchen Meyer (Bramsche) ─────────────────────────
+def b_kmeyer(s):
+    return (hd(s, False) + hero_comp(s, dict(
+        imgs=['h1.jpg', 'h2.jpg', 'h3.jpg'], pos0='50% 50%',
+        ey='Küchen Meyer · Bramsche · seit 1950',
+        h1='Wir machen <em>Küchenträume wahr.</em>',
+        sub='Küchen namhafter Hersteller in allen Preislagen, wohn- und kochfertig ausgestellt. Mit Laser-Aufmaß, 3D-Planung, eigener Montage und 5 Jahren Garantie auf Geräte von Bosch, AEG und Miele.',
+        badge=('75 Jahre', 'Familienunternehmen in dritter Generation')))
+        + marquee(['nobilia', 'Nolte', 'Leicht', 'Express Küchen', 'Bora', 'Miele', 'Bosch', 'AEG', 'Neff', 'Quooker', 'Franke', 'Berbel'])
+        + vgrid('filme', 'Küchen Meyer im Film', 'Lernen Sie uns <em>kennen.</em>', 'Unsere Imagefilme zeigen die Ausstellungen und das Team an allen vier Standorten.', [
+            ('Imagefilm Bramsche', 'yt', 'LWBEzRY0xIA', 'v-bsb.jpg'), ('Küchen Meyer Imagefilm', 'yt', 'a7jjBarQ0II', 'v-image.jpg'), ('Kochschule', 'mp4', 'kochschule.mp4', 'v-koch.jpg'),
+            ('Imagefilm Georgsmarienhütte', 'yt', 'NI6DO5mlFfc', 'v-gmh.jpg'), ('Imagefilm Bielefeld', 'yt', 'cq2a5M6xptg', 'v-bi.jpg'), ('Imagefilm Oldenburg', 'yt', '8koF41F9GMA', 'v-image.jpg')])
+        + tabs('service', 'Vollservice inklusive', 'Von der Planung <em>bis zur Inspektion.</em>', 'Intensiv geschulte Küchenmonteure kümmern sich um alles, von der Lieferung bis zum Anschluss Ihrer Geräte.', [
+            ('3D-Planung & Aufmaß', 's1.jpg', 'Passgenaues, dreidimensionales Planen in unserer Ausstellung, mit exaktem Laser-Aufmaß Ihres Küchenraums vor Ort.', ['Laser-Aufmaß', '3D-Planung']),
+            ('Lieferung & Montage', 's2.jpg', 'Zuverlässig und termingerecht. Viele Küchenmodelle liefern wir auf Wunsch innerhalb von 14 Arbeitstagen, nachdem die Maße vorliegen.', ['Termingerecht', 'Eigene Monteure']),
+            ('Elektro & Sanitär', 's3.jpg', 'Wir schließen alle E-Geräte und Sanitäranschlüsse fachgerecht an die vorhandenen Leitungen an.', ['Fachgerecht', 'Aus einer Hand']),
+            ('5 Jahre Garantie', 's4.jpg', 'Für Elektrogeräte von Bosch, AEG und Miele verlängern wir die Gewährleistung von zwei auf fünf Jahre.', ['Bosch', 'AEG', 'Miele'])])
+        + story('geschichte', 'Familienunternehmen seit 1950', 'Drei Generationen <em>Küchenkompetenz.</em>', [
+            'Willi Meyer und seine Frau Gertrud gründeten das Einrichtungshaus Meyer im Jahr 1950. Schon 1982 wurden Einbauküchen zur größten Warengruppe, 1998 entstand daraus die Küchen Meyer GmbH.',
+            'Heute führt Britta Meyer das Unternehmen. Mit rund 100 Mitarbeitern an vier Standorten in Georgsmarienhütte, Bramsche, Bielefeld und Oldenburg bieten wir höchste Küchenkompetenz.'],
+            'haus.jpg', cap='Küchen Meyer, Hasestraße 2 in Bramsche', tl=[('1950', 'Gründung durch Willi und Gertrud Meyer'), ('1982', 'Küchen werden zur größten Warengruppe'), ('1998', 'Gründung der Küchen Meyer GmbH'), ('Heute', '4 Standorte, rund 100 Mitarbeiter')], rev=True)
+        + gallery('ausstellung', 'Ausstellungsküchen', 'Wohn- und kochfertig <em>zum Anfassen.</em>', [
+            ('g1.jpg', '', '50% 50%'), ('g2.jpg', '', '50% 50%'), ('g3.jpg', '', '50% 50%'), ('g4.jpg', '', '50% 50%')], 'alt')
+        + duo('kochschule', 'Kochschule', 'Schicken Sie Ihre Sinne <em>auf Genießertour.</em>', 'Mit Köchen aus der Region am Herd stehen, neue Gerichte lernen und gemeinsam genießen.', [
+            ('Kochschule', 'Für Hobbyköche und Anfänger', 'k1.jpg', 'Sie lernen die Zubereitung verschiedenster Köstlichkeiten und entlocken dem Koch das ein oder andere Geheimnis.', ['Köche aus der Region', 'Gemeinsam genießen'], 'Termine anfragen'),
+            ('Team', 'Mit Leidenschaft dabei', 'k2.jpg', 'Unser Team freut sich auf Sie, in der Ausstellung, bei der Planung und in der Kochschule.', ['Beratung', 'Planung', 'Montage'], 'Kontakt aufnehmen')])
+        + contact(s) + footer(s) + pop(dict(img='g1.jpg', ey='Beratungstermin', h='Am besten persönlich beraten lassen.', p='Vereinbaren Sie vorab einen Termin in Ihrer Wunschfiliale.', btn='Termin vereinbaren')))
+
+SITES['kmeyer'] = dict(
+    slug='kuechen-meyer-bramsche', firma='Küchen Meyer', web='kuechen-meyer.de', fonts='r12kmeyer',
+    title='Küchen Meyer – Küchenstudio in Bramsche', desc='Küchen Meyer in Bramsche: Familienunternehmen seit 1950, Küchen namhafter Hersteller in allen Preislagen, 3D-Planung, Montage und Kochschule.',
+    tel='05461 93380', tel_i='+49546193380', mail='info@kuechen-meyer.de', adresse='Hasestraße 2, 49565 Bramsche', google=None,
+    cta='Beratungstermin vereinbaren', nav=[('Filme', 'filme'), ('Service', 'service'), ('Geschichte', 'geschichte'), ('Ausstellung', 'ausstellung'), ('Kontakt', 'kontakt')],
+    hours=[('Mo – Fr', '10:00 – 19:00'), ('Sa', '10:00 – 18:00')],
+    form_opts=['Neue Küche', 'Laser-Aufmaß vor Ort', 'Kochschule', 'Kundendienst', 'Sonstiges'], form_h3='Beratungstermin anfragen', form_p='Wir melden uns und vereinbaren einen Termin in Bramsche oder Ihrer Wunschfiliale.', form_btn='Rückruf anfordern',
+    kt_ey='Kontakt', kt_h2='Testen Sie uns. <em>Sie werden begeistert sein.</em>', kt_p='Bramsche, Hasestraße 2. Weitere Standorte in Georgsmarienhütte, Bielefeld und Oldenburg.',
+    social=[('YouTube', 'https://www.youtube.com/@kuchenmeyer4315')],
+    bot=dict(name='Mia', tag='Ihre Küchen-Lotsin', hello='Hallo! Ich bin Mia. Soll ich Ihnen zeigen, was Küchen Meyer in Bramsche bietet?', hi='Hallo! Ich bin Mia von Küchen Meyer. Wobei darf ich helfen?',
+             qa=[['Wie schnell geht es?', 'Viele Küchenmodelle liefern wir auf Wunsch innerhalb von 14 Arbeitstagen, nachdem die Maße vorliegen.'], ['Garantie?', 'Für Geräte von Bosch, AEG und Miele verlängern wir die Gewährleistung auf 5 Jahre.'], ['Öffnungszeiten Bramsche', 'Mo–Fr 10–19 Uhr, Sa 10–18 Uhr.']],
+             tour=[['#filme'], ['#service'], ['#geschichte'], ['#kontakt']]),
+    vars='--bg:#fff;--ink:#1e1e1e;--mute:#5b5b5b;--p:#E00008;--a:#E00008;--a-ink:#fff;--dk:#1e1e1e;--s:#fff;--s2:#f4f4f4;--fh:"Barlow Condensed",system-ui,sans-serif;--fb:"Barlow",system-ui,sans-serif;--r:8px;--r2:12px;--br:6px;--mq-bg:#E00008;--mq-ink:#fff;--hd-bg:rgba(255,255,255,.97);--hd-ink:#1e1e1e;--logo-h:54px;--ft-bg:#161616;--hp-bg:linear-gradient(165deg,#fff 0%,#f6f6f6 60%,#efefef 100%)',
+    css='''.hp h1,.h2{font-weight:700;text-transform:uppercase;letter-spacing:.005em;line-height:.98}.hp h1{font-size:clamp(48px,6vw,92px)}.hp h1 em,.h2 em{font-style:normal;color:var(--p)}
+.alt{background:var(--s2)}.hp .comp .badge{background:var(--p);color:#fff}.mq span{font-family:var(--fh);font-weight:600;font-size:1.15em}
+#ausstellung .gl .grid,#ausstellung .grid{grid-auto-rows:240px}#kochschule .wd{max-width:none}''',
+    img={'logo.png': ('logos/kmeyer.png', 400), 'h1.jpg': ('kmeyer/img/i024.jpg', 0, (0, 0, 1, .9)), 'h2.jpg': ('kmeyer/img/i028.jpg', 1100, (0, 0, 1, .86)), 'h3.jpg': ('kmeyer/img/i023.jpg', 900, (.2, 0, .8, .86)),
+         's1.jpg': ('kmeyer/img/i020.jpg', 1400, (0, 0, 1, .86)), 's2.jpg': ('kmeyer/img/i027.jpg', 1400, (0, 0, 1, .86)), 's3.jpg': ('kmeyer/img/i029.jpg', 1400, (0, 0, 1, .86)), 's4.jpg': ('kmeyer/img/i057.png', 0),
+         'haus.jpg': ('kmeyer/img/i062.png', 0), 'g1.jpg': ('kmeyer/img/i071.jpg', 0), 'g2.jpg': ('kmeyer/img/i072.jpg', 0), 'g3.jpg': ('kmeyer/img/i073.jpg', 0), 'g4.jpg': ('kmeyer/img/i074.jpg', 0),
+         'k1.jpg': ('kmeyer/img/i070.jpg', 0), 'k2.jpg': ('kmeyer/img/i075.jpg', 0),
+         'v-bsb.jpg': ('/home/claude/r12raw/vid/yt-LWBEzRY0xIA.jpg', 1280), 'v-image.jpg': ('/home/claude/r12raw/vid/yt-a7jjBarQ0II.jpg', 1280), 'v-gmh.jpg': ('/home/claude/r12raw/vid/yt-NI6DO5mlFfc.jpg', 1280), 'v-bi.jpg': ('/home/claude/r12raw/vid/yt-cq2a5M6xptg.jpg', 1280),
+         'v-koch.jpg': ('/home/claude/r12raw/vid/kmeyer-kochschule-poster.jpg', 1280), 'kochschule.mp4': ('/home/claude/r12raw/vid/kmeyer-kochschule-720.mp4', 0)},
+    body=b_kmeyer)
