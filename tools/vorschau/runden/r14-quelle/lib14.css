@@ -174,3 +174,9 @@ body.has-tbar .hd{top:38px}body.has-tbar .hd.scr{top:0}
 .hlpa-f .msg{color:#c62828;font-size:15px}.hlpa-f .ok b{display:block;font-size:21px;margin-bottom:6px}
 @media (max-width:820px){.hlpa{padding:60px 16px 150px}.hlpa-w{grid-template-columns:1fr;gap:26px}.hlpa-f{grid-template-columns:1fr;padding:22px}}
 .hlpa-f .chk.nl{background:#eef5ff;border:1px solid #bcd6ff;border-radius:14px;padding:12px 14px}.hlpa-f .chk.nl b{color:#1158c7}
+.hlpa-ch{border:0;padding:0;margin:0}.hlpa-ch legend{font-weight:600;font-size:14px;color:#2a3246;margin-bottom:8px}
+.hlpa-ch{display:grid;grid-template-columns:1fr 1fr;gap:8px}.hlpa-ch label{display:flex;gap:9px;align-items:flex-start;border:1px solid #cfd6e4;border-radius:12px;padding:10px 12px;font-weight:500;cursor:pointer}
+.hlpa-ch input{width:18px;height:18px;flex:none;margin-top:2px}.hlpa-ch label:has(input:checked){border-color:#1877f2;background:#eef5ff}
+.hlpa-f .chk.nl small{display:block;font-size:13px;color:#55607a;margin-top:4px;font-weight:400}.hlpa-f .chk.nl b{color:#1158c7;font-size:15px}
+@media (max-width:820px){.hlpa-ch{grid-template-columns:1fr}}
+.hlpa-f .chk.nl small{text-transform:none!important;letter-spacing:0!important;font:400 13px/1.45 system-ui,sans-serif!important;color:#55607a!important}

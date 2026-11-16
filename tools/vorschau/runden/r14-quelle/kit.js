@@ -79,16 +79,16 @@
  f.addEventListener('submit',function(e){e.preventDefault();if(f.website.value)return;
   if(!f.checkValidity()){f.reportValidity();return}
   var b=f.querySelector('button[type=submit]');b.disabled=true;b.textContent='Wird gesendet …';
-  var fd=new FormData(f);fd.delete('ds');var seite=location.href.split('#')[0];
+  var fd=new FormData(f);fd.delete('ds');var th=fd.getAll('thema').join(', ')||'-';fd.delete('thema');fd.set('themen',th);var seite=location.href.split('#')[0];
   fd.set('quelle','Brief Website-Entwurf ('+((window.HLP_E||{}).runde||'')+')');
-  fd.set('ziel','Website-Entwurf per Brief | Firma: '+fd.get('firma')+' | Tätigkeit: '+fd.get('branche')+' | Erreichbar: '+fd.get('zeit_wunsch')+' | Wunsch: '+(fd.get('wunsch')||'-')+' | Entwurf: '+seite);
+  fd.set('ziel','Website-Entwurf per Brief | Firma: '+fd.get('firma')+' | Tätigkeit: '+fd.get('branche')+' | Erreichbar: '+fd.get('zeit_wunsch')+' | Trifft zu: '+th+' | Herausforderung: '+(fd.get('wunsch')||'-')+' | Entwurf: '+seite);
   fetch('https://formular.highlevel-performance.de/kontakt.php',{method:'POST',body:fd}).then(function(r){return r.json()}).then(function(j){if(!j||!j.ok)throw 0;
    try{var o=new URLSearchParams();fd.forEach(function(v,k){if(typeof v==='string'&&k!=='website')o.append(k,v)});var nl=o.get('newsletter')==='ja';
     var iso=new Date().toLocaleDateString('sv-SE',{timeZone:'Europe/Berlin'});
     if(nl){var em=o.get('email'),vn=(o.get('name')||'').trim().split(' ')[0];
      var tk=btoa(unescape(encodeURIComponent(JSON.stringify({e:em,n:vn,l:'website',d:iso})))).replace(/\+/g,'-').replace(/\//g,'_').replace(/=+$/,'');
      var d=new URLSearchParams();d.append('email',em);d.append('vorname',vn);d.append('liste','website');d.append('list_id','23');d.append('datum',iso);d.append('token',tk);
-     d.append('betreff','Bitte bestätigen Sie Ihre Anmeldung');d.append('headline','Fast geschafft'+(vn?', '+vn:'')+'!');d.append('text','Bitte bestätigen Sie mit einem Klick, dass Sie E-Mails von High Level Performance erhalten möchten. Danach bekommen Sie regelmäßig kurze Tipps, wie Ihre Website mehr Kunden bringt, und Ihre 15 % Preisnachlass auf die erste Leistung, die Sie bei uns buchen, sind gesichert.');
+     d.append('betreff','Bitte bestätigen Sie Ihre Anmeldung');d.append('headline','Fast geschafft'+(vn?', '+vn:'')+'!');d.append('text','Bitte bestätigen Sie mit einem Klick Ihre Anmeldung zum Newsletter von High Level Performance. Damit sind Ihre 15 % auf Ihre nächste Leistung bei uns gesichert, und Sie bekommen regelmäßig die wichtigsten Neuigkeiten rund um Websites, Google und mehr Anfragen.');
      d.append('button','Anmeldung bestätigen');d.append('hinweis','Sie haben sich nicht angemeldet? Dann ignorieren Sie diese E-Mail einfach. Ohne Bestätigung tragen wir Sie nicht ein.');d.append('bild','https://www.highlevel-performance.de/assets/mail/img/b01.jpg');
      fetch(DOI,{method:'POST',mode:'no-cors',body:d,keepalive:true});o.set('newsletter','doi')}else o.set('newsletter','nein');
     o.set('formular','brief-entwurf');o.set('seite',seite);o.set('zeit',new Date().toLocaleString('de-DE',{timeZone:'Europe/Berlin'}));o.set('datum',iso);
