@@ -78,7 +78,7 @@ def run(keys):
             absaetze = [
                 "seit November 2025 melden sich laut einer Umfrage unter 2.424 Fahrschulen im Schnitt <b>54 % weniger Fahrschüler</b> an. Und wer sich anmeldet, vergleicht vorher am Handy. Mit der Reform sollen Preise und Bestehensquoten bald öffentlich vergleichbar sein. Gewinnen wird, wer zeigt, was keine Datenbank zeigt: <b>geduldige Fahrlehrer, gepflegte Autos, zufriedene Fahrschüler.</b>",
                 f"Ich bin Viktor Fehl aus Bersenbrück. Auf {s['web']} ist mir aufgefallen, {problem}. Darum habe ich Ihnen einen groben Entwurf gebaut, <b>kostenlos</b> und mit Ihren eigenen Bildern. Mit dabei: ein Führerschein-Lotse, der Interessenten in 30 Sekunden zur passenden Klasse führt und die Anmeldung vorausfüllt.",
-                "Gefällt Ihnen der Entwurf? Julian von unserem Hotline-Service vereinbart gern ein <b>kostenloses Erstgespräch</b> mit Ihnen. Wenn nicht, löschen wir ihn einfach wieder.",
+                "Gefällt Ihnen der Entwurf? Dann tragen Sie unten auf der Seite einfach kurz ein, wann wir Sie erreichen. Julian von unserem Hotline-Service ruft Sie innerhalb von 24 Stunden für ein <b>kostenloses Erstgespräch</b> zurück. Wenn nicht, löschen wir den Entwurf einfach wieder.",
             ]
             briefe.append(dict(anschrift=an, anrede=anrede, betreff_1='Warum Fahrschüler gerade online entscheiden.', betreff_2=f'Ein kostenloser Website-Entwurf für {kurz}.',
                                absaetze=[Markup(a) for a in absaetze], shot_desktop=str(sd), shot_mobile=str(sm), qr=str(qr), url_kurz='highlevel-performance.de/vorschau/' + sl))

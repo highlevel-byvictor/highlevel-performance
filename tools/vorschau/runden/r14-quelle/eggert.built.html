@@ -656,7 +656,7 @@ body.has-tbar .hd{top:38px}body.has-tbar .hd.scr{top:0}
 // Inhaber-Anfrage (Formular #hlp-anfrage) → kontakt.php (Mail an info@) + Pabbly „HLP Business – Google Leads“ (SMS, Tabelle) + Newsletter nur per Double-Opt-in (Brevo-Liste 23 Website)
 (function(){
  var f=document.querySelector('#hlp-anfrage form');if(!f)return;var msg=f.querySelector('.msg');
- var HOOK='https://connect.pabbly.com/webhook-listener/webhook/IjU3NjAwNTZmMDYzZTA0MzE1MjY4NTUzNyI_3D_pc/IjU3NjcwNTY4MDYzZjA0MzY1MjY4NTUzMjUxMzEi_pc';
+ var HOOK='https://connect.pabbly.com/webhook-listener/webhook/IjU3NjAwNTZmMDYzZTA0MzE1MjY4NTUzNyI_3D_pc/IjU3NjcwNTZiMDYzNTA0MzM1MjZiNTUzMDUxMzUi_pc';
  var DOI='https://connect.pabbly.com/webhook-listener/webhook/IjU3NjAwNTZmMDYzZTA0MzE1MjY4NTUzNyI_3D_pc/IjU3NjcwNTY4MDYzZjA0MzI1MjY0NTUzMTUxM2Ii_pc';
  f.addEventListener('submit',function(e){e.preventDefault();if(f.website.value)return;
   if(!f.checkValidity()){f.reportValidity();return}
