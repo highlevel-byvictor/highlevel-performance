@@ -3,14 +3,28 @@ from common import *
 SITES = {}
 
 # ───────────── 6. City Fahrschule, Hasbergen · Osnabrück & Osnabrücker Land ─────────────
+def _city_hero(s):
+    sl = [('h-team.jpg', 'Schön, Dich hier zu sehen …!', 'Wir sind das Team der City Fahrschule.', 'Unser Team', '#team'),
+          ('h-50.jpg', '50 Jahre City Fahrschule', 'Seit 1975 in und um Osnabrück.', 'Unsere Geschichte', '#geschichte'),
+          ('h-kunden.jpg', '… und das sind unsere Kunden!', 'Tausende Fahrschüler haben bei uns ihren Führerschein gemacht.', 'Zur Anmeldung', '#anmeldung'),
+          ('h-flotte.jpg', 'Berufskraftfahrer sind bei uns richtig.', 'Wir sind zertifizierter Bildungsanbieter.', 'Mehr erfahren', '#fuhrpark'),
+          ('h-bikes.jpg', 'Zweiräder.', 'Vom Roller bis zum Motorrad.', 'Mehr erfahren', '#fuhrpark'),
+          ('h-traktor.jpg', 'Landlust.', 'Mit Führerschein Klasse T.', 'Mehr erfahren', '#fuhrpark')]
+    slides = ''.join(f'''<div data-slide class="{'on' if i == 0 else ''}"><img src="img/{im}" alt="{E(t)}" {'fetchpriority="high"' if i == 0 else 'loading="lazy"'}><div class="cs-cap"><div class="w"><b>{t}</b><span>{x}</span><a href="{href}">{btn} {AR}</a></div></div></div>''' for i, (im, t, x, btn, href) in enumerate(sl))
+    dots = ''.join(f'<button data-dot class="{"on" if i == 0 else ""}" aria-label="Bild {i+1}"></button>' for i in range(len(sl)))
+    return f'''<section class="cs" id="top" data-slider="6500"><div class="cs-sl">{slides}<button class="cs-ar l" data-prev aria-label="Zurück">‹</button><button class="cs-ar r" data-next aria-label="Weiter">›</button><div class="cs-dots">{dots}</div></div>
+<div class="cs-bar"><div class="w">{chip(s)}<div class="ctas"><a class="btn btn-a" href="#anmeldung">{s['cta']} {AR}</a><a class="btn btn-o" href="tel:{s['tel_i']}">{PH} {s['tel']}</a></div></div></div>
+<div class="cs-in"><div class="w"><div data-r><p class="ey">City Fahrschule · seit 1975</p><h1>Schön, Dich <em>hier zu sehen.</em></h1></div><div data-r="2"><p class="sub">Wir sind ein Team aus 30 Leuten und bilden in und um Osnabrück aus: alles außer Bus. Mit Simulator, Lerncenter, Ferienfahrschule und Online-Anmeldung in vier Schritten.</p>{quick(s, dict(quick=['auto', 'moto', 'roller', 'anh', 'lkw', 'trak']))}</div></div></div></section>'''
+
+def _city_kunden():
+    return '''<section class="sec ck" id="kunden"><div class="w" data-r><p class="ey">Unsere Fahrschüler</p><h2 class="h2">… und das sind <em>unsere Kunden!</em></h2></div>
+<figure class="ck-f" data-r="2"><img src="img/h-kunden.jpg" alt="Collage aus Fotos von Fahrschülern der City Fahrschule mit ihrem Führerschein" loading="lazy"></figure>
+<div class="w ck-b" data-r><p>Tausende haben bei uns ihren Führerschein gemacht. Du bist die oder der Nächste.</p><a class="btn btn-a" href="#anmeldung">Jetzt online anmelden ''' + AR + '''</a></div></section>'''
+
 def b_city(s):
-    return (hd(s, False) + hero_x(s, dict(
-        img='h-team.jpg', pos='50% 50%', wide=True, quick=['auto', 'moto', 'roller', 'anh', 'lkw', 'trak'],
-        ey='City Fahrschule · seit 1975',
-        h1='Schön, dich <em>hier zu sehen.</em>',
-        sub='Wir sind ein Team aus 30 Leuten und bilden in und um Osnabrück aus: alles außer Bus. Mit Simulator, Lerncenter, Ferienfahrschule und Online-Anmeldung in vier Schritten.',
-        g1=('8 Fahrschulen', 'in und um Osnabrück'), g2=('We speak English', 'auch im Unterricht')))
+    return (hd(s, False) + _city_hero(s)
         + marquee(['A · A2 · A1', 'B · B196 · B96 · BE', 'C · CE · C1', 'L · T', 'Simulator', 'Ferienfahrschule', 'Lerncenter', 'Fahrschulwechsel'], 'cm')
+        + _city_kunden()
         + ablauf('anmeldung', 'Online anmelden', 'In vier Schritten <em>angemeldet.</em>', 'Wie bei den Großen, nur persönlicher: Du klickst dich durch, wir melden uns mit allen Infos und deiner Anmeldebestätigung.', [
             ('Fahrzeug wählen', 'Auto, Motorrad, Roller, Lkw oder Traktor.'), ('Führerscheintyp', 'Die passende Klasse, auch als Doppelführerschein.'),
             ('Kursart', 'Normal oder als Ferienfahrschule.'), ('Anmelden', 'Abschicken, Bestätigung kommt per Mail.')])
@@ -49,12 +63,28 @@ S = SITES['city'] = site(
 .hs h1 em{font-style:normal;background:var(--p);color:#fff;padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone}.h2 em{font-style:normal;color:var(--p)}.dk .h2 em{color:#ff4b55}.hs .big{font-family:var(--fh);font-size:clamp(220px,30vw,460px);-webkit-text-stroke:2px rgba(227,6,19,.55)}
 .hd.lt .lt-logo{color:#fff}.hd.scr .lt-logo{color:#141414}.lt-logo{font-family:var(--fh);font-weight:400;font-size:30px;letter-spacing:.02em}
 .fc{--fc-ar:2/3}.fc .grid{grid-template-columns:repeat(6,1fr)}.fc figcaption{display:none}@media (max-width:820px){.fc .grid{grid-template-columns:repeat(3,1fr)}}
-.kl .k b,.or .o b,.rd h3{font-weight:400;font-size:30px}.rd h3{font-size:26px}''')
+.kl .k b,.or .o b,.rd h3{font-weight:400;font-size:30px}.rd h3{font-size:26px}
+.cs{position:relative;padding-top:var(--cs-top,84px);background:#fff}
+.cs-sl{position:relative;aspect-ratio:1500/630;max-height:calc(100vh - 230px);min-height:260px;overflow:hidden;background:#111}
+.cs-sl [data-slide]{position:absolute;inset:0;opacity:0;transition:opacity .9s ease}.cs-sl [data-slide].on{opacity:1;z-index:1}
+.cs-sl [data-slide] img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.04);transition:transform 7s ease}.cs-sl [data-slide].on img{transform:scale(1)}
+.cs-cap{position:absolute;left:0;right:0;bottom:0;padding:22px 0 26px;background:linear-gradient(0deg,rgba(0,0,0,.72),rgba(0,0,0,0));color:#fff}
+.cs-cap .w{display:flex;align-items:baseline;gap:18px;flex-wrap:wrap}.cs-cap b{font:400 clamp(26px,2.8vw,42px)/1 var(--fh);letter-spacing:.01em}.cs-cap span{font-size:17px;opacity:.9}
+.cs-cap a svg,.cs-bar a svg{width:16px;height:16px;vertical-align:-3px}.cs-bar .chip,.cs-bar .chip *{color:#141414}.cs-bar .chip .st{color:#f5a623!important}.cs-cap a{margin-left:auto;color:#fff;font-weight:700;text-decoration:none;border-bottom:2px solid var(--p);padding-bottom:3px;white-space:nowrap}
+.cs-ar{position:absolute;top:50%;transform:translateY(-50%);z-index:3;width:48px;height:48px;border-radius:50%;border:0;background:rgba(255,255,255,.85);font-size:30px;line-height:1;cursor:pointer;color:#141414}.cs-ar.l{left:18px}.cs-ar.r{right:18px}
+.cs-dots{position:absolute;z-index:3;right:24px;top:18px;display:flex;gap:8px}.cs-dots button{width:26px;height:4px;border:0;border-radius:2px;background:rgba(255,255,255,.5);cursor:pointer}.cs-dots button.on{background:var(--p)}
+.cs-bar{background:var(--p);color:#fff}.cs-bar .w{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-top:14px;padding-bottom:14px}
+.cs-bar .chip{background:#fff}.cs-bar .ctas{margin:0}.cs-bar .btn-a{background:#fff!important;color:var(--p)!important}.cs-bar .btn-o{border-color:#fff;color:#fff}
+.cs-in .w{display:grid;grid-template-columns:minmax(0,6fr) minmax(0,6fr);gap:clamp(24px,4vw,64px);align-items:end;padding-top:clamp(36px,5vw,64px);padding-bottom:clamp(28px,4vw,48px)}
+.cs-in h1{font:400 clamp(52px,6.4vw,104px)/.98 var(--fh);margin:10px 0 0;letter-spacing:.01em}.cs-in h1 em{font-style:normal;color:var(--p)}.cs-in .sub{font-size:18px;color:var(--mute);margin:0 0 18px}
+.ck{padding-bottom:clamp(40px,6vw,80px)}.ck-f{margin:30px 0 0}.ck-f img{width:100%;max-width:1500px;display:block;margin:0 auto}
+.ck-b{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;margin-top:24px}.ck-b p{font-size:19px;margin:0;font-weight:600}
+@media(max-width:820px){.cs-in .w{grid-template-columns:1fr}.cs-cap b{font-size:24px}.cs-cap span{display:none}.cs-ar{display:none}.cs-sl{aspect-ratio:4/3;max-height:none}}''')
 S['bot'] = BOT('Cleo', 'deine City-Lotsin', 'der City Fahrschule', S, ['B', 'B196', 'B96', 'BE', 'A', 'A2', 'A1', 'AM', 'Mofa', 'C', 'CE', 'L', 'T'],
     {'schnell': 'In der Ferienfahrschule kommst du besonders zügig voran. Unsere Fahrschüler haben z. B. Klasse A in zwei Monaten geschafft.', 'ruhe': 'Bei uns wirst du nicht durchgeschleust, du lernst wirklich sicher zu fahren.', 'flex': 'Mit acht Fahrschulen in und um Osnabrück findest du immer einen Termin in deiner Nähe.', 'angst': 'Im Simulator übst du die ersten Handgriffe, ganz ohne Verkehr.'},
     qa=[('english|englisch', 'Yes, we speak English! Auch Anmeldung, Theorie und Praxis gehen auf Englisch.'), ('wechsel', 'Du willst die Fahrschule wechseln? Kein Problem, wir helfen dir dabei.'), ('ferien|schnell|intensiv', 'In der Ferienfahrschule machst du deinen Führerschein besonders zügig.'), ('bus', 'Bus bilden wir nicht aus. Alles andere schon: A, B, C, L und T.')],
     tour=[('#anmeldung', 'In vier Schritten angemeldet.'), ('#fuhrpark', 'Unser Fuhrpark vom Mofa bis zum Actros.'), ('#team', 'Das City-Team.'), ('#standorte', 'Immer eine City in deiner Nähe.'), ('#kontakt', 'Hier meldest du dich an.')])
-S['img'] = {'h-team.jpg': ('city/img/i068.jpg', 0), 'h-flotte.jpg': ('city/img/i074.jpg', 0), 'h-bikes.jpg': ('city/img/i007.jpg', 0), 'st-50.jpg': ('city/img/i025.jpg', 0),
+S['img'] = {'h-team.jpg': ('city/img/i068.jpg', 0), 'h-50.jpg': ('city/img/i025.jpg', 1500), 'h-kunden.jpg': ('city/img/i002.jpg', 0), 'h-traktor.jpg': ('city/img/i001.jpg', 1500), 'h-flotte.jpg': ('city/img/i074.jpg', 0), 'h-bikes.jpg': ('city/img/i007.jpg', 0), 'st-50.jpg': ('city/img/i025.jpg', 0),
     'v-city.mp4': ('city/vid/v.mp4', 0), 'v-city.jpg': ('city/vid/poster.jpg', 0),
     'f-id3.jpg': ('city/img/i014.jpg', 0), 'f-polo.jpg': ('city/img/i015.jpg', 0), 'f-tcross.jpg': ('city/img/i016.jpg', 0), 'f-hornet.jpg': ('city/img/i027.jpg', 0), 'f-actros.jpg': ('city/img/i013.jpg', 0), 'f-trak.jpg': ('city/img/i055.jpg', 0)}
 for i, n in enumerate([34, 35, 36, 39, 40, 41, 42, 43, 45, 47, 49, 50], 1): S['img'][f't{i}.jpg'] = (f'city/img/i{n:03d}.jpg', 0)
@@ -63,7 +93,7 @@ S['body'] = b_city
 # ───────────── 7. Moschitz … die Fahrschule, Osnabrück ─────────────
 def b_moschitz(s):
     return (hd(s, False) + hero_x(s, dict(
-        img='h-team.jpg', pos='50% 45%', bg='h-road.jpg', quick=['auto', 'moto', 'roller', 'lkw'],
+        img='h-team.jpg', pos='50% 45%', bg='h-cabrio.jpg', quick=['auto', 'moto', 'roller', 'lkw'],
         ey='… die Fahrschule in Osnabrück · seit 1985',
         h1='Die ganze Theorie <em>in sieben Tagen.</em>',
         sub='Seit November 1985 bringen wir Fahrschüler sicher zum Führerschein. Mit Kompaktkursen, Simulator und einem Team, das sich Zeit für dich nimmt. Starte mit einem persönlichen Beratungsgespräch.',
@@ -107,12 +137,20 @@ S = SITES['moschitz'] = site(
     css='''.hx h1{font-weight:800}.h2{font-weight:800;letter-spacing:-.02em}.hx h1 em,.h2 em{font-style:normal;color:var(--p)}.dk .h2 em{color:#5fe0dc}
 .hx .pic{--hx-ar:16/10}.tbar b{padding:2px 8px;border-radius:6px;background:#0f1a1c}.tbar{text-shadow:0 1px 2px rgba(0,0,0,.4)}
 .fc{--fc-ar:13/10}.fc .grid{grid-template-columns:repeat(4,1fr)}.fc figcaption{display:none}.fc figure{border-radius:20px;overflow:hidden}@media (max-width:820px){.fc .grid{grid-template-columns:repeat(2,1fr)}}
-.or .o:first-child i{background:#14a3a1;color:#fff}''')
+.or .o:first-child i{background:#14a3a1;color:#fff}
+.hx.hasbg{min-height:min(94vh,900px);display:flex;align-items:center;color:#fff}
+.hx.hasbg::before{inset:0!important;filter:none!important;opacity:1!important;background-position:70% 40%!important}
+.hx.hasbg::after{content:'';position:absolute;inset:0;z-index:0;background:linear-gradient(90deg,rgba(8,30,34,.86) 0%,rgba(8,30,34,.62) 38%,rgba(8,30,34,0) 62%)}
+.hx.hasbg>.w{position:relative;z-index:1;grid-template-columns:minmax(0,640px)!important}
+.hx.hasbg .pic{display:none!important}
+.hx.hasbg h1{color:#fff}.hx.hasbg .sub{color:rgba(255,255,255,.88)}.hx.hasbg .btn-o{color:#fff;border-color:rgba(255,255,255,.7)}.hx.hasbg .quick span{color:rgba(255,255,255,.8)}.hx.hasbg .quick button{color:#fff;border-color:rgba(255,255,255,.45)}
+.hd:not(.scr) .nav a{color:#fff!important}
+@media(max-width:820px){.hx.hasbg{padding-top:78vw!important;align-items:flex-end}.hx.hasbg::before{background-size:auto 100vw!important;background-position:76% 0!important;background-repeat:no-repeat!important;background-color:#081e22!important}.hx.hasbg::after{background:linear-gradient(0deg,#081e22 0%,#081e22 calc(100% - 100vw),rgba(8,30,34,.1) calc(100% - 62vw),rgba(8,30,34,.35) 100%)}}''')
 S['bot'] = BOT('Mo', 'dein Moschitz-Lotse', 'Moschitz', S, ['B', 'B197', 'BE', 'B96', 'B196', 'A', 'A2', 'A1', 'AM', 'Mofa', 'C', 'CE'],
     {'schnell': 'Im Kompaktkurs schaffst du die komplette Theorie in 7 Tagen. Nächster Start: 07.12.2026.', 'ruhe': 'Unsere Fahrschüler loben die ruhige, geduldige Art unserer Fahrlehrer.', 'flex': 'Termine für Fahrstunden sind bei uns laut unseren Fahrschülern einfach zu bekommen.', 'angst': 'Im Simulator bereitest du dich ohne Zeitdruck auf die erste Fahrstunde vor.'},
     qa=[('kompakt|theorie|7 tage|sieben', 'Die komplette Theorie in 7 Tagen: nächster Kompaktkurs vom 07.12. bis 16.12.2026.'), ('simulator', 'Im Simulator übst du in Ruhe und ohne Zeitdruck, bevor es auf die Straße geht.')],
     tour=[('#konzept', 'Unser Konzept in vier Schritten.'), ('#termine', 'Die nächsten Kompaktkurse.'), ('#simulator', 'Erst üben, dann Straße.'), ('#team', 'Das Moschitz-Team.'), ('#kontakt', 'Hier buchst du dein Beratungsgespräch.')])
-S['img'] = {'logo.png': ('moschitz/img/i023.png', 0, 'alphacrop'), 'h-team.jpg': ('moschitz/img/i037.jpg', 0), 'h-road.jpg': ('moschitz/img/i012.jpg', 0),
+S['img'] = {'logo.png': ('moschitz/img/i023.png', 0, 'alphacrop'), 'h-team.jpg': ('moschitz/img/i037.jpg', 0), 'h-road.jpg': ('moschitz/img/i012.jpg', 0), 'h-cabrio.jpg': ('/home/claude/r14raw/moschitz/extra/hero.jpg', 1920, (0, 0, 1, 0.905)),
     'p-sim1.jpg': ('moschitz/img/i036.jpg', 0), 'p-sim2.jpg': ('moschitz/img/i042.png', 0), 'p-sim3.jpg': ('moschitz/img/i039.png', 0),
     'v1.jpg': ('moschitz/img/i021.jpg', 0), 'v2.jpg': ('moschitz/img/i020.jpg', 0)}
 for i, n in enumerate(range(24, 31), 1): S['img'][f't{i}.jpg'] = (f'moschitz/img/i{n:03d}.jpg', 0)

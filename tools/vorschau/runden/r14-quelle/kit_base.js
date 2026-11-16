@@ -20,6 +20,8 @@
   dots.forEach(function(d,k){d.addEventListener('click',function(){go(k);auto()})});
   s.querySelectorAll('[data-prev]').forEach(function(b){b.addEventListener('click',function(){go(i-1);auto()})});
   s.querySelectorAll('[data-next]').forEach(function(b){b.addEventListener('click',function(){go(i+1);auto()})});
+  var x0=null;s.addEventListener('touchstart',function(e){x0=e.touches[0].clientX},{passive:true});
+  s.addEventListener('touchend',function(e){if(x0===null)return;var d=e.changedTouches[0].clientX-x0;if(Math.abs(d)>40){go(i+(d<0?1:-1));auto()}x0=null});
   if(sl.length>1)auto();
  });
  // Akkordeon
