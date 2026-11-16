@@ -24,12 +24,13 @@ def _city_kunden():
 def b_city(s):
     return (hd(s, False) + _city_hero(s)
         + marquee(['A · A2 · A1', 'B · B196 · B96 · BE', 'C · CE · C1', 'L · T', 'Simulator', 'Ferienfahrschule', 'Lerncenter', 'Fahrschulwechsel'], 'cm')
+        + vgrid('video', 'Mittendrin', 'So fühlt sich <em>City an.</em>', 'Ein Projekt unserer Fahrschüler: vom ersten Schritt bis ins Auto.', [
+            ('Schülerprojekt: Neu in Bramsche', 'mp4', 'v-city.mp4', 'v-city.jpg')], 'alt')
         + _city_kunden()
         + ablauf('anmeldung', 'Online anmelden', 'In vier Schritten <em>angemeldet.</em>', 'Wie bei den Großen, nur persönlicher: Du klickst dich durch, wir melden uns mit allen Infos und deiner Anmeldebestätigung.', [
             ('Fahrzeug wählen', 'Auto, Motorrad, Roller, Lkw oder Traktor.'), ('Führerscheintyp', 'Die passende Klasse, auch als Doppelführerschein.'),
             ('Kursart', 'Normal oder als Ferienfahrschule.'), ('Anmelden', 'Abschicken, Bestätigung kommt per Mail.')])
-        + vgrid('video', 'Mittendrin', 'So fühlt sich <em>City an.</em>', 'Ein Projekt unserer Fahrschüler: vom ersten Schritt bis ins Auto.', [
-            ('Schülerprojekt: Neu in Bramsche', 'mp4', 'v-city.mp4', 'v-city.jpg')], 'alt')
+
         + flotte('fuhrpark', 'Unser Fuhrpark', 'Vom Mofa <em>bis zum Actros.</em>', 'Alles mit dem City-Schriftzug, alles gepflegt. Auf diesen Fahrzeugen lernst du.', [
             ('f-id3.jpg', 'VW ID.3', 'Elektro · Klasse B', '50% 55%'), ('f-polo.jpg', 'VW Polo', 'Klasse B', '50% 55%'), ('f-tcross.jpg', 'VW T-Cross', 'Klasse B', '50% 55%'),
             ('f-hornet.jpg', 'Honda CB 750 Hornet', 'Klasse A / A2', '50% 55%'), ('f-actros.jpg', 'Mercedes Actros', 'Klasse C / CE', '50% 55%'), ('f-trak.jpg', 'Traktor', 'Klasse L / T', '50% 55%')], 'dk')
@@ -316,8 +317,8 @@ S = SITES['eggert'] = site(
     css='''.hp h1,.h2{font-weight:800;line-height:1.04;letter-spacing:-.02em}.hp h1 em,.h2 em{font-style:normal;color:var(--p)}.dk .h2 em{color:var(--a)}
 .comp{height:470px}.comp figure{border-radius:28px}.comp .c1{transform:rotate(-2deg)}.comp .badge{background:#e5007d;color:#fff}.comp .badge b,.comp .badge *{color:#fff!important}.promo figure{max-width:430px;justify-self:center}.promo .tag{background:#e5007d;color:#fff}
 .kl .k b{font-weight:800}.or .o b{font-weight:800}.or .o i{background:#fdc300!important;color:#17201a!important;padding:4px 10px!important;clip-path:polygon(0 0,92% 0,100% 50%,92% 100%,0 100%)}.ft img{background:#fff;padding:8px 12px;border-radius:12px}
-.hp{background:var(--hp-bg)!important}
-.or .grid{border-top:0!important;gap:26px 22px!important}.or .o,.or .o+.o{border:0!important;padding:0!important}.or .o b{display:inline-block;align-self:flex-start;background:#fdc300;color:#17201a;font-size:clamp(18px,1.5vw,22px)!important;text-transform:uppercase;padding:12px 34px 12px 16px;clip-path:polygon(0 0,90% 0,100% 50%,90% 100%,0 100%);box-shadow:inset 0 0 0 2px rgba(0,0,0,.06)}.or .o b::after{content:'';display:block}.or .o{position:relative}.or .o::before{content:'';position:absolute;left:18px;top:44px;bottom:-10px;width:5px;background:#9aa0a6;z-index:-1;opacity:.0}.or .o b{overflow-wrap:normal!important;white-space:nowrap}''')
+.or .grid{border-top:0!important;gap:26px 22px!important}.or .o,.or .o+.o{border:0!important;padding:0!important}.or .o b{display:inline-block;align-self:flex-start;background:#fdc300;color:#17201a;font-size:clamp(18px,1.5vw,22px)!important;text-transform:uppercase;padding:12px 34px 12px 16px;clip-path:polygon(0 0,90% 0,100% 50%,90% 100%,0 100%);box-shadow:inset 0 0 0 2px rgba(0,0,0,.06)}.or .o b::after{content:'';display:block}.or .o{position:relative}.or .o::before{content:'';position:absolute;left:18px;top:44px;bottom:-10px;width:5px;background:#9aa0a6;z-index:-1;opacity:.0}.or .o b{overflow-wrap:normal!important;white-space:nowrap}
+.hp{background:linear-gradient(90deg,var(--bg) 0%,color-mix(in srgb,var(--bg) 92%,transparent) 34%,color-mix(in srgb,var(--bg) 25%,transparent) 56%,color-mix(in srgb,var(--bg) 10%,transparent) 100%),url(img/emo.jpg) 62% 50%/cover no-repeat!important}.hp::before{opacity:.35}@media(max-width:820px){.hp{background:linear-gradient(0deg,var(--bg) 52%,color-mix(in srgb,var(--bg) 30%,transparent) 80%),url(img/emo.jpg) 62% 50%/auto 62% no-repeat!important}}''')
 S['bot'] = BOT('Edda', 'deine Eggert-Lotsin', 'der Fahrschule Eggert', S, ['B', 'B196', 'B96', 'BE', 'A', 'A2', 'A1', 'AM', 'Mofa', 'C', 'CE', 'L', 'T'],
     {'schnell': 'Mit sechs Filialen findest du immer einen Unterricht in deiner Nähe.', 'ruhe': 'Unsere Fahrschüler loben vor allem die Geduld unserer Fahrlehrer, auch wenn man etwas mehrmals erklärt braucht.', 'flex': 'Unsere Fahrschüler schreiben: Die Termine waren flexibel.', 'angst': 'In Dissen kannst du erst am Fahrsimulator üben. Und es gibt unsere Frauenfahrschule, von und für Frauen.'},
     qa=[('frau', 'Unsere Frauenfahrschule in der Iburger Straße 67 in Osnabrück ist von und für Frauen.'), ('simulator', 'Am Fahrsimulator in unserer Hauptfiliale in Dissen kannst du fahren lernen, bevor es auf die Straße geht.'), ('whatsapp', 'Klar, schreib uns gern per WhatsApp.')],
@@ -328,3 +329,5 @@ S['img'] = {'logo.png': ('eggert/img/i020.png', 0, 'alphacrop'), 'h-road.jpg': (
 S['body'] = b_eggert
 
 SITES['city']['img']['logo.png'] = ('/home/claude/r14raw/logos/city.png', 0)
+
+SITES['eggert']['img']['emo.jpg'] = ('/home/claude/pixa/emo_eggert.jpg', 0)

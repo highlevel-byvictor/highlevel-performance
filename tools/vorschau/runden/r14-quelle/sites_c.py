@@ -44,7 +44,8 @@ S = SITES['simon'] = site(
     kt_ey='Kontakt', kt_h2='Wir freuen uns <em>auf Sie.</em>', kt_p='Büro 05402 98070, Jörn Simon mobil 0174 9666031.',
     vars='--bg:#f4f7fc;--ink:#0f1d3a;--mute:#53607a;--p:#1f3fa6;--p-ink:#fff;--a:#2fae3d;--a-ink:#fff;--dk:#0f1d3a;--s:#fff;--s2:#e5ecf8;--fh:"Kanit",system-ui,sans-serif;--fb:"Open Sans",system-ui,sans-serif;--r:14px;--r2:22px;--br:10px;--mq-bg:#1f3fa6;--hd-bg:rgba(244,247,252,.95);--hd-ink:#0f1d3a;--logo-h:52px;--ft-bg:#0b1630;--hp-bg:linear-gradient(120deg,#f4f7fc 50%,#dfe8fb)',
     css='''.hp h1,.h2{font-weight:800;font-style:italic;letter-spacing:-.01em;line-height:1.12;padding-top:6px}.hp .ey{margin-bottom:14px}.hp h1 em,.h2 em{color:var(--a)}.dk .h2 em{color:#7fe08a}
-.comp{height:470px}.comp figure{border-radius:20px;transform:skewX(-3deg)}.comp figure img{transform:skewX(3deg) scale(1.06)}.ft img{background:#fff;padding:8px;border-radius:8px}''')
+.comp{height:470px}.comp figure{border-radius:20px;transform:skewX(-3deg)}.comp figure img{transform:skewX(3deg) scale(1.06)}.ft img{background:#fff;padding:8px;border-radius:8px}
+.hp{background:linear-gradient(90deg,var(--bg) 0%,color-mix(in srgb,var(--bg) 92%,transparent) 34%,color-mix(in srgb,var(--bg) 25%,transparent) 56%,color-mix(in srgb,var(--bg) 10%,transparent) 100%),url(img/emo.jpg) 40% 45%/cover no-repeat!important}.hp::before{opacity:.35}@media(max-width:820px){.hp{background:linear-gradient(0deg,var(--bg) 52%,color-mix(in srgb,var(--bg) 30%,transparent) 80%),url(img/emo.jpg) 40% 45%/auto 62% no-repeat!important}}''')
 S['bot'] = BOT('Sim', 'Ihr Fahrschul-Lotse', 'der Fahrschule Simon', S, ['B', 'BE', 'B96', 'B196', 'A', 'A2', 'A1', 'AM', 'Mofa'],
     {'schnell': 'Unterricht an vier Abenden pro Woche in zwei Filialen. Je öfter Sie kommen, desto schneller.', 'ruhe': 'Bei uns lernen Sie persönlich bei Jörn Simon, vom ersten bis zum letzten Tag.', 'flex': 'Montags und mittwochs in Schledehausen, dienstags und donnerstags in Venne.', 'angst': 'Sprechen Sie es einfach an. Wir starten in Ihrem Tempo.'},
     qa=[('venne|ostercappeln', 'Unsere Filiale in Venne: Hauptstraße 28, Unterricht dienstags und donnerstags ab 19 Uhr.'), ('bf17|17', 'Mit BF17 fahren Sie ab 17 mit Begleitperson. Infos auch unter bf17.de.')],
@@ -122,6 +123,7 @@ def b_ludwig(s):
         h1='Fahren lernen <em>ohne Druck.</em>',
         sub='Carsten Ludwig und Detlev bringen dich in Bohmte entspannt zum Führerschein. Mit Vogel-Simulator, DriversCam-Videosystem und Theorie, die tatsächlich Spaß macht.',
         g1=('4,7 ★', 'bei Google'), g2=('Di &amp; Do', 'Theorie 19:00 – 20:30')))
+        + vgrid('video', 'Kurz erklärt', 'So funktioniert <em>DriversCam.</em>', '', [('DriversCam, das Fahrschul-Videosystem', 'mp4', 'v-cam.mp4', 'v-cam.jpg')], 'dk')
         + sorgen('stimmen', 'Was Fahrschüler über uns sagen', 'Locker, geduldig, <em>ohne Stress.</em>', 'So beschreiben uns unsere Fahrschüler auf Google, sinngemäß:', [
             ('Was, wenn ich was nicht verstehe?', 'Dann wird es <b>ruhig und klar erklärt</b>. Du kannst jederzeit fragen, ohne dich schlecht zu fühlen.'),
             ('Ist das nicht total stressig?', 'Die Stunden sind <b>nicht stressig oder unter Druck</b>, sondern locker und angenehm. Man fühlt sich sofort wohl.'),
@@ -130,7 +132,7 @@ def b_ludwig(s):
         + duo('technik', 'Unsere Extras', 'Mehr sehen, <em>mehr verstehen.</em>', 'Zwei Werkzeuge, die dir das Lernen leichter machen.', [
             ('Vogel-Simulator', 'Der perfekte Begleiter', 'd-sim.jpg', 'Erste Handgriffe, Schalten und Anfahren in Ruhe üben, bevor es in den Verkehr geht.', ['ohne Verkehr', 'ohne Zeitdruck'], 'Mehr erfahren'),
             ('DriversCam', 'Das Fahrschul-Videosystem', 'd-cam.jpg', 'Deine Fahrstunden auf Video: So siehst du hinterher genau, was gut lief und was du noch üben solltest.', ['Video der Fahrstunde', 'auf dem Handy ansehen'], 'Mehr erfahren')])
-        + vgrid('video', 'Kurz erklärt', 'So funktioniert <em>DriversCam.</em>', '', [('DriversCam, das Fahrschul-Videosystem', 'mp4', 'v-cam.mp4', 'v-cam.jpg')], 'dk')
+
         + klassen('klassen', 'Führerscheine', 'Was willst <em>du fahren?</em>', '', [
             ('B · B197', 'Auto', 'B197: Ausbildung auf Schalter und Automatik, Prüfung auf Automatik.', 'ab 17', 'auto'),
             ('BE', 'Anhänger', 'Für schwere Anhänger und Wohnwagen.', 'ab 18', 'anh'),
@@ -268,3 +270,7 @@ S['img'] = {'logo.png': ('witte/img/i008.png', 0, 'trimalpha'), 'h1.jpg': ('witt
     'st-raum.jpg': ('witte/img/i015.jpg', 0), 'p-eh.jpg': ('witte/img/i020.jpg', 0),
     'f1.jpg': ('witte/img/i028.jpg', 0), 'f2.jpg': ('witte/img/i032.jpg', 0), 'f3.jpg': ('witte/img/i029.jpg', 0), 'f4.jpg': ('witte/img/i033.jpg', 0), 'f5.jpg': ('witte/img/i026.jpg', 0)}
 S['body'] = b_witte
+
+SITES['simon']['img']['emo.jpg'] = ('/home/claude/pixa/emo_simon.jpg', 0)
+
+

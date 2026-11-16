@@ -280,7 +280,8 @@ S = SITES['albers'] = site(
     vars='--bg:#fbfbf7;--ink:#1b2326;--mute:#58646a;--p:#8fb31d;--p-ink:#13200a;--a:#1aa1b8;--a-ink:#fff;--dk:#13262c;--s:#fff;--s2:#eef3e6;--fh:"Bitter",Georgia,serif;--fb:"Source Sans 3",system-ui,sans-serif;--r:12px;--r2:18px;--br:8px;--mq-bg:#8fb31d;--mq-ink:#13200a;--hd-bg:rgba(251,251,247,.95);--hd-ink:#1b2326;--logo-h:46px;--ft-bg:#0d1c21',
     css='''.hp h1{font-weight:800;line-height:1.08}.h2{font-weight:800;line-height:1.1}.hp h1 em,.h2 em{font-style:normal;color:#1aa1b8}.dk .h2 em{color:#b9dd4a}
 .comp{height:380px}.comp .c1{width:62%}@media (max-width:600px){.comp{height:300px}.comp .c1{width:52%}}.promo figure{max-width:430px;justify-self:center}.gl .grid{grid-template-columns:repeat(4,1fr)}.gl .grid .w2{grid-column:span 1}.comp figure img{object-fit:cover}.hd .logo img{height:46px}.ft img{background:#fff;padding:8px 12px;border-radius:6px}
-.gl .grid{grid-auto-rows:210px}.kl .k b{font-family:var(--fh)}''')
+.gl .grid{grid-auto-rows:210px}.kl .k b{font-family:var(--fh)}
+.hp{background:linear-gradient(90deg,var(--bg) 0%,color-mix(in srgb,var(--bg) 92%,transparent) 34%,color-mix(in srgb,var(--bg) 25%,transparent) 56%,color-mix(in srgb,var(--bg) 10%,transparent) 100%),url(img/emo.jpg) 30% 50%/cover no-repeat!important}.hp::before{opacity:.35}@media(max-width:820px){.hp{background:linear-gradient(0deg,var(--bg) 52%,color-mix(in srgb,var(--bg) 30%,transparent) 80%),url(img/emo.jpg) 30% 50%/auto 62% no-repeat!important}}''')
 S['bot'] = BOT('Bruno', 'Ihr Fahrschul-Lotse', 'der Fahrschule Albers', S, ['B', 'A', 'A2', 'A1', 'C', 'CE'],
     {'schnell': 'Rufen Sie uns an, dann planen wir den schnellsten Weg zur Prüfung.', 'ruhe': 'Bei uns lernen Sie in Ruhe, mit Fahrlehrern, die sich Zeit nehmen.', 'flex': 'Fahrstunden stimmen wir mit Ihnen ab, auch neben dem Job.', 'angst': 'Sprechen Sie es einfach an. Wir starten so, dass Sie sich sicher fühlen.'},
     qa=[('stapler', 'Ja, wir bieten die Gabelstaplerausbildung an, für Einzelpersonen und Unternehmen.'), ('bkf|berufskraft|modul|weiterbild|grundqual', 'Wir bieten die beschleunigte Grundqualifikation und die Weiterbildungsmodule für Lkw und Bus an.')],
@@ -458,3 +459,5 @@ S['body'] = b_tepe
 SITES['beckermann']['img']['logo.png'] = ('/home/claude/r14raw/logos/beckermann.png', 0)
 
 SITES['tepe']['img']['logo.png'] = ('/home/claude/r14raw/logos/tepe.png', 0)
+
+SITES['albers']['img']['emo.jpg'] = ('/home/claude/pixa/emo_albers.jpg', 0)

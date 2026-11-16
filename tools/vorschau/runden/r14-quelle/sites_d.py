@@ -11,6 +11,7 @@ def b_mammen(s):
         sub='Die Fahrschule Mammen bildet in Cloppenburg und sieben Orten drumherum aus. Mit Ratenzahlung, damit der Führerschein nicht am Geld scheitert, und mit MPU-Beratung, wenn es mal schiefgelaufen ist.',
         badge=('7 Orte', 'rund um Cloppenburg')))
         + marquee(['Klasse B', 'BE', 'A', 'CE', 'Ratenzahlung', 'Verkehrsakademie', 'MPU-Beratung', 'Aufbauseminare'], 'mm')
+        + vgrid('video', 'Erst fahren, später zahlen', 'Ratenzahlung <em>in 100 Sekunden erklärt.</em>', 'Der Erklärfilm unseres Abrechnungspartners Datapart zeigt, wie die Ratenzahlung für deinen Führerschein funktioniert.', [('So funktioniert die Ratenzahlung mit Datapart', 'mp4', 'v-raten.mp4', 'v-raten.jpg')], 'alt')
         + svc('angebot', 'Drei Bereiche', 'Fahrschule. Akademie. <em>Neustart.</em>', '', [
             ('Fahrschule', 'Auto, Anhänger, Motorrad und Lkw, mit Theorie in mehreren Orten rund um Cloppenburg.'),
             ('Verkehrsakademie', 'Seminare und Weiterbildung rund ums Fahren.'),
@@ -36,12 +37,13 @@ S = SITES['mammen'] = site(
     vars='--bg:#f7f5f2;--ink:#121212;--mute:#5b5853;--p:#d0142c;--p-ink:#fff;--a:#d0142c;--a-ink:#fff;--dk:#121212;--s:#fff;--s2:#ece8e2;--fh:"Anton",Impact,sans-serif;--fb:"Karla",system-ui,sans-serif;--r:8px;--r2:12px;--br:4px;--mq-bg:#121212;--mq-ink:#fff;--hd-bg:#000000;--hd-ink:#ffffff;--logo-h:42px;--ft-bg:#0b0b0b',
     css='''.hp h1,.h2{font-weight:400;text-transform:uppercase;letter-spacing:.01em;line-height:1.04;padding-top:4px}.hp h1 em,.h2 em{font-style:normal;color:var(--p)}.dk .h2 em{color:#ff5267}
 .comp{height:360px}.comp .c1{width:62%}.promo figure{max-width:380px;justify-self:center}.gl .grid{grid-template-columns:repeat(4,1fr);grid-auto-rows:200px}.gl .grid .w2{grid-column:span 1}.hd .logo img{filter:none}.ft img{filter:invert(1)}.mq span{font-weight:400}
-.hd{background:#000!important;color:#fff!important}.hd .nav a{color:#fff}''')
+.hd{background:#000!important;color:#fff!important}.hd .nav a{color:#fff}
+.hp{background:linear-gradient(90deg,var(--bg) 0%,color-mix(in srgb,var(--bg) 92%,transparent) 34%,color-mix(in srgb,var(--bg) 25%,transparent) 56%,color-mix(in srgb,var(--bg) 10%,transparent) 100%),url(img/emo.jpg) 45% 40%/cover no-repeat!important}.hp::before{opacity:.35}@media(max-width:820px){.hp{background:linear-gradient(0deg,var(--bg) 52%,color-mix(in srgb,var(--bg) 30%,transparent) 80%),url(img/emo.jpg) 45% 40%/auto 62% no-repeat!important}}''')
 S['bot'] = BOT('Max', 'Ihr Mammen-Lotse', 'der Fahrschule Mammen', S, ['B', 'BE', 'A', 'A2', 'A1', 'CE', 'C'],
     {'schnell': 'Zwei Theorie-Unterrichte an einem Mittwoch: So kommen Sie zügig durch.', 'ruhe': 'Unsere Fahrschüler loben Fahrlehrer, die ruhig und ohne Stress erklären.', 'flex': 'Sieben Orte rund um Cloppenburg, da ist einer in Ihrer Nähe.', 'angst': 'Sprechen Sie es an. Wir erklären alles in Ruhe.'},
     qa=[('rate|finanz|bezahl|zahl', 'Bei uns ist Ratenzahlung möglich. Die Details klären wir persönlich mit Ihnen.'), ('mpu', 'Wir bieten MPU-Hilfe und Beratung an, sprechen Sie uns einfach an.')],
     tour=[('#angebot', 'Fahrschule und MPU-Beratung.'), ('#finanzierung', 'Ratenzahlung möglich.'), ('#standorte', 'Sieben Orte.'), ('#kontakt', 'Hier melden Sie sich an.')], du=False)
-S['img'] = {'logo.png': ('mammen/img/i022.png', 0, 'alphacrop'), 'h1.jpg': ('mammen/img/i024.png', 0), 'h2.jpg': ('mammen/img/i021.webp', 0), 'h3.jpg': ('mammen/img/i010.png', 0),
+S['img'] = {'v-raten.mp4': ('/home/claude/r14raw/mammen/vid/v.mp4', 0), 'v-raten.jpg': ('/home/claude/r14raw/mammen/vid/poster.jpg', 0), 'logo.png': ('mammen/img/i022.png', 0, 'alphacrop'), 'h1.jpg': ('mammen/img/i024.png', 0), 'h2.jpg': ('mammen/img/i021.webp', 0), 'h3.jpg': ('mammen/img/i010.png', 0),
     'd-fs.jpg': ('mammen/img/i003.png', 0), 'd-mpu.jpg': ('mammen/img/i004.png', 0), 'p-raten.jpg': ('mammen/img/i008.png', 0),
     'g1.jpg': ('mammen/img/i009.png', 0), 'g2.jpg': ('mammen/img/i005.png', 0), 'g3.jpg': ('mammen/img/i006.png', 0), 'g4.jpg': ('mammen/img/i007.png', 0), 'g5.jpg': ('mammen/img/i020.webp', 0), 'g6.jpg': ('mammen/img/i023.png', 0)}
 S['body'] = b_mammen
@@ -97,13 +99,18 @@ S['img'] = {'h-team.jpg': ('schulzv/img/i103.webp', 0), 'h-cars.jpg': ('schulzv/
 S['body'] = b_schulz
 
 # ───────────── 18. Fahrschule Moss, Vechta & Lohne ─────────────
+def _vidhero(h, src='hero.mp4', poster='hero-v.jpg'):
+    v = f'<video class="hx-vid" autoplay muted loop playsinline preload="auto" poster="img/{poster}"><source src="img/{src}" type="video/mp4"></video>'
+    i = h.find('>', h.find('<section class="hx')) + 1
+    return h[:i] + v + h[i:]
+
 def b_moss(s):
-    return (hd(s) + hero_x(s, dict(
+    return (hd(s) + _vidhero(hero_x(s, dict(
         img='h-hof.jpg', pos='50% 30%', bg='h-car.jpg', quick=['auto', 'moto', 'roller', 'anh'],
         ey='Fahrschule Moss · Vechta &amp; Lohne · ehrlich und fair',
         h1='Bestanden. <em>Prüfling der Woche.</em>',
-        sub='Jede Woche feiern wir unsere frischen Führerschein-Besitzer. Damit du der Nächste bist: Termine online reservieren, direkt online anmelden und viermal pro Woche Unterricht in Vechta und Lohne.',
-        g1=('4,8 ★', '50 Google-Bewertungen'), g2=('4× pro Woche', 'Unterricht, 2× Vechta, 2× Lohne')))
+        sub='Jede Woche feiern wir unsere frischen Führerschein-Besitzer. Damit du der Nächste bist: Termine online reservieren, direkt online anmelden und viermal pro Woche Unterricht in Vechta und Lohne.')))
+        + vgrid('videos', 'Mittendrin', 'Fahrschule Moss <em>in Bewegung.</em>', 'Seit über 45 Jahren in Vechta: vom B96-Anhängerführerschein an einem Tag bis zur Rundfahrt durch Vechta von 1987.', [('Anhänglich … B96-Schulung an nur einem Tag', 'mp4', 'v-b96.mp4', 'v-b96.jpg'), ('Rundfahrt durch Vechta, 1987', 'mp4', 'https://www.fahrschule-moss.de/media/video/Rundfahrt_durch_Vechta-1987.mp4', 'v-1987.jpg')], 'alt')
         + gallery('halloffame', 'Hall of Fame', 'Gut gemacht! <em>Unsere Prüflinge.</em>', [
             ('hf1.jpg', '', '50% 30%'), ('hf2.jpg', '', '50% 30%'), ('hf3.jpg', '', '50% 30%'), ('hf4.jpg', '', '50% 30%'), ('hf5.jpg', '', '50% 30%'), ('hf6.jpg', '', '50% 30%'), ('hf7.jpg', '', '50% 30%'), ('hf8.jpg', '', '50% 30%')], 'dk')
         + ablauf('weg', 'Der schnellste Weg', 'Online in drei Klicks, <em>dann fährst du.</em>', '', [
@@ -139,7 +146,8 @@ S = SITES['moss'] = site(
     css='''.hx{color:#fff}.hx .sub{color:rgba(255,255,255,.75)}.hx .btn-o{color:#fff}.hx .chip{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);color:#fff}
 .hx h1{font-weight:800;font-size:clamp(38px,4.6vw,70px);line-height:1.08}.hx h1 em,.h2 em{font-style:normal;color:var(--p)}.h2{font-weight:700;letter-spacing:-.02em;font-size:clamp(32px,3.6vw,56px)}
 .hx .pic{--hx-ar:4/5;max-width:440px;justify-self:end}.hd .lt-logo{color:#fff;font-size:18px}.gl .grid{grid-template-columns:repeat(4,1fr);grid-auto-rows:320px}@media (max-width:820px){.gl .grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:240px}}
-.tm .grid{grid-template-columns:repeat(3,1fr)}.tm figure img{aspect-ratio:1/1;object-position:50% 25%}''')
+.tm .grid{grid-template-columns:repeat(3,1fr)}.tm figure img{aspect-ratio:1/1;object-position:50% 25%}
+.hx-vid{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;opacity:.8}.hx{position:relative;overflow:hidden}.hx>.w{position:relative;z-index:2}.hx::after{content:'';position:absolute;inset:0;z-index:1;background:linear-gradient(90deg,rgba(11,20,36,.9) 0%,rgba(11,20,36,.55) 48%,rgba(11,20,36,.15) 100%)}''')
 S['bot'] = BOT('Milo', 'dein Moss-Lotse', 'der Fahrschule Moss', S, ['B', 'B197', 'BE', 'B96', 'B196', 'A', 'A2', 'A1', 'AM', 'Mofa'],
     {'schnell': 'Termine reservierst du online, Unterricht gibt es viermal pro Woche.', 'ruhe': 'Unsere Fahrschüler gehen völlig entspannt in die Prüfung, sagen sie.', 'flex': 'Unterricht zweimal in Vechta und zweimal in Lohne, du kannst beide besuchen.', 'angst': 'Phillip, Robert und Tobias gelten als geduldig und humorvoll.'},
     qa=[('lohne', 'In Lohne findet zweimal pro Woche Unterricht statt.'), ('wohnwagen|anhänger|be|b96', 'Anhänger-Führerschein BE und B96: Wir helfen auch, wenn es schnell gehen muss.'), ('termin|reserv', 'Unsere Unterrichtstermine der nächsten Wochen kannst du online reservieren.')],
@@ -258,7 +266,14 @@ S['body'] = b_kaiser
 SITES['schulz']['img']['logo.png'] = ('/home/claude/r14raw/logos/schulz.webp', 0)
 
 SITES['moss']['img']['logo.png'] = ('/home/claude/r14raw/logos/moss.webp', 0)
+SITES['moss']['img']['hero.mp4'] = ('/home/claude/r14raw/moss/vid/hero.mp4', 0)
+SITES['moss']['img']['hero-v.jpg'] = ('/home/claude/r14raw/moss/vid/hero.jpg', 0)
+SITES['moss']['img']['v-b96.mp4'] = ('/home/claude/r14raw/moss/vid/b96s.mp4', 0)
+SITES['moss']['img']['v-1987.jpg'] = ('/home/claude/r14raw/moss/vid/r1987.jpg', 0)
 
 SITES['christians']['img']['logo.png'] = ('/home/claude/r14raw/logos/christians.png', 0)
 
 SITES['kaiser']['img']['logo.png'] = ('/home/claude/r14raw/logos/kaiser.png', 0)
+SITES['moss']['img']['v-b96.jpg'] = ('/home/claude/r14raw/moss/vid/b96p.jpg', 0)
+
+SITES['mammen']['img']['emo.jpg'] = ('/home/claude/pixa/emo_mammen.jpg', 0)

@@ -116,7 +116,7 @@ def vgrid(id, ey, h2, lead, items, cls=''):
             f += f'<div class="it" data-r><div class="frame" data-vm="{src}"><img src="img/{poster}" alt="" loading="lazy"><button class="play" aria-label="Video abspielen" onclick="{on}">{PL}</button></div><h3>{t}</h3><small>Vimeo, lädt erst beim Klick</small></div>'
         else:
             on = "var f=this.parentNode,m=f.querySelector('video');this.remove();m.controls=true;m.play()"
-            f += f'<div class="it" data-r><div class="frame"><video src="img/{src}" poster="img/{poster}" preload="none" playsinline></video><button class="play" aria-label="Video abspielen" onclick="{on}">{PL}</button></div><h3>{t}</h3></div>'
+            f += f'<div class="it" data-r><div class="frame"><video src="{src if src.startswith('http') else 'img/' + src}" poster="img/{poster}" preload="none" playsinline></video><button class="play" aria-label="Video abspielen" onclick="{on}">{PL}</button></div><h3>{t}</h3></div>'
     return f'<section class="sec vg {cls}" id="{id}"><div class="w"><div data-r>{head(ey,h2,lead)}</div><div class="grid">{f}</div></div></section>'
 
 def reviews(s, items, cls=''):
