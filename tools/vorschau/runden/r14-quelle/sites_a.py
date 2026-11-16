@@ -2,74 +2,240 @@
 from common import *
 SITES = {}
 
+SALLER_CSS = """
+.hd,.hd.scr{background:var(--hd-bg)!important;color:#fff!important;box-shadow:0 2px 0 rgba(0,0,0,.08)}.hd a,.hd .nav a{color:#fff}.hd .btn-a,.hd .cta{background:var(--y)!important;color:#1d1d1f!important}
+.h2{font-weight:800;text-transform:uppercase;letter-spacing:-.01em;line-height:1.05}.h2 em{font-style:normal;color:var(--p)}.dk .h2 em{color:var(--y)}
+.btn-a{background:var(--p);color:#fff}
+/* Hero wie im Original: Schlüsselübergabe vollflächig, gelbe Buttons, Kasten mit Botschaft */
+.sx{position:relative;min-height:min(96vh,900px);padding-top:var(--sxt,88px);display:flex;color:#fff;overflow:hidden;background:#222}
+.sx-bg{position:absolute;inset:var(--sxt,88px) 0 0 0}.sx-bg img{width:100%;height:100%;object-fit:cover;object-position:30% 40%}
+.sx-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.35),rgba(0,0,0,0) 30%),linear-gradient(0deg,rgba(0,0,0,.72),rgba(0,0,0,0) 60%)}
+.sx-in{position:relative;display:flex;flex-direction:column;justify-content:space-between;gap:40px;padding:28px 24px 56px;width:100%}
+.sx-ctas{display:flex;gap:16px;justify-content:flex-end;flex-wrap:wrap}
+.sx-y{display:inline-flex;align-items:center;gap:10px;background:var(--y);color:#1d1d1f;font:800 15px/1.2 var(--fb);text-transform:uppercase;letter-spacing:.02em;padding:16px 22px;border-radius:4px;text-decoration:none;box-shadow:0 10px 30px rgba(0,0,0,.25);transition:transform .2s}
+.sx-y:hover{transform:translateY(-2px)}.sx-y svg{color:var(--p)}
+.sx-pan{max-width:600px;background:rgba(255,255,255,.93);color:#1d1d1f;padding:30px 34px;border-left:6px solid var(--p);backdrop-filter:blur(6px)}
+.sx-pan h1{font:800 clamp(32px,3.6vw,52px)/1.03 var(--fh);text-transform:uppercase;color:var(--p);margin:14px 0 12px;letter-spacing:-.01em}
+.sx-call{font:700 clamp(20px,1.8vw,26px) var(--fh);margin:0}.sx-call a{color:var(--p);text-decoration:none;white-space:nowrap}
+.sx-sub{margin:8px 0 0;font-size:17px;color:#45454b}
+.sx-pan .qk,.sx-pan .quick{margin-top:18px}
+@media(max-width:820px){.sx{flex-direction:column;min-height:0}.sx-bg{position:relative;height:56vw}.sx-bg::after{background:none}.sx-in{padding:18px 16px 28px;gap:18px}.sx-ctas{justify-content:stretch;flex-direction:column}.sx-y{justify-content:center}.sx-pan{padding:22px 20px;background:#fff}}
+/* Intro mit Henrik */
+.si-g{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,5vw,80px);align-items:center}
+.si-pic{margin:0;position:relative}.si-pic img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 20%;display:block}
+.si-pic::before{content:"";position:absolute;inset:18px -18px -18px 18px;border:3px solid var(--p);z-index:-1}
+.si-pic figcaption{font-size:14px;color:var(--mute);margin-top:30px}
+.si-fvn img{height:74px;width:auto;margin:6px 0 22px}
+.si-v{list-style:none;padding:0;margin:clamp(40px,6vw,80px) 0 0;display:grid;grid-template-columns:repeat(4,1fr);border-top:3px solid var(--p)}
+.si-v li{padding:22px 22px 0 0}.si-v li+li{padding-left:22px;border-left:1px solid #e3e1de}
+.si-v b{display:block;font:800 clamp(28px,2.6vw,40px)/1 var(--fh);color:var(--p)}.si-v span{display:block;font-weight:700;margin:6px 0}.si-v small{color:var(--mute);font-size:15px;line-height:1.45}
+@media(max-width:820px){.si-g{grid-template-columns:1fr}.si-v{grid-template-columns:1fr 1fr}.si-v li:nth-child(3){padding-left:0;border-left:0}}
+/* Region */
+.sre{background:var(--s2)}.sre-g{display:grid;grid-template-columns:minmax(0,5fr) minmax(0,7fr);gap:clamp(28px,5vw,72px);align-items:center}
+.sre-p{display:grid;grid-template-columns:1fr 1fr;gap:18px}.sre-p figure{margin:0}.sre-p figure:nth-child(2){margin-top:48px}
+.sre-p img{width:100%;aspect-ratio:4/3;object-fit:cover;display:block}.sre-p figcaption{font-weight:700;margin-top:10px;font-size:15px}
+@media(max-width:820px){.sre-g{grid-template-columns:1fr}}
+/* Rote Standort-Sektion wie im Original */
+.sor{background:var(--p);color:#fff}.sor .ey{color:#fff!important;opacity:.85}.sor .h2,.sor .h2 em{color:#fff}.sor .h2 em{color:var(--y)}
+.sor-g{display:grid;grid-template-columns:1fr 1fr;gap:clamp(28px,4vw,56px) clamp(28px,4vw,64px);margin-top:44px}
+.so-o{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:22px;align-items:center}
+.so-o figure{margin:0;background:#fff;padding:8px 8px 8px;transform:rotate(-1.4deg);box-shadow:0 14px 34px rgba(0,0,0,.25);max-width:380px}
+.so-o:nth-child(even) figure{transform:rotate(1.2deg)}
+.so-o figure img{width:100%;aspect-ratio:11/7;object-fit:cover;display:block}
+.so-tag{color:var(--y);font-weight:800;text-transform:uppercase;letter-spacing:.05em;font-size:14px;margin:0}
+.so-o h3{font:800 clamp(28px,2.6vw,38px)/1 var(--fh);text-transform:uppercase;margin:6px 0 8px;color:#fff}
+.so-o p{margin:0;font-size:16px;color:rgba(255,255,255,.92)}.so-l{margin-top:12px!important;display:flex;gap:16px;flex-wrap:wrap}
+.so-l a svg{width:16px;height:16px;vertical-align:-3px}.so-l a{color:#fff;font-weight:700;text-decoration:none;border-bottom:2px solid var(--y);padding-bottom:2px}
+@media(max-width:900px){.sor-g{grid-template-columns:1fr}}@media(max-width:520px){.so-o{grid-template-columns:1fr}}
+/* Erste Hilfe */
+.seh{background:linear-gradient(90deg,#fff 0 60%,var(--y) 60% 100%)}.seh-g{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(28px,5vw,80px);align-items:center}
+.seh-f{margin:0;justify-self:center}.seh-f img{width:min(340px,70vw);display:block;box-shadow:0 24px 60px rgba(0,0,0,.25);transform:rotate(2deg)}
+.seh-n{margin:22px 0;padding:16px 0 16px 18px;border-left:5px solid var(--p)}.seh-n span{display:block;font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--mute);font-weight:700}
+.seh-n b{display:block;font:800 26px var(--fh);color:var(--p)}.seh-n small{color:var(--mute)}
+@media(max-width:820px){.seh{background:#fff}.seh-g{grid-template-columns:1fr}}
+/* Fuhrpark */
+.sfp-top{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,5fr);gap:clamp(28px,5vw,72px);align-items:center}
+.sfp-hero{margin:0}.sfp-hero img{width:100%;aspect-ratio:16/11;object-fit:cover;object-position:50% 55%;display:block}
+.sfp-l{list-style:none;padding:0;margin:clamp(36px,5vw,64px) 0 0;display:grid;grid-template-columns:repeat(4,1fr);gap:34px 26px}
+.sfp-l img{width:100%;max-width:300px;aspect-ratio:1;object-fit:cover;display:block;background:#fff}
+.sfp-l b{display:block;font:800 22px var(--fh);text-transform:uppercase;margin-top:12px;border-top:3px solid var(--p);padding-top:10px}.sfp-l span{color:var(--mute);font-size:15px}
+@media(max-width:900px){.sfp-top{grid-template-columns:1fr}.sfp-l{grid-template-columns:1fr 1fr}}
+/* Medienräume */
+.smr-g{display:grid;grid-template-columns:1.4fr 1fr 1fr;grid-auto-rows:clamp(180px,19vw,270px);gap:14px;margin-top:40px}.smr-g figure:last-child{grid-column:span 2}
+.smr-g figure{margin:0;position:relative;overflow:hidden}.smr-g figure:first-child{grid-row:span 2}
+.smr-g img{width:100%;height:100%;object-fit:cover;display:block;min-height:200px}
+.smr-g figcaption{position:absolute;left:0;bottom:0;background:var(--p);color:#fff;font-weight:800;text-transform:uppercase;font-size:13px;letter-spacing:.06em;padding:7px 12px}
+@media(max-width:820px){.smr-g{grid-template-columns:1fr 1fr}.smr-g figure:first-child{grid-column:span 2;grid-row:auto}}
+/* Behörde, App, Gruß */
+.sbh{background:var(--s2)}.sbh-g{display:grid;grid-template-columns:1fr 1fr 1fr;gap:clamp(24px,4vw,60px);align-items:start}
+.sbh-a{font-size:17px;line-height:1.6;margin:0}.sbh-s{display:flex;gap:10px;margin-top:14px}.sbh-s img{height:40px;width:auto}
+.sbh-grus p{font:800 28px/1.1 var(--fh);text-transform:uppercase;margin:0;color:var(--p)}.sbh-grus b{display:block;margin-top:8px;font-size:18px}
+@media(max-width:820px){.sbh-g{grid-template-columns:1fr}}
+.kl .k b{font-weight:800}
+"""
+
 # ───────────── 1. Fahrschule K.H. Saller, Badbergen · Alfhausen · Ankum · Bersenbrück ─────────────
+# Nach Viktors Vorgabe 16.11.: Original-Aufbau von fahrschule-saller.de 1:1 übernehmen, nur moderner.
+def _sal_map(adr):
+    return 'https://www.google.com/maps/search/?api=1&amp;query=' + adr.replace(' ', '+')
+
 def b_saller(s):
-    return (hd(s, False) + hero_x(s, dict(
-        img='h-henrik.jpg', pos='50% 28%', bg='h-oskar.jpg', quick=['auto', 'moto', 'roller', 'anh'],
-        ey='Fahrschule im Artland · seit 1989',
-        h1='Bei Saller macht man <em>seinen Führerschein.</em>',
-        sub='Vier Orte, vier Abende, ein Fahrlehrer mit Leib und Seele: Henrik Grover bringt dich in Badbergen, Alfhausen, Ankum und Bersenbrück sicher auf die Straße. Auto, Motorrad, Roller und Anhänger.',
-        g1=('Seit 2007', 'Henrik in der Fahrschule'), g2=('4 Orte', 'Mo · Di · Mi · Do')))
+    hero = f"""<section class="sx" id="top">
+  <div class="sx-bg"><img src="img/h-schluessel.jpg" alt="Schlüsselübergabe nach bestandener Prüfung" fetchpriority="high"></div>
+  <div class="w sx-in">
+    <div class="sx-ctas" data-r>
+      <a class="sx-y" href="#kontakt">{CAR} Anmeldung Führerschein</a>
+      <a class="sx-y" href="#erste-hilfe">{AID} Erste Hilfe &amp; Sehtest: Kursinfos und Anmeldung</a>
+    </div>
+    <div class="sx-pan" data-r="2">
+      {chip(s)}
+      <h1>Bei Saller macht man seinen Führerschein!</h1>
+      <p class="sx-call">Rufe uns an: <a href="tel:{s['tel_i']}">0171-3866717</a></p>
+      <p class="sx-sub">Wir beraten Dich gerne. Unterricht und Anmeldung in Badbergen, Alfhausen, Ankum und Bersenbrück.</p>
+      {quick(s, dict(quick=['auto', 'moto', 'roller', 'anh']))}
+    </div>
+  </div>
+</section>"""
+    vorteile = [('4', 'Unterrichtsorte', 'Mo Badbergen · Di Alfhausen · Mi Ankum · Do Bersenbrück'),
+                ('1989', 'gegründet', 'von Kalle Saller, seit 2023 geführt von Henrik Grover'),
+                ('B · BE', '+ alle Zweiräder', 'Auto, Anhänger, Motorrad, 125er und Roller'),
+                ('Erste Hilfe', '+ Sehtest', 'direkt bei uns, samstags in Badbergen')]
+    vt = ''.join(f'<li data-r><b>{a}</b><span>{b}</span><small>{c}</small></li>' for a, b, c in vorteile)
+    intro = f"""<section class="sec si" id="ueber">
+  <div class="w si-g">
+    <figure class="si-pic" data-r><img src="img/p-henrik.jpg" alt="Henrik Grover, Inhaber der Fahrschule Saller" loading="lazy"><figcaption>Henrik Grover · Fahrlehrer mit Leib und Seele</figcaption></figure>
+    <div class="si-tx" data-r="2">
+      <p class="ey">Fahrschule Saller · Inh. Henrik Grover</p>
+      <h2 class="h2">Wir begleiten Dich auf dem Weg <em>zum Führerschein.</em></h2>
+      <p class="lead">Henrik war zwölf Jahre Soldat, hat bei Saller seine Ausbildung zum Fahrlehrer gemacht und gehört seit 2007 fest dazu. Seit Mai 2023 führt er die Fahrschule. Er bildet B und BE sowie alle Zweiradklassen aus und fährt in seiner Freizeit selbst leidenschaftlich Motorrad.</p>
+      <div class="si-fvn"><img src="img/fvn.png" alt="Fahrlehrerverband Niedersachsen e.V. – Ihre Verbandsfahrschule" loading="lazy"></div>
+      <a class="btn btn-a" href="#kontakt">Jetzt anmelden {AR}</a>
+    </div>
+  </div>
+  <div class="w"><ul class="si-v">{vt}</ul></div>
+</section>"""
+    orte_l = [('Badbergen', 'Hauptstraße 64', '49635 Badbergen', 'Montags', 'o-badbergen.jpg', 'Hauptstraße 64 49635 Badbergen'),
+              ('Alfhausen', 'Hauptstraße 6', '49594 Alfhausen', 'Dienstags', 'o-alfhausen.jpg', 'Hauptstraße 6 49594 Alfhausen'),
+              ('Ankum', 'Hauptstraße 75 (Gebäude OLB)', '49577 Ankum', 'Mittwochs', 'o-ankum.jpg', 'Hauptstraße 75 49577 Ankum'),
+              ('Bersenbrück', 'Bramscher Straße 54', '49593 Bersenbrück', 'Donnerstags', 'o-bersenbrueck.jpg', 'Bramscher Straße 54 49593 Bersenbrück')]
+    oc = ''.join(f"""<article class="so-o" data-r>
+      <figure><img src="img/{img}" alt="Schulungsraum der Fahrschule Saller in {o}" loading="lazy"></figure>
+      <div><p class="so-tag">{tag} · 18:00 – 19:45 Uhr</p><h3>{o}</h3><p>{st}<br>{pl}</p>
+      <p class="so-l"><a href="{_sal_map(q)}" target="_blank" rel="noopener">Route planen {AR}</a> <a href="tel:{s['tel_i']}">Mobil 0171-3866717</a></p></div>
+    </article>""" for o, st, pl, tag, img, q in orte_l)
+    orte_sec = f"""<section class="sec sor" id="orte">
+  <div class="w"><div data-r><p class="ey">Unterricht und Anmeldung</p><h2 class="h2">Unsere Schulungsräume <em>findest du in:</em></h2></div>
+  <div class="sor-g">{oc}</div></div>
+</section>"""
+    eh = f"""<section class="sec seh" id="erste-hilfe">
+  <div class="w seh-g">
+    <div data-r><p class="ey">Erste-Hilfe-Kurs &amp; Sehtest</p><h2 class="h2">Alles für deinen Antrag <em>an einem Samstag.</em></h2>
+      <p class="lead">Für den Führerschein brauchst du einen Erste-Hilfe-Kurs und einen Sehtest. Beides bekommst du direkt bei uns: Der Kurs findet ein- bis zweimal im Monat samstags in Badbergen statt, den Sehtest buchst du einfach dazu.</p>
+      <p class="seh-n"><span>Nächster Termin</span><b>Samstag, 19.12.2026</b><small>in Badbergen · Anmeldung über das Formular oder telefonisch</small></p>
+      <a class="btn btn-a" href="#kontakt">Platz im Kurs sichern {AR}</a></div>
+    <figure class="seh-f" data-r="2"><img src="img/eh-flyer.jpg" alt="Flyer Erste-Hilfe-Kurs der Fahrschule Saller" loading="lazy"></figure>
+  </div>
+</section>"""
+    flotte_k = [('f-cooper.jpg', 'Cooper', 'VW Golf VIII · Klasse B'), ('f-octavia.jpg', 'Octavia', 'Skoda Octavia · Schaltung'), ('f-obelix.jpg', 'Obelix', 'Koch-Anhänger 2.700 kg · BE'),
+                ('f-ladyk.jpg', 'Lady K', 'Kawasaki Z650 · A'), ('f-er6.jpg', 'ER-6n', 'Kawasaki · A2'), ('f-duke.jpg', 'KTM Duke', 'A1 / B196'),
+                ('f-z125.jpg', 'Z125', 'Kawasaki · A1'), ('f-matilda.jpg', 'Matilda', 'Hyosung Aquila GV 125 S')]
+    fk = ''.join(f'<li data-r><img src="img/{i}" alt="{t}" loading="lazy"><b>{t}</b><span>{x}</span></li>' for i, t, x in flotte_k)
+    fuhr = f"""<section class="sec sfp" id="fuhrpark">
+  <div class="w sfp-top">
+    <figure class="sfp-hero" data-r><img src="img/f-oskar.jpg" alt="Skoda Octavia RS Automatik „Oskar“" loading="lazy"></figure>
+    <div data-r="2"><p class="ey">Fuhrpark</p><h2 class="h2">Darf ich vorstellen: <em>Oskar.</em></h2>
+      <p class="lead">Unser Skoda Octavia RS mit Automatik ist der Neue im Team und perfekt für B197. Bei uns haben die Fahrzeuge Namen, und jedes ist für einen bestimmten Führerschein da.</p></div>
+  </div>
+  <div class="w"><ul class="sfp-l">{fk}</ul></div>
+</section>"""
+    medien = f"""<section class="sec smr" id="medienraeume">
+  <div class="w"><div data-r><p class="ey">Medienräume</p><h2 class="h2">Theorie in <em>modernen Medienräumen.</em></h2><p class="lead">In allen vier Orten lernst du in hellen Räumen mit moderner Technik. Dazu kommt die FahrAPP, mit der du unterwegs am Handy übst.</p></div>
+  <div class="smr-g">
+    <figure data-r><img src="img/m-badbergen.jpg" alt="" loading="lazy"><figcaption>Badbergen</figcaption></figure>
+    <figure data-r><img src="img/m-alfhausen.jpg" alt="" loading="lazy"><figcaption>Alfhausen</figcaption></figure>
+    <figure data-r><img src="img/m-ankum.jpg" alt="" loading="lazy"><figcaption>Ankum</figcaption></figure>
+    <figure data-r><img src="img/m-bersenbrueck.jpg" alt="" loading="lazy"><figcaption>Bersenbrück</figcaption></figure>
+  </div></div>
+</section>"""
+    region = f"""<section class="sec sre" id="region">
+  <div class="w sre-g">
+    <div data-r><p class="ey">Für die Region</p><h2 class="h2">Gemeinsam engagieren wir uns <em>für die Region.</em></h2><p class="lead">Ob Festanhänger oder Fußballdart XXL: Wir unterstützen Vereine und Veranstaltungen bei uns im Artland.</p>
+      <a class="btn btn-o" href="https://p-h-s-druck.eu/075729/" target="_blank" rel="noopener">Mehr erfahren {AR}</a></div>
+    <div class="sre-p">
+      <figure data-r><img src="img/r-fest.jpg" alt="Festanhänger mit Fahrschule-Saller-Werbung" loading="lazy"><figcaption>Festanhänger</figcaption></figure>
+      <figure data-r="2"><img src="img/r-dart.jpg" alt="Fußballdart XXL" loading="lazy"><figcaption>Fußballdart XXL</figcaption></figure>
+    </div>
+  </div>
+</section>"""
+    behoerde = f"""<section class="sec sbh">
+  <div class="w sbh-g">
+    <div data-r><p class="ey">Zuständige Fahrerlaubnisbehörde</p><p class="sbh-a"><b>Landkreis Osnabrück</b><br>Am Schölerberg 1<br>49082 Osnabrück</p></div>
+    <div data-r="2"><p class="ey">Lernen am Handy</p><p class="sbh-a"><b>FahrAPP &amp; FahrPRAXIS</b><br>Theorie üben und Fahrstunden im Blick, wann und wo du willst.</p>
+      <p class="sbh-s"><img src="img/appstore.png" alt="Download im App Store" loading="lazy"><img src="img/googleplay.png" alt="Jetzt bei Google Play" loading="lazy"></p></div>
+    <div data-r="3" class="sbh-grus"><p>Wir freuen uns auf Dich!</p><b>Euer Henrik Grover</b></div>
+  </div>
+</section>"""
+    return (hd(s, False) + hero
         + marquee(['Klasse B', 'B197 Automatik', 'BF17', 'BE Anhänger', 'A · A2 · A1', 'B196', 'AM · Mofa', 'Erste Hilfe &amp; Sehtest'])
-        + orte('orte', 'Unterricht &amp; Anmeldung', 'Jeden Abend <em>in deiner Nähe.</em>', 'Du musst nicht weit fahren: Theorie und Anmeldung gibt es an vier Abenden in vier Orten, jeweils von 18:00 bis 19:45 Uhr.', [
-            ('Badbergen', 'Hauptstraße 64', 'Montags'), ('Alfhausen', 'Hauptstraße 6', 'Dienstags'), ('Ankum', 'Hauptstraße 75 (Gebäude OLB)', 'Mittwochs'), ('Bersenbrück', 'Bramscher Straße 54', 'Donnerstags')])
-        + story('henrik', 'Über uns', 'Ein Fahrlehrer <em>mit Leib und Seele.</em>', [
-            '1989 hat Kalle Saller die Fahrschule gegründet und viele Jahre mit seiner Frau Irmgard geführt. Viele tausend glückliche Fahrschüler später hat er den Stab an Henrik Grover übergeben.',
-            'Henrik war zwölf Jahre Soldat, hat bei Saller seine Ausbildung zum Fahrlehrer gemacht und gehört seit 2007 fest dazu. In seiner Freizeit fährt er leidenschaftlich Motorrad. Er bildet B und BE sowie alle Zweiradklassen aus.'],
-            'st-raum.jpg', cap='Unterrichtsraum der Fahrschule Saller', tl=[('1989', 'Kalle Saller gründet die Fahrschule'), ('2007', 'Henrik kommt ins Team'), ('heute', 'vier Unterrichtsorte im Artland')], cls='alt')
-        + flotte('fuhrpark', 'Fuhrpark', 'Unsere Fahrzeuge <em>haben Namen.</em>', 'Jedes Fahrzeug ist für einen bestimmten Führerschein gedacht. Und ja: Bei uns heißen sie Oskar, Obelix oder Matilda.', [
-            ('f-oskar.jpg', 'Oskar', 'Skoda Octavia RS Automatik · Klasse B / B197', '50% 55%'), ('f-obelix.jpg', 'Obelix', 'Koch-Anhänger 2.700 kg · Klasse BE', '50% 50%'),
-            ('f-ladyk.jpg', 'Lady K', 'Kawasaki Z650 mit ABS · Klasse A', '50% 50%'), ('f-duke.jpg', 'KTM Duke', 'mit ABS · Klasse A1 / B196', '50% 50%'),
-            ('f-matilda.jpg', 'Matilda', 'Hyosung Aquila GV 125 S', '50% 50%'), ('f-octavia.jpg', 'Octavia', 'Skoda Octavia · Klasse B', '50% 60%')], 'dk')
-        + klassen('klassen', 'Führerscheinklassen', 'Welcher Führerschein <em>passt zu dir?</em>', 'Tipp auf eine Klasse, dann sagt dir Oskar in 30 Sekunden, ob sie passt.', [
+        + intro + region + orte_sec + eh + fuhr
+        + klassen('klassen', 'FS-Klassen', 'Welcher Führerschein <em>passt zu dir?</em>', 'Tipp auf eine Klasse, dann sagt dir Oskar in 30 Sekunden, ob sie passt.', [
             ('B', 'Auto', 'Der klassische Führerschein. Mit BF17 schon ab 17 begleitet fahren.', 'ab 17', 'auto'),
             ('B197', 'Automatik mit Schaltkompetenz', 'Prüfung auf Automatik, trotzdem darfst du Schaltwagen fahren.', 'ab 17', 'auto'),
-            ('BE', 'Anhänger', 'Für Pferdeanhänger, Wohnwagen und schwere Gespanne.', 'ab 17', 'anh'),
+            ('BE', 'Anhänger', 'Für Pferdeanhänger, Wohnwagen und schwere Gespanne.', 'ab 18', 'anh'),
             ('A2', 'Motorrad bis 35 kW', 'Der Einstieg ins richtige Motorradfahren.', 'ab 18', 'moto'),
             ('A1', 'Leichtkraftrad 125', 'Mit 16 aufs Motorrad.', 'ab 16', 'moto'),
             ('A', 'Motorrad unbeschränkt', 'Direkt ab 24, mit A80 ab 21.', 'ab 24', 'moto'),
             ('B196', '125er mit Autoführerschein', 'Schulung ohne Prüfung, wenn du 25 bist und 5 Jahre B hast.', 'ab 25', 'roller'),
             ('AM · Mofa', 'Roller', 'Mopeds und Roller, schon ab 15.', 'ab 15', 'roller')])
+        + medien
+        + story('geschichte', 'Über uns', 'Seit 1989 <em>im Artland.</em>', [
+            '1989 hat Kalle Saller die Fahrschule gegründet und viele Jahre mit seiner Frau Irmgard geführt. Viele tausend glückliche Fahrschüler später hat er den Stab weitergegeben.',
+            'Seit dem 1. Mai 2023 ist Henrik Grover Inhaber. Mit im Team: seine Frau Moni, die als Erste-Hilfe-Ausbilderin die Kurse in Badbergen gibt.'],
+            'p-kalle.jpg', cap='Kalle Saller, Gründer der Fahrschule', tl=[('1989', 'Kalle Saller gründet die Fahrschule'), ('2007', 'Henrik kommt ins Team'), ('2023', 'Henrik übernimmt als Inhaber')], cls='alt')
         + ablauf('ablauf', 'So läuft’s', 'In vier Schritten <em>zum Führerschein.</em>', '', [
             ('Anmelden', 'Online oder an einem der vier Abende vor Ort. Wir beraten dich gern.'),
-            ('Erste Hilfe &amp; Sehtest', 'Gibt es direkt bei uns: Der Kurs findet samstags in Badbergen statt, den Sehtest kannst du dazubuchen.'),
+            ('Erste Hilfe &amp; Sehtest', 'Gibt es direkt bei uns, samstags in Badbergen.'),
             ('Theorie', 'Unterricht an vier Abenden pro Woche, dazu die FahrAPP zum Üben am Handy.'),
-            ('Fahren &amp; bestehen', 'Fahrstunden mit Henrik, Sonderfahrten, dann ab in die Prüfung.')], 'alt')
+            ('Fahren &amp; bestehen', 'Fahrstunden mit Henrik, Sonderfahrten, dann ab in die Prüfung.')])
+        + reviews(s, ['Ich weiß gar nicht, wo ich anfangen soll: Alles war super verständlich und ich konnte jederzeit Fragen stellen. Wenn ich etwas nochmal üben wollte, haben wir das gemacht.',
+                      'Von der Anmeldung bis zur Prüfung lief alles perfekt. Henrik ist ein super Fahrlehrer, der genau weiß, was er tut.',
+                      'Der Unterricht ist nicht langweilig und die Fahrlehrer sind sehr nett.',
+                      'Gut erklärt, fair, und ich habe mich bei den Fahrstunden richtig wohlgefühlt. Danke an das ganze Team!'], 'dk')
         + sorgen('fragen', 'Ehrlich gefragt', 'Was dich vorher <em>beschäftigt.</em>', '', [
             ('Ich wohne in Ankum. Muss ich jedes Mal nach Badbergen?', 'Nein. Theorie und Anmeldung gibt es <b>in Badbergen, Alfhausen, Ankum und Bersenbrück</b>, an jedem Abend in einem anderen Ort.'),
             ('Wo bekomme ich Erste Hilfe und Sehtest her?', 'Direkt bei uns. Der <b>Erste-Hilfe-Kurs</b> läuft samstags in Badbergen, den <b>Sehtest</b> kannst du gleich mitbuchen.'),
             ('Ich will Automatik fahren, aber nicht festgelegt sein.', 'Dafür gibt es <b>B197</b>: Du machst die Prüfung auf Oskar mit Automatik und darfst trotzdem Schaltwagen fahren.'),
             ('Ich hab Respekt vor der ersten Stunde.', 'Musst du nicht. Unsere Fahrschüler schreiben: <b>Man kann jederzeit fragen</b>, und was noch nicht sitzt, wird einfach nochmal geübt.')])
-        + reviews(s, ['Ich weiß gar nicht, wo ich anfangen soll: Alles war super verständlich und ich konnte jederzeit Fragen stellen. Wenn ich etwas nochmal üben wollte, haben wir das gemacht.',
-                      'Von der Anmeldung bis zur Prüfung lief alles perfekt. Henrik ist ein super Fahrlehrer, der genau weiß, was er tut.',
-                      'Der Unterricht ist nicht langweilig und die Fahrlehrer sind sehr nett.',
-                      'Gut erklärt, fair, und ich habe mich bei den Fahrstunden richtig wohlgefühlt. Danke an das ganze Team!'], 'dk')
-        + contact(s) + footer(s))
+        + behoerde + contact(s) + footer(s))
+
+CAR = '<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M5 11l1.5-4.5A2 2 0 0 1 8.4 5h7.2a2 2 0 0 1 1.9 1.5L19 11a2 2 0 0 1 2 2v4h-2v2h-3v-2H8v2H5v-2H3v-4a2 2 0 0 1 2-2zm2.1 0h9.8l-1-3H8.1zM6.5 15a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm11 0a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/></svg>'
+AID = '<svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M9 3h6v3h5a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h5zm2 0v3h2V3zm0 7v3H8v2h3v3h2v-3h3v-2h-3v-3z"/></svg>'
 
 S = SITES['saller'] = site(
     slug='fahrschule-saller-badbergen', firma='Fahrschule K.H. Saller', web='fahrschule-saller.de', fonts='r14sal',
     title='Fahrschule Saller – Führerschein in Badbergen, Alfhausen, Ankum & Bersenbrück', desc='Fahrschule K.H. Saller, Inh. Henrik Grover: Auto, Motorrad, Roller und Anhänger. Unterricht in Badbergen, Alfhausen, Ankum und Bersenbrück.',
     tel='0171 3866717', tel_i='+491713866717', mail='info@fahrschule-saller.de', adresse='Hauptstraße 64, 49635 Badbergen', google=('4,8', 23),
-    cta='Jetzt anmelden', logo_txt='Fahrschule <span style="color:var(--p)">Saller</span>',
-    nav=[('Orte', 'orte'), ('Über uns', 'henrik'), ('Fuhrpark', 'fuhrpark'), ('Klassen', 'klassen'), ('Ablauf', 'ablauf'), ('Kontakt', 'kontakt')],
+    cta='Jetzt anmelden', logo_txt='<img src="img/logo.png" alt="Fahrschule K.H. Saller, Inh. Henrik Grover" style="height:52px;width:auto;display:block">',
+    nav=[('Über uns', 'ueber'), ('Standorte', 'orte'), ('Erste Hilfe', 'erste-hilfe'), ('Fuhrpark', 'fuhrpark'), ('FS-Klassen', 'klassen')],
     hours=[('Mo · Badbergen', '18:00 – 19:45'), ('Di · Alfhausen', '18:00 – 19:45'), ('Mi · Ankum', '18:00 – 19:45'), ('Do · Bersenbrück', '18:00 – 19:45')],
-    form_lbl='Führerschein', form_opts=['Auto · Klasse B / BF17', 'Automatik · B197', 'Anhänger · BE', 'Motorrad · A / A2 / A1', '125er · B196', 'Roller · AM / Mofa', 'Erste-Hilfe-Kurs'],
+    form_lbl='Führerschein', form_opts=['Auto · Klasse B / BF17', 'Automatik · B197', 'Anhänger · BE', 'Motorrad · A / A2 / A1', '125er · B196', 'Roller · AM / Mofa', 'Erste-Hilfe-Kurs &amp; Sehtest'],
     form_orte=['Badbergen', 'Alfhausen', 'Ankum', 'Bersenbrück'],
-    form_h3='Anmeldung zum Führerschein', form_p='Trag dich ein, Henrik meldet sich bei dir und ihr klärt den Start.', form_btn='Anmeldung abschicken',
-    kt_ey='Kontakt', kt_h2='Bereit für <em>deinen Führerschein?</em>', kt_p='Ruf an, schreib uns oder komm an einem der vier Abende vorbei.',
+    form_h3='Anmeldung Führerschein', form_p='Schnell und unkompliziert anmelden. Henrik meldet sich bei dir und ihr klärt den Start.', form_btn='Anmeldung abschicken',
+    kt_ey='Anmeldung', kt_h2='Wir freuen uns <em>auf Dich!</em>', kt_p='Ruf an, schreib uns oder komm an einem der vier Abende vorbei.',
     rv_h2='Das sagen <em>unsere Fahrschüler.</em>', social=[('Instagram', 'https://www.instagram.com/fahrschule.saller')],
-    vars='--bg:#f6f4f1;--ink:#16161a;--mute:#5d5b61;--p:#c8102e;--p-ink:#fff;--a:#c8102e;--a-ink:#fff;--dk:#16161a;--s:#fff;--s2:#ece8e2;--fh:"Archivo Black",Impact,sans-serif;--fb:"Archivo",system-ui,sans-serif;--r:14px;--r2:22px;--br:10px;--mq-bg:#16161a;--mq-ink:#fff;--hd-bg:rgba(246,244,241,.94);--hd-ink:#16161a;--ft-bg:#0f0f12;--hx-op:.16',
-    css='''.hx h1{text-transform:uppercase;font-weight:400;letter-spacing:-.01em;line-height:1.04;font-size:clamp(40px,5vw,76px)}.h2{font-family:var(--fh);font-weight:400;text-transform:uppercase;letter-spacing:-.01em;line-height:1.06}
-.h2 em,.hx h1 em{font-style:normal;color:var(--p)}.dk .h2 em{color:#ff5a6e}.hx .pic{--hx-ar:3/4;max-width:500px;justify-self:end;transform:rotate(1.5deg)}
-.kl .k b{font-weight:400}.or .o b{font-weight:400}.fl .v h3{font-family:var(--fh);font-weight:400;font-size:22px}.rd h3{font-weight:400}
-.hx .pic{transform:none}.lt-logo span{color:var(--p)}''')
+    vars='--bg:#ffffff;--ink:#1d1d1f;--mute:#55555c;--p:#e60000;--p-ink:#fff;--a:#e60000;--a-ink:#fff;--y:#fef518;--dk:#1d1d1f;--s:#fff;--s2:#f4f2ef;--fh:"Archivo",Arial,sans-serif;--fb:"Archivo",system-ui,sans-serif;--r:6px;--r2:10px;--br:6px;--mq-bg:#e60000;--mq-ink:#fff;--hd-bg:#e60000;--hd-ink:#fff;--ft-bg:#141416',
+    css=SALLER_CSS)
 S['bot'] = BOT('Oskar', 'dein Führerschein-Lotse', 'Fahrschule Saller', S, ['B', 'B197', 'BE', 'A', 'A2', 'A1', 'B196', 'AM', 'Mofa'],
     {'schnell': 'Mit vier Unterrichtsabenden pro Woche kommst du bei uns zügig durch die Theorie.', 'ruhe': 'Henrik nimmt sich Zeit. Was noch nicht sitzt, wird nochmal geübt.', 'flex': 'Theorie gibt es Montag bis Donnerstag in vier Orten. Such dir den Abend aus, der passt.', 'angst': 'Unsere Fahrschüler sagen: Man kann jederzeit fragen, und was nicht sitzt, wird nochmal geübt.'},
-    qa=[('erste hilfe|sehtest', 'Den Erste-Hilfe-Kurs bieten wir samstags in Badbergen an, den Sehtest kannst du dazubuchen.'), ('wo|ort|adresse|ankum|alfhausen|bersenbrück|badbergen', 'Unterricht und Anmeldung: Mo Badbergen, Di Alfhausen, Mi Ankum, Do Bersenbrück, jeweils 18:00–19:45 Uhr.'), ('motorrad|125|b196', 'Henrik bildet alle Zweiradklassen aus, von AM bis A. Für B196 brauchst du 25 Jahre und 5 Jahre Klasse B.')],
-    tour=[('#orte', 'Vier Orte, vier Abende: Such dir aus, wo du Theorie machst.'), ('#henrik', 'Das ist Henrik. Seit 2007 dabei, heute Inhaber.'), ('#fuhrpark', 'Unsere Fahrzeuge, alle mit Namen.'), ('#klassen', 'Tipp eine Klasse an, ich sag dir, ob sie passt.'), ('#kontakt', 'Und hier meldest du dich an.')])
-S['img'] = {'h-henrik.jpg': ('saller/img/i002.jpeg', 1100), 'st-raum.jpg': ('saller/img/i004.jpg', 0), 'h-oskar.jpg': ('saller/img/i013.jpg', 1400),
-    'f-oskar.jpg': ('saller/img/i013.jpg', 900), 'f-obelix.jpg': ('saller/img/i017.jpeg', 900), 'f-ladyk.jpg': ('saller/img/i016.png', 900), 'f-duke.jpg': ('saller/img/i026.jpg', 400),
-    'f-matilda.jpg': ('saller/img/i024.png', 400), 'f-octavia.jpg': ('saller/img/i014.jpg', 900)}
+    qa=[('erste hilfe|sehtest', 'Den Erste-Hilfe-Kurs bieten wir samstags in Badbergen an, nächster Termin ist der 19.12.2026. Den Sehtest kannst du dazubuchen.'), ('wo|ort|adresse|ankum|alfhausen|bersenbrück|badbergen', 'Unterricht und Anmeldung: Mo Badbergen, Di Alfhausen, Mi Ankum, Do Bersenbrück, jeweils 18:00–19:45 Uhr.'), ('motorrad|125|b196', 'Henrik bildet alle Zweiradklassen aus, von AM bis A. Für B196 brauchst du 25 Jahre und 5 Jahre Klasse B.')],
+    tour=[('#ueber', 'Das ist Henrik, dein Fahrlehrer.'), ('#orte', 'Vier Orte, vier Abende: Such dir aus, wo du Theorie machst.'), ('#erste-hilfe', 'Erste Hilfe und Sehtest gibt es direkt bei uns.'), ('#fuhrpark', 'Unsere Fahrzeuge, alle mit Namen.'), ('#kontakt', 'Und hier meldest du dich an.')])
+S['img'] = {'h-schluessel.jpg': ('saller/img/i001.jpeg', 1500), 'p-henrik.jpg': ('saller/img/i002.jpeg', 900), 'logo.png': ('saller/img/i020.png', 0), 'fvn.png': ('saller/img/i021.png', 0),
+    'o-badbergen.jpg': ('saller/img/i007.jpeg', 0), 'o-alfhausen.jpg': ('saller/img/i003.jpg', 0), 'o-ankum.jpg': ('saller/img/i005.jpg', 0), 'o-bersenbrueck.jpg': ('saller/img/i009.jpg', 0),
+    'm-badbergen.jpg': ('saller/img/i008.jpg', 0), 'm-alfhausen.jpg': ('saller/img/i004.jpg', 0), 'm-ankum.jpg': ('saller/img/i006.jpg', 0), 'm-bersenbrueck.jpg': ('saller/img/i010.jpg', 0),
+    'eh-flyer.jpg': ('saller/img/i019.jpeg', 700), 'r-fest.jpg': ('saller/img/i017.jpeg', 900), 'r-dart.jpg': ('saller/img/i018.jpeg', 900), 'p-kalle.jpg': ('saller/img/i012.jpg', 0),
+    'f-oskar.jpg': ('saller/img/i013.jpg', 1300), 'f-cooper.jpg': ('saller/img/i025.jpg', 0), 'f-octavia.jpg': ('saller/img/i030.jpg', 0), 'f-obelix.jpg': ('saller/img/i028.jpg', 0),
+    'f-ladyk.jpg': ('saller/img/i032.png', 0), 'f-er6.jpg': ('saller/img/i027.jpg', 0), 'f-duke.jpg': ('saller/img/i026.jpg', 0), 'f-z125.jpg': ('saller/img/i031.jpg', 0),
+    'f-matilda.jpg': ('saller/img/i024.png', 0), 'appstore.png': ('saller/img/i022.png', 0), 'googleplay.png': ('saller/img/i023.png', 0)}
 S['body'] = b_saller
 
 # ───────────── 2. Fahrschule Bernhard Albers, Ankum ─────────────
