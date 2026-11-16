@@ -33,9 +33,10 @@ S = SITES['mammen'] = site(
     form_orte=['Cloppenburg', 'Altenoythe', 'Bösel', 'Garrel', 'Markhausen', 'Molbergen', 'Sedelsberg'],
     form_h3='Anmeldung &amp; Beratung', form_p='Sagen Sie uns, was Sie brauchen. Wir melden uns persönlich.', form_btn='Anfrage senden',
     kt_ey='Kontakt', kt_h2='Wir sind <em>für Sie da.</em>', kt_p='Telefon 04471 1767963 oder 04494 922822.',
-    vars='--bg:#f7f5f2;--ink:#121212;--mute:#5b5853;--p:#d0142c;--p-ink:#fff;--a:#d0142c;--a-ink:#fff;--dk:#121212;--s:#fff;--s2:#ece8e2;--fh:"Anton",Impact,sans-serif;--fb:"Karla",system-ui,sans-serif;--r:8px;--r2:12px;--br:4px;--mq-bg:#121212;--mq-ink:#fff;--hd-bg:rgba(247,245,242,.95);--hd-ink:#121212;--logo-h:42px;--ft-bg:#0b0b0b',
+    vars='--bg:#f7f5f2;--ink:#121212;--mute:#5b5853;--p:#d0142c;--p-ink:#fff;--a:#d0142c;--a-ink:#fff;--dk:#121212;--s:#fff;--s2:#ece8e2;--fh:"Anton",Impact,sans-serif;--fb:"Karla",system-ui,sans-serif;--r:8px;--r2:12px;--br:4px;--mq-bg:#121212;--mq-ink:#fff;--hd-bg:#000000;--hd-ink:#ffffff;--logo-h:42px;--ft-bg:#0b0b0b',
     css='''.hp h1,.h2{font-weight:400;text-transform:uppercase;letter-spacing:.01em;line-height:1.04;padding-top:4px}.hp h1 em,.h2 em{font-style:normal;color:var(--p)}.dk .h2 em{color:#ff5267}
-.comp{height:360px}.comp .c1{width:62%}.promo figure{max-width:380px;justify-self:center}.gl .grid{grid-template-columns:repeat(4,1fr);grid-auto-rows:200px}.gl .grid .w2{grid-column:span 1}.hd .logo img{filter:none}.ft img{filter:invert(1)}.mq span{font-weight:400}''')
+.comp{height:360px}.comp .c1{width:62%}.promo figure{max-width:380px;justify-self:center}.gl .grid{grid-template-columns:repeat(4,1fr);grid-auto-rows:200px}.gl .grid .w2{grid-column:span 1}.hd .logo img{filter:none}.ft img{filter:invert(1)}.mq span{font-weight:400}
+.hd{background:#000!important;color:#fff!important}.hd .nav a{color:#fff}''')
 S['bot'] = BOT('Max', 'Ihr Mammen-Lotse', 'der Fahrschule Mammen', S, ['B', 'BE', 'A', 'A2', 'A1', 'CE', 'C'],
     {'schnell': 'Zwei Theorie-Unterrichte an einem Mittwoch: So kommen Sie zügig durch.', 'ruhe': 'Unsere Fahrschüler loben Fahrlehrer, die ruhig und ohne Stress erklären.', 'flex': 'Sieben Orte rund um Cloppenburg, da ist einer in Ihrer Nähe.', 'angst': 'Sprechen Sie es an. Wir erklären alles in Ruhe.'},
     qa=[('rate|finanz|bezahl|zahl', 'Bei uns ist Ratenzahlung möglich. Die Details klären wir persönlich mit Ihnen.'), ('mpu', 'Wir bieten MPU-Hilfe und Beratung an, sprechen Sie uns einfach an.')],
@@ -81,7 +82,7 @@ S = SITES['schulz'] = site(
     form_orte=['Lohne', 'Vechta'],
     form_h3='Anmelden', form_p='Wir melden uns bei dir. Ausweis bitte zur Anmeldung mitbringen.', form_btn='Anmeldung abschicken',
     kt_ey='Kontakt', kt_h2='Wir freuen uns <em>auf dich!</em>', kt_p='Björn Stratemann, Telefon 0171 7805040.',
-    rv_h2='Das sagen <em>unsere Fahrschüler.</em>', logo_txt='Fahrschule <b style="color:#e5007d">SCHULZ</b>',
+    rv_h2='Das sagen <em>unsere Fahrschüler.</em>', logo_txt='<img src="img/logo.png" alt="Fahrschule Schulz, Inh. Björn Stratemann" style="height:76px;width:auto;display:block">',
     vars='--bg:#fff7fb;--ink:#141014;--mute:#5f5560;--p:#e5007d;--p-ink:#fff;--a:#e5007d;--a-ink:#fff;--dk:#141014;--s:#fff;--s2:#fbe6f1;--fh:"Poppins",system-ui,sans-serif;--fb:"Poppins",system-ui,sans-serif;--r:22px;--r2:30px;--br:999px;--mq-bg:#e5007d;--hd-bg:rgba(255,247,251,.95);--hd-ink:#141014;--ft-bg:#0d0a0d;--hero-ov:linear-gradient(90deg,rgba(20,16,20,.86) 0%,rgba(20,16,20,.45) 55%,rgba(20,16,20,.1) 90%)',
     css='''.hs h1,.h2{font-weight:800;letter-spacing:-.02em;line-height:1.05}.hs h1 em{font-style:normal;color:#ff5fb0}.h2 em{font-style:normal;color:var(--p)}.dk .h2 em{color:#ff5fb0}
 .hd.lt .lt-logo{color:#fff}.hd.scr .lt-logo{color:var(--ink)}.lt-logo{font-weight:600;font-size:20px}''')
@@ -133,7 +134,7 @@ S = SITES['moss'] = site(
     form_orte=['Vechta', 'Lohne'],
     form_h3='Direkt online anmelden', form_p='Der schnellste und einfachste Weg. Wir melden uns bei dir.', form_btn='Anmeldung abschicken',
     kt_ey='Kontakt', kt_h2='Ehrlich <em>und fair.</em>', kt_p='Vechta und Lohne. Telefon 04441 859745.',
-    rv_h2='Stimmen <em>unserer Fahrschüler.</em>', logo_txt='FAHRSCHULE <span style="color:#5ec8ff">MOSS</span>',
+    rv_h2='Stimmen <em>unserer Fahrschüler.</em>', logo_txt='<img src="img/logo.png" alt="Fahrschule Moss" style="height:24px;width:auto;display:block">',
     vars='--bg:#f2f6fa;--ink:#0b1424;--mute:#556175;--p:#2aa9ef;--p-ink:#06121f;--a:#2aa9ef;--a-ink:#06121f;--dk:#0b1424;--s:#fff;--s2:#e2ebf4;--fh:"Unbounded",system-ui,sans-serif;--fb:"Plus Jakarta Sans",system-ui,sans-serif;--r:20px;--r2:28px;--br:999px;--hd-bg:rgba(11,20,36,.9);--hd-ink:#fff;--ft-bg:#060c17;--hx-bg:#0b1424;--hx-op:.35;--hx-blur:3px',
     css='''.hx{color:#fff}.hx .sub{color:rgba(255,255,255,.75)}.hx .btn-o{color:#fff}.hx .chip{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);color:#fff}
 .hx h1{font-weight:800;font-size:clamp(38px,4.6vw,70px);line-height:1.08}.hx h1 em,.h2 em{font-style:normal;color:var(--p)}.h2{font-weight:700;letter-spacing:-.02em;font-size:clamp(32px,3.6vw,56px)}
@@ -188,7 +189,7 @@ S = SITES['christians'] = site(
     form_orte=['Lohne', 'Dinklage'],
     form_h3='Online-Anmeldung', form_p='Trag dich ein, unser Service-Team meldet sich.', form_btn='Anmeldung abschicken',
     kt_ey='Kontakt', kt_h2='Jetzt <em>durchstarten!</em>', kt_p='Lohne, Lindenstraße 18. Telefon 04442 707666.',
-    rv_h2='Das sagen <em>unsere Fahrschüler.</em>', logo_txt='Christians <span style="color:#e2231a">Fahrschul-Team</span>',
+    rv_h2='Das sagen <em>unsere Fahrschüler.</em>', logo_txt='<img src="img/logo.png" alt="Christians Fahrschul-Team, Come in & drive out" style="height:58px;width:auto;display:block">',
     vars='--bg:#f5f5f2;--ink:#151515;--mute:#5a5955;--p:#e2231a;--p-ink:#fff;--a:#e2231a;--a-ink:#fff;--dk:#151515;--s:#fff;--s2:#e9e8e3;--fh:"Big Shoulders Display",Impact,sans-serif;--fb:"Heebo",system-ui,sans-serif;--r:10px;--r2:16px;--br:4px;--mq-bg:#e2231a;--hd-bg:rgba(21,21,21,.92);--hd-ink:#fff;--ft-bg:#0d0d0d',
     css='''.hs h1,.h2{font-weight:900;text-transform:uppercase;letter-spacing:.01em;line-height:1;padding-top:6px}.hs h1{font-size:clamp(64px,9vw,150px)}.h2{font-size:clamp(44px,5vw,80px)}
 .hs h1 em{font-style:normal;color:var(--p)}.h2 em{font-style:normal;color:var(--p)}.hd .lt-logo{color:#fff;font-family:var(--fh);font-size:24px}
@@ -240,10 +241,11 @@ S = SITES['kaiser'] = site(
     form_orte=['Lohne', 'Bakum', 'Diepholz', 'Oldenburg', 'Osnabrück', 'Steinfeld'],
     form_h3='Online-Anmeldung', form_p='Wir melden uns schnell bei dir.', form_btn='Anmeldung abschicken',
     kt_ey='Kontakt', kt_h2='Bereit <em>für die Krone?</em>', kt_p='Fahrschule Kaiser GmbH, Dinklager Straße 77, Lohne. Telefon 04442 7033660.',
-    rv_h2='Das sagen <em>unsere Fahrschüler.</em>', logo_txt='<span style="color:#e5007d">KAISER</span> Fahrschule',
+    rv_h2='Das sagen <em>unsere Fahrschüler.</em>', logo_txt='<img src="img/logo.png" alt="Kaiser Fahrschule" style="height:48px;width:auto;display:block">',
     vars='--bg:#f6f6f7;--ink:#1a1b1f;--mute:#5c5e66;--p:#e5007d;--p-ink:#fff;--a:#e5007d;--a-ink:#fff;--dk:#1a1b1f;--s:#fff;--s2:#e9e9ec;--fh:"Saira Condensed",Impact,sans-serif;--fb:"Hind",system-ui,sans-serif;--r:6px;--r2:10px;--br:4px;--mq-bg:#e5007d;--hd-bg:rgba(26,27,31,.92);--hd-ink:#fff;--ft-bg:#111215',
     css='''.hs h1,.h2{font-weight:800;text-transform:uppercase;line-height:1;letter-spacing:.005em;padding-top:5px}.hs h1{font-size:clamp(64px,8.8vw,150px)}.hs h1 em,.h2 em{font-style:normal;color:var(--p)}.dk .h2 em{color:#ff4fae}
-.hs .big{font-family:var(--fh);font-weight:800;-webkit-text-stroke:2px rgba(229,0,125,.4)}.hd .lt-logo{color:#fff;font-family:var(--fh);font-size:26px}''')
+.hs .big{font-family:var(--fh);font-weight:800;-webkit-text-stroke:2px rgba(229,0,125,.4)}.hd .lt-logo{color:#fff;font-family:var(--fh);font-size:26px}
+.hd{background:rgba(26,27,31,.94)!important;color:#fff!important}''')
 S['bot'] = BOT('Kai', 'dein Kaiser-Lotse', 'der Kaiser Fahrschule', S, ['B', 'B197', 'BE', 'B96', 'B196', 'A', 'A2', 'A1', 'AM', 'Mofa', 'C', 'CE', 'D', 'L', 'T'],
     {'schnell': 'In Lohne gibt es Unterricht montags bis donnerstags. Achte auf unsere Crashkurse.', 'ruhe': 'Unsere Fahrlehrer gehen auf jeden Schüler einzeln ein, an Schwächen und Stärken.', 'flex': 'Sechs Standorte, von Osnabrück bis Oldenburg.', 'angst': 'Wir passen die Ausbildung an dein Können an, Schritt für Schritt.'},
     qa=[('azav|gutschein|förder|jobcenter|arbeitsagentur', 'Wir sind nach AZAV zertifiziert, Ausbildungen können gefördert werden.'), ('fahrlehrer|ausbildung zum', 'Unsere Fahrlehrerausbildungsstätte ist in Oldenburg.'), ('miet|vermiet', 'Lkw und Busse der Klassen C und D kannst du bei Kaiser Vermietung mieten, auch langfristig.')],
@@ -252,3 +254,11 @@ S['img'] = {'h1.jpg': ('kaiser/img/i017.jpg', 0), 'h2.jpg': ('kaiser/img/i041.jp
     'd-fs.jpg': ('kaiser/img/i028.jpg', 0), 'd-fl.jpg': ('kaiser/img/i019.jpg', 0),
     'p-lkw.jpg': ('kaiser/img/i042.jpg', 0), 'p-bus.jpg': ('kaiser/img/i036.jpg', 0), 'p-pkw.jpg': ('kaiser/img/i037.jpg', 0), 'p-hof.jpg': ('kaiser/img/i018.jpg', 0)}
 S['body'] = b_kaiser
+
+SITES['schulz']['img']['logo.png'] = ('/home/claude/r14raw/logos/schulz.webp', 0)
+
+SITES['moss']['img']['logo.png'] = ('/home/claude/r14raw/logos/moss.webp', 0)
+
+SITES['christians']['img']['logo.png'] = ('/home/claude/r14raw/logos/christians.png', 0)
+
+SITES['kaiser']['img']['logo.png'] = ('/home/claude/r14raw/logos/kaiser.png', 0)

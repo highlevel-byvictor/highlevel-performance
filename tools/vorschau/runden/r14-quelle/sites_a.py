@@ -385,11 +385,12 @@ S = SITES['beckermann'] = site(
     form_orte=['Quakenbrück', 'Bramsche', 'Alfhausen', 'Merzen', 'Osnabrück'],
     form_h3='Online anmelden', form_p='Trag dich ein, wir melden uns für den Start bei dir.', form_btn='Anmeldung abschicken',
     kt_ey='Kontakt', kt_h2='Los geht’s <em>mit deinem Führerschein.</em>', kt_p='Telefon 05461 933955 oder einfach das Formular.',
-    social=[('Instagram', 'https://www.instagram.com/fahrschule_beckermann/'), ('Facebook', 'https://www.facebook.com/FahrschuleBeckermann/')], logo_txt='FAHRSCHULE <span style="color:#f0a30a">BECKERMANN</span>',
-    vars='--hx-bg:#151515;--hxw-ar:1024/560;--bg:#f7f5f0;--ink:#151515;--mute:#5a5853;--p:#f0a30a;--p-ink:#151515;--a:#f0a30a;--a-ink:#151515;--dk:#151515;--s:#fff;--s2:#efeae0;--fh:"Barlow Condensed",Impact,sans-serif;--fb:"Barlow",system-ui,sans-serif;--r:6px;--r2:10px;--br:4px;--mq-bg:#f0a30a;--hd-bg:rgba(21,21,21,.92);--hd-ink:#fff;--logo-h:40px;--ft-bg:#0d0d0d',
+    social=[('Instagram', 'https://www.instagram.com/fahrschule_beckermann/'), ('Facebook', 'https://www.facebook.com/FahrschuleBeckermann/')], logo_txt='<img src="img/logo.png" alt="Fahrschule Beckermann" style="height:46px;width:auto;display:block">',
+    vars='--hx-bg:#151515;--hxw-ar:1024/560;--bg:#f7f5f0;--ink:#151515;--mute:#5a5853;--p:#f0a30a;--p-ink:#151515;--a:#f0a30a;--a-ink:#151515;--dk:#151515;--s:#fff;--s2:#efeae0;--fh:"Barlow Condensed",Impact,sans-serif;--fb:"Barlow",system-ui,sans-serif;--r:6px;--r2:10px;--br:4px;--mq-bg:#f0a30a;--hd-bg:#ffffff;--hd-ink:#151515;--logo-h:40px;--ft-bg:#0d0d0d',
     css='''.hx{color:#fff}.hx .sub{color:rgba(255,255,255,.75)}.hx .btn-o{color:#fff}.hx .chip{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);color:#fff}.hx h1,.h2{font-weight:800;text-transform:uppercase;line-height:1;letter-spacing:.005em}.hx h1{font-size:clamp(54px,6.4vw,104px);padding-top:6px}.hx h1 em{font-style:normal;color:var(--p)}.h2{font-size:clamp(40px,4.6vw,72px);padding-top:4px}
 .hs h1 em{font-style:normal;color:var(--p)}.h2 em{font-style:normal;color:#c27f00}.dk .h2 em{color:var(--p)}.hs .big{font-family:var(--fh);-webkit-text-stroke:2px rgba(240,163,10,.35)}
-.hd .lt-logo{color:#fff;font-family:var(--fh);font-size:26px;letter-spacing:.02em}''')
+.hd .lt-logo{color:#fff;font-family:var(--fh);font-size:26px;letter-spacing:.02em}
+.hd{background:#fff!important;color:#151515!important;box-shadow:0 1px 0 rgba(0,0,0,.08)}.hd .nav a{color:#151515}''')
 S['bot'] = BOT('Becky', 'deine Führerschein-Lotsin', 'der Fahrschule Beckermann', S, ['B', 'B197', 'B196', 'BE', 'B96', 'A', 'A2', 'A1', 'AM', 'Mofa', 'C', 'CE', 'D', 'L', 'T'],
     {'schnell': 'Mit fünf Standorten findest du schnell einen Unterrichtstermin, der passt.', 'ruhe': 'Wir nehmen uns Zeit für dich, von der ersten Stunde bis zur Prüfung.', 'flex': 'Unterricht an mehreren Orten, unter anderem dienstags und donnerstags abends.', 'angst': 'Sag es uns einfach. Wir starten so, dass du dich sicher fühlst.'},
     qa=[('bus|lkw|bkf|modul', 'Wir bilden Lkw und Bus aus und bieten die Weiterbildungsmodule für Berufskraftfahrer an.'), ('job|fahrlehrer|bewerb', 'Wir suchen Fahrlehrer (m/w/d) in Voll- oder Teilzeit. Schreib uns an info@fahrschule-beckermann.de.')],
@@ -440,10 +441,11 @@ S = SITES['tepe'] = site(
     form_h3='Zur Online-Anmeldung', form_p='Trag dich ein und komm danach vor dem Theorieunterricht vorbei.', form_btn='Anmeldung abschicken',
     kt_ey='Kupplung kommen lassen', kt_h2='Und Gas <em>geben?</em>', kt_p='Komm einfach vorbei, um dich beraten zu lassen, oder melde dich online an.',
     rv_h2='Das sagen <em>unsere Fahrschüler.</em>', social=[('Instagram', 'https://www.instagram.com/fahrschule_tepe/'), ('Facebook', 'https://www.facebook.com/p/Fahrschule-Tepe-100063510102567/')],
-    logo_txt='<span style="color:#f07d00">♥</span> Fahrschule Tepe',
+    logo_txt='<img src="img/logo.png" alt="Fahrschule Tepe" style="height:54px;width:auto;display:block">',
     vars='--bg:#fffaf4;--ink:#1d1a17;--mute:#615a52;--p:#f07d00;--p-ink:#fff;--a:#f07d00;--a-ink:#fff;--dk:#2a1f17;--s:#fff;--s2:#fcefe0;--fh:"Fraunces",Georgia,serif;--fb:"Nunito Sans",system-ui,sans-serif;--r:22px;--r2:30px;--br:999px;--mq-bg:#f07d00;--hd-bg:rgba(255,250,244,.95);--hd-ink:#1d1a17;--ft-bg:#1d1611;--hero-ov:linear-gradient(95deg,rgba(29,20,12,.82) 0%,rgba(29,20,12,.45) 50%,rgba(29,20,12,.05) 85%)',
     css='''.hs h1{font-weight:700;line-height:1.04;font-size:clamp(46px,6vw,92px)}.hs h1 em{color:#ffb15c}.h2{font-weight:700;line-height:1.08}.h2 em{color:var(--p)}.dk .h2 em{color:#ffb15c}
-.hd.lt .lt-logo{color:#fff}.hd.scr .lt-logo{color:var(--ink)}.tm figure div{border-radius:26px}.tm figure img{aspect-ratio:1/1;object-position:50% 30%}.so .it{border-radius:26px}''')
+.hd.lt .lt-logo{color:#fff}.hd.scr .lt-logo{color:var(--ink)}.tm figure div{border-radius:26px}.tm figure img{aspect-ratio:1/1;object-position:50% 30%}.so .it{border-radius:26px}
+.hd{background:rgba(255,250,244,.97)!important;color:#1d1a17!important;box-shadow:0 1px 0 rgba(0,0,0,.06)}.hd .nav a{color:#1d1a17}''')
 S['bot'] = BOT('Lotta', 'deine Fahrschul-Lotsin', 'der Fahrschule Tepe', S, ['B', 'BE', 'A', 'A2', 'A1', 'AM', 'C', 'CE', 'L', 'T'],
     {'schnell': 'Bestimme dein Tempo selbst. Mit der App siehst du, wann du bereit für die Theorieprüfung bist.', 'ruhe': 'Persönlicher Kontakt und individuelle Betreuung: Wir bringen dir das Fahren ganz entspannt bei.', 'flex': 'Theorie montags und donnerstags ab 19:30 Uhr, Anmeldung auch dienstags nachmittags.', 'angst': 'Starte einfach im Fahrsimulator: ohne Verkehr, ohne Druck.'},
     qa=[('simulator', 'Im Fahrsimulator bekommst du ein Gefühl fürs Fahren, ohne Verkehr und ohne Druck. Perfekt vor der ersten Stunde.'), ('theorie|unterricht', 'Theorie: 12 Themenblöcke, montags und donnerstags ab 19:30 Uhr. Dazu die App zum Üben.')],
@@ -452,3 +454,7 @@ S['img'] = {'h1.jpg': ('tepe/img/i006.jpg', 1900), 'h2.jpg': ('tepe/img/i017.jpg
     't-reinhold.jpg': ('tepe/img/i041.jpg', 0), 't-verena.jpg': ('tepe/img/i042.jpg', 0), 't-ingo.jpg': ('tepe/img/i040.jpg', 0), 't-hubert.jpg': ('tepe/img/i039.jpg', 0),
     'g1.jpg': ('tepe/img/i016.jpg', 1400), 'g2.jpg': ('tepe/img/i022.jpg', 0), 'g3.jpg': ('tepe/img/i013.jpg', 0), 'g4.jpg': ('tepe/img/i019.jpg', 1000), 'g5.jpg': ('tepe/img/i021.jpg', 1000), 'g6.jpg': ('tepe/img/i025.jpg', 0)}
 S['body'] = b_tepe
+
+SITES['beckermann']['img']['logo.png'] = ('/home/claude/r14raw/logos/beckermann.png', 0)
+
+SITES['tepe']['img']['logo.png'] = ('/home/claude/r14raw/logos/tepe.png', 0)

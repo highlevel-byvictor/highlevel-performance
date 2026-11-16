@@ -43,7 +43,7 @@ S = SITES['city'] = site(
     form_orte=['Hasbergen', 'Osnabrück', 'Bissendorf', 'Borgloh', 'Bramsche', 'Lüstringen', 'Wallenhorst'],
     form_h3='Jetzt anmelden', form_p='Nach deiner Anmeldung bekommst du von uns alle Infos und deine Bestätigung.', form_btn='Anmeldung abschicken',
     kt_ey='Kontakt', kt_h2='So, und jetzt <em>los …</em>', kt_p='Büro 0541 29344, mobil 0171 5217328 oder per WhatsApp.',
-    rv_h2='Das sagen <em>unsere Kunden.</em>', logo_txt='city <span style="color:#e30613">fahrschule</span>',
+    rv_h2='Das sagen <em>unsere Kunden.</em>', logo_txt='<img src="img/logo.png" alt="City Fahrschule" style="height:36px;width:auto;display:block">',
     vars='--bg:#fafafa;--ink:#141414;--mute:#5c5c5c;--p:#e30613;--p-ink:#fff;--a:#e30613;--a-ink:#fff;--dk:#141414;--s:#fff;--s2:#f0eeee;--fh:"Bebas Neue",Impact,sans-serif;--fb:"Work Sans",system-ui,sans-serif;--r:8px;--r2:14px;--br:999px;--mq-bg:repeating-linear-gradient(90deg,#e30613 0 46px,#c50511 46px 92px);--mq-ink:#fff;--hd-bg:rgba(255,255,255,.95);--hd-ink:#141414;--ft-bg:#0c0c0c;--hxw-ar:1500/630',
     css='''.hx h1,.h2{font-weight:400;line-height:1;letter-spacing:.01em;padding-top:6px}.hx h1{font-size:clamp(64px,8vw,132px)}.hx h1 em{font-style:normal;color:var(--p)}.hx .pic{border-radius:0;box-shadow:12px 12px 0 var(--p)}.h2{font-size:clamp(46px,5.4vw,84px)}
 .hs h1 em{font-style:normal;background:var(--p);color:#fff;padding:0 .12em;box-decoration-break:clone;-webkit-box-decoration-break:clone}.h2 em{font-style:normal;color:var(--p)}.dk .h2 em{color:#ff4b55}.hs .big{font-family:var(--fh);font-size:clamp(220px,30vw,460px);-webkit-text-stroke:2px rgba(227,6,19,.55)}
@@ -183,7 +183,7 @@ S['body'] = b_kindermann
 # ───────────── 9. Fahrschule Beinke, Osnabrück Rosenplatz ─────────────
 def b_beinke(s):
     return (hd(s, False) + hero_x(s, dict(
-        img='h-thomas.jpg', pos='50% 15%', quick=['auto', 'moto', 'anh'],
+        img='h-thomas.jpg', pos='50% 15%', bg='h-cabrio.jpg', quick=['auto', 'moto', 'anh'],
         ey='Fahrschule Beinke · Osnabrück Rosenplatz',
         h1='Läufst du noch, <em>oder fährst du schon?</em>',
         sub='Direkt am Rosenplatz, viermal pro Woche Theorie, geduldige Fahrlehrer und die praktische Lern-App. Bei uns lernst du, wie es geht. We speak English.',
@@ -224,12 +224,13 @@ S = SITES['beinke'] = site(
     rv_h2='Das sagen <em>unsere Fahrschüler.</em>',
     vars='--bg:#f3f7fb;--ink:#0e1b2c;--mute:#55627a;--p:#0e2a4f;--p-ink:#fff;--a:#11c4d4;--a-ink:#0e1b2c;--dk:#0e2a4f;--s:#fff;--s2:#e4eef6;--fh:"Sora",system-ui,sans-serif;--fb:"Inter",system-ui,sans-serif;--r:18px;--r2:26px;--br:999px;--mq-bg:#0e2a4f;--mq-ink:#11c4d4;--hd-bg:rgba(243,247,251,.94);--hd-ink:#0e1b2c;--logo-h:24px;--ft-bg:#081a33;--hx-bg:linear-gradient(160deg,#f3f7fb 55%,#d8f5f8)',
     css='''.hx h1{font-weight:800}.h2{font-weight:800;letter-spacing:-.02em}.hx h1 em,.h2 em{font-style:normal;color:#0aa3b2}.dk .h2 em{color:#11c4d4}
-.hx .pic{--hx-ar:4/5;--hx-r:28px;max-width:440px;justify-self:end}.tm figure img{aspect-ratio:3/4;object-position:50% 8%}.hd .logo img{height:24px}.ft img{background:#fff;padding:8px 10px;border-radius:6px;height:40px}''')
+.hx .pic{--hx-ar:4/5;--hx-r:28px;max-width:440px;justify-self:end}.tm figure img{aspect-ratio:3/4;object-position:50% 8%}.hd .logo img{height:24px}.ft img{background:#fff;padding:8px 10px;border-radius:6px;height:40px}
+.hx.hasbg::before{inset:0!important;filter:none!important;opacity:1!important;background-position:center 62%!important}.hx .pic{max-width:360px;justify-self:end}.hx.hasbg::after{content:'';position:absolute;inset:0;z-index:0;background:linear-gradient(90deg,rgba(243,247,251,.97) 0%,rgba(243,247,251,.9) 34%,rgba(243,247,251,0) 52%)}.hx.hasbg>.w{position:relative;z-index:1}''')
 S['bot'] = BOT('Rosi', 'deine Lotsin vom Rosenplatz', 'der Fahrschule Beinke', S, ['B', 'B197', 'BE', 'B96', 'B196', 'A', 'A2', 'A1', 'AM'],
     {'schnell': 'Viermal pro Woche Theorie, dazu die Lern-App: So geht es zügig voran.', 'ruhe': 'Wir gehen individuell auf dein Lerntempo ein, in einer ruhigen, konzentrierten Lernumgebung.', 'flex': 'Theorie viermal pro Woche, mitten in der Stadt am Rosenplatz.', 'angst': 'Unsere Fahrlehrer gelten als geduldig und ruhig. Auf Wunsch auch auf Englisch.'},
     qa=[('english|englisch', 'Yes, we speak English! Lessons are possible in English.'), ('karte|zahl|ec', 'Bei uns kannst du auch mit Karte zahlen.'), ('antrag', 'Wir bieten einen Führerschein-Antragsservice an.')],
     tour=[('#vorteile', 'Warum Beinke.'), ('#team', 'Deine Fahrlehrer.'), ('#english', 'Learning to drive in English.'), ('#kontakt', 'Hier meldest du dich an.')])
-S['img'] = {'logo.png': ('beinke/img/i007.png', 0, 'alphacrop'), 'h-thomas.jpg': ('beinke/img/i034.jpg', 1000),
+S['img'] = {'logo.png': ('beinke/img/i007.png', 0, 'alphacrop'), 'h-cabrio.jpg': ('beinke/img/i009.jpg', 1800), 'h-thomas.jpg': ('beinke/img/i034.jpg', 1000),
     't-thomas.jpg': ('beinke/img/i034.jpg', 900), 't-hendrick.jpg': ('beinke/img/i031.jpg', 900), 't-andreas.jpg': ('beinke/img/i029.jpg', 900), 't-martin.jpg': ('beinke/img/i032.jpg', 900),
     'g1.jpg': ('beinke/img/i003.jpg', 0), 'g2.jpg': ('beinke/img/i020.jpg', 0), 'g3.jpg': ('beinke/img/i017.jpg', 900), 'g4.jpg': ('beinke/img/i005.jpg', 0), 'g5.jpg': ('beinke/img/i002.jpg', 0)}
 S['body'] = b_beinke
@@ -273,15 +274,19 @@ S = SITES['eggert'] = site(
     form_h3='Info &amp; Anmeldung', form_p='Wir melden uns schnell bei dir, gern auch per WhatsApp.', form_btn='Anmeldung abschicken',
     kt_ey='Kontakt', kt_h2='Du entscheidest, <em>wohin.</em>', kt_p='Anrufen, WhatsApp oder Formular. Wir freuen uns auf dich, dein Team der Fahrschule Eggert.',
     rv_h2='Das sagen <em>unsere Fahrschüler.</em>',
-    vars='--bg:#fbfbf6;--ink:#17201a;--mute:#56605a;--p:#2fa84f;--p-ink:#fff;--a:#ffcb05;--a-ink:#17201a;--dk:#17201a;--s:#fff;--s2:#eef5ea;--fh:"Lilita One",system-ui,sans-serif;--fb:"Nunito",system-ui,sans-serif;--r:24px;--r2:32px;--br:999px;--hd-bg:rgba(251,251,246,.95);--hd-ink:#17201a;--logo-h:46px;--ft-bg:#101611;--hp-bg:radial-gradient(circle at 85% 20%,#e3f5d9,transparent 40%),#fbfbf6',
-    css='''.hp h1,.h2{font-weight:400;line-height:1.06}.hp h1 em,.h2 em{font-style:normal;color:var(--p)}.dk .h2 em{color:var(--a)}
-.comp{height:470px}.comp figure{border-radius:28px}.comp .c1{transform:rotate(-2deg)}.comp .badge{background:#e5007d;color:#fff}.promo figure{max-width:430px;justify-self:center}.promo .tag{background:#e5007d;color:#fff}
-.kl .k b{font-weight:400}.or .o b{font-weight:400}.or .o:last-child{background:#e5007d;color:#fff}.or .o:last-child span{color:rgba(255,255,255,.85)}.ft img{background:#fff;padding:8px 12px;border-radius:12px}''')
+    vars='--bg:#fbfbf6;--ink:#17201a;--mute:#56605a;--p:#e5291f;--p-ink:#fff;--a:#ffcb05;--a-ink:#17201a;--dk:#17201a;--s:#fff;--s2:#f5f1ea;--fh:"Montserrat",system-ui,sans-serif;--fb:"Montserrat",system-ui,sans-serif;--r:24px;--r2:32px;--br:999px;--hd-bg:rgba(251,251,246,.95);--hd-ink:#17201a;--logo-h:46px;--ft-bg:#101611;--hp-bg:linear-gradient(90deg,#fbfbf6 38%,rgba(251,251,246,.72) 62%,rgba(251,251,246,.35)),url(img/h-road.jpg) center 70%/cover no-repeat',
+    css='''.hp h1,.h2{font-weight:800;line-height:1.04;letter-spacing:-.02em}.hp h1 em,.h2 em{font-style:normal;color:var(--p)}.dk .h2 em{color:var(--a)}
+.comp{height:470px}.comp figure{border-radius:28px}.comp .c1{transform:rotate(-2deg)}.comp .badge{background:#e5007d;color:#fff}.comp .badge b,.comp .badge *{color:#fff!important}.promo figure{max-width:430px;justify-self:center}.promo .tag{background:#e5007d;color:#fff}
+.kl .k b{font-weight:800}.or .o b{font-weight:800}.or .o i{background:#fdc300!important;color:#17201a!important;padding:4px 10px!important;clip-path:polygon(0 0,92% 0,100% 50%,92% 100%,0 100%)}.ft img{background:#fff;padding:8px 12px;border-radius:12px}
+.hp{background:var(--hp-bg)!important}
+.or .grid{border-top:0!important;gap:26px 22px!important}.or .o,.or .o+.o{border:0!important;padding:0!important}.or .o b{display:inline-block;align-self:flex-start;background:#fdc300;color:#17201a;font-size:clamp(18px,1.5vw,22px)!important;text-transform:uppercase;padding:12px 34px 12px 16px;clip-path:polygon(0 0,90% 0,100% 50%,90% 100%,0 100%);box-shadow:inset 0 0 0 2px rgba(0,0,0,.06)}.or .o b::after{content:'';display:block}.or .o{position:relative}.or .o::before{content:'';position:absolute;left:18px;top:44px;bottom:-10px;width:5px;background:#9aa0a6;z-index:-1;opacity:.0}.or .o b{overflow-wrap:normal!important;white-space:nowrap}''')
 S['bot'] = BOT('Edda', 'deine Eggert-Lotsin', 'der Fahrschule Eggert', S, ['B', 'B196', 'B96', 'BE', 'A', 'A2', 'A1', 'AM', 'Mofa', 'C', 'CE', 'L', 'T'],
     {'schnell': 'Mit sechs Filialen findest du immer einen Unterricht in deiner Nähe.', 'ruhe': 'Unsere Fahrschüler loben vor allem die Geduld unserer Fahrlehrer, auch wenn man etwas mehrmals erklärt braucht.', 'flex': 'Unsere Fahrschüler schreiben: Die Termine waren flexibel.', 'angst': 'In Dissen kannst du erst am Fahrsimulator üben. Und es gibt unsere Frauenfahrschule, von und für Frauen.'},
     qa=[('frau', 'Unsere Frauenfahrschule in der Iburger Straße 67 in Osnabrück ist von und für Frauen.'), ('simulator', 'Am Fahrsimulator in unserer Hauptfiliale in Dissen kannst du fahren lernen, bevor es auf die Straße geht.'), ('whatsapp', 'Klar, schreib uns gern per WhatsApp.')],
     tour=[('#frauen', 'Neu: unsere Frauenfahrschule.'), ('#filialen', 'Sechsmal in deiner Nähe.'), ('#klassen', 'Alle Klassen auf einen Blick.'), ('#kontakt', 'Hier meldest du dich an.')])
-S['img'] = {'logo.png': ('eggert/img/i020.png', 0, 'alphacrop'), 'h1.jpg': ('eggert/img/i047.jpg', 0), 'h2.jpg': ('eggert/img/i058.jpg', 900), 'h3.jpg': ('eggert/img/i056.jpg', 0),
+S['img'] = {'logo.png': ('eggert/img/i020.png', 0, 'alphacrop'), 'h-road.jpg': ('eggert/img/i028.jpg', 1800), 'h1.jpg': ('eggert/img/i047.jpg', 0), 'h2.jpg': ('eggert/img/i058.jpg', 900), 'h3.jpg': ('eggert/img/i056.jpg', 0),
     'p-frauen.jpg': ('eggert/img/i010.jpg', 0),
     'g1.jpg': ('eggert/img/i050.jpg', 0), 'g2.jpg': ('eggert/img/i029.jpg', 0), 'g3.jpg': ('eggert/img/i037.jpg', 0), 'g4.jpg': ('eggert/img/i022.jpg', 0), 'g5.jpg': ('eggert/img/i012.jpg', 0), 'g6.jpg': ('eggert/img/i045.jpg', 0)}
 S['body'] = b_eggert
+
+SITES['city']['img']['logo.png'] = ('/home/claude/r14raw/logos/city.png', 0)
