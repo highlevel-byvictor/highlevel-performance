@@ -595,6 +595,18 @@ body.has-tbar .hd{top:38px}body.has-tbar .hd.scr{top:0}
 .rv .trk .cd p{font:500 clamp(18px,1.5vw,21px)/1.5 var(--fh)}
 .rv .trk .cd small{opacity:.6}
 .rv .trk .cd,.rv .trk .cd p,.rv .trk .cd small{color:inherit!important}
+/* Klassen als offene Tafel statt Kachel-Raster */
+.kl .grid{grid-template-columns:repeat(auto-fit,minmax(min(100%,460px),1fr))!important;gap:0 clamp(28px,4vw,64px)!important;border-top:2px solid var(--p)}
+.kl .k,.kl.dk .k{display:grid!important;grid-template-columns:clamp(84px,9vw,128px) 1fr auto;column-gap:18px;align-items:baseline;background:none!important;border:0!important;border-bottom:1px solid color-mix(in srgb,currentColor 16%,transparent)!important;border-radius:0!important;box-shadow:none!important;padding:20px 6px!important;transform:none!important;transition:background .25s}
+.kl .k:hover{background:color-mix(in srgb,var(--p) 7%,transparent)!important}
+.kl .k b{grid-column:1;grid-row:1/span 3;padding:0!important;font-size:clamp(26px,2.4vw,36px)!important}
+.kl .k h3{grid-column:2;margin:0 0 4px!important}
+.kl .k p{grid-column:2}
+.kl .k .go{grid-column:2;margin-top:8px!important}
+.kl .k small{position:static!important;grid-column:3;grid-row:1;background:none!important;padding:0!important;color:var(--mute)!important;font-size:13px!important;white-space:nowrap}
+.kl.dk .k small{color:rgba(255,255,255,.7)!important}
+.or .grid{grid-template-columns:repeat(auto-fit,minmax(230px,1fr))!important}
+.or .o b{font-size:clamp(22px,2.1vw,32px)!important;overflow-wrap:anywhere}
 
 :root{--bg:#f4f7fd;--ink:#0b1630;--mute:#55607a;--p:#1846c8;--p-ink:#fff;--a:#1846c8;--a-ink:#fff;--dk:#0b1630;--s:#fff;--s2:#e3eafb;--fh:"Red Hat Display",system-ui,sans-serif;--fb:"Red Hat Text",system-ui,sans-serif;--r:16px;--r2:24px;--br:999px;--mq-bg:#1846c8;--hd-bg:rgba(244,247,253,.95);--hd-ink:#0b1630;--logo-h:40px;--ft-bg:#081129;--tbar-bg:#0b1630;--hxw-ar:1600/755;--hx-bg:linear-gradient(180deg,#f4f7fd,#dfe7fb)}
 .hx h1,.h2{font-weight:900;letter-spacing:-.02em;line-height:1.04}.hx h1 em{font-style:normal;color:var(--p)}.hx .pic{--hx-r:40px 40px 0 40px}.h2 em{font-style:normal;color:var(--p)}.dk .h2 em{color:#8fb0ff}
