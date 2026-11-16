@@ -158,18 +158,30 @@ document.querySelectorAll('.vd').forEach(function(v){var b=v.querySelector('.pla
 var pp=document.getElementById('pop');if(pp){var sh=0;function show(){if(sh>=2)return;sh++;pp.classList.add('in');setTimeout(function(){pp.classList.remove('in');if(sh<2)setTimeout(show,60000)},15000)}var armed=0;addEventListener('scroll',function(){if(!armed&&scrollY>innerHeight*.9){armed=1;setTimeout(show,2500)}},{passive:true});pp.querySelector('.x').onclick=function(){sh=2;pp.classList.remove('in')};pp.querySelector('a').onclick=function(){sh=2;pp.classList.remove('in')}}
 })();</script>'''
 
+def hlp_anfrage(s):
+    f = s['firma'].replace('"', '&quot;')
+    return f'''<section class="hlpa" id="hlp-anfrage"><div class="hlpa-w"><div class="hlpa-t"><small>Nachricht von High Level Performance</small><h2>Gefällt Ihnen Ihr neuer Auftritt?</h2><p>Tragen Sie hier kurz Ihre Daten ein. Sie müssen sich um nichts weiter kümmern: Wir melden uns innerhalb von 24 Stunden telefonisch bei Ihnen, zu der Uhrzeit, die Ihnen passt.</p><p class="hlpa-s">Kostenlos und unverbindlich. Im Gespräch zeigen wir Ihnen, wie aus diesem Entwurf Ihre fertige Website wird.</p></div>
+<form class="hlpa-f" novalidate><input type="text" name="website" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
+<label>Firmenname<input name="firma" required value="{f}"></label><label>Tätigkeit / Branche<input name="branche" required value="{s.get('branche','Fahrschule')}"></label>
+<label>Ansprechpartner<input name="name" required autocomplete="name" placeholder="Vor- und Nachname"></label><label>Telefon<input name="tel" type="tel" required autocomplete="tel" placeholder="Für den Rückruf"></label>
+<label>E-Mail<input name="email" type="email" required autocomplete="email"></label><label>Wann erreichen wir Sie am besten?<select name="zeit_wunsch"><option>Vormittags (8–12 Uhr)</option><option>Mittags (12–14 Uhr)</option><option>Nachmittags (14–17 Uhr)</option><option>Abends (17–19 Uhr)</option><option>Egal, einfach anrufen</option></select></label>
+<label class="w2">Was ist Ihnen bei Ihrer Website besonders wichtig? (freiwillig)<textarea name="wunsch" rows="2" placeholder="z. B. mehr Anmeldungen, einfache Online-Anmeldung, neue Fotos"></textarea></label>
+<label class="chk nl w2"><input type="checkbox" name="newsletter" value="ja"><span><b>15 % Rabatt sichern:</b> Ja, ich möchte den Newsletter von High Level Performance. Neue Strategien für Websites, mehr Anfragen über Google und Social Media, was gerade im Markt funktioniert. Als Dankeschön gibt es 15 % Preisnachlass auf die erste Leistung, die ich bei Ihnen buche. Abmeldung jederzeit mit einem Klick.</span></label>
+<label class="chk w2"><input type="checkbox" name="ds" required><span>Ich bin einverstanden, dass meine Angaben zur Bearbeitung meiner Anfrage gespeichert werden (<a href="https://www.highlevel-performance.de/datenschutz/" target="_blank" rel="noopener">Datenschutz</a>).</span></label>
+<button class="w2" type="submit">Rückruf anfordern</button><p class="msg w2" hidden></p></form></div></section>'''
+
 def page(s, body):
-    note = '<div class="hlp-note"><b>Grober Entwurf</b> · Erstellt von High Level Performance. Bei einer Zusammenarbeit arbeiten wir jede Seite viel intensiver aus.<button aria-label="Hinweis schließen">×</button></div>'
+    note = '<div class="hlp-note"><b>Grober Entwurf</b> · Erstellt von High Level Performance. Bei einer Zusammenarbeit arbeiten wir jede Seite viel intensiver aus. <a href="#hlp-anfrage">Entwurf gefällt mir →</a><button aria-label="Hinweis schließen">×</button></div>'
     mcall = f'<div class="mcall"><a href="tel:{s["tel_i"]}">{PH}Anrufen</a><a href="#kontakt">{s["cta"]}</a></div>'
     bot = s['bot']
     import json
-    botjs = '<script>window.BOT=' + json.dumps(bot, ensure_ascii=False) + '</script>'
+    botjs = '<script>window.BOT=' + json.dumps(bot, ensure_ascii=False) + ';window.HLP_E=' + json.dumps({'firma': s['firma'], 'runde': 'Runde 14'}, ensure_ascii=False) + '</script>'
     return f'''<!DOCTYPE html><html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow"><title>{E(s['title'])}</title><meta name="description" content="{E(s['desc'])}"><style><!--FONTS-->
 <!--KIT_CSS-->
 <!--LIB_CSS-->
 <!--LIB14_CSS-->
 :root{{{s['vars']}}}
-{s.get('css','')}</style></head><body class="{'has-tbar' if s.get('tbar') else ''}">{tbar(s)}{body}{note}{mcall}{botjs}<script><!--KIT_JS--></script>{JS}</body></html>'''
+{s.get('css','')}</style></head><body class="{'has-tbar' if s.get('tbar') else ''}">{tbar(s)}{body.replace('<footer class="ft"', hlp_anfrage(s)+'<footer class="ft"',1)}{note}{mcall}{botjs}<script><!--KIT_JS--></script>{JS}</body></html>'''
 
 def promo(id, img, tag, h2, txt, pts, btn, cls=''):
     li = ''.join(f'<li>{p}</li>' for p in pts)
