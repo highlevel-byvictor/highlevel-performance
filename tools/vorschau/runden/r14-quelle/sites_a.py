@@ -131,8 +131,7 @@ def b_hp66(s):
         img='h-car.jpg', pos='50% 50%', quick=['auto', 'moto', 'roller', 'lkw', 'trak'],
         ey='Fahrschule HP 66 · Nortrup · Dinklage · Gehrde',
         h1='Sicher in die Prüfung. <em>Ohne Umwege.</em>',
-        sub='Peter Hackmann und Claudia Hackmann-Paschert begleiten dich von der Anmeldung bis zur praktischen Prüfung. Zu fairen Preisen, mit entspannten Fahrlehrern und modernen BMW.',
-        g1=('5,0 ★', 'bei Google'), g2=('Alle Klassen', 'vom Mofa bis zum Bus')))
+        sub='Peter Hackmann und Claudia Hackmann-Paschert begleiten dich von der Anmeldung bis zur praktischen Prüfung. Zu fairen Preisen, mit entspannten Fahrlehrern und modernen BMW.'))
         + marquee(['Klasse B &amp; BF17', 'BE · B96', 'A · A2 · A1 · AM', 'C · CE · C1', 'D · D1', 'Traktor T', 'EU-Berufskraftfahrer'], 'hpm')
         + sorgen('fragen', 'Häufige Fragen', 'Das wollen <em>alle wissen.</em>', '', [
             ('Wie lange dauert mein Führerschein?', 'Das hängt davon ab, wie oft du zur Theorie kommst und Zeit zum Fahren hast. Als Richtwert: <b>etwa 3 bis 6 Monate.</b>'),
@@ -140,8 +139,8 @@ def b_hp66(s):
             ('Welche Autos habt ihr?', 'Vor allem die <b>BMW X1</b> und den <b>3er</b>, mit Schaltung und mit Automatik.'),
             ('Was brauche ich für den Antrag?', 'Antrag (bekommst du von uns), <b>biometrisches Passbild, Sehtest und Erste-Hilfe-Nachweis</b>. Bei Erweiterungen eine Kopie deines Führerscheins.')], 'dk')
         + flotte('fahrzeuge', 'Unsere Fahrzeuge', 'Moderne Marken, <em>sauber vorbereitet.</em>', 'Nicht nur die Fahrlehrer sind wichtig, auch die Fahrzeuge. Darum setzen wir auf moderne Markenhersteller.', [
-            ('f-x1.jpg', 'BMW X1', 'Klasse B', '50% 50%'), ('f-3er.jpg', 'BMW 3er Touring', 'Klasse B · Schaltung &amp; Automatik', '50% 50%'), ('f-z.jpg', 'Kawasaki', 'Klasse A / A2', '50% 50%'),
-            ('f-z2.jpg', 'Kawasaki', 'Klasse A1', '50% 50%'), ('f-roller.jpg', 'Roller', 'Klasse AM', '50% 50%'), ('f-anh.jpg', 'Anhänger', 'Klasse BE · B96', '50% 50%')], cut=True)
+            ('f-x1.png', 'BMW X1', 'Klasse B', '50% 50%'), ('f-3er.png', 'BMW 3er Touring', 'Klasse B · Schaltung &amp; Automatik', '50% 50%'), ('f-z.png', 'Kawasaki', 'Klasse A / A2', '50% 50%'),
+            ('f-z2.png', 'Kawasaki', 'Klasse A1', '50% 50%'), ('f-roller.png', 'Roller', 'Klasse AM', '50% 50%'), ('f-anh.png', 'Anhänger', 'Klasse BE · B96', '50% 50%')], cls='show dk', cut=True)
         + orte('orte', 'Standorte', 'Drei Orte, <em>drei Abende.</em>', 'Anmeldung und Unterricht jeweils ab 18:30 Uhr.', [
             ('Nortrup', 'Kirchstraße 1', 'Donnerstags'), ('Dinklage', 'Burgstraße 7', 'Montags'), ('Gehrde', 'Lindenstraße 22', 'Dienstags')], 'alt')
         + ablauf('ablauf', 'Auf geht’s', 'Dein Weg <em>zum Führerschein.</em>', '', [
@@ -178,8 +177,8 @@ S['bot'] = BOT('Paul', 'dein HP-66-Lotse', 'der Fahrschule HP 66', S, ['B', 'BE'
     {'schnell': 'Als Richtwert brauchst du 3 bis 6 Monate. Je öfter du zur Theorie kommst, desto schneller geht’s.', 'ruhe': 'Unsere Fahrschüler loben vor allem eins: entspannte Fahrlehrer, alles wird gut erklärt.', 'flex': 'Unterricht gibt es montags in Dinklage, dienstags in Gehrde, donnerstags in Nortrup.', 'angst': 'Bei uns geht es entspannt zu. Und es gibt die BMW auch mit Automatik.'},
     qa=[('auto|bmw|automatik', 'Wir fahren BMW X1 und 3er, mit Schaltung und mit Automatik.'), ('dauer|lange', 'Als Richtwert 3 bis 6 Monate, je nachdem, wie oft du Zeit für Theorie und Fahrstunden hast.'), ('antrag|unterlagen|passbild', 'Für den Antrag brauchst du ein biometrisches Passbild, Sehtest und Erste-Hilfe-Nachweis. Den Antrag selbst bekommst du von uns.')],
     tour=[('#fragen', 'Die häufigsten Fragen, direkt beantwortet.'), ('#fahrzeuge', 'Unsere Fahrzeuge.'), ('#orte', 'Drei Standorte, drei Abende.'), ('#kontakt', 'Und hier geht’s zur Anmeldung.')])
-S['img'] = {'h-car.jpg': ('hp66/img/i001.webp', 0, '#0e0e0e'), 'logo.svg': ('hp66/brand/logo.svg', 0), 'f-x1.jpg': ('hp66/img/i006.webp', 0), 'f-3er.jpg': ('hp66/img/i003.webp', 0), 'f-z.jpg': ('hp66/img/i005.webp', 0),
-    'f-z2.jpg': ('hp66/img/i004.webp', 0), 'f-roller.jpg': ('hp66/img/i007.webp', 0), 'f-anh.jpg': ('hp66/img/i002.webp', 0)}
+S['img'] = {'h-car.jpg': ('hp66/img/i001.webp', 0, '#0e0e0e'), 'logo.svg': ('hp66/brand/logo.svg', 0), 'f-x1.png': ('hp66/img/i006.webp', 0), 'f-3er.png': ('hp66/img/i003.webp', 0), 'f-z.png': ('hp66/img/i005.webp', 0),
+    'f-z2.png': ('hp66/img/i004.webp', 0), 'f-roller.png': ('hp66/img/i007.webp', 0), 'f-anh.png': ('hp66/img/i002.webp', 0)}
 S['body'] = b_hp66
 
 # ───────────── 4. Fahrschule Beckermann, Quakenbrück · Bramsche · Alfhausen · Merzen · Osnabrück ─────────────
