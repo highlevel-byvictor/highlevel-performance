@@ -2,7 +2,7 @@
 Aufruf: python3 build.py [key ...]"""
 import sys, hashlib, shutil
 from pathlib import Path
-from PIL import Image, ImageOps, ImageChops
+from PIL import ImageColor, Image, ImageOps, ImageChops
 H = Path(__file__).parent
 ROOT = Path('/home/claude/highlevel-performance')
 RAW = Path('/home/claude/r14raw')
@@ -32,7 +32,7 @@ def prep(s, d):
         if not src.exists():
             g = sorted(src.parent.glob(src.stem + '.*'))
             if g: src = g[0]
-        if str(src).endswith('.mp4'): shutil.copy(src, out); continue
+        if str(src).endswith(('.mp4', '.svg')): shutil.copy(src, out); continue
         im = ImageOps.exif_transpose(Image.open(src))
         if isinstance(op, tuple):
             W, Hh = im.size; l, t, r, b = op; im = im.crop((round(l*W), round(t*Hh), round(r*W), round(b*Hh)))
@@ -43,6 +43,8 @@ def prep(s, d):
             im = im.convert('RGBA')
             if w and im.width > w: im = im.resize((w, round(im.height * w / im.width)), Image.LANCZOS)
             im.save(out, optimize=True); continue
+        if im.mode in ('RGBA', 'LA') or (im.mode == 'P' and 'transparency' in im.info):
+            im = im.convert('RGBA'); bgc = Image.new('RGBA', im.size, ImageColor.getrgb(op) + (255,) if isinstance(op, str) and op.startswith('#') else (255, 255, 255, 255)); bgc.alpha_composite(im); im = bgc
         im = im.convert('RGB')
         if w and im.width > w: im = im.resize((w, round(im.height * w / im.width)), Image.LANCZOS)
         im.save(out, quality=84, optimize=True, progressive=True)

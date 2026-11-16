@@ -166,17 +166,19 @@ S = SITES['hp66'] = site(
     form_h3='Auf die Plätze, fertig, los', form_p='Melde dich an, wir rufen dich an und besprechen den Start.', form_btn='Anmeldung abschicken',
     kt_ey='Kontakt', kt_h2='Dein schneller <em>Draht zu uns.</em>', kt_p='Anrufen, WhatsApp oder Formular, wie es dir am liebsten ist.',
     rv_h2='Was Fahrschüler <em>über uns sagen.</em>', social=[('Instagram', 'https://www.instagram.com/fahrschulehp66/'), ('Facebook', 'https://www.facebook.com/FahrschuleHP66/'), ('WhatsApp', 'https://wa.me/491702112506')],
-    logo_txt='HP<span style="color:var(--p)">66</span> <small style="font:600 13px var(--fb);opacity:.75">Fahrschule</small>',
-    vars='--bg:#f3f5f1;--ink:#121513;--mute:#555d58;--p:#8bd12a;--p-ink:#0d1406;--a:#8bd12a;--a-ink:#0d1406;--dk:#121513;--s:#fff;--s2:#e6ebe2;--fh:"Space Grotesk",system-ui,sans-serif;--fb:"Inter",system-ui,sans-serif;--r:16px;--r2:24px;--br:999px;--mq-bg:#121513;--mq-ink:#8bd12a;--hd-bg:rgba(18,21,19,.9);--hd-ink:#fff;--ft-bg:#0b0d0c;--hx-bg:#121513;--fl-bg:#fff',
+    logo_txt='<img src="img/logo.svg" alt="Fahrschule HP 66" style="height:46px;width:auto;display:block">',
+    vars='--bg:#f4f5f2;--ink:#0e0e0e;--mute:#4f5450;--p:#b8ff25;--p-ink:#0e0e0e;--a:#b8ff25;--a-ink:#0e0e0e;--dk:#0e0e0e;--s:#fff;--s2:#e8ebe4;--fh:"Montserrat",system-ui,sans-serif;--fb:"Montserrat",system-ui,sans-serif;--r:16px;--r2:24px;--br:999px;--mq-bg:#121513;--mq-ink:#8bd12a;--hd-bg:rgba(14,14,14,.94);--hd-ink:#fff;--ft-bg:#0e0e0e;--hx-bg:#0e0e0e;--fl-bg:#fff',
     css='''.hx{color:#fff}.hx .sub{color:rgba(255,255,255,.75)}.hx .btn-o{color:#fff}.hx h1{font-weight:700}.hx h1 em{color:var(--p)}.hx .pic{--hx-ar:16/11;--hx-r:28px}
 .hx::before{content:"";position:absolute;right:-10%;top:-20%;width:60%;height:140%;background:radial-gradient(closest-side,rgba(139,209,42,.22),transparent);z-index:1}
 .hx .chip{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);color:#fff}.h2{font-weight:700;letter-spacing:-.02em}.h2 em{font-style:normal;color:#5e9a10}.dk .h2 em{color:var(--p)}
-.hd .lt-logo{color:#fff}.fl .v figure{background:#fff}''')
+.hd .lt-logo{color:#fff}.fl .v figure{background:#fff}
+.hx .pic{background:transparent!important;box-shadow:none!important;border-radius:0!important;overflow:visible}.hx .pic img{object-fit:contain;border-radius:0}
+section:not(.hx):not(.dk) .ey{color:#3f6b00}''')
 S['bot'] = BOT('Paul', 'dein HP-66-Lotse', 'der Fahrschule HP 66', S, ['B', 'BE', 'B96', 'A', 'A2', 'A1', 'AM', 'Mofa', 'C', 'CE', 'D', 'T', 'L'],
     {'schnell': 'Als Richtwert brauchst du 3 bis 6 Monate. Je öfter du zur Theorie kommst, desto schneller geht’s.', 'ruhe': 'Unsere Fahrschüler loben vor allem eins: entspannte Fahrlehrer, alles wird gut erklärt.', 'flex': 'Unterricht gibt es montags in Dinklage, dienstags in Gehrde, donnerstags in Nortrup.', 'angst': 'Bei uns geht es entspannt zu. Und es gibt die BMW auch mit Automatik.'},
     qa=[('auto|bmw|automatik', 'Wir fahren BMW X1 und 3er, mit Schaltung und mit Automatik.'), ('dauer|lange', 'Als Richtwert 3 bis 6 Monate, je nachdem, wie oft du Zeit für Theorie und Fahrstunden hast.'), ('antrag|unterlagen|passbild', 'Für den Antrag brauchst du ein biometrisches Passbild, Sehtest und Erste-Hilfe-Nachweis. Den Antrag selbst bekommst du von uns.')],
     tour=[('#fragen', 'Die häufigsten Fragen, direkt beantwortet.'), ('#fahrzeuge', 'Unsere Fahrzeuge.'), ('#orte', 'Drei Standorte, drei Abende.'), ('#kontakt', 'Und hier geht’s zur Anmeldung.')])
-S['img'] = {'h-car.jpg': ('hp66/img/i001.webp', 0), 'f-x1.jpg': ('hp66/img/i006.webp', 0), 'f-3er.jpg': ('hp66/img/i003.webp', 0), 'f-z.jpg': ('hp66/img/i005.webp', 0),
+S['img'] = {'h-car.jpg': ('hp66/img/i001.webp', 0, '#0e0e0e'), 'logo.svg': ('hp66/brand/logo.svg', 0), 'f-x1.jpg': ('hp66/img/i006.webp', 0), 'f-3er.jpg': ('hp66/img/i003.webp', 0), 'f-z.jpg': ('hp66/img/i005.webp', 0),
     'f-z2.jpg': ('hp66/img/i004.webp', 0), 'f-roller.jpg': ('hp66/img/i007.webp', 0), 'f-anh.jpg': ('hp66/img/i002.webp', 0)}
 S['body'] = b_hp66
 
