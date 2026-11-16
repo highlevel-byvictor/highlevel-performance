@@ -121,7 +121,7 @@ def b_ludwig(s):
         ey='Fahrschule CL · Bohmte',
         h1='Fahren lernen <em>ohne Druck.</em>',
         sub='Carsten Ludwig und Detlev bringen dich in Bohmte entspannt zum Führerschein. Mit Vogel-Simulator, DriversCam-Videosystem und Theorie, die tatsächlich Spaß macht.',
-        g1=('4,7 ★', '30 Google-Bewertungen'), g2=('Di &amp; Do', 'Theorie 19:00 – 20:30')))
+        g1=('4,7 ★', 'bei Google'), g2=('Di &amp; Do', 'Theorie 19:00 – 20:30')))
         + sorgen('stimmen', 'Was Fahrschüler über uns sagen', 'Locker, geduldig, <em>ohne Stress.</em>', 'So beschreiben uns unsere Fahrschüler auf Google, sinngemäß:', [
             ('Was, wenn ich was nicht verstehe?', 'Dann wird es <b>ruhig und klar erklärt</b>. Du kannst jederzeit fragen, ohne dich schlecht zu fühlen.'),
             ('Ist das nicht total stressig?', 'Die Stunden sind <b>nicht stressig oder unter Druck</b>, sondern locker und angenehm. Man fühlt sich sofort wohl.'),
@@ -204,7 +204,7 @@ S = SITES['napierski'] = site(
     form_orte=['Löningen', 'Lastrup', 'Essen (Oldb.)'],
     form_h3='Persönlicher Kostenvoranschlag', form_p='Sag uns, was du vorhast. Wir melden uns mit deinem persönlichen Angebot.', form_btn='Anfrage senden',
     kt_ey='Kontakt', kt_h2='Du hast noch Fragen? <em>Wir helfen dir.</em>', kt_p='Telefon, WhatsApp oder E-Mail, wie es dir am liebsten ist.',
-    vars='--bg:#f4f7fd;--ink:#0b1630;--mute:#55607a;--p:#1846c8;--p-ink:#fff;--a:#1846c8;--a-ink:#fff;--dk:#0b1630;--s:#fff;--s2:#e3eafb;--fh:"Red Hat Display",system-ui,sans-serif;--fb:"Red Hat Text",system-ui,sans-serif;--r:16px;--r2:24px;--br:999px;--mq-bg:#1846c8;--hd-bg:rgba(244,247,253,.95);--hd-ink:#0b1630;--logo-h:40px;--ft-bg:#081129;--tbar-bg:#0b1630;--hxw-ar:1600/755;--hx-bg:linear-gradient(180deg,#f4f7fd,#dfe7fb)',
+    vars='--bg:#f4f7fd;--ink:#0b1630;--mute:#55607a;--p:#1846c8;--p-ink:#fff;--a:#1846c8;--a-ink:#fff;--dk:#0b1630;--s:#fff;--s2:#e3eafb;--fh:"Red Hat Display",system-ui,sans-serif;--fb:"Open Sans",system-ui,sans-serif;--r:16px;--r2:24px;--br:999px;--mq-bg:#1846c8;--hd-bg:rgba(244,247,253,.95);--hd-ink:#0b1630;--logo-h:40px;--ft-bg:#081129;--tbar-bg:#0b1630;--hxw-ar:1600/755;--hx-bg:linear-gradient(180deg,#f4f7fd,#dfe7fb)',
     css='''.hx h1,.h2{font-weight:900;letter-spacing:-.02em;line-height:1.04}.hx h1 em{font-style:normal;color:var(--p)}.hx .pic{--hx-r:40px 40px 0 40px}.h2 em{font-style:normal;color:var(--p)}.dk .h2 em{color:#8fb0ff}
 .hd .logo img{filter:brightness(0)}.ft img{filter:brightness(0) invert(1)}.tm .grid{grid-template-columns:repeat(5,1fr)}.tm figure img{aspect-ratio:4/5;object-position:50% 25%;background:#fff}@media (max-width:900px){.tm .grid{grid-template-columns:repeat(2,1fr)}}''')
 S['bot'] = BOT('Nele', 'deine Napierski-Lotsin', 'der Fahrschule Napierski', S, ['B', 'BE', 'A', 'A2', 'A1', 'AM', 'Mofa', 'C', 'CE', 'L', 'T'],
@@ -257,8 +257,8 @@ S = SITES['witte'] = site(
     form_h3='Online-Anmeldung', form_p='Wir melden uns bei dir und besprechen den Start.', form_btn='Anmeldung abschicken',
     kt_ey='Kontakt', kt_h2='Deine erste <em>Anlaufstelle.</em>', kt_p='Ruf uns gern direkt an oder schreib uns eine E-Mail.',
     rv_h2='Was ehemalige Fahrschüler <em>über uns sagen.</em>',
-    vars='--bg:#faf8f4;--ink:#1a1a1a;--mute:#5e5a54;--p:#0b6b3a;--p-ink:#fff;--a:#0b6b3a;--a-ink:#fff;--dk:#1a1a1a;--s:#fff;--s2:#efeae1;--fh:"Playfair Display",Georgia,serif;--fb:"Mulish",system-ui,sans-serif;--r:14px;--r2:22px;--br:8px;--mq-bg:#1a1a1a;--mq-ink:#fff;--hd-bg:rgba(250,248,244,.95);--hd-ink:#1a1a1a;--logo-h:48px;--ft-bg:#111',
-    css='''.hp h1,.h2{font-weight:700;line-height:1.08}.hp h1 em,.h2 em{color:#d2232a}.dk .h2 em{color:#ff6b70}.comp{height:480px}
+    vars='--bg:#faf8f4;--ink:#1a1a1a;--mute:#5e5a54;--p:#284b59;--p-ink:#fff;--a:#284b59;--a-ink:#fff;--dk:#1a1a1a;--s:#fff;--s2:#efeae1;--fh:"Gupter",Georgia,serif;--fb:"Signika",system-ui,sans-serif;--r:14px;--r2:22px;--br:8px;--mq-bg:#1a1a1a;--mq-ink:#fff;--hd-bg:rgba(250,248,244,.95);--hd-ink:#1a1a1a;--logo-h:48px;--ft-bg:#111',
+    css='''.hp h1,.h2{font-weight:700;line-height:1.08}.hp h1 em,.h2 em{color:#284b59}.dk .h2 em{color:#7fb2c6}.comp{height:480px}
 .st figure img{aspect-ratio:4/3}.ft img{background:#fff;padding:8px 10px;border-radius:6px}.mq span{font-family:var(--fh);font-style:italic}''')
 S['bot'] = BOT('Willi', 'dein Witte-Lotse', 'der Fahrschule Witte', S, ['B', 'B197', 'A', 'A2', 'A1', 'AM', 'Mofa', 'C', 'CE', 'D', 'L', 'T'],
     {'schnell': 'Flexible Stundenpläne helfen dir, zügig voranzukommen.', 'ruhe': 'Unsere Fahrschüler schreiben: Egal wie nervös man ist, die ruhige Art beruhigt sofort.', 'flex': 'Zwei Standorte, Cloppenburg und Cappeln, und flexible Stundenpläne.', 'angst': 'Alles wird verständlich erklärt, wenn nötig auch mehrmals.'},

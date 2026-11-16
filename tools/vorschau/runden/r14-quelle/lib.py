@@ -26,7 +26,12 @@ def hd(s, light=True):
 def chip(s):
     g = s.get('google')
     if not g: return ''
-    return f'<div class="chip"><b>{g[0]}</b><span class="st">{stars(g[0])}</span>{g[1]} Google-Bewertungen</div>'
+    t = f'{g[1]} Google-Bewertungen' if g[1] >= 50 else 'Bewertungen bei Google ansehen'
+    return f'<a class="chip" href="{gurl(s)}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit"><b>{g[0]}</b><span class="st">{stars(g[0])}</span>{t} <span aria-hidden="true">↗</span></a>'
+
+def gurl(s):
+    import urllib.parse
+    return 'https://www.google.com/maps/search/?api=1&amp;query=' + urllib.parse.quote_plus(s['firma'] + ' ' + s.get('adresse', ''))
 
 def hero_slides(s, h):
     sl = ''
@@ -117,7 +122,7 @@ def vgrid(id, ey, h2, lead, items, cls=''):
 def reviews(s, items, cls=''):
     g = s['google']
     c = ''.join(f'<div class="cd"><div class="st">★★★★★</div><p>„{t}“</p><small>Google-Rezension, sinngemäß</small></div>' for t in items) * 2
-    return f'<section class="sec rv {cls}" id="stimmen" style="overflow:hidden"><div class="w"><div class="sum" data-r><b>{g[0]}</b><div><div class="st">{stars(g[0])}</div><span>{g[1]} Bewertungen bei Google</span></div></div><h2 class="h2" style="margin-top:20px">{s.get("rv_h2","Das sagen unsere <em>Mitglieder.</em>")}</h2></div><div class="trk">{c}</div><div class="w"><p class="note">Auszüge aus echten Google-Rezensionen, gekürzt und sinngemäß wiedergegeben.</p></div></section>'
+    return f'<section class="sec rv {cls}" id="stimmen" style="overflow:hidden"><div class="w"><div class="sum" data-r><b>{g[0]}</b><div><div class="st">{stars(g[0])}</div><span>{(str(g[1]) + ' Bewertungen bei Google') if g[1] >= 50 else 'Bewertungen bei Google'} · <a href="{gurl(s)}" target="_blank" rel="noopener" style="color:inherit">ansehen ↗</a></span></div></div><h2 class="h2" style="margin-top:20px">{s.get("rv_h2","Das sagen unsere <em>Mitglieder.</em>")}</h2></div><div class="trk">{c}</div><div class="w"><p class="note">Auszüge aus echten Google-Rezensionen, gekürzt und sinngemäß wiedergegeben.</p></div></section>'
 
 def steps(ey, h2, items, cls=''):
     r = ''.join(f'<div data-r><h3>{a}</h3><p>{b}</p></div>' for a, b in items)

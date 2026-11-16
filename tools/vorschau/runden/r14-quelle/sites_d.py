@@ -135,7 +135,7 @@ S = SITES['moss'] = site(
     form_h3='Direkt online anmelden', form_p='Der schnellste und einfachste Weg. Wir melden uns bei dir.', form_btn='Anmeldung abschicken',
     kt_ey='Kontakt', kt_h2='Ehrlich <em>und fair.</em>', kt_p='Vechta und Lohne. Telefon 04441 859745.',
     rv_h2='Stimmen <em>unserer Fahrschüler.</em>', logo_txt='<img src="img/logo.png" alt="Fahrschule Moss" style="height:24px;width:auto;display:block">',
-    vars='--bg:#f2f6fa;--ink:#0b1424;--mute:#556175;--p:#2aa9ef;--p-ink:#06121f;--a:#2aa9ef;--a-ink:#06121f;--dk:#0b1424;--s:#fff;--s2:#e2ebf4;--fh:"Unbounded",system-ui,sans-serif;--fb:"Plus Jakarta Sans",system-ui,sans-serif;--r:20px;--r2:28px;--br:999px;--hd-bg:rgba(11,20,36,.9);--hd-ink:#fff;--ft-bg:#060c17;--hx-bg:#0b1424;--hx-op:.35;--hx-blur:3px',
+    vars='--bg:#f2f6fa;--ink:#0b1424;--mute:#556175;--p:#2aa9ef;--p-ink:#06121f;--a:#2aa9ef;--a-ink:#06121f;--dk:#0b1424;--s:#fff;--s2:#e2ebf4;--fh:"Unbounded",system-ui,sans-serif;--fb:"Montserrat",system-ui,sans-serif;--r:20px;--r2:28px;--br:999px;--hd-bg:rgba(11,20,36,.9);--hd-ink:#fff;--ft-bg:#060c17;--hx-bg:#0b1424;--hx-op:.35;--hx-blur:3px',
     css='''.hx{color:#fff}.hx .sub{color:rgba(255,255,255,.75)}.hx .btn-o{color:#fff}.hx .chip{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);color:#fff}
 .hx h1{font-weight:800;font-size:clamp(38px,4.6vw,70px);line-height:1.08}.hx h1 em,.h2 em{font-style:normal;color:var(--p)}.h2{font-weight:700;letter-spacing:-.02em;font-size:clamp(32px,3.6vw,56px)}
 .hx .pic{--hx-ar:4/5;max-width:440px;justify-self:end}.hd .lt-logo{color:#fff;font-size:18px}.gl .grid{grid-template-columns:repeat(4,1fr);grid-auto-rows:320px}@media (max-width:820px){.gl .grid{grid-template-columns:repeat(2,1fr);grid-auto-rows:240px}}
@@ -156,7 +156,7 @@ def b_christians(s):
         ey='Christians Fahrschul-Team · Lohne &amp; Dinklage',
         h1='Come in <em>&amp; drive out.</em>',
         sub='Seit über 30 Jahren steht unsere Fahrschule für Kompetenz, Qualität und Herzlichkeit. Pkw, Motorrad, Anhänger oder Traktor: Wir bringen dich erfolgreich ans Ziel.',
-        ubar=[('5,0 Sterne', '47 Google-Bewertungen'), ('30+ Jahre', 'Erfahrung'), ('Simulator', 'Ängste abbauen')]))
+        ubar=[('5,0 Sterne', 'bei Google'), ('30+ Jahre', 'Erfahrung'), ('Simulator', 'Ängste abbauen')]))
         + svc('vorteile', 'Kompetent · Flexibel · Erfolgreich', 'Anmelden <em>und durchstarten.</em>', 'Unser Service-Team ist von der Beratung bis zur Prüfung an deiner Seite.', [
             ('Trainings-App', 'Mit dem Online-Führerscheintraining lernst du, wann und wo du willst.'),
             ('Fahrsimulator', 'Für die Grundausbildung, zur Schulung des Reaktionsvermögens oder um Ängste abzubauen.'),
@@ -211,7 +211,7 @@ def b_kaiser(s):
         ey='Kaiser Fahrschule · Lohne und fünf weitere Standorte',
         h1='Werde <em>Kaiser.</em>',
         sub='Führerschein aller Klassen, Berufskraftfahrer, Fahrlehrerausbildung und eine Lkw- und Bus-Flotte zum Mieten. Die Kaiser Fahrschule ist nach AZAV zertifiziert, damit Ausbildungen gefördert werden können.',
-        ubar=[('5,0 Sterne', '42 Google-Bewertungen'), ('6 Standorte', 'von Osnabrück bis Oldenburg'), ('AZAV', 'zertifiziert')]))
+        ubar=[('5,0 Sterne', 'bei Google'), ('6 Standorte', 'von Osnabrück bis Oldenburg'), ('AZAV', 'zertifiziert')]))
         + duo('bereiche', 'Vier Bereiche', 'Mehr als <em>eine Fahrschule.</em>', '', [
             ('Fahrschule', 'Alle Klassen', 'd-fs.jpg', 'Führerscheinausbildung aller Klassen, ASF-Kurse und Aus- und Weiterbildung im Güter- und Personenverkehr.', ['Pkw bis Bus', 'ASF-Kurse', 'Online-Anmeldung'], 'Zur Anmeldung'),
             ('Fahrlehrerausbildung', 'Zukunftssicherer Job', 'd-fl.jpg', 'In Oldenburg bereiten wir dich intensiv auf die Prüfungen und die Arbeit als Fahrlehrer vor. Mit guten Verdienstmöglichkeiten.', ['Ausbildungsstätte Oldenburg', 'Klasse BE und mehr'], 'Fahrlehrer werden')], 'alt')

@@ -386,9 +386,9 @@ S = SITES['beckermann'] = site(
     form_h3='Online anmelden', form_p='Trag dich ein, wir melden uns für den Start bei dir.', form_btn='Anmeldung abschicken',
     kt_ey='Kontakt', kt_h2='Los geht’s <em>mit deinem Führerschein.</em>', kt_p='Telefon 05461 933955 oder einfach das Formular.',
     social=[('Instagram', 'https://www.instagram.com/fahrschule_beckermann/'), ('Facebook', 'https://www.facebook.com/FahrschuleBeckermann/')], logo_txt='<img src="img/logo.png" alt="Fahrschule Beckermann" style="height:46px;width:auto;display:block">',
-    vars='--hx-bg:#151515;--hxw-ar:1024/560;--bg:#f7f5f0;--ink:#151515;--mute:#5a5853;--p:#f0a30a;--p-ink:#151515;--a:#f0a30a;--a-ink:#151515;--dk:#151515;--s:#fff;--s2:#efeae0;--fh:"Barlow Condensed",Impact,sans-serif;--fb:"Barlow",system-ui,sans-serif;--r:6px;--r2:10px;--br:4px;--mq-bg:#f0a30a;--hd-bg:#ffffff;--hd-ink:#151515;--logo-h:40px;--ft-bg:#0d0d0d',
+    vars='--hx-bg:#151515;--hxw-ar:1024/560;--bg:#f7f5f0;--ink:#151515;--mute:#5a5853;--p:#ff6600;--p-ink:#151515;--a:#ff6600;--a-ink:#151515;--dk:#151515;--s:#fff;--s2:#efeae0;--fh:"Barlow Condensed",Impact,sans-serif;--fb:"Heebo",system-ui,sans-serif;--r:6px;--r2:10px;--br:4px;--mq-bg:#ff6600;--hd-bg:#ffffff;--hd-ink:#151515;--logo-h:40px;--ft-bg:#0d0d0d',
     css='''.hx{color:#fff}.hx .sub{color:rgba(255,255,255,.75)}.hx .btn-o{color:#fff}.hx .chip{background:rgba(255,255,255,.1);border-color:rgba(255,255,255,.2);color:#fff}.hx h1,.h2{font-weight:800;text-transform:uppercase;line-height:1;letter-spacing:.005em}.hx h1{font-size:clamp(54px,6.4vw,104px);padding-top:6px}.hx h1 em{font-style:normal;color:var(--p)}.h2{font-size:clamp(40px,4.6vw,72px);padding-top:4px}
-.hs h1 em{font-style:normal;color:var(--p)}.h2 em{font-style:normal;color:#c27f00}.dk .h2 em{color:var(--p)}.hs .big{font-family:var(--fh);-webkit-text-stroke:2px rgba(240,163,10,.35)}
+.hs h1 em{font-style:normal;color:var(--p)}.h2 em{font-style:normal;color:#cc5200}.dk .h2 em{color:var(--p)}.hs .big{font-family:var(--fh);-webkit-text-stroke:2px rgba(240,163,10,.35)}
 .hd .lt-logo{color:#fff;font-family:var(--fh);font-size:26px;letter-spacing:.02em}
 .hd{background:#fff!important;color:#151515!important;box-shadow:0 1px 0 rgba(0,0,0,.08)}.hd .nav a{color:#151515}''')
 S['bot'] = BOT('Becky', 'deine Führerschein-Lotsin', 'der Fahrschule Beckermann', S, ['B', 'B197', 'B196', 'BE', 'B96', 'A', 'A2', 'A1', 'AM', 'Mofa', 'C', 'CE', 'D', 'L', 'T'],
@@ -407,7 +407,7 @@ def b_tepe(s):
         ey='Fahrschule Tepe · Bramsche',
         h1='Spontan ans Meer. <em>Ganz ohne Mama und Papa.</em>',
         sub='Wir begleiten dich Schritt für Schritt vom Theorieunterricht bis zur Fahrprüfung. Entspannt, persönlich und in deinem Tempo. Und wer Respekt vor der ersten Stunde hat, startet im Fahrsimulator.',
-        ubar=[('4,7 Sterne', '34 Google-Bewertungen'), ('Simulator', 'erst üben, dann Straße'), ('Mo &amp; Do', 'Theorie ab 19:30 Uhr')]))
+        ubar=[('4,7 Sterne', 'bei Google'), ('Simulator', 'erst üben, dann Straße'), ('Mo &amp; Do', 'Theorie ab 19:30 Uhr')]))
         + sorgen('angst', 'Kennst du das?', 'Respekt vor der <em>ersten Fahrstunde?</em>', 'Völlig normal. Darum geht es bei uns entspannt los.', [
             ('Was, wenn ich am Anfang alles falsch mache?', 'Dann übst du zuerst im <b>Fahrsimulator</b>: ein Gefühl fürs Fahren bekommen, ohne Verkehr und ohne Druck.'),
             ('Ich lerne langsamer als andere.', 'Jeder lernt anders. <b>Du bestimmst selbst</b>, wie schnell du vorankommen möchtest.'),
