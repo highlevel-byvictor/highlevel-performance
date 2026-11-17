@@ -16,6 +16,7 @@ def b_meppens(s):
         h1='Küche mit Herz. <em>Ihr Rezept zur Traumküche.</em>',
         sub='Professionelle und individuelle Beratung, 3D-Planung, Lieferung und Montage aus einer Hand. Beratung auf Deutsch und Niederländisch, auf Wunsch auch nach 18 Uhr.',
         ubar=[('40+ Jahre', 'Ihr Experte in Sachen Küche'), ('15 Profis', 'Beratung, Büro, Montage, Lager'), ('Platz 4', '„Das Goldene Dreieck“ 2016')]))
+        + spot('quooker', 'Quooker im Meppens Küchenstudio', 'Der Hahn, der alles kann. <em>Live bei uns im Studio.</em>', 'Kochend, gekühlt, sprudelnd: Den Quooker zeigen wir Ihnen in unserer Ausstellung in Meppen am laufenden Hahn. Den TV-Spot gibt es hier schon mal vorab.', 'quooker.mp4', 'quooker.jpg', 'mpq')
         + marquee(['Häcker', 'Schüller', 'neola', 'Laminam', 'Stoneworks', 'Siemens', 'Miele', 'Berbel', 'Franke', 'Naber'], 'mp')
         + promo('angebote', 'p-ausstellung.jpg', 'Aktion 2026', 'Ausstellungsküchen <em>zum Hammerpreis.</em>',
                 'Unsere Ausstellungsküchen geben wir zu besonders günstigen Preisen ab, inklusive Markengeräten. Dazu gibt es das neue Küchenmagazin 2026 gratis, im Studio oder per Post zu Ihnen nach Hause.',
@@ -56,13 +57,14 @@ S = SITES['meppens'] = site(
 .tm .grid{grid-template-columns:repeat(5,1fr);gap:22px}.tm .grid figure div{aspect-ratio:3/4}.tm .grid figure div img{object-position:50% 20%}
 @media(max-width:900px){.tm .grid{grid-template-columns:repeat(2,1fr)}}
 .ft img{background:#fff;padding:8px 12px;height:52px}''')
+S['css2'] = '.sp16{--sp-bg:#15141A}.sp16 .h2{text-transform:uppercase}.sp16 .h2 em{color:#ff3a59}'
 S['bot'] = BOT('Mia', 'Ihre Küchen-Lotsin', 'Meppens Küchenstudio', S, [
     ['Öffnungszeiten', 'Mo–Fr 9–12:30 und 13:30–18 Uhr, Sa 9–13 Uhr. Beratungen nach 18 Uhr mit Terminabsprache.'],
     ['Ausstellungsküchen?', 'Aktuell gibt es Ausstellungsküchen zum Hammerpreis. Rufen Sie an: 05931 6686.'],
     ['Nederlands?', 'Ja, onze adviseurs spreken Nederlands. Bel ons: +49 5931 6686.']],
     ['#angebote', '#leistungen', '#kundenkuechen', '#kontakt'])
 M = 'meppens/img/'
-S['img'] = {'logo.png': (M + 'i002.png', 0), 'h1.jpg': (M + 'i017.jpg', 0), 'h2.jpg': (M + 'i008.jpg', 0), 'h3.jpg': (M + 'i018.jpg', 0), 'h4.jpg': (M + 'i019.jpg', 0),
+S['img'] = {'quooker.mp4': ('/home/claude/r16raw/vid/meppens_quooker_web.mp4', 0), 'quooker.jpg': ('/home/claude/r16raw/vid/meppens_poster.jpg', 0), 'logo.png': (M + 'i002.png', 0), 'h1.jpg': (M + 'i017.jpg', 0), 'h2.jpg': (M + 'i008.jpg', 0), 'h3.jpg': (M + 'i018.jpg', 0), 'h4.jpg': (M + 'i019.jpg', 0),
     'p-ausstellung.jpg': (M + 'i010.jpg', 1200), 'award.jpg': (M + 'i020.jpg', 0),
     'l1.jpg': (M + 'i011.jpg', 1400), 'l2.jpg': (M + 'i012.jpg', 1400), 'l3.jpg': (M + 'i021.jpg', 0), 'l4.jpg': (M + 'i009.webp', 1400), 'l5.jpg': (M + 'i022.jpg', 0),
     'k1.jpg': (M + 'i087.jpg', 0), 'k2.jpg': (M + 'i070.jpg', 0), 'k3.jpg': (M + 'i080.jpg', 0), 'k4.jpg': (M + 'i072.jpg', 0), 'k5.jpg': (M + 'i081.jpg', 0),
@@ -77,7 +79,7 @@ def b_ikum(s):
         ey='Ihre Küche &amp; Mehr · der Küchenprofi im Emsland',
         h1='Wir nehmen Ihre Küche persönlich. <em>Herz drauf!</em>',
         sub='Ihr Küchenstudio in Meppen mit großer Ausstellung: individuelle Planung, Marken wie pronorm, NEFF, Quooker, Hollweg und brueder, dazu Lieferung und Montage durch unser Team.',
-        g1=('Donnerstags', 'bis 20 Uhr geöffnet'), g2=('pronorm · NEFF', 'Quooker · Hollweg · brueder')))
+))
         + marquee(['pronorm', 'NEFF', 'Quooker', 'Hollweg', 'brueder', 'Miele', 'Siemens', 'Bosch', 'Blanco', 'Naber'], 'ik')
         + scroller('kuechenideen', 'Küchenideen', 'Lassen Sie sich <em>inspirieren.</em>', 'Musterküchen und Raumkonzepte live in unserer großzügigen Ausstellung in Meppen.', [
             ('Holz und Wärme', 'k1.jpg', 'Natürliche Fronten, gemütliche Atmosphäre.', '50% 50%'),
@@ -113,6 +115,7 @@ S = SITES['ikum'] = site(
     css='''.hx h1,.h2{font-weight:700;letter-spacing:-.02em;line-height:1.05}.hx h1 em{display:inline-block;color:#e2001a;font-style:italic}.h2 em{font-style:normal;color:#16A6A6}.dk .h2 em{color:#7fe0e0}
 .hx{padding-top:130px}.hx h1{hyphens:manual}@media(max-width:820px){.hx .gl{display:none}.hx.wide .pic{--hxw-ar:4/3}}.mq.ik span{font-weight:700}.alt{background:var(--s2)}.st figure img{object-position:50% 50%}
 .ft img{background:#fff;padding:8px 12px;border-radius:10px;height:60px}''')
+S['css2'] = '.hx{padding-top:92px!important;min-height:0!important}.hx.wide .w{gap:26px}.hx.wide .pic{margin-inline:calc(50% - 50vw);aspect-ratio:auto!important;height:min(54vh,520px);box-shadow:none}.hx h1{font-size:clamp(38px,4.3vw,66px)!important}@media(max-width:820px){.hx.wide .pic{height:38vh;margin-inline:-20px}}'
 S['bot'] = BOT('Lena', 'Ihre Küchen-Lotsin', 'Ihre Küche &amp; Mehr', S, [
     ['Öffnungszeiten', 'Mo–Fr 9–13 und 14–18:30 Uhr, donnerstags bis 20 Uhr, Sa 9–13 Uhr.'],
     ['Beratung zu Hause?', 'Ja, wir beraten Sie im Studio oder bei Ihnen zu Hause. Rufen Sie an: 05931 8338.'],
@@ -126,12 +129,13 @@ S['body'] = b_ikum
 
 # ───────────── 7. Die Zwei Küchen & Möbelbau Maic Niemann, Lastrup ─────────────
 def b_zwei(s):
-    return (hd(s, False) + hero_x(s, dict(
-        img='h-pic.jpg', pos='50% 50%', bg='emo.jpg',
+    return (hd(s, False) + hero_split(s, dict(
+        imgs=['emo.jpg', 'h-pic.jpg', 'h-moebel.jpg'], pos={'emo.jpg': '55% 35%', 'h-moebel.jpg': '50% 40%'}, side='l', big='2',
+        ubar=[('Meisterbetrieb', 'eigene Werkstatt'), ('3D-Planung', 'Aufmaß vor Ort'), ('Deutschlandweit', 'Montage')],
         ey='Die Zwei Küchen &amp; Möbelbau Maic Niemann · Lastrup',
         h1='Ihre Küche nach Maß. <em>Geplant und gebaut in Lastrup.</em>',
         sub='Einbauküchen in allen Variationen und Möbel nach Maß aus der eigenen Meisterwerkstatt, unter einem Dach in Lastrup. Montage deutschlandweit.',
-        g1=('Meisterbetrieb', 'eigene Produktion'), g2=('3D-Planung', 'Aufmaß vor Ort')))
+))
         + marquee(['Häcker', 'nobilia', 'berbel', 'Miele', 'Bosch', 'NOVY', 'Quooker', 'Constructa', 'Möbel nach Maß'], 'zw')
         + duo('welten', 'Zwei Partner, ein Standort', 'Küche und Möbel <em>aus einer Hand.</em>', 'Ihre Küche plant Die Zwei Küchen, passende Möbel fertigt Möbelbau Maic Niemann.', [
             ('Küchenstudio', 'Die Zwei Küchen', 'w-kueche.jpg', 'Küchen für jede Raumgröße, hochwertige Materialien und Elektrogeräte namhafter Hersteller. Auch Sonderwünsche sind kein Problem.', ['Computergestützte 3D-Planung', 'Aufmaß vor Ort', 'Montage deutschlandweit'], 'Küche anfragen'),
@@ -163,19 +167,20 @@ S = SITES['zwei'] = site(
     form_h3='Beratungstermin anfragen', form_p='Wir melden uns persönlich, gern auch für einen Termin bei Ihnen vor Ort.', form_btn='Rückruf anfordern',
     kt_ey='Kontakt', kt_h2='Sprechen Sie <em>mit uns.</em>', kt_p='Küchenstudio: 04472 947120 · Möbelbau: 04472 947121 · mobil 0173 2368947.',
     vars='--bg:#fff;--ink:#22262a;--mute:#51585F;--p:#E8711A;--p-ink:#fff;--a:#E8711A;--a-ink:#fff;--dk:#3a2416;--s:#fff;--s2:#fbf6ef;--fh:"Montserrat",system-ui,sans-serif;--fb:"Work Sans",system-ui,sans-serif;--r:6px;--r2:10px;--br:6px;--mq-bg:#854F2C;--mq-ink:#fff;--hd-bg:rgba(255,255,255,.97);--hd-ink:#22262a;--logo-h:52px;--ft-bg:#2b1b10;--hx-ar:4/3;--hx-r:10px',
-    css=EMO('255,255,255', 'center 35%', pic_w=460, mpos='45% 35%', bgl=42) + '''
+    css='''
 .hx h1,.h2{font-weight:800;letter-spacing:-.02em;line-height:1.05}.hx h1 em{display:block;color:#E8711A;font-style:normal}.h2 em{font-style:normal;color:#E8711A}.dk .h2 em{color:#F2A224}
 .hx .pic{border:6px solid #fff;box-shadow:0 30px 60px rgba(0,0,0,.25)}.hx .gl{border-left:5px solid #F2A224}
 .mq.zw span{font-family:var(--fh);font-weight:700}.alt{background:var(--s2)}.sv .row div{border-top:4px solid #F2A224}
 #inhaber figure{max-width:150px;justify-self:center;border-radius:50%;overflow:hidden}#inhaber figcaption{display:none}#inhaber figure img{object-position:50% 20%}
 .ft img{background:#fff;padding:8px 12px;border-radius:8px;height:56px}''')
+S['css2'] = '.hz{--hz-bg:#fbf6ef;--hz-cols:55fr 45fr;--hz-stroke:rgba(232,113,26,.18)}.hz .hz-img{clip-path:polygon(0 0,100% 0,88% 100%,0 100%)}.hz h1 em{display:block;color:#E8711A}#inhaber figure{border-radius:0!important;max-width:220px!important}@media(max-width:900px){.hz .hz-img{clip-path:polygon(0 0,100% 0,100% 88%,0 100%)}}'
 S['bot'] = BOT('Nele', 'Ihre Küchen-Lotsin', 'Die Zwei Küchen', S, [
     ['Öffnungszeiten', 'Mo–Fr 10–16 Uhr, samstags nach Vereinbarung.'],
     ['Möbel nach Maß?', 'Ja, Möbelbau Maic Niemann fertigt im eigenen Meisterbetrieb in Lastrup.'],
     ['Aufmaß vor Ort?', 'Ja, wir beraten und messen bei Ihnen zu Hause. Rufen Sie an: 04472 947120.']],
     ['#welten', '#eindruecke', '#leistungen', '#kontakt'])
 Z = 'zwei/hi/'
-S['img'] = {'logo.png': ('zwei/img/i000.png', 0), 'emo.jpg': (PIX + '9998456.jpg', 0), 'h-pic.jpg': (Z + 'IMG_1128.jpg', 0),
+S['img'] = {'logo.png': ('zwei/img/i000.png', 0), 'emo.jpg': (PIX + '9998456.jpg', 0), 'h-pic.jpg': (Z + 'IMG_1128.jpg', 0), 'h-moebel.jpg': (Z + 'PHOTO-2023-03-15-14-06-46.jpg', 1400),
     'w-kueche.jpg': (Z + 'IMG_6975.jpg', 0), 'w-moebel.jpg': (Z + 'IMG_5893.jpg', 0),
     'g1.jpg': (Z + '2018-03-01-PHOTO-00000609.jpg', 0), 'g2.jpg': (Z + 'IMG_1994.jpg', 0), 'g3.jpg': (Z + 'PHOTO-2023-03-15-14-06-46.jpg', 900), 'g4.jpg': (Z + 'IMG_7085.jpg', 0),
     'g5.jpg': (Z + 'IMG_4939.jpg', 0), 'g6.jpg': (Z + 'IMG_7326.jpg', 0), 'g7.jpg': (Z + 'IMG_7249.jpg', 0), 'g8.jpg': (Z + 'IMG_3150.jpg', 0),

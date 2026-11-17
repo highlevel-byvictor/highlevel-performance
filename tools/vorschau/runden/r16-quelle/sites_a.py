@@ -9,7 +9,7 @@ def b_ellers(s):
         ey='Küchen Ellers · Ihr Küchenstudio in Lorup',
         h1='Traumküche gesucht? <em>Hier können Sie sie anfassen.</em>',
         sub='Schauen Sie sich unsere Einbauküchen „zum Anfassen“ an und überzeugen Sie sich selbst von Design, Funktion und Qualität. Beratung, Planung und Aufmaß bei Ihnen vor Ort gehören dazu.',
-        g1=('Termin', 'auch außerhalb der Geschäftszeiten'), g2=('Aufmaß', 'bei Ihnen vor Ort')))
+))
         + marquee(['Küchenstudio', 'Musterküchen zum Anfassen', 'Massivholzmöbel', 'Innenausbau', 'Fenster', 'Türen', 'Treppen', 'Ziepelkamp 31 · Lorup'], 'em')
         + gallery('musterkuechen', 'Unsere Musterküchen', 'Kommen Sie vorbei und <em>überzeugen Sie sich selbst.</em>', [
             ('m1.jpg', 'w2', '50% 55%'), ('m2.jpg', '', '50% 50%'), ('m3.jpg', '', '50% 50%'), ('m4.jpg', '', '50% 50%'), ('m5.jpg', '', '50% 50%'),
@@ -50,6 +50,7 @@ S = SITES['ellers'] = site(
 .alt{background:linear-gradient(180deg,#fbf7ec,#fff)}
 .hd .logo img{height:var(--logo-h);width:auto}.ft .logo img,.ft img{background:#fff;padding:6px 8px;border-radius:6px;height:50px}
 .gl .grid figure{border-radius:10px}.duo .wd img{object-position:50% 60%}.duo .wd{min-height:430px}.duo .wd small{color:#F8E732}@media(max-width:820px){.duo .wd{min-height:340px}.duo .wd ul{display:none}.duo .wd .tx{padding:24px}}''')
+S['css2'] = '.hx .pic{display:none!important}.hx.hasbg .w{grid-template-columns:minmax(0,640px) 1fr}'
 S['bot'] = BOT('Ella', 'Ihre Küchen-Lotsin', 'Küchen Ellers', S, [
     ['Öffnungszeiten', 'Mo–Fr 9–13 und 14–18 Uhr, Sa 10–12 Uhr. Termine gern auch außerhalb dieser Zeiten.'],
     ['Musterküchen?', 'In unserem Küchenstudio in Lorup stehen viele Musterküchen zum Anfassen. Kommen Sie vorbei!'],
@@ -63,8 +64,8 @@ S['body'] = b_ellers
 
 # ───────────── 2. Küchengalerie am Dom, Haren (Ems) und Rhede (Ems) ─────────────
 def b_galerie(s):
-    return (hd(s, False) + hero_x(s, dict(
-        img='emo.jpg', pos='45% 40%', bg='h-orig.jpg', alt='Familie kocht gemeinsam in der Küche',
+    return (hd(s, False) + hero_split(s, dict(
+        imgs=['emo.jpg', 'h-orig.jpg', 'l1.jpg'], pos={'emo.jpg': '42% 40%'}, alt='Küche der Küchengalerie am Dom',
         ey='Küchengalerie am Dom · Haren (Ems) und Rhede (Ems)',
         h1='Einfach eine Küche, <em>wie ich sie will.</em>',
         sub='Ein Ort zum Kochen, ein Raum zum Wohlfühlen, in dem sich die ganze Familie trifft. Wir entwickeln mit Ihnen zusammen eine Küche, die wirklich zu Ihnen passt. Persönliche Rundum-Beratung seit 2004.'))
@@ -111,6 +112,7 @@ S = SITES['galerie'] = site(
 .tm .grid figure div{aspect-ratio:1/1;border-radius:50%;overflow:hidden}.tm .grid figure div img{object-position:50% 25%}.tm .grid{grid-template-columns:repeat(5,1fr)}
 @media(max-width:900px){.tm .grid{grid-template-columns:repeat(2,1fr)}}
 .ft img{background:#fff;padding:8px 12px;border-radius:12px;height:56px}''')
+S['css2'] = '.hz{--hz-bg:#faf3f5;--hz-cols:46fr 54fr}.hz .hz-img{border-left:10px solid #AF1F4A}.hz h1 em{display:block;font:400 1.02em/1.15 "Pacifico",cursive;color:#AF1F4A;letter-spacing:0;margin-top:.12em}.hz h1{font-weight:900}@media(max-width:900px){.hz .hz-img{border-left:0;border-bottom:8px solid #AF1F4A}}.tm .grid figure div{aspect-ratio:4/5}'
 S['bot'] = BOT('Galina', 'Ihre Küchen-Lotsin', 'der Küchengalerie am Dom', S, [
     ['Musterküchen?', 'Gerade läuft unser Musterküchenabverkauf: Markenküchen inkl. Elektrogeräten stark reduziert, solange der Vorrat reicht.'],
     ['Standorte', 'Haren (Ems), Emsstraße 2, und Rhede (Ems), Industriestraße 2 im EDZ. Dazu das Ausstellungsstudio Emmeln nach Termin.'],
@@ -127,12 +129,14 @@ S['logo_ft'] = 'logo.png'
 
 # ───────────── 3. Küchenspezialhaus Geyer, Westoverledingen ─────────────
 def b_geyer(s):
-    return (hd(s, False) + hero_comp(s, dict(
-        imgs=['h1.jpg', 'h2.jpg', 'h3.jpg'], pos0='50% 55%',
+    return (hd(s, False) + hero_split(s, dict(
+        imgs=['h1.jpg', 'h2.jpg', 'h3.jpg'], pos={'h1.jpg': '50% 45%'}, big='50',
+        ubar=[('Über 50 Jahre', 'Küchenspezialhaus'), ('Ohne Zeitdruck', 'am Computer geplant'), ('Bei Ihnen', 'zu Hause beraten')],
         ey='Küchen Geyer · das Küchenspezialhaus in Völlenerfehn',
         h1='Ihre 1. Adresse für <em>Qualitätsküchen.</em>',
         sub='Eine Qualitätsküche zum fairen Preis, individuell und ohne Zeitdruck am Computer geplant. Seit über 50 Jahren, und gerne auch bei Ihnen zu Hause.',
-        badge=('Über 50 Jahre', 'Küchenspezialhaus in Westoverledingen')))
+))
+        + spot('quooker', 'Quooker bei Küchen Geyer', 'Kochendes Wasser <em>direkt aus dem Hahn.</em>', 'Kein Wasserkocher, kein Warten: Der Quooker liefert 100 °C sofort. Wir bauen ihn in Ihre neue Küche ein oder rüsten ihn in Ihrer bestehenden Küche nach.', 'quooker.mp4', 'quooker.jpg', 'gyq', '<a class="btn btn-a" href="#kontakt" style="margin-top:14px;margin-left:10px">Quooker anfragen</a>')
         + marquee(['Küchenplanung ohne Zeitdruck', 'Beratung bei Ihnen zu Hause', 'Aufmaß und Vollservice', 'Fliesen- und Installationspläne', 'Quooker nachrüsten', 'Hauptstraße 229'], 'gy')
         + scroller('kuechen', 'Küchenideen', 'Finden Sie <em>Ihren Stil.</em>', 'Von der Landhausküche bis zur grifflosen Designküche: Wir planen sie individuell für Ihren Raum.', [
             ('Landhaus, hell und gemütlich', 'k1.jpg', 'Klassische Fronten, warme Töne.', '50% 50%'),
@@ -174,12 +178,13 @@ S = SITES['geyer'] = site(
 .tm .grid{grid-template-columns:repeat(3,minmax(0,280px));justify-content:center}.tm .grid figure div{aspect-ratio:1/1}.tm .grid figure div img{object-position:50% 25%}
 .promo figure{max-width:440px;justify-self:center}.ft img{background:#fff;padding:8px 12px;border-radius:8px;height:62px}
 @media(max-width:820px){.tm .grid{grid-template-columns:1fr 1fr}}''')
+S['css2'] = '.hz{--hz-bg:#14203d;--hz-ink:#fff;--hz-mute:rgba(255,255,255,.82);--hz-stroke:rgba(143,178,255,.22);--hz-line:rgba(255,255,255,.2);--hz-cols:48fr 52fr}.hz h1{font-weight:800;letter-spacing:-.025em}.hz h1 em{color:#8fb2ff}.hz .ey{color:#8fb2ff}.hz .btn-o{color:#fff;border-color:rgba(255,255,255,.6)}.hz .chip{background:rgba(255,255,255,.1);color:#fff}.sp16{--sp-bg:#f2f5fb;--sp-ink:#16203a}.sp16 .h2 em{color:#2457B8;font-style:normal}'
 S['bot'] = BOT('Greta', 'Ihre Küchen-Lotsin', 'Küchen Geyer', S, [
     ['Öffnungszeiten', 'Ausstellung Mo–Fr 10–12 und 14:30–18 Uhr. Sa und So nach Termin: 0172 4219423.'],
     ['Beratung zu Hause?', 'Ja, gerne beraten wir Sie auch bei Ihnen zu Hause. Rufen Sie an: 04961 94550.'],
     ['Quooker nachrüsten?', 'Ein Quooker lässt sich unkompliziert in Ihrer bestehenden Küche nachrüsten. Wir beraten Sie gern.']],
     ['#kuechen', '#service', '#aktion', '#kontakt'])
-S['img'] = {'logo.png': ('geyer/img/i000.jpg', 0, 'trimalpha'), 'h1.jpg': (PIX + '7070676.jpg', 0), 'h2.jpg': ('geyer/img/i001.jpg', 1000), 'h3.jpg': ('geyer/img/i009.jpg', 1000),
+S['img'] = {'quooker.mp4': ('/home/claude/r16raw/vid/geyer_quooker_web.mp4', 0), 'quooker.jpg': ('/home/claude/r16raw/vid/geyer_poster.jpg', 0), 'logo.png': ('geyer/img/i000.jpg', 0, 'trimalpha'), 'h1.jpg': (PIX + '7070676.jpg', 0), 'h2.jpg': ('geyer/img/i001.jpg', 0), 'h3.jpg': ('geyer/img/i009.jpg', 0),
     'k1.jpg': ('geyer/img/i001.jpg', 1100), 'k2.jpg': ('geyer/img/i002.jpg', 1100), 'k3.jpg': ('geyer/img/i003.jpg', 1100), 'k4.jpg': ('geyer/img/i006.jpg', 1100), 'k5.jpg': ('geyer/img/i007.jpg', 1100), 'k6.jpg': ('geyer/img/i009.jpg', 1100),
     'p-quooker.jpg': ('geyer/img/i008.jpg', 1100),
     't1.jpg': ('geyer/team0.jpg', 0), 't3.jpg': ('geyer/team2.jpg', 900), 't4.jpg': ('geyer/team3.jpg', 0)}

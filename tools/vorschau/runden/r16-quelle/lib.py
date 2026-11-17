@@ -267,3 +267,22 @@ def reviews_ns(s, items, cls='', h2='Das sagen <em>unsere Kunden.</em>'):
 def facts(items, cls=''):
     r = ''.join(f'<div data-r><b>{a}</b><span>{b}</span></div>' for a, b in items)
     return f'<section class="sec ft16 {cls}"><div class="w"><div class="nb">{r}</div></div></section>'
+
+# ───────────── Runde 16b: Feinschliff (kantig, Hero fängt, Video brisant) ─────────────
+def hero_split(s, h):
+    """Geteilter Vollhöhe-Hero: Bildseite randlos (Slider), Textseite auf Markenfläche. h: imgs, pos{}, side('r'|'l'), big, ey,h1,sub, cls."""
+    sl = ''.join(f'<div data-slide class="{"on" if i==0 else ""}"><img src="img/{x}" alt="{E(h.get("alt", s["firma"]))}" style="object-position:{h.get("pos",{}).get(x,"50% 50%")}"{"" if i==0 else " loading=lazy"}></div>' for i, x in enumerate(h['imgs']))
+    dots = ''.join(f'<button data-dot class="{"on" if i==0 else ""}" aria-label="Bild {i+1}"></button>' for i in range(len(h['imgs']))) if len(h['imgs']) > 1 else ''
+    big = f'<div class="hz-big" aria-hidden="true">{h["big"]}</div>' if h.get('big') else ''
+    ub = ''.join(f'<div><b>{a}</b>{b}</div>' for a, b in h.get('ubar', []))
+    ctas = f'<div class="ctas"><a class="btn btn-a" href="#kontakt">{s["cta"]} {AR}</a><a class="btn btn-o" href="tel:{s["tel_i"]}">{PH} {s["tel"]}</a></div>'
+    return (f'<section class="hz {"rev " if h.get("side")=="l" else ""}{h.get("cls","")}" id="top" data-slider="5500">'
+            f'<div class="hz-img"><div class="sl">{sl}</div><div class="dots">{dots}</div></div>'
+            f'<div class="hz-tx">{big}<div class="in" data-r>{chip(s)}<p class="ey">{h["ey"]}</p><h1>{h["h1"]}</h1><p class="sub">{h["sub"]}</p>{ctas}'
+            f'{"<div class=hz-ub>"+ub+"</div>" if ub else ""}</div></div></section>')
+
+def spot(id, ey, h2, lead, src, poster, cls='', side=''):
+    """Video groß und randlos direkt unter dem Hero: läuft stumm an, sobald sichtbar; Klick = Ton an."""
+    return (f'<section class="sp16 {cls}" id="{id}"><div class="w"><div class="tx" data-r><p class="ey">{ey}</p><h2 class="h2">{h2}</h2><p class="lead">{lead}</p>'
+            f'<button class="snd" type="button" data-snd>Mit Ton ansehen</button>{side}</div>'
+            f'<div class="fr"><video src="img/{src}" poster="img/{poster}" muted loop playsinline preload="none" data-auto></video></div></div></section>')

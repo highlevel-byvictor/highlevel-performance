@@ -69,3 +69,9 @@
   }).catch(function(){b.disabled=false;b.textContent='Rückruf anfordern';msg.hidden=false;msg.innerHTML='Das hat leider nicht geklappt. Rufen Sie uns direkt an: <a href="tel:+4917663213512">+49 176 63213512</a>.'});
  });
 })();
+;(function(){var v=document.querySelectorAll('video[data-auto]');if(!v.length)return;
+ var rm=matchMedia('(prefers-reduced-motion: reduce)').matches;
+ var io=new IntersectionObserver(function(es){es.forEach(function(e){var x=e.target;if(e.isIntersecting){if(x.preload!=='auto'){x.preload='auto'}if(!rm)x.play().catch(function(){})}else{x.pause()}})},{threshold:.35});
+ v.forEach(function(x){io.observe(x)});
+ document.querySelectorAll('[data-snd]').forEach(function(b){b.addEventListener('click',function(){var s=b.closest('section'),x=s.querySelector('video');x.muted=false;x.loop=false;x.currentTime=0;x.controls=true;x.play();s.classList.add('on')})});
+})();

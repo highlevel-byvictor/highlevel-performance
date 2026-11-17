@@ -54,6 +54,7 @@ def build(key):
     import beauty; beauty.karte(s['adresse'], d)
     html = lib.page(s, s['body'](s))
     html = html.replace('<!--KIT_CSS-->', (H / 'kit.css').read_text()).replace('<!--LIB_CSS-->', (H / 'lib.css').read_text()).replace('<!--LIB14_CSS-->', (H / 'lib14.css').read_text())
+    html = html.replace('</head>', '<style>' + (H / 'r16b.css').read_text() + (s.get('css2') or '') + '</style></head>', 1)
     html = html.replace('<!--KIT_JS-->', (H / 'kit.js').read_text())
     html = html.replace('<!--FONTS-->', (ROOT / 'tools/vorschau/fonts' / f"{s['fonts']}.css").read_text())
     (d / 'index.html').write_text(html); (H / f'{key}.built.html').write_text(html)
