@@ -42,7 +42,7 @@
    ]
   },
   {
-   "text": "Kommentiere ENTWURF und wir legen los.",
+   "text": "Schreib mir ENTWURF als Nachricht und wir legen los.",
    "query": "handshake|business deal",
    "keywords": [
     "ENTWURF"
@@ -50,8 +50,8 @@
   }
  ],
  "cta": {
-  "title": "Kommentiere ENTWURF",
+  "title": "Schreib mir ENTWURF",
   "sub": "Kostenloser Website-Entwurf in 24 Stunden",
-  "button": "Link in der Bio"
+  "button": "Nachricht schreiben"
  }
 }

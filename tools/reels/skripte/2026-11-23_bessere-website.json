@@ -42,7 +42,7 @@
    ]
   },
   {
-   "text": "Kommentiere CHECK und ich schick dir den kostenlosen Guide, wie du das änderst.",
+   "text": "Schreib mir CHECK als Nachricht und ich schick dir den kostenlosen Guide, wie du das änderst.",
    "query": "carpenter|construction worker",
    "keywords": [
     "CHECK"
@@ -50,8 +50,8 @@
   }
  ],
  "cta": {
-  "title": "Kommentiere CHECK",
+  "title": "Schreib mir CHECK",
   "sub": "Kostenloser Sichtbarkeits-Guide für Betriebe",
-  "button": "Link in der Bio"
+  "button": "Nachricht schreiben"
  }
 }

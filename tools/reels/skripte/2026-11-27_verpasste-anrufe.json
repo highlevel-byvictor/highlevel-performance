@@ -41,7 +41,7 @@
    ]
   },
   {
-   "text": "Kommentiere CHECK und du bekommst den Guide dazu.",
+   "text": "Schreib mir CHECK als Nachricht und du bekommst den Guide dazu.",
    "query": "father daughter|family sofa",
    "keywords": [
     "CHECK"
@@ -49,8 +49,8 @@
   }
  ],
  "cta": {
-  "title": "Kommentiere CHECK",
+  "title": "Schreib mir CHECK",
   "sub": "Kostenloser Sichtbarkeits-Guide für Betriebe",
-  "button": "Link in der Bio"
+  "button": "Nachricht schreiben"
  }
 }

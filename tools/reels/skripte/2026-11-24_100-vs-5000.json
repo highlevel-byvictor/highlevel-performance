@@ -43,7 +43,7 @@
    ]
   },
   {
-   "text": "Kommentiere CHECK und du bekommst den Guide mit dem Selbst-Test.",
+   "text": "Schreib mir CHECK als Nachricht und du bekommst den Guide mit dem Selbst-Test.",
    "query": "businessman office|business woman",
    "keywords": [
     "CHECK"
@@ -51,8 +51,8 @@
   }
  ],
  "cta": {
-  "title": "Kommentiere CHECK",
+  "title": "Schreib mir CHECK",
   "sub": "Kostenloser Sichtbarkeits-Guide mit Selbst-Test",
-  "button": "Link in der Bio"
+  "button": "Nachricht schreiben"
  }
 }

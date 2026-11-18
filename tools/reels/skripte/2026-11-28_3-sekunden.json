@@ -41,7 +41,7 @@
    ]
   },
   {
-   "text": "Kommentiere CHECK und du bekommst den Selbst-Test.",
+   "text": "Schreib mir CHECK als Nachricht und du bekommst den Selbst-Test.",
    "query": "businessman laptop|laptop office",
    "keywords": [
     "CHECK"
@@ -49,8 +49,8 @@
   }
  ],
  "cta": {
-  "title": "Kommentiere CHECK",
+  "title": "Schreib mir CHECK",
   "sub": "Kostenloser Sichtbarkeits-Guide mit Selbst-Test",
-  "button": "Link in der Bio"
+  "button": "Nachricht schreiben"
  }
 }

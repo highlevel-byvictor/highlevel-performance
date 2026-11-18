@@ -42,7 +42,7 @@
    ]
   },
   {
-   "text": "Du willst auch einen Entwurf? Kommentiere ENTWURF.",
+   "text": "Du willst auch einen Entwurf? Schreib mir ENTWURF als Nachricht.",
    "query": "woman kitchen|kitchen",
    "keywords": [
     "ENTWURF"
@@ -50,8 +50,8 @@
   }
  ],
  "cta": {
-  "title": "Kommentiere ENTWURF",
+  "title": "Schreib mir ENTWURF",
   "sub": "Kostenloser Website-Entwurf in 24 Stunden",
-  "button": "Link in der Bio"
+  "button": "Nachricht schreiben"
  }
 }
