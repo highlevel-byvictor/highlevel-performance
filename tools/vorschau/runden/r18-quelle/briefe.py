@@ -53,9 +53,10 @@ def run(keys):
             segno.make(url, error='m').save(str(qr), scale=10, border=0, dark='#0A1A3A')
             an, anrede, problem, kurz = BRIEF[k]
             absaetze = [
-                f"das linke Handy unten zeigt {s['web']}, so wie ein Kunde die Seite heute öffnet: {problem}. Das rechte Handy zeigt, was ich daraus gebaut habe. <b>Mit Ihren eigenen Bildern, kostenlos und ohne dass Sie etwas bestellt haben.</b>",
-                "Warum mir das wichtig erscheint: Nach Schätzung des Branchenverbands HKI ersetzen mehr als drei von vier verkauften Öfen einen alten. Diese Kunden wissen, was ein Ofen kostet. Sie schauen sich vorher in Ruhe am Handy um und fahren dann zu dem Studio, das ihnen dort schon gezeigt hat, was es kann.",
-                "Ich bin Viktor Fehl aus Bersenbrück und baue Websites für Betriebe in der Region. Gefällt Ihnen der Entwurf? Dann tragen Sie unten auf der Seite ein, wann wir Sie erreichen. Julian ruft Sie innerhalb von 24 Stunden an. Wenn nicht, löschen wir den Entwurf wieder.",
+                f"das linke Handy unten zeigt {s['web']}, so wie ein Kunde die Seite heute öffnet: {problem}. Das rechte Handy zeigt, was ich daraus gebaut habe. <b>Kostenlos und ohne dass Sie etwas bestellt haben.</b>",
+                "Warum mir das wichtig erscheint: Nach Schätzung des Branchenverbands HKI ersetzen mehr als drei von vier verkauften Öfen einen alten. Diese Kunden schauen sich vorher in Ruhe am Handy um und fahren dann zu dem Studio, das ihnen dort schon gezeigt hat, was es kann.",
+                f"<b>Wichtig: Sie bekommen keine zweite Website.</b> Wir bringen Ihre bestehende Seite auf den neuesten Stand. Sie bleibt unter {s['web']} erreichbar, mit Ihren Inhalten und Bildern, nur schneller, am Handy sauber lesbar und mit einem klaren Weg zum Beratungstermin. Am Ende haben Sie eine Website, nicht zwei.",
+                "Ich bin Viktor Fehl aus Bersenbrück. Gefällt Ihnen der Entwurf? Dann tragen Sie unten auf der Seite ein, wann wir Sie erreichen. Julian ruft Sie innerhalb von 24 Stunden an. Wenn nicht, löschen wir den Entwurf wieder.",
             ]
             briefe.append(dict(anschrift=an, anrede=anrede, betreff_1='So sieht Ihre Website heute auf dem Handy aus.', betreff_2=f'Und so könnte sie aussehen: mein Entwurf für {kurz}.', web=s['web'], shot_alt=str(ALT / f'{k}.jpg'),
                                absaetze=[Markup(a) for a in absaetze], shot_desktop=str(sd), shot_mobile=str(sm), qr=str(qr), url_kurz='highlevel-performance.de/vorschau/' + sl))

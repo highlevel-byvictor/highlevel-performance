@@ -165,7 +165,7 @@ var pp=document.getElementById('pop');if(pp){var sh=0;function show(){if(sh>=2)r
 
 def hlp_anfrage(s):
     f = s['firma'].replace('"', '&quot;')
-    return f'''<section class="hlpa" id="hlp-anfrage"><div class="hlpa-w"><div class="hlpa-t"><small>Nachricht von High Level Performance</small><h2>Gefällt Ihnen Ihr neuer Auftritt?</h2><p>Tragen Sie hier kurz Ihre Daten ein. Sie müssen sich um nichts weiter kümmern: Wir melden uns innerhalb von 24 Stunden telefonisch bei Ihnen, zu der Uhrzeit, die Ihnen passt.</p><p class="hlpa-s">Kostenlos und unverbindlich. Im Gespräch zeigen wir Ihnen, wie aus diesem Entwurf Ihre fertige Website wird.</p></div>
+    return f'''<section class="hlpa" id="hlp-anfrage"><div class="hlpa-w"><div class="hlpa-t"><small>Nachricht von High Level Performance</small><h2>Gefällt Ihnen Ihr neuer Auftritt?</h2><p>Tragen Sie hier kurz Ihre Daten ein. Sie müssen sich um nichts weiter kümmern: Wir melden uns innerhalb von 24 Stunden telefonisch bei Ihnen, zu der Uhrzeit, die Ihnen passt.</p><p><b>Keine zweite Website:</b> Dieser Entwurf ersetzt Ihre bestehende Seite unter {s['web']}. Gleiche Adresse, Ihre Inhalte, nur auf dem neuesten Stand. Am Ende haben Sie eine Website, nicht zwei.</p><p class="hlpa-s">Kostenlos und unverbindlich. Im Gespräch zeigen wir Ihnen, wie aus diesem Entwurf Ihre fertige Website wird.</p></div>
 <form class="hlpa-f" novalidate><input type="text" name="website" tabindex="-1" autocomplete="off" class="hp" aria-hidden="true">
 <label>Firma<input name="firma" required value="{f}"></label><label>Branche / Tätigkeit<input name="branche" required value="{s.get('branche','Kamin- und Ofenstudio')}"></label>
 <label>Ansprechpartner<input name="name" required autocomplete="name" placeholder="Vor- und Nachname"></label><label>Telefon für den Rückruf<input name="tel" type="tel" required autocomplete="tel"></label>
@@ -177,7 +177,7 @@ def hlp_anfrage(s):
 <button class="w2" type="submit">Kostenlosen Rückruf anfordern</button><p class="msg w2" hidden></p></form></div></section>'''
 
 def page(s, body):
-    note = '<div class="hlp-note"><b>Grober Entwurf</b> · Erstellt von High Level Performance. Bei einer Zusammenarbeit arbeiten wir jede Seite viel intensiver aus. <a href="#hlp-anfrage">Entwurf gefällt mir →</a><button aria-label="Hinweis schließen">×</button></div>'
+    note = '<div class="hlp-note"><b>Grober Entwurf</b> · So könnte Ihre bestehende Website aussehen, keine zweite Seite. Erstellt von High Level Performance. <a href="#hlp-anfrage">Entwurf gefällt mir →</a><button aria-label="Hinweis schließen">×</button></div>'
     mcall = f'<div class="mcall"><a href="tel:{s["tel_i"]}">{PH}Anrufen</a><a href="#kontakt">{s["cta"]}</a></div>'
     bot = s['bot']
     import json
