@@ -1,0 +1,111 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8">
+<link rel="stylesheet" href="file://{{ root }}/assets/fonts.css">
+<style>
+@page{size:A4;margin:0}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:"Manrope",Arial,sans-serif;color:#0B1630;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+.page{width:210mm;height:297mm;position:relative;overflow:hidden;page-break-after:always;background:#fff}
+.page:last-child{page-break-after:auto}
+/* Kopf */
+.top{position:absolute;left:0;right:0;top:0;height:27mm;background:linear-gradient(115deg,#0A1A3A 0%,#0A2A66 55%,#1877F2 100%)}
+.top:after{content:"";position:absolute;left:0;right:0;bottom:0;height:1.6mm;background:linear-gradient(90deg,#E90E0E,#1877F2 60%,#38C8FF)}
+.logo{position:absolute;left:20mm;top:7mm;color:#fff;line-height:1}
+.logo .l1{display:block;font-family:"Poppins";font-weight:800;font-size:17pt;letter-spacing:.02em}
+.logo .l2{display:block;font-family:"Poppins";font-weight:600;font-size:8.6pt;letter-spacing:.42em;color:#38C8FF;margin-top:1.2mm}
+.logo .sig{position:absolute;left:44mm;top:7.4mm;font-family:"Mr Dafoe";font-size:15pt;color:#fff;white-space:nowrap}
+.tr{position:absolute;right:20mm;top:8mm;text-align:right;color:rgba(255,255,255,.85);font-size:8pt;line-height:1.55}
+.tr b{color:#fff}
+/* Anschrift DIN 5008 B */
+.sender{position:absolute;left:20mm;top:45mm;font-size:6.6pt;color:#56627A;border-bottom:.2mm solid #C9D2E2;padding-bottom:.6mm;width:85mm}
+.addr{position:absolute;left:20mm;top:51mm;width:85mm;font-size:10.5pt;line-height:1.4}
+.date{position:absolute;right:20mm;top:80mm;font-size:9pt;color:#56627A}
+.fold{position:absolute;left:4mm;width:4mm;border-top:.25mm solid #B8C2D4}
+/* Inhalt */
+.body{position:absolute;left:20mm;right:20mm;top:87mm}
+.betreff{font-family:"Poppins";font-weight:700;font-size:14pt;line-height:1.25;margin-bottom:4mm}
+.betreff span{color:#1877F2;font-size:11pt;font-weight:600}
+.txt p{font-size:9.6pt;line-height:1.5;margin-bottom:2.4mm}
+.txt b{color:#0A2A66}
+/* Vorschau-Block */
+.show{margin-top:4mm;display:grid;grid-template-columns:1fr 46mm;gap:6mm;align-items:stretch}
+.shot{position:relative;border-radius:4mm;background:linear-gradient(160deg,#EEF3FB,#DCE6F7);padding:5mm 5mm 0 5mm;overflow:hidden;height:60mm}
+.browser{background:#fff;border-radius:2.5mm 2.5mm 0 0;box-shadow:0 3mm 8mm -3mm rgba(10,26,58,.35);overflow:hidden;height:100%}
+.bar{height:5mm;background:#F1F4F9;display:flex;align-items:center;gap:1.2mm;padding:0 2.5mm;border-bottom:.2mm solid #E3E8F1}
+.bar i{width:1.6mm;height:1.6mm;border-radius:50%;background:#C9D2E2}
+.bar i:first-child{background:#FF6159}.bar i:nth-child(2){background:#FFBD2E}.bar i:nth-child(3){background:#28C941}
+.bar span{margin-left:2mm;font-size:5.4pt;color:#56627A}
+.browser img{width:100%;display:block}
+.phone{position:absolute;right:3mm;bottom:-8mm;width:25mm;height:52mm;border-radius:4mm;background:#0B1630;padding:1.3mm;box-shadow:0 3mm 8mm -2mm rgba(10,26,58,.5)}
+.phone img{width:100%;height:100%;object-fit:cover;object-position:top;border-radius:3mm}
+.qr{border-radius:4mm;background:#0A1A3A;color:#fff;padding:3.5mm;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;height:60mm}
+.qr .q{background:#fff;border-radius:2.5mm;padding:2mm;width:35mm;height:35mm}
+.qr .q img{width:100%;height:100%}
+.qr b{font-family:"Poppins";font-size:10pt;margin-top:3mm;line-height:1.2}
+.qr small{font-size:6.8pt;color:rgba(255,255,255,.7);margin-top:1mm;line-height:1.35}
+.qr .arrow{color:#38C8FF;font-weight:800}
+/* Gruß + Kontakt */
+.end{position:absolute;left:20mm;right:20mm;bottom:17mm;display:grid;grid-template-columns:1fr auto;gap:8mm;align-items:end}
+.gruss p{font-size:9.9pt;line-height:1.5}
+.sig2{font-family:"Mr Dafoe";font-size:24pt;color:#0A2A66;line-height:1;margin:1.5mm 0 .5mm}
+.vc{display:flex;gap:4mm;align-items:center;border:.3mm solid #DCE3EF;border-radius:4mm;padding:3mm 4mm 3mm 3mm}
+.vc img.ph{width:17mm;height:17mm;border-radius:50%;object-fit:cover}
+.vc .t{font-size:8pt;line-height:1.45}
+.vc .t b{font-family:"Poppins";font-size:9.5pt}
+.vc .t .tel{font-family:"Poppins";font-weight:700;font-size:10.5pt;color:#1877F2}
+.vc .vq{width:19mm;height:19mm}
+.vc .vq img{width:100%;height:100%}
+.vc .lbl{font-size:5.8pt;color:#56627A;text-align:center;margin-top:.5mm}
+.foot{position:absolute;left:20mm;right:20mm;bottom:7mm;border-top:.2mm solid #E3E8F1;padding-top:2.5mm;display:flex;justify-content:space-between;font-size:6.6pt;color:#7A869E}
+
+/* Runde 18: Vorher/Nachher */
+.ba{margin-top:3.5mm;display:grid;grid-template-columns:27mm 6mm 27mm 1fr 40mm;gap:3mm;align-items:stretch;height:62mm}
+.bx{position:relative;display:flex;flex-direction:column;align-items:center}
+.bx .lb{font-family:"Poppins";font-weight:700;font-size:7.4pt;letter-spacing:.06em;text-transform:uppercase;padding:.8mm 2.4mm;border-radius:99px;margin-bottom:1.4mm}
+.bx.alt .lb{background:#E9EDF4;color:#56627A}.bx.neu .lb{background:#1877F2;color:#fff}
+.ph2{width:25mm;height:49mm;border-radius:3.6mm;background:#0B1630;padding:1.1mm;box-shadow:0 2.5mm 7mm -2mm rgba(10,26,58,.45)}
+.ph2 img{width:100%;height:100%;object-fit:cover;object-position:top;border-radius:2.7mm}
+.bx.alt .ph2{background:#8E98AB;box-shadow:none}.bx.alt .ph2 img{filter:saturate(.8)}
+.bx small{font-size:5.6pt;color:#56627A;margin-top:1.2mm;text-align:center;line-height:1.25}
+.pf{align-self:center;font-size:15pt;color:#1877F2;text-align:center}
+.bx.wide{border-radius:4mm;background:linear-gradient(160deg,#EEF3FB,#DCE6F7);padding:4mm 4mm 0;overflow:hidden;display:block}
+.bx.wide .browser{height:100%}
+.ba .qr{height:auto}.ba .qr .q{width:31mm;height:31mm}
+.betreff{font-size:15pt}
+</style></head><body>
+{% for b in briefe %}
+<div class="page">
+ <div class="top">
+  <div class="logo"><span class="l1">HIGH LEVEL</span><span class="l2">PERFORMANCE</span><span class="sig">by Victor</span></div>
+  <div class="tr"><b>www.highlevel-performance.de</b><br>info@highlevel-performance.de<br>{{ julian_tel }}</div>
+ </div>
+ <div class="fold" style="top:105mm"></div><div class="fold" style="top:148.5mm;width:6mm"></div><div class="fold" style="top:210mm"></div>
+ <div class="sender">High Level Performance · Viktor Fehl · Koppelstraße 28 · 49593 Bersenbrück</div>
+ <div class="addr">{% for z in b.anschrift %}{{ z }}<br>{% endfor %}</div>
+ <div class="date">Bersenbrück, {{ datum }}</div>
+ <div class="body">
+  <div class="betreff">{{ b.betreff_1 }}<br><span>{{ b.betreff_2 }}</span></div>
+  <div class="txt">
+   <p>{{ b.anrede }}</p>
+   {% for p in b.absaetze %}<p>{{ p | safe }}</p>{% endfor %}
+  </div>
+  <div class="ba">
+   <div class="bx alt"><span class="lb">Heute</span><div class="ph2"><img src="file://{{ b.shot_alt }}"></div><small>{{ b.web }} auf dem Handy</small></div>
+   <div class="pf">&#10140;</div>
+   <div class="bx neu"><span class="lb">Mein Entwurf</span><div class="ph2"><img src="file://{{ b.shot_mobile }}"></div><small>mit Ihren eigenen Bildern</small></div>
+   <div class="bx wide"><div class="browser"><div class="bar"><i></i><i></i><i></i><span>Ihre neue Website · Entwurf</span></div><img src="file://{{ b.shot_desktop }}"></div></div>
+   <div class="qr"><div class="q"><img src="file://{{ b.qr }}"></div><b>Jetzt scannen</b><small>und selbst vergleichen <span class="arrow">→</span></small></div>
+  </div>
+ </div>
+ <div class="end">
+  <div class="gruss"><p>Mit freundlichen Grüßen</p><div class="sig2">Viktor Fehl</div><p style="font-size:8.4pt;color:#56627A">Viktor Fehl · Gründer High Level Performance</p></div>
+  <div class="vc">
+   <img class="ph" src="file://{{ root }}/assets/team-julian-b.jpg">
+   <div class="t"><b>Kostenloses Erstgespräch</b><br>Julian Siewe · Hotline-Service<br><span class="tel">{{ julian_tel }}</span><br>info@highlevel-performance.de</div>
+   <div><div class="vq"><img src="file://{{ julian_qr }}"></div><div class="lbl">Julian anrufen</div></div>
+  </div>
+ </div>
+ <div class="foot"><span>High Level Performance by Victor · Inhaber Viktor Fehl · Koppelstraße 28 · 49593 Bersenbrück</span><span>Möchten Sie keine Post mehr von uns? Kurze Nachricht genügt.</span></div>
+</div>
+{% endfor %}
+</body></html>
