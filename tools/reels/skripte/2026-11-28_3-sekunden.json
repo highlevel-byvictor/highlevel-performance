@@ -20,7 +20,7 @@
   },
   {
    "text": "Erstens: Was machst du und wo? Zweitens: Ein echtes Bild deiner Arbeit, kein Stockfoto vom Händedruck.",
-   "query": "tiles|tiler|construction worker",
+   "query": "carpenter working|craftsman wood",
    "keywords": [
     "wo",
     "echtes"
@@ -28,14 +28,14 @@
   },
   {
    "text": "Drittens: Ein Button, der sagt, was passiert. Zum Beispiel: Rückruf in zehn Minuten.",
-   "query": "touchscreen smartphone|smartphone touch",
+   "query": "smartphone app|smartphone hand",
    "keywords": [
     "Button"
    ]
   },
   {
    "text": "Fehlt eins davon, ist er weg. Und zwar bei der Konkurrenz.",
-   "query": "man walking away|man walking",
+   "query": "businessman walking|man walking street",
    "keywords": [
     "Konkurrenz"
    ]

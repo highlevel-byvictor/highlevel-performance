@@ -36,7 +36,7 @@
   },
   {
    "text": "Gefällt dir der Entwurf, stellen wir ihn fertig. Wenn nicht, hat es dich nichts gekostet.",
-   "query": "happy laptop|businessman laptop",
+   "query": "businessman laptop|laptop office",
    "keywords": [
     "nichts"
    ]

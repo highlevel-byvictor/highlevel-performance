@@ -147,7 +147,7 @@ def pixabay_video(query, k, cache, used, min_dur):
         words = [w.lower() for w in q0.split() if len(w) > 2]
         def ok(h):
             tags = h.get("tags", "").lower()
-            return sum(w in tags for w in words) >= max(1, len(words) - 1)
+            return sum(w in tags for w in words) >= (len(words) if len(words) <= 2 else len(words) - 1)
         hits = [h for h in data.get("hits", []) if h["id"] not in used and ok(h)]
         long_ = [h for h in hits if h["duration"] >= min_dur]
         hits = long_ or hits
@@ -332,18 +332,21 @@ def render(script, out, k, cache, W, H, tag, speech, words, seg_times, clips):
     music = elevenlabs_sfx("modern corporate lo-fi beat, soft kick, warm keys, motivating, no vocals, seamless loop", 22, k, cache, "music_bed.mp3")
     whoosh = elevenlabs_sfx("short soft swoosh transition, clean, subtle", 1, k, cache, "whoosh.mp3")
     ain = ["-i", speech]
+    n_in = 2  # 0 = Video, 1 = Sprache
     af = ["[1:a]apad=pad_dur=%.2f,volume=1.0[sp]" % cta_len]
     mix = ["[sp]"]
     if music:
         ain += ["-stream_loop", "-1", "-i", music]
-        af.append(f"[2:a]volume=0.13,atrim=0:{total + cta_len:.2f},afade=t=out:st={total + cta_len - 1:.2f}:d=1[mu]")
+        af.append(f"[{n_in}:a]volume=0.13,atrim=0:{total + cta_len:.2f},afade=t=out:st={total + cta_len - 1:.2f}:d=1[mu]")
+        n_in += 1
         mix.append("[mu]")
     if whoosh:
         cuts = [t for t, _ in seg_times[1:]] + [total]
-        base_i = len(ain) // 2 + 1
         for ci, t in enumerate(cuts):
             ain += ["-i", whoosh]
-            af.append(f"[{base_i + ci}:a]volume=0.25,adelay={int(max(0, t - 0.15) * 1000)}|{int(max(0, t - 0.15) * 1000)}[w{ci}]")
+            d = int(max(0, t - 0.15) * 1000)
+            af.append(f"[{n_in}:a]volume=0.25,adelay={d}|{d}[w{ci}]")
+            n_in += 1
             mix.append(f"[w{ci}]")
     af.append("".join(mix) + f"amix=inputs={len(mix)}:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11[a]")
     fin = os.path.join(out, f"{script['id']}_{tag}.mp4")
