@@ -1,0 +1,50 @@
+{
+ "id": "2026-11-25_preis-auf-website",
+ "stufe": "TOFU",
+ "quelle": "abdi_zerlegt DdZk0O8xQle",
+ "hook_overlay": "Kein Handwerker schreibt\neinen Preis auf die Website",
+ "segments": [
+  {
+   "text": "Kein Handwerker schreibt einen Preis auf seine Website.",
+   "query": "construction worker|construction site",
+   "keywords": [
+    "Preis"
+   ]
+  },
+  {
+   "text": "Und dann beschweren sich alle über Anfragen, aus denen nichts wird.",
+   "query": "man phone stress|man phone",
+   "keywords": [
+    "Anfragen"
+   ]
+  },
+  {
+   "text": "Du musst keinen Festpreis nennen. Aber ein Rahmen hilft. Ab-Preise oder klare Pakete.",
+   "query": "bathroom renovation|renovation|tiles",
+   "keywords": [
+    "Rahmen",
+    "Pakete"
+   ]
+  },
+  {
+   "text": "Dann melden sich die, die wirklich wollen. Und du sparst dir Termine, die nichts bringen.",
+   "query": "house renovation|construction house",
+   "keywords": [
+    "wirklich"
+   ]
+  },
+  {
+   "text": "Würdest du einen Preis auf deine Website schreiben? Ja oder nein, schreib es in die Kommentare.",
+   "query": "woman typing smartphone|typing smartphone",
+   "keywords": [
+    "Ja",
+    "nein"
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Ja oder Nein?",
+  "sub": "Schreib es in die Kommentare",
+  "button": "Kommentieren"
+ }
+}

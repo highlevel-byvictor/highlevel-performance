@@ -1,0 +1,57 @@
+{
+ "id": "2026-11-26_entwurf-ungefragt",
+ "stufe": "MOFU",
+ "quelle": "ferry.emirer DepCz-oIjJY",
+ "hook_overlay": "Ich hab einem Küchenstudio\neinfach eine Website gebaut",
+ "segments": [
+  {
+   "text": "Ich hab einem Küchenstudio einfach eine neue Website gebaut. Ungefragt.",
+   "query": "modern kitchen|kitchen interior",
+   "keywords": [
+    "Website"
+   ]
+  },
+  {
+   "text": "Ihre Küchen sind richtig stark. Die Website zeigte das nicht.",
+   "query": "kitchen interior|luxury kitchen",
+   "keywords": [
+    "Küchen"
+   ]
+  },
+  {
+   "text": "Also haben wir ihren Stil, ihre Farben und ihre Bilder genommen und alles modern aufgebaut. Schnell auf dem Handy, mit klarer Anfrage.",
+   "query": "designer laptop|web design|laptop work",
+   "keywords": [
+    "modern",
+    "Handy"
+   ]
+  },
+  {
+   "text": "Den Entwurf gab es per Post, mit QR-Code. Kostenlos.",
+   "query": "letter envelope|mail letter",
+   "keywords": [
+    "kostenlos",
+    "Post"
+   ]
+  },
+  {
+   "text": "Wichtig: Am Ende gibt es eine Website, nicht zwei. Die alte wird einfach ersetzt.",
+   "query": "family cooking|family kitchen",
+   "keywords": [
+    "eine"
+   ]
+  },
+  {
+   "text": "Du willst auch einen Entwurf? Kommentiere ENTWURF.",
+   "query": "woman kitchen|kitchen",
+   "keywords": [
+    "ENTWURF"
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Kommentiere ENTWURF",
+  "sub": "Kostenloser Website-Entwurf in 24 Stunden",
+  "button": "Link in der Bio"
+ }
+}

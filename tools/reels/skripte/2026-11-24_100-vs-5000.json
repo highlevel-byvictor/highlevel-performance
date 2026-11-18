@@ -1,0 +1,58 @@
+{
+ "id": "2026-11-24_100-vs-5000",
+ "stufe": "TOFU",
+ "quelle": "aiwithvadim DfbN9G1tu_X",
+ "hook_overlay": "100-Euro-Website gegen\n5.000-Euro-Website",
+ "segments": [
+  {
+   "text": "Eine Website für hundert Euro gegen eine für fünftausend. Siehst du den Unterschied?",
+   "query": "laptop office|laptop work",
+   "keywords": [
+    "hundert",
+    "fünftausend"
+   ]
+  },
+  {
+   "text": "Auf den ersten Blick sehen beide okay aus. Der Unterschied kommt nach dem Klick.",
+   "query": "man laptop|laptop",
+   "keywords": [
+    "Klick"
+   ]
+  },
+  {
+   "text": "Lädt sie auf dem Handy in unter drei Sekunden? Steht dein bestes Angebot ganz oben?",
+   "query": "smartphone hand|smartphone",
+   "keywords": [
+    "drei",
+    "Angebot"
+   ]
+  },
+  {
+   "text": "Und wer antwortet um zehn Uhr abends, wenn ein Kunde eine Frage hat?",
+   "query": "phone night|smartphone night",
+   "keywords": [
+    "zehn"
+   ]
+  },
+  {
+   "text": "Eine billige Website ist eine Visitenkarte. Eine gute arbeitet wie ein Verkäufer.",
+   "query": "business meeting|meeting office",
+   "keywords": [
+    "Visitenkarte",
+    "Verkäufer"
+   ]
+  },
+  {
+   "text": "Kommentiere CHECK und du bekommst den Guide mit dem Selbst-Test.",
+   "query": "businessman office|business woman",
+   "keywords": [
+    "CHECK"
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Kommentiere CHECK",
+  "sub": "Kostenloser Sichtbarkeits-Guide mit Selbst-Test",
+  "button": "Link in der Bio"
+ }
+}

@@ -1,0 +1,57 @@
+{
+ "id": "2026-11-23_bessere-website",
+ "stufe": "TOFU",
+ "quelle": "hamzahbuilds DeviuMMgTei",
+ "hook_overlay": "Deine Arbeit ist besser.\nDen Auftrag bekommt trotzdem der andere.",
+ "segments": [
+  {
+   "text": "Deine Arbeit ist besser. Den Auftrag bekommt trotzdem der andere.",
+   "query": "carpenter workshop|carpenter|craftsman",
+   "keywords": [
+    "Auftrag"
+   ]
+  },
+  {
+   "text": "Warum? Bevor ein Kunde anruft, googelt er dich. Auf dem Handy. In drei Sekunden.",
+   "query": "woman smartphone|smartphone",
+   "keywords": [
+    "Handy",
+    "drei"
+   ]
+  },
+  {
+   "text": "Er vergleicht zwei Seiten. Die eine sieht aus wie 2014. Die andere zeigt echte Projekte, Bewertungen und einen klaren Button.",
+   "query": "smartphone scrolling|smartphone app",
+   "keywords": [
+    "2014",
+    "Button"
+   ]
+  },
+  {
+   "text": "Rate mal, wen er anruft.",
+   "query": "phone call|man phone",
+   "keywords": [
+    "anruft"
+   ]
+  },
+  {
+   "text": "Die bessere Website bekommt den Termin. Nicht immer der bessere Betrieb.",
+   "query": "handshake|business meeting",
+   "keywords": [
+    "Website"
+   ]
+  },
+  {
+   "text": "Kommentiere CHECK und ich schick dir den kostenlosen Guide, wie du das änderst.",
+   "query": "carpenter|construction worker",
+   "keywords": [
+    "CHECK"
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Kommentiere CHECK",
+  "sub": "Kostenloser Sichtbarkeits-Guide für Betriebe",
+  "button": "Link in der Bio"
+ }
+}

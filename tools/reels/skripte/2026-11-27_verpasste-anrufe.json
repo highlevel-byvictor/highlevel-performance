@@ -1,0 +1,56 @@
+{
+ "id": "2026-11-27_verpasste-anrufe",
+ "stufe": "TOFU",
+ "quelle": "lukasbruckmann Df0EPP4O2Yj",
+ "hook_overlay": "18 Uhr. Essen auf dem Tisch.\nZwölf verpasste Anrufe.",
+ "segments": [
+  {
+   "text": "Achtzehn Uhr. Das Essen steht auf dem Tisch. Und auf deinem Handy: zwölf verpasste Anrufe.",
+   "query": "family dinner|dinner table",
+   "keywords": [
+    "zwölf"
+   ]
+  },
+  {
+   "text": "Jeder davon war vielleicht ein Auftrag. Und jeder ruft jetzt den nächsten Betrieb an.",
+   "query": "phone ringing|smartphone table",
+   "keywords": [
+    "Auftrag"
+   ]
+  },
+  {
+   "text": "Du kannst nicht auf dem Dach stehen und gleichzeitig telefonieren.",
+   "query": "roofer|roof construction|roof",
+   "keywords": [
+    "Dach"
+   ]
+  },
+  {
+   "text": "Ein KI-Telefonassistent nimmt den Anruf an, fragt, was gebraucht wird, und schreibt dir alles ins CRM.",
+   "query": "call center|headset office",
+   "keywords": [
+    "KI-Telefonassistent",
+    "CRM"
+   ]
+  },
+  {
+   "text": "Du rufst zurück, wenn du Zeit hast. Der Auftrag bleibt bei dir.",
+   "query": "worker phone|construction phone|phone call",
+   "keywords": [
+    "Auftrag"
+   ]
+  },
+  {
+   "text": "Kommentiere CHECK und du bekommst den Guide dazu.",
+   "query": "family evening|family home",
+   "keywords": [
+    "CHECK"
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Kommentiere CHECK",
+  "sub": "Kostenloser Sichtbarkeits-Guide für Betriebe",
+  "button": "Link in der Bio"
+ }
+}

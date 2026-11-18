@@ -1,0 +1,56 @@
+{
+ "id": "2026-11-28_3-sekunden",
+ "stufe": "TOFU",
+ "quelle": "lean_media DVY8XboAqdY",
+ "hook_overlay": "3 Sekunden.\nMehr Zeit gibt dir kein Kunde.",
+ "segments": [
+  {
+   "text": "Drei Sekunden. Mehr Zeit gibt dir kein Kunde auf deiner Website.",
+   "query": "stopwatch|clock time",
+   "keywords": [
+    "Drei"
+   ]
+  },
+  {
+   "text": "In dieser Zeit muss er drei Dinge sehen.",
+   "query": "woman smartphone|smartphone scrolling",
+   "keywords": [
+    "drei"
+   ]
+  },
+  {
+   "text": "Erstens: Was machst du und wo? Zweitens: Ein echtes Bild deiner Arbeit, kein Stockfoto vom Händedruck.",
+   "query": "tiles|tiler|construction worker",
+   "keywords": [
+    "wo",
+    "echtes"
+   ]
+  },
+  {
+   "text": "Drittens: Ein Button, der sagt, was passiert. Zum Beispiel: Rückruf in zehn Minuten.",
+   "query": "touchscreen smartphone|smartphone touch",
+   "keywords": [
+    "Button"
+   ]
+  },
+  {
+   "text": "Fehlt eins davon, ist er weg. Und zwar bei der Konkurrenz.",
+   "query": "man walking away|man walking",
+   "keywords": [
+    "Konkurrenz"
+   ]
+  },
+  {
+   "text": "Kommentiere CHECK und du bekommst den Selbst-Test.",
+   "query": "businessman laptop|laptop office",
+   "keywords": [
+    "CHECK"
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Kommentiere CHECK",
+  "sub": "Kostenloser Sichtbarkeits-Guide mit Selbst-Test",
+  "button": "Link in der Bio"
+ }
+}

@@ -1,0 +1,57 @@
+{
+ "id": "2026-11-29_entwurf-angebot",
+ "stufe": "BOFU",
+ "quelle": "theblur.io DWBgUPhEfUz / adrianharig DangAf7K2Ng",
+ "hook_overlay": "Schick uns deine Website.\nMorgen hast du einen Entwurf.",
+ "segments": [
+  {
+   "text": "Schick uns deine Website. Morgen hast du einen kostenlosen Entwurf.",
+   "query": "web design|designer computer|programmer",
+   "keywords": [
+    "kostenlosen",
+    "Entwurf"
+   ]
+  },
+  {
+   "text": "Wir schauen uns deinen Betrieb an, deine Farben, deine besten Leistungen, deine Videos. Und bauen daraus deine neue Startseite.",
+   "query": "team office|office meeting",
+   "keywords": [
+    "Startseite"
+   ]
+  },
+  {
+   "text": "Mit KI-Chat, der auch nachts antwortet, eigenem CRM und auf Wunsch einem KI-Telefonassistenten.",
+   "query": "chat smartphone|smartphone message",
+   "keywords": [
+    "KI-Chat",
+    "CRM"
+   ]
+  },
+  {
+   "text": "Support rund um die Uhr. Hosting und Pflege zu einer fairen Monatsgebühr.",
+   "query": "call center|customer service",
+   "keywords": [
+    "Support"
+   ]
+  },
+  {
+   "text": "Gefällt dir der Entwurf, stellen wir ihn fertig. Wenn nicht, hat es dich nichts gekostet.",
+   "query": "happy laptop|businessman laptop",
+   "keywords": [
+    "nichts"
+   ]
+  },
+  {
+   "text": "Kommentiere ENTWURF und wir legen los.",
+   "query": "handshake|business deal",
+   "keywords": [
+    "ENTWURF"
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Kommentiere ENTWURF",
+  "sub": "Kostenloser Website-Entwurf in 24 Stunden",
+  "button": "Link in der Bio"
+ }
+}
