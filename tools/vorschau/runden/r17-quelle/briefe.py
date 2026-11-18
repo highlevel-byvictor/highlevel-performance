@@ -23,6 +23,26 @@ BRIEF.update({
  'feldhaus': (['Feldhaus Küchen Design + Technik GmbH', 'Geschäftsführung', 'Ostlandstraße 1', '49685 Emstek'], 'Sehr geehrter Herr Feldhaus,',
               'dass oben zuerst ein Foto des Gebäudes steht, Ihre Auszeichnungen erst unter „Über uns“ zu finden sind und Ihre 5,0 Sterne bei Google nirgends auftauchen', 'Feldhaus Küchen'),
 })
+BRIEF.update({
+ 'suty': (['KS Küchenservice Suty', 'Herrn Krzysztof Suty', 'Berliner Str. 15', '32361 Preußisch Oldendorf'], 'Sehr geehrter Herr Suty,',
+          'dass Besucher zuerst einen langen Begrüßungstext lesen müssen, Ihre 5,0 Sterne bei Google nirgends zu sehen sind und die Fotos Ihrer Ausstellung erst auf einer Unterseite kommen', 'KS Küchenservice Suty'),
+ 'prima': (['Prima-Küchen', 'Herrn Hartmut Pieper', 'Mindener Str. 62', '32369 Rahden'], 'Sehr geehrter Herr Pieper,',
+           'dass die Küchenseiten noch Unterlagen von 2018 zeigen, auf der Kontaktseite Ihre Bankverbindung steht, aber kein Anfrageformular, und Ihre 4,8 Sterne bei Google fehlen', 'Prima-Küchen'),
+ 'schilling': (['Küchen-Schilling GmbH', 'Geschäftsführung', 'Rennerskamp 16', '32289 Rödinghausen'], 'Sehr geehrter Herr Schilling,',
+               'dass die Startseite vor allem aus Standardtexten besteht, kaum Fotos aus Ihrem eigenen Studio zeigt und Ihre 4,9 Sterne bei Google nirgends auftauchen', 'Küchen-Schilling'),
+ 'timphus': (['Küchenzentrum Hartwig &amp; Timphus', 'Geschäftsführung', 'Bergmannstraße 25', '49439 Steinfeld (Oldenburg)'], 'Sehr geehrte Damen und Herren,',
+             'dass die Startseite vor allem aus Herstellerbildern besteht, der Text Besucher mal mit Sie und mal mit Du anspricht und Ihr Team mit 12 Mitarbeitern nirgends zu sehen ist', 'das Küchenzentrum Hartwig &amp; Timphus'),
+ 'meyknecht': (['Küchen Tischlerei Jürgen Meyknecht', 'Herrn Jürgen Meyknecht', 'Gärtnereistraße 1', '48496 Hopsten'], 'Sehr geehrter Herr Meyknecht,',
+               'dass Ihre 4,9 Sterne bei Google nicht zu sehen sind, die Fotos Ihrer eigenen Arbeiten zwischen Herstellerbildern untergehen und Ihre Küchenmodernisierung erst in einem Untermenü auftaucht', 'die Tischlerei Meyknecht'),
+})
+BRIEF.update({
+ 'wenzky': (['Wenzky-Küchen GmbH', 'Frau Luise Kenning', 'Am Bauhof 27', '48431 Rheine'], 'Sehr geehrte Frau Kenning,',
+            'dass oben vor allem ein schmales Bannerbild und die Telefonnummer stehen, es auf der Startseite keinen Button für einen Beratungstermin gibt und Ihre Kochevents erst im Menü auffallen', 'Wenzky-Küchen'),
+ 'buessemaker': (['Sandra Büssemaker e.K.', 'Frau Sandra Büssemaker', 'Wittkopstraße 13', '49088 Osnabrück'], 'Sehr geehrte Frau Büssemaker,',
+                 'dass Ihre starken Vorher-nachher-Referenzen erst auf einer Unterseite kommen, Ihre 5,0 Sterne bei Google nirgends zu sehen sind und oben kein Button für eine Beratungsanfrage steht', 'Ihre Küchenplanung'),
+ 'plaza': (['Küchen Plaza', 'Herrn Richard Louwman', 'Osnabrücker Str. 298', '48429 Rheine'], 'Sehr geehrter Herr Louwman,',
+           'dass die Seite zuerst auf Niederländisch öffnet, deutsche Besucher erst die Sprache umstellen müssen und Ihre 5,0 Sterne bei Google nirgends zu sehen sind', 'Küchen Plaza'),
+})
 
 def slug(s): return s['slug'] + '-' + hashlib.sha1(s['firma'].encode()).hexdigest()[:4]
 
