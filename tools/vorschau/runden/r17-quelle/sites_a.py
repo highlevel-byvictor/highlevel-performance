@@ -178,7 +178,7 @@ S['bot'] = BOT('Stina', 'Ihre Küchen-Lotsin', 'Küchen Stegink', S, [
     ['Liefern Sie auch in die Niederlande?', 'Ja, wir liefern und montieren in ganz Deutschland und in den Niederlanden.'],
     ['Gibt es Ausstellungsküchen?', 'Ja, wir tauschen unsere Musterküchen regelmäßig aus. Diese erhalten Sie zu reduzierten Preisen.']],
     ['#konfigurator', '#kuechen', '#ausstellung', '#kontakt'])
-S['img'] = {'logo.png': ('stegink/img/i000.jpg', 0), 'h1.jpg': ('stegink/img/i004.jpg', 0), 'h2.jpg': ('stegink/img/i025.jpg', 0), 'h3.jpg': ('stegink/img/i003.jpg', 0),
+S['img'] = {'logo.png': ('stegink/img/i000.jpg', 0), 'h1.jpg': ('/home/claude/r17raw/stegink/s1.jpg', 0), 'h2.jpg': ('stegink/img/i004.jpg', 0), 'h3.jpg': ('stegink/img/i003.jpg', 0),
     'konf.jpg': ('stegink/img/i033.jpg', 1400),
     'k1.jpg': ('stegink/img/i014.jpg', 1200), 'k2.jpg': ('stegink/img/i044.jpg', 1200), 'k3.jpg': ('stegink/img/i036.jpg', 1300), 'k4.jpg': ('stegink/img/i035.jpg', 1300), 'k5.jpg': ('stegink/img/i040.jpg', 1300), 'k6.jpg': ('stegink/img/i052.jpg', 1300),
     'a1.jpg': ('stegink/img/i053.jpg', 1300), 'a2.jpg': ('stegink/img/i054.jpg', 1300), 'a3.jpg': ('stegink/img/i055.jpg', 1300), 'haus.jpg': ('stegink/img/i073.jpg', 2000)}

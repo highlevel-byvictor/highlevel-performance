@@ -164,6 +164,7 @@ def b_timphus(s):
         h1='Küchen <em>aus dem Norden.</em>',
         sub='Unser inhabergeführtes Unternehmen aus Steinfeld beschäftigt derzeit 12 Mitarbeiter. Wir finden für Sie die perfekte Küche und den passenden Hauswirtschaftsraum.'))
         + spot('spot', 'Quooker im Küchenzentrum', 'Kochendes Wasser <em>direkt aus dem Hahn.</em>', 'Kein Wasserkocher, kein Warten. Den Quooker können Sie sich bei uns in Steinfeld vorführen lassen.', 'tv.mp4', 'tv.jpg', 'tq')
+        + spot('neff', 'NEFF im Küchenzentrum', 'Kochen aus <em>Leidenschaft.</em>', 'Auch den Kampagnenfilm von NEFF zeigen wir auf unserer Seite. Die Geräte sehen Sie bei uns in der Ausstellung.', 'neff.mp4', 'neff.jpg', 'tn')
         + scroller('kuechen', 'Unsere Traumküchen', 'Große Auswahl, <em>Ihr Stil.</em>', 'Klassisch, Landhaus oder modern, farbig, Holz oder Weiß: Entdecken Sie unsere Küchen-Vielfalt.', [
             ('Modern', 'k1.jpg', 'Klare Linien, viel Licht.', '50% 50%'),
             ('Klassisch', 'k2.jpg', 'Zeitlos und hell.', '50% 50%'),
@@ -192,13 +193,13 @@ S = SITES['timphus'] = site(
     kt_ey='Kontakt', kt_h2='Ihr Interesse <em>ist geweckt?</em>', kt_p='Rufen Sie uns an oder kommen Sie in unserer Ausstellung in Steinfeld vorbei.',
     vars=V.format(ink='#111', mute='#4d4b4b', p='#E2001A', pi='#fff', dk='#111', s2='#f4f4f1', fh='"Sora",system-ui,sans-serif', fb='"Inter",system-ui,sans-serif', lh=70, ft='#000') + DKHD.format(c='#000'),
     css='''.h2{font-weight:700;letter-spacing:-.03em;line-height:1.06}.h2 em{font-style:normal;color:#E2001A}.alt{background:var(--s2)}.hd .nav a{color:#fff}.mcall a:last-child{background:#FFE600;color:#111}''')
-S['css2'] = '.hz{--hz-bg:#111;--hz-ink:#fff;--hz-mute:rgba(255,255,255,.84);--hz-stroke:rgba(255,230,0,.22);--hz-line:rgba(255,255,255,.2)}.hz h1{font-weight:700}.hz h1 em{color:#FFE600}.hz .ey{color:#FFE600}.hz .btn-a{background:#FFE600;color:#111}.hz .btn-o{color:#fff;border-color:rgba(255,255,255,.6)}.sp16{--sp-bg:#FFE600;--sp-ink:#111;--sp-ey:#E2001A}.sp16 .h2 em{color:#E2001A;font-style:normal}'
+S['css2'] = '.hz{--hz-bg:#111;--hz-ink:#fff;--hz-mute:rgba(255,255,255,.84);--hz-stroke:rgba(255,230,0,.22);--hz-line:rgba(255,255,255,.2)}.hz h1{font-weight:700}.hz h1 em{color:#FFE600}.hz .ey{color:#FFE600}.hz .btn-a{background:#FFE600;color:#111}.hz .btn-o{color:#fff;border-color:rgba(255,255,255,.6)}.sp16{--sp-bg:#FFE600;--sp-ink:#111;--sp-ey:#E2001A}.sp16.tn{--sp-bg:#111;--sp-ink:#fff;--sp-ey:#FFE600}.sp16 .h2 em{color:#E2001A;font-style:normal}'
 S['bot'] = BOT('Tilda', 'Ihre Küchen-Lotsin', 'dem Küchenzentrum Hartwig & Timphus', S, [
     ['Öffnungszeiten', 'Mo–Fr 8–18 Uhr, Sa 9–12 Uhr. Sonn- und feiertags geschlossen.'],
     ['Welche Hersteller führen Sie?', 'Ballerina, Bauformat und Burger.'],
     ['Planen Sie auch Hauswirtschaftsräume?', 'Ja, wir beraten Sie gerne zu Ihrem Hauswirtschaftsraum.']],
     ['#spot', '#kuechen', '#hwr', '#kontakt'])
-S['img'] = {'tv.mp4': ('/home/claude/r17raw/timphus/vid/tv_web.mp4', 0), 'tv.jpg': ('/home/claude/r17raw/timphus/vid/poster.jpg', 0),
+S['img'] = {'neff.mp4': ('/home/claude/r17raw/timphus/vid/neff_web.mp4', 0), 'neff.jpg': ('/home/claude/r17raw/timphus/vid/neff.jpg', 0), 'tv.mp4': ('/home/claude/r17raw/timphus/vid/tv_web.mp4', 0), 'tv.jpg': ('/home/claude/r17raw/timphus/vid/poster.jpg', 0),
     'logo.png': ('timphus/img/i004.png', 0), 'h1.jpg': ('timphus/img/i016.jpg', 0), 'h2.jpg': ('timphus/img/i017.jpg', 0), 'h3.jpg': ('timphus/img/i019.jpg', 0),
     'k1.jpg': ('timphus/img/i097.jpg', 1300), 'k2.jpg': ('timphus/img/i018.jpg', 1300), 'k3.jpg': ('timphus/img/i120.jpg', 1300), 'k4.jpg': ('timphus/img/i099.jpg', 1300), 'k5.jpg': ('timphus/img/i096.jpg', 1300), 'k6.jpg': ('timphus/img/i121.jpg', 1300),
     'w1.jpg': ('timphus/img/i104.jpg', 0), 'w2.jpg': ('timphus/img/i106.jpg', 0), 'w3.jpg': ('timphus/img/i109.jpg', 0), 'w4.jpg': ('timphus/img/i107.jpg', 0)}
@@ -212,6 +213,8 @@ def b_meyknecht(s):
         ey='Küchen Tischlerei Jürgen Meyknecht · Hopsten',
         h1='Die erste Adresse für <em>individuelle Einbauküchen.</em>',
         sub='Jürgen Meyknecht ist seit über 30 Jahren gelernter Tischler. Seit 2005 planen, montieren und modernisieren wir Küchen und bauen Möbel nach Maß.'))
+        + vgrid('videos', 'Videos von unserer Seite', 'Unsere Partner <em>im Film.</em>', 'Diese Videos zeigen wir auch auf unserer bisherigen Seite.', [
+            ('systemceram: Feinsteinzeug aus dem Westerwald', 'yt', 'Zf6MKnwsgSc', 'yt1.jpg'), ('Franke: Box Center', 'yt', '986ScGDUqwo', 'yt2.jpg')], 'alt')
         + story('team', 'Über uns', 'Küche vom Tischler: <em>geplant und gebaut aus einer Hand.</em>', [
             'Wir sind Ihr professioneller Partner für Küchen und Möbel nach Maß. Als Partner von GK Gute Küchen ist die Beratung bei uns Chefsache, und erstklassiger Service selbstverständlich.',
             'Wir beweisen Ihnen, dass beste Qualität von Küchen und Möbeln zum gleichen Preis oder sogar günstiger zu haben ist, als Sie vermuten.'], 'team.jpg', 'Das Team der Tischlerei Meyknecht bei der Planung', cls='hb')
@@ -235,7 +238,7 @@ S = SITES['meyknecht'] = site(
     slug='kuechen-tischlerei-meyknecht-hopsten', firma='Küchen Tischlerei Jürgen Meyknecht', web='kuechen-meyknecht.de', fonts='r9medifit',
     title='Küchen Tischlerei Meyknecht – individuelle Einbauküchen aus Hopsten', desc='Tischlerei Jürgen Meyknecht in Hopsten: Küchenplanung, Montage, Küchenmodernisierung und Möbel nach Maß.',
     tel='05458 933806', tel_i='+495458933806', adresse='Gärtnereistraße 1, 48496 Hopsten', google=('4,9', 14),
-    cta='Planungstermin anfragen', nav=[('Über uns', 'team'), ('Modernisierung', 'modernisierung'), ('Leistungen', 'leistungen'), ('Tischlerei', 'tischler'), ('Kontakt', 'kontakt')],
+    cta='Planungstermin anfragen', nav=[('Videos', 'videos'), ('Über uns', 'team'), ('Modernisierung', 'modernisierung'), ('Leistungen', 'leistungen'), ('Tischlerei', 'tischler'), ('Kontakt', 'kontakt')],
     hours=[('Mo – Fr', '7:30 – 12:00, 14:00 – 17:00'), ('Sa', 'nach Vereinbarung')],
     form_opts=['Neue Küche', 'Küchenmodernisierung', 'Möbel nach Maß', 'Sonstiges'],
     form_h3='Planungstermin anfragen', form_p='Persönlich und unverbindlich. Wir melden uns so schnell wie möglich, um Ihren Termin zu bestätigen.', form_btn='Rückruf anfordern',
@@ -252,5 +255,5 @@ S['bot'] = BOT('Marta', 'Ihre Küchen-Lotsin', 'der Tischlerei Meyknecht', S, [
     ['Bauen Sie Möbel nach Maß?', 'Ja, in unserer Tischlerei fertigen wir Möbel im Kundenauftrag.']],
     ['#team', '#modernisierung', '#leistungen', '#kontakt'])
 S['img'] = {'logo.png': ('/home/claude/r17raw/meyknecht/logo.png', 0), 'h1.jpg': ('meyknecht/img/i001.jpg', 2200), 'h2.jpg': ('meyknecht/img/i101.jpg', 2200), 'h3.jpg': ('meyknecht/img/i102.jpg', 2200),
-    'team.jpg': ('meyknecht/img/i106.jpg', 1800), 'mod.jpg': ('meyknecht/img/i100.jpg', 1500), 'tisch.jpg': ('meyknecht/img/i107.jpg', 1000)}
+    'yt1.jpg': ('/home/claude/r17raw/meyknecht/yt_Zf6MKnwsgSc.jpg', 0), 'yt2.jpg': ('/home/claude/r17raw/meyknecht/yt_986ScGDUqwo.jpg', 0), 'team.jpg': ('meyknecht/img/i106.jpg', 1800), 'mod.jpg': ('meyknecht/img/i100.jpg', 1500), 'tisch.jpg': ('meyknecht/img/i107.jpg', 1000)}
 S['body'] = b_meyknecht
