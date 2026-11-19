@@ -348,7 +348,7 @@ def render(script, out, k, cache, W, H, tag, speech, words, seg_times, clips):
             af.append(f"[{n_in}:a]volume=0.25,adelay={d}|{d}[w{ci}]")
             n_in += 1
             mix.append(f"[w{ci}]")
-    af.append("".join(mix) + f"amix=inputs={len(mix)}:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11[a]")
+    af.append("".join(mix) + f"amix=inputs={len(mix)}:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo[a]")
     fin = os.path.join(out, f"{script['id']}_{tag}.mp4")
     sh(["ffmpeg", "-y", "-i", vid, *ain, "-filter_complex", ";".join(af), "-map", "0:v", "-map", "[a]",
         "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", fin])
