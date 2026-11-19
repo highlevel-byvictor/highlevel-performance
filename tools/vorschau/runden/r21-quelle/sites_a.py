@@ -46,7 +46,13 @@ CSS20 = '''.an20{background:var(--dk);color:#fff;padding:18px 0}.an20 .w{display
 .gl20 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}.gl20 figure{margin:0;aspect-ratio:4/3;overflow:hidden;border-radius:0}.gl20 figure:nth-child(4n+1){border-radius:18px}.gl20 img{width:100%;height:100%;object-fit:cover;transition:transform .8s}.gl20 figure:hover img{transform:scale(1.04)}
 .vd .frame{border-radius:18px!important;overflow:hidden}.lt-logo{font:800 19px/1.15 var(--fh);color:var(--hd-ink,var(--ink));letter-spacing:.01em;display:block}.lt-logo small{display:block;font:600 12px var(--fb);letter-spacing:.14em;text-transform:uppercase;color:var(--p)}
 .ft .lt-logo{color:#fff}.ft .lt-logo small{color:rgba(255,255,255,.7)}
-.promo figure img{aspect-ratio:auto!important;height:auto}.pop.side img{height:auto!important;aspect-ratio:auto;max-height:230px;object-fit:cover}.lot-b,.lot-h{color:var(--p-ink,#fff)}.lot-h button{color:inherit}
+.promo figure img{aspect-ratio:auto!important;height:auto}.pop.side img{height:auto!important;aspect-ratio:auto;max-height:230px;object-fit:cover}.chip20{display:inline-flex!important;align-items:center;gap:10px;background:#fff;border-radius:999px;padding:10px 18px 10px 14px;box-shadow:0 8px 26px rgba(0,0,0,.10);font:600 15.5px var(--fb);margin-bottom:18px}.chip20 b{font:800 20px var(--fh)}.chip20 .st{color:#f5a500;letter-spacing:1px;font-size:17px}
+.lot-b,.lot-h{color:var(--p-ink,#fff)}.lot-h button{color:inherit}
+.ht20{background:var(--s2);padding-top:var(--hdh,86px)}.ht20 figure{margin:0;max-width:1500px;margin-inline:auto}.ht20 .chip20{margin-bottom:10px}.ht20 figure img{display:block;width:100%;height:auto}
+.ht20 .w{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(24px,5vw,70px);align-items:start;padding-top:44px;padding-bottom:56px}.ht20 h1{font:800 clamp(34px,4.2vw,62px)/1.04 var(--fh);letter-spacing:-.02em;margin:12px 0 0}.ht20 h1 em{font-style:normal;color:var(--p)}
+.ht20 .ey{color:var(--p)}.ht20 .sub{font-size:19px;color:var(--mute);margin:0}.ht20 .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:24px}.ht20 .ub{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:30px;border-top:1px solid rgba(0,0,0,.14)}
+.ht20 .ub div{padding-top:14px;font-size:14.5px;color:var(--mute);line-height:1.35}.ht20 .ub b{display:block;font:800 21px var(--fh);color:var(--ink)}
+@media(max-width:900px){.ht20{padding-top:66px}.ht20 .w{grid-template-columns:1fr;padding-top:26px;padding-bottom:40px}.ht20 h1{font-size:31px}}
 @media(max-width:900px){.tm20 .w{grid-template-columns:1fr}.gl20 .grid{grid-template-columns:1fr 1fr}.an20 p{width:100%}.an20 a{font-size:14.5px;padding:10px 14px}.nf20 b{font-size:21px}}'''
 
 def mk(k, d):
@@ -55,11 +61,16 @@ def mk(k, d):
     svcs = d['svcs']; cats = d['cats']; rec = d['rec']
     def body(s):
         hero = d['hero']
-        if hero == 'slides':
+        if hero == 'team':
+            ub = ''.join(f'<div><b>{x}</b>{y}</div>' for x, y in d['ubar'])
+            t = hd(s, False) + (f'<section class="ht20" id="top"><figure><img src="img/h1.jpg" alt="{E(d["team"]["cap"])}"></figure><div class="w"><div data-r>{chip(s)}<p class="ey">{d["ey"]}</p><h1>{d["h1"]}</h1></div>'
+                 f'<div data-r="2"><p class="sub">{d["sub"]}</p><div class="ctas"><a class="btn btn-a" href="#kontakt">{s["cta"]} {AR}</a><a class="btn btn-o" href="tel:{s["tel_i"]}">{PH} {s["tel"]}</a></div><div class="ub">{ub}</div></div></div></section>')
+        elif hero == 'slides':
             t = hd(s) + hero_slides(s, dict(slides=['h1.jpg', 'h2.jpg'], pos=g('hpos', {}), ey=d['ey'], h1=d['h1'], sub=d['sub'], ubar=d['ubar']))
         else:
             t = hd(s, False) + hero_split(s, dict(imgs=(['h1.jpg', 'h2.jpg'] if d['himgs'][0] != d['himgs'][1] else ['h1.jpg']), cls=('card' if g('card') else ''), pos=g('hpos', {}), side=hero, big='', ubar=d['ubar'], ey=d['ey'], h1=d['h1'], sub=d['sub']))
         b = t + anliegen(s, cats) + marquee([a for a, _ in svcs] + [f'Zahnarzt in {ort}'], 'wm')
+        if g('stimmen'): b += reviews_ns(s, d['stimmen'], cls='alt', h2='Das sagen <em>unsere Patienten.</em>')
         if g('video_first'): b += d['video_first']
         b += svc('leistungen', 'Leistungen', d['sv_h2'], d['sv_lead'], svcs[:6])
         b += promo('fokus', 'pr.jpg', top['tag'], top['h2'], top['txt'], top['pts'], top['btn'], 'alt')
@@ -73,7 +84,6 @@ def mk(k, d):
         b += teamsec('ueber', tm['ey'], tm['h2'], tm['paras'], 'tm.jpg', tm['cap'], tm['tl'], cls='dk', mw=tm.get('mw'))
         if g('gal'): b += gal20('praxis', 'Einblicke', d.get('gal_h2', 'Ein Blick in <em>unsere Praxis.</em>'), [(f'g{i+1}.jpg', pos) for i, (_, pos) in enumerate(d['gal'])])
         if g('video'): b += d['video']
-        if g('stimmen'): b += reviews_ns(s, d['stimmen'], h2='Das sagen <em>unsere Patienten.</em>')
         b += notfall(s, d['notfall']) + contact(s)
         b += pops20([('pr.jpg', 'Aus unserer Praxis', top['tag'], top['pop'], 'Termin anfragen')] + [(im, 'Aus unserer Praxis', a, tx, 'Termin anfragen') for im, a, tx in d['pops']])
         return b + footer(s)
@@ -90,9 +100,10 @@ def mk(k, d):
 .mq.wm span{{font-weight:700;font-size:15px}}.alt{{background:var(--s2)}}.sv .row div{{border-top:4px solid {p}}}.rd .road div h3{{color:{g('em', p)}}}.hs .ubar b{{color:#fff}}.hs .ey{{color:#fff!important}}.ft img{{background:#fff;padding:8px 12px;height:66px}}
 .promo .tag{{background:{p};color:{pi}}}.el .ey{{color:{g('em', p)}}}
 @media(max-width:820px){{.hz h1,.hs h1{{font-size:31px!important;hyphens:none!important;overflow-wrap:normal!important;word-break:normal!important}}}}''' + CSS20)
-    card = (f'@media(min-width:901px){{.hz.card{{min-height:min(90vh,800px)}}.hz.card .hz-img{{align-self:center;min-height:0;aspect-ratio:{g("card")};margin:130px clamp(24px,4vw,64px) 60px;border-radius:18px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.18)}}.hz.card .sl img{{animation:none}}}}' if g('card') else '')
+    card = (f'@media(min-width:901px){{.hz.card{{min-height:min(90vh,800px)}}.hz.card .hz-img{{align-self:center;min-height:0;aspect-ratio:{g("card")};margin:130px clamp(24px,4vw,64px) 60px;border-radius:18px;overflow:hidden;box-shadow:0 30px 70px rgba(0,0,0,.18)}}.hz.card .sl img{{animation:none}}}}@media(max-width:900px){{.hz.card .hz-img{{height:auto!important;min-height:0!important;aspect-ratio:{g("card")};margin-top:72px}}}}' if g('card') else '')
     S['css2'] = card + f'.hz{{--hz-bg:{s2};--hz-ink:#1b1d22;--hz-mute:#4d535c;--hz-stroke:rgba(0,0,0,.07);--hz-cols:{g("cols", "46fr 54fr")}}}.hz h1{{font-size:clamp(34px,4.1vw,64px)}}.hz .ey{{color:{g("em", p)}}}' + g('css2', '')
     if g('logo_txt'): S['logo_txt'] = d['logo_txt']
+    if g('stimmen') and not g('google'): S['voices'] = True
     nf = d['notfall']
     S['bot'] = dict(auto=(d['hero'] == 'r'), name=d['bot'], tag='Ihr Praxis-Lotse', du=False, tel=d['tel'], tel_i=d['tel_i'], notfall=nf, finBtn='Termin anfragen',
         hello=f'Guten Tag! Ich bin <b>{d["bot"]}</b>, der Lotse der {d["kurz"]}. Soll ich Ihnen helfen, schnell das Richtige zu finden?',
@@ -118,8 +129,8 @@ def I20(k, n):
 
 # 1 ─ Zahnarztpraxis Alfhausen
 mk('alfhausen', dict(slug='zahnarztpraxis-alfhausen', firma='Zahnarztpraxis Alfhausen', kurz='Zahnarztpraxis Alfhausen', name='Dr. Hermann Meyer und Ines Gennermann', ort='Alfhausen', strasse='In den Gärten 1', plz='49594',
-    tel='05464 1228', tel_i='+4954641228', mail='info@zahnarztpraxis-alfhausen.de', web='zahnarztpraxis-alfhausen.de', p='#731e35', dk='#3a0f1b', s2='#f7f1f3', fam=NOTO, fonts='r18rec',
-    logo=(I20('alfhausen', '000'), 0), lh=54, hero='r', himgs=[I20('alfhausen', '006'), I20('alfhausen', '006')], cols='48fr 52fr',
+    tel='05464 1228', tel_i='+4954641228', mail='info@zahnarztpraxis-alfhausen.de', web='zahnarztpraxis-alfhausen.de', p='#731e35', dk='#3a0f1b', s2='#f7f1f3', fam=NOTO, fonts='r18rec', google=(4.8, 24),
+    logo=(I20('alfhausen', '000'), 0), lh=54, hero='team', himgs=[I20('alfhausen', '001'), I20('alfhausen', '006')],
     ey='Zahnarztpraxis Alfhausen · seit drei Generationen', h1='Ihre Zahnärzte in Alfhausen. <em>Mit Zeit für Sie.</em>',
     sub='Ein freundliches, engagiertes Team in entspannter, familiärer Atmosphäre. Direkt im Ortskern, mit Parkplätzen vor dem Haus.',
     ubar=[('Seit 3', 'Generationen'), ('Mo–Do', '7 bis 19 Uhr'), ('Barrierefrei', 'im Ortskern')],
@@ -133,20 +144,21 @@ mk('alfhausen', dict(slug='zahnarztpraxis-alfhausen', firma='Zahnarztpraxis Alfh
     top=dict(nav='Prophylaxe', tag='Professionelle Zahnreinigung', h2='Vorbeugen ist besser <em>als bohren.</em>', img=I20('alfhausen', '011'),
              txt='Bei der täglichen Zahnpflege lassen sich vor allem die Zahnzwischenräume schwer reinigen. Bei der professionellen Zahnreinigung befreien wir Mundraum und Zähne gründlich von Belägen.',
              pts=['Beugt Karies und Parodontitis vor', 'Reinigt auch die Zahnzwischenräume', 'Mit Tipps für die Pflege zu Hause'], btn='Zahnreinigung anfragen', pop='Gründlich sauber, auch zwischen den Zähnen. Jetzt Termin anfragen.'),
-    team=dict(ey='Die Praxis', h2='Seit drei Generationen <em>in Alfhausen.</em>', img=I20('alfhausen', '001'), cap='Das Team der Zahnarztpraxis Alfhausen',
+    team=dict(ey='Die Praxis', h2='Seit drei Generationen <em>in Alfhausen.</em>', img=I20('alfhausen', '006'), cap='Der Empfang der Zahnarztpraxis Alfhausen',
               paras=['Unsere Praxis besteht seit drei Generationen. Seit 1993 wird sie von Dr. Hermann Meyer und Zahnärztin Ines Gennermann als Gemeinschaftspraxis geführt.',
                      'Wir legen Wert auf ein harmonisches Miteinander und nehmen uns Zeit für Sie. Den Aufenthalt bei uns möchten wir Ihnen so angenehm wie möglich machen.'],
               tl=[('1993', 'Gemeinschaftspraxis'), ('3', 'Generationen')]),
-    gal=[(I20('alfhausen', '006'), '50% 50%'), (I20('alfhausen', '003'), '50% 50%'), (I20('alfhausen', '002'), '70% 50%')],
+    gal=[(I20('alfhausen', '003'), '50% 50%'), (I20('alfhausen', '002'), '70% 50%'), (I20('alfhausen', '011'), '50% 30%')],
+    stimmen=['Man fühlt sich gut aufgehoben, und das Team nimmt sich Zeit für die Patienten.', 'Ich habe den Zahnarzt mein halbes Leben gemieden. Hier habe ich gelernt, dass die Angst unbegründet war.', 'Sehr gute Beratung, ohne dass unnötige Leistungen angeboten wurden.'],
     hours=[('Mo–Do', '7–19 Uhr'), ('Fr', '7–13 Uhr')], cats=['pzr', 'akut', 'angst'], bot='Alfi', notfall='Außerhalb der Sprechzeiten erreichen Sie den Notdienst im Altkreis Bersenbrück unter 05468 8067777.',
     rec={'pzr': ['Professionelle Zahnreinigung', 'Kontrolle und Zahnreinigung lassen sich gut verbinden. Die Praxis hat montags bis donnerstags von 7 bis 19 Uhr geöffnet.'],
          'angst': ['Beratung', 'Sagen Sie es dem Team gleich am Telefon. In Alfhausen nimmt man sich Zeit für Sie und Ihre Sorgen.']},
-    pops=[('h1.jpg', 'Früh und spät geöffnet', 'Montags bis donnerstags von 7 bis 19 Uhr. Termin vor oder nach der Arbeit.'), ('tm.jpg', 'Kontrolle und Vorsorge', 'Der letzte Kontrolltermin ist schon länger her? Wir schauen in Ruhe nach.')]))
+    pops=[('tm.jpg', 'Früh und spät geöffnet', 'Montags bis donnerstags von 7 bis 19 Uhr. Termin vor oder nach der Arbeit.'), ('g1.jpg', 'Kontrolle und Vorsorge', 'Der letzte Kontrolltermin ist schon länger her? Wir schauen in Ruhe nach.')]))
 
 # 2 ─ Dr. Stephanie Austermann, Bramsche
 mk('austermann', dict(slug='zahnarztpraxis-austermann-bramsche', firma='Zahnarztpraxis Dr. Stephanie Austermann', kurz='Praxis Dr. Austermann', name='Dr. Stephanie Austermann', ort='Bramsche', strasse='Lutterdamm 68-70', plz='49565',
     tel='05461 2775', tel_i='+4954612775', web='dr-austermann.de', p='#5664a0', dk='#2b3252', s2='#eef0f7', fam=OS, fonts='r16ellers',
-    logo=(I20('austermann', '007'), 0, 'alphacrop'), lh=62, hero='l', himgs=[I20('austermann', '133'), I20('austermann', '147')], card='4/3', cols='44fr 56fr',
+    logo=(I20('austermann', '007'), 0, 'alphacrop'), lh=62, hero='l', himgs=[I20('austermann', '130'), I20('austermann', '130')], card='4/3', google=(4.8, 17), cols='44fr 56fr',
     ey='Zahnarztpraxis Dr. Stephanie Austermann · Bramsche', h1='Zahnmedizin aus Leidenschaft. <em>Mit eigenem Labor.</em>',
     sub='„Schöne, gesunde Zähne, ein Leben lang.“ Das ist unser Leitgedanke. Wir erklären verständlich und entscheiden gemeinsam mit Ihnen.',
     ubar=[('Eigenlabor', 'seit 1996'), ('Angstpatienten', 'willkommen'), ('Parken', 'direkt am Haus')],
@@ -163,11 +175,12 @@ mk('austermann', dict(slug='zahnarztpraxis-austermann-bramsche', firma='Zahnarzt
     zwei=dict(ey='Angstpatienten', h2='Angst vor dem Zahnarzt? <em>Sagen Sie es uns.</em>', img=I20('austermann', '134'),
               txt='In ausführlichen und verständlichen Gesprächen erklären wir Ihnen alle Behandlungsmöglichkeiten transparent. Sie bestimmen das Tempo.',
               pts=['Individuelle Beratung mit Herz und Verstand', 'Jeder Schritt wird vorher erklärt', 'Ein Team, bei dem man sich gut aufgehoben fühlt'], btn='Termin anfragen'),
-    team=dict(ey='Das Team', h2='Menschen, die ihren <em>Beruf lieben.</em>', img=I20('austermann', '130'), cap='Das Praxisteam am Lutterdamm in Bramsche', mw=620,
+    team=dict(ey='Das Team', h2='Menschen, die ihren <em>Beruf lieben.</em>', img=I20('austermann', '133'), cap='Am Empfang der Praxis am Lutterdamm in Bramsche', mw=620,
               paras=['An jedem Tag setzen wir uns mit viel Engagement für die Gesundheit und den Erhalt Ihrer Zähne ein.',
                      'Sie finden uns am Lutterdamm 68-70, direkt über dem EDEKA-Getränkemarkt. Gut erreichbar zu Fuß, mit dem Bus oder dem Auto.'],
               tl=[('1996', 'Eigenlabor'), ('Bramsche', 'Lutterdamm')]),
     gal=[(I20('austermann', '134'), '50% 30%'), (I20('austermann', '138'), '50% 30%'), (I20('austermann', '145'), '50% 25%'), (I20('austermann', '137'), '50% 50%'), (I20('austermann', '147'), '50% 50%'), (I20('austermann', '149'), '50% 50%')],
+    stimmen=['Als Schmerzpatientin zum ersten Mal da: Alles wurde verständlich erklärt, ich habe mich sofort wohlgefühlt.', 'Sie geht sehr einfühlsam mit Angstpatienten um und erklärt jeden Schritt.', 'Gut organisierte Praxis mit kurzen Wartezeiten.'],
     hours=[('Mo, Di, Do', '8–13 · 15–18 Uhr'), ('Mi, Fr', '8–13 Uhr')], cats=['pzr', 'akut', 'ersatz', 'kind', 'angst'], bot='Lumi', notfall=GEN_NF,
     rec={'pzr': ['Prophylaxe', 'Regelmäßige Vorsorge und professionelle Zahnreinigung, damit Ihre Zähne lange gesund bleiben.'],
          'ersatz': ['Prothetik', 'Kronen, Brücken und Prothesen entstehen im hauseigenen Labor. Zahnärztin und Zahntechnik stimmen sich direkt ab.'],
@@ -178,7 +191,7 @@ mk('austermann', dict(slug='zahnarztpraxis-austermann-bramsche', firma='Zahnarzt
 # 3 ─ Zahnarztpraxis Am Markt, Badbergen
 mk('badbergen', dict(slug='zahnarztpraxis-am-markt-badbergen', firma='Zahnarztpraxis Am Markt · Sigrid E. Meyer', kurz='Zahnarztpraxis Am Markt', name='Sigrid E. Meyer', ort='Badbergen', strasse='Am Markt 1', plz='49635',
     tel='05433 6000', tel_i='+4954336000', web='zahnarzt-badbergen.de', p='#b5152b', dk='#33292b', s2='#f7f2f3', fam=LATO, fonts='r10vagts',
-    logo=(I20('badbergen', '042'), 0), lh=58, hero='r', himgs=[I20('badbergen', '017'), I20('badbergen', '015')], cols='52fr 48fr', card='11/6',
+    logo=(I20('badbergen', '042'), 0), lh=58, hero='r', himgs=[I20('badbergen', '045'), I20('badbergen', '045')], cols='54fr 46fr', card='4/3',
     ey='Zahnarztpraxis Am Markt · Badbergen', h1='Gesunde Zähne. <em>Mitten in Badbergen.</em>',
     sub='Uns ist daran gelegen, Sie und Ihre Zähne gesund zu erhalten. Wir empfangen Sie in einer freundlichen, menschlichen Atmosphäre.',
     ubar=[('Seit 2009', 'Am Markt 1'), ('Für Kinder', 'und Erwachsene'), ('Fortbildung', 'laufend')],
@@ -193,11 +206,12 @@ mk('badbergen', dict(slug='zahnarztpraxis-am-markt-badbergen', firma='Zahnarztpr
     top=dict(nav='Prophylaxe', tag='Professionelle Zahnreinigung', h2='Sauber, poliert, <em>gut geschützt.</em>', img=I20('badbergen', '021'),
              txt='Bei der Individual-Prophylaxe reinigen, polieren und fluoridieren wir Ihre Zähne gründlich. Wir zeigen, wie Zahnkrankheiten entstehen und welche Hilfsmittel bei der täglichen Pflege helfen.',
              pts=['Für Kinder und Erwachsene', 'Mit Anleitung für die Pflege zu Hause', 'In freundlicher, ruhiger Atmosphäre'], btn='Zahnreinigung anfragen', pop='Gründliche Reinigung, Politur und Fluoridierung. Für Groß und Klein.'),
-    team=dict(ey='Ihre Zahnärztin', h2='Sigrid E. Meyer, <em>seit 2009 Am Markt.</em>', img=I20('badbergen', '045'), cap='Zahnärztin Sigrid E. Meyer', mw=520,
+    team=dict(ey='Ihre Zahnärztin', h2='Sigrid E. Meyer, <em>seit 2009 Am Markt.</em>', img=I20('badbergen', '015'), cap='Ein Behandlungszimmer der Praxis Am Markt', mw=600,
               paras=['Studium der Zahnmedizin in Würzburg, Assistenzzeit in Dortmund, danach Tätigkeit in einer Gemeinschaftspraxis in Damme. Seit 2009 niedergelassen in der Zahnarztpraxis Am Markt 1.',
                      'Durch ständige Fortbildungen halten wir uns medizinisch und technisch auf dem neuesten Stand.'],
               tl=[('2009', 'Niederlassung'), ('Badbergen', 'Am Markt 1')]),
     gal=[(I20('badbergen', '009'), '50% 50%'), (I20('badbergen', '017'), '50% 50%'), (I20('badbergen', '013'), '70% 30%')],
+    stimmen=['Sehr freundlich, auch die Mitarbeiterinnen. Es hat nichts weh getan.', 'Immer nett, freundlich und professionell.', 'Viele Parkplätze direkt vor der Praxis.'],
     hours=[('Mo, Di, Do', '8–12 · 14–18 Uhr'), ('Mi, Fr', '8–12 Uhr')], cats=['pzr', 'akut', 'ersatz', 'kind', 'angst'], bot='Mia', notfall=GEN_NF,
     rec={'pzr': ['Professionelle Zahnreinigung', 'Reinigung, Politur und Fluoridierung, dazu Tipps für die tägliche Pflege.'],
          'ersatz': ['Zahnersatz', 'Ob Krone, Brücke, Prothese oder Implantat: Die Praxis bespricht mit Ihnen die Möglichkeiten und die Kosten.'],
@@ -208,7 +222,7 @@ mk('badbergen', dict(slug='zahnarztpraxis-am-markt-badbergen', firma='Zahnarztpr
 # 4 ─ Zahnarztpraxis Galina Spasova, Rieste
 mk('rieste', dict(slug='zahnarztpraxis-spasova-rieste', firma='Zahnarztpraxis Galina Spasova', kurz='Zahnarztpraxis Spasova', name='Galina Spasova', ort='Rieste', strasse='Malgartener Str. 5', plz='49597',
     tel='05464 5275', tel_i='+4954645275', mail='praxis.spasova@gmx.de', web='zahnarzt-rieste.de', p='#19778a', dk='#0e4450', s2='#e8f1f3', fam=NUN, fonts='r16galerie',
-    logo_txt='Zahnarztpraxis<small>Galina Spasova · Rieste</small>', hero='l', himgs=[I20('rieste', '015'), I20('rieste', '025')], cols='46fr 54fr', card='26/15',
+    logo_txt='Zahnarztpraxis<small>Galina Spasova · Rieste</small>', hero='l', himgs=[I20('rieste', '009'), I20('rieste', '009')], cols='44fr 56fr', card='192/111',
     ey='Zahnarztpraxis Galina Spasova · Rieste', h1='Gesunde Zähne für ein <em>gesundes Lachen.</em>',
     sub='Ihr Lächeln ist uns wichtig. Wir sind erst zufrieden, wenn Sie es sind. Moderne Technik, regelmäßige Fortbildungen und ein Team, das sich kümmert.',
     ubar=[('Digitales', 'Röntgen'), ('Für Kinder', 'und Erwachsene'), ('Rieste', 'Malgartener Str. 5')],
@@ -223,11 +237,12 @@ mk('rieste', dict(slug='zahnarztpraxis-spasova-rieste', firma='Zahnarztpraxis Ga
     top=dict(nav='Prophylaxe', tag='Prophylaxe', h2='Vorsorge für <em>Zähne und Zahnfleisch.</em>', img=I20('rieste', '016'),
              txt='Mit unseren Prophylaxe-Maßnahmen sorgen wir für den dauerhaften Erhalt von Zahnfleisch, Zähnen, Mundschleimhaut und Implantaten. Für Kinder und Erwachsene entwickeln wir passende Konzepte.',
              pts=['Professionelle Zahnreinigung', 'Airflow (Pulverstrahlgerät)', 'Konzepte für Kinder und Erwachsene'], btn='Prophylaxe anfragen', pop='Professionelle Zahnreinigung mit Airflow. Für Kinder und Erwachsene.'),
-    team=dict(ey='Das Praxisteam', h2='Ein Team, das sich <em>für Sie Zeit nimmt.</em>', img=I20('rieste', '009'), cap='Das Team der Zahnarztpraxis Galina Spasova', mw=640,
+    team=dict(ey='Das Praxisteam', h2='Ein Team, das sich <em>für Sie Zeit nimmt.</em>', img=I20('rieste', '025'), cap='Aus der Praxis in Rieste', mw=640,
               paras=['Am freundlich gestalteten Empfang vereinbaren Sie Ihre Termine und besprechen alles Wichtige rund um Behandlung und Abrechnung.',
                      'Unsere Behandlungszimmer sind modern und bequem eingerichtet. Im Wartezimmer liegen Kinderbücher für eine entspannte Wartezeit bereit.'],
               tl=[('Rieste', 'Malgartener Str. 5'), ('Digital', 'Röntgen')]),
-    gal=[(I20('rieste', '015'), '50% 50%'), (I20('rieste', '030'), '50% 50%'), (I20('rieste', '025'), '50% 50%')],
+    gal=[(I20('rieste', '015'), '50% 50%'), (I20('rieste', '030'), '50% 50%'), (I20('rieste', '041'), '50% 50%')],
+    stimmen=['Das Team ist sehr freundlich, alles wird genau erklärt.', 'Ich bin dankbar, dass wir in Rieste eine so gute Zahnärztin haben.', 'Professionell und kompetent, sehr angenehme Atmosphäre.'],
     hours=[('Termine', 'nach Vereinbarung'), ('Telefon', '05464 5275')], cats=['pzr', 'akut', 'ersatz', 'aest', 'kind', 'angst'], bot='Rio', notfall=GEN_NF,
     rec={'pzr': ['Prophylaxe', 'Professionelle Zahnreinigung mit Airflow, abgestimmt auf Sie.'], 'ersatz': ['Zahnersatz', 'Kronen, Brücken oder Veneers aus Vollkeramik. Die Praxis berät Sie zu den Möglichkeiten.'],
          'aest': ['Bleaching', 'Die Praxis bietet Bleaching und Veneers an. Was zu Ihren Zähnen passt, klärt die Beratung.'], 'kind': ['Prophylaxe', 'Für Kinder gibt es eigene Prophylaxe-Konzepte und Kinderbücher im Wartezimmer.'],
@@ -237,7 +252,7 @@ mk('rieste', dict(slug='zahnarztpraxis-spasova-rieste', firma='Zahnarztpraxis Ga
 # 5 ─ Zahnarzt Thomas Kiefert, Neuenkirchen-Vörden
 mk('kiefert', dict(slug='zahnarzt-kiefert-neuenkirchen-voerden', firma='Zahnarztpraxis Thomas Kiefert', kurz='Zahnarztpraxis Kiefert', name='Thomas Kiefert', ort='Neuenkirchen-Vörden', strasse='Lindenstr. 1', plz='49434',
     tel='05495 994899', tel_i='+495495994899', mail='kontakt@zahnarzt-voerden.de', web='zahnarzt-kiefert.de', p='#3e8f08', em='#2f7305', dk='#012b55', s2='#eef6e8', fam=RAL, fonts='r18ant',
-    logo_txt='Thomas Kiefert<small>Zahnarzt · Vörden</small>', hero='r', himgs=[PX + '5695764.jpg', PX + '2584260.jpg'], cols='48fr 52fr',
+    logo_txt='Thomas Kiefert<small>Zahnarzt · Vörden</small>', hero='r', himgs=[I20('kiefert', '017'), I20('kiefert', '017')], cols='44fr 56fr', card='1920/1301',
     ey='Thomas Kiefert · Zahnarzt in Neuenkirchen-Vörden', h1='Ihre Zahnarztpraxis in Vörden. <em>Seit über 25 Jahren.</em>',
     sub='Gemeinsam mit unseren Kooperationspartnern begleiten wir Sie auf dem Weg zu Ihrer persönlichen Zahngesundheit. Vom ersten Milchzahn bis zum Implantat.',
     ubar=[('Seit 1999', 'in Vörden'), ('Implantate', 'seit über 20 Jahren'), ('Für Kinder', 'ab dem ersten Zahn')],
@@ -254,10 +269,11 @@ mk('kiefert', dict(slug='zahnarzt-kiefert-neuenkirchen-voerden', firma='Zahnarzt
     zwei=dict(ey='Kinderzahnheilkunde', h2='Damit Kinder <em>gern zum Zahnarzt gehen.</em>', img=I20('kiefert', '034'),
               txt='Das Abbauen von Ängsten und das Schaffen von Vertrauen stehen bei uns im Vordergrund. Die Vorsorge sollte schon ab dem ersten Zahn beginnen.',
               pts=['Vorsorge ab dem ersten Zahn', 'Fissurenversiegelung gegen Karies', 'Beratung für Eltern schon in der Schwangerschaft'], btn='Kindertermin anfragen'),
-    team=dict(ey='Die Praxis', h2='Über 25 Jahre <em>für Vörden.</em>', img=I20('kiefert', '017'), cap='Thomas Kiefert und das Team der Zahnarztpraxis',
+    team=dict(ey='Die Praxis', h2='Über 25 Jahre <em>für Vörden.</em>', img=I20('kiefert', '002'), cap='Das Team der Zahnarztpraxis Kiefert',
               paras=['„Vor nunmehr über 25 Jahren eröffnete ich im Ortsteil Vörden die Zahnarztpraxis Kiefert. Ohne Sie, mein Team und all die anderen Helferinnen und Helfer wären diese zweieinhalb Jahrzehnte nicht möglich gewesen.“',
                      'Schwerpunkte: Curricula in Prothetik, Implantologie, Endodontologie und Parodontologie.'],
               tl=[('1999', 'Niederlassung'), ('4', 'Curricula')]),
+    stimmen=['Sehr freundlicher, kompetenter und einfühlsamer Zahnarzt. Auch für Kinder zu empfehlen.', 'Seit über 25 Jahren Patient: zuverlässig und immer aufmerksam.', 'Ob Behandlung oder Prophylaxe: Das ganze Team ist sehr freundlich.'],
     hours=[('Mo', '8–13 · 14–18 Uhr'), ('Di', '9–13 · 14–18 Uhr'), ('Mi–Fr', 'ab 8 Uhr'), ('Nachmittags', 'nach Vereinbarung')], cats=['pzr', 'akut', 'ersatz', 'kind', 'angst'], bot='Kiefi', notfall=GEN_NF,
     rec={'pzr': ['Prophylaxe', 'Die Gesunderhaltung von Zähnen und Zahnfleisch ist ein großes Anliegen der Praxis.'], 'ersatz': ['Implantologie', 'Implantate sind ein Schwerpunkt der Praxis, mit über 20 Jahren Erfahrung. Auch klassischer Zahnersatz ist möglich.'],
          'kind': ['Kinderzahnheilkunde', 'Kinder werden behutsam an den Zahnarztbesuch herangeführt, am besten ab dem ersten Zahn.'], 'angst': ['Beratung', 'Sagen Sie es gleich am Telefon. Vertrauen aufbauen steht in der Praxis im Vordergrund.']},
@@ -266,7 +282,7 @@ mk('kiefert', dict(slug='zahnarzt-kiefert-neuenkirchen-voerden', firma='Zahnarzt
 # 6 ─ Dr. Michael Coenen, Ankum
 mk('coenen', dict(slug='zahnarzt-dr-coenen-ankum', firma='Zahnarztpraxis Dr. Michael Coenen', kurz='Praxis Dr. Coenen', name='Dr. Michael Coenen', ort='Ankum', strasse='Aslager Straße 6', plz='49577',
     tel='05462 71717', tel_i='+49546271717', mail='info@zahnarzt-in-ankum.de', web='zahnarzt-in-ankum.de', p='#197f74', dk='#0f4a44', s2='#e6f3f1', fam=ASAP, fonts='r16ikum', google=(4.8, 13),
-    logo=(I20('coenen', '000'), 0, 'trim'), lh=70, hero='r', himgs=[I20('coenen', '004'), PX + '2589770.jpg'], cols='44fr 56fr',
+    logo=(I20('coenen', '000'), 0, 'trim'), lh=70, hero='team', himgs=[I20('coenen', '001'), I20('coenen', '004')],
     ey='Zahnarzt Dr. Michael Coenen · Ankum', h1='Ihre Zähne erhalten <em>statt ersetzen.</em>',
     sub='Zu Füßen des Artländer Doms versorgen wir Patienten von jung bis alt. Sorgfältige Langzeitbehandlung statt „Minuten-Zahnmedizin“.',
     ubar=[('Angstfrei', 'und schmerzarm'), ('Geringe', 'Wartezeiten'), ('Implantate', 'aus einer Hand')],
@@ -283,7 +299,7 @@ mk('coenen', dict(slug='zahnarzt-dr-coenen-ankum', firma='Zahnarztpraxis Dr. Mic
     zwei=dict(ey='Implantologie', h2='Ihr fester Biss. <em>Aus einer Hand.</em>', img=I20('coenen', '009'),
               txt='Wir überlegen mit Ihnen gemeinsam, ob Implantate eine sinnvolle Alternative zu herkömmlichem Zahnersatz sind und ob Ihr Kiefer eine Implantation zulässt.',
               pts=['Beratung, Implantation und Zahnersatz in einer Praxis', 'Keine langen Wege', 'Ehrliche Einschätzung vorab'], btn='Implantat-Beratung anfragen'),
-    team=dict(ey='Das Team', h2='Ihre Zeit ist uns wichtig. <em>Sie sind uns wichtig.</em>', img=I20('coenen', '001'), cap='Dr. Michael Coenen und sein Team in Ankum',
+    team=dict(ey='Das Team', h2='Ihre Zeit ist uns wichtig. <em>Sie sind uns wichtig.</em>', img=I20('coenen', '004'), cap='Ein Behandlungszimmer der Praxis in Ankum',
               paras=['Wir vereinbaren Termine mit Ihnen möglichst ohne Wartezeit. Bei Schmerzen, Beschwerden oder Reparaturen am Zahnersatz bemühen wir uns, noch am selben Tag zu helfen.',
                      'Unsere Praxis liegt in Ankum, im Nordkreis Osnabrücks, zu Füßen des Artländer Doms.'],
               tl=[('Ankum', 'Aslager Straße 6'), ('Hilfe', 'möglichst am selben Tag')]),
@@ -296,7 +312,7 @@ mk('coenen', dict(slug='zahnarzt-dr-coenen-ankum', firma='Zahnarztpraxis Dr. Mic
 # 7 ─ Carsten Tischler, Damme
 mk('tischler', dict(slug='zahnarzt-tischler-damme', firma='Zahnarztpraxis Carsten Tischler', kurz='Zahnarztpraxis Tischler', name='Carsten Tischler', ort='Damme', strasse='Mühlenstraße 32', plz='49401',
     tel='05491 5290', tel_i='+4954915290', mail='zahnarzt-tischler-damme@ewe.net', web='zahnarzt-in-damme.de', p='#95cc60', pi='#14280a', em='#4c8a1c', dk='#26301f', s2='#f1f7ea', fam=OS, fonts='r16ellers', google=(4.9, 34),
-    logo=(I20('tischler', '000'), 0), lh=64, hero='l', himgs=[PX + '2530983.jpg', PX + '2589771.jpg'], cols='46fr 54fr',
+    logo=(I20('tischler', '000'), 0), lh=64, hero='l', himgs=[I20('tischler', '003'), I20('tischler', '003')], cols='50fr 50fr', card='674/281',
     ey='Zahnarzt Carsten Tischler · Damme', h1='Ihr Zahnarzt in Damme. <em>Auch für Angstpatienten.</em>',
     sub='Sie stehen bei uns im Mittelpunkt und können sich auf eine umfangreiche und verständliche Beratung verlassen. Von der Prophylaxe bis zum Zahnimplantat.',
     ubar=[('Seit 2003', 'Carsten Tischler'), ('Angstpatienten', 'willkommen'), ('Implantate', 'und Zahnersatz')],
@@ -311,7 +327,7 @@ mk('tischler', dict(slug='zahnarzt-tischler-damme', firma='Zahnarztpraxis Carste
     top=dict(nav='Angstpatienten', tag='Behandlung von Angstpatienten', h2='Angst vor dem Zahnarzt? <em>Sie sind nicht allein.</em>', img=I20('tischler', '025'),
              txt='Viele Patienten leiden unter Zahnarztangst, weil sie schlechte oder schmerzhafte Erfahrungen gemacht haben. Uns liegt Ihr Wohl am Herzen. Deshalb haben wir es uns zur Aufgabe gemacht, Angstpatienten bei der Behandlung zu begleiten.',
              pts=['Verständliche Beratung vor jedem Schritt', 'Ein Team, das sich Zeit nimmt', 'Sie bestimmen das Tempo'], btn='Behutsamen Termin anfragen', pop='Schlechte Erfahrungen gemacht? Bei uns bestimmen Sie das Tempo.'),
-    team=dict(ey='Die Praxis', h2='Seit den 1980ern <em>in der Mühlenstraße.</em>', img=I20('tischler', '003'), cap='Carsten Tischler mit Team in der Praxis in Damme', mw=640,
+    team=dict(ey='Die Praxis', h2='Seit den 1980ern <em>in der Mühlenstraße.</em>', img=PX + '2530983.jpg', cap='Symbolbild', mw=600,
               paras=['Unsere Praxis in der Mühlenstraße 32, gegenüber dem Postbörsen-Markt, gibt es schon seit den 1980er Jahren. Seit 2003 wird sie von Zahnarzt Carsten Tischler geführt.',
                      'Unser kompetentes und motiviertes Team nimmt sich Zeit für Ihre Anliegen und steht Ihnen mit Rat und Tat zur Seite.'],
               tl=[('2003', 'Carsten Tischler'), ('Damme', 'Mühlenstraße 32')]),
@@ -326,7 +342,7 @@ mk('tischler', dict(slug='zahnarzt-tischler-damme', firma='Zahnarztpraxis Carste
 # 8 ─ Dr. Constanze Lefert & Jana Kohl, Dinklage
 mk('lefert', dict(slug='zahnarztpraxis-lefert-kohl-dinklage', firma='Zahnarztpraxis Dr. Constanze Lefert & Jana Kohl', kurz='Praxis Lefert & Kohl', name='Dr. Constanze Lefert und Jana Kohl', ort='Dinklage', strasse='Bahnhofstraße 9', plz='49413',
     tel='04443 2677', tel_i='+4944432677', mail='info@zahnarztpraxis-lefert-kohl.de', web='zahnarztpraxis-lefert-kohl.de', p='#0089ab', dk='#0b4a5c', s2='#e8f5f9', fam=ASAP, fonts='r16ikum',
-    logo=(I20('lefert', '000'), 0), lh=72, hero='r', himgs=[I20('lefert', '009'), I20('lefert', '007')], cols='46fr 54fr', card='8/5',
+    logo=(I20('lefert', '000'), 0), lh=72, hero='r', himgs=[I20('lefert', '006'), I20('lefert', '006')], cols='52fr 48fr', card='60/77', google=(4.6, 21),
     ey='Dr. Constanze Lefert & Jana Kohl · Dinklage', h1='Ihr Familienzahnarzt <em>im Herzen Dinklages.</em>',
     sub='Das gesamte Spektrum der modernen Zahnheilkunde für Jung und Alt. Unsere Praxisphilosophie: Wir beraten, der Patient entscheidet.',
     ubar=[('Für Jung', 'und Alt'), ('Laser', 'fest im Konzept'), ('Schmerzen?', 'schneller Termin')],
@@ -340,20 +356,21 @@ mk('lefert', dict(slug='zahnarztpraxis-lefert-kohl-dinklage', firma='Zahnarztpra
     top=dict(nav='Laser', tag='Laser', h2='Früher ein Mythos. <em>Bei uns längst etabliert.</em>', img=I20('lefert', '012'),
              txt='Ob bei schonenden chirurgischen Eingriffen, in der Wurzelbehandlung oder zur Parodontitistherapie, ob bei Lippenherpes, Aphthen oder überempfindlichen Zahnhälsen: Der Laser ist ein fester Bestandteil unseres Behandlungskonzeptes.',
              pts=['Bei chirurgischen Eingriffen', 'In der Wurzelbehandlung', 'Zur Parodontitistherapie'], btn='Beratung anfragen', pop='Der Laser ist fester Bestandteil unseres Behandlungskonzeptes. Jetzt beraten lassen.'),
-    team=dict(ey='Ihre Zahnärztinnen', h2='Wir beraten. <em>Sie entscheiden.</em>', img=I20('lefert', '006'), cap='Die Zahnärztinnen der Praxis in Dinklage', mw=460,
+    team=dict(ey='Ihre Zahnärztinnen', h2='Wir beraten. <em>Sie entscheiden.</em>', img=I20('lefert', '009'), cap='Ein Behandlungszimmer der Praxis in Dinklage', mw=620,
               paras=['Als Ihr „Familienzahnarzt“ bieten wir Ihnen das gesamte Spektrum der modernen Zahnheilkunde für Jung und Alt.',
                      'Als Mitglied im Fachkreis „Junge Kieferorthopädie“ informieren wir Eltern frühzeitig über Zahnfehlstellungen bei ihren Kindern.'],
               tl=[('Dinklage', 'Bahnhofstraße 9'), ('Familie', 'von Jung bis Alt')]),
-    gal=[(I20('lefert', '009'), '50% 50%'), (I20('lefert', '007'), '50% 50%'), (I20('lefert', '011'), '50% 50%')],
+    gal=[(I20('lefert', '007'), '50% 50%'), (I20('lefert', '010'), '50% 50%'), (I20('lefert', '011'), '50% 50%')],
+    stimmen=['Seit ich hier bin, gehe ich gern zum Zahnarzt. Bei Schmerzen bekommt man sehr schnell einen Termin.', 'Ich war 15 Jahre nicht beim Zahnarzt. Jetzt gehe ich wieder regelmäßig.', 'Im Notdienst am Sonntagabend: freundlich, schnell und unkompliziert.'],
     hours=[('Mo–Do', '8–12 · 15–18 Uhr'), ('Fr', '8–13 Uhr')], cats=['pzr', 'akut', 'ersatz', 'kind', 'angst'], bot='Leo', notfall='Rufen Sie uns an. Sie erhalten so schnell wie möglich einen Termin. Am Wochenende: Notdienst im Kreis Vechta unter 04446 9882763.',
     rec={'pzr': ['Professionelle Zahnreinigung', 'Die Praxis empfiehlt zweimal im Jahr den „Zahn-TÜV“ mit professioneller Zahnreinigung.'], 'ersatz': ['Implantate', 'Die Praxis informiert Sie umfassend über Implantate und fertigt den Zahnersatz mit ihrem Zahntechnikerteam.'],
          'kind': ['Junge Kieferorthopädie', 'Die Praxis berät Eltern früh zu Zahnfehlstellungen und ist Familienzahnarzt für Jung und Alt.'], 'angst': ['Familienzahnarzt', 'Sagen Sie es gleich am Telefon. Die Praxis berät, Sie entscheiden.']},
-    pops=[('h1.jpg', 'Professionelle Zahnreinigung', 'Zeit für den „Zahn-TÜV“? Jetzt Termin zur Zahnprophylaxe anfragen.'), ('g3.jpg', 'Junge Kieferorthopädie', 'Zahnfehlstellung beim Kind? Wir beraten Eltern frühzeitig.')]))
+    pops=[('tm.jpg', 'Professionelle Zahnreinigung', 'Zeit für den „Zahn-TÜV“? Jetzt Termin zur Zahnprophylaxe anfragen.'), ('g3.jpg', 'Junge Kieferorthopädie', 'Zahnfehlstellung beim Kind? Wir beraten Eltern frühzeitig.')]))
 
 # 9 ─ Zahnärzte Osada, Damme
 mk('osada', dict(slug='zahnaerzte-osada-damme', firma='Zahnärzte Osada', kurz='Praxis Zahnärzte Osada', name='Falk und Tina-Vanessa Osada', ort='Damme', strasse='Bahnhofstraße 3', plz='49401',
     tel='05491 4004', tel_i='+4954914004', web='zahnaerzte-osada.de', p='#5d5d5d', dk='#2c2c2c', s2='#f2f2f2', fam=RAL, fonts='r18ant', google=(4.5, 33),
-    logo=(I20('osada', '000'), 0, 'trim'), lh=62, hero='r', himgs=[PX + '2450766.jpg', PX + '5704522.jpg'], cols='50fr 50fr',
+    logo=(I20('osada', '000'), 0, 'trim'), lh=62, hero='r', himgs=[I20('osada', '003'), I20('osada', '003')], cols='46fr 54fr', card='1528/1080',
     ey='Zahnärzte Osada · Damme', h1='Gesunde Zähne für ein <em>schönes Lächeln.</em>',
     sub='Moderne Technik, regelmäßige Fortbildungen und der Blick auf aktuelle Entwicklungen: Wir tun alles für eine fachkundige Behandlung Ihrer Zähne.',
     ubar=[('Für Kinder', 'mit Herz'), ('Implantate', 'und Zahnersatz'), ('Damme', 'Bahnhofstraße 3')],
@@ -364,7 +381,7 @@ mk('osada', dict(slug='zahnaerzte-osada-damme', firma='Zahnärzte Osada', kurz='
           ('Implantate', 'Künstliche Zahnwurzeln aus Titan. So lässt sich das Beschleifen gesunder Nachbarzähne vermeiden.'),
           ('Zahnersatz', 'Kronen, Brücken und Prothesen, auf Wunsch metallfrei und komplett aus Keramik.'),
           ('Ästhetik', 'Verschiedene Möglichkeiten zur Verschönerung der Zähne, zum Beispiel Bleaching.')],
-    top=dict(nav='Kinder', tag='Kinderbehandlung', h2='Unsere kleinen Patienten <em>liegen uns am Herzen.</em>', img=I20('osada', '003'),
+    top=dict(nav='Kinder', tag='Kinderbehandlung', h2='Unsere kleinen Patienten <em>liegen uns am Herzen.</em>', img=PX + '2450766.jpg',
              txt='Wir legen großen Wert auf eine kindgerechte und entspannte Atmosphäre, damit der Besuch beim Zahnarzt ein positives Erlebnis wird.',
              pts=['Kindgerechte, entspannte Atmosphäre', 'Eigene Prophylaxe-Konzepte für Kinder', 'Zeit und Geduld'], btn='Kindertermin anfragen', pop='Kindgerecht und entspannt, damit der Zahnarztbesuch ein gutes Erlebnis wird.'),
     zwei=dict(ey='Zahnersatz', h2='Lücken schließen. <em>Wieder gut kauen.</em>', img=PX + '2589770.jpg',
@@ -407,7 +424,7 @@ mk('natorp', dict(slug='zahnarztpraxis-dr-natorp-holdorf', firma='Zahnarztpraxis
               paras=['Gerne heißen wir Sie persönlich in unseren Räumlichkeiten willkommen. Bitte bringen Sie Ihre gültige Versicherungskarte und, wenn vorhanden, den Medikamentenplan Ihrer Hausarztpraxis mit.',
                      'Wenn Sie zufrieden mit uns waren, empfehlen Sie uns bitte. Wenn Sie Kritik haben, sagen Sie es uns.'],
               tl=[('Holdorf', 'Große Straße 32 b'), ('Abendtermine', 'dienstags bis 19 Uhr')]),
-    video=YT, extra_img={'yt.jpg': (R + 'natorp/yt.jpg', 0)},
+    video_first=YT, extra_img={'yt.jpg': (R + 'natorp/yt.jpg', 0)},
     hours=[('Mo, Do', '8–12:20 · 14–18 Uhr'), ('Di', '8–12:20 · 14–19 Uhr'), ('Mi, Fr', '8–12:20 Uhr')], cats=['pzr', 'akut', 'ersatz', 'angst'], bot='Nala', notfall='Abgesehen von akuten Schmerzfällen bitten wir um vorherige Terminvereinbarung. Notdiensttelefon: 04446 9882763.',
     rec={'pzr': ['Prophylaxe', 'Regelmäßige Prophylaxe hilft, Karies und Parodontitis früh zu erkennen.'], 'ersatz': ['Zahnersatz', 'Festsitzend, herausnehmbar oder Implantat, auch metallfrei. Die Praxis berät Sie zu allen Wegen.'],
          'angst': ['Behandlung von Angstpatienten', 'Die Praxis hat es sich zur Aufgabe gemacht, Angstpatienten behutsam zu begleiten. Sagen Sie es gleich am Telefon.']},

@@ -25,9 +25,10 @@ def hd(s, light=True):
 
 def chip(s):
     g = s.get('google')
-    if not g: return ''
-    t = f'{g[1]} Google-Bewertungen' if g[1] >= 50 else 'Bewertungen bei Google ansehen'
-    return f'<a class="chip" href="{gurl(s)}" target="_blank" rel="noopener" style="text-decoration:none;color:inherit"><b>{g[0]}</b><span class="st">{stars(g[0])}</span>{t} <span aria-hidden="true">↗</span></a>'
+    if not g:
+        return '<a class="chip chip20" href="#stimmen" style="text-decoration:none;color:inherit"><span class="st">★</span>Das sagen unsere Patienten <span aria-hidden="true">↓</span></a>' if s.get('voices') else ''
+    return (f'<a class="chip chip20" href="#stimmen" style="text-decoration:none;color:inherit"><b>{str(g[0]).replace(".", ",")}</b><span class="st">{stars(g[0])}</span>'
+            f'<span>{g[1]} Bewertungen bei Google</span> <span aria-hidden="true">↓</span></a>')
 
 def gurl(s):
     import urllib.parse
