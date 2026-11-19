@@ -267,15 +267,17 @@ def elevenlabs_sfx(prompt, seconds, k, cache, name):
 
 
 # ---------- Render ----------
+CUT = 1.5      # Sekunden pro Schnitt (Social-Tempo)
+CTA_LEN = 2.2  # Abschluss-Karte
 def render(script, out, k, cache, W, H, tag, speech, words, seg_times, clips):
     tmp = tempfile.mkdtemp()
     total = seg_times[-1][1]
-    cta_len = 2.6
+    cta_len = CTA_LEN
     # 1) Bildspur: jeder Abschnitt in 2-3-Sekunden-Schnitte zerlegt
     parts = []
     for i, ((t0, t1), (clip, meta)) in enumerate(zip(seg_times, clips)):
         L = t1 - t0
-        n = max(1, round(L / 2.6))
+        n = max(1, round(L / CUT))
         sub = L / n
         cd = meta["duration"]
         for j in range(n):
@@ -283,7 +285,7 @@ def render(script, out, k, cache, W, H, tag, speech, words, seg_times, clips):
             o = os.path.join(tmp, f"p{i}_{j}.mp4")
             sh(["ffmpeg", "-y", "-ss", f"{ss:.2f}", "-t", f"{sub:.3f}", "-i", clip, "-an", "-vf",
                 f"scale={W}:{H}:force_original_aspect_ratio=increase,crop={W}:{H},"
-                f"fps=30,zoompan=z='min(1+0.0016*on,1.08)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s={W}x{H}:fps=30,eq=contrast=1.05:saturation=1.08,setsar=1",
+                f"fps=30,zoompan=z='min(1+0.0035*on,1.14)':d=1:x='iw/2-(iw/zoom/2)':y='ih/2-(ih/zoom/2)':s={W}x{H}:fps=30,eq=contrast=1.05:saturation=1.08,setsar=1",
                 "-r", "30", "-c:v", "libx264", "-preset", "veryfast", "-crf", "20", "-pix_fmt", "yuv420p", o])
             parts.append(o)
     ctap = os.path.join(tmp, "cta.png")
@@ -341,11 +343,11 @@ def render(script, out, k, cache, W, H, tag, speech, words, seg_times, clips):
         n_in += 1
         mix.append("[mu]")
     if whoosh:
-        cuts = [t for t, _ in seg_times[1:]] + [total]
+        cuts = sorted({round(t0 + j * (t1 - t0) / max(1, round((t1 - t0) / CUT)), 2) for t0, t1 in seg_times for j in range(max(1, round((t1 - t0) / CUT)))} - {0.0}) + [total]
         for ci, t in enumerate(cuts):
             ain += ["-i", whoosh]
             d = int(max(0, t - 0.15) * 1000)
-            af.append(f"[{n_in}:a]volume=0.25,adelay={d}|{d}[w{ci}]")
+            af.append(f"[{n_in}:a]volume=0.22,adelay={d}|{d}[w{ci}]")
             n_in += 1
             mix.append(f"[w{ci}]")
     af.append("".join(mix) + f"amix=inputs={len(mix)}:normalize=0,loudnorm=I=-14:TP=-1.5:LRA=11,aresample=48000,aformat=sample_fmts=fltp:channel_layouts=stereo[a]")
@@ -363,6 +365,7 @@ def main():
     ap.add_argument("--keys", default=os.path.expanduser("~/.hlp/keys.env"))
     ap.add_argument("--cache", default=os.path.expanduser("~/.hlp/cache"))
     ap.add_argument("--speed", type=float, default=1.15)
+    ap.add_argument("--tempo", type=float, default=1.2, help="zusaetzliches Tempo (atempo, Tonhoehe bleibt)")
     ap.add_argument("--formats", default="9x16,1x1")
     a = ap.parse_args()
     os.makedirs(a.out, exist_ok=True)
@@ -375,9 +378,12 @@ def main():
     for i, seg in enumerate(s["segments"]):
         mp3, al = tts(seg["text"], k, a.cache, a.speed)
         wav = os.path.join(tmp, f"s{i}.wav")
-        sh(["ffmpeg", "-y", "-i", mp3, "-ar", "44100", "-ac", "1", wav])
+        # schneller sprechen + Pause am Satzende kuerzen (Anfang bleibt, damit Zeitstempel stimmen)
+        sh(["ffmpeg", "-y", "-i", mp3, "-af",
+            f"atempo={a.tempo},areverse,silenceremove=start_periods=1:start_threshold=-45dB:start_silence=0.06,areverse",
+            "-ar", "44100", "-ac", "1", wav])
         L = dur(wav)
-        words += words_from_alignment(al, t)
+        words += [[w, t + b / a.tempo, t + e / a.tempo] for w, b, e in words_from_alignment(al, 0)]
         seg_times.append((t, t + L))
         seg_audio.append(wav)
         t += L
@@ -393,7 +399,7 @@ def main():
         W, H = (1080, 1920) if f == "9x16" else (1080, 1080)
         res.append(render(s, a.out, k, a.cache, W, H, f, speech, words, seg_times, clips))
     credits = [{"pixabay_id": m["id"], "user": m["user"], "page": m["pageURL"]} for _, m in clips]
-    json.dump({"files": res, "dauer_s": round(seg_times[-1][1] + 2.6, 1), "stock": credits},
+    json.dump({"files": res, "dauer_s": round(seg_times[-1][1] + CTA_LEN, 1), "stock": credits},
               open(os.path.join(a.out, f"{s['id']}_info.json"), "w"), ensure_ascii=False, indent=1)
     print(json.dumps(res))
 
