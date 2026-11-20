@@ -45,6 +45,7 @@ def run(keys):
             pg = br.new_page(viewport={'width': 390, 'height': 800}, device_scale_factor=2, is_mobile=True); pg.goto((d / 'index.html').as_uri()); pg.wait_for_timeout(1600); pg.evaluate(hide); pg.screenshot(path=str(sm), type='jpeg', quality=85); pg.close()
             url = BASE + sl + '/'; qr = OUT / f'{sl}-qr.svg'
             segno.make(url, error='m').save(str(qr), scale=10, border=0, dark='#0A1A3A')
+            qrf = OUT / f'{sl}-qr-form.svg'; segno.make(url + '#hlp-anfrage', error='m').save(str(qrf), scale=10, border=0, dark='#0A1A3A')
             an, anrede, problem, kurz = BRIEF[k]
             absaetze = [
                 f"das linke Handy unten zeigt {s['web']}, so wie ein neuer Patient die Seite heute öffnet: {problem}. Das rechte Handy zeigt, was ich daraus gebaut habe. <b>Kostenlos und ohne dass Sie etwas bestellt haben.</b>",
@@ -53,7 +54,7 @@ def run(keys):
                 "Ich bin Viktor Fehl aus Bersenbrück. Gefällt Ihnen der Entwurf? Dann tragen Sie unten auf der Seite ein, wann wir Sie erreichen. Julian ruft Sie innerhalb von 24 Stunden an. Wenn nicht, löschen wir den Entwurf wieder.",
             ]
             briefe.append(dict(anschrift=an, anrede=anrede, betreff_1='So sieht Ihre Website heute auf dem Handy aus.', betreff_2=f'Und so könnte sie aussehen: mein Entwurf für {kurz}.', web=s['web'], shot_alt=str(ALT / f'{k}.jpg'),
-                               absaetze=[Markup(a) for a in absaetze], shot_desktop=str(sd), shot_mobile=str(sm), qr=str(qr), url_kurz='highlevel-performance.de/vorschau/' + sl))
+                               absaetze=[Markup(a) for a in absaetze], shot_desktop=str(sd), shot_mobile=str(sm), qr=str(qr), qr_form=str(qrf), url_kurz='highlevel-performance.de/vorschau/' + sl))
             print('OK', k, url)
         jq = OUT / 'julian-qr.svg'; segno.make('tel:+4917663213512', error='m').save(str(jq), scale=10, border=0, dark='#0A1A3A')
         html = env.get_template('brief18.html.j2').render(briefe=briefe, root=str(ROOT), datum=datetime.date.today().strftime('%d.%m.%Y'), julian_tel=JT, julian_qr=str(jq))

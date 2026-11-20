@@ -48,13 +48,14 @@ body{font-family:"Manrope",Arial,sans-serif;color:#0B1630;-webkit-print-color-ad
 .end{position:absolute;left:20mm;right:20mm;bottom:17mm;display:grid;grid-template-columns:1fr auto;gap:8mm;align-items:end}
 .gruss p{font-size:9.9pt;line-height:1.5}
 .sig2{font-family:"Mr Dafoe";font-size:24pt;color:#0A2A66;line-height:1;margin:1.5mm 0 .5mm}
-.vc{display:flex;gap:4mm;align-items:center;border:.3mm solid #DCE3EF;border-radius:4mm;padding:3mm 4mm 3mm 3mm}
+.vc{display:flex;gap:4mm;align-items:center;border:.3mm solid #DCE3EF;border-radius:4mm;padding:2.2mm 4mm 2.2mm 2.6mm;background:#fff}
 .vc img.ph{width:17mm;height:17mm;border-radius:50%;object-fit:cover}
 .vc .t{font-size:8pt;line-height:1.45}
 .vc .t b{font-family:"Poppins";font-size:9.5pt}
 .vc .t .tel{font-family:"Poppins";font-weight:700;font-size:10.5pt;color:#1877F2}
-.vc .vq{width:19mm;height:19mm}
+.vc .vq{width:16.5mm;height:16.5mm}
 .vc .vq img{width:100%;height:100%}
+.vc .t ol{margin:1mm 0 1mm 4mm;padding:0}.vc .t li{margin:0;padding-left:.5mm}.vc .t .cb{font-family:"Poppins";font-weight:700;font-size:8.6pt;color:#1877F2}
 .vc .lbl{font-size:5.8pt;color:#56627A;text-align:center;margin-top:.5mm}
 .foot{position:absolute;left:20mm;right:20mm;bottom:7mm;border-top:.2mm solid #E3E8F1;padding-top:2.5mm;display:flex;justify-content:space-between;font-size:6.6pt;color:#7A869E}
 
@@ -82,7 +83,7 @@ body{font-family:"Manrope",Arial,sans-serif;color:#0B1630;-webkit-print-color-ad
 <div class="page">
  <div class="top">
   <div class="logo"><span class="l1">HIGH LEVEL</span><span class="l2">PERFORMANCE</span><span class="sig">by Victor</span></div>
-  <div class="tr"><b>www.highlevel-performance.de</b><br>info@highlevel-performance.de<br>{{ julian_tel }}</div>
+  <div class="tr"><b>www.highlevel-performance.de</b><br>info@highlevel-performance.de</div>
  </div>
  <div class="fold" style="top:105mm"></div><div class="fold" style="top:148.5mm;width:6mm"></div><div class="fold" style="top:210mm"></div>
  <div class="sender">High Level Performance · Viktor Fehl · Koppelstraße 28 · 49593 Bersenbrück</div>
@@ -105,9 +106,8 @@ body{font-family:"Manrope",Arial,sans-serif;color:#0B1630;-webkit-print-color-ad
  <div class="end">
   <div class="gruss"><p>Mit freundlichen Grüßen</p><div class="sig2">Viktor Fehl</div><p style="font-size:8.4pt;color:#56627A">Viktor Fehl · Gründer High Level Performance</p></div>
   <div class="vc">
-   <img class="ph" src="file://{{ root }}/assets/team-julian-b.jpg">
-   <div class="t"><b>Kostenloses Erstgespräch</b><br>Julian Siewe · Hotline-Service<br><span class="tel">{{ julian_tel }}</span><br>info@highlevel-performance.de</div>
-   <div><div class="vq"><img src="file://{{ julian_qr }}"></div><div class="lbl">Julian anrufen</div></div>
+   <div><div class="vq"><img src="file://{{ b.qr_form if b.qr_form else b.qr }}"></div></div>
+   <div class="t"><b>Interesse? In einer Minute eingetragen.</b><br>QR-Code scannen und am Ende der Seite kurz eintragen,<br>wann wir Sie erreichen. Mehr müssen Sie nicht tun.<br><span class="cb">Wir rufen Sie innerhalb von 24 Stunden zurück.</span></div>
   </div>
  </div>
  <div class="foot"><span>High Level Performance by Victor · Inhaber Viktor Fehl · Koppelstraße 28 · 49593 Bersenbrück</span><span>Möchten Sie keine Post mehr von uns? Kurze Nachricht genügt.</span></div>
