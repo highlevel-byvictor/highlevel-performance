@@ -46,7 +46,7 @@ CSS20 = '''.an20{background:var(--dk);color:#fff;padding:18px 0}.an20 .w{display
 .gl20 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:34px}.gl20 figure{margin:0;aspect-ratio:4/3;overflow:hidden;border-radius:0}.gl20 figure:nth-child(4n+1){border-radius:18px}.gl20 img{width:100%;height:100%;object-fit:cover;transition:transform .8s}.gl20 figure:hover img{transform:scale(1.04)}
 .vd .frame{border-radius:18px!important;overflow:hidden}.lt-logo{font:800 19px/1.15 var(--fh);color:var(--hd-ink,var(--ink));letter-spacing:.01em;display:block}.lt-logo small{display:block;font:600 12px var(--fb);letter-spacing:.14em;text-transform:uppercase;color:var(--p)}
 .ft .lt-logo{color:#fff}.ft .lt-logo small{color:rgba(255,255,255,.7)}
-.promo figure img{aspect-ratio:auto!important;height:auto}.pop.side img{height:auto!important;aspect-ratio:auto;max-height:230px;object-fit:cover}.chip20{display:inline-flex!important;align-items:center;gap:10px;background:#fff;border-radius:999px;padding:10px 18px 10px 14px;box-shadow:0 8px 26px rgba(0,0,0,.10);font:600 15.5px var(--fb);margin-bottom:18px}.chip20 b{font:800 20px var(--fh)}.chip20 .st{color:#f5a500;letter-spacing:1px;font-size:17px}
+.promo figure img{aspect-ratio:auto!important;height:auto}.pop.side img{height:auto!important;aspect-ratio:auto;max-height:230px;object-fit:cover}.chip20 i{font-style:normal}.chip20 .sm{display:none}.st5{display:inline-block;letter-spacing:2px;background:linear-gradient(90deg,#f5a500 var(--r,100%),#d5d9e2 var(--r,100%));-webkit-background-clip:text;background-clip:text;color:transparent!important;-webkit-text-fill-color:transparent}.chip20 .st{font-size:19px}.lot{bottom:76px}.lot-b{padding:8px 22px 8px 8px}.lot-b .dock{width:62px;height:62px}.lot-b .lb b{font-size:17px}.lot-b .lb small{font-size:12.5px}.lot-s{position:absolute;right:calc(100% + 14px);bottom:10px;width:max-content;max-width:min(300px,calc(100vw - 110px));background:#fff;color:#141a28;border:0;border-radius:18px 18px 4px 18px;padding:13px 16px;font:600 14.5px/1.4 var(--fb);text-align:left;cursor:pointer;box-shadow:0 16px 40px rgba(6,10,22,.26);transition:opacity .4s,transform .4s}.lot-s b{color:color-mix(in srgb,var(--p) 80%,#000)}.lot-s.off,.lot.open .lot-s,.lot:not(.hide-t) .lot-s{opacity:0;transform:translateX(12px);pointer-events:none}@media(max-width:820px){.chip20 .lg{display:none}.chip20 .sm{display:inline!important}.chip20{max-width:100%;font-size:13.5px!important;white-space:nowrap;padding:9px 14px 9px 12px!important;gap:8px!important}.chip20 b{font-size:17px!important}.chip20 .st{font-size:16px!important}.lot{bottom:134px}.lot-b{padding:5px}.lot-b .dock{width:54px;height:54px}.lot-s{font-size:13.5px;padding:11px 13px;bottom:4px}}.chip20{display:inline-flex!important;align-items:center;gap:10px;background:#fff;border-radius:999px;padding:10px 18px 10px 14px;box-shadow:0 8px 26px rgba(0,0,0,.10);font:600 15.5px var(--fb);margin-bottom:18px}.chip20 b{font:800 20px var(--fh)}.chip20 .st{color:#f5a500;letter-spacing:1px;font-size:17px}
 .lot-b,.lot-h{color:var(--p-ink,#fff)}.lot-h button{color:inherit}
 .ht20{background:var(--s2);padding-top:var(--hdh,86px)}.ht20 figure{margin:0;max-width:1500px;margin-inline:auto}.ht20 .chip20{margin-bottom:10px}.ht20 figure img{display:block;width:100%;height:auto}
 .ht20 .w{display:grid;grid-template-columns:1.05fr 1fr;gap:clamp(24px,5vw,70px);align-items:start;padding-top:44px;padding-bottom:56px}.ht20 h1{font:800 clamp(34px,4.2vw,62px)/1.04 var(--fh);letter-spacing:-.02em;margin:12px 0 0}.ht20 h1 em{font-style:normal;color:var(--p)}
@@ -104,8 +104,9 @@ def mk(k, d):
     S['css2'] = card + f'.hz{{--hz-bg:{s2};--hz-ink:#1b1d22;--hz-mute:#4d535c;--hz-stroke:rgba(0,0,0,.07);--hz-cols:{g("cols", "46fr 54fr")}}}.hz h1{{font-size:clamp(34px,4.1vw,64px)}}.hz .ey{{color:{g("em", p)}}}' + g('css2', '')
     if g('logo_txt'): S['logo_txt'] = d['logo_txt']
     if g('stimmen') and not g('google'): S['voices'] = True
+    if g('gr'): S['gr'] = g('gr')
     nf = d['notfall']
-    S['bot'] = dict(auto=(d['hero'] == 'r'), name=d['bot'], tag='Ihr Praxis-Lotse', du=False, tel=d['tel'], tel_i=d['tel_i'], notfall=nf, finBtn='Termin anfragen',
+    S['bot'] = dict(auto=False, say=f'Hallo, ich bin <b>{d["bot"]}</b>, Ihr KI-Assistent. Ich führe Sie durch die Website.', name=d['bot'], tag='Ihr Praxis-Lotse', du=False, tel=d['tel'], tel_i=d['tel_i'], notfall=nf, finBtn='Termin anfragen',
         hello=f'Guten Tag! Ich bin <b>{d["bot"]}</b>, der Lotse der {d["kurz"]}. Soll ich Ihnen helfen, schnell das Richtige zu finden?',
         hi=f'Guten Tag, ich bin {d["bot"]}. Ich stelle Ihnen drei kurze Fragen und zeige Ihnen, was in der Praxis zu Ihrem Anliegen passt.',
         cats=[[CATL[c], c] for c in cats], rec=rec, usp=USP, ex='Sprechzeiten, Leistungen oder Terminen',
@@ -189,7 +190,7 @@ mk('austermann', dict(slug='zahnarztpraxis-austermann-bramsche', firma='Zahnarzt
     pops=[('el.jpg', 'Angstpatienten', 'Angst vor dem Zahnarzt? Bei uns wird alles vorher in Ruhe erklärt.'), ('h1.jpg', 'Prophylaxe', 'Vorsorge ist besser als Nachsorge. Jetzt Zahnreinigung anfragen.')]))
 
 # 3 ─ Zahnarztpraxis Am Markt, Badbergen
-mk('badbergen', dict(slug='zahnarztpraxis-am-markt-badbergen', firma='Zahnarztpraxis Am Markt · Sigrid E. Meyer', kurz='Zahnarztpraxis Am Markt', name='Sigrid E. Meyer', ort='Badbergen', strasse='Am Markt 1', plz='49635',
+mk('badbergen', dict(gr=(4.1, 17), slug='zahnarztpraxis-am-markt-badbergen', firma='Zahnarztpraxis Am Markt · Sigrid E. Meyer', kurz='Zahnarztpraxis Am Markt', name='Sigrid E. Meyer', ort='Badbergen', strasse='Am Markt 1', plz='49635',
     tel='05433 6000', tel_i='+4954336000', web='zahnarzt-badbergen.de', p='#b5152b', dk='#33292b', s2='#f7f2f3', fam=LATO, fonts='r10vagts',
     logo=(I20('badbergen', '042'), 0), lh=58, hero='r', himgs=[I20('badbergen', '045'), I20('badbergen', '045')], cols='54fr 46fr', card='4/3',
     ey='Zahnarztpraxis Am Markt · Badbergen', h1='Gesunde Zähne. <em>Mitten in Badbergen.</em>',
@@ -220,7 +221,7 @@ mk('badbergen', dict(slug='zahnarztpraxis-am-markt-badbergen', firma='Zahnarztpr
     pops=[('tm.jpg', 'Zahnersatz', 'Krone, Brücke oder Implantat? Wir beraten Sie und besprechen die Kosten offen.'), ('h1.jpg', 'Schienentherapie', 'Zähneknirschen und Verspannungen? Wir untersuchen Ihr Kiefergelenk.')]))
 
 # 4 ─ Zahnarztpraxis Galina Spasova, Rieste
-mk('rieste', dict(slug='zahnarztpraxis-spasova-rieste', firma='Zahnarztpraxis Galina Spasova', kurz='Zahnarztpraxis Spasova', name='Galina Spasova', ort='Rieste', strasse='Malgartener Str. 5', plz='49597',
+mk('rieste', dict(gr=(4.0, 16), slug='zahnarztpraxis-spasova-rieste', firma='Zahnarztpraxis Galina Spasova', kurz='Zahnarztpraxis Spasova', name='Galina Spasova', ort='Rieste', strasse='Malgartener Str. 5', plz='49597',
     tel='05464 5275', tel_i='+4954645275', mail='praxis.spasova@gmx.de', web='zahnarzt-rieste.de', p='#19778a', dk='#0e4450', s2='#e8f1f3', fam=NUN, fonts='r16galerie',
     logo_txt='Zahnarztpraxis<small>Galina Spasova · Rieste</small>', hero='l', himgs=[I20('rieste', '009'), I20('rieste', '009')], cols='44fr 56fr', card='192/111',
     ey='Zahnarztpraxis Galina Spasova · Rieste', h1='Gesunde Zähne für ein <em>gesundes Lachen.</em>',
@@ -250,7 +251,7 @@ mk('rieste', dict(slug='zahnarztpraxis-spasova-rieste', firma='Zahnarztpraxis Ga
     pops=[('h1.jpg', 'Knirscherschienen', 'Morgens wie gerädert? Eine Schiene schützt Zähne und Kiefergelenk.'), ('tm.jpg', 'Zahnersatz', 'Kronen und Brücken aus Vollkeramik, individuell für Sie gefertigt.')]))
 
 # 5 ─ Zahnarzt Thomas Kiefert, Neuenkirchen-Vörden
-mk('kiefert', dict(slug='zahnarzt-kiefert-neuenkirchen-voerden', firma='Zahnarztpraxis Thomas Kiefert', kurz='Zahnarztpraxis Kiefert', name='Thomas Kiefert', ort='Neuenkirchen-Vörden', strasse='Lindenstr. 1', plz='49434',
+mk('kiefert', dict(gr=(4.4, 7), slug='zahnarzt-kiefert-neuenkirchen-voerden', firma='Zahnarztpraxis Thomas Kiefert', kurz='Zahnarztpraxis Kiefert', name='Thomas Kiefert', ort='Neuenkirchen-Vörden', strasse='Lindenstr. 1', plz='49434',
     tel='05495 994899', tel_i='+495495994899', mail='kontakt@zahnarzt-voerden.de', web='zahnarzt-kiefert.de', p='#3e8f08', em='#2f7305', dk='#012b55', s2='#eef6e8', fam=RAL, fonts='r18ant',
     logo_txt='Thomas Kiefert<small>Zahnarzt · Vörden</small>', hero='r', himgs=[I20('kiefert', '017'), I20('kiefert', '017')], cols='44fr 56fr', card='1920/1301',
     ey='Thomas Kiefert · Zahnarzt in Neuenkirchen-Vörden', h1='Ihre Zahnarztpraxis in Vörden. <em>Seit über 25 Jahren.</em>',

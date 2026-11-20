@@ -4,7 +4,7 @@
  var w=document.createElement('div');w.className='lot bot hide-t';
  w.innerHTML='<div class="lot-t"><button class="x" aria-label="Schließen">×</button><small>'+B.name+' · '+B.tag+'</small><div class="tt">'+B.hello+'</div><div class="bb"><button data-k>'+(B.btnCheck||'Was brauche ich? · Zahn-Check in 30 Sek.')+'</button><button data-tour>Kurz durch die Seite</button><button data-q>Ich habe eine Frage</button></div></div>'+
  '<div class="lot-p" role="dialog" aria-label="Chat mit '+B.name+'"><div class="lot-h"><span class="face">'+R+'</span><div><b>'+B.name+'</b><span>'+B.tag+' · online</span></div><button aria-label="Schließen">×</button></div><div class="lot-steps"><i></i><i></i><i></i><i></i></div><div class="lot-m"></div><div class="lot-c"></div><form class="lot-f"><input placeholder="Ihre Frage …" aria-label="Frage"><button aria-label="Senden">➤</button></form></div>'+
- '<button class="lot-b" aria-label="Chat mit '+B.name+' öffnen"><span class="dock">'+R+'</span><span class="lb"><b>'+B.name+'</b><small>'+B.tag+'</small></span></button>';
+ (B.say?'<button class="lot-s off" type="button">'+B.say+'</button>':'')+'<button class="lot-b" aria-label="Chat mit '+B.name+' öffnen"><span class="dock">'+R+'</span><span class="lb"><b>'+B.name+'</b><small>'+B.tag+'</small></span></button>';
  document.body.appendChild(w);
  var m=w.querySelector('.lot-m'),c=w.querySelector('.lot-c'),bars=w.querySelectorAll('.lot-steps i'),A={},du=B.du!==false;
  function say(t,u){var d=document.createElement('div');d.className='msg'+(u?' u':'');d.innerHTML=t;m.appendChild(d);m.scrollTop=1e5}
@@ -37,6 +37,7 @@
  function wire(){var b;if(b=bb.querySelector('[data-nx]'))b.onclick=function(){tour(ti+1)};if(b=bb.querySelector('[data-x2]'))b.onclick=function(){endTour();w.classList.add('hide-t')};if(b=bb.querySelector('[data-k]'))b.onclick=function(){open('check')};if(b=bb.querySelector('[data-tour]'))b.onclick=function(){tour(0)};if(b=bb.querySelector('[data-q]'))b.onclick=function(){open()}}
  wire();w.querySelector('.x').onclick=function(){endTour();w.classList.add('hide-t')};
  if(innerWidth>820&&B.auto!==false)setTimeout(function(){if(!w.classList.contains('open'))w.classList.remove('hide-t')},3200);
+ var sp=w.querySelector('.lot-s');if(sp){setTimeout(function(){sp.classList.remove('off')},1500);setTimeout(function(){sp.classList.add('off')},13000);sp.onclick=function(){sp.classList.add('off');w.classList.remove('hide-t')};addEventListener('scroll',function(){if(scrollY>innerHeight*1.2)sp.classList.add('off')},{passive:true})}
  w.querySelector('.lot-b').onclick=function(){w.classList.contains('open')?w.classList.remove('open'):open()};
  w.querySelector('.lot-h button').onclick=function(){w.classList.remove('open')};
  document.querySelectorAll('[data-check]').forEach(function(b){b.addEventListener('click',function(e){e.preventDefault();open('check',b.dataset.check||null)})});

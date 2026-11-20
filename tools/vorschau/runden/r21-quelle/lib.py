@@ -5,7 +5,9 @@ PH = '<svg viewBox="0 0 24 24" fill="currentColor"><path d="M6.6 10.8a15.1 15.1 
 AR = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M5 12h14M13 6l6 6-6 6"/></svg>'
 
 def stars(r):
-    return '★' * round(float(str(r).replace(',', '.')))
+    """Immer fünf Sterne, goldene Füllung nach echter Note."""
+    v = float(str(r).replace(',', '.'))
+    return f'<span class="st5" style="--r:{v / 5 * 100:.0f}%" role="img" aria-label="{str(r).replace(".", ",")} von 5 Sternen">★★★★★</span>'
 
 def logo(s, ft=False):
     if s.get('logo_txt'): return f'<span class="lt-logo">{s["logo_txt"]}</span>'
@@ -24,11 +26,14 @@ def hd(s, light=True):
     return f'''<header class="hd{' lt' if light else ''}" data-hd><div class="w"><a class="logo" href="#">{logo(s)}</a><nav class="nav">{nav}</nav><a class="btn btn-a" href="#kontakt">{s['cta']}</a><button class="burger" data-nav aria-label="Menü">☰</button></div></header>'''
 
 def chip(s):
-    g = s.get('google')
+    """Hero-Plakette: immer fünf Sterne (Füllung nach echter Note). Anzahl erst ab 50 Bewertungen."""
+    g = s.get('google') or s.get('gr')
     if not g:
-        return '<a class="chip chip20" href="#stimmen" style="text-decoration:none;color:inherit"><span class="st">★</span>Das sagen unsere Patienten <span aria-hidden="true">↓</span></a>' if s.get('voices') else ''
-    return (f'<a class="chip chip20" href="#stimmen" style="text-decoration:none;color:inherit"><b>{str(g[0]).replace(".", ",")}</b><span class="st">{stars(g[0])}</span>'
-            f'<span>{g[1]} Bewertungen bei Google</span> <span aria-hidden="true">↓</span></a>')
+        return ''
+    num = f'<b>{str(g[0]).replace(".", ",")}</b>' if s.get('google') else ''
+    txt = f'{g[1]} Bewertungen bei Google' if g[1] >= 50 else '<i class="lg">Hier geht’s zu den Bewertungen</i><i class="sm">Zu den Bewertungen</i>'
+    return (f'<a class="chip chip20" href="#stimmen" style="text-decoration:none;color:inherit">{num}<span class="st">{stars(g[0])}</span>'
+            f'<span>{txt}</span> <span aria-hidden="true">↓</span></a>')
 
 def gurl(s):
     import urllib.parse
