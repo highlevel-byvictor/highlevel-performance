@@ -80,6 +80,7 @@ CSS28 = '''.bw28{background:var(--s2);padding:26px 0;border-top:1px solid rgba(0
 .tg28 .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(190px,1fr));gap:22px;margin-top:34px}.tg28 figure{margin:0}.tg28 figure>div{aspect-ratio:3/4;overflow:hidden;background:var(--s2)}.tg28 figure:nth-child(3n+1)>div{border-radius:18px}
 .tg28 img{width:100%;height:100%;object-fit:cover;object-position:50% 8%}.tg28 figcaption{margin-top:10px}.tg28 b{display:block;font:700 17px var(--fh)}.tg28 span{font-size:14.5px;color:var(--mute)}
 .vg .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:20px;margin-top:30px}.vg .frame{position:relative;aspect-ratio:16/9;background:#000;border-radius:18px;overflow:hidden}.vg video,.vg .frame img{width:100%;height:100%;object-fit:cover}.vg h3{font:700 17px var(--fh);margin-top:10px}
+.hz-img{position:relative}.hv28{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
 #jobs figure img,#zwei figure img{aspect-ratio:auto!important;height:auto!important;width:100%}
 @media(max-width:900px){.tg28 .grid{grid-template-columns:1fr 1fr;gap:14px}.bw28 b{font-size:19px}}'''
 
@@ -98,6 +99,7 @@ def mk(k, d):
             t = hd(s) + hero_slides(s, dict(slides=['h1.jpg', 'h2.jpg'], pos=g('hpos', {}), ey=d['ey'], h1=d['h1'], sub=d['sub'], ubar=d['ubar']))
         else:
             t = hd(s, False) + hero_split(s, dict(imgs=(['h1.jpg', 'h2.jpg'] if d['himgs'][0] != d['himgs'][1] else ['h1.jpg']), cls=('card' if g('card') else ''), pos=g('hpos', {}), side=hero, big='', ubar=d['ubar'], ey=d['ey'], h1=d['h1'], sub=d['sub']))
+        if g('hvid'): t = t.replace('<div class="sl">', '<video class="hv28" src="img/hv.mp4" poster="img/hv.jpg" autoplay muted loop playsinline></video><div class="sl" style="display:none">', 1)
         b = t + anliegen(s, cats).replace('Worum geht es bei Ihnen?', Sie('Worum geht es bei Ihnen?', 'Worum geht es bei dir?')) + marquee([a for a, _ in svcs] + [d.get('mq_end', f'Physiotherapie in {ort}')], 'wm')
         if g('video_first'): b += d['video_first']
         if g('stimmen'):
@@ -229,8 +231,9 @@ mk('vogel', dict(google=(4.8, 22), slug='praxis-vogel-osteopathie-physiotherapie
     zwei=dict(ey='Akupunktur', h2='Zuerst <em>die Chinesische Sprechstunde.</em>', img=J('vogel', '011'),
               txt='Vor der ersten Akupunktur nehmen wir uns 90 Minuten Zeit: Gespräch, Zungen- und Pulsdiagnostik. Danach entsteht ein individueller Behandlungsplan.',
               pts=['90 Minuten in ruhiger Atmosphäre', 'Ausführliches Befundgespräch', 'Individueller Plan'], btn='Sprechstunde anfragen'),
-    video_first=vids28('film', 'Film', 'Einblick in <em>die Praxis Vogel.</em>', 'Ein kurzer Film aus unserer Praxis in Quakenbrück.', [('v1.mp4', 'v1.jpg', 'Die Praxis Vogel'), ('v2.mp4', 'v2.jpg', 'Osteopathie')]),
-    extra_img={'v1.mp4': ('/home/claude/r28raw/vogel/vid/home_w.mp4', 0), 'v1.jpg': ('/home/claude/r28raw/vogel/vid/home_p.jpg', 1000), 'v2.mp4': ('/home/claude/r28raw/vogel/vid/osteopathie_w.mp4', 0), 'v2.jpg': ('/home/claude/r28raw/vogel/vid/osteopathie_p.jpg', 1000)},
+    hvid=True, vids=[('/home/claude/r28raw/vogel/vid/osteopathie_w.mp4', '/home/claude/r28raw/vogel/vid/osteopathie_p.jpg', 'Osteopathie'), ('/home/claude/r28raw/vogel/vid/physio_w.mp4', '/home/claude/r28raw/vogel/vid/physio_p.jpg', 'Physiotherapie'), ('/home/claude/r28raw/vogel/vid/akupunktur_w.mp4', '/home/claude/r28raw/vogel/vid/akupunktur_p.jpg', 'Akupunktur'), ('/home/claude/r28raw/vogel/vid/sportlerbetreuung_w.mp4', '/home/claude/r28raw/vogel/vid/sportlerbetreuung_p.jpg', 'Sportlerbetreuung')],
+    vids_h2='Unsere Behandlungen <em>im Film.</em>', vids_lead='Kurze Filme aus unserer Praxis in Quakenbrück.',
+    extra_img={'hv.mp4': ('/home/claude/r28raw/vogel/vid/home_w.mp4', 0), 'hv.jpg': ('/home/claude/r28raw/vogel/vid/home_p0.jpg', 1400)},
     team=dict(ey='Über uns', h2='Das Team <em>für Ihre Gesundheit.</em>', img=J('vogel', '002'), cap='Das Team der Praxis Vogel in Quakenbrück',
               paras=['Nicole Vogel ist Osteopathin, Physiotherapeutin und Heilpraktikerin. Sie betreute unter anderem die ARTLAND DRAGONS und seit 2019 die deutschen 3x3-Basketballnationalmannschaften.',
                      'Praxismanagerin Anke Rehberg hält dem Team den Rücken frei und ist Ihre Ansprechpartnerin für Termine.'],
