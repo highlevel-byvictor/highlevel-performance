@@ -1,0 +1,55 @@
+{
+ "id": "2026-12-05_konkurrenz-klaut-anfragen",
+ "stufe": "TOFU",
+ "quelle": "noah.pscheidt Dfhiy6moxuc",
+ "hook_overlay": "So klaut dir deine Konkurrenz\ndie Anfragen.",
+ "segments": [
+  {
+   "text": "So klaut dir deine Konkurrenz die Anfragen. Ganz leise.",
+   "query": "businessman laptop|man laptop",
+   "keywords": [
+    "Konkurrenz"
+   ]
+  },
+  {
+   "text": "Ein Kunde sucht abends auf dem Sofa nach einem Betrieb. Er findet dich und den anderen.",
+   "query": "couch smartphone|sofa phone",
+   "keywords": [
+    "abends"
+   ]
+  },
+  {
+   "text": "Bei dir steht nur eine Telefonnummer. Um diese Uhrzeit ruft er nicht mehr an.",
+   "query": "phone night|smartphone night",
+   "keywords": [
+    "Telefonnummer"
+   ]
+  },
+  {
+   "text": "Beim anderen beantwortet ein KI-Chat seine Fragen sofort und nimmt die Anfrage auf.",
+   "query": "smartphone message|phone typing",
+   "keywords": [
+    "KI-Chat"
+   ]
+  },
+  {
+   "text": "Am nächsten Morgen hat der andere den Termin. Nicht, weil er besser ist. Sondern weil er erreichbar war.",
+   "query": "morning coffee|coffee phone",
+   "keywords": [
+    "erreichbar"
+   ]
+  },
+  {
+   "text": "Schreib mir CHECK als Nachricht und du bekommst den Guide dazu.",
+   "query": "handshake business|handshake",
+   "keywords": [
+    "CHECK"
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Schreib mir CHECK",
+  "sub": "Kostenloser Sichtbarkeits-Guide für Betriebe",
+  "button": "Nachricht schreiben"
+ }
+}

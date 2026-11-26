@@ -1,0 +1,55 @@
+{
+ "id": "2026-12-04_firmenwagen",
+ "stufe": "TOFU",
+ "quelle": "abdi_zerlegt DdSHM7KMMPR",
+ "hook_overlay": "Du fährst jeden Tag hinter einem her.\nNenn mir eine Firma.",
+ "segments": [
+  {
+   "text": "Du fährst jeden Tag hinter einem beklebten Transporter her. Nenn mir eine Firma davon.",
+   "query": "traffic city|van road",
+   "keywords": [
+    "Nenn mir eine Firma"
+   ]
+  },
+  {
+   "text": "Eben. Keiner merkt sich die Nummer auf der Hecktür.",
+   "query": "delivery van|van",
+   "keywords": [
+    "Hecktür"
+   ]
+  },
+  {
+   "text": "Wenn sich jemand den Namen merkt, sucht er dich später am Handy.",
+   "query": "smartphone search|phone hand",
+   "keywords": [
+    "sucht"
+   ]
+  },
+  {
+   "text": "Und genau da entscheidet sich, ob er anfragt. Findet er eine klare Website, oder nur ein altes Profil?",
+   "query": "woman smartphone|smartphone",
+   "keywords": [
+    "anfragt"
+   ]
+  },
+  {
+   "text": "Die Beschriftung macht neugierig. Die Website holt den Auftrag.",
+   "query": "construction worker|craftsman",
+   "keywords": [
+    "Auftrag"
+   ]
+  },
+  {
+   "text": "Schreib mir CHECK als Nachricht und du bekommst den Guide dazu.",
+   "query": "handshake business|handshake",
+   "keywords": [
+    "CHECK"
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Schreib mir CHECK",
+  "sub": "Kostenloser Sichtbarkeits-Guide für Betriebe",
+  "button": "Nachricht schreiben"
+ }
+}

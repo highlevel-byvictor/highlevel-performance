@@ -1,0 +1,55 @@
+{
+ "id": "2026-11-30_kontaktformular",
+ "stufe": "TOFU",
+ "quelle": "noah.pscheidt DelonJLtHNt",
+ "hook_overlay": "Lösch das Kontaktformular\nvon deiner Website.",
+ "segments": [
+  {
+   "text": "Lösch das Kontaktformular von deiner Website. Ernsthaft.",
+   "query": "laptop typing|computer keyboard",
+   "keywords": [
+    "Kontaktformular"
+   ]
+  },
+  {
+   "text": "Zehn leere Felder, ein Absenden-Knopf, und dann passiert nichts. Viele schicken es gar nicht erst ab.",
+   "query": "bored laptop|woman laptop",
+   "keywords": [
+    "brechen"
+   ]
+  },
+  {
+   "text": "Stell lieber drei kurze Fragen: Was brauchst du, wo, und bis wann?",
+   "query": "smartphone hand|phone scrolling",
+   "keywords": [
+    "drei"
+   ]
+  },
+  {
+   "text": "Ein KI-Chat auf der Website stellt genau diese Fragen. Auch abends um zehn.",
+   "query": "smartphone night|phone night",
+   "keywords": [
+    "KI-Chat"
+   ]
+  },
+  {
+   "text": "Die Anfrage landet direkt in deinem CRM. Du rufst zurück und weißt schon, worum es geht.",
+   "query": "craftsman phone|worker phone",
+   "keywords": [
+    "CRM"
+   ]
+  },
+  {
+   "text": "Schreib mir CHECK als Nachricht und du bekommst den Guide dazu.",
+   "query": "handshake business|handshake",
+   "keywords": [
+    "CHECK"
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Schreib mir CHECK",
+  "sub": "Kostenloser Sichtbarkeits-Guide für Betriebe",
+  "button": "Nachricht schreiben"
+ }
+}

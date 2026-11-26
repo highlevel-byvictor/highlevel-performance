@@ -1,0 +1,55 @@
+{
+ "id": "2026-12-03_entwurf-schritt-fuer-schritt",
+ "stufe": "MOFU",
+ "quelle": "adrien.ninet DP3Ym6vCdEk",
+ "hook_overlay": "So entsteht dein Website-Entwurf.\nSchritt für Schritt.",
+ "segments": [
+  {
+   "text": "So entsteht bei uns dein Website-Entwurf. Schritt für Schritt.",
+   "query": "web design|designer computer",
+   "keywords": [
+    "Schritt für Schritt"
+   ]
+  },
+  {
+   "text": "Schritt eins: Du füllst einen kurzen Fragebogen aus. Was du machst, wo du arbeitest, was dir wichtig ist.",
+   "query": "filling form|tablet hand",
+   "keywords": [
+    "Fragebogen"
+   ]
+  },
+  {
+   "text": "Schritt zwei: Wir schauen uns deinen Betrieb an und bauen daraus deine neue Startseite. In 24 Stunden.",
+   "query": "designer desk|team office",
+   "keywords": [
+    "24 Stunden"
+   ]
+  },
+  {
+   "text": "Schritt drei: Du schaust dir den Entwurf in Ruhe an. Kostenlos und unverbindlich.",
+   "query": "laptop coffee|tablet coffee",
+   "keywords": [
+    "Kostenlos"
+   ]
+  },
+  {
+   "text": "Gefällt er dir, ersetzt die neue Seite deine alte. Du hast am Ende eine Website, nicht zwei.",
+   "query": "handshake business|business meeting",
+   "keywords": [
+    "eine Website"
+   ]
+  },
+  {
+   "text": "Schreib mir ENTWURF als Nachricht und wir legen los.",
+   "query": "smartphone message|phone typing",
+   "keywords": [
+    "ENTWURF"
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Schreib mir ENTWURF",
+  "sub": "Kostenloser Website-Entwurf in 24 Stunden",
+  "button": "Nachricht schreiben"
+ }
+}

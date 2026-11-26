@@ -1,0 +1,55 @@
+{
+ "id": "2026-12-02_ki-website-5-minuten",
+ "stufe": "TOFU",
+ "quelle": "webdesign.melissa DaS89s2IP3c",
+ "hook_overlay": "Website mit KI in 5 Minuten?\nKlar. Und dann?",
+ "segments": [
+  {
+   "text": "Alle denken gerade, sie bauen mit KI in fünf Minuten eine Website. Klar geht das.",
+   "query": "laptop typing|computer work",
+   "keywords": [
+    "fünf Minuten"
+   ]
+  },
+  {
+   "text": "Nur sieht sie dann aus wie tausend andere. Gleiche Farben, gleiche Sätze, keine echten Fotos.",
+   "query": "office computers|computer screens",
+   "keywords": [
+    "tausend andere"
+   ]
+  },
+  {
+   "text": "Ein Kunde merkt das sofort. Und vertraut lieber dem Betrieb, der echt aussieht.",
+   "query": "woman smartphone|smartphone",
+   "keywords": [
+    "vertraut"
+   ]
+  },
+  {
+   "text": "KI ist ein Werkzeug. Den Unterschied machen deine Bilder, deine Leistungen und ein klarer Weg zur Anfrage.",
+   "query": "designer desk|web design",
+   "keywords": [
+    "Werkzeug"
+   ]
+  },
+  {
+   "text": "Würdest du deine Website selbst mit KI bauen? Ja oder nein, schreib es in die Kommentare.",
+   "query": "team discussion|office meeting",
+   "keywords": [
+    "Ja oder nein"
+   ]
+  },
+  {
+   "text": "Und schreib mir CHECK als Nachricht, dann bekommst du den Guide dazu.",
+   "query": "handshake business|handshake",
+   "keywords": [
+    "CHECK"
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Schreib mir CHECK",
+  "sub": "Kostenloser Sichtbarkeits-Guide für Betriebe",
+  "button": "Nachricht schreiben"
+ }
+}

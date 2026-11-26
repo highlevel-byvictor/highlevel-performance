@@ -1,0 +1,56 @@
+{
+ "id": "2026-12-06_website-bringt-anfragen",
+ "stufe": "BOFU",
+ "quelle": "28thdesign Dfo5mEFvh16",
+ "hook_overlay": "Da sein reicht nicht.\nDeine Website muss Anfragen bringen.",
+ "segments": [
+  {
+   "text": "Eine Website, die nur da ist, bringt dir nichts. Sie muss Anfragen bringen.",
+   "query": "web design|designer computer",
+   "keywords": [
+    "Anfragen"
+   ]
+  },
+  {
+   "text": "Deshalb bauen wir dir zuerst einen kostenlosen Entwurf. In 24 Stunden.",
+   "query": "designer desk|team office",
+   "keywords": [
+    "kostenlosen Entwurf"
+   ]
+  },
+  {
+   "text": "Mit KI-Chat, eigenem CRM und auf Wunsch einem KI-Telefonassistenten.",
+   "query": "call center|headset office",
+   "keywords": [
+    "KI-Chat",
+    "CRM"
+   ]
+  },
+  {
+   "text": "Support rund um die Uhr und eine faire Gebühr für Hosting und Pflege.",
+   "query": "customer support|support team",
+   "keywords": [
+    "rund um die Uhr"
+   ]
+  },
+  {
+   "text": "Deine alte Seite wird ersetzt. Du hast eine Website, nicht zwei.",
+   "query": "laptop coffee|tablet coffee",
+   "keywords": [
+    "eine Website"
+   ]
+  },
+  {
+   "text": "Schreib mir ENTWURF als Nachricht und du bekommst deinen Entwurf.",
+   "query": "smartphone message|phone typing",
+   "keywords": [
+    "ENTWURF"
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Schreib mir ENTWURF",
+  "sub": "Kostenloser Website-Entwurf in 24 Stunden",
+  "button": "Nachricht schreiben"
+ }
+}

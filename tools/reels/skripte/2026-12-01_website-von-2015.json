@@ -1,0 +1,55 @@
+{
+ "id": "2026-12-01_website-von-2015",
+ "stufe": "TOFU",
+ "quelle": "hamzahbuilds De8IBjoxxVH",
+ "hook_overlay": "Deine Arbeit ist Top-Niveau.\nDeine Website ist von 2015.",
+ "segments": [
+  {
+   "text": "Deine Arbeit ist Top-Niveau. Warum sieht deine Website dann aus wie von 2015?",
+   "query": "carpenter workshop|carpenter wood",
+   "keywords": [
+    "2015"
+   ]
+  },
+  {
+   "text": "Kunden sehen deine Arbeit nicht zuerst auf der Baustelle. Sie sehen sie zuerst auf dem Handy.",
+   "query": "smartphone scrolling|phone hand",
+   "keywords": [
+    "Handy"
+   ]
+  },
+  {
+   "text": "Kleine Schrift, alte Fotos, kein Button zum Anfragen. Und der Kunde ist weg.",
+   "query": "old computer|vintage computer",
+   "keywords": [
+    "weg"
+   ]
+  },
+  {
+   "text": "Zeig echte Bilder deiner Arbeit, sag in einem Satz, was du machst, und mach Anfragen leicht.",
+   "query": "kitchen interior|modern kitchen",
+   "keywords": [
+    "echte Bilder"
+   ]
+  },
+  {
+   "text": "Dann passt der erste Eindruck endlich zu dem, was du wirklich ablieferst.",
+   "query": "craftsman work|tiler work",
+   "keywords": [
+    "erste Eindruck"
+   ]
+  },
+  {
+   "text": "Schreib mir CHECK als Nachricht und du bekommst den Guide dazu.",
+   "query": "team handshake|handshake",
+   "keywords": [
+    "CHECK"
+   ]
+  }
+ ],
+ "cta": {
+  "title": "Schreib mir CHECK",
+  "sub": "Kostenloser Sichtbarkeits-Guide für Betriebe",
+  "button": "Nachricht schreiben"
+ }
+}
